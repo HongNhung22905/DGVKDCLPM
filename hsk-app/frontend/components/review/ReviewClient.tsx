@@ -52,6 +52,7 @@ export default function ReviewClient({ today: _today }: { today: string }) {
   // Queue ban đầu — các từ cần ôn hôm nay
   const [originalCards, setOriginalCards] = useState<ReviewCard[]>([]);
   const [gameCards, setGameCards] = useState<ReviewCard[]>([]);
+  const [activeGameCards, setActiveGameCards] = useState<ReviewCard[]>([]);
   // Queue đang chạy (bao gồm từ thêm lại khi sai)
   const [queue, setQueue]   = useState<ReviewCard[]>([]);
   const [index, setIndex]   = useState(0);
@@ -129,6 +130,12 @@ export default function ReviewClient({ today: _today }: { today: string }) {
       utt.lang = "zh-CN"; utt.rate = 0.85;
       window.speechSynthesis.speak(utt);
     }
+  }, []);
+
+  const openGame = useCallback((cards: ReviewCard[]) => {
+    if (cards.length === 0) return;
+    setActiveGameCards(cards);
+    setPhase("game");
   }, []);
 
   // ─── Xử lý đánh giá ────────────────────────────────────────────────────────
@@ -222,11 +229,12 @@ export default function ReviewClient({ today: _today }: { today: string }) {
   }
 
   if (phase === "game") {
-    return <ReviewGame cards={gameCards} onExit={() => setPhase("studying")} />;
+    return <ReviewGame cards={activeGameCards} onExit={() => setPhase("studying")} />;
   }
 
   if (originalCards.length === 0) {
-    return <EmptyState today={effectiveToday} gameCount={gameCards.length} onPlayGame={() => setPhase("game")} />;
+    const weakCards = gameCards.filter(card => card.repetitions === 0 || card.easeFactor < 2.3);
+    return <EmptyState today={effectiveToday} gameCount={weakCards.length} onPlayGame={() => openGame(weakCards)} />;
   }
 
   if (phase === "summary") {
@@ -254,7 +262,7 @@ export default function ReviewClient({ today: _today }: { today: string }) {
           setPhase("studying");
         }}
         onPlayAudio={playAudio}
-        onPlayGame={() => setPhase("game")}
+        onPlayGame={() => openGame(wrongCards)}
       />
     );
   }
@@ -270,6 +278,9 @@ export default function ReviewClient({ today: _today }: { today: string }) {
 
   const wrongSoFar   = Array.from(results.values()).filter(v => v === "wrong").length;
   const correctSoFar = Array.from(results.values()).filter(v => v === "correct").length;
+  const unmasteredCards = originalCards.filter(card =>
+    results.get(card.wordId) === "wrong" || card.repetitions === 0 || card.easeFactor < 2.3
+  );
   // Số từ còn lại trong queue gốc chưa đánh giá lần đầu
   const remaining = originalCards.length - results.size;
 
@@ -293,13 +304,15 @@ export default function ReviewClient({ today: _today }: { today: string }) {
 
           <ProgressBar value={progress} color="review" height={6} />
 
-          <button
-            onClick={() => setPhase("game")}
-            className="mt-3 inline-flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold text-white"
-            style={{ background: "linear-gradient(135deg,#7C3AED,#B45309)" }}
-          >
-            <Gamepad2 size={14} /> Chơi game ôn từ
-          </button>
+          {unmasteredCards.length > 0 && (
+            <button
+              onClick={() => openGame(unmasteredCards)}
+              className="mt-3 inline-flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold text-white"
+              style={{ background: "linear-gradient(135deg,#7C3AED,#B45309)" }}
+            >
+              <Gamepad2 size={14} /> Game {unmasteredCards.length} từ chưa thuộc
+            </button>
+          )}
 
           <div className="flex gap-4 mt-2 text-xs">
             <span style={{ color: "#059669" }}>✓ {correctSoFar} đúng</span>
@@ -582,11 +595,13 @@ function SummaryScreen({
           </div>
 
           <div className="flex flex-col gap-2">
-            <button onClick={onPlayGame}
-              className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-all hover:brightness-110"
-              style={{ background: "linear-gradient(135deg,#7C3AED,#B45309)" }}>
-              <Gamepad2 size={15} /> Chơi game với {total} từ vừa ôn
-            </button>
+            {wrongCount > 0 && (
+              <button onClick={onPlayGame}
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-all hover:brightness-110"
+                style={{ background: "linear-gradient(135deg,#7C3AED,#B45309)" }}>
+                <Gamepad2 size={15} /> Chơi game với {wrongCount} từ chưa thuộc
+              </button>
+            )}
             {wrongCount > 0 && (
               <button onClick={onRestartWrong}
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-all hover:brightness-110"
@@ -692,7 +707,7 @@ function EmptyState({
           <button onClick={onPlayGame}
             className="mb-3 w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-all hover:brightness-110"
             style={{ background: "linear-gradient(135deg,#7C3AED,#B45309)" }}>
-            <Gamepad2 size={16} /> Chơi game với {gameCount} từ đã học
+            <Gamepad2 size={16} /> Chơi game với {gameCount} từ chưa thuộc
           </button>
         )}
         <Link href="/vocabulary"
