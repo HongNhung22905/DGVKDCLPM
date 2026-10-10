@@ -15,36 +15,45 @@ if (!API_KEY || API_KEY === "REPLACE_WITH_GEMINI_API_KEY") {
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
+// Ưu tiên model ổn định; tự chuyển sang model khác khi Google tạm quá tải.
+// Có thể ghi đè trên Vercel bằng GEMINI_MODELS, phân cách bởi dấu phẩy.
+const MODEL_CANDIDATES = (process.env.GEMINI_MODELS ??
+  "gemini-3.6-flash,gemini-3.8-flash,gemini-flash-latest")
+  .split(",")
+  .map((model) => model.trim())
+  .filter(Boolean);
+
 export async function generateText(prompt: string): Promise<string> {
   if (!API_KEY || API_KEY === "REPLACE_WITH_GEMINI_API_KEY") {
     throw new Error("GEMINI_API_KEY chưa được cấu hình.");
   }
   
-  try {
-    const model = genAI.getGenerativeModel({ 
-      model: "gemini-3.8-flash",
-    });
-    
-    const result = await model.generateContent({
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.4,
-        topP: 0.95,
-        maxOutputTokens: 2048,
-      },
-    });
-    
-    const response = result.response;
-    return response.text();
-  } catch (error) {
-    console.error("[gemini] Error:", error);
-    if (error instanceof Error) {
-      // Log chi tiết để debug
-      console.error("[gemini] Error message:", error.message);
-      throw new Error(`Lỗi AI: ${error.message}`);
+  let lastError: unknown;
+
+  for (const modelName of MODEL_CANDIDATES) {
+    try {
+      const model = genAI.getGenerativeModel({ model: modelName });
+      const result = await model.generateContent({
+        contents: [{ role: "user", parts: [{ text: prompt }] }],
+        generationConfig: {
+          temperature: 0.4,
+          topP: 0.95,
+          maxOutputTokens: 2048,
+          responseMimeType: "application/json",
+        },
+      });
+
+      return result.response.text();
+    } catch (error) {
+      lastError = error;
+      console.error(`[gemini] Model ${modelName} failed:`, error);
     }
-    throw new Error("Không thể kết nối AI. Thử lại sau.");
   }
+
+  if (lastError instanceof Error) {
+    throw new Error(`Lỗi AI: ${lastError.message}`);
+  }
+  throw new Error("Không thể kết nối AI. Thử lại sau.");
 }
 
 // ─── Prompts chuẩn cho từng tính năng ────────────────────────────────────────
