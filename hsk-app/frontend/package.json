@@ -7,11 +7,11 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "npm run prisma:generate && prisma db push --schema=../backend/prisma/schema.prisma && next build",
+    "build": "npm run prisma:generate && next build",
     "start": "next start",
     "lint": "next lint",
     "prisma:generate": "cd ../backend && npx prisma generate && cd ../frontend && npm run prisma:sync",
-    "prisma:sync": "node -e \"require('fs-extra').copySync('../backend/node_modules/.prisma', 'node_modules/.prisma'); require('fs-extra').copySync('../backend/node_modules/@prisma/client', 'node_modules/@prisma/client');\"",
+    "prisma:sync": "node scripts/syncPrisma.mjs",
     "process-data": "node scripts/processData.mjs",
     "translate-vi": "node scripts/translateVi.mjs",
     "process-grammar": "node scripts/processGrammar.mjs",
