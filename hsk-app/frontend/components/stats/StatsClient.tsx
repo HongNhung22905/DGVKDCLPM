@@ -106,7 +106,7 @@ export default function StatsClient() {
   const [daily,   setDaily]   = useState<DailyRecord[]>([]);
   const [stats,   setStats]   = useState<Stats | null>(null);
   const [range,   setRange]   = useState<17 | 26 | 52>(17); // tuần
-  const [hovered, setHovered] = useState<(typeof daily)[0] & { x: number; y: number } | null>(null);
+  const [hovered, setHovered] = useState<{ date: string; cards: number; score: number; sessions: number; durationSec: number; x: number; y: number } | null>(null);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {

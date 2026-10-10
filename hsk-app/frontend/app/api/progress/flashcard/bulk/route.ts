@@ -30,17 +30,12 @@ export async function POST(req: NextRequest) {
     }
 
     // Prisma không có upsertMany, dùng transaction
-    const ops = body.cards.map((c) =>
+    // Destructure bỏ userId ra khỏi c để tránh body ghi đè userId từ token
+    const ops = body.cards.map(({ wordId, easeFactor, interval, repetitions, nextReview, lastReview }) =>
       prisma.flashcardCard.upsert({
-        where: { userId_wordId: { userId, wordId: c.wordId } },
-        create: { userId, ...c },
-        update: {
-          easeFactor: c.easeFactor,
-          interval: c.interval,
-          repetitions: c.repetitions,
-          nextReview: c.nextReview,
-          lastReview: c.lastReview,
-        },
+        where: { userId_wordId: { userId, wordId } },
+        create: { userId, wordId, easeFactor, interval, repetitions, nextReview, lastReview },
+        update: { easeFactor, interval, repetitions, nextReview, lastReview },
       })
     );
 

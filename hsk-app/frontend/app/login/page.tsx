@@ -4,35 +4,41 @@ import { useState, FormEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/components/auth/AuthProvider";
-import { Eye, EyeOff, LogIn, BookOpen, Loader2 } from "lucide-react";
+import { Eye, EyeOff, LogIn, BookOpen, Loader2, CheckCircle } from "lucide-react";
 
 export default function LoginPage() {
-  const { login, user } = useAuth();
-  const router          = useRouter();
+  const { login } = useAuth();
+  const router    = useRouter();
 
   const [email,    setEmail]    = useState("");
   const [password, setPassword] = useState("");
   const [showPwd,  setShowPwd]  = useState(false);
   const [error,    setError]    = useState("");
   const [loading,  setLoading]  = useState(false);
+  const [success,  setSuccess]  = useState(false);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setError("");
     setLoading(true);
     try {
-      console.log("[login] attempting with:", email);
       const res = await login(email, password);
-      console.log("[login] result:", res);
       if (res.error) {
         setError(res.error);
+        setLoading(false);
         return;
       }
-      router.replace("/vocabulary");
+      // Hiện thông báo thành công trước khi chuyển trang
+      setSuccess(true);
+      // Redirect về trang trước đó hoặc về vocabulary
+      const redirectTo = typeof window !== "undefined" 
+        ? sessionStorage.getItem("redirect_after_login") || "/vocabulary"
+        : "/vocabulary";
+      if (typeof window !== "undefined") sessionStorage.removeItem("redirect_after_login");
+      setTimeout(() => router.replace(redirectTo), 800);
     } catch (err) {
       console.error("[login] caught:", err);
       setError("Đã có lỗi xảy ra. Thử lại sau.");
-    } finally {
       setLoading(false);
     }
   };
@@ -117,15 +123,24 @@ export default function LoginPage() {
             </p>
           )}
 
+          {/* Success */}
+          {success && (
+            <div className="flex items-center gap-2 text-xs rounded-xl px-3 py-2"
+              style={{ color: "#059669", background: "rgba(5,150,105,0.08)", border: "1px solid rgba(5,150,105,0.25)" }}>
+              <CheckCircle size={14} />
+              Đăng nhập thành công! Đang chuyển trang...
+            </div>
+          )}
+
           {/* Submit */}
           <button
             type="submit"
-            disabled={loading}
+            disabled={loading || success}
             className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-all hover:brightness-110 disabled:opacity-60 disabled:cursor-not-allowed"
-            style={{ background: "linear-gradient(135deg,#B45309,#D97706)" }}
+            style={{ background: success ? "linear-gradient(135deg,#059669,#047857)" : "linear-gradient(135deg,#B45309,#D97706)" }}
           >
-            {loading ? <Loader2 size={16} className="animate-spin" /> : <LogIn size={16} />}
-            {loading ? "Đang đăng nhập..." : "Đăng nhập"}
+            {loading || success ? <Loader2 size={16} className="animate-spin" /> : <LogIn size={16} />}
+            {success ? "Đang chuyển trang..." : loading ? "Đang đăng nhập..." : "Đăng nhập"}
           </button>
         </form>
 

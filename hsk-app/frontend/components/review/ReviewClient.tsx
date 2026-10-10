@@ -18,6 +18,7 @@ const P = {
   surface:     "#FFF8D6",
   surfaceH:    "#FFF3B0",
   border:      "#E8D98A",
+  borderLight: "#F0E9B8",
   text:        "#1C1408",
   textMuted:   "#78614A",
   textFaint:   "#A8956A",
@@ -493,7 +494,7 @@ function SummaryScreen({
               </p>
             </div>
 
-            <div className="divide-y" style={{ borderColor: P.borderLight ?? P.border }}>
+            <div className="divide-y" style={{ borderColor: P.borderLight }}>
               {wrongCards.map(card => (
                 <div key={card.wordId} className="px-4 py-3 flex items-center gap-3"
                   style={{ background: P.surface }}>

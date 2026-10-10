@@ -4,11 +4,11 @@ import { useState, FormEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/components/auth/AuthProvider";
-import { Eye, EyeOff, UserPlus, BookOpen, Loader2 } from "lucide-react";
+import { Eye, EyeOff, UserPlus, BookOpen, Loader2, CheckCircle } from "lucide-react";
 
 export default function RegisterPage() {
-  const { register, user } = useAuth();
-  const router             = useRouter();
+  const { register } = useAuth();
+  const router       = useRouter();
 
   const [name,     setName]     = useState("");
   const [email,    setEmail]    = useState("");
@@ -16,6 +16,7 @@ export default function RegisterPage() {
   const [showPwd,  setShowPwd]  = useState(false);
   const [error,    setError]    = useState("");
   const [loading,  setLoading]  = useState(false);
+  const [success,  setSuccess]  = useState(false);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -24,13 +25,17 @@ export default function RegisterPage() {
     setLoading(true);
     try {
       const res = await register(name, email, password);
-      if (res.error) { setError(res.error); return; }
-      // Đăng ký thành công → chuyển sang trang đăng nhập
-      router.replace("/login");
+      if (res.error) {
+        setError(res.error);
+        setLoading(false);
+        return;
+      }
+      // Hiện thông báo thành công rồi chuyển về từ vựng (đã có session)
+      setSuccess(true);
+      setTimeout(() => router.replace("/vocabulary"), 1000);
     } catch (err) {
       console.error("[register]", err);
       setError("Đã có lỗi xảy ra. Thử lại sau.");
-    } finally {
       setLoading(false);
     }
   };
@@ -141,15 +146,24 @@ export default function RegisterPage() {
             </p>
           )}
 
+          {/* Success */}
+          {success && (
+            <div className="flex items-center gap-2 text-xs rounded-xl px-3 py-2"
+              style={{ color: "#059669", background: "rgba(5,150,105,0.08)", border: "1px solid rgba(5,150,105,0.25)" }}>
+              <CheckCircle size={14} />
+              Tạo tài khoản thành công! Đang chuyển trang...
+            </div>
+          )}
+
           {/* Submit */}
           <button
             type="submit"
-            disabled={loading}
+            disabled={loading || success}
             className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-all hover:brightness-110 disabled:opacity-60 disabled:cursor-not-allowed"
-            style={{ background: "linear-gradient(135deg,#B45309,#D97706)" }}
+            style={{ background: success ? "linear-gradient(135deg,#059669,#047857)" : "linear-gradient(135deg,#B45309,#D97706)" }}
           >
-            {loading ? <Loader2 size={16} className="animate-spin" /> : <UserPlus size={16} />}
-            {loading ? "Đang tạo tài khoản..." : "Tạo tài khoản"}
+            {loading || success ? <Loader2 size={16} className="animate-spin" /> : <UserPlus size={16} />}
+            {success ? "Đang chuyển trang..." : loading ? "Đang tạo tài khoản..." : "Tạo tài khoản"}
           </button>
 
           <p className="text-center text-xs pt-1" style={{ color: "#A8956A" }}>

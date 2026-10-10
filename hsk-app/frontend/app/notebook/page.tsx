@@ -1,4 +1,5 @@
 import NotebookClient from "@/components/vocabulary/NotebookClient";
+import ProtectedRoute from "@/components/auth/ProtectedRoute";
 
 export const metadata = {
   title: "Sổ tay – HSK Vocabulary",
@@ -6,5 +7,9 @@ export const metadata = {
 };
 
 export default function NotebookPage() {
-  return <NotebookClient />;
+  return (
+    <ProtectedRoute>
+      <NotebookClient />
+    </ProtectedRoute>
+  );
 }

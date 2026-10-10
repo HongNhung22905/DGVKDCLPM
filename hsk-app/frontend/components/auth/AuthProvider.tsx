@@ -150,6 +150,7 @@ export function AuthProvider({
   }, []);
 
   const login = useCallback(async (email: string, password: string) => {
+    console.log("[AuthProvider] login start", { email });
     try {
       const r = await fetch("/api/auth/login", {
         method: "POST",
@@ -157,21 +158,29 @@ export function AuthProvider({
         credentials: "include",
         body: JSON.stringify({ email, password }),
       });
+      console.log("[AuthProvider] login response status", r.status, r.ok);
       const data = await r.json() as { user?: AuthUser; error?: string };
-      if (!r.ok) return { error: data.error ?? "Đăng nhập thất bại." };
+      console.log("[AuthProvider] login data", data);
+      if (!r.ok) {
+        console.log("[AuthProvider] login failed", data.error);
+        return { error: data.error ?? "Đăng nhập thất bại." };
+      }
       if (data.user) {
+        console.log("[AuthProvider] setting user", data.user);
         setUser(data.user);
         // Sync localStorage → DB sau 1s (tránh conflict với navigation)
         setTimeout(() => { syncLocalStorageToDB().catch(() => {}); }, 1000);
       }
+      console.log("[AuthProvider] login success, returning empty error");
       return {};
     } catch (e) {
-      console.error("[login]", e);
+      console.error("[AuthProvider] login exception", e);
       return { error: "Không thể kết nối server. Thử lại sau." };
     }
   }, []);
 
   const register = useCallback(async (name: string, email: string, password: string) => {
+    console.log("[AuthProvider] register start", { name, email });
     try {
       const r = await fetch("/api/auth/register", {
         method: "POST",
@@ -179,16 +188,23 @@ export function AuthProvider({
         credentials: "include",
         body: JSON.stringify({ name, email, password }),
       });
+      console.log("[AuthProvider] register response status", r.status, r.ok);
       const data = await r.json() as { user?: AuthUser; error?: string };
-      if (!r.ok) return { error: data.error ?? "Đăng ký thất bại." };
+      console.log("[AuthProvider] register data", data);
+      if (!r.ok) {
+        console.log("[AuthProvider] register failed", data.error);
+        return { error: data.error ?? "Đăng ký thất bại." };
+      }
       if (data.user) {
+        console.log("[AuthProvider] setting user", data.user);
         setUser(data.user);
         // Sync localStorage → DB sau 1s
         setTimeout(() => { syncLocalStorageToDB().catch(() => {}); }, 1000);
       }
+      console.log("[AuthProvider] register success, returning empty error");
       return {};
     } catch (e) {
-      console.error("[register]", e);
+      console.error("[AuthProvider] register exception", e);
       return { error: "Không thể kết nối server. Thử lại sau." };
     }
   }, []);
@@ -198,6 +214,14 @@ export function AuthProvider({
       // Xóa JWT cookie ở server
       await fetch("/api/auth/logout", { method: "POST", credentials: "include" });
     } catch { /* offline — vẫn clear client */ }
+    // Xóa dữ liệu localStorage của tài khoản hiện tại để tránh lẫn
+    // dữ liệu với tài khoản khác đăng nhập sau
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("hsk_progress");
+      localStorage.removeItem("hsk_lesson_progress");
+      localStorage.removeItem("hsk_gate_v1");
+      localStorage.removeItem("hsk_notebook_v1");
+    }
     setUser(null);
     router.push("/");
   }, [router]);

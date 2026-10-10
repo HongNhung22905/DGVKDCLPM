@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { loadLessonProgress, loadProgress, loadGateStore } from "@/lib/hskData";
 import { useAuth } from "@/components/auth/AuthProvider";
+import ProtectedRoute from "@/components/auth/ProtectedRoute";
 import { BarChart2, BookOpen, Zap, Trophy, Home } from "lucide-react";
 
 const P = {
@@ -107,7 +108,8 @@ export default function ProgressPage() {
   if (!mounted) return null;
 
   return (
-    <div className="min-h-screen" style={{ background: P.bg }}>
+    <ProtectedRoute>
+      <div className="min-h-screen" style={{ background: P.bg }}>
       {/* Header */}
       <div className="relative overflow-hidden"
         style={{ background: "linear-gradient(135deg,#FFF3B0,#FFFBEA,#FFF8D6)" }}>
@@ -223,5 +225,6 @@ export default function ProgressPage() {
         )}
       </div>
     </div>
+    </ProtectedRoute>
   );
 }

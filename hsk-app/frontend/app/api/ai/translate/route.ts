@@ -12,8 +12,18 @@ export async function POST(req: NextRequest) {
   const userId = getUserIdFromRequest(req);
   const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
 
-  if (!userId) {
-    const today = new Date(); today.setHours(0, 0, 0, 0);
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  if (userId) {
+    const count = await prisma.aiSession.count({
+      where: { userId, createdAt: { gte: today } },
+    });
+    if (count >= DAILY_LIMIT) {
+      return NextResponse.json(
+        { error: `Đã đạt giới hạn ${DAILY_LIMIT} lượt AI/ngày.` },
+        { status: 429 }
+      );
+    }
+  } else {
     const count = await prisma.aiSession.count({
       where: { input: { startsWith: `__ip__${ip}` }, createdAt: { gte: today } },
     });
@@ -36,11 +46,21 @@ export async function POST(req: NextRequest) {
 
   try {
     const raw = await generateText(PROMPTS.translation(original, userTranslation, direction));
-    const result = JSON.parse(raw.replace(/```json|```/g, "").trim());
+    
+    // Strip markdown code blocks and extra text
+    let cleaned = raw.replace(/```json\s*/g, "").replace(/```\s*/g, "").trim();
+    
+    // Try to extract JSON if there's extra text before/after
+    const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      cleaned = jsonMatch[0];
+    }
+    
+    const result = JSON.parse(cleaned);
 
     await prisma.aiSession.create({
       data: {
-        userId: userId ?? `__ip__${ip}__`,
+        userId: userId ?? null,
         type: "translation",
         input: userId ? original : `__ip__${ip}__${original}`,
         output: raw,

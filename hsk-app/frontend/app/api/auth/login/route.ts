@@ -15,15 +15,13 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Vui lòng nhập email và mật khẩu." }, { status: 400 });
     }
 
-    // Luôn so sánh lowercase — tìm case-insensitive qua raw SQL
+    // Luôn so sánh lowercase — tìm case-insensitive qua Prisma
     const normalizedEmail = email.toLowerCase().trim();
 
-    // MySQL: LOWER() để tìm bất kể DB lưu hoa/thường
-    const users = await prisma.$queryRaw<{ id: string; name: string; email: string; passwordHash: string }[]>`
-      SELECT id, name, email, passwordHash FROM User WHERE LOWER(email) = ${normalizedEmail} LIMIT 1
-    `;
-
-    const user = users[0] ?? null;
+    const user = await prisma.user.findFirst({
+      where: { email: { equals: normalizedEmail, mode: "insensitive" } },
+      select: { id: true, name: true, email: true, passwordHash: true },
+    });
 
     if (!user) {
       return NextResponse.json({ error: "Email hoặc mật khẩu không đúng." }, { status: 401 });

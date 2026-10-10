@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BookText, ChevronRight } from "lucide-react";
+import ProtectedRoute from "@/components/auth/ProtectedRoute";
 
 export const metadata = { title: "Ngữ pháp | HSK 3.0" };
 
@@ -14,7 +15,8 @@ const LEVELS = [
 
 export default function GrammarPage() {
   return (
-    <div className="min-h-[calc(100vh-48px)] px-4 py-10" style={{ background: "#FFFBEA" }}>
+    <ProtectedRoute>
+      <div className="min-h-[calc(100vh-48px)] px-4 py-10" style={{ background: "#FFFBEA" }}>
       <style>{`
         .grammar-level-link {
           border-color: #E8D98A;
@@ -85,5 +87,6 @@ export default function GrammarPage() {
         </div>
       </div>
     </div>
+    </ProtectedRoute>
   );
 }

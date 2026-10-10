@@ -1,4 +1,5 @@
 import SearchClient from "@/components/vocabulary/SearchClient";
+import ProtectedRoute from "@/components/auth/ProtectedRoute";
 
 export const metadata = {
   title: "Tra từ – HSK Vocabulary",
@@ -12,5 +13,9 @@ interface Props {
 export default async function SearchPage({ searchParams }: Props) {
   const params = await searchParams;
   const initialQuery = params.q ?? "";
-  return <SearchClient initialQuery={initialQuery} />;
+  return (
+    <ProtectedRoute>
+      <SearchClient initialQuery={initialQuery} />
+    </ProtectedRoute>
+  );
 }

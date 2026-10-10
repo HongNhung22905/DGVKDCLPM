@@ -9,6 +9,7 @@ import {
   isLessonUnlocked, isSetUnlocked, getGateEntry, getSetForLesson,
   PASS_THRESHOLD,
 } from "@/lib/hskData";
+import { useAuth } from "@/components/auth/AuthProvider";
 import {
   Zap, BarChart2, Clock, Volume2, BookOpen,
   ClipboardCheck, Flame, PenTool, Gamepad2, Home,
@@ -112,24 +113,57 @@ const P = {
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function VocabularyClient({ levels }: Props) {
+  const { user } = useAuth();
   const [selectedLevel, setSelectedLevel] = useState<number | null>(null);
   const [progress, setProgress]   = useState<Record<string, LessonProgressEntry>>({});
   const [gateStore, setGateStore] = useState<GateStore>({});
   const lessonsRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    setProgress(loadLessonProgress());
-    setGateStore(loadGateStore());
-  }, []);
-
-  useEffect(() => {
-    const onFocus = () => {
+  // Load progress: từ DB nếu đã đăng nhập, từ localStorage nếu chưa
+  const loadProgress = async () => {
+    if (user) {
+      try {
+        const [lessonRes, gateRes] = await Promise.all([
+          fetch("/api/progress/lesson", { credentials: "include" }),
+          fetch("/api/progress/gate",   { credentials: "include" }),
+        ]);
+        if (lessonRes.ok) {
+          const data = await lessonRes.json() as { lessons: { lessonId: string; completed: boolean; score: number | null; completedAt: string | null }[] };
+          const map: Record<string, LessonProgressEntry> = {};
+          for (const l of data.lessons) map[l.lessonId] = { completed: l.completed, score: l.score ?? undefined };
+          setProgress(map);
+        }
+        if (gateRes.ok) {
+          const data = await gateRes.json() as { gates: { setId: string; passed: boolean; score: number; attempts: number; lastAttemptAt: string }[] };
+          const map: GateStore = {};
+          for (const g of data.gates) map[g.setId] = {
+            passed: g.passed,
+            score: g.score,
+            attempts: g.attempts,
+            lastAttemptAt: g.lastAttemptAt,
+          };
+          setGateStore(map);
+        }
+      } catch {
+        // fallback localStorage
+        setProgress(loadLessonProgress());
+        setGateStore(loadGateStore());
+      }
+    } else {
       setProgress(loadLessonProgress());
       setGateStore(loadGateStore());
-    };
+    }
+  };
+
+  useEffect(() => {
+    loadProgress();
+  }, [user]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    const onFocus = () => { loadProgress(); };
     window.addEventListener("focus", onFocus);
     return () => window.removeEventListener("focus", onFocus);
-  }, []);
+  }, [user]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const totalLessons = levels.reduce((a, lv) => a + lv.totalLessons, 0);
   const totalWords   = levels.reduce((a, lv) => a + lv.totalLessons * lv.wordsPerLesson, 0);

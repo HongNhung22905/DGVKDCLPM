@@ -1,4 +1,5 @@
 import AiTutorClient from "@/components/ai/AiTutorClient";
+import ProtectedRoute from "@/components/auth/ProtectedRoute";
 
 export const metadata = {
   title: "Gia sư AI | HSK 3.0",
@@ -6,5 +7,9 @@ export const metadata = {
 };
 
 export default function AiTutorPage() {
-  return <AiTutorClient />;
+  return (
+    <ProtectedRoute>
+      <AiTutorClient />
+    </ProtectedRoute>
+  );
 }

@@ -196,14 +196,14 @@ model WrongWord {
 
 model AiSession {
   id        String   @id @default(cuid())
-  userId    String
+  userId    String?
   type      String   // "pronunciation" | "grammar" | "translation" | "explain"
   input     String   @db.Text
   output    String   @db.Text
   tokens    Int      @default(0)
   createdAt DateTime @default(now())
 
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
   @@index([userId, type])
