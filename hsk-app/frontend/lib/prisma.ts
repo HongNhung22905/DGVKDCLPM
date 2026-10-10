@@ -1,9 +1,11 @@
-/**
+﻿/**
  * Prisma Client singleton
  * PERF: dùng globalThis để tái sử dụng connection qua hot-reload trong dev.
  * Trong prod mỗi process chỉ tạo 1 instance.
+ * 
+ * NOTE: Import from backend node_modules since schema is in backend/prisma/
  */
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "../../backend/node_modules/@prisma/client";
 
 declare global {
   // eslint-disable-next-line no-var
