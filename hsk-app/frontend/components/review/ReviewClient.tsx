@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import type { Word } from "@/types/hsk";
 import type { SM2Card, SM2Quality } from "@/lib/hskData";
-import { sm2Update, loadProgress, saveProgress } from "@/lib/hskData";
+import { sm2Update, loadProgress, saveProgress, localDateKey } from "@/lib/hskData";
 import { useAuth } from "@/components/auth/AuthProvider";
 import Link from "next/link";
 import {
@@ -45,11 +45,13 @@ function getToneStyle(pinyin: string): string {
 }
 
 // ─── Main Component ───────────────────────────────────────────────────────────
-export default function ReviewClient({ today }: { today: string }) {
+export default function ReviewClient({ today: _today }: { today: string }) {
   const { user } = useAuth();
+  const [effectiveToday] = useState(() => localDateKey());
 
   // Queue ban đầu — các từ cần ôn hôm nay
   const [originalCards, setOriginalCards] = useState<ReviewCard[]>([]);
+  const [gameCards, setGameCards] = useState<ReviewCard[]>([]);
   // Queue đang chạy (bao gồm từ thêm lại khi sai)
   const [queue, setQueue]   = useState<ReviewCard[]>([]);
   const [index, setIndex]   = useState(0);
@@ -64,27 +66,32 @@ export default function ReviewClient({ today }: { today: string }) {
   useEffect(() => {
     async function load() {
       let due: SM2Card[] = [];
+      let learned: SM2Card[] = [];
+      let loadedFromDatabase = false;
 
       if (user) {
         try {
-          const res = await fetch("/api/review", { credentials: "include" });
+          const res = await fetch(`/api/review?date=${effectiveToday}`, { credentials: "include" });
           if (res.ok) {
-            const data = await res.json() as { cards: SM2Card[] };
+            const data = await res.json() as { cards: SM2Card[]; allCards: SM2Card[] };
             due = data.cards ?? [];
+            learned = data.allCards ?? [];
+            loadedFromDatabase = true;
           }
         } catch { /* fallback */ }
       }
 
-      if (due.length === 0) {
+      if (!loadedFromDatabase) {
         const store = loadProgress();
-        due = Object.values(store).filter(c => c.nextReview <= today);
+        learned = Object.values(store);
+        due = learned.filter(c => c.nextReview <= effectiveToday);
       }
 
-      if (due.length === 0) { setLoaded(true); return; }
+      if (learned.length === 0) { setLoaded(true); return; }
 
       // Resolve words từ JSON
       const levelSet = new Set<number>();
-      for (const c of due) {
+      for (const c of learned) {
         const m = c.wordId.match(/^new-(\d+)-/);
         if (m) levelSet.add(parseInt(m[1]));
       }
@@ -100,17 +107,20 @@ export default function ReviewClient({ today }: { today: string }) {
         } catch { /**/ }
       }
 
-      const cards: ReviewCard[] = due
+      const toReviewCards = (source: SM2Card[]) => source
         .map(c => { const word = merged.get(c.wordId); return word ? { ...c, word } : null; })
-        .filter((c): c is ReviewCard => c !== null)
-        .slice(0, 50);
+        .filter((c): c is ReviewCard => c !== null);
+
+      const cards = toReviewCards(due).slice(0, 50);
+      const availableGameCards = toReviewCards(learned).slice(0, 100);
 
       setOriginalCards(cards);
       setQueue(cards);
+      setGameCards(availableGameCards);
       setLoaded(true);
     }
     void load();
-  }, [today, user]);
+  }, [effectiveToday, user]);
 
   const playAudio = useCallback((word: Word) => {
     if ("speechSynthesis" in window) {
@@ -190,7 +200,7 @@ export default function ReviewClient({ today }: { today: string }) {
           headers: { "Content-Type": "application/json" },
           credentials: "include",
           body: JSON.stringify({
-            date:         today,
+            date:         effectiveToday,
             totalCards:   total,
             correctCards: correct,
             score:        total > 0 ? Math.round((correct / total) * 100) : 0,
@@ -211,10 +221,12 @@ export default function ReviewClient({ today }: { today: string }) {
     );
   }
 
-  if (originalCards.length === 0) return <EmptyState today={today} />;
-
   if (phase === "game") {
-    return <ReviewGame cards={originalCards} onExit={() => setPhase("studying")} />;
+    return <ReviewGame cards={gameCards} onExit={() => setPhase("studying")} />;
+  }
+
+  if (originalCards.length === 0) {
+    return <EmptyState today={effectiveToday} gameCount={gameCards.length} onPlayGame={() => setPhase("game")} />;
   }
 
   if (phase === "summary") {
@@ -225,7 +237,7 @@ export default function ReviewClient({ today }: { today: string }) {
         total={originalCards.length}
         correctCount={correctCount}
         wrongCards={wrongCards}
-        today={today}
+        today={effectiveToday}
         onRestart={() => {
           setQueue([...originalCards]);
           setIndex(0);
@@ -271,7 +283,7 @@ export default function ReviewClient({ today }: { today: string }) {
             <div className="flex items-center gap-2">
               <Brain size={16} style={{ color: "#7C3AED" }} />
               <span className="text-sm font-semibold" style={{ color: P.text }}>Ôn tập hôm nay</span>
-              <span className="text-xs" style={{ color: P.textFaint }}>{today}</span>
+              <span className="text-xs" style={{ color: P.textFaint }}>{effectiveToday}</span>
             </div>
             {/* % tiến độ thực tế */}
             <span className="text-sm font-bold" style={{ color: "#7C3AED" }}>
@@ -658,7 +670,13 @@ function SummaryScreen({
 }
 
 // ─── Empty State ──────────────────────────────────────────────────────────────
-function EmptyState({ today }: { today: string }) {
+function EmptyState({
+  today, gameCount, onPlayGame,
+}: {
+  today: string;
+  gameCount: number;
+  onPlayGame: () => void;
+}) {
   return (
     <div className="min-h-[calc(100vh-48px)] flex flex-col items-center justify-center px-4 py-12"
       style={{ background: P.bg }}>
@@ -670,6 +688,13 @@ function EmptyState({ today }: { today: string }) {
           Không có từ nào cần ôn hôm nay ({today}).
           <br />Hãy học bài mới để thêm từ vào lịch ôn tập.
         </p>
+        {gameCount > 0 && (
+          <button onClick={onPlayGame}
+            className="mb-3 w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-all hover:brightness-110"
+            style={{ background: "linear-gradient(135deg,#7C3AED,#B45309)" }}>
+            <Gamepad2 size={16} /> Chơi game với {gameCount} từ đã học
+          </button>
+        )}
         <Link href="/vocabulary"
           className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold text-white transition-all hover:brightness-110"
           style={{ background: "linear-gradient(135deg,#B45309,#D97706)" }}>

@@ -18,9 +18,12 @@ export async function GET(req: NextRequest) {
   if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
 
   const limit = parseInt(req.nextUrl.searchParams.get("limit") ?? "50");
-  const today = new Date().toISOString().split("T")[0]; // "2026-10-06"
+  const requestedDate = req.nextUrl.searchParams.get("date");
+  const today = requestedDate && /^\d{4}-\d{2}-\d{2}$/.test(requestedDate)
+    ? requestedDate
+    : new Date().toISOString().split("T")[0];
 
-  const [dueCards, totalCards] = await prisma.$transaction([
+  const [dueCards, allCards] = await prisma.$transaction([
     prisma.flashcardCard.findMany({
       where: { userId, nextReview: { lte: today } },
       orderBy: { nextReview: "asc" },
@@ -30,13 +33,22 @@ export async function GET(req: NextRequest) {
         repetitions: true, nextReview: true, lastReview: true,
       },
     }),
-    prisma.flashcardCard.count({ where: { userId } }),
+    prisma.flashcardCard.findMany({
+      where: { userId },
+      orderBy: { updatedAt: "desc" },
+      take: 100,
+      select: {
+        wordId: true, easeFactor: true, interval: true,
+        repetitions: true, nextReview: true, lastReview: true,
+      },
+    }),
   ]);
 
   return NextResponse.json({
     today,
     dueCount: dueCards.length,
-    totalCards,
+    totalCards: allCards.length,
     cards: dueCards,
+    allCards,
   });
 }

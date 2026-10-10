@@ -5,7 +5,7 @@ import type { Lesson, Word } from "@/types/hsk";
 import type { SM2Card, SM2Quality } from "@/lib/hskData";
 import {
   sm2Update, createNewCard, loadProgress, saveProgress,
-  markLessonCompleted, syncLessonProgressToDB,
+  markLessonCompleted, syncLessonProgressToDB, localDateKey,
 } from "@/lib/hskData";
 import ProgressBar from "@/components/ui/ProgressBar";
 import { Volume2, RotateCcw, CheckCircle, Home } from "lucide-react";
@@ -52,23 +52,23 @@ export default function FlashcardClient({ lesson }: Props) {
   const [flipped, setFlipped]       = useState(false);
   const [sessionState, setSessionState] = useState<SessionState>("studying");
   const [sessionStats, setSessionStats] = useState({ reviewed: 0, correct: 0 });
+  const [loaded, setLoaded]             = useState(false);
 
   useEffect(() => {
     const saved = loadProgress();
     setCards(saved);
-    const today = new Date().toISOString().split("T")[0];
+    const today = localDateKey();
     const toReview = lesson.words.filter(w => {
       const c = saved[w.id];
       return !c || c.nextReview <= today;
     });
-    const queue = toReview.length > 0 ? toReview : [...lesson.words];
-    setQueue(queue);
+    setQueue(toReview);
 
     // Tạo sẵn card mới (nextReview = today) cho tất cả từ chưa có card
     // → đảm bảo trang /review nhận ra bài này sau khi học xong hôm nay
     const newCards: Record<string, SM2Card> = { ...saved };
     let hasNew = false;
-    for (const w of queue) {
+    for (const w of toReview) {
       if (!newCards[w.id]) {
         newCards[w.id] = createNewCard(w.id);
         hasNew = true;
@@ -88,6 +88,7 @@ export default function FlashcardClient({ lesson }: Props) {
         }).catch(() => {});
       }
     }
+    setLoaded(true);
   }, [lesson.words]);
 
   const currentWord = queue[currentIndex];
@@ -114,7 +115,11 @@ export default function FlashcardClient({ lesson }: Props) {
     setSessionStats(s => ({ reviewed: s.reviewed + 1, correct: s.correct + (isCorrect ? 1 : 0) }));
     setFlipped(false);
 
-    if (currentIndex + 1 >= queue.length) {
+    const alreadyQueued = queue.slice(currentIndex + 1).some(word => word.id === currentWord.id);
+    const shouldRepeat = !isCorrect && !alreadyQueued;
+    if (shouldRepeat) setQueue(currentQueue => [...currentQueue, currentWord]);
+
+    if (currentIndex + 1 >= queue.length + (shouldRepeat ? 1 : 0)) {
       const correct = sessionStats.correct + (isCorrect ? 1 : 0);
       const score = Math.round((correct / queue.length) * 100);
       markLessonCompleted(lesson.id, score);
@@ -145,6 +150,19 @@ export default function FlashcardClient({ lesson }: Props) {
         score={score}
         onRestart={handleRestart}
       />
+    );
+  }
+
+  if (loaded && !currentWord) {
+    return (
+      <div className="min-h-[calc(100vh-48px)] flex items-center justify-center px-4" style={{ background: P.bg }}>
+        <div className="max-w-sm w-full rounded-2xl border p-7 text-center" style={{ background: P.surface, borderColor: P.border }}>
+          <CheckCircle size={42} className="mx-auto mb-3" style={{ color: "#059669" }} />
+          <h2 className="text-xl font-bold" style={{ color: P.text }}>Chưa đến lịch ôn</h2>
+          <p className="my-3 text-sm" style={{ color: P.textMuted }}>Các từ trong bài này đã được lên lịch cho ngày tiếp theo.</p>
+          <Link href="/review" className="inline-flex rounded-xl px-4 py-2.5 text-sm font-semibold text-white" style={{ background: "#7C3AED" }}>Xem lịch ôn tập</Link>
+        </div>
+      </div>
     );
   }
 

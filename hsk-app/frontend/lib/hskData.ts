@@ -17,8 +17,21 @@ export interface SM2Card {
 
 export type SM2Quality = 0 | 1 | 2 | 3 | 4 | 5;
 
+/** Date key theo múi giờ của người học, tránh lệch ngày do toISOString() dùng UTC. */
+export function localDateKey(date = new Date()): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function addDays(dateKey: string, days: number): string {
+  const [year, month, day] = dateKey.split("-").map(Number);
+  return localDateKey(new Date(year, month - 1, day + days, 12));
+}
+
 export function sm2Update(card: SM2Card, quality: SM2Quality): SM2Card {
-  const today = new Date();
+  const today = localDateKey();
   let { easeFactor, interval, repetitions } = card;
 
   if (quality >= 3) {
@@ -36,21 +49,18 @@ export function sm2Update(card: SM2Card, quality: SM2Quality): SM2Card {
     easeFactor + 0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)
   );
 
-  const nextReview = new Date(today);
-  nextReview.setDate(nextReview.getDate() + interval);
-
   return {
     wordId: card.wordId,
     easeFactor: Math.round(easeFactor * 100) / 100,
     interval,
     repetitions,
-    nextReview: nextReview.toISOString().split("T")[0],
-    lastReview: today.toISOString().split("T")[0],
+    nextReview: addDays(today, interval),
+    lastReview: today,
   };
 }
 
 export function createNewCard(wordId: string): SM2Card {
-  const today = new Date().toISOString().split("T")[0];
+  const today = localDateKey();
   return {
     wordId,
     easeFactor: 2.5,
