@@ -102,6 +102,15 @@ export default function FlashcardClient({ lesson }: Props) {
     }
   };
 
+  useEffect(() => {
+    if (!currentWord || sessionState !== "studying") return;
+    const timer = window.setTimeout(() => playAudio(currentWord), 150);
+    return () => {
+      window.clearTimeout(timer);
+      window.speechSynthesis?.cancel();
+    };
+  }, [currentWord?.id, sessionState]);
+
   const handleRate = useCallback((quality: SM2Quality) => {
     if (!currentWord) return;
     const existing = cards[currentWord.id] ?? createNewCard(currentWord.id);

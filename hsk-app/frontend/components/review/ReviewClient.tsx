@@ -25,7 +25,7 @@ const P = {
 };
 
 interface ReviewCard extends SM2Card { word: Word; }
-type ReviewGameMode = "meaning" | "pinyin" | "hanzi";
+type ReviewGameMode = "meaning" | "pinyin" | "hanzi" | "typing";
 
 function shuffle<T>(items: T[]): T[] {
   const result = [...items];
@@ -131,6 +131,16 @@ export default function ReviewClient({ today: _today }: { today: string }) {
       window.speechSynthesis.speak(utt);
     }
   }, []);
+
+  useEffect(() => {
+    const current = queue[index];
+    if (!loaded || phase !== "studying" || !current) return;
+    const timer = window.setTimeout(() => playAudio(current.word), 150);
+    return () => {
+      window.clearTimeout(timer);
+      window.speechSynthesis?.cancel();
+    };
+  }, [index, loaded, phase, queue, playAudio]);
 
   const openGame = useCallback((cards: ReviewCard[]) => {
     if (cards.length === 0) return;
@@ -356,7 +366,7 @@ export default function ReviewClient({ today: _today }: { today: string }) {
             <p className="text-xs text-center mb-3" style={{ color: P.textFaint }}>
               Bạn nhớ tốt đến mức nào?
             </p>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-2 gap-3">
               {QUALITY_CONFIG.map(({ quality, label, desc, color, bg }) => (
                 <button key={quality}
                   onClick={e => { e.stopPropagation(); handleRate(quality); }}
@@ -391,6 +401,7 @@ function ReviewGame({ cards, onExit }: { cards: ReviewCard[]; onExit: () => void
   const [questions, setQuestions] = useState<ReviewCard[]>([]);
   const [current, setCurrent] = useState(0);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [typedAnswer, setTypedAnswer] = useState("");
   const [correct, setCorrect] = useState(0);
   const [done, setDone] = useState(false);
   const optionSets = useMemo(() => questions.map(question =>
@@ -399,7 +410,7 @@ function ReviewGame({ cards, onExit }: { cards: ReviewCard[]; onExit: () => void
 
   const start = (nextMode: ReviewGameMode) => {
     setMode(nextMode); setQuestions(shuffle(cards)); setCurrent(0);
-    setSelectedId(null); setCorrect(0); setDone(false);
+    setSelectedId(null); setTypedAnswer(""); setCorrect(0); setDone(false);
   };
 
   const answer = (wordId: string) => {
@@ -409,8 +420,21 @@ function ReviewGame({ cards, onExit }: { cards: ReviewCard[]; onExit: () => void
     if (isCorrect) setCorrect(value => value + 1);
     window.setTimeout(() => {
       if (current + 1 >= questions.length) setDone(true);
-      else { setCurrent(value => value + 1); setSelectedId(null); }
+      else { setCurrent(value => value + 1); setSelectedId(null); setTypedAnswer(""); }
     }, 850);
+  };
+
+  const submitTyping = () => {
+    if (selectedId !== null || !typedAnswer.trim()) return;
+    const word = questions[current].word;
+    const value = typedAnswer.trim().replace(/\s+/g, "");
+    const isCorrect = value === word.simplified || value === word.traditional;
+    setSelectedId(isCorrect ? questions[current].wordId : "__wrong__");
+    if (isCorrect) setCorrect(count => count + 1);
+    window.setTimeout(() => {
+      if (current + 1 >= questions.length) setDone(true);
+      else { setCurrent(value => value + 1); setSelectedId(null); setTypedAnswer(""); }
+    }, 1200);
   };
 
   if (!mode) return (
@@ -420,7 +444,7 @@ function ReviewGame({ cards, onExit }: { cards: ReviewCard[]; onExit: () => void
         <h1 className="text-center text-2xl font-bold" style={{ color: P.text }}>Game ôn tập</h1>
         <p className="mb-6 mt-1 text-center text-sm" style={{ color: P.textMuted }}>Chơi với {cards.length} từ đang đến hạn ôn tập</p>
         <div className="space-y-3">
-          {([ ["meaning", "Đoán nghĩa", "Chọn nghĩa đúng của chữ Hán"], ["pinyin", "Đoán Pinyin", "Chọn cách đọc đúng"], ["hanzi", "Đoán chữ Hán", "Chọn chữ Hán theo nghĩa"] ] as [ReviewGameMode, string, string][]).map(([key, label, desc]) => (
+          {([ ["meaning", "Đoán nghĩa", "Chọn nghĩa đúng của chữ Hán"], ["pinyin", "Đoán Pinyin", "Chọn cách đọc đúng"], ["hanzi", "Đoán chữ Hán", "Chọn chữ Hán theo nghĩa"], ["typing", "Điền từ theo nghĩa", "Tự nhập chữ Hán, không có đáp án gợi ý"] ] as [ReviewGameMode, string, string][]).map(([key, label, desc]) => (
             <button key={key} onClick={() => start(key)} className="w-full rounded-xl border p-4 text-left hover:brightness-95" style={{ background: P.surfaceH, borderColor: P.border }}>
               <span className="font-bold" style={{ color: P.text }}>{label}</span><span className="ml-2 text-sm" style={{ color: P.textMuted }}>{desc}</span>
             </button>
@@ -450,33 +474,48 @@ function ReviewGame({ cards, onExit }: { cards: ReviewCard[]; onExit: () => void
 
   const question = questions[current];
   const options = optionSets[current];
-  const prompt = mode === "hanzi" ? (question.word.meaningVi || question.word.meaning) : question.word.simplified;
+  const prompt = mode === "hanzi" || mode === "typing" ? (question.word.meaningVi || question.word.meaning) : question.word.simplified;
   return (
     <div className="min-h-screen px-4 py-8" style={{ background: P.bg }}><div className="mx-auto max-w-xl">
       <div className="mb-5 flex items-center justify-between text-sm" style={{ color: P.textMuted }}><button onClick={onExit}>← Thẻ ôn tập</button><span>Câu {current + 1}/{questions.length} · Đúng {correct}</span></div>
       <ProgressBar value={(current / questions.length) * 100} color="review" height={6} />
       <div className="my-6 rounded-2xl border p-8 text-center" style={{ background: P.surface, borderColor: P.border }}>
-        <p className="mb-3 text-xs" style={{ color: P.textFaint }}>{mode === "meaning" ? "Từ này có nghĩa là gì?" : mode === "pinyin" ? "Pinyin đúng là gì?" : "Chữ Hán nào phù hợp?"}</p>
-        <p className={mode === "hanzi" ? "text-xl font-bold" : "hanzi text-6xl font-bold"} style={{ color: P.text }}>{prompt}</p>
+        <p className="mb-3 text-xs" style={{ color: P.textFaint }}>{mode === "meaning" ? "Từ này có nghĩa là gì?" : mode === "pinyin" ? "Pinyin đúng là gì?" : mode === "typing" ? "Hãy nhập chữ Hán theo nghĩa" : "Chữ Hán nào phù hợp?"}</p>
+        <p className={mode === "hanzi" || mode === "typing" ? "text-xl font-bold" : "hanzi text-6xl font-bold"} style={{ color: P.text }}>{prompt}</p>
       </div>
-      <div className="grid gap-3">{options.map(option => {
+      {mode === "typing" ? (
+        <form onSubmit={event => { event.preventDefault(); submitTyping(); }} className="space-y-3">
+          <input
+            value={typedAnswer}
+            onChange={event => setTypedAnswer(event.target.value)}
+            disabled={selectedId !== null}
+            autoFocus
+            lang="zh-CN"
+            placeholder="Nhập chữ Hán..."
+            className="hanzi w-full rounded-xl border px-4 py-4 text-center text-3xl outline-none"
+            style={{ background: P.surface, borderColor: selectedId === null ? P.border : selectedId === question.wordId ? "#059669" : "#C0392B", color: P.text }}
+          />
+          {selectedId !== null && (
+            <p className="text-center text-sm font-semibold" style={{ color: selectedId === question.wordId ? "#059669" : "#C0392B" }}>
+              {selectedId === question.wordId ? "Chính xác!" : <>Đáp án: <span className="hanzi text-xl">{question.word.simplified}</span> ({question.word.pinyin})</>}
+            </p>
+          )}
+          <button type="submit" disabled={selectedId !== null || !typedAnswer.trim()} className="w-full rounded-xl py-3 font-bold text-white disabled:opacity-50" style={{ background: "#7C3AED" }}>Kiểm tra</button>
+        </form>
+      ) : <div className="grid gap-3">{options.map(option => {
         const isAnswer = option.wordId === question.wordId; const isSelected = selectedId === option.wordId; const revealed = selectedId !== null;
         const label = mode === "meaning" ? (option.word.meaningVi || option.word.meaning) : mode === "pinyin" ? option.word.pinyin : option.word.simplified;
         return <button key={option.wordId} disabled={revealed} onClick={() => answer(option.wordId)} className="flex items-center justify-between rounded-xl border px-4 py-3 text-left font-medium" style={{ background: revealed && isAnswer ? "#DCFCE7" : revealed && isSelected ? "#FEE2E2" : P.surface, borderColor: revealed && isAnswer ? "#059669" : revealed && isSelected ? "#C0392B" : P.border, color: P.text }}>
           <span className={mode === "hanzi" ? "hanzi text-2xl" : ""}>{label}</span>{revealed && isAnswer && <CheckCircle size={17} style={{ color: "#059669" }} />}{revealed && isSelected && !isAnswer && <XCircle size={17} style={{ color: "#C0392B" }} />}
         </button>;
-      })}</div>
+      })}</div>}
     </div></div>
   );
 }
 
 const QUALITY_CONFIG = [
-  { quality: 0 as SM2Quality, label: "Không biết", desc: "Nhắc ngay",  color: "#fff",    bg: "#C0392B" },
-  { quality: 1 as SM2Quality, label: "Sai",         desc: "Sắp nhắc",  color: "#fff",    bg: "#EA580C" },
-  { quality: 2 as SM2Quality, label: "Gần đúng",    desc: "Nhớ mờ",    color: "#1C1408", bg: "#FDE68A" },
-  { quality: 3 as SM2Quality, label: "Đúng",        desc: "Nhớ được",  color: "#fff",    bg: "#2563EB" },
-  { quality: 4 as SM2Quality, label: "Tốt",         desc: "Nhớ rõ",    color: "#fff",    bg: "#059669" },
-  { quality: 5 as SM2Quality, label: "Dễ",          desc: "Nhớ ngay",  color: "#fff",    bg: "#7C3AED" },
+  { quality: 1 as SM2Quality, label: "Chưa thuộc", desc: "Ôn lại ngay", color: "#fff", bg: "#C0392B" },
+  { quality: 4 as SM2Quality, label: "Đã thuộc",   desc: "Lên lịch sau", color: "#fff", bg: "#059669" },
 ];
 
 // ─── Card faces ───────────────────────────────────────────────────────────────
