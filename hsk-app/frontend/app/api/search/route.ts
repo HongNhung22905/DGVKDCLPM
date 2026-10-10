@@ -4,7 +4,7 @@
  * Hỗ trợ: chữ Hán, pinyin (có/không dấu), nghĩa tiếng Việt/Anh
  */
 import { NextRequest, NextResponse } from "next/server";
-import { fetchLevelDataSync } from "@/lib/hskDataServer";
+import { fetchSearchIndexSync } from "@/lib/hskDataServer";
 import type { Word } from "@/types/hsk";
 
 export const runtime = "nodejs";
@@ -15,17 +15,8 @@ let wordCache: Word[] | null = null;
 
 function getAllWords(): Word[] {
   if (wordCache) return wordCache;
-  const words: Word[] = [];
-  for (let lvl = 1; lvl <= 7; lvl++) {
-    try {
-      const data = fetchLevelDataSync(lvl);
-      for (const lesson of data.lessons) {
-        words.push(...lesson.words);
-      }
-    } catch { /* level không tồn tại */ }
-  }
-  wordCache = words;
-  return words;
+  wordCache = fetchSearchIndexSync();
+  return wordCache;
 }
 
 /** Chuẩn hóa pinyin: bỏ dấu thanh, lowercase */
@@ -34,7 +25,16 @@ function normalizePinyin(s: string): string {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\s+/g, "");
+    .replace(/[1-5]/g, "")
+    .replace(/[^a-züv]/g, "");
+}
+
+function normalizeText(s: string): string {
+  return s.toLowerCase().normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/[^a-z0-9\u3400-\u9fff]+/g, " ")
+    .trim();
 }
 
 export async function GET(req: NextRequest) {
@@ -45,6 +45,7 @@ export async function GET(req: NextRequest) {
   if (!q) return NextResponse.json({ results: [], total: 0 });
 
   const qLower    = q.toLowerCase();
+  const qText     = normalizeText(q);
   const qNoPinyin = normalizePinyin(q);
 
   let pool = getAllWords();
@@ -64,9 +65,10 @@ export async function GET(req: NextRequest) {
       const traditional = word.traditional ?? "";
       const pinyinRaw   = word.pinyin.toLowerCase();
       const pinyinNorm  = normalizePinyin(word.pinyin);
-      const meaningVi   = (word.meaningVi ?? "").toLowerCase();
-      const meanings    = word.meanings.map(m => m.toLowerCase()).join(" ");
-      const meaning     = word.meaning.toLowerCase();
+      const numericNorm = normalizePinyin(word.pinyinNumeric ?? "");
+      const meaningVi   = normalizeText(word.meaningVi ?? "");
+      const meanings    = normalizeText(word.meanings.join(" "));
+      const meaning     = normalizeText(word.meaning);
 
       let score = 0;
 
@@ -83,16 +85,17 @@ export async function GET(req: NextRequest) {
       else if (pinyinNorm === qNoPinyin)     score += 75;
       else if (pinyinNorm.startsWith(qNoPinyin)) score += 50;
       else if (pinyinNorm.includes(qNoPinyin))   score += 30;
+      else if (numericNorm === qNoPinyin)        score += 75;
 
       // Khớp nghĩa tiếng Việt
-      if (meaningVi === qLower)           score += 70;
-      else if (meaningVi.startsWith(qLower)) score += 45;
-      else if (meaningVi.includes(qLower))   score += 25;
+      if (meaningVi === qText)           score += 70;
+      else if (meaningVi.startsWith(qText)) score += 45;
+      else if (meaningVi.includes(qText))   score += 25;
 
       // Khớp nghĩa tiếng Anh
-      if (meaning === qLower)             score += 60;
-      else if (meaning.includes(qLower))  score += 20;
-      else if (meanings.includes(qLower)) score += 15;
+      if (meaning === qText)             score += 60;
+      else if (meaning.includes(qText))  score += 20;
+      else if (meanings.includes(qText)) score += 15;
 
       return { word, score };
     })
@@ -100,7 +103,7 @@ export async function GET(req: NextRequest) {
     .sort((a, b) => b.score - a.score);
 
   const total   = scored.length;
-  const results = scored.slice(0, 40).map(x => x.word);
+  const results = scored.slice(0, 100).map(x => x.word);
 
   return NextResponse.json({ results, total });
 }

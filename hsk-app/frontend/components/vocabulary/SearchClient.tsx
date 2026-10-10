@@ -258,7 +258,7 @@ export default function SearchClient({ initialQuery = "" }: { initialQuery?: str
               Tra từ <span style={{ color: C.primary }}>HSK 3.0</span>
             </h1>
             <p className="text-sm" style={{ color: C.textSub }}>
-              Tìm theo chữ Hán, pinyin hoặc nghĩa. Toàn bộ 2100+ từ HSK 1–7.
+              Tìm theo chữ Hán, pinyin hoặc nghĩa. Toàn bộ 10.900+ từ HSK 1–7.
             </p>
           </div>
 

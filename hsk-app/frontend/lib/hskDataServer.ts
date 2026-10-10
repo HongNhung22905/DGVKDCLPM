@@ -4,7 +4,7 @@
  * readFileSync vẫn dùng lần đầu (nhanh hơn async khi cold-start vì không context-switch),
  * nhưng từ lần 2 trở đi trả về từ cache ngay lập tức.
  */
-import type { LevelData, LevelMeta, Lesson } from "@/types/hsk";
+import type { LevelData, LevelMeta, Lesson, Word } from "@/types/hsk";
 import path from "path";
 import fs from "fs";
 
@@ -32,6 +32,10 @@ export function fetchLevelsSync(): LevelMeta[] {
 
 export function fetchLevelDataSync(levelNumber: number): LevelData {
   return readJson<LevelData>(`hsk-new-${levelNumber}.json`);
+}
+
+export function fetchSearchIndexSync(): Word[] {
+  return readJson<Word[]>("search-index.json");
 }
 
 export async function fetchLevels(): Promise<LevelMeta[]> {
