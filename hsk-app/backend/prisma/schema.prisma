@@ -27,6 +27,8 @@ model User {
   notebookEntries NotebookEntry[]
   wrongWords      WrongWord[]
   aiSessions      AiSession[]
+  grammarProgress GrammarProgress[]
+  reviewSessions  ReviewSession[]
 }
 
 // ─── Lesson progress ───────────────────────────────────────────────────────────
@@ -34,9 +36,9 @@ model User {
 model LessonProgress {
   id          String    @id @default(cuid())
   userId      String
-  lessonId    String    // "new-1-lesson-3"
+  lessonId    String // "new-1-lesson-3"
   completed   Boolean   @default(false)
-  score       Int?      // 0-100
+  score       Int? // 0-100
   completedAt DateTime?
   updatedAt   DateTime  @updatedAt
 
@@ -51,11 +53,11 @@ model LessonProgress {
 model FlashcardCard {
   id          String   @id @default(cuid())
   userId      String
-  wordId      String   // "new-1-0"
+  wordId      String // "new-1-0"
   easeFactor  Float    @default(2.5)
   interval    Int      @default(1)
   repetitions Int      @default(0)
-  nextReview  String   // ISO date "2026-09-28"
+  nextReview  String // ISO date "2026-09-28"
   lastReview  String
   updatedAt   DateTime @updatedAt
 
@@ -70,7 +72,7 @@ model FlashcardCard {
 model GateResult {
   id            String   @id @default(cuid())
   userId        String
-  setId         String   // "new-1-set-1"
+  setId         String // "new-1-set-1"
   passed        Boolean
   score         Int
   attempts      Int      @default(1)
@@ -104,11 +106,11 @@ model GameResult {
   id        String   @id @default(cuid())
   userId    String
   lessonId  String
-  mode      String   // "meaning" | "pinyin" | "hanzi"
+  mode      String // "meaning" | "pinyin" | "hanzi"
   score     Int
   totalQ    Int
   correct   Int
-  timeTaken Int      // ms
+  timeTaken Int // ms
   createdAt DateTime @default(now())
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -121,8 +123,8 @@ model GameResult {
 model NotebookEntry {
   id         String   @id @default(cuid())
   userId     String
-  wordId     String   // "new-1-0"
-  level      String   // "new-1"
+  wordId     String // "new-1-0"
+  level      String // "new-1"
   simplified String
   pinyin     String
   meaning    String
@@ -136,12 +138,47 @@ model NotebookEntry {
   @@index([userId])
 }
 
+// ─── Grammar progress ─────────────────────────────────────────────────────────
+
+model GrammarProgress {
+  id            String   @id @default(cuid())
+  userId        String
+  pointId       String // grammar point id, e.g. "ba_construction"
+  mode          String // "fill" | "sort"
+  bestScore     Int      @default(0) // 0–100
+  attempts      Int      @default(1)
+  lastAttemptAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, pointId, mode])
+  @@index([userId])
+}
+
+// ─── Review session history ───────────────────────────────────────────────────
+
+model ReviewSession {
+  id           String   @id @default(cuid())
+  userId       String
+  date         String // "2026-10-07" — ngày ôn
+  totalCards   Int // tổng số thẻ ôn trong phiên
+  correctCards Int // số thẻ đúng
+  score        Int // 0–100 %
+  durationSec  Int      @default(0) // thời gian ôn (giây)
+  createdAt    DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([userId, date])
+}
+
 // ─── Wrong words (từ hay sai) ──────────────────────────────────────────────────
 
 model WrongWord {
   id          String   @id @default(cuid())
   userId      String
-  wordId      String   // "new-1-0"
+  wordId      String // "new-1-0"
   simplified  String
   pinyin      String
   meaning     String
@@ -160,7 +197,7 @@ model WrongWord {
 model AiSession {
   id        String   @id @default(cuid())
   userId    String?
-  type      String   // "pronunciation" | "grammar" | "translation" | "explain" | "examples"
+  type      String // "pronunciation" | "grammar" | "translation" | "explain" | "examples"
   input     String   @db.Text
   output    String   @db.Text
   tokens    Int      @default(0)
