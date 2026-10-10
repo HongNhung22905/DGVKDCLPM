@@ -4,11 +4,9 @@
 import jwt from "jsonwebtoken";
 import type { NextRequest } from "next/server";
 
-const SECRET = process.env.NEXTAUTH_SECRET ?? "dev_secret_change_me";
+const DEV_SECRET = "dev_secret_change_me";
 
-if (!process.env.NEXTAUTH_SECRET && process.env.NODE_ENV === "production") {
-  throw new Error("[auth] NEXTAUTH_SECRET chưa được set trong production!");
-} else if (!process.env.NEXTAUTH_SECRET) {
+if (!process.env.NEXTAUTH_SECRET && process.env.NODE_ENV !== "production") {
   console.warn("[auth] NEXTAUTH_SECRET chưa được set — đang dùng fallback. KHÔNG dùng trong production!");
 }
 const COOKIE_NAME = "hsk_token";
@@ -22,13 +20,20 @@ export interface JwtPayload {
   exp?: number;
 }
 
+function getSecret(): string {
+  const secret = process.env.NEXTAUTH_SECRET;
+  if (secret) return secret;
+  if (process.env.NODE_ENV !== "production") return DEV_SECRET;
+  throw new Error("AUTH_SECRET_MISSING");
+}
+
 export function signToken(payload: Omit<JwtPayload, "iat" | "exp">): string {
-  return jwt.sign(payload, SECRET, { expiresIn: MAX_AGE });
+  return jwt.sign(payload, getSecret(), { expiresIn: MAX_AGE });
 }
 
 export function verifyToken(token: string): JwtPayload | null {
   try {
-    return jwt.verify(token, SECRET) as JwtPayload;
+    return jwt.verify(token, getSecret()) as JwtPayload;
   } catch {
     return null;
   }

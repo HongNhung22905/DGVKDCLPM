@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import type { Word } from "@/types/hsk";
 import type { SM2Card, SM2Quality } from "@/lib/hskData";
 import { sm2Update, loadProgress, saveProgress } from "@/lib/hskData";
@@ -8,7 +8,7 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import Link from "next/link";
 import {
   Brain, CheckCircle, BookOpen, Volume2, RotateCcw,
-  Zap, AlertCircle, Home, ChevronRight,
+  Zap, AlertCircle, Home, ChevronRight, Gamepad2, XCircle,
 } from "lucide-react";
 import ProgressBar from "@/components/ui/ProgressBar";
 
@@ -25,6 +25,16 @@ const P = {
 };
 
 interface ReviewCard extends SM2Card { word: Word; }
+type ReviewGameMode = "meaning" | "pinyin" | "hanzi";
+
+function shuffle<T>(items: T[]): T[] {
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
 
 function getToneStyle(pinyin: string): string {
   if (/[āēīōūǖ]/.test(pinyin)) return "#C0392B";
@@ -44,7 +54,7 @@ export default function ReviewClient({ today }: { today: string }) {
   const [queue, setQueue]   = useState<ReviewCard[]>([]);
   const [index, setIndex]   = useState(0);
   const [flipped, setFlipped] = useState(false);
-  const [phase, setPhase]   = useState<"studying" | "summary">("studying");
+  const [phase, setPhase]   = useState<"studying" | "game" | "summary">("studying");
   // Track từng từ: đúng/sai
   const [results, setResults] = useState<Map<string, "correct" | "wrong">>(new Map());
   const [loaded, setLoaded] = useState(false);
@@ -203,6 +213,10 @@ export default function ReviewClient({ today }: { today: string }) {
 
   if (originalCards.length === 0) return <EmptyState today={today} />;
 
+  if (phase === "game") {
+    return <ReviewGame cards={originalCards} onExit={() => setPhase("studying")} />;
+  }
+
   if (phase === "summary") {
     const wrongCards = originalCards.filter(c => results.get(c.wordId) !== "correct");
     const correctCount = originalCards.filter(c => results.get(c.wordId) === "correct").length;
@@ -228,6 +242,7 @@ export default function ReviewClient({ today }: { today: string }) {
           setPhase("studying");
         }}
         onPlayAudio={playAudio}
+        onPlayGame={() => setPhase("game")}
       />
     );
   }
@@ -265,6 +280,14 @@ export default function ReviewClient({ today }: { today: string }) {
           </div>
 
           <ProgressBar value={progress} color="review" height={6} />
+
+          <button
+            onClick={() => setPhase("game")}
+            className="mt-3 inline-flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold text-white"
+            style={{ background: "linear-gradient(135deg,#7C3AED,#B45309)" }}
+          >
+            <Gamepad2 size={14} /> Chơi game ôn từ
+          </button>
 
           <div className="flex gap-4 mt-2 text-xs">
             <span style={{ color: "#059669" }}>✓ {correctSoFar} đúng</span>
@@ -338,6 +361,90 @@ export default function ReviewClient({ today }: { today: string }) {
 }
 
 // ─── Quality config ───────────────────────────────────────────────────────────
+function ReviewGame({ cards, onExit }: { cards: ReviewCard[]; onExit: () => void }) {
+  const [mode, setMode] = useState<ReviewGameMode | null>(null);
+  const [questions, setQuestions] = useState<ReviewCard[]>([]);
+  const [current, setCurrent] = useState(0);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [correct, setCorrect] = useState(0);
+  const [done, setDone] = useState(false);
+  const optionSets = useMemo(() => questions.map(question =>
+    shuffle([question, ...shuffle(cards.filter(card => card.wordId !== question.wordId)).slice(0, 3)]),
+  ), [questions, cards]);
+
+  const start = (nextMode: ReviewGameMode) => {
+    setMode(nextMode); setQuestions(shuffle(cards)); setCurrent(0);
+    setSelectedId(null); setCorrect(0); setDone(false);
+  };
+
+  const answer = (wordId: string) => {
+    if (selectedId !== null) return;
+    const isCorrect = wordId === questions[current].wordId;
+    setSelectedId(wordId);
+    if (isCorrect) setCorrect(value => value + 1);
+    window.setTimeout(() => {
+      if (current + 1 >= questions.length) setDone(true);
+      else { setCurrent(value => value + 1); setSelectedId(null); }
+    }, 850);
+  };
+
+  if (!mode) return (
+    <div className="min-h-screen px-4 py-10" style={{ background: P.bg }}>
+      <div className="mx-auto max-w-xl rounded-2xl border p-6" style={{ background: P.surface, borderColor: P.border }}>
+        <Gamepad2 size={42} className="mx-auto mb-3" style={{ color: "#7C3AED" }} />
+        <h1 className="text-center text-2xl font-bold" style={{ color: P.text }}>Game ôn tập</h1>
+        <p className="mb-6 mt-1 text-center text-sm" style={{ color: P.textMuted }}>Chơi với {cards.length} từ đang đến hạn ôn tập</p>
+        <div className="space-y-3">
+          {([ ["meaning", "Đoán nghĩa", "Chọn nghĩa đúng của chữ Hán"], ["pinyin", "Đoán Pinyin", "Chọn cách đọc đúng"], ["hanzi", "Đoán chữ Hán", "Chọn chữ Hán theo nghĩa"] ] as [ReviewGameMode, string, string][]).map(([key, label, desc]) => (
+            <button key={key} onClick={() => start(key)} className="w-full rounded-xl border p-4 text-left hover:brightness-95" style={{ background: P.surfaceH, borderColor: P.border }}>
+              <span className="font-bold" style={{ color: P.text }}>{label}</span><span className="ml-2 text-sm" style={{ color: P.textMuted }}>{desc}</span>
+            </button>
+          ))}
+        </div>
+        <button onClick={onExit} className="mt-5 w-full py-2 text-sm font-medium" style={{ color: P.textMuted }}>Quay lại thẻ ôn tập</button>
+      </div>
+    </div>
+  );
+
+  if (done) {
+    const score = Math.round((correct / questions.length) * 100);
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4" style={{ background: P.bg }}>
+        <div className="w-full max-w-sm rounded-2xl border p-7 text-center" style={{ background: P.surface, borderColor: P.border }}>
+          <Zap size={44} className="mx-auto mb-3" style={{ color: "#B45309" }} />
+          <h2 className="text-2xl font-bold" style={{ color: P.text }}>Hoàn thành!</h2>
+          <p className="my-5 text-4xl font-extrabold" style={{ color: score >= 80 ? "#059669" : "#B45309" }}>{score}%</p>
+          <p className="mb-5 text-sm" style={{ color: P.textMuted }}>Đúng {correct}/{questions.length} câu</p>
+          <button onClick={() => start(mode)} className="w-full rounded-xl py-3 font-semibold text-white" style={{ background: "#7C3AED" }}><RotateCcw size={15} className="mr-2 inline" /> Chơi lại</button>
+          <button onClick={() => setMode(null)} className="mt-2 w-full rounded-xl border py-3 text-sm font-semibold" style={{ borderColor: P.border, color: P.textMuted }}>Đổi chế độ</button>
+          <button onClick={onExit} className="mt-2 w-full py-2 text-sm" style={{ color: P.textFaint }}>Về ôn tập</button>
+        </div>
+      </div>
+    );
+  }
+
+  const question = questions[current];
+  const options = optionSets[current];
+  const prompt = mode === "hanzi" ? (question.word.meaningVi || question.word.meaning) : question.word.simplified;
+  return (
+    <div className="min-h-screen px-4 py-8" style={{ background: P.bg }}><div className="mx-auto max-w-xl">
+      <div className="mb-5 flex items-center justify-between text-sm" style={{ color: P.textMuted }}><button onClick={onExit}>← Thẻ ôn tập</button><span>Câu {current + 1}/{questions.length} · Đúng {correct}</span></div>
+      <ProgressBar value={(current / questions.length) * 100} color="review" height={6} />
+      <div className="my-6 rounded-2xl border p-8 text-center" style={{ background: P.surface, borderColor: P.border }}>
+        <p className="mb-3 text-xs" style={{ color: P.textFaint }}>{mode === "meaning" ? "Từ này có nghĩa là gì?" : mode === "pinyin" ? "Pinyin đúng là gì?" : "Chữ Hán nào phù hợp?"}</p>
+        <p className={mode === "hanzi" ? "text-xl font-bold" : "hanzi text-6xl font-bold"} style={{ color: P.text }}>{prompt}</p>
+      </div>
+      <div className="grid gap-3">{options.map(option => {
+        const isAnswer = option.wordId === question.wordId; const isSelected = selectedId === option.wordId; const revealed = selectedId !== null;
+        const label = mode === "meaning" ? (option.word.meaningVi || option.word.meaning) : mode === "pinyin" ? option.word.pinyin : option.word.simplified;
+        return <button key={option.wordId} disabled={revealed} onClick={() => answer(option.wordId)} className="flex items-center justify-between rounded-xl border px-4 py-3 text-left font-medium" style={{ background: revealed && isAnswer ? "#DCFCE7" : revealed && isSelected ? "#FEE2E2" : P.surface, borderColor: revealed && isAnswer ? "#059669" : revealed && isSelected ? "#C0392B" : P.border, color: P.text }}>
+          <span className={mode === "hanzi" ? "hanzi text-2xl" : ""}>{label}</span>{revealed && isAnswer && <CheckCircle size={17} style={{ color: "#059669" }} />}{revealed && isSelected && !isAnswer && <XCircle size={17} style={{ color: "#C0392B" }} />}
+        </button>;
+      })}</div>
+    </div></div>
+  );
+}
+
 const QUALITY_CONFIG = [
   { quality: 0 as SM2Quality, label: "Không biết", desc: "Nhắc ngay",  color: "#fff",    bg: "#C0392B" },
   { quality: 1 as SM2Quality, label: "Sai",         desc: "Sắp nhắc",  color: "#fff",    bg: "#EA580C" },
@@ -408,7 +515,7 @@ function CardBack({ word }: { word: Word; card: ReviewCard }) {
 // ─── Summary Screen ───────────────────────────────────────────────────────────
 function SummaryScreen({
   total, correctCount, wrongCards, today,
-  onRestart, onRestartWrong, onPlayAudio,
+  onRestart, onRestartWrong, onPlayAudio, onPlayGame,
 }: {
   total: number;
   correctCount: number;
@@ -417,6 +524,7 @@ function SummaryScreen({
   onRestart: () => void;
   onRestartWrong: () => void;
   onPlayAudio: (w: Word) => void;
+  onPlayGame: () => void;
 }) {
   const score      = total > 0 ? Math.round((correctCount / total) * 100) : 0;
   const wrongCount = wrongCards.length;
@@ -462,6 +570,11 @@ function SummaryScreen({
           </div>
 
           <div className="flex flex-col gap-2">
+            <button onClick={onPlayGame}
+              className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-all hover:brightness-110"
+              style={{ background: "linear-gradient(135deg,#7C3AED,#B45309)" }}>
+              <Gamepad2 size={15} /> Chơi game với {total} từ vừa ôn
+            </button>
             {wrongCount > 0 && (
               <button onClick={onRestartWrong}
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-all hover:brightness-110"

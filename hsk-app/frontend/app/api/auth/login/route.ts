@@ -8,7 +8,10 @@ export const dynamic = "force-dynamic";
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json() as { email?: string; password?: string };
+    const body = await req.json().catch(() => null) as { email?: string; password?: string } | null;
+    if (!body) {
+      return NextResponse.json({ error: "Dữ liệu đăng nhập không hợp lệ." }, { status: 400 });
+    }
     const { email, password } = body;
 
     if (!email || !password) {
@@ -40,6 +43,12 @@ export async function POST(req: NextRequest) {
     );
   } catch (err) {
     console.error("[login]", err);
+    if (err instanceof Error && err.message === "AUTH_SECRET_MISSING") {
+      return NextResponse.json({ error: "Máy chủ chưa cấu hình NEXTAUTH_SECRET." }, { status: 503 });
+    }
+    if (err instanceof Error && /Can't reach database server|connection|P1001/i.test(err.message)) {
+      return NextResponse.json({ error: "Không thể kết nối cơ sở dữ liệu. Vui lòng thử lại sau." }, { status: 503 });
+    }
     return NextResponse.json({ error: "Lỗi server, thử lại sau." }, { status: 500 });
   }
 }
