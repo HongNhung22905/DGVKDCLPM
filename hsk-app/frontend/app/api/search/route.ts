@@ -79,23 +79,27 @@ export async function GET(req: NextRequest) {
       else if (traditional.includes(q))  score += 50;
 
       // Khớp pinyin (có dấu hoặc không dấu)
-      if (pinyinRaw === qLower)           score += 80;
-      else if (pinyinRaw.startsWith(qLower)) score += 55;
-      else if (pinyinRaw.includes(qLower))   score += 35;
-      else if (pinyinNorm === qNoPinyin)     score += 75;
-      else if (pinyinNorm.startsWith(qNoPinyin)) score += 50;
-      else if (pinyinNorm.includes(qNoPinyin))   score += 30;
-      else if (numericNorm === qNoPinyin)        score += 75;
+      if (qNoPinyin) {
+        if (pinyinRaw === qLower)                score += 80;
+        else if (pinyinRaw.startsWith(qLower))   score += 55;
+        else if (pinyinRaw.includes(qLower))     score += 35;
+        else if (pinyinNorm === qNoPinyin)       score += 75;
+        else if (pinyinNorm.startsWith(qNoPinyin)) score += 50;
+        else if (pinyinNorm.includes(qNoPinyin)) score += 30;
+        else if (numericNorm === qNoPinyin)      score += 75;
+      }
 
       // Khớp nghĩa tiếng Việt
-      if (meaningVi === qText)           score += 70;
-      else if (meaningVi.startsWith(qText)) score += 45;
-      else if (meaningVi.includes(qText))   score += 25;
+      if (qText) {
+        if (meaningVi === qText)              score += 120;
+        else if (meaningVi.startsWith(qText)) score += 100;
+        else if (meaningVi.includes(qText))   score += 25;
 
-      // Khớp nghĩa tiếng Anh
-      if (meaning === qText)             score += 60;
-      else if (meaning.includes(qText))  score += 20;
-      else if (meanings.includes(qText)) score += 15;
+        // Khớp nghĩa tiếng Anh
+        if (meaning === qText)             score += 60;
+        else if (meaning.includes(qText))  score += 20;
+        else if (meanings.includes(qText)) score += 15;
+      }
 
       return { word, score };
     })

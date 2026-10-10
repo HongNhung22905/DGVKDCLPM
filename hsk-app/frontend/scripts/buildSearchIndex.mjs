@@ -45,5 +45,28 @@ for (let level = 1; level <= 7; level++) {
   });
 }
 
+const commonEntries = [
+  {
+    id: "common-nihao",
+    simplified: "你好",
+    traditional: "你好",
+    pinyin: "nǐ hǎo",
+    pinyinNumeric: "ni3 hao3",
+    meanings: ["hello", "hi", "how are you?"],
+    meaning: "hello",
+    meaningVi: "xin chào; chào bạn",
+    pos: [{ code: "phrase", label: "cụm từ" }],
+    radical: "",
+    frequency: 1,
+    classifiers: [],
+    level: "new-1",
+    audioUrl: "/audio/new-1/%E4%BD%A0%E5%A5%BD.mp3",
+  },
+];
+
+for (const entry of commonEntries) {
+  if (!result.some(word => word.simplified === entry.simplified)) result.push(entry);
+}
+
 writeFileSync(join(frontend, "public", "data", "search-index.json"), JSON.stringify(result), "utf8");
 console.log(`Generated search-index.json with ${result.length} words`);
