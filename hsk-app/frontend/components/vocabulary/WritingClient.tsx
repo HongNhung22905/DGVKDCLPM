@@ -128,7 +128,7 @@ export default function WritingClient({ lesson }: Props) {
           {(["practice", "quiz"] as const).map(m => (
             <button
               key={m}
-              onClick={() => setMode(m)}
+              onClick={() => { setMode(m); setQuizResult(null); setShowHint(false); }}
               className="px-4 py-2 rounded-lg text-sm font-medium transition-all"
               style={mode === m
                 ? { background: "#B45309", color: "#fff" }
@@ -237,9 +237,23 @@ function HanziWriterPanel({ word, mode, showHint, onComplete, quizResult, setQui
   const writerRef    = useRef<unknown>(null);
   const [writerReady, setWriterReady] = useState(false);
 
+  const startQuiz = useCallback((writer: any) => {
+    setQuizResult(null);
+    writer.quiz({
+      onMistake: () => {},
+      onCorrectStroke: () => {},
+      onComplete: (summary: any) => {
+        const ok = summary.totalMistakes < 3;
+        setQuizResult(ok);
+        if (ok) onComplete();
+      },
+    });
+  }, [onComplete, setQuizResult]);
+
   useEffect(() => {
     if (typeof window === "undefined") return;
     let cancelled = false;
+    setWriterReady(false);
 
     import("hanzi-writer").then(mod => {
       if (cancelled || !containerRef.current) return;
@@ -264,11 +278,19 @@ function HanziWriterPanel({ word, mode, showHint, onComplete, quizResult, setQui
         });
         writerRef.current = writer;
         setWriterReady(true);
+
+        // Mỗi chế độ bắt đầu ngay, không bắt người học nhấn thêm một nút.
+        if (mode === "practice") writer.animateCharacter();
+        else startQuiz(writer);
       } catch { /* char data not found */ }
     }).catch(() => {});
 
-    return () => { cancelled = true; };
-  }, [word.simplified, showHint]);
+    return () => {
+      cancelled = true;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (writerRef.current as any)?.cancelQuiz?.();
+    };
+  }, [word.simplified, showHint, mode, startQuiz]);
 
   const handleAnimate = () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -277,25 +299,18 @@ function HanziWriterPanel({ word, mode, showHint, onComplete, quizResult, setQui
 
   const handleStartQuiz = () => {
     if (!writerRef.current) return;
-    setQuizResult(null);
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (writerRef.current as any).quiz({
-      onMistake: () => {},
-      onCorrectStroke: () => {},
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      onComplete: (summary: any) => {
-        const ok = summary.totalMistakes < 3;
-        setQuizResult(ok);
-        if (ok) onComplete();
-      },
-    });
+    startQuiz(writerRef.current as any);
   };
 
   const handleReset = () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const w = writerRef.current as any;
-    w?.cancelQuiz?.(); w?.hideCharacter?.(); w?.loopCharacterAnimation?.();
+    w?.cancelQuiz?.();
+    w?.hideCharacter?.();
     setQuizResult(null);
+    if (mode === "practice") w?.animateCharacter?.();
+    else if (w) startQuiz(w);
   };
 
   return (
