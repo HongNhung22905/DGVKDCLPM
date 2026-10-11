@@ -1,3 +1,6 @@
+import generatedHsk1Data from "./generatedHsk1Data.json";
+import generatedHsk2Data from "./generatedHsk2Data.json";
+
 export interface ExamQuestion { section: "Từ vựng" | "Ngữ pháp" | "Đọc hiểu"; prompt: string; context?: string; options: string[]; answer: number; explanation: string; }
 export interface MockExam { id: string; level: number; title: string; durationMinutes: number; questions: ExamQuestion[]; }
 
@@ -36,6 +39,6 @@ const BASE_MOCK_EXAMS: MockExam[] = [
 
 export const MOCK_EXAMS: MockExam[] = [
   ...(generatedHsk1Data.exams as MockExam[]),
-  ...BASE_MOCK_EXAMS.filter((exam) => exam.level !== 1),
+  ...(generatedHsk2Data.exams as MockExam[]),
+  ...BASE_MOCK_EXAMS.filter((exam) => exam.level > 2),
 ];
-import generatedHsk1Data from "./generatedHsk1Data.json";

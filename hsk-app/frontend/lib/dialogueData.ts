@@ -1,3 +1,6 @@
+import generatedHsk1Data from "./generatedHsk1Data.json";
+import generatedHsk2Data from "./generatedHsk2Data.json";
+
 export interface DialogueLine { speaker: "A" | "B"; zh: string; pinyin: string; vi: string; }
 export interface DialogueScenario {
   id: string; level: number; title: string; place: string; goal: string;
@@ -45,5 +48,5 @@ const BASE_DIALOGUE_SCENARIOS: DialogueScenario[] = [
 export const DIALOGUE_SCENARIOS: DialogueScenario[] = [
   ...BASE_DIALOGUE_SCENARIOS,
   ...(generatedHsk1Data.dialogues as DialogueScenario[]),
+  ...(generatedHsk2Data.dialogues as DialogueScenario[]),
 ].sort((a, b) => a.level - b.level);
-import generatedHsk1Data from "./generatedHsk1Data.json";

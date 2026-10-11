@@ -1,3 +1,6 @@
+import generatedHsk1Data from "./generatedHsk1Data.json";
+import generatedHsk2Data from "./generatedHsk2Data.json";
+
 export interface ReadingQuestion {
   question: string;
   options: string[];
@@ -88,5 +91,5 @@ const BASE_READING_LESSONS: ReadingLesson[] = [
 export const READING_LESSONS: ReadingLesson[] = [
   ...BASE_READING_LESSONS,
   ...(generatedHsk1Data.readings as ReadingLesson[]),
+  ...(generatedHsk2Data.readings as ReadingLesson[]),
 ].sort((a, b) => a.level - b.level);
-import generatedHsk1Data from "./generatedHsk1Data.json";

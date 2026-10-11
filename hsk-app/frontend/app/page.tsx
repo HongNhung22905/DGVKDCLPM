@@ -29,7 +29,7 @@ const MODULES: ModuleCard[] = [
     iconBg: "#D97706",
     title: "Từ vựng chủ đề",
     desc: "Hệ thống từ vựng được phân loại theo chủ đề để học và phát hiện",
-    count: "14 chủ đề",
+    count: "23 chủ đề",
     href: "/topics",
   },
   {
@@ -37,7 +37,7 @@ const MODULES: ModuleCard[] = [
     iconBg: "#16A34A",
     title: "Hội thoại",
     desc: "Luyện tập hội thoại thực tế với các tình huống giao tiếp hàng ngày",
-    count: "19 tình huống",
+    count: "32 tình huống",
     href: "/dialogues",
   },
   {
@@ -45,7 +45,7 @@ const MODULES: ModuleCard[] = [
     iconBg: "#7C3AED",
     title: "Đọc hiểu",
     desc: "Nâng cao khả năng đọc hiểu với các bài văn từ cơ bản đến nâng cao",
-    count: "19 bài",
+    count: "33 bài",
     href: "/reading",
   },
   {
@@ -53,7 +53,7 @@ const MODULES: ModuleCard[] = [
     iconBg: "#DC2626",
     title: "Luyện thi",
     desc: "Đề thi thử với hệ thống chấm điểm tự động và phân tích chi tiết",
-    count: "5 đề thi",
+    count: "7 đề thi",
     href: "/exams",
   },
   {

@@ -1,3 +1,6 @@
+import generatedHsk1Data from "./generatedHsk1Data.json";
+import generatedHsk2Data from "./generatedHsk2Data.json";
+
 export interface TopicWord {
   hanzi: string;
   pinyin: string;
@@ -105,9 +108,9 @@ const BASE_VOCABULARY_TOPICS: VocabularyTopic[] = [
 export const VOCABULARY_TOPICS: VocabularyTopic[] = [
   ...BASE_VOCABULARY_TOPICS,
   ...(generatedHsk1Data.topics as VocabularyTopic[]),
+  ...(generatedHsk2Data.topics as VocabularyTopic[]),
 ].sort((a, b) => a.level - b.level);
 
 export function getTopic(id: string) {
   return VOCABULARY_TOPICS.find((topic) => topic.id === id);
 }
-import generatedHsk1Data from "./generatedHsk1Data.json";

@@ -16,7 +16,7 @@
     "translate-vi": "node scripts/translateVi.mjs",
     "process-grammar": "node scripts/processGrammar.mjs",
     "merge-grammar-patterns": "node scripts/mergeGrammarPatterns.mjs",
-    "data:validate": "node scripts/validateLearningData.mjs"
+    "data:validate": "node scripts/validateLearningData.mjs && node scripts/validateHsk2Data.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.27.0",
