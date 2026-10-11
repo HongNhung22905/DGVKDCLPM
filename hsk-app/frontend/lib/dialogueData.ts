@@ -5,7 +5,7 @@ export interface DialogueScenario {
   challenge: { prompt: string; options: string[]; answer: number; explanation: string };
 }
 
-export const DIALOGUE_SCENARIOS: DialogueScenario[] = [
+const BASE_DIALOGUE_SCENARIOS: DialogueScenario[] = [
   { id: "meet", level: 1, title: "Lần đầu gặp mặt", place: "Trường học", goal: "Chào hỏi và giới thiệu tên", lines: [
     { speaker: "A", zh: "你好！我叫安娜，你叫什么名字？", pinyin: "Nǐ hǎo! Wǒ jiào Ānnà, nǐ jiào shénme míngzi?", vi: "Xin chào! Tôi tên Anna, bạn tên gì?" },
     { speaker: "B", zh: "我叫明。很高兴认识你。", pinyin: "Wǒ jiào Míng. Hěn gāoxìng rènshi nǐ.", vi: "Tôi tên Minh. Rất vui được làm quen với bạn." },
@@ -41,3 +41,9 @@ export const DIALOGUE_SCENARIOS: DialogueScenario[] = [
     { speaker: "B", zh: "没问题，我会准时参加。", pinyin: "Méi wèntí, wǒ huì zhǔnshí cānjiā.", vi: "Không vấn đề, tôi sẽ tham gia đúng giờ." },
   ], challenge: { prompt: "Cuối cùng cuộc họp được chuyển sang khi nào?", options: ["Chiều mai", "Sáng thứ Sáu", "Chiều thứ Sáu", "Sáng thứ Hai"], answer: 1, explanation: "Hai người thống nhất ‘改到星期五上午’ — đổi sang sáng thứ Sáu." } },
 ];
+
+export const DIALOGUE_SCENARIOS: DialogueScenario[] = [
+  ...BASE_DIALOGUE_SCENARIOS,
+  ...(generatedHsk1Data.dialogues as DialogueScenario[]),
+].sort((a, b) => a.level - b.level);
+import generatedHsk1Data from "./generatedHsk1Data.json";

@@ -1,7 +1,7 @@
 export interface ExamQuestion { section: "Từ vựng" | "Ngữ pháp" | "Đọc hiểu"; prompt: string; context?: string; options: string[]; answer: number; explanation: string; }
 export interface MockExam { id: string; level: number; title: string; durationMinutes: number; questions: ExamQuestion[]; }
 
-export const MOCK_EXAMS: MockExam[] = [
+const BASE_MOCK_EXAMS: MockExam[] = [
   { id: "hsk1-a", level: 1, title: "Đề cơ bản số 1", durationMinutes: 10, questions: [
     { section: "Từ vựng", prompt: "‘老师’ có nghĩa là gì?", options: ["Học sinh", "Giáo viên", "Bác sĩ", "Bạn bè"], answer: 1, explanation: "老师 (lǎoshī) nghĩa là giáo viên." },
     { section: "Từ vựng", prompt: "Chọn từ phù hợp: 我想___水。", options: ["吃", "看", "喝", "听"], answer: 2, explanation: "喝水 là uống nước." },
@@ -33,3 +33,9 @@ export const MOCK_EXAMS: MockExam[] = [
     { section: "Ngữ pháp", prompt: "Chọn câu dùng 把 đúng.", options: ["我把作业做完了。", "我做把作业完了。", "把我作业做完了。", "我把做完了作业。"], answer: 0, explanation: "Cấu trúc: chủ ngữ + 把 + tân ngữ + động từ + thành phần kết quả." },
   ] },
 ];
+
+export const MOCK_EXAMS: MockExam[] = [
+  ...(generatedHsk1Data.exams as MockExam[]),
+  ...BASE_MOCK_EXAMS.filter((exam) => exam.level !== 1),
+];
+import generatedHsk1Data from "./generatedHsk1Data.json";

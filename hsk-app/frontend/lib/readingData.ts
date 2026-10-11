@@ -16,7 +16,7 @@ export interface ReadingLesson {
   questions: ReadingQuestion[];
 }
 
-export const READING_LESSONS: ReadingLesson[] = [
+const BASE_READING_LESSONS: ReadingLesson[] = [
   {
     id: "morning", level: 1, title: "Buổi sáng của Tiểu Minh",
     passage: "小明每天六点半起床。他先喝一杯水，然后吃早饭。七点半，他坐公共汽车去学校。学校八点开始上课。",
@@ -84,3 +84,9 @@ export const READING_LESSONS: ReadingLesson[] = [
     ],
   },
 ];
+
+export const READING_LESSONS: ReadingLesson[] = [
+  ...BASE_READING_LESSONS,
+  ...(generatedHsk1Data.readings as ReadingLesson[]),
+].sort((a, b) => a.level - b.level);
+import generatedHsk1Data from "./generatedHsk1Data.json";

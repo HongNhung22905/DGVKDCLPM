@@ -15,7 +15,7 @@ export interface VocabularyTopic {
   words: TopicWord[];
 }
 
-export const VOCABULARY_TOPICS: VocabularyTopic[] = [
+const BASE_VOCABULARY_TOPICS: VocabularyTopic[] = [
   {
     id: "greetings", title: "Chào hỏi", icon: "👋", level: 1,
     description: "Những câu và từ cơ bản khi gặp gỡ, làm quen.",
@@ -102,6 +102,12 @@ export const VOCABULARY_TOPICS: VocabularyTopic[] = [
   },
 ];
 
+export const VOCABULARY_TOPICS: VocabularyTopic[] = [
+  ...BASE_VOCABULARY_TOPICS,
+  ...(generatedHsk1Data.topics as VocabularyTopic[]),
+].sort((a, b) => a.level - b.level);
+
 export function getTopic(id: string) {
   return VOCABULARY_TOPICS.find((topic) => topic.id === id);
 }
+import generatedHsk1Data from "./generatedHsk1Data.json";
