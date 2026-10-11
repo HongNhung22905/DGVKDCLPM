@@ -64,10 +64,10 @@ export default function GrammarDetailClient({
 }: Props) {
   const [mode, setMode] = useState<Mode>(initialMode);
 
-  const tabs: { id: Mode; label: string; icon: React.ReactNode }[] = [
-    { id: "study", label: "Điểm ngữ pháp", icon: <BookOpen size={14} /> },
-    { id: "fill",  label: "Điền từ",       icon: <PenLine size={14} /> },
-    { id: "sort",  label: "Sắp xếp câu",   icon: <Shuffle size={14} /> },
+  const tabs: { id: Mode; label: string; short: string; icon: React.ReactNode }[] = [
+    { id: "study", label: "Hiểu cấu trúc", short: "1", icon: <BookOpen size={14} /> },
+    { id: "fill",  label: "Điền từ", short: "2", icon: <PenLine size={14} /> },
+    { id: "sort",  label: "Tạo câu", short: "3", icon: <Shuffle size={14} /> },
   ];
 
   return (
@@ -116,18 +116,18 @@ export default function GrammarDetailClient({
           </h1>
 
           {/* Tab bar */}
-          <div className="flex gap-1">
+          <div className="grid grid-cols-3 gap-1">
             {tabs.map((t) => (
               <button
                 key={t.id}
                 onClick={() => setMode(t.id)}
                 className={clsx(
-                  "flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-t-lg transition-all border-b-2",
+                  "flex items-center justify-center gap-1.5 px-2 py-2.5 text-xs font-bold rounded-t-lg transition-all border-b-2",
                   mode === t.id ? "border-[#7C3AED]" : "border-transparent"
                 )}
                 style={{ color: mode === t.id ? P.purple : P.muted }}
               >
-                {t.icon} {t.label}
+                <span className="w-5 h-5 rounded-full grid place-items-center text-[10px]" style={{ background: mode === t.id ? "#EDE9FE" : "#F0E9B8" }}>{t.short}</span><span className="hidden sm:inline">{t.label}</span><span className="sm:hidden">{t.id === "study" ? "Hiểu" : t.id === "fill" ? "Điền" : "Tạo câu"}</span>
               </button>
             ))}
           </div>
@@ -136,7 +136,7 @@ export default function GrammarDetailClient({
 
       {/* ── Content ── */}
       <div className="flex-1 max-w-2xl mx-auto w-full px-4 py-6">
-        {mode === "study" && <StudyMode point={point} />}
+        {mode === "study" && <StudyMode point={point} onContinue={() => setMode("fill")} />}
         {mode === "fill"  && <FillMode  point={point} />}
         {mode === "sort"  && <SortMode  point={point} />}
       </div>
@@ -146,9 +146,13 @@ export default function GrammarDetailClient({
 
 // ─── Mode 1: Điểm ngữ pháp (Study) ──────────────────────────────────────────
 
-function StudyMode({ point }: { point: GrammarPoint }) {
+function StudyMode({ point, onContinue }: { point: GrammarPoint; onContinue: () => void }) {
   return (
     <div className="space-y-5">
+      <div className="rounded-2xl border p-4 flex gap-3" style={{ borderColor: "#DDD6FE", background: "#F5F3FF" }}>
+        <div className="w-8 h-8 rounded-lg grid place-items-center shrink-0 text-white font-black text-sm" style={{ background: P.purple }}>1</div>
+        <div><p className="text-sm font-bold">Quan sát trước khi luyện</p><p className="text-xs mt-1 leading-5" style={{ color: P.muted }}>Đọc công thức, nghe từng câu mẫu rồi ẩn pinyin để tự đọc lại. Khi đã hiểu, chuyển sang bài Điền từ.</p></div>
+      </div>
       {/* Structures */}
       <div className="rounded-2xl border p-4" style={{ borderColor: P.border, backgroundColor: P.surface }}>
         <p className="text-xs font-semibold uppercase tracking-wide mb-3" style={{ color: P.faint }}>
@@ -198,6 +202,7 @@ function StudyMode({ point }: { point: GrammarPoint }) {
           ))}
         </div>
       </div>
+      <button onClick={onContinue} className="w-full rounded-xl py-3 font-bold text-white flex items-center justify-center gap-2" style={{ background: P.purple }}>Đã hiểu, luyện điền từ <ChevronRight size={17}/></button>
     </div>
   );
 }
