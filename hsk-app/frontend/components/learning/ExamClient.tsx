@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AlertTriangle, CheckCircle, Clock3, Trophy } from "lucide-react";
 import { MOCK_EXAMS } from "@/lib/examData";
+import { loadCloudModuleProgress, saveCloudModuleProgress } from "@/lib/moduleProgress";
 
 const P = { bg: "#FFFBEA", surface: "#FFFDF0", soft: "#FFF3B0", border: "#E8D98A", text: "#1C1408", muted: "#78614A" };
 const STORAGE_KEY = "hsk_mock_exam_results_v1";
@@ -18,11 +19,23 @@ export default function ExamClient() {
   const exam = MOCK_EXAMS.find((item) => item.id === examId) ?? MOCK_EXAMS[0];
   const score = useMemo(() => Math.round(exam.questions.filter((question, index) => answers[index] === question.answer).length / exam.questions.length * 100), [answers, exam]);
 
-  useEffect(() => { try { setResults(JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}")); } catch { setResults({}); } }, []);
+  useEffect(() => {
+    let local: Record<string, number> = {};
+    try { local = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}"); } catch { /* ignore invalid cache */ }
+    setResults(local);
+    loadCloudModuleProgress().then((rows) => {
+      if (!rows) return;
+      const merged = { ...local };
+      rows.filter((r) => r.module === "exam" && r.bestScore !== null).forEach((r) => { merged[r.itemId] = Math.max(merged[r.itemId] ?? 0, r.bestScore ?? 0); });
+      setResults(merged); localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+      Object.entries(local).forEach(([itemId, value]) => { void saveCloudModuleProgress("exam", itemId, { score: value, completed: true }); });
+    });
+  }, []);
   const finish = useCallback(() => {
     if (submitted || !started) return;
     const updated = { ...results, [exam.id]: Math.max(results[exam.id] ?? 0, score) };
     setResults(updated); localStorage.setItem(STORAGE_KEY, JSON.stringify(updated)); setSubmitted(true);
+    void saveCloudModuleProgress("exam", exam.id, { score, completed: true, countAttempt: true });
   }, [exam.id, results, score, started, submitted]);
   useEffect(() => { if (!started || submitted) return; const timer = window.setInterval(() => setTimeLeft((value) => Math.max(0, value - 1)), 1000); return () => clearInterval(timer); }, [started, submitted]);
   useEffect(() => { if (started && !submitted && timeLeft === 0) finish(); }, [finish, started, submitted, timeLeft]);

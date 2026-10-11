@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { CheckCircle, Eye, EyeOff, MessageCircle, RotateCcw, Volume2 } from "lucide-react";
 import { DIALOGUE_SCENARIOS } from "@/lib/dialogueData";
+import { loadCloudModuleProgress, saveCloudModuleProgress } from "@/lib/moduleProgress";
 
 const P = { bg: "#FFFBEA", surface: "#FFFDF0", soft: "#FFF3B0", border: "#E8D98A", text: "#1C1408", muted: "#78614A" };
 const STORAGE_KEY = "hsk_dialogue_completed_v1";
@@ -15,8 +16,18 @@ export default function DialogueClient() {
   const [selected, setSelected] = useState<number | null>(null);
   const [completed, setCompleted] = useState<string[]>([]);
   const scenario = DIALOGUE_SCENARIOS.find((item) => item.id === scenarioId) ?? DIALOGUE_SCENARIOS[0];
-  useEffect(() => { try { setCompleted(JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "[]")); } catch { setCompleted([]); } }, []);
-  const choose = (index: number) => { if (selected !== null) return; setSelected(index); if (index === scenario.challenge.answer && !completed.includes(scenario.id)) { const updated = [...completed, scenario.id]; setCompleted(updated); localStorage.setItem(STORAGE_KEY, JSON.stringify(updated)); } };
+  useEffect(() => {
+    let local: string[] = [];
+    try { local = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "[]"); } catch { /* ignore invalid cache */ }
+    setCompleted(local);
+    loadCloudModuleProgress().then((rows) => {
+      if (!rows) return;
+      const merged = Array.from(new Set([...local, ...rows.filter((r) => r.module === "dialogue" && r.completed).map((r) => r.itemId)]));
+      setCompleted(merged); localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+      local.forEach((itemId) => { void saveCloudModuleProgress("dialogue", itemId, { completed: true }); });
+    });
+  }, []);
+  const choose = (index: number) => { if (selected !== null) return; setSelected(index); if (index === scenario.challenge.answer && !completed.includes(scenario.id)) { const updated = [...completed, scenario.id]; setCompleted(updated); localStorage.setItem(STORAGE_KEY, JSON.stringify(updated)); void saveCloudModuleProgress("dialogue", scenario.id, { completed: true, countAttempt: true }); } };
   const selectScenario = (id: string) => { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); setScenarioId(id); setSelected(null); };
 
   return <main className="min-h-screen" style={{ background: P.bg }}>

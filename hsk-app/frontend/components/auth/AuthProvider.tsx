@@ -106,6 +106,28 @@ async function syncLocalStorageToDB(): Promise<void> {
       }
     }
   } catch { /* ignore */ }
+
+  // 5. Progress from the newer learning modules
+  const moduleCaches: Array<[string, string, "list" | "scores"]> = [
+    ["topic", "hsk_topic_progress_v1", "list"],
+    ["reading", "hsk_reading_scores_v1", "scores"],
+    ["dialogue", "hsk_dialogue_completed_v1", "list"],
+    ["exam", "hsk_mock_exam_results_v1", "scores"],
+  ];
+  for (const [module, key, shape] of moduleCaches) {
+    try {
+      const raw = localStorage.getItem(key);
+      if (!raw) continue;
+      const parsed = JSON.parse(raw) as string[] | Record<string, number>;
+      const entries: Array<[string, number | undefined]> = shape === "list"
+        ? (parsed as string[]).map((itemId) => [itemId, undefined])
+        : Object.entries(parsed as Record<string, number>);
+      await Promise.all(entries.map(([itemId, score]) => fetch("/api/progress/modules", {
+        method: "POST", headers: { "Content-Type": "application/json" }, credentials: "include",
+        body: JSON.stringify({ module, itemId, completed: true, ...(score !== undefined && { score }) }),
+      })));
+    } catch { /* ignore malformed local cache or offline state */ }
+  }
 }
 
 // ─── Context ──────────────────────────────────────────────────────────────────
@@ -221,6 +243,10 @@ export function AuthProvider({
       localStorage.removeItem("hsk_lesson_progress");
       localStorage.removeItem("hsk_gate_v1");
       localStorage.removeItem("hsk_notebook_v1");
+      localStorage.removeItem("hsk_topic_progress_v1");
+      localStorage.removeItem("hsk_reading_scores_v1");
+      localStorage.removeItem("hsk_dialogue_completed_v1");
+      localStorage.removeItem("hsk_mock_exam_results_v1");
     }
     setUser(null);
     router.push("/");

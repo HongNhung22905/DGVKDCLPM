@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { BookOpen, CheckCircle, ChevronLeft, ChevronRight, RotateCcw, Volume2 } from "lucide-react";
 import { VOCABULARY_TOPICS, type TopicWord } from "@/lib/topicData";
+import { loadCloudModuleProgress, saveCloudModuleProgress } from "@/lib/moduleProgress";
 
 const P = { bg: "#FFFBEA", surface: "#FFFDF0", soft: "#FFF3B0", border: "#E8D98A", text: "#1C1408", muted: "#78614A" };
 const STORAGE_KEY = "hsk_topic_progress_v1";
@@ -40,7 +41,15 @@ export default function TopicVocabularyClient() {
   const options = useMemo(() => quiz ? makeOptions(word, allWords) : [], [quiz, word, allWords]);
 
   useEffect(() => {
-    try { setCompleted(JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "[]")); } catch { setCompleted([]); }
+    let local: string[] = [];
+    try { local = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "[]"); } catch { /* ignore invalid cache */ }
+    setCompleted(local);
+    loadCloudModuleProgress().then((rows) => {
+      if (!rows) return;
+      const merged = Array.from(new Set([...local, ...rows.filter((r) => r.module === "topic" && r.completed).map((r) => r.itemId)]));
+      setCompleted(merged); localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+      local.forEach((itemId) => { void saveCloudModuleProgress("topic", itemId, { completed: true }); });
+    });
   }, []);
 
   const chooseTopic = (id: string) => {
@@ -54,6 +63,7 @@ export default function TopicVocabularyClient() {
       const updated = [...completed, topic.id];
       setCompleted(updated);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+      void saveCloudModuleProgress("topic", topic.id, { completed: true });
     }
   };
 

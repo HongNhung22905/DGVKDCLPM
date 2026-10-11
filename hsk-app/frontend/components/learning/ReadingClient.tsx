@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { BookOpenText, CheckCircle, Eye, EyeOff, Volume2 } from "lucide-react";
 import { READING_LESSONS } from "@/lib/readingData";
+import { loadCloudModuleProgress, saveCloudModuleProgress } from "@/lib/moduleProgress";
 
 const P = { bg: "#FFFBEA", surface: "#FFFDF0", soft: "#FFF3B0", border: "#E8D98A", text: "#1C1408", muted: "#78614A" };
 const STORAGE_KEY = "hsk_reading_scores_v1";
@@ -16,7 +17,18 @@ export default function ReadingClient() {
   const [scores, setScores] = useState<Record<string, number>>({});
   const lesson = READING_LESSONS.find((item) => item.id === lessonId) ?? READING_LESSONS[0];
 
-  useEffect(() => { try { setScores(JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}")); } catch { setScores({}); } }, []);
+  useEffect(() => {
+    let local: Record<string, number> = {};
+    try { local = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}"); } catch { /* ignore invalid cache */ }
+    setScores(local);
+    loadCloudModuleProgress().then((rows) => {
+      if (!rows) return;
+      const merged = { ...local };
+      rows.filter((r) => r.module === "reading" && r.bestScore !== null).forEach((r) => { merged[r.itemId] = Math.max(merged[r.itemId] ?? 0, r.bestScore ?? 0); });
+      setScores(merged); localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+      Object.entries(local).forEach(([itemId, value]) => { void saveCloudModuleProgress("reading", itemId, { score: value, completed: true }); });
+    });
+  }, []);
   const selectLesson = (id: string) => { setLessonId(id); setAnswers({}); setSubmitted(false); setAttemptScore(null); setShowSupport(false); };
   const submit = () => {
     if (Object.keys(answers).length !== lesson.questions.length) return;
@@ -24,6 +36,7 @@ export default function ReadingClient() {
     const score = Math.round(correct / lesson.questions.length * 100);
     const updated = { ...scores, [lesson.id]: Math.max(scores[lesson.id] ?? 0, score) };
     setScores(updated); setAttemptScore(score); localStorage.setItem(STORAGE_KEY, JSON.stringify(updated)); setSubmitted(true);
+    void saveCloudModuleProgress("reading", lesson.id, { score, completed: true, countAttempt: true });
   };
   const speak = () => { if (!("speechSynthesis" in window)) return; speechSynthesis.cancel(); const utterance = new SpeechSynthesisUtterance(lesson.passage); utterance.lang = "zh-CN"; utterance.rate = 0.78; speechSynthesis.speak(utterance); };
 

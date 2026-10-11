@@ -29,6 +29,25 @@ model User {
   aiSessions      AiSession[]
   grammarProgress GrammarProgress[]
   reviewSessions  ReviewSession[]
+  moduleProgress  ModuleProgress[]
+}
+
+// Progress for the newer learning modules (topics, reading, dialogues, exams)
+model ModuleProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  module      String
+  itemId      String
+  completed   Boolean  @default(false)
+  bestScore   Int?
+  attempts    Int      @default(0)
+  completedAt DateTime?
+  updatedAt   DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, module, itemId])
+  @@index([userId, module])
 }
 
 // ─── Lesson progress ───────────────────────────────────────────────────────────
