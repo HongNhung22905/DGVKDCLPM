@@ -1,202 +1,213 @@
-# 🀄 HSK Vocabulary App — Monorepo
+# HSK 3.0 — Nền tảng học tiếng Trung
 
-Ứng dụng học từ vựng tiếng Trung theo chuẩn **HSK 3.0** (tiêu chuẩn 9 bậc 2021).  
-7 cấp độ · 105 bài học · 2100 từ · nghĩa tiếng Việt · flashcard SM-2 · luyện viết · game · kiểm tra có gate · AI Tutor · ngữ pháp.
+Ứng dụng web học tiếng Trung dành cho người Việt, xây dựng theo định hướng HSK 3.0. Hệ thống kết hợp học từ vựng, luyện viết chữ Hán, ngữ pháp, ôn tập ngắt quãng, đọc hiểu, hội thoại, luyện thi và gia sư AI trong một sản phẩm duy nhất.
 
----
+Ứng dụng: [hsk-app-sage.vercel.app](https://hsk-app-sage.vercel.app/)
 
-## 📁 Cấu trúc Monorepo
+## Tính năng chính
 
+### Học từ vựng
+
+- Từ vựng được chia theo cấp độ HSK và bài học.
+- Flashcard tự động phát âm tiếng Trung.
+- Đánh dấu `Thuộc` / `Chưa thuộc` và ưu tiên ôn lại từ chưa nhớ.
+- Game chọn đáp án và điền chữ Hán theo nghĩa.
+- Bài kiểm tra mở khóa nhóm bài tiếp theo.
+- Lưu từ yêu thích và ghi chú trong Sổ tay.
+
+### Ôn tập và tiến độ
+
+- Lập lịch ôn theo thuật toán SM-2.
+- Hiển thị từ đến hạn ôn và lịch sử phiên ôn.
+- Thống kê số thẻ, điểm, chuỗi ngày học và tiến độ bài học.
+- Tiến độ được lưu theo tài khoản trên PostgreSQL.
+- Dữ liệu khi chưa đăng nhập được giữ trong `localStorage` và đồng bộ sau khi đăng nhập.
+
+### Luyện viết chữ Hán
+
+- Hiển thị thứ tự nét bằng Hanzi Writer.
+- Chế độ tập viết tự động phát hoạt ảnh thứ tự nét.
+- Chế độ kiểm tra chuyển thẳng sang tự viết và kiểm tra nét.
+
+### Nội dung luyện tập mở rộng
+
+- Từ vựng theo chủ đề với flashcard và câu hỏi kiểm tra.
+- Bài đọc hiểu có pinyin, bản dịch, từ khóa và câu hỏi.
+- Hội thoại theo tình huống, nghe từng câu và luyện phản xạ.
+- Đề luyện thi có đồng hồ, phiếu trả lời, chấm điểm và giải thích.
+- Tiến độ của bốn module trên được đồng bộ theo tài khoản.
+
+### Tra từ và Gia sư AI
+
+- Tra cứu hơn 10.000 mục từ theo chữ Hán, pinyin, nghĩa tiếng Anh hoặc tiếng Việt.
+- Lọc theo cấp HSK, xem từ loại, bộ thủ và nghe phát âm.
+- Gia sư AI hỗ trợ dịch, giải thích, tạo ví dụ và phân tích ngữ pháp.
+- Tự động thử model Gemini dự phòng khi model chính không khả dụng.
+
+## Công nghệ
+
+| Thành phần | Công nghệ |
+| --- | --- |
+| Giao diện và API | Next.js 14, React 18, TypeScript |
+| CSS | Tailwind CSS |
+| Cơ sở dữ liệu | PostgreSQL trên Neon |
+| ORM | Prisma 5 |
+| Xác thực | JWT trong cookie HttpOnly, bcryptjs |
+| AI | Google Gemini API |
+| Viết chữ Hán | Hanzi Writer |
+| Icon | Lucide React |
+| Triển khai | Vercel |
+
+## Kiến trúc tổng thể
+
+```text
+Trình duyệt
+├── Next.js pages và React components
+├── localStorage (chế độ khách và bộ nhớ đệm)
+└── Next.js API Routes
+    ├── JWT authentication
+    ├── Prisma ORM ──> Neon PostgreSQL
+    └── Gemini API
 ```
+
+```text
 hsk-app/
-├── frontend/          ← Next.js 14 + React + Tailwind (UI + API Routes)
-│   ├── app/           ← Pages + API route handlers (Next.js App Router)
-│   │   ├── api/
-│   │   │   ├── auth/        ← login, logout, me
-│   │   │   ├── ai/          ← examples, explain, grammar, translate (Gemini)
-│   │   │   ├── progress/    ← flashcard, gate, lesson
-│   │   │   └── review/      ← lịch ôn từ vựng
-│   │   ├── vocabulary/      ← Từ vựng, flashcard, game, viết, kiểm tra
-│   │   ├── grammar/         ← Ngữ pháp HSK
-│   │   ├── ai-tutor/        ← AI Tutor chat (Gemini)
-│   │   ├── review/          ← Ôn tập từ vựng
-│   │   ├── progress/        ← Thống kê tiến độ học
-│   │   ├── writing/         ← Luyện viết chữ Hán
-│   │   ├── login/
-│   │   ├── register/
-│   │   ├── notebook/
-│   │   └── search/
-│   ├── components/    ← React components
-│   │   ├── ai/        ← AiTutorClient
-│   │   ├── auth/      ← AuthProvider (context), AuthButton
-│   │   ├── grammar/   ← Grammar components
-│   │   ├── review/    ← Review components
-│   │   ├── ui/        ← BackButton, Badge, ProgressBar
-│   │   └── vocabulary/← VocabularyClient, FlashcardClient, GameClient...
-│   ├── lib/           ← Utilities
-│   │   ├── auth.ts              ← JWT helpers (client)
-│   │   ├── gemini.ts            ← Google Gemini API client
-│   │   ├── grammarDataServer.ts ← Server-only: đọc dữ liệu ngữ pháp
-│   │   ├── grammarDetector.ts   ← Phát hiện điểm ngữ pháp trong câu
-│   │   ├── hskData.ts           ← Client-safe: SM-2, localStorage, gate system
-│   │   ├── hskDataServer.ts     ← Server-only: đọc JSON bằng Node.js fs
-│   │   ├── notebookData.ts      ← Sổ tay localStorage
-│   │   ├── prisma.ts            ← Prisma Client singleton
-│   │   └── progressStats.ts     ← Tính toán thống kê tiến độ
-│   ├── types/         ← TypeScript interfaces (Word, Lesson, SM2Card...)
-│   ├── public/data/   ← Dataset JSON tĩnh (hsk-new-1..7.json)
-│   ├── scripts/       ← processData.mjs, translateVi.mjs
-│   └── prisma/        ← Prisma Client (generate từ backend/prisma/)
-│
-└── backend/           ← Server utilities + DB schema
-    ├── lib/
-    │   ├── auth.ts    ← JWT sign/verify (jsonwebtoken)
-    │   ├── prisma.ts  ← Prisma Client singleton
-    │   └── session.ts ← httpOnly cookie helpers
-    └── prisma/
-        ├── schema.prisma ← DB schema (User, Progress, Flashcard, Gate...)
-        └── seed.ts       ← Database seeder
+├── frontend/
+│   ├── app/                 # Trang và API Routes
+│   ├── components/          # Component giao diện
+│   ├── lib/                 # Auth, Prisma, dữ liệu và thuật toán
+│   ├── public/data/         # Dữ liệu HSK và chỉ mục tra cứu
+│   └── scripts/             # Xử lý, sinh và kiểm tra dữ liệu
+├── backend/
+│   └── prisma/
+│       └── schema.prisma    # Schema PostgreSQL dùng chung
+└── tests/                   # Kiểm thử cấp repository
 ```
 
----
+`frontend` là ứng dụng chạy thực tế, đảm nhiệm cả giao diện lẫn backend qua Next.js Route Handlers. Thư mục `backend` hiện chứa schema Prisma và tiện ích cơ sở dữ liệu, không phải server cần chạy riêng.
 
-## 🏗 Kiến trúc
+## Các trang chính
 
-```
-Browser  ←──────────────────────────────────────────────────────────────►  Neon PostgreSQL
-         React Components                                              Prisma ORM
-         (components/)                                                 (backend/prisma/)
-              ↕ fetch / API calls
-         Next.js API Routes                      JWT Cookie (httpOnly)
-         (frontend/app/api/)  ←── lib/auth.ts ──────────────────────────►  Session
-              ↕ Prisma queries
-         PostgreSQL (Neon)
-              ↕
-         Google Gemini API  ←── lib/gemini.ts  (AI Tutor, dịch, giải thích)
-```
+| Đường dẫn | Chức năng |
+| --- | --- |
+| `/vocabulary` | Giáo trình và bài học từ vựng |
+| `/review` | Ôn tập từ theo lịch SM-2 |
+| `/writing` | Luyện viết chữ Hán |
+| `/grammar` | Học và luyện ngữ pháp |
+| `/search` | Tra từ điển |
+| `/notebook` | Sổ tay cá nhân |
+| `/topics` | Từ vựng theo chủ đề |
+| `/reading` | Đọc hiểu |
+| `/dialogues` | Hội thoại tình huống |
+| `/exams` | Đề luyện thi |
+| `/ai-tutor` | Gia sư AI |
+| `/progress` | Tiến độ bài học |
+| `/stats` | Thống kê ôn tập |
 
-**Frontend** (Next.js) đảm nhận cả UI lẫn API routes. **Backend** folder chứa schema DB và server utilities được import bởi các API routes.
+## Cài đặt local
 
----
-
-## ✨ Tính năng
-
-| Module | Mô tả | Thuật toán |
-|---|---|---|
-| 📖 **Từ vựng** | 15 bài/cấp · 20 từ/bài · nghĩa EN + VI · audio TTS | — |
-| ⚡ **Flashcard** | Lật thẻ · 6 mức đánh giá · lịch ôn thông minh | SM-2 |
-| ✍️ **Luyện viết** | Thứ tự nét chuẩn · chế độ tự kiểm tra | Hanzi Writer |
-| 🎮 **Game** | Quiz nghĩa / Pinyin / Chữ Hán · 4 đáp án | Levenshtein |
-| 📝 **Kiểm tra** | 20 câu random · điền pinyin · trắc nghiệm | Levenshtein |
-| 🔒 **Gate system** | Đạt ≥80% mới mở 3 bài tiếp theo | — |
-| 👤 **Auth** | Đăng ký / đăng nhập · JWT httpOnly cookie | bcrypt + JWT |
-| 📒 **Sổ tay** | Lưu từ yêu thích · ghi chú cá nhân | localStorage + DB |
-| 🔍 **Tra từ** | Tìm theo Hán / Pinyin / nghĩa · fuzzy search | Levenshtein |
-| 🤖 **AI Tutor** | Chat với Gemini · giải thích từ/câu · dịch · ví dụ | Gemini API |
-| 📚 **Ngữ pháp** | Điểm ngữ pháp HSK · phát hiện trong câu | — |
-| 📊 **Tiến độ** | Thống kê học tập · biểu đồ tiến độ | — |
-| 🔁 **Ôn tập** | Ôn lại từ đã học theo lịch | SM-2 |
-
----
-
-## 🚀 Cài đặt & chạy
-
-### Yêu cầu
-- Node.js ≥ 18 · npm ≥ 9
-
-### Cài đặt
+Yêu cầu Node.js 18 trở lên, npm và một PostgreSQL database.
 
 ```bash
-cd hsk-app/frontend && npm install
+git clone https://github.com/HongNhung22905/hsk_app.git
+cd hsk_app/hsk-app
+npm install
+cd frontend && npm install
 cd ../backend && npm install
 ```
 
-### Cấu hình môi trường
+Tạo `hsk-app/frontend/.env.local` dựa trên `.env.local.example`:
 
-```bash
-cp frontend/.env.local.example frontend/.env.local
+```env
+DATABASE_URL="postgresql://USER:PASSWORD@HOST/DATABASE?sslmode=require"
+NEXTAUTH_SECRET="mot-chuoi-bi-mat-dai-va-ngau-nhien"
+GEMINI_API_KEY="google-gemini-api-key"
+AI_DAILY_LIMIT="20"
 ```
 
-Các biến cần điền:
-- `DATABASE_URL` — PostgreSQL connection string (Neon, Supabase, Railway...)
-- `NEXTAUTH_SECRET` — JWT secret (chạy `openssl rand -base64 32` để tạo)
-- `GEMINI_API_KEY` — Google Gemini API key (cho AI Tutor)
+- `DATABASE_URL`: chuỗi kết nối PostgreSQL, bắt buộc cho đăng nhập và lưu tiến độ.
+- `NEXTAUTH_SECRET`: khóa ký JWT, bắt buộc trong production.
+- `GEMINI_API_KEY`: bắt buộc nếu sử dụng Gia sư AI.
+- `AI_DAILY_LIMIT`: giới hạn lượt gọi AI theo ngày, mặc định là `20`.
+- `GEMINI_MODELS`: tùy chọn, danh sách model dự phòng phân cách bằng dấu phẩy.
 
-### Khởi tạo database
+Khởi tạo schema database:
 
 ```bash
 cd hsk-app/backend
-npm install
-npm run db:push
+npx prisma db push
 ```
 
-### Chạy development
+Chạy ứng dụng:
 
 ```bash
-cd frontend
+cd ../frontend
 npm run dev
-# → http://localhost:3000
 ```
 
----
+Mở [http://localhost:3000](http://localhost:3000).
 
-## 📊 API Endpoints
+## Lệnh phát triển
 
-### Auth
-| Method | Endpoint | Mô tả |
-|---|---|---|
-| POST | `/api/auth/register` | Đăng ký tài khoản |
-| POST | `/api/auth/login` | Đăng nhập |
-| POST | `/api/auth/logout` | Đăng xuất |
-| GET | `/api/auth/me` | Thông tin user hiện tại |
+Chạy trong `hsk-app/frontend`:
 
-### Progress
-| Method | Endpoint | Mô tả |
-|---|---|---|
-| GET/POST | `/api/progress/lesson` | Tiến độ bài học |
-| GET/POST | `/api/progress/flashcard` | Đồng bộ SM-2 cards |
-| GET/POST | `/api/progress/gate` | Kết quả kiểm tra gate |
-
-### AI (Gemini)
-| Method | Endpoint | Mô tả |
-|---|---|---|
-| POST | `/api/ai/translate` | Dịch từ/câu |
-| POST | `/api/ai/explain` | Giải thích từ/câu |
-| POST | `/api/ai/examples` | Tạo câu ví dụ |
-| POST | `/api/ai/grammar` | Phân tích ngữ pháp |
-
-### Khác
-| Method | Endpoint | Mô tả |
-|---|---|---|
-| GET | `/api/review` | Danh sách từ cần ôn tập |
-
----
-
-## 🗄 Database Schema
-
-```
-User ──┬── LessonProgress  (userId + lessonId)
-       ├── FlashcardCard   (userId + wordId, SM-2 fields)
-       ├── GateResult      (userId + setId, passed/score)
-       ├── TestResult      (userId, setId, score, history)
-       ├── GameResult      (userId, lessonId, mode, score)
-       └── NotebookEntry   (userId + wordId, note)
+```bash
+npm run dev             # Development server
+npm run build           # Prisma generate và production build
+npm run start           # Chạy production server đã build
+npm run data:validate   # Kiểm tra dữ liệu học tập HSK 1 và HSK 2
+npm run prisma:generate # Sinh và đồng bộ Prisma Client
+npx tsc --noEmit        # Kiểm tra TypeScript
 ```
 
----
+Chạy kiểm thử toàn repository trong `hsk-app`:
 
-## 🔒 Gate System
-
-```
-Nhóm 1 (Bài 1–3) → Học → Kiểm tra ≥80% → Nhóm 2 mở
-Nhóm 2 (Bài 4–6) → Học → Kiểm tra ≥80% → Nhóm 3 mở
-...
+```bash
+npm test
 ```
 
-Gate state lưu trong `localStorage` (`hsk_gate_v1`) và sync lên DB qua `/api/progress/gate`.
+## API chính
 
----
+| Nhóm | Endpoint |
+| --- | --- |
+| Xác thực | `POST /api/auth/register`, `POST /api/auth/login`, `POST /api/auth/logout`, `GET /api/auth/me` |
+| Bài học | `GET/POST /api/progress/lesson`, `GET/POST /api/progress/gate` |
+| Flashcard | `GET/POST /api/progress/flashcard`, `POST /api/progress/flashcard/bulk` |
+| Module mới | `GET/POST /api/progress/modules` |
+| Ngữ pháp | `GET/POST /api/progress/grammar` |
+| Ôn tập | `GET /api/review`, `GET /api/review/history` |
+| Sổ tay | `GET/POST /api/user/notebook` |
+| Tra từ | `GET /api/search` |
+| Gia sư AI | `POST /api/ai/translate`, `/explain`, `/examples`, `/grammar` |
 
-## 📝 License
+Các endpoint dữ liệu cá nhân yêu cầu JWT hợp lệ trong cookie HttpOnly.
 
-MIT · Dữ liệu từ vựng: [CC-CEDICT](https://www.mdbg.net/chinese/dictionary) · [complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary) (MIT)
+## Mô hình dữ liệu
+
+- `User`: tài khoản người dùng.
+- `LessonProgress`: bài từ vựng đã hoàn thành và điểm cao nhất.
+- `FlashcardCard`: trạng thái SM-2 của từng từ.
+- `GateResult`, `TestResult`, `GameResult`: kết quả kiểm tra và game.
+- `NotebookEntry`: từ đã lưu và ghi chú cá nhân.
+- `GrammarProgress`: điểm luyện ngữ pháp.
+- `ReviewSession`: lịch sử phiên ôn tập.
+- `WrongWord`: các từ người học thường trả lời sai.
+- `ModuleProgress`: tiến độ chủ đề, đọc hiểu, hội thoại và luyện thi.
+- `AiSession`: lịch sử yêu cầu AI khi được ghi nhận.
+
+## Triển khai Vercel
+
+1. Import repository `HongNhung22905/hsk_app`.
+2. Đặt **Root Directory** là `hsk-app/frontend`.
+3. Framework Preset chọn **Next.js**.
+4. Build Command giữ mặc định `npm run build`.
+5. Khai báo `DATABASE_URL`, `NEXTAUTH_SECRET`, `GEMINI_API_KEY` và tùy chọn `AI_DAILY_LIMIT`.
+6. Trước khi deploy thay đổi schema, chạy `npx prisma db push` trong `hsk-app/backend` với đúng database production.
+
+Không đặt Root Directory thành `frontend`, vì thư mục này nằm bên trong `hsk-app`.
+
+## Nguồn dữ liệu và giấy phép
+
+Dự án sử dụng dữ liệu từ [CC-CEDICT](https://www.mdbg.net/chinese/dictionary) và [complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary). Hãy kiểm tra giấy phép của từng nguồn trước khi phân phối lại dữ liệu.
+
+Mã nguồn dự án được phát hành theo giấy phép MIT.
