@@ -1,14 +1,15 @@
 {
   "level": "HSK 1",
   "levelNumber": 1,
-  "totalPoints": 121,
-  "totalExamples": 625,
+  "totalPoints": 50,
+  "totalExamples": 603,
   "points": [
     {
       "id": "1-ASG846EA",
       "title": "Expressing actions in progress with zai",
       "structures": [
-        "Subj. + 在 + Verb + Obj."
+        "Subj. + 在 + Verb + Obj.",
+        "Subj. + 正在 + Verb + Obj."
       ],
       "usedFor": [
         "Describing actions",
@@ -84,23 +85,7 @@
           "chinese": "昨天晚上七点，我们在吃饭。",
           "pinyin": "zuótiān wǎnshàng qīdiǎn，wǒmen zài chīfàn 。",
           "translation": "At 7 o'clock last night, we were eating."
-        }
-      ],
-      "titleVi": "Diễn tả hành động đang diễn ra với 在"
-    },
-    {
-      "id": "1-ASG846EA",
-      "title": "Expressing actions in progress with zai",
-      "structures": [
-        "Subj. + 正在 + Verb + Obj."
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Indicating conditions",
-        "Referring to the present"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG846EA",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -406,7 +391,8 @@
       "id": "1-ASGIPYFV",
       "title": "Standard negation with bu",
       "structures": [
-        "Subj. + 不 + Verb + Obj."
+        "Subj. + 不 + Verb + Obj.",
+        "Subj. + 不 + Adj."
       ],
       "usedFor": [
         "Negating",
@@ -498,26 +484,7 @@
           "chinese": "我没有时间。",
           "pinyin": "wǒ méiyǒushíjiān 。",
           "translation": "I do not have time."
-        }
-      ],
-      "titleVi": "Phủ định chuẩn với 不"
-    },
-    {
-      "id": "1-ASGIPYFV",
-      "title": "Standard negation with bu",
-      "structures": [
-        "Subj. + 不 + Adj."
-      ],
-      "usedFor": [
-        "Negating",
-        "Describing actions",
-        "Denying and refusing",
-        "Referring to habitual actions",
-        "Referring to the present",
-        "Referring to the future"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGIPYFV",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -756,7 +723,8 @@
       "id": "1-ASGG25MD",
       "title": "The also adverb ye",
       "structures": [
-        "Subj. + 也 + Verb / [Verb Phrase]"
+        "Subj. + 也 + Verb / [Verb Phrase]",
+        "Subj. + 也 (+ Adv.) + Adj."
       ],
       "usedFor": [
         "Adding more explanation"
@@ -905,21 +873,7 @@
           "chinese": "她也觉得这个老师不好。",
           "pinyin": "tā yě juédé zhè gè lǎoshī bù hǎo 。",
           "translation": "She also thinks this teacher is bad."
-        }
-      ],
-      "titleVi": "Trạng từ cũng 也"
-    },
-    {
-      "id": "1-ASGG25MD",
-      "title": "The also adverb ye",
-      "structures": [
-        "Subj. + 也 (+ Adv.) + Adj."
-      ],
-      "usedFor": [
-        "Adding more explanation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGG25MD",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -1292,7 +1246,8 @@
       "id": "1-ASGUNMHU",
       "title": "Expressing not very with bu tai",
       "structures": [
-        "Subj. + 不太 + Adj."
+        "Subj. + 不太 + Adj.",
+        "Subj. + 不太 + Verb"
       ],
       "usedFor": [
         "Adding more explanation"
@@ -1373,21 +1328,7 @@
           "chinese": "我觉得他不太聪明。",
           "pinyin": "wǒ juédé tā bù tài cōngmíng 。",
           "translation": "I think he is not very smart."
-        }
-      ],
-      "titleVi": "Diễn tả không hay lắm với 不 太"
-    },
-    {
-      "id": "1-ASGUNMHU",
-      "title": "Expressing not very with bu tai",
-      "structures": [
-        "Subj. + 不太 + Verb"
-      ],
-      "usedFor": [
-        "Adding more explanation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGUNMHU",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2125,7 +2066,8 @@
       "id": "1-ASGQUKJF",
       "title": "Age with sui",
       "structures": [
-        "Subj. + Number + 岁"
+        "Subj. + Number + 岁",
+        "Subj. + Number + 岁 + 半"
       ],
       "usedFor": [
         "Introducing people",
@@ -2215,22 +2157,7 @@
           "chinese": "我的孩子一岁。",
           "pinyin": "wǒ de háizǐ yī sùi 。",
           "translation": "My child is one year old."
-        }
-      ],
-      "titleVi": "Tuổi với 虽"
-    },
-    {
-      "id": "1-ASGQUKJF",
-      "title": "Age with sui",
-      "structures": [
-        "Subj. + Number + 岁 + 半"
-      ],
-      "usedFor": [
-        "Introducing people",
-        "Describing people"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGQUKJF",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2262,7 +2189,8 @@
       "id": "1-ASGI0T9S",
       "title": "Measure word ge",
       "structures": [
-        "Number + 个 + Noun"
+        "Number + 个 + Noun",
+        "Verb + 个 + Noun"
       ],
       "usedFor": [
         "Expressing quantity"
@@ -2286,21 +2214,7 @@
           "chinese": "十个男人，七个傻，八个坏。",
           "pinyin": "shí gè nánrén， qī gè shǎ， bā gè huài 。",
           "translation": "Ten men, seven silly, and eight bad."
-        }
-      ],
-      "titleVi": "Đo từ ge"
-    },
-    {
-      "id": "1-ASGI0T9S",
-      "title": "Measure word ge",
-      "structures": [
-        "Verb + 个 + Noun"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGI0T9S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2535,7 +2449,9 @@
       "id": "1-ASGDTO07",
       "title": "Structure of times (advanced)",
       "structures": [
-        "x 点 零 y 分"
+        "x 点 零 y 分",
+        "x 点 y 分",
+        "Hour + 点 + 差 + Minutes + 分"
       ],
       "usedFor": [
         "Expressing time and date"
@@ -2605,21 +2521,7 @@
           "chinese": "八点零五分",
           "pinyin": "bā diǎn líng wǔ fēn",
           "translation": "8.05"
-        }
-      ],
-      "titleVi": "Cấu trúc thời gian (nâng cao)"
-    },
-    {
-      "id": "1-ASGDTO10",
-      "title": "Structure of times (advanced)",
-      "structures": [
-        "x 点 y 分"
-      ],
-      "usedFor": [
-        "Expressing time and date"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDTO10",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2694,21 +2596,7 @@
           "chinese": "六点三刻",
           "pinyin": "lìu diǎn sān kè",
           "translation": "Six thirty"
-        }
-      ],
-      "titleVi": "Cấu trúc thời gian (nâng cao)"
-    },
-    {
-      "id": "1-ASGDTO09",
-      "title": "Structure of times (advanced)",
-      "structures": [
-        "Hour + 点 + 差 + Minutes + 分"
-      ],
-      "usedFor": [
-        "Expressing time and date"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDTO09",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2742,7 +2630,9 @@
       "id": "1-ASGN6BBU",
       "title": "Structure of times (basic)",
       "structures": [
-        "Hour + 点 + 差 + Minutes + 分"
+        "Hour + 点 + 差 + Minutes + 分",
+        "(Date and/or time of day +) x 点",
+        "x 点 + 半"
       ],
       "usedFor": [
         "Expressing time and date"
@@ -2775,21 +2665,7 @@
           "chinese": "十点差两分",
           "pinyin": "shí diǎn chà liǎng fēn",
           "translation": "Ten points to two points"
-        }
-      ],
-      "titleVi": "Cấu trúc thời gian (cơ bản)"
-    },
-    {
-      "id": "1-ASGN6BBU",
-      "title": "Structure of times (basic)",
-      "structures": [
-        "(Date and/or time of day +) x 点"
-      ],
-      "usedFor": [
-        "Expressing time and date"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGN6BBU",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2861,21 +2737,7 @@
           "chinese": "星期三上午九点",
           "pinyin": "xīngqīsān shàngwǔ jǐu diǎn",
           "translation": "Wednesday at 9 am"
-        }
-      ],
-      "titleVi": "Cấu trúc thời gian (cơ bản)"
-    },
-    {
-      "id": "1-ASGN6BBU",
-      "title": "Structure of times (basic)",
-      "structures": [
-        "x 点 + 半"
-      ],
-      "usedFor": [
-        "Expressing time and date"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGN6BBU",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2919,7 +2781,8 @@
       "id": "1-ASGCI0KG",
       "title": "Expressing close possession without de",
       "structures": [
-        "x 点 + 半"
+        "x 点 + 半",
+        "Pronoun + Noun"
       ],
       "usedFor": [
         "Expressing possession"
@@ -2951,21 +2814,7 @@
           "chinese": "今天下午四点半",
           "pinyin": "jīntiān xiàwǔ sì diǎn bàn",
           "translation": "This afternoon at 4:30"
-        }
-      ],
-      "titleVi": "Diễn tả sự sở hữu gần gũi mà không có 的"
-    },
-    {
-      "id": "1-ASGCI0KG",
-      "title": "Expressing close possession without de",
-      "structures": [
-        "Pronoun + Noun"
-      ],
-      "usedFor": [
-        "Expressing possession"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGCI0KG",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3077,7 +2926,11 @@
       "id": "1-ASGAGDCQ",
       "title": "Expressing completion with le",
       "structures": [
-        "Pronoun + Noun"
+        "Pronoun + Noun",
+        "Subj. + Verb + 了",
+        "Subj. + Time + Verb + 了 + Obj.",
+        "Time + Subj. + Verb + 了 + Obj.",
+        "Subj. + Verb + 了 + [Number + Measure Word] + Obj."
       ],
       "usedFor": [
         "Describing actions",
@@ -3115,23 +2968,7 @@
           "chinese": "他爸爸是我们公司的老板。",
           "pinyin": "tā bàbà shì wǒmen gōngsī de lǎobǎn 。",
           "translation": "His father is the boss of our company."
-        }
-      ],
-      "titleVi": "Diễn tả sự hoàn thành với 了"
-    },
-    {
-      "id": "1-ASGAGDCQ",
-      "title": "Expressing completion with le",
-      "structures": [
-        "Subj. + Verb + 了"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Referring to the past",
-        "Expressing completion"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGAGDCQ",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3168,23 +3005,7 @@
           "chinese": "我们都去了。",
           "pinyin": "wǒmen dū qù le 。",
           "translation": "We have all gone."
-        }
-      ],
-      "titleVi": "Diễn tả sự hoàn thành với 了"
-    },
-    {
-      "id": "1-ASGAGDCQ",
-      "title": "Expressing completion with le",
-      "structures": [
-        "Subj. + Time + Verb + 了 + Obj."
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Referring to the past",
-        "Expressing completion"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGAGDCQ",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3213,23 +3034,7 @@
           "chinese": "她上个月去了北京。",
           "pinyin": "tā shànggè yuè qù le běijīng 。",
           "translation": "She went to Beijing last month."
-        }
-      ],
-      "titleVi": "Diễn tả sự hoàn thành với 了"
-    },
-    {
-      "id": "1-ASGAGDCQ",
-      "title": "Expressing completion with le",
-      "structures": [
-        "Time + Subj. + Verb + 了 + Obj."
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Referring to the past",
-        "Expressing completion"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGAGDCQ",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3293,120 +3098,35 @@
       "titleVi": "Diễn tả sự hoàn thành với 了"
     },
     {
-      "id": "1-ASGAGDCQ",
-      "title": "Expressing completion with le",
+      "id": "1-ASGFR96B",
+      "title": "Expressing not anymore with le",
       "structures": [
-        "Subj. + Verb + 了 + [Number + Measure Word] + Obj."
+        "Subj. + Verb + 了 + [Number + Measure Word] + Obj.",
+        "Subj. + 来 / 去 + Place + Verb / [Verb Phrase] + 了",
+        "不 + [Verb Phrase] + 了",
+        "没(有) + [Noun Phrase] + 了",
+        "已经 + 不 + [Verb Phrase] + 了"
       ],
       "usedFor": [
-        "Describing actions",
-        "Referring to the past",
-        "Expressing completion"
+        "Referring to changes of situation"
       ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGAGDCQ",
+      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFR96B",
       "examples": [
         {
           "id": "ex-1",
           "tokens": [
-            "老师",
-            "问",
+            "我",
+            "喝",
             "了",
-            "五",
-            "个",
-            "问题",
+            "两",
+            "杯",
+            "咖啡",
             "。"
           ],
-          "chinese": "老师问了五个问题。",
-          "pinyin": "lǎoshī wèn le wǔ gè wèntí 。",
-          "translation": "The teacher asked five questions."
+          "chinese": "我喝了两杯咖啡。",
+          "pinyin": "wǒ hē le liǎng bēi kāfēi 。",
+          "translation": "I drank two cups of coffee."
         },
-        {
-          "id": "ex-2",
-          "tokens": [
-            "我",
-            "买",
-            "了",
-            "三",
-            "本",
-            "书",
-            "。"
-          ],
-          "chinese": "我买了三本书。",
-          "pinyin": "wǒ mǎi le sān běn shū 。",
-          "translation": "I bought three books."
-        }
-      ],
-      "titleVi": "Diễn tả sự hoàn thành với 了"
-    },
-    {
-      "id": "1-ASGFR96B",
-      "title": "Expressing not anymore with le",
-      "structures": [
-        "Subj. + Verb + 了 + [Number + Measure Word] + Obj."
-      ],
-      "usedFor": [
-        "Referring to changes of situation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFR96B",
-      "examples": [
-        {
-          "id": "ex-1",
-          "tokens": [
-            "我",
-            "喝",
-            "了",
-            "两",
-            "杯",
-            "咖啡",
-            "。"
-          ],
-          "chinese": "我喝了两杯咖啡。",
-          "pinyin": "wǒ hē le liǎng bēi kāfēi 。",
-          "translation": "I drank two cups of coffee."
-        }
-      ],
-      "titleVi": "Diễn tả không còn nữa với 了"
-    },
-    {
-      "id": "1-ASGFR96B",
-      "title": "Expressing not anymore with le",
-      "structures": [
-        "Subj. + 来 / 去 + Place + Verb / [Verb Phrase] + 了"
-      ],
-      "usedFor": [
-        "Referring to changes of situation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFR96B",
-      "examples": [
-        {
-          "id": "ex-1",
-          "tokens": [
-            "我",
-            "喝",
-            "了",
-            "两",
-            "杯",
-            "咖啡",
-            "。"
-          ],
-          "chinese": "我喝了两杯咖啡。",
-          "pinyin": "wǒ hē le liǎng bēi kāfēi 。",
-          "translation": "I drank two cups of coffee."
-        }
-      ],
-      "titleVi": "Diễn tả không còn nữa với 了"
-    },
-    {
-      "id": "1-ASGFR96B",
-      "title": "Expressing not anymore with le",
-      "structures": [
-        "不 + [Verb Phrase] + 了"
-      ],
-      "usedFor": [
-        "Referring to changes of situation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFR96B",
-      "examples": [
         {
           "id": "ex-1",
           "tokens": [
@@ -3449,21 +3169,7 @@
           "chinese": "你们不能打了。",
           "pinyin": "nǐmen bù néng dǎ le 。",
           "translation": "You can't fight anymore."
-        }
-      ],
-      "titleVi": "Diễn tả không còn nữa với 了"
-    },
-    {
-      "id": "1-ASGFR96B",
-      "title": "Expressing not anymore with le",
-      "structures": [
-        "没(有) + [Noun Phrase] + 了"
-      ],
-      "usedFor": [
-        "Referring to changes of situation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFR96B",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3501,21 +3207,7 @@
           "chinese": "他没有家了。",
           "pinyin": "tā méiyǒu jiā le 。",
           "translation": "He has no home."
-        }
-      ],
-      "titleVi": "Diễn tả không còn nữa với 了"
-    },
-    {
-      "id": "1-ASGFR96B",
-      "title": "Expressing not anymore with le",
-      "structures": [
-        "已经 + 不 + [Verb Phrase] + 了"
-      ],
-      "usedFor": [
-        "Referring to changes of situation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFR96B",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3554,7 +3246,8 @@
       "id": "1-ASGE5Q4J",
       "title": "Expressing now with le",
       "structures": [
-        "已经 + 不 + [Verb Phrase] + 了"
+        "已经 + 不 + [Verb Phrase] + 了",
+        "[New Situation] + 了"
       ],
       "usedFor": [
         "Referring to changes of situation"
@@ -3589,21 +3282,7 @@
           "chinese": "我们已经没有钱了。",
           "pinyin": "wǒmen yǐjīng méiyǒu qián le 。",
           "translation": "We have no money."
-        }
-      ],
-      "titleVi": "Diễn đạt bây giờ với 了"
-    },
-    {
-      "id": "1-ASGE5Q4J",
-      "title": "Expressing now with le",
-      "structures": [
-        "[New Situation] + 了"
-      ],
-      "usedFor": [
-        "Referring to changes of situation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGE5Q4J",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3646,7 +3325,8 @@
       "id": "1-ASGUHQD3",
       "title": "Expressing possession with de",
       "structures": [
-        "[New Situation] + 了"
+        "[New Situation] + 了",
+        "Noun 1 + 的 + Noun 2"
       ],
       "usedFor": [
         "Expressing possession"
@@ -3678,21 +3358,7 @@
           "chinese": "快点儿，开会了！",
           "pinyin": "kuài diǎnér ，kāihùi le ！",
           "translation": "Hurry up, it's time for a meeting!"
-        }
-      ],
-      "titleVi": "Diễn tả sự sở hữu bằng 的"
-    },
-    {
-      "id": "1-ASGUHQD5",
-      "title": "Expressing possession with de",
-      "structures": [
-        "Noun 1 + 的 + Noun 2"
-      ],
-      "usedFor": [
-        "Expressing possession"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGUHQD5",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3777,7 +3443,9 @@
       "id": "1-ASGMJHZO",
       "title": "Questions with ne",
       "structures": [
-        "Noun 1 + 的 + Noun 2"
+        "Noun 1 + 的 + Noun 2",
+        "Topic + 呢 ？",
+        "[Missing Person / Thing] + 呢 ？"
       ],
       "usedFor": [
         "Asking questions",
@@ -3806,54 +3474,7 @@
           "chinese": "老师的朋友",
           "pinyin": "lǎoshī de péngyǒu",
           "translation": "Teacher friend"
-        }
-      ],
-      "titleVi": "Câu hỏi với 呢"
-    },
-    {
-      "id": "1-ASGMJHZO",
-      "title": "Questions with ne",
-      "structures": [
-        "Topic + 呢 ？"
-      ],
-      "usedFor": [
-        "Asking questions",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMJHZO",
-      "examples": [
-        {
-          "id": "ex-1",
-          "tokens": [
-            "这",
-            "个",
-            "很",
-            "好",
-            "，",
-            "那",
-            "个",
-            "呢",
-            "？"
-          ],
-          "chinese": "这个很好，那个呢？",
-          "pinyin": "zhè gè hěn hǎo ， nà gè ní ？",
-          "translation": "This is good, what about that?"
-        }
-      ],
-      "titleVi": "Câu hỏi với 呢"
-    },
-    {
-      "id": "1-ASGMJHZO",
-      "title": "Questions with ne",
-      "structures": [
-        "[Missing Person / Thing] + 呢 ？"
-      ],
-      "usedFor": [
-        "Asking questions",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMJHZO",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3934,7 +3555,8 @@
       "id": "1-ASGDHC1H",
       "title": "Softening speech with ba",
       "structures": [
-        "[Missing Person / Thing] + 呢 ？"
+        "[Missing Person / Thing] + 呢 ？",
+        "Statement + 吧"
       ],
       "usedFor": [
         "Expressing attitude"
@@ -3965,21 +3587,7 @@
           "chinese": "我的手机呢？",
           "pinyin": "wǒ de shǒujī ní ？",
           "translation": "What about my cell phone?"
-        }
-      ],
-      "titleVi": "Làm dịu lời nói với 把"
-    },
-    {
-      "id": "1-ASGDHC1H",
-      "title": "Softening speech with ba",
-      "structures": [
-        "Statement + 吧"
-      ],
-      "usedFor": [
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDHC1H",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4092,13 +3700,14 @@
           "translation": "Come on, be late."
         }
       ],
-      "titleVi": "Làm dịu lời nói với 吧"
+      "titleVi": "Làm dịu lời nói với 把"
     },
     {
       "id": "1-ASGMPZ6D",
       "title": "Suggestions with ba",
       "structures": [
-        "Statement + 吧"
+        "Statement + 吧",
+        "Command + 吧"
       ],
       "usedFor": [
         "Requesting",
@@ -4142,22 +3751,7 @@
           "chinese": "那个地方太远了吧，我不想去。",
           "pinyin": "nà gè dìfāng tài yuǎn le ba，wǒ bù xiǎng qù 。",
           "translation": "That place is too far away, I don't want to go."
-        }
-      ],
-      "titleVi": "Gợi ý với 吧"
-    },
-    {
-      "id": "1-ASGMPZ6D",
-      "title": "Suggestions with ba",
-      "structures": [
-        "Command + 吧"
-      ],
-      "usedFor": [
-        "Requesting",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMPZ6D",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4266,7 +3860,8 @@
       "id": "1-ASGRBKSL",
       "title": "Directional verbs lai and qu",
       "structures": [
-        "Command + 吧"
+        "Command + 吧",
+        "来 / 去 + Place"
       ],
       "usedFor": [
         "Expressing movement"
@@ -4297,21 +3892,7 @@
           "chinese": "老板，便宜一点吧。",
           "pinyin": "lǎobǎn ，biànyí yīdiǎn ba 。",
           "translation": "Boss, cheaper."
-        }
-      ],
-      "titleVi": "Động từ chỉ hướng 来 và 去"
-    },
-    {
-      "id": "1-ASGRBKSL",
-      "title": "Directional verbs lai and qu",
-      "structures": [
-        "来 / 去 + Place"
-      ],
-      "usedFor": [
-        "Expressing movement"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRBKSL",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4425,7 +4006,8 @@
       "id": "1-ASGLRWT8",
       "title": "Expressing existence in a place with zai",
       "structures": [
-        "来 / 去 + Place"
+        "来 / 去 + Place",
+        "Subj. + 在 + Place"
       ],
       "usedFor": [
         "Indicating conditions",
@@ -4465,23 +4047,7 @@
           "chinese": "我今天不上班，你们可以来我家吃饭。",
           "pinyin": "wǒ jīntiān bù shàngbān，nǐmen kěyǐ lái wǒ jiā chīfàn 。",
           "translation": "I don't go to work today, you can come to my house for dinner."
-        }
-      ],
-      "titleVi": "Diễn tả sự tồn tại ở một nơi với 在"
-    },
-    {
-      "id": "1-ASGLRWT8",
-      "title": "Expressing existence in a place with zai",
-      "structures": [
-        "Subj. + 在 + Place"
-      ],
-      "usedFor": [
-        "Indicating conditions",
-        "Expressing existence",
-        "Expressing location"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGLRWT8",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4591,7 +4157,8 @@
       "id": "1-ASG04ZCI",
       "title": "Expressing existence with you",
       "structures": [
-        "Subj. + 在 + Place"
+        "Subj. + 在 + Place",
+        "Place + 有 + Obj."
       ],
       "usedFor": [
         "Indicating conditions",
@@ -4627,23 +4194,7 @@
           "chinese": "你们明天在北京吗？",
           "pinyin": "nǐmen míngtiān zài běijīng ma ？",
           "translation": "Are you in Beijing tomorrow?"
-        }
-      ],
-      "titleVi": "Diễn tả sự tồn tại với 有"
-    },
-    {
-      "id": "1-ASG04ZCI",
-      "title": "Expressing existence with you",
-      "structures": [
-        "Place + 有 + Obj."
-      ],
-      "usedFor": [
-        "Indicating conditions",
-        "Describing places",
-        "Expressing existence"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG04ZCI",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4768,7 +4319,8 @@
       "id": "1-ASGOOCVO",
       "title": "Expressing possession with you",
       "structures": [
-        "Place + 有 + Obj."
+        "Place + 有 + Obj.",
+        "Subj. + 有 + Obj."
       ],
       "usedFor": [
         "Expressing possession"
@@ -4806,21 +4358,7 @@
           "chinese": "现在办公室里有人吗？",
           "pinyin": "xiànzài bàngōngshì lǐ yǒu rén ma ？",
           "translation": "Is anyone in the office now?"
-        }
-      ],
-      "titleVi": "Diễn tả sự sở hữu với 有"
-    },
-    {
-      "id": "1-ASGOOCVO",
-      "title": "Expressing possession with you",
-      "structures": [
-        "Subj. + 有 + Obj."
-      ],
-      "usedFor": [
-        "Expressing possession"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGOOCVO",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4939,7 +4477,9 @@
       "id": "1-ASG25C48",
       "title": "Polite requests with qing",
       "structures": [
-        "Subj. + 有 + Obj."
+        "Subj. + 有 + Obj.",
+        "请 + Verb",
+        "请 (+ 你) + Verb Phrase"
       ],
       "usedFor": [
         "Requesting"
@@ -4972,21 +4512,7 @@
           "chinese": "今天你有课吗？",
           "pinyin": "jīntiān nǐ yǒu kè ma ？",
           "translation": "Do you have class today?"
-        }
-      ],
-      "titleVi": "Yêu cầu lịch sự với 请"
-    },
-    {
-      "id": "1-ASG25C48",
-      "title": "Polite requests with qing",
-      "structures": [
-        "请 + Verb"
-      ],
-      "usedFor": [
-        "Requesting"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG25C48",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5043,21 +4569,7 @@
           "chinese": "请不要迟到。",
           "pinyin": "qǐng bùyào chídào 。",
           "translation": "Please don't be late."
-        }
-      ],
-      "titleVi": "Yêu cầu lịch sự với 请"
-    },
-    {
-      "id": "1-ASG25C48",
-      "title": "Polite requests with qing",
-      "structures": [
-        "请 (+ 你) + Verb Phrase"
-      ],
-      "usedFor": [
-        "Requesting"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG25C48",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5135,7 +4647,8 @@
       "id": "1-ASGUGWVZ",
       "title": "Using the verb jiao",
       "structures": [
-        "请 (+ 你) + Verb Phrase"
+        "请 (+ 你) + Verb Phrase",
+        "Subj. + 叫 + [Name]"
       ],
       "usedFor": [
         "Introducing people"
@@ -5166,21 +4679,7 @@
           "chinese": "麻烦你……",
           "pinyin": "máfán nǐ ……",
           "translation": "Trouble you ..."
-        }
-      ],
-      "titleVi": "Sử dụng động từ jiao"
-    },
-    {
-      "id": "1-ASGUGWVZ",
-      "title": "Using the verb jiao",
-      "structures": [
-        "Subj. + 叫 + [Name]"
-      ],
-      "usedFor": [
-        "Introducing people"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGUGWVZ",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5307,7 +4806,9 @@
       "id": "1-ASGFYNCL",
       "title": "Using the verb qu",
       "structures": [
-        "Subj. + 叫 + [Name]"
+        "Subj. + 叫 + [Name]",
+        "Subj. + 去 + [Place]",
+        "Subj. + 去 + Verb"
       ],
       "usedFor": [
         "Expressing movement"
@@ -5340,21 +4841,7 @@
           "chinese": "你叫什么名字？",
           "pinyin": "nǐ jiào shíyāo míngzì ？",
           "translation": "What's your name?"
-        }
-      ],
-      "titleVi": "Sử dụng động từ 去"
-    },
-    {
-      "id": "1-ASGFYNCL",
-      "title": "Using the verb qu",
-      "structures": [
-        "Subj. + 去 + [Place]"
-      ],
-      "usedFor": [
-        "Expressing movement"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFYNCL",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5457,21 +4944,7 @@
           "chinese": "你去我家吗？",
           "pinyin": "nǐ qù wǒ jiā ma ？",
           "translation": "Are you going to my house?"
-        }
-      ],
-      "titleVi": "Sử dụng động từ 去"
-    },
-    {
-      "id": "1-ASGFYNCL",
-      "title": "Using the verb qu",
-      "structures": [
-        "Subj. + 去 + Verb"
-      ],
-      "usedFor": [
-        "Expressing movement"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFYNCL",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5493,7 +4966,8 @@
       "id": "1-ASG9PQ40",
       "title": "Expressing ability or possibility with neng",
       "structures": [
-        "Subj. + 去 + Verb"
+        "Subj. + 去 + Verb",
+        "Subj. + 能 + Verb + Obj."
       ],
       "usedFor": [
         "Expressing possibility",
@@ -5527,22 +5001,7 @@
           "chinese": "九点我们去买。",
           "pinyin": "jǐu diǎn wǒmen qù mǎi 。",
           "translation": "We will buy it at nine."
-        }
-      ],
-      "titleVi": "Diễn tả khả năng hoặc khả năng với neng"
-    },
-    {
-      "id": "1-ASG9PQ40",
-      "title": "Expressing ability or possibility with neng",
-      "structures": [
-        "Subj. + 能 + Verb + Obj."
-      ],
-      "usedFor": [
-        "Expressing possibility",
-        "Expressing ability"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG9PQ40",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5755,7 +5214,9 @@
       "id": "1-ASGRHM0E",
       "title": "Expressing a learned skill with hui",
       "structures": [
-        "Subj. + 能 + Verb + Obj."
+        "Subj. + 能 + Verb + Obj.",
+        "Subj. + 会 + Verb + Obj.",
+        "Subj. + 不 + 会 + Verb + Obj."
       ],
       "usedFor": [
         "Expressing ability"
@@ -5793,21 +5254,7 @@
           "chinese": "工作的时候不能玩手机。",
           "pinyin": "gōngzuò de shíhòu bù néng wán shǒujī 。",
           "translation": "Can't play mobile phone while working."
-        }
-      ],
-      "titleVi": "Diễn tả một kỹ năng đã học được bằng 会"
-    },
-    {
-      "id": "1-ASGRHM0E",
-      "title": "Expressing a learned skill with hui",
-      "structures": [
-        "Subj. + 会 + Verb + Obj."
-      ],
-      "usedFor": [
-        "Expressing ability"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRHM0E",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5944,129 +5391,11 @@
       "titleVi": "Diễn tả một kỹ năng đã học được bằng 会"
     },
     {
-      "id": "1-ASGRHM0E",
-      "title": "Expressing a learned skill with hui",
-      "structures": [
-        "Subj. + 不 + 会 + Verb + Obj."
-      ],
-      "usedFor": [
-        "Expressing ability"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRHM0E",
-      "examples": [
-        {
-          "id": "ex-1",
-          "tokens": [
-            "他",
-            "会",
-            "说",
-            "中文",
-            "。"
-          ],
-          "chinese": "他会说中文。",
-          "pinyin": "tā hùi shuō zhōngwén 。",
-          "translation": "He can speak Chinese."
-        },
-        {
-          "id": "ex-2",
-          "tokens": [
-            "我",
-            "会",
-            "写",
-            "汉字",
-            "。"
-          ],
-          "chinese": "我会写汉字。",
-          "pinyin": "wǒ hùi xiě hànzì 。",
-          "translation": "I can write Chinese characters."
-        },
-        {
-          "id": "ex-3",
-          "tokens": [
-            "你",
-            "会",
-            "做饭",
-            "吗",
-            "？"
-          ],
-          "chinese": "你会做饭吗？",
-          "pinyin": "nǐ hùi zuòfàn ma ？",
-          "translation": "Can you cook?"
-        },
-        {
-          "id": "ex-4",
-          "tokens": [
-            "狗",
-            "会",
-            "唱",
-            "歌",
-            "吗",
-            "？"
-          ],
-          "chinese": "狗会唱歌吗？",
-          "pinyin": "gǒu hùi chàng gē ma ？",
-          "translation": "Can dogs sing?"
-        },
-        {
-          "id": "ex-5",
-          "tokens": [
-            "爸爸",
-            "会",
-            "开车",
-            "。"
-          ],
-          "chinese": "爸爸会开车。",
-          "pinyin": "bàbà hùi kāichē 。",
-          "translation": "Dad can drive."
-        },
-        {
-          "id": "ex-6",
-          "tokens": [
-            "我",
-            "不会",
-            "说",
-            "英文",
-            "。"
-          ],
-          "chinese": "我不会说英文。",
-          "pinyin": "wǒ bùhùi shuō yīngwén 。",
-          "translation": "I can not speak English."
-        },
-        {
-          "id": "ex-7",
-          "tokens": [
-            "妈妈",
-            "不会",
-            "做",
-            "中国",
-            "菜",
-            "。"
-          ],
-          "chinese": "妈妈不会做中国菜。",
-          "pinyin": "māmā bùhùi zuò zhōngguó cài 。",
-          "translation": "Mom doesn't know how to cook Chinese food."
-        },
-        {
-          "id": "ex-8",
-          "tokens": [
-            "你",
-            "不会",
-            "游泳",
-            "吗",
-            "？"
-          ],
-          "chinese": "你不会游泳吗？",
-          "pinyin": "nǐ bùhùi yóuyǒng ma ？",
-          "translation": "Can't you swim"
-        }
-      ],
-      "titleVi": "Diễn tả một kỹ năng đã học được bằng 会"
-    },
-    {
       "id": "1-ASGW9737",
       "title": "Expressing will with hui",
       "structures": [
-        "Subj. + 不 + 会 + Verb + Obj."
+        "Subj. + 不 + 会 + Verb + Obj.",
+        "Subj. + 会 + Verb + Obj."
       ],
       "usedFor": [
         "Referring to the future",
@@ -6115,23 +5444,7 @@
           "chinese": "我们不会告诉你。",
           "pinyin": "wǒmen bù hùi gàosù nǐ 。",
           "translation": "We will not tell you."
-        }
-      ],
-      "titleVi": "Thể hiện ý chí bằng 会"
-    },
-    {
-      "id": "1-ASGW9737",
-      "title": "Expressing will with hui",
-      "structures": [
-        "Subj. + 会 + Verb + Obj."
-      ],
-      "usedFor": [
-        "Referring to the future",
-        "Sequencing events in time",
-        "Expressing ability"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGW9737",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6243,7 +5556,9 @@
       "id": "1-ASGT97VF",
       "title": "Expressing would like to with xiang",
       "structures": [
-        "Subj. + 不 + 会 + Verb + Obj."
+        "Subj. + 不 + 会 + Verb + Obj.",
+        "Subj. + 想 + Verb (+ Obj.)",
+        "Subj. + 不 + 想 + Verb + Obj."
       ],
       "usedFor": [
         "Expressing desires",
@@ -6281,22 +5596,7 @@
           "chinese": "今晚我不会在外面吃饭。",
           "pinyin": "jīnwǎn wǒ bù hùi zài wàimiàn chīfàn 。",
           "translation": "I will not eat out tonight."
-        }
-      ],
-      "titleVi": "Diễn tả mong muốn với 向"
-    },
-    {
-      "id": "1-ASGT97VF",
-      "title": "Expressing would like to with xiang",
-      "structures": [
-        "Subj. + 想 + Verb (+ Obj.)"
-      ],
-      "usedFor": [
-        "Expressing desires",
-        "Expressing purpose"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGT97VF",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6365,22 +5665,7 @@
           "chinese": "他想买一个大房子。",
           "pinyin": "tā xiǎng mǎi yī gè dà fángzǐ 。",
           "translation": "He wants to buy a big house."
-        }
-      ],
-      "titleVi": "Diễn tả mong muốn với 想"
-    },
-    {
-      "id": "1-ASGT97VF",
-      "title": "Expressing would like to with xiang",
-      "structures": [
-        "Subj. + 不 + 想 + Verb + Obj."
-      ],
-      "usedFor": [
-        "Expressing desires",
-        "Expressing purpose"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGT97VF",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6425,13 +5710,15 @@
           "translation": "I do not want to go home."
         }
       ],
-      "titleVi": "Diễn tả mong muốn với 想"
+      "titleVi": "Diễn tả mong muốn với 向"
     },
     {
       "id": "1-ASGH2MNO",
       "title": "How to do something with zenme",
       "structures": [
-        "Subj. + 不 + 想 + Verb + Obj."
+        "Subj. + 不 + 想 + Verb + Obj.",
+        "Subj. + 怎么 + Verb + Obj.",
+        "Topic + 怎么 + Verb"
       ],
       "usedFor": [
         "Asking questions"
@@ -6469,21 +5756,7 @@
           "chinese": "他不想花父母的钱。",
           "pinyin": "tā bù xiǎng huā fùmǔ de qián 。",
           "translation": "He didn't want to spend his parents' money."
-        }
-      ],
-      "titleVi": "Cách làm điều gì đó với 怎么"
-    },
-    {
-      "id": "1-ASGH2MNO",
-      "title": "How to do something with zenme",
-      "structures": [
-        "Subj. + 怎么 + Verb + Obj."
-      ],
-      "usedFor": [
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGH2MNO",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6554,21 +5827,7 @@
           "chinese": "我不知道怎么跟女孩子说话。",
           "pinyin": "wǒ bù zhīdào zěnyāo gēn nv̌háizǐ shuōhuà 。",
           "translation": "I don't know how to talk to girls."
-        }
-      ],
-      "titleVi": "Cách làm điều gì đó với 怎么"
-    },
-    {
-      "id": "1-ASGH2MNO",
-      "title": "How to do something with zenme",
-      "structures": [
-        "Topic + 怎么 + Verb"
-      ],
-      "usedFor": [
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGH2MNO",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6612,7 +5871,8 @@
       "id": "1-ASGX0Z0N",
       "title": "Indicating location with zai before verbs",
       "structures": [
-        "Topic + 怎么 + Verb"
+        "Topic + 怎么 + Verb",
+        "Subj. + 在 + Place + Verb + Obj."
       ],
       "usedFor": [
         "Expressing location"
@@ -6643,21 +5903,7 @@
           "chinese": "Apple怎么说？",
           "pinyin": "Apple zěnyāo shuō ？",
           "translation": "What does Apple say?"
-        }
-      ],
-      "titleVi": "Chỉ vị trí bằng 在 trước động từ"
-    },
-    {
-      "id": "1-ASGX0Z0N",
-      "title": "Indicating location with zai before verbs",
-      "structures": [
-        "Subj. + 在 + Place + Verb + Obj."
-      ],
-      "usedFor": [
-        "Expressing location"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGX0Z0N",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6788,7 +6034,8 @@
       "id": "1-ASGAUCXK",
       "title": "Negation of past actions with meiyou",
       "structures": [
-        "Subj. + 在 + Place + Verb + Obj."
+        "Subj. + 在 + Place + Verb + Obj.",
+        "Subj. + 没有 / 没 + Verb"
       ],
       "usedFor": [
         "Denying and refusing",
@@ -6826,22 +6073,7 @@
           "chinese": "你在外面吃过晚饭了吗？",
           "pinyin": "nǐ zài wàimiàn chī guò wǎnfàn le ma ？",
           "translation": "Have you eaten dinner outside?"
-        }
-      ],
-      "titleVi": "Phủ định hành động trong quá khứ với 没有"
-    },
-    {
-      "id": "1-ASGAUCXK",
-      "title": "Negation of past actions with meiyou",
-      "structures": [
-        "Subj. + 没有 / 没 + Verb"
-      ],
-      "usedFor": [
-        "Denying and refusing",
-        "Referring to the past"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGAUCXK",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6968,7 +6200,8 @@
       "id": "1-ASGUN7RX",
       "title": "Connecting nouns with shi",
       "structures": [
-        "Subj. + 没有 / 没 + Verb"
+        "Subj. + 没有 / 没 + Verb",
+        "Noun 1 + 是 + Noun 2"
       ],
       "usedFor": [
         "Introducing people",
@@ -7002,24 +6235,7 @@
           "chinese": "我没有做。",
           "pinyin": "wǒ méiyǒu zuò 。",
           "translation": "I didn't do it."
-        }
-      ],
-      "titleVi": "Nối danh từ với 是"
-    },
-    {
-      "id": "1-ASGUN7RX",
-      "title": "Connecting nouns with shi",
-      "structures": [
-        "Noun 1 + 是 + Noun 2"
-      ],
-      "usedFor": [
-        "Introducing people",
-        "Describing people",
-        "Expressing existence",
-        "Referring to the present"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGUN7RX",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -7207,7 +6423,8 @@
       "id": "1-ASG8HVFN",
       "title": "Expressing excessively with tai",
       "structures": [
-        "Noun 1 + 是 + Noun 2"
+        "Noun 1 + 是 + Noun 2",
+        "太 + Adj. + 了"
       ],
       "usedFor": [
         "Emphasizing",
@@ -7242,22 +6459,7 @@
           "chinese": "你有两个孩子，是吗？",
           "pinyin": "nǐ yǒu liǎng gè háizǐ，shì ma ？",
           "translation": "You have two children, are you?"
-        }
-      ],
-      "titleVi": "Diễn đạt quá mức với 太"
-    },
-    {
-      "id": "1-ASG8HVFN",
-      "title": "Expressing excessively with tai",
-      "structures": [
-        "太 + Adj. + 了"
-      ],
-      "usedFor": [
-        "Emphasizing",
-        "Expressing quality"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG8HVFN",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -7372,7 +6574,8 @@
       "id": "1-ASG17BLH",
       "title": "Simple noun + adjective sentences",
       "structures": [
-        "太 + Adj. + 了"
+        "太 + Adj. + 了",
+        "Noun + 很 + Adj."
       ],
       "usedFor": [
         "Describing things",
@@ -7407,22 +6610,7 @@
           "chinese": "你的孩子太聪明了。",
           "pinyin": "nǐ de háizǐ tài cōngmíng le 。",
           "translation": "Your child is too smart."
-        }
-      ],
-      "titleVi": "Danh từ + câu tính từ đơn giản"
-    },
-    {
-      "id": "1-ASG17BLH",
-      "title": "Simple noun + adjective sentences",
-      "structures": [
-        "Noun + 很 + Adj."
-      ],
-      "usedFor": [
-        "Describing things",
-        "Expressing quality"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG17BLH",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -7562,7 +6750,8 @@
       "id": "1-ASGWVZ0T",
       "title": "Expressing some with yixie",
       "structures": [
-        "Noun + 很 + Adj."
+        "Noun + 很 + Adj.",
+        "一些 + Noun"
       ],
       "usedFor": [
         "Expressing quantity"
@@ -7592,21 +6781,7 @@
           "chinese": "他非常高。",
           "pinyin": "tā fēicháng gāo 。",
           "translation": "He is very tall."
-        }
-      ],
-      "titleVi": "Diễn tả một số bằng 一些"
-    },
-    {
-      "id": "1-ASGWVZ0T",
-      "title": "Expressing some with yixie",
-      "structures": [
-        "一些 + Noun"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGWVZ0T",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -7737,7 +6912,9 @@
       "id": "1-ASGL6JOE",
       "title": "Counting money",
       "structures": [
-        "一些 + Noun"
+        "一些 + Noun",
+        "Subj. + 多少钱 ?",
+        "Number + 块 + Number + 毛"
       ],
       "usedFor": [
         "Expressing quantity"
@@ -7781,21 +6958,7 @@
           "chinese": "我在中国的时候，去过一些很漂亮的地方。",
           "pinyin": "wǒ zài zhōngguó de shíhòu，qù guò yīxiē hěn piāoliàng de dìfāng 。",
           "translation": "When I was in China, I visited some beautiful places."
-        }
-      ],
-      "titleVi": "Đếm tiền"
-    },
-    {
-      "id": "1-ASGL6JOE",
-      "title": "Counting money",
-      "structures": [
-        "Subj. + 多少钱 ?"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGL6JOE",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -7861,21 +7024,7 @@
           "chinese": "这件衣服多少钱？",
           "pinyin": "zhè jiàn yīfú duōshǎo qián ？",
           "translation": "how much is this shirt?"
-        }
-      ],
-      "titleVi": "Đếm tiền"
-    },
-    {
-      "id": "1-ASGL6JOE",
-      "title": "Counting money",
-      "structures": [
-        "Number + 块 + Number + 毛"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGL6JOE",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -7919,7 +7068,9 @@
       "id": "1-ASGL9KQM",
       "title": "Measure words in quantity questions",
       "structures": [
-        "Number + 块 + Number + 毛"
+        "Number + 块 + Number + 毛",
+        "Subj. + Verb + 几 + Measure Word + Noun？",
+        "Subj. + Verb + 多少 + Measure Word + Noun ？"
       ],
       "usedFor": [
         "Asking questions"
@@ -7949,21 +7100,7 @@
           "chinese": "五十块五毛",
           "pinyin": "wǔshí kuài wǔ máo",
           "translation": "Fifty dollars"
-        }
-      ],
-      "titleVi": "Đo lường từ trong câu hỏi số lượng"
-    },
-    {
-      "id": "1-ASGL9KQM",
-      "title": "Measure words in quantity questions",
-      "structures": [
-        "Subj. + Verb + 几 + Measure Word + Noun？"
-      ],
-      "usedFor": [
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGL9KQM",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -8039,21 +7176,7 @@
           "chinese": "老板每天工作几个小时？",
           "pinyin": "lǎobǎn měi tiān gōngzuò jī gè xiǎoshí ？",
           "translation": "How many hours does the boss work every day?"
-        }
-      ],
-      "titleVi": "Đo lường từ trong câu hỏi số lượng"
-    },
-    {
-      "id": "1-ASGL9KQM",
-      "title": "Measure words in quantity questions",
-      "structures": [
-        "Subj. + Verb + 多少 + Measure Word + Noun ？"
-      ],
-      "usedFor": [
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGL9KQM",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -8109,7 +7232,9 @@
       "id": "1-ASGC701A",
       "title": "Asking how something is with zenmeyang",
       "structures": [
-        "Subj. + Verb + 多少 + Measure Word + Noun ？"
+        "Subj. + Verb + 多少 + Measure Word + Noun ？",
+        "Subj. + 怎么样 ?",
+        "你 觉得 + Topic + 怎么样 ?"
       ],
       "usedFor": [
         "Asking questions",
@@ -8147,22 +7272,7 @@
           "chinese": "上海有多少个外国公司？",
           "pinyin": "shànghǎi yǒu duōshǎo gè wàiguó gōngsī ？",
           "translation": "How many foreign companies are there in Shanghai?"
-        }
-      ],
-      "titleVi": "Hỏi mọi chuyện thế nào với 怎么样"
-    },
-    {
-      "id": "1-ASGC701A",
-      "title": "Asking how something is with zenmeyang",
-      "structures": [
-        "Subj. + 怎么样 ?"
-      ],
-      "usedFor": [
-        "Asking questions",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGC701A",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -8249,22 +7359,7 @@
           "chinese": "这里的菜怎么样？",
           "pinyin": "zhèlǐ de cài zěnyāoyáng ？",
           "translation": "How is the food here?"
-        }
-      ],
-      "titleVi": "Hỏi mọi chuyện thế nào với 怎么样"
-    },
-    {
-      "id": "1-ASGC701A",
-      "title": "Asking how something is with zenmeyang",
-      "structures": [
-        "你 觉得 + Topic + 怎么样 ?"
-      ],
-      "usedFor": [
-        "Asking questions",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGC701A",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -8285,7 +7380,14 @@
       "id": "1-ASGJQPSC",
       "title": "Placement of question words",
       "structures": [
-        "你 觉得 + Topic + 怎么样 ?"
+        "你 觉得 + Topic + 怎么样 ?",
+        "Subj. + Verb + 什么 + (Noun) ?",
+        "Subj. + Verb + 哪里 / 哪儿 ?",
+        "Subj. + Verb + 哪个 (+ Noun) ?",
+        "Subj. + 是 + 谁 ?",
+        "Subj. + 什么时候 + Predicate ?",
+        "Subj. + 为什么 + Predicate ?",
+        "Subj. + 怎么 + Verb (+ Obj.) ?"
       ],
       "usedFor": [
         "Sentence Patterns",
@@ -8318,22 +7420,7 @@
           "chinese": "你觉得中文怎么样？",
           "pinyin": "nǐ juédé zhōngwén zěnyāoyáng ？",
           "translation": "What do you think of Chinese?"
-        }
-      ],
-      "titleVi": "Vị trí của từ để hỏi"
-    },
-    {
-      "id": "1-ASGJQPSC",
-      "title": "Placement of question words",
-      "structures": [
-        "Subj. + Verb + 什么 + (Noun) ?"
-      ],
-      "usedFor": [
-        "Sentence Patterns",
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJQPSC",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -8386,22 +7473,7 @@
           "chinese": "他开什么车？",
           "pinyin": "tā kāi shíyāo chē ？",
           "translation": "What car does he drive?"
-        }
-      ],
-      "titleVi": "Vị trí của từ để hỏi"
-    },
-    {
-      "id": "1-ASGJQPSC",
-      "title": "Placement of question words",
-      "structures": [
-        "Subj. + Verb + 哪里 / 哪儿 ?"
-      ],
-      "usedFor": [
-        "Sentence Patterns",
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJQPSC",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -8475,22 +7547,7 @@
           "chinese": "你好，你要去哪儿？",
           "pinyin": "nǐhǎo，nǐ yào qù nǎér ？",
           "translation": "Hello, where are you going?"
-        }
-      ],
-      "titleVi": "Vị trí của từ để hỏi"
-    },
-    {
-      "id": "1-ASGJQPSC",
-      "title": "Placement of question words",
-      "structures": [
-        "Subj. + Verb + 哪个 (+ Noun) ?"
-      ],
-      "usedFor": [
-        "Sentence Patterns",
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJQPSC",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -8614,22 +7671,7 @@
           "chinese": "你住在哪个区？",
           "pinyin": "nǐ zhù zài nǎ gè qū ？",
           "translation": "Which district do you live in?"
-        }
-      ],
-      "titleVi": "Vị trí của từ để hỏi"
-    },
-    {
-      "id": "1-ASGJQPSC",
-      "title": "Placement of question words",
-      "structures": [
-        "Subj. + 是 + 谁 ?"
-      ],
-      "usedFor": [
-        "Sentence Patterns",
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJQPSC",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -8691,22 +7733,7 @@
           "chinese": "你不喜欢谁？",
           "pinyin": "nǐ bù xǐhuān shúi ？",
           "translation": "Who do you dislike?"
-        }
-      ],
-      "titleVi": "Vị trí của từ để hỏi"
-    },
-    {
-      "id": "1-ASGJQPSC",
-      "title": "Placement of question words",
-      "structures": [
-        "Subj. + 什么时候 + Predicate ?"
-      ],
-      "usedFor": [
-        "Sentence Patterns",
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJQPSC",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -9102,147 +8129,12 @@
       "titleVi": "Vị trí của từ để hỏi"
     },
     {
-      "id": "1-ASGJQPSC",
-      "title": "Placement of question words",
-      "structures": [
-        "Subj. + 为什么 + Predicate ?"
-      ],
-      "usedFor": [
-        "Sentence Patterns",
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJQPSC",
-      "examples": [
-        {
-          "id": "ex-1",
-          "tokens": [
-            "你",
-            "为什么",
-            "学",
-            "中文",
-            "？"
-          ],
-          "chinese": "你为什么学中文？",
-          "pinyin": "nǐ wèishíyāo xué zhōngwén ？",
-          "translation": "Why do you learn Chinese?"
-        },
-        {
-          "id": "ex-2",
-          "tokens": [
-            "他们",
-            "为什么",
-            "不",
-            "喝",
-            "咖啡",
-            "？"
-          ],
-          "chinese": "他们为什么不喝咖啡？",
-          "pinyin": "tāmen wèishíyāo bù hē kāfēi ？",
-          "translation": "Why don't they drink coffee?"
-        },
-        {
-          "id": "ex-3",
-          "tokens": [
-            "他",
-            "为什么",
-            "不",
-            "来",
-            "？"
-          ],
-          "chinese": "他为什么不来？",
-          "pinyin": "tā wèishíyāo bù lái ？",
-          "translation": "Why didn't he come?"
-        },
-        {
-          "id": "ex-4",
-          "tokens": [
-            "你",
-            "早上",
-            "为什么",
-            "不",
-            "在",
-            "？"
-          ],
-          "chinese": "你早上为什么不在？",
-          "pinyin": "nǐ zǎoshàng wèishíyāo bù zài ？",
-          "translation": "Why are you not here this morning?"
-        },
-        {
-          "id": "ex-5",
-          "tokens": [
-            "这些",
-            "外国人",
-            "为什么",
-            "不",
-            "喜欢",
-            "中国",
-            "？"
-          ],
-          "chinese": "这些外国人为什么不喜欢中国？",
-          "pinyin": "zhèxiē wàiguórén wèishíyāo bù xǐhuān zhōngguó ？",
-          "translation": "Why don't these foreigners like China?"
-        }
-      ],
-      "titleVi": "Vị trí của từ để hỏi"
-    },
-    {
-      "id": "1-ASGJQPSC",
-      "title": "Placement of question words",
-      "structures": [
-        "Subj. + 怎么 + Verb (+ Obj.) ?"
-      ],
-      "usedFor": [
-        "Sentence Patterns",
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJQPSC",
-      "examples": [
-        {
-          "id": "ex-1",
-          "tokens": [
-            "你",
-            "怎么",
-            "学习",
-            "中文",
-            "？"
-          ],
-          "chinese": "你怎么学习中文？",
-          "pinyin": "nǐ zěnyāo xuéxí zhōngwén ？",
-          "translation": "How do you learn Chinese?"
-        },
-        {
-          "id": "ex-2",
-          "tokens": [
-            "你",
-            "怎么",
-            "上网",
-            "？"
-          ],
-          "chinese": "你怎么上网？",
-          "pinyin": "nǐ zěnyāo shàngwǎng ？",
-          "translation": "How do you go online?"
-        },
-        {
-          "id": "ex-3",
-          "tokens": [
-            "你",
-            "怎么",
-            "去",
-            "北京",
-            "？"
-          ],
-          "chinese": "你怎么去北京？",
-          "pinyin": "nǐ zěnyāo qù běijīng ？",
-          "translation": "How do you go to Beijing?"
-        }
-      ],
-      "titleVi": "Vị trí của từ để hỏi"
-    },
-    {
       "id": "1-ASGYKDNF",
       "title": "Questions with le ma",
       "structures": [
-        "Subj. + 怎么 + Verb (+ Obj.) ?"
+        "Subj. + 怎么 + Verb (+ Obj.) ?",
+        "Subj. + Verb + Obj. + 了吗?",
+        "Topic (+ Subj.) + Verb + 了吗?"
       ],
       "usedFor": [
         "Asking questions"
@@ -9273,21 +8165,7 @@
           "chinese": "你怎么买票？",
           "pinyin": "nǐ zěnyāo mǎi piào ？",
           "translation": "How do you buy tickets?"
-        }
-      ],
-      "titleVi": "Câu hỏi với 了 吗"
-    },
-    {
-      "id": "1-ASGYKDNF",
-      "title": "Questions with le ma",
-      "structures": [
-        "Subj. + Verb + Obj. + 了吗?"
-      ],
-      "usedFor": [
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGYKDNF",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -9345,21 +8223,7 @@
           "chinese": "妈妈，你昨天给我打电话了吗？",
           "pinyin": "māmā ，nǐ zuótiān gěi wǒ dǎdiànhuà le ma ？",
           "translation": "Mom, did you call me yesterday?"
-        }
-      ],
-      "titleVi": "Câu hỏi với 了 吗"
-    },
-    {
-      "id": "1-ASGYKDNF",
-      "title": "Questions with le ma",
-      "structures": [
-        "Topic (+ Subj.) + Verb + 了吗?"
-      ],
-      "usedFor": [
-        "Asking questions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGYKDNF",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -9411,7 +8275,8 @@
       "id": "1-ASGQ2AZA",
       "title": "Yes-no questions with ma",
       "structures": [
-        "Topic (+ Subj.) + Verb + 了吗?"
+        "Topic (+ Subj.) + Verb + 了吗?",
+        "[Statement] + 吗 ？"
       ],
       "usedFor": [
         "Asking questions",
@@ -9450,22 +8315,7 @@
           "chinese": "我的邮件你收到了吗？",
           "pinyin": "wǒ de yóujiàn nǐ shōudào le ma ？",
           "translation": "Have you received my mail?"
-        }
-      ],
-      "titleVi": "Câu hỏi có-không với 吗"
-    },
-    {
-      "id": "1-ASGQ2AZA",
-      "title": "Yes-no questions with ma",
-      "structures": [
-        "[Statement] + 吗 ？"
-      ],
-      "usedFor": [
-        "Asking questions",
-        "Requesting"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGQ2AZA",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -9603,20 +8453,6 @@
           "translation": "Is this a book?"
         },
         {
-          "id": "ex-11",
-          "tokens": [
-            "你",
-            "是",
-            "大",
-            "学生",
-            "吗",
-            "？"
-          ],
-          "chinese": "你是大学生吗？",
-          "pinyin": "nǐ shì dà xuéshēng ma ？",
-          "translation": "Are you a University student?"
-        },
-        {
           "id": "ex-12",
           "tokens": [
             "你",
@@ -9643,20 +8479,6 @@
           "chinese": "你明天不来吗？",
           "pinyin": "nǐ míngtiān bù lái ma ？",
           "translation": "Won't you come tomorrow?"
-        },
-        {
-          "id": "ex-14",
-          "tokens": [
-            "你",
-            "明天",
-            "不",
-            "来",
-            "吗",
-            "？"
-          ],
-          "chinese": "你明天不来吗？",
-          "pinyin": "nǐ míngtiān bù lái ma ？",
-          "translation": "Won't you come tomorrow?"
         }
       ],
       "titleVi": "Câu hỏi có-không với 吗"
@@ -9665,7 +8487,8 @@
       "id": "1-ASGE662E",
       "title": "The shi... de construction for emphasizing details",
       "structures": [
-        "[Statement] + 吗 ？"
+        "[Statement] + 吗 ？",
+        "Subj. + 是 + [Information to be Emphasized] + Verb + 的"
       ],
       "usedFor": [
         "Referring to the past",
@@ -9699,22 +8522,7 @@
           "chinese": "你不喜欢中国菜吗？",
           "pinyin": "nǐ bù xǐhuān zhōngguócài ma ？",
           "translation": "Don't you like Chinese food?"
-        }
-      ],
-      "titleVi": "Cấu trúc 是... 的 để nhấn mạnh chi tiết"
-    },
-    {
-      "id": "1-ASGE662E",
-      "title": "The shi... de construction for emphasizing details",
-      "structures": [
-        "Subj. + 是 + [Information to be Emphasized] + Verb + 的"
-      ],
-      "usedFor": [
-        "Referring to the past",
-        "Emphasizing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGE662E",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -10045,7 +8853,13 @@
       "id": "1-ASGRJ1BI",
       "title": "Comparing bu and mei",
       "structures": [
-        "Subj. + 是 + [Information to be Emphasized] + Verb + 的"
+        "Subj. + 是 + [Information to be Emphasized] + Verb + 的",
+        "Subj. + 不 + Verb",
+        "Subj. + 不 + Verb + Obj.",
+        "不 + Adj.",
+        "Subj. + Verb + 不 + Verb + Obj.",
+        "Subj. + 没(有) + Verb + Obj.",
+        "Subj. + 没有 + Obj."
       ],
       "usedFor": [
         "Negating",
@@ -10087,23 +8901,7 @@
           "chinese": "我们平时是用Skype开会的。",
           "pinyin": "wǒmen píngshí shì yòng Skype kāi hùi de 。",
           "translation": "We usually use Skype for meetings."
-        }
-      ],
-      "titleVi": "So sánh 不 và 没"
-    },
-    {
-      "id": "1-ASGRJ1BI",
-      "title": "Comparing bu and mei",
-      "structures": [
-        "Subj. + 不 + Verb"
-      ],
-      "usedFor": [
-        "Negating",
-        "Describing actions",
-        "Denying and refusing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRJ1BI",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -10177,23 +8975,7 @@
           "chinese": "你女朋友不跟你一起去吗？",
           "pinyin": "nǐ nv̌péngyǒu bù gēn nǐ yīqǐ qù ma ？",
           "translation": "Isn't your girlfriend going with you?"
-        }
-      ],
-      "titleVi": "So sánh 不 và 没"
-    },
-    {
-      "id": "1-ASGRJ1BI",
-      "title": "Comparing bu and mei",
-      "structures": [
-        "Subj. + 不 + Verb + Obj."
-      ],
-      "usedFor": [
-        "Negating",
-        "Describing actions",
-        "Denying and refusing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRJ1BI",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -10262,23 +9044,7 @@
           "chinese": "你晚上不洗澡吗？",
           "pinyin": "nǐ wǎnshàng bù xǐzǎo ma ？",
           "translation": "Don't you take a shower at night?"
-        }
-      ],
-      "titleVi": "So sánh 不 và 没"
-    },
-    {
-      "id": "1-ASGRJ1BI",
-      "title": "Comparing bu and mei",
-      "structures": [
-        "不 + Adj."
-      ],
-      "usedFor": [
-        "Negating",
-        "Describing actions",
-        "Denying and refusing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRJ1BI",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -10343,23 +9109,7 @@
           "chinese": "我觉得Starbucks的咖啡不好喝。",
           "pinyin": "wǒ juédé Starbucks de kāfēi bù hǎohē 。",
           "translation": "I think Starbucks coffee is not good."
-        }
-      ],
-      "titleVi": "So sánh 不 và 没"
-    },
-    {
-      "id": "1-ASGRJ1BI",
-      "title": "Comparing bu and mei",
-      "structures": [
-        "Subj. + Verb + 不 + Verb + Obj."
-      ],
-      "usedFor": [
-        "Negating",
-        "Describing actions",
-        "Denying and refusing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRJ1BI",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -10450,23 +9200,7 @@
           "chinese": "你们是好朋友，对不对？",
           "pinyin": "nǐmen shì hǎo péngyǒu ，dùi bù dùi ？",
           "translation": "You are good friends, right?"
-        }
-      ],
-      "titleVi": "So sánh 不 và 没"
-    },
-    {
-      "id": "1-ASGRJ1BI",
-      "title": "Comparing bu and mei",
-      "structures": [
-        "Subj. + 没(有) + Verb + Obj."
-      ],
-      "usedFor": [
-        "Negating",
-        "Describing actions",
-        "Denying and refusing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRJ1BI",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -10494,23 +9228,7 @@
           "chinese": "妈妈没有做晚饭。",
           "pinyin": "māmā méiyǒu zuò wǎnfàn 。",
           "translation": "Mom didn't make dinner."
-        }
-      ],
-      "titleVi": "So sánh 不 và 没"
-    },
-    {
-      "id": "1-ASGRJ1BI",
-      "title": "Comparing bu and mei",
-      "structures": [
-        "Subj. + 没有 + Obj."
-      ],
-      "usedFor": [
-        "Negating",
-        "Describing actions",
-        "Denying and refusing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRJ1BI",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [

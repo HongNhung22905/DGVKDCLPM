@@ -1,14 +1,16 @@
 {
   "level": "HSK 6",
   "levelNumber": 6,
-  "totalPoints": 73,
+  "totalPoints": 45,
   "totalExamples": 322,
   "points": [
     {
       "id": "6-ASGXXP6M",
       "title": "Advanced usages of the contrary dao",
       "structures": [
-        "Subj. + Verb + 得 + 倒 + Adj."
+        "Subj. + Verb + 得 + 倒 + Adj.",
+        "Subj. + 倒 + Adj.",
+        "你 + 倒是 + Verb + 呀 / 啊"
       ],
       "usedFor": [
         "Contrasting",
@@ -66,22 +68,7 @@
           "chinese": "你想得倒简单！怎么可能？",
           "pinyin": "nǐ xiǎng dé dǎo jiǎndān ！zěnyāo kěnéng ？",
           "translation": "What you think is simple! How can it be?"
-        }
-      ],
-      "titleVi": "Cách dùng nâng cao của 倒"
-    },
-    {
-      "id": "6-ASGXXP6M",
-      "title": "Advanced usages of the contrary dao",
-      "structures": [
-        "Subj. + 倒 + Adj."
-      ],
-      "usedFor": [
-        "Contrasting",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGXXP6M",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -179,22 +166,7 @@
           "chinese": "很多人认为钱是最重要的，我倒不这么想。",
           "pinyin": "hěn duō rén rènwèi qián shì zùi zhòngyào de ，wǒ dǎo bù zhèyāo xiǎng 。",
           "translation": "Many people think that money is the most important thing, but I do n’t think so."
-        }
-      ],
-      "titleVi": "Cách dùng nâng cao của 倒"
-    },
-    {
-      "id": "6-ASGXXP6M",
-      "title": "Advanced usages of the contrary dao",
-      "structures": [
-        "你 + 倒是 + Verb + 呀 / 啊"
-      ],
-      "usedFor": [
-        "Contrasting",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGXXP6M",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -254,7 +226,8 @@
       "id": "6-ASGA1B87",
       "title": "Emphasizing with henshi",
       "structures": [
-        "Subj. + 很是 + Adj."
+        "Subj. + 很是 + Adj.",
+        "Subj. + 很是 + 会 / 能 + Verb"
       ],
       "usedFor": [
         "Expressing degree",
@@ -376,22 +349,7 @@
           "chinese": "你们的表演太夸张了，让人很是受不了。",
           "pinyin": "nǐmen de biǎoyǎn tài kuāzhāng le ，ràng rén hěnshì shòubùle 。",
           "translation": "Your performance is too exaggerated to make people unbearable."
-        }
-      ],
-      "titleVi": "Nhấn mạnh với 很是"
-    },
-    {
-      "id": "6-ASGA1B87",
-      "title": "Emphasizing with henshi",
-      "structures": [
-        "Subj. + 很是 + 会 / 能 + Verb"
-      ],
-      "usedFor": [
-        "Expressing degree",
-        "Emphasizing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGA1B87",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -735,7 +693,8 @@
       "id": "6-ASGC11D0",
       "title": "Expressing as expected with guoran",
       "structures": [
-        "Subj. + 果然 + Predicate"
+        "Subj. + 果然 + Predicate",
+        "Clause 1 ，果然 ，Clause 2"
       ],
       "usedFor": [
         "Expressing attitude"
@@ -807,21 +766,7 @@
           "chinese": "这个止疼药果然有效，我的头疼好多了。",
           "pinyin": "zhègè zhǐténgyào guǒrán yǒuxiào ，wǒde tóuténg hǎoduōle 。",
           "translation": "This painkiller really works, and my headache is much better."
-        }
-      ],
-      "titleVi": "Thể hiện như mong đợi với guoran"
-    },
-    {
-      "id": "6-ASGC11D4",
-      "title": "Expressing as expected with guoran",
-      "structures": [
-        "Clause 1 ，果然 ，Clause 2"
-      ],
-      "usedFor": [
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGC11D4",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -1031,7 +976,8 @@
       "id": "6-ASG38F8A",
       "title": "Expressing as long as with fanshi",
       "structures": [
-        "凡是 + Noun + 都 / 就 / 一律 + Predicate"
+        "凡是 + Noun + 都 / 就 / 一律 + Predicate",
+        "凡(是) + Noun + 无不 / 均 + Predicate"
       ],
       "usedFor": [],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG38F8A",
@@ -1161,19 +1107,7 @@
           "chinese": "凡是杀了人的人一律判死刑，这是真的吗？",
           "pinyin": "fánshì shā le rén de rén yīlv̀ pànsǐxíng ，zhèshì zhēnde ma ？",
           "translation": "Is it true that everyone who kills is sentenced to death?"
-        }
-      ],
-      "titleVi": "Thể hiện miễn là với fanshi"
-    },
-    {
-      "id": "6-ASG38F8A",
-      "title": "Expressing as long as with fanshi",
-      "structures": [
-        "凡(是) + Noun + 无不 / 均 + Predicate"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG38F8A",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -1956,7 +1890,8 @@
       "id": "6-ASG3AD49",
       "title": "Expressing why with hebi",
       "structures": [
-        "Subj. + 何必 + Predicate"
+        "Subj. + 何必 + Predicate",
+        "何必⋯⋯ 呢 ？⋯⋯"
       ],
       "usedFor": [
         "Expressing attitude",
@@ -2057,22 +1992,7 @@
           "chinese": "何必总经理？",
           "pinyin": "hébì zǒngjīnglǐ ？",
           "translation": "Why the general manager?"
-        }
-      ],
-      "titleVi": "Thể hiện lý do tại sao với hebi"
-    },
-    {
-      "id": "6-ASG3AD49",
-      "title": "Expressing why with hebi",
-      "structures": [
-        "何必⋯⋯ 呢 ？⋯⋯"
-      ],
-      "usedFor": [
-        "Expressing attitude",
-        "Emphasizing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG3AD49",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2515,7 +2435,8 @@
       "id": "6-ASG3GX2H",
       "title": "Indicating contrast with ze",
       "structures": [
-        "Subject + Predicate, 则 + Subject + Predicate"
+        "Subject + Predicate, 则 + Subject + Predicate",
+        "Clause 1，+ 而 Subject + 则 + Predicate"
       ],
       "usedFor": [
         "Contrasting"
@@ -2597,21 +2518,7 @@
           "chinese": "我老婆习惯安静、自然的乡村生活，我则习惯喧闹繁忙的大城市生活。",
           "pinyin": "wǒ lǎopó xíguàn ānjìng、zìrán de xiāngcūn shēnghuó，wǒ zé xíguàn xuānnào fánmáng de dà chéngshì shēnghuó 。",
           "translation": "My wife is used to quiet, natural country life, and I am used to the noisy and busy city life."
-        }
-      ],
-      "titleVi": "Chỉ ra sự tương phản với ze"
-    },
-    {
-      "id": "6-ASG3GX2H",
-      "title": "Indicating contrast with ze",
-      "structures": [
-        "Clause 1，+ 而 Subject + 则 + Predicate"
-      ],
-      "usedFor": [
-        "Contrasting"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG3GX2H",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2699,7 +2606,8 @@
       "id": "6-ASG0A67E",
       "title": "In order to avoid with yimian",
       "structures": [
-        "以免 + Verb Phrase"
+        "以免 + Verb Phrase",
+        "以免 + Sentence"
       ],
       "usedFor": [
         "Expressing a central concept"
@@ -2781,21 +2689,7 @@
           "chinese": "快抓住那个坏人，以免跑了。",
           "pinyin": "kuài zhuāzhù nàgè huàirén，yǐmiǎn pǎo le 。",
           "translation": "Grab the bad guy quickly so as not to run away."
-        }
-      ],
-      "titleVi": "Để tránh 一面"
-    },
-    {
-      "id": "6-ASG0A67E",
-      "title": "In order to avoid with yimian",
-      "structures": [
-        "以免 + Sentence"
-      ],
-      "usedFor": [
-        "Expressing a central concept"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0A67E",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3538,7 +3432,9 @@
       "id": "6-ASG50DR1",
       "title": "Adding emphasis with fei....buke",
       "structures": [
-        "Subj. + 非(要) + [Verb Phrase] + 不可"
+        "Subj. + 非(要) + [Verb Phrase] + 不可",
+        "非 + Subj. + [Verb Phrase] + 不可",
+        "非(要) + Subj. + [Verb Phrase] + 不可"
       ],
       "usedFor": [
         "Giving commands",
@@ -3668,23 +3564,7 @@
           "chinese": "情人节那天，我女朋友非要让我送她玫瑰花。",
           "pinyin": "qíngrénjié nàtiān ，wǒ nv̌péngyǒu fēiyào ràng wǒ sòng tā méigūihuā 。",
           "translation": "On Valentine's Day, my girlfriend wanted me to send her roses."
-        }
-      ],
-      "titleVi": "Thêm điểm nhấn với非....buke"
-    },
-    {
-      "id": "6-ASG50DR1",
-      "title": "Adding emphasis with fei....buke",
-      "structures": [
-        "非 + Subj. + [Verb Phrase] + 不可"
-      ],
-      "usedFor": [
-        "Giving commands",
-        "Expressing obligations",
-        "Emphasizing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG50DR1",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3739,23 +3619,7 @@
           "chinese": "这张电影票明天就到期了，非今天去看不可。",
           "pinyin": "zhè zhāng diànyǐng piào míngtiān jìu dàoqī le ，fēi jīntiān qù kàn bùkě 。",
           "translation": "This movie ticket will expire tomorrow, and it's okay to go today."
-        }
-      ],
-      "titleVi": "Thêm điểm nhấn với非....buke"
-    },
-    {
-      "id": "6-ASG50DR1",
-      "title": "Adding emphasis with fei....buke",
-      "structures": [
-        "非(要) + Subj. + [Verb Phrase] + 不可"
-      ],
-      "usedFor": [
-        "Giving commands",
-        "Expressing obligations",
-        "Emphasizing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG50DR1",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4007,7 +3871,8 @@
       "id": "6-ASGYYOXD",
       "title": "Expressing could it be possible that with mofei",
       "structures": [
-        "Fact, + 莫非 + conjecture + (不成)?"
+        "Fact, + 莫非 + conjecture + (不成)?",
+        "莫非 + Subject + rhetorical question"
       ],
       "usedFor": [],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGYYOXD",
@@ -4088,19 +3953,7 @@
           "chinese": "莫非他听到了我们的谈话？",
           "pinyin": "mòfēi tā tīngdào le wǒmen de tánhuà ？",
           "translation": "Could it be that he heard our conversation?"
-        }
-      ],
-      "titleVi": "Thể hiện có thể là với mofei"
-    },
-    {
-      "id": "6-ASGYYOXD",
-      "title": "Expressing could it be possible that with mofei",
-      "structures": [
-        "莫非 + Subject + rhetorical question"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGYYOXD",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4503,11 +4356,15 @@
       "id": "6-ASGWI5CV",
       "title": "Expressing Prefer...rather than with yuqi...buru",
       "structures": [
-        "与其 ⋯⋯ ，不如 ⋯⋯"
+        "与其 ⋯⋯ ，不如 ⋯⋯",
+        "与其 ⋯⋯ ，Subj. + 宁可 / 宁愿 ⋯⋯",
+        "与其说 + A，不如说 + B"
       ],
       "usedFor": [
         "Giving commands",
-        "Expressing obligations"
+        "Expressing obligations",
+        "Emphasizing",
+        "Expressing preference"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGWI5CV",
       "examples": [
@@ -4596,21 +4453,7 @@
           "chinese": "与其麻烦别人，不如自己想办法。",
           "pinyin": "yǔqí máfán biérén ，bùrú zìjǐ xiǎng bànfǎ 。",
           "translation": "Rather than trouble others, it is better to think for yourself."
-        }
-      ],
-      "titleVi": "Bày tỏ Thích...hơn là với与其...buru"
-    },
-    {
-      "id": "6-ASGWI5CV",
-      "title": "Expressing Prefer...rather than with yuqi...buru",
-      "structures": [
-        "与其 ⋯⋯ ，Subj. + 宁可 / 宁愿 ⋯⋯"
-      ],
-      "usedFor": [
-        "Emphasizing"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGWI5CV",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4715,21 +4558,7 @@
           "chinese": "一样多的钱，与其在市区买一个小房子，我们宁愿在郊区买大房子。",
           "pinyin": "yīyáng duō de qián ，yǔqí zài shìqū mǎi yī gè xiǎo fángzǐ ，wǒmen níngyuàn zài jiāoqū mǎi dà fángzǐ 。",
           "translation": "For as much money, instead of buying a small house in the city, we would rather buy a big house in the suburbs."
-        }
-      ],
-      "titleVi": "Bày tỏ Thích...hơn là với与其...buru"
-    },
-    {
-      "id": "6-ASGWI5CV",
-      "title": "Expressing Prefer...rather than with yuqi...buru",
-      "structures": [
-        "与其说 + A，不如说 + B"
-      ],
-      "usedFor": [
-        "Expressing preference"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGWI5CV",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5575,9 +5404,22 @@
       "id": "6-ASG0K25S",
       "title": "Comparing fan'er and “que",
       "structures": [
-        "(Subj. + 反而 ) / (反而 + Subj. )"
+        "(Subj. + 反而 ) / (反而 + Subj. )",
+        "Subj. + 却",
+        "反而 + Sentence",
+        "却 + Verb",
+        "反而 and 却",
+        "不但没⋯⋯，反而⋯⋯",
+        "不但不⋯⋯，反而⋯⋯",
+        "⋯⋯，反而却/却反而⋯⋯",
+        "⋯⋯， 却偏（偏）⋯⋯",
+        "虽然⋯⋯却⋯⋯",
+        "⋯⋯， 但（是）却⋯⋯"
       ],
-      "usedFor": [],
+      "usedFor": [
+        "Describing things",
+        "Expressing attitude"
+      ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
       "examples": [
         {
@@ -5608,19 +5450,7 @@
           "chinese": "你这么做，反而效果不好。",
           "pinyin": "nǐ zhèyāo zuò，fǎnérxiàoguǒ bù hǎo 。",
           "translation": "If you do this, it will not work well."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “que"
-    },
-    {
-      "id": "6-ASG0K25S",
-      "title": "Comparing fan'er and “que",
-      "structures": [
-        "Subj. + 却"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5635,19 +5465,7 @@
           "chinese": "外面下雨，我却没带伞。",
           "pinyin": "wàimiàn xiàyǔ，wǒ què méi dài sǎn 。",
           "translation": "It was raining outside, but I didn't bring an umbrella."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “que"
-    },
-    {
-      "id": "6-ASG0K25S",
-      "title": "Comparing fan'er and “que",
-      "structures": [
-        "反而 + Sentence"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5713,19 +5531,7 @@
           "chinese": "我以为Knicks会赢第一场比赛，结果反而是最后一场。",
           "pinyin": "wǒ yǐwèi Knicks hùi yíng dì yī cháng bǐsài，jiéguǒ fǎnér shì zùihòu yī cháng 。",
           "translation": "I thought Knicks would win the first game, but the result was the last one."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “que"
-    },
-    {
-      "id": "6-ASG0K25S",
-      "title": "Comparing fan'er and “que",
-      "structures": [
-        "却 + Verb"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5789,22 +5595,7 @@
           "chinese": "我以为Knicks会赢第一场比赛，他们却输了。",
           "pinyin": "wǒ yǐwèi Knicks hùi yíng dì yī cháng bǐsài，tāmen què shū le 。",
           "translation": "I thought Knicks would win the first game, but they lost."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “que"
-    },
-    {
-      "id": "6-ASG0K25S",
-      "title": "Comparing fan'er and “que",
-      "structures": [
-        "反而 and 却"
-      ],
-      "usedFor": [
-        "Describing things",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5838,22 +5629,7 @@
           "chinese": "我帮了他，他反而不高兴了。",
           "pinyin": "wǒ bāng le tā，tā fǎnér bù gāoxīng le 。",
           "translation": "I helped him, but he was not happy."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “que"
-    },
-    {
-      "id": "6-ASG0K25S",
-      "title": "Comparing fan'er and “que",
-      "structures": [
-        "不但没⋯⋯，反而⋯⋯"
-      ],
-      "usedFor": [
-        "Describing things",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5876,22 +5652,7 @@
           "chinese": "我帮了他那么多，他不但没谢谢我，反而有点不高兴。",
           "pinyin": "wǒ bāng le tā nàyāo duō，tā bùdàn méi xièxiè wǒ，fǎnér yǒu diǎn bù gāoxīng 。",
           "translation": "I helped him so much. Not only did he not thank me, but he was a little unhappy."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “que"
-    },
-    {
-      "id": "6-ASG0K25S",
-      "title": "Comparing fan'er and “que",
-      "structures": [
-        "不但不⋯⋯，反而⋯⋯"
-      ],
-      "usedFor": [
-        "Describing things",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5909,22 +5670,7 @@
           "chinese": "他借钱不但不还，反而还不承认。",
           "pinyin": "tā jiè qián bùdàn bù huán，fǎnér huán bù chéngrèn 。",
           "translation": "Not only did he not repay the loan, he did not admit it."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “que"
-    },
-    {
-      "id": "6-ASG0K25S",
-      "title": "Comparing fan'er and “que",
-      "structures": [
-        "⋯⋯，反而却/却反而⋯⋯"
-      ],
-      "usedFor": [
-        "Describing things",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -5962,22 +5708,7 @@
           "chinese": "他离这里最远，却反而第一个到。",
           "pinyin": "tā lí zhèlǐ zùi yuǎn，què fǎnér dì yī gè dào 。",
           "translation": "He was the farthest from here, but he came first."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “que"
-    },
-    {
-      "id": "6-ASG0K25S",
-      "title": "Comparing fan'er and “que",
-      "structures": [
-        "⋯⋯， 却偏（偏）⋯⋯"
-      ],
-      "usedFor": [
-        "Describing things",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6016,22 +5747,7 @@
           "chinese": "我告诉他要下雨，他却偏偏不带伞。",
           "pinyin": "wǒ gàosù tā yào xiàyǔ，tā què piān piān bù dài sǎn 。",
           "translation": "I told him that it was going to rain, but he didn't carry an umbrella."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “que"
-    },
-    {
-      "id": "6-ASG0K25S",
-      "title": "Comparing fan'er and “que",
-      "structures": [
-        "虽然⋯⋯却⋯⋯"
-      ],
-      "usedFor": [
-        "Describing things",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6051,22 +5767,7 @@
           "chinese": "虽然我们不是朋友，我却不能不告诉你。",
           "pinyin": "sūirán wǒmen bù shì péngyǒu，wǒ què bù néng bù gàosù nǐ 。",
           "translation": "Although we are not friends, I cannot help telling you."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “que"
-    },
-    {
-      "id": "6-ASG0K25S",
-      "title": "Comparing fan'er and “que",
-      "structures": [
-        "⋯⋯， 但（是）却⋯⋯"
-      ],
-      "usedFor": [
-        "Describing things",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6110,7 +5811,8 @@
       "id": "6-ASG9JK0B",
       "title": "Comparing genben and daodi",
       "structures": [
-        "Use of 根本"
+        "Use of 根本",
+        "Use of 到底"
       ],
       "usedFor": [
         "Describing things",
@@ -6208,22 +5910,7 @@
           "chinese": "他根本没有听我的话。",
           "pinyin": "tā gēnběn méiyǒu tīng wǒ de huà 。",
           "translation": "He didn't listen to me at all."
-        }
-      ],
-      "titleVi": "So sánh genben và 到底"
-    },
-    {
-      "id": "6-ASG9JK0B",
-      "title": "Comparing genben and daodi",
-      "structures": [
-        "Use of 到底"
-      ],
-      "usedFor": [
-        "Describing things",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG9JK0B",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6323,7 +6010,9 @@
       "id": "6-ASGXJYJD",
       "title": "Comparing genju and ju",
       "structures": [
-        "Monosyllabic nouns with 据"
+        "Monosyllabic nouns with 据",
+        "Pairings with 据",
+        "Referring to people using 据"
       ],
       "usedFor": [],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGXJYJD",
@@ -6349,19 +6038,7 @@
           "chinese": "根据事实报道",
           "pinyin": "gēnjù shìshí bàodào",
           "translation": "According to fact reports"
-        }
-      ],
-      "titleVi": "So sánh genju và 据"
-    },
-    {
-      "id": "6-ASGXJYJD",
-      "title": "Comparing genju and ju",
-      "structures": [
-        "Pairings with 据"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGXJYJD",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6388,19 +6065,7 @@
           "chinese": "据传首相将要辞职。",
           "pinyin": "jùchuán shǒuxiāng jiāngyào cízhí 。",
           "translation": "The Prime Minister is rumored to be resigning."
-        }
-      ],
-      "titleVi": "So sánh genju và 据"
-    },
-    {
-      "id": "6-ASGXJYJD",
-      "title": "Comparing genju and ju",
-      "structures": [
-        "Referring to people using 据"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGXJYJD",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6477,7 +6142,8 @@
       "id": "6-ASGGXSIR",
       "title": "Comparing huifu and huanyuan",
       "structures": [
-        "还原 + Noun/Nominal Phrase"
+        "还原 + Noun/Nominal Phrase",
+        "Noun/Noun Phrase + 恢复了"
       ],
       "usedFor": [],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGGXSIR",
@@ -6550,19 +6216,7 @@
           "chinese": "他想把这个应用程序还原成代码。",
           "pinyin": "tā xiǎng bǎ zhègè yìngyòngchéngxù huányuán chéng dàimǎ 。",
           "translation": "He wanted to restore this application to code."
-        }
-      ],
-      "titleVi": "So sánh huifu và huanyuan"
-    },
-    {
-      "id": "6-ASGGXSIR",
-      "title": "Comparing huifu and huanyuan",
-      "structures": [
-        "Noun/Noun Phrase + 恢复了"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGGXSIR",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6611,7 +6265,8 @@
       "id": "6-ASGCZ37R",
       "title": "Comparing juran and fan'er",
       "structures": [
-        "Clause 1, 反而 / 居然 + unexpected opposite outcome"
+        "Clause 1, 反而 / 居然 + unexpected opposite outcome",
+        "Clause 1, 不仅没有（不但没有）/ 不仅不 (不但不)......反而......"
       ],
       "usedFor": [],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGCZ37R",
@@ -6645,19 +6300,7 @@
           "chinese": "我帮他，他反而生气了。",
           "pinyin": "wǒ bāng tā，tā fǎnér shēngqì le 。",
           "translation": "I helped him, but he was angry."
-        }
-      ],
-      "titleVi": "So sánh giữa luật gia và 反'er"
-    },
-    {
-      "id": "6-ASGCZ37R",
-      "title": "Comparing juran and fan'er",
-      "structures": [
-        "Clause 1, 不仅没有（不但没有）/ 不仅不 (不但不)......反而......"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGCZ37R",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [

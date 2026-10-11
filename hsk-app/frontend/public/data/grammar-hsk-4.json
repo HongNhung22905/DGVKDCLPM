@@ -1,14 +1,17 @@
 {
   "level": "HSK 4",
   "levelNumber": 4,
-  "totalPoints": 176,
-  "totalExamples": 1162,
+  "totalPoints": 107,
+  "totalExamples": 1161,
   "points": [
     {
       "id": "4-ASGCPDSR",
       "title": "Indicating the whole with quan",
       "structures": [
-        "全 + Noun + 都 + Predicate"
+        "全 + Noun + 都 + Predicate",
+        "Subj. + 全都 + Predicate",
+        "Subj. + 全都 + 不 / 没 + Predicate",
+        "Subj. + 不 / 没 + 全都 + Predicate"
       ],
       "usedFor": [
         "Sentence Patterns",
@@ -97,22 +100,7 @@
           "chinese": "这个地方全年都很热。",
           "pinyin": "zhègè dìfāng quán nián dū hěn rè 。",
           "translation": "This place is hot all year round."
-        }
-      ],
-      "titleVi": "Biểu thị toàn bộ bằng 全"
-    },
-    {
-      "id": "4-ASGCPDSR",
-      "title": "Indicating the whole with quan",
-      "structures": [
-        "Subj. + 全都 + Predicate"
-      ],
-      "usedFor": [
-        "Sentence Patterns",
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGCPDSR",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -190,22 +178,7 @@
           "chinese": "你全都拿走吧。",
           "pinyin": "nǐ quán dū ná zǒu ba 。",
           "translation": "You take it all."
-        }
-      ],
-      "titleVi": "Biểu thị toàn bộ bằng 全"
-    },
-    {
-      "id": "4-ASGCPDSR",
-      "title": "Indicating the whole with quan",
-      "structures": [
-        "Subj. + 全都 + 不 / 没 + Predicate"
-      ],
-      "usedFor": [
-        "Sentence Patterns",
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGCPDSR",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -283,22 +256,7 @@
           "chinese": "他的话我全都不相信。",
           "pinyin": "tā de huà wǒ quán dū bù xiāngxìn 。",
           "translation": "I don't believe him at all."
-        }
-      ],
-      "titleVi": "Biểu thị toàn bộ bằng 全"
-    },
-    {
-      "id": "4-ASGCPDSR",
-      "title": "Indicating the whole with quan",
-      "structures": [
-        "Subj. + 不 / 没 + 全都 + Predicate"
-      ],
-      "usedFor": [
-        "Sentence Patterns",
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGCPDSR",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -582,7 +540,10 @@
       "id": "4-ASG1NAXO",
       "title": "Approximations with chabuduo",
       "structures": [
-        "Subj. + 差不多"
+        "Subj. + 差不多",
+        "A + 跟 / 和 + B + 差不多",
+        "差不多 + Adj. / Verb",
+        "差不多 ＋ [Quantity Phrase] / [Time Phrase]"
       ],
       "usedFor": [
         "Comparing",
@@ -664,23 +625,7 @@
           "chinese": "你们的中文水平差不多。",
           "pinyin": "nǐmen de zhōngwén shǔipíng chàbùduō 。",
           "translation": "Your Chinese level is similar."
-        }
-      ],
-      "titleVi": "Xấp xỉ với 差不多"
-    },
-    {
-      "id": "4-ASG1NAXO",
-      "title": "Approximations with chabuduo",
-      "structures": [
-        "A + 跟 / 和 + B + 差不多"
-      ],
-      "usedFor": [
-        "Comparing",
-        "Expressing degree",
-        "Expressing similarity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG1NAXO",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -755,23 +700,7 @@
           "chinese": "你的新手机跟我的旧手机差不多。",
           "pinyin": "nǐde xīn shǒujī gēn wǒde jìu shǒujī chàbùduō 。",
           "translation": "Your new phone is similar to my old phone."
-        }
-      ],
-      "titleVi": "Xấp xỉ với 差不多"
-    },
-    {
-      "id": "4-ASG1NAXO",
-      "title": "Approximations with chabuduo",
-      "structures": [
-        "差不多 + Adj. / Verb"
-      ],
-      "usedFor": [
-        "Comparing",
-        "Expressing degree",
-        "Expressing similarity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG1NAXO",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -845,23 +774,7 @@
           "chinese": "今天的工作差不多做完了。",
           "pinyin": "jīntiān de gōngzuò chàbùduō zuò wán le 。",
           "translation": "Today's work is almost done."
-        }
-      ],
-      "titleVi": "Xấp xỉ với 差不多"
-    },
-    {
-      "id": "4-ASG1NAXO",
-      "title": "Approximations with chabuduo",
-      "structures": [
-        "差不多 ＋ [Quantity Phrase] / [Time Phrase]"
-      ],
-      "usedFor": [
-        "Comparing",
-        "Expressing degree",
-        "Expressing similarity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG1NAXO",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -958,7 +871,8 @@
       "id": "4-ASGJPQ0Q",
       "title": "Assessing situations with kanlai",
       "structures": [
-        "看来 + Perspective"
+        "看来 + Perspective",
+        "在 + Person + 看来 + Perspective"
       ],
       "usedFor": [
         "Referring to the future"
@@ -994,21 +908,7 @@
           "chinese": "现在看来，事情没那么糟。",
           "pinyin": "xiànzàikànlái，shìqíngméinàyāozāo 。",
           "translation": "Now it seems that things are not so bad."
-        }
-      ],
-      "titleVi": "Đánh giá tình huống với kanlai"
-    },
-    {
-      "id": "4-ASGJPQ0Q",
-      "title": "Assessing situations with kanlai",
-      "structures": [
-        "在 + Person + 看来 + Perspective"
-      ],
-      "usedFor": [
-        "Referring to the future"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJPQ0Q",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -1515,7 +1415,8 @@
       "id": "4-ASGTKXFR",
       "title": "Expressing all along with yuanlai",
       "structures": [
-        "原来 + 的 + Noun :: / :: Subj. + 原来 + Predicate"
+        "原来 + 的 + Noun :: / :: Subj. + 原来 + Predicate",
+        "原来 + [New Information]"
       ],
       "usedFor": [
         "Explaining",
@@ -1615,22 +1516,7 @@
           "chinese": "原来她是他的中文老师，现在是他老婆。",
           "pinyin": "yuánlái tā shì tā de zhōngwén lǎoshī，xiànzài shì tā lǎopó 。",
           "translation": "It turned out that she was his Chinese teacher and now he is his wife."
-        }
-      ],
-      "titleVi": "Diễn đạt tất cả cùng với 原来"
-    },
-    {
-      "id": "4-ASGTKXFR",
-      "title": "Expressing all along with yuanlai",
-      "structures": [
-        "原来 + [New Information]"
-      ],
-      "usedFor": [
-        "Explaining",
-        "Justifying"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGTKXFR",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -1996,7 +1882,8 @@
       "id": "4-ASG6B21A",
       "title": "Expressing as a result with jieguo",
       "structures": [
-        "Reason / Condition ，结果 + Result"
+        "Reason / Condition ，结果 + Result",
+        "Situation ，结果 + [Unexpected Result]"
       ],
       "usedFor": [
         "Expressing attitude"
@@ -2095,21 +1982,7 @@
           "chinese": "他总是迟到，结果老板炒了他的鱿鱼。",
           "pinyin": "tā zǒngshì chídào ，jiéguǒ lǎobǎn chǎo le tā de yóuyú 。",
           "translation": "He was always late and the boss fired his squid."
-        }
-      ],
-      "titleVi": "Diễn tả kết quả bằng jieguo"
-    },
-    {
-      "id": "4-ASG6B21A",
-      "title": "Expressing as a result with jieguo",
-      "structures": [
-        "Situation ，结果 + [Unexpected Result]"
-      ],
-      "usedFor": [
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG6B21A",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2403,7 +2276,8 @@
       "id": "4-ASG49BE6",
       "title": "Expressing enough with gou",
       "structures": [
-        "够 + Verb / Adj. + 了"
+        "够 + Verb / Adj. + 了",
+        "Subj. + (不 + ) 够 + Adj. / Verb"
       ],
       "usedFor": [
         "Expressing attitude",
@@ -2490,22 +2364,7 @@
           "chinese": "别抱怨了，你够幸运了。",
           "pinyin": "bié bàoyuàn le ，nǐ gòu xìngyùn le 。",
           "translation": "Don't complain, you are lucky enough."
-        }
-      ],
-      "titleVi": "Thể hiện đủ với gou"
-    },
-    {
-      "id": "4-ASG49BE6",
-      "title": "Expressing enough with gou",
-      "structures": [
-        "Subj. + (不 + ) 够 + Adj. / Verb"
-      ],
-      "usedFor": [
-        "Expressing attitude",
-        "Describing degree"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG49BE6",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -2643,7 +2502,8 @@
       "id": "4-ASGKWV6F",
       "title": "Expressing even with shenzhi",
       "structures": [
-        "A，B，甚至 C + 都 / 也 ⋯⋯"
+        "A，B，甚至 C + 都 / 也 ⋯⋯",
+        "⋯⋯，甚至 ⋯⋯"
       ],
       "usedFor": [
         "Expressing determination"
@@ -2714,21 +2574,7 @@
           "chinese": "他很喜欢玩手机，吃饭的时候，坐地铁的时候，甚至上厕所的时候也在玩。",
           "pinyin": "tā hěn xǐhuān wán shǒujī，chīfàn deshíhòu，zuò dìtiě deshíhòu，shénzhì shàng cèsuǒ deshíhòu yě zài wán 。",
           "translation": "He likes to play with mobile phones, when eating, when taking the subway, and even when going to the toilet."
-        }
-      ],
-      "titleVi": "Thể hiện ngay cả với shenzhi"
-    },
-    {
-      "id": "4-ASGKWV6F",
-      "title": "Expressing even with shenzhi",
-      "structures": [
-        "⋯⋯，甚至 ⋯⋯"
-      ],
-      "usedFor": [
-        "Expressing determination"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGKWV6F",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3185,7 +3031,9 @@
       "id": "4-ASGTVEHJ",
       "title": "Expressing in the end with daodi",
       "structures": [
-        "到底 ⋯⋯ ，Reason / Characteristic"
+        "到底 ⋯⋯ ，Reason / Characteristic",
+        "到底 + Question Word :: / :: 到底 + Verb＋不 / 没＋Verb",
+        "到底＋Verb＋了"
       ],
       "usedFor": [
         "Exclaiming"
@@ -3251,21 +3099,7 @@
           "chinese": "到底还是孩子，有些事情他不懂是很正常的。",
           "pinyin": "dàodǐ huán shì háizǐ，yǒuxiē shìqíng tā bù dǒng shì hěn zhèngcháng de 。",
           "translation": "In the end, it is still a child, and it is normal for him not to understand some things."
-        }
-      ],
-      "titleVi": "Diễn đạt ở phần cuối bằng 到底"
-    },
-    {
-      "id": "4-ASGTVEHJ",
-      "title": "Expressing in the end with daodi",
-      "structures": [
-        "到底 + Question Word :: / :: 到底 + Verb＋不 / 没＋Verb"
-      ],
-      "usedFor": [
-        "Exclaiming"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGTVEHJ",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3363,21 +3197,7 @@
           "chinese": "你到底吃了没有？",
           "pinyin": "nǐ dàodǐ chī le méiyǒu ？",
           "translation": "Did you eat it?"
-        }
-      ],
-      "titleVi": "Diễn đạt ở phần cuối bằng 到底"
-    },
-    {
-      "id": "4-ASGTVEHJ",
-      "title": "Expressing in the end with daodi",
-      "structures": [
-        "到底＋Verb＋了"
-      ],
-      "usedFor": [
-        "Exclaiming"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGTVEHJ",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3432,7 +3252,9 @@
       "id": "4-ASGDK0BR",
       "title": "Expressing in the end with jiujing",
       "structures": [
-        "究竟 + Question Word"
+        "究竟 + Question Word",
+        "究竟＋Verb＋没 / 不＋Verb",
+        "A＋究竟 + 是＋ A，……"
       ],
       "usedFor": [],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDK0BR",
@@ -3511,19 +3333,7 @@
           "chinese": "你们究竟想让我怎么做？",
           "pinyin": "nǐmen jīujìng xiǎng ràng wǒ zěnyāo zuò ？",
           "translation": "What exactly do you want me to do?"
-        }
-      ],
-      "titleVi": "Diễn đạt ở phần cuối bằng 究竟"
-    },
-    {
-      "id": "4-ASGDK0BR",
-      "title": "Expressing in the end with jiujing",
-      "structures": [
-        "究竟＋Verb＋没 / 不＋Verb"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDK0BR",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3598,19 +3408,7 @@
           "chinese": "经理究竟同不同意？",
           "pinyin": "jīnglǐ jīujìng tóng bù tóngyì ？",
           "translation": "Does the manager disagree?"
-        }
-      ],
-      "titleVi": "Diễn đạt ở phần cuối bằng 究竟"
-    },
-    {
-      "id": "4-ASGDK0BR",
-      "title": "Expressing in the end with jiujing",
-      "structures": [
-        "A＋究竟 + 是＋ A，……"
-      ],
-      "usedFor": [],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDK0BR",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3871,7 +3669,9 @@
       "id": "4-ASGBC7A0",
       "title": "Expressing one by one with yi",
       "structures": [
-        "一 + Measure Word + 一 + Measure Word (+ Noun)"
+        "一 + Measure Word + 一 + Measure Word (+ Noun)",
+        "一 + Time Unit + 一 + Time Unit (+ Noun)",
+        "一 + [Measure Word] (+ 又) + 一 + [Measure Word]"
       ],
       "usedFor": [
         "Expressing quantity"
@@ -3944,21 +3744,7 @@
           "chinese": "别拿那么多，一个一个拿。",
           "pinyin": "bié ná nàyāo duō ，yī gè yī gè ná 。",
           "translation": "Don't take so many, take one by one."
-        }
-      ],
-      "titleVi": "Diễn đạt từng cái một với 一"
-    },
-    {
-      "id": "4-ASGBC7A0",
-      "title": "Expressing one by one with yi",
-      "structures": [
-        "一 + Time Unit + 一 + Time Unit (+ Noun)"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGBC7A0",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -3992,21 +3778,7 @@
           "chinese": "爸爸妈妈一年一年在变老。",
           "pinyin": "bàbà māmā yī nián yī nián zài biàn lǎo 。",
           "translation": "Mom and Dad are getting older year by year."
-        }
-      ],
-      "titleVi": "Diễn đạt từng cái một với 一"
-    },
-    {
-      "id": "4-ASGBC7A0",
-      "title": "Expressing one by one with yi",
-      "structures": [
-        "一 + [Measure Word] (+ 又) + 一 + [Measure Word]"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGBC7A0",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4100,7 +3872,9 @@
       "id": "4-ASG6F157",
       "title": "Expressing originally with benlai",
       "structures": [
-        "Subj. + 本来 + 是 +（不）要 / 会 / 应该 + Verb + 的，但是 / 可是 ..."
+        "Subj. + 本来 + 是 +（不）要 / 会 / 应该 + Verb + 的，但是 / 可是 ...",
+        "Subj. + 本来 + 就...",
+        "Subj. + 本来 + 就 + 很 / 不 + Adj. :: / :: Subj. + 本来 + 就 + 会 / 要 / 得 / 应该 + Verb"
       ],
       "usedFor": [
         "Explaining",
@@ -4221,22 +3995,7 @@
           "chinese": "我本来要跟他结婚的，可是后来发现了我们真的不合适。",
           "pinyin": "wǒ běnlái yào gēn tā jiéhūn de ，kěshì hòulái fāxiàn le wǒmen zhēnde bù héshì 。",
           "translation": "I was going to marry him, but then I found out that we were really inappropriate."
-        }
-      ],
-      "titleVi": "Diễn đạt nguyên gốc bằng 本来"
-    },
-    {
-      "id": "4-ASG6F157",
-      "title": "Expressing originally with benlai",
-      "structures": [
-        "Subj. + 本来 + 就..."
-      ],
-      "usedFor": [
-        "Explaining",
-        "Justifying"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG6F157",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4329,22 +4088,7 @@
           "chinese": "他本来就很喜欢开玩笑，你别介意。",
           "pinyin": "tā běnlái jìu hěn xǐhuān kāiwánxiào，nǐ bié jièyì 。",
           "translation": "He has always liked to joke, don't mind."
-        }
-      ],
-      "titleVi": "Diễn đạt nguyên gốc bằng 本来"
-    },
-    {
-      "id": "4-ASG6F157",
-      "title": "Expressing originally with benlai",
-      "structures": [
-        "Subj. + 本来 + 就 + 很 / 不 + Adj. :: / :: Subj. + 本来 + 就 + 会 / 要 / 得 / 应该 + Verb"
-      ],
-      "usedFor": [
-        "Explaining",
-        "Justifying"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG6F157",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4431,7 +4175,9 @@
       "id": "4-ASGPW8PP",
       "title": "Expressing small quantity with jiu",
       "structures": [
-        "就 + Subj. + Predicate"
+        "就 + Subj. + Predicate",
+        "Subj. + 就 + [Verb Phrase]",
+        "Subj. + 就 + Number + [Measure Word] + Noun"
       ],
       "usedFor": [
         "Describing actions",
@@ -4525,22 +4271,7 @@
           "chinese": "你觉得别人都是傻子吗？",
           "pinyin": "nǐ juédé biérén dū shì shǎzǐ ma ？",
           "translation": "Do you think everyone is a fool?"
-        }
-      ],
-      "titleVi": "Diễn tả số lượng nhỏ bằng 就"
-    },
-    {
-      "id": "4-ASGPW8PP",
-      "title": "Expressing small quantity with jiu",
-      "structures": [
-        "Subj. + 就 + [Verb Phrase]"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Describing things"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGPW8PP",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -4622,22 +4353,7 @@
           "chinese": "她在我们公司就工作了两个月。",
           "pinyin": "tā zài wǒmen gōngsī jìu gōngzuò le liǎnggè yuè 。",
           "translation": "She worked in our company for two months."
-        }
-      ],
-      "titleVi": "Diễn tả số lượng nhỏ bằng 就"
-    },
-    {
-      "id": "4-ASGPW8PP",
-      "title": "Expressing small quantity with jiu",
-      "structures": [
-        "Subj. + 就 + Number + [Measure Word] + Noun"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Describing things"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGPW8PP",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -6280,7 +5996,8 @@
       "id": "4-ASG4FB55",
       "title": "Expressing and then with yushi",
       "structures": [
-        "⋯⋯ ，于是 (+ Subj.) ⋯⋯ + 了"
+        "⋯⋯ ，于是 (+ Subj.) ⋯⋯ + 了",
+        "⋯⋯ ，于是 (+ Subj.) ⋯⋯ + 了 :: (因此 vs. 于是)"
       ],
       "usedFor": [
         "Expressing result",
@@ -6430,23 +6147,7 @@
           "chinese": "他实在太懒了，于是老板就把他辞了。",
           "pinyin": "tā shízài tài lǎn le ，yúshì lǎobǎn jìu bǎ tā cí le 。",
           "translation": "He was too lazy, so the boss quit him."
-        }
-      ],
-      "titleVi": "Thể hiện và sau đó với yushi"
-    },
-    {
-      "id": "4-ASG4FB55",
-      "title": "Expressing and then with yushi",
-      "structures": [
-        "⋯⋯ ，于是 (+ Subj.) ⋯⋯ + 了 :: (因此 vs. 于是)"
-      ],
-      "usedFor": [
-        "Expressing result",
-        "Sequencing events in time",
-        "Indicating cause and effect"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG4FB55",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -7178,7 +6879,8 @@
       "id": "4-ASGMX0ZS",
       "title": "Using er to explain contrasting ideas",
       "structures": [
-        "是……，而不是…… :: / :: 不是……，而是……"
+        "是……，而不是…… :: / :: 不是……，而是……",
+        "Sentence 1， + 而 + Sentence 2"
       ],
       "usedFor": [
         "Contrasting",
@@ -7363,22 +7065,7 @@
           "chinese": "不好意思，我是不小心，不是故意的。",
           "pinyin": "bùhǎoyìsī ，wǒ shì bù xiǎoxīn ，bùshì gùyì de 。",
           "translation": "Sorry, I was careless, not intentional."
-        }
-      ],
-      "titleVi": "Sử dụng er để giải thích những ý tưởng trái ngược nhau"
-    },
-    {
-      "id": "4-ASGMX0ZS",
-      "title": "Using er to explain contrasting ideas",
-      "structures": [
-        "Sentence 1， + 而 + Sentence 2"
-      ],
-      "usedFor": [
-        "Contrasting",
-        "Differentiating"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMX0ZS",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -7722,7 +7409,8 @@
       "id": "4-ASG84RE9",
       "title": "Expressing fractions with fenzhi",
       "structures": [
-        "Denominator + 分之 + Numerator"
+        "Denominator + 分之 + Numerator",
+        "A + 是 / 占 + B + 的 + Denominator + 分之 + Numerator"
       ],
       "usedFor": [
         "Expressing quantity"
@@ -7827,21 +7515,7 @@
           "chinese": "我们学校四分之三的老师都是男老师。",
           "pinyin": "wǒmen xuéxiào sì fēn zhī sān de lǎoshī dū shì nán lǎoshī 。",
           "translation": "Three quarters of the teachers in our school are male teachers."
-        }
-      ],
-      "titleVi": "Biểu thị phân số bằng fenzhi"
-    },
-    {
-      "id": "4-ASG84RE9",
-      "title": "Expressing fractions with fenzhi",
-      "structures": [
-        "A + 是 / 占 + B + 的 + Denominator + 分之 + Numerator"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG84RE9",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -8667,7 +8341,8 @@
       "id": "4-ASGHVFRA",
       "title": "Expressing along with… with suizhe",
       "structures": [
-        "Subj. + 随着 + Noun + Verb Phrase"
+        "Subj. + 随着 + Noun + Verb Phrase",
+        "随着 + [Noun Phrase] ，Subj. + Predicate"
       ],
       "usedFor": [
         "Referring to simultaneous events",
@@ -8758,22 +8433,7 @@
           "chinese": "我们随着他的琴声唱起了歌。",
           "pinyin": "wǒmen súizháo tā de qínshēng chàng qǐ le gē 。",
           "translation": "We sang along with his piano voice."
-        }
-      ],
-      "titleVi": "Diễn đạt cùng với… với suizhe"
-    },
-    {
-      "id": "4-ASGHVFRA",
-      "title": "Expressing along with… with suizhe",
-      "structures": [
-        "随着 + [Noun Phrase] ，Subj. + Predicate"
-      ],
-      "usedFor": [
-        "Referring to simultaneous events",
-        "Indicating conditions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGHVFRA",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -8878,7 +8538,9 @@
       "id": "4-ASGH13JY",
       "title": "Idiomatic phrases with zai",
       "structures": [
-        "在 + Topic + 上 ，Subj. ⋯⋯"
+        "在 + Topic + 上 ，Subj. ⋯⋯",
+        "在 ⋯⋯ 下 ，⋯⋯",
+        "在 + Topic + 方面 ，Subj. ⋯⋯"
       ],
       "usedFor": [
         "Indicating conditions",
@@ -8964,22 +8626,7 @@
           "chinese": "南方人和北方人在生活习惯上有很多差异。",
           "pinyin": "nánfāngrén hé běifāngrén zài shēnghuó xíguàn shàng yǒu hěnduō chàyì 。",
           "translation": "Southerners and northerners have many differences in their living habits."
-        }
-      ],
-      "titleVi": "Thành ngữ với 在"
-    },
-    {
-      "id": "4-ASGH13JY",
-      "title": "Idiomatic phrases with zai",
-      "structures": [
-        "在 ⋯⋯ 下 ，⋯⋯"
-      ],
-      "usedFor": [
-        "Indicating conditions",
-        "Expressing location"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGH13JY",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -9055,22 +8702,7 @@
           "chinese": "在那么困难的条件下，她还是坚持让孩子们都上学。",
           "pinyin": "zài nàyāo kùnnán de tiáojiàn xià ，tā huánshì jiānchí ràng háizǐmen dū shàngxué 。",
           "translation": "Under such difficult conditions, she insisted that all her children go to school."
-        }
-      ],
-      "titleVi": "Thành ngữ với 在"
-    },
-    {
-      "id": "4-ASGH13JY",
-      "title": "Idiomatic phrases with zai",
-      "structures": [
-        "在 + Topic + 方面 ，Subj. ⋯⋯"
-      ],
-      "usedFor": [
-        "Indicating conditions",
-        "Expressing location"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGH13JY",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -9571,7 +9203,8 @@
       "id": "4-ASG765HD",
       "title": "Expressing it depends with kan",
       "structures": [
-        "这 / 那 + 要看 / 得看 + [Unclear Situation]"
+        "这 / 那 + 要看 / 得看 + [Unclear Situation]",
+        "[Unknown Outcome] + 要看 / 得看 + [Unclear Situation]"
       ],
       "usedFor": [
         "Indicating conditions",
@@ -9653,23 +9286,7 @@
           "chinese": "那得看考试结果。",
           "pinyin": "nà dé kàn kǎoshì jiéguǒ 。",
           "translation": "That depends on the test results."
-        }
-      ],
-      "titleVi": "Thể hiện nó phụ thuộc vào kan"
-    },
-    {
-      "id": "4-ASG765HD",
-      "title": "Expressing it depends with kan",
-      "structures": [
-        "[Unknown Outcome] + 要看 / 得看 + [Unclear Situation]"
-      ],
-      "usedFor": [
-        "Indicating conditions",
-        "Adding more explanation",
-        "Indicating cause and effect"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG765HD",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -11690,7 +11307,8 @@
       "id": "4-ASG8NM5E",
       "title": "Expressing never with conglai",
       "structures": [
-        "Subj. + 从来 + 不 + [Verb Phrase]"
+        "Subj. + 从来 + 不 + [Verb Phrase]",
+        "Subj. + 从来 + 没(有) + Verb + 过"
       ],
       "usedFor": [
         "Referring to habitual actions",
@@ -11775,23 +11393,7 @@
           "chinese": "他从不关心别人。",
           "pinyin": "tā cóng bù guānxīn biérén 。",
           "translation": "He never cared about others."
-        }
-      ],
-      "titleVi": "Diễn đạt không bao giờ với 从来"
-    },
-    {
-      "id": "4-ASG8NM5E",
-      "title": "Expressing never with conglai",
-      "structures": [
-        "Subj. + 从来 + 没(有) + Verb + 过"
-      ],
-      "usedFor": [
-        "Referring to habitual actions",
-        "Referring to the past",
-        "Expressing frequency"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG8NM5E",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -11975,7 +11577,8 @@
       "id": "4-ASG1CCAP",
       "title": "Expressing until with dao",
       "structures": [
-        "Verb (+ 一直) + 到 + Time / Event"
+        "Verb (+ 一直) + 到 + Time / Event",
+        "[Verb Phrase] (+ 一直) + Verb + 到 + Time / Event"
       ],
       "usedFor": [
         "Describing actions",
@@ -12032,22 +11635,7 @@
           "chinese": "你弟弟要在我们家住到什么时候？",
           "pinyin": "nǐ dìdì yào zài wǒmen jiā zhù dào shíyāo shíhòu ？",
           "translation": "When will your brother live in our house?"
-        }
-      ],
-      "titleVi": "Diễn đạt cho đến khi với 到"
-    },
-    {
-      "id": "4-ASG1CCAP",
-      "title": "Expressing until with dao",
-      "structures": [
-        "[Verb Phrase] (+ 一直) + Verb + 到 + Time / Event"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Expressing result"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG1CCAP",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -12427,7 +12015,11 @@
       "id": "4-ASG4GVRX",
       "title": "Separable verb",
       "structures": [
-        "Verb + Object :: / :: Verb... [Other Stuff]... Object"
+        "Verb + Object :: / :: Verb... [Other Stuff]... Object",
+        "跟 + Person + Verb + Object",
+        "Verb + 了 / 过 / 着 + Object",
+        "Verb + [Measure Word Phrase] + Object",
+        "Verb + Verb + Object"
       ],
       "usedFor": [
         "Describing actions",
@@ -12464,25 +12056,7 @@
           "chinese": "我没有时间见你。",
           "pinyin": "wǒ méiyǒu shíjiān jiàn nǐ 。",
           "translation": "I don't have time to see you."
-        }
-      ],
-      "titleVi": "Động từ có thể tách rời"
-    },
-    {
-      "id": "4-ASG4GVRX",
-      "title": "Separable verb",
-      "structures": [
-        "跟 + Person + Verb + Object"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Referring to the present",
-        "Referring to the past",
-        "Referring to past experiences",
-        "Referring to changes of situation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG4GVRX",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -12525,25 +12099,7 @@
           "chinese": "你还没有跟我道歉。",
           "pinyin": "nǐ huán méiyǒu gēn wǒ dàoqiàn 。",
           "translation": "You have not apologized to me."
-        }
-      ],
-      "titleVi": "Động từ có thể tách rời"
-    },
-    {
-      "id": "4-ASG4GVRX",
-      "title": "Separable verb",
-      "structures": [
-        "Verb + 了 / 过 / 着 + Object"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Referring to the present",
-        "Referring to the past",
-        "Referring to past experiences",
-        "Referring to changes of situation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG4GVRX",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -12663,25 +12219,7 @@
           "chinese": "他正吃着饭呢。",
           "pinyin": "tā zhèng chī zháo fàn ní 。",
           "translation": "He is eating."
-        }
-      ],
-      "titleVi": "Động từ có thể tách rời"
-    },
-    {
-      "id": "4-ASG4GVRX",
-      "title": "Separable verb",
-      "structures": [
-        "Verb + [Measure Word Phrase] + Object"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Referring to the present",
-        "Referring to the past",
-        "Referring to past experiences",
-        "Referring to changes of situation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG4GVRX",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -12774,25 +12312,7 @@
           "chinese": "昨晚我只睡了两个小时觉。",
           "pinyin": "zuówǎn wǒ zhǐ shùi le liǎng gè xiǎoshí jué 。",
           "translation": "I only slept for two hours last night."
-        }
-      ],
-      "titleVi": "Động từ có thể tách rời"
-    },
-    {
-      "id": "4-ASG4GVRX",
-      "title": "Separable verb",
-      "structures": [
-        "Verb + Verb + Object"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Referring to the present",
-        "Referring to the past",
-        "Referring to past experiences",
-        "Referring to changes of situation"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG4GVRX",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -13144,7 +12664,8 @@
       "id": "4-ASG1RE80",
       "title": "Expressing contrariness with dao",
       "structures": [
-        "⋯⋯ ，Subj. + 倒 + (也 / 又) ⋯⋯"
+        "⋯⋯ ，Subj. + 倒 + (也 / 又) ⋯⋯",
+        "Subj. + 倒 ⋯⋯ ，不过 / 但是 / 就是 ⋯⋯"
       ],
       "usedFor": [
         "Contrasting"
@@ -13224,21 +12745,7 @@
           "chinese": "英语不是他的母语，他说得倒挺地道的。",
           "pinyin": "yīngyǔ bù shì tā de mǔyǔ ，tā shuō dé dǎo tǐng dìdào de 。",
           "translation": "English is not his mother tongue, he speaks quite authentically."
-        }
-      ],
-      "titleVi": "Diễn tả sự trái ngược với 到"
-    },
-    {
-      "id": "4-ASG1RE80",
-      "title": "Expressing contrariness with dao",
-      "structures": [
-        "Subj. + 倒 ⋯⋯ ，不过 / 但是 / 就是 ⋯⋯"
-      ],
-      "usedFor": [
-        "Contrasting"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG1RE80",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -14060,7 +13567,10 @@
       "id": "4-ASG8LWBJ",
       "title": "Direction complement",
       "structures": [
-        "Verb + 来 / 去"
+        "Verb + 来 / 去",
+        "Verb + [Compound Direction Complement]",
+        "Verb + Object + Complement",
+        "Subj. + 把 + Obj. + Verb + [Direction Complement]"
       ],
       "usedFor": [
         "Describing actions",
@@ -14174,23 +13684,7 @@
           "chinese": "我今天不回去吃饭。",
           "pinyin": "wǒ jīntiān bù húiqù chīfàn 。",
           "translation": "I won't go back to dinner today."
-        }
-      ],
-      "titleVi": "Bổ sung phương hướng"
-    },
-    {
-      "id": "4-ASG8LWBJ",
-      "title": "Direction complement",
-      "structures": [
-        "Verb + [Compound Direction Complement]"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Expressing movement",
-        "Describing places"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG8LWBJ",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -14252,23 +13746,7 @@
           "chinese": "你包里的东西都拿出来了吗？",
           "pinyin": "nǐ bāolǐ de dōngxī dū ná chūlái le ma ？",
           "translation": "Did you take out everything in your bag?"
-        }
-      ],
-      "titleVi": "Bổ sung phương hướng"
-    },
-    {
-      "id": "4-ASG8LWBJ",
-      "title": "Direction complement",
-      "structures": [
-        "Verb + Object + Complement"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Expressing movement",
-        "Describing places"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG8LWBJ",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -14364,23 +13842,7 @@
           "chinese": "回美国去",
           "pinyin": "húiměiguóqù",
           "translation": "Go back to America"
-        }
-      ],
-      "titleVi": "Bổ sung phương hướng"
-    },
-    {
-      "id": "4-ASG8LWBJ",
-      "title": "Direction complement",
-      "structures": [
-        "Subj. + 把 + Obj. + Verb + [Direction Complement]"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Expressing movement",
-        "Describing places"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG8LWBJ",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -14622,7 +14084,9 @@
       "id": "4-ASGBPXOB",
       "title": "Direction complement -qilai",
       "structures": [
-        "Verb + 起来"
+        "Verb + 起来",
+        "Verb / Adj. + 起来 +了",
+        "Subj. + Verb + 起来 + Adv. + Adj."
       ],
       "usedFor": [
         "Describing actions",
@@ -14680,23 +14144,7 @@
           "chinese": "别动！把手举起来。",
           "pinyin": "biédòng ！bǎ shǒu jǔ qǐlái 。",
           "translation": "do not move! Raise your hand."
-        }
-      ],
-      "titleVi": "Hướng bổ sung -qilai"
-    },
-    {
-      "id": "4-ASGBPXOB",
-      "title": "Direction complement -qilai",
-      "structures": [
-        "Verb / Adj. + 起来 +了"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Expressing movement",
-        "Expressing result"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGBPXOB",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -14808,23 +14256,7 @@
           "chinese": "大家唱起来，跳起来!",
           "pinyin": "dàjiā chàng qǐlái ，tiào qǐlái !",
           "translation": "Everyone sing and jump!"
-        }
-      ],
-      "titleVi": "Hướng bổ sung -qilai"
-    },
-    {
-      "id": "4-ASGBPXOB",
-      "title": "Direction complement -qilai",
-      "structures": [
-        "Subj. + Verb + 起来 + Adv. + Adj."
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Expressing movement",
-        "Expressing result"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGBPXOB",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -15308,7 +14740,10 @@
       "id": "4-ASGMD0YY",
       "title": "Expressing unless with chufei",
       "structures": [
-        "Result / Fact ，除非 + Condition"
+        "Result / Fact ，除非 + Condition",
+        "Condition, (要) 不然 + Result",
+        "除非 + Condition ，否则 / 不然 + Result / Fact",
+        "除非 x，才 y"
       ],
       "usedFor": [
         "Indicating cause and effect"
@@ -15405,21 +14840,7 @@
           "chinese": "我们公司一般不允许员工请假，除非理由很充分。",
           "pinyin": "wǒmen gōngsī yībān bù yǔnxǔ yuángōng qǐngjiǎ ，chúfēi lǐyóu hěn chōngfēn 。",
           "translation": "Our company generally does not allow employees to take leave, unless the reasons are good."
-        }
-      ],
-      "titleVi": "Diễn đạt trừ khi với 除非"
-    },
-    {
-      "id": "4-ASGMD0YY",
-      "title": "Expressing unless with chufei",
-      "structures": [
-        "Condition, (要) 不然 + Result"
-      ],
-      "usedFor": [
-        "Indicating cause and effect"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMD0YY",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -15471,21 +14892,7 @@
           "chinese": "老师，您要给我们一点提示，要不然谁都想不出答案。",
           "pinyin": "lǎoshī ，nín yào gěiwǒmen yīdiǎn tíshì ，yàobùrán shúi dū xiǎngbùchū dáàn 。",
           "translation": "Teacher, you have to give us a hint, otherwise no one can think of an answer."
-        }
-      ],
-      "titleVi": "Diễn đạt trừ khi với 除非"
-    },
-    {
-      "id": "4-ASGMD0YY",
-      "title": "Expressing unless with chufei",
-      "structures": [
-        "除非 + Condition ，否则 / 不然 + Result / Fact"
-      ],
-      "usedFor": [
-        "Indicating cause and effect"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMD0YY",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -15578,21 +14985,7 @@
           "chinese": "除非你是名牌大学毕业的，否则老板不会考虑你的。",
           "pinyin": "chúfēi nǐ shì míngpái dàxué bìyè de ，fǒuzé lǎobǎn bùhùi kǎolv̀ nǐ de 。",
           "translation": "Unless you graduated from a prestigious university, the boss will not consider you."
-        }
-      ],
-      "titleVi": "Diễn đạt trừ khi với 除非"
-    },
-    {
-      "id": "4-ASGMD0YY",
-      "title": "Expressing unless with chufei",
-      "structures": [
-        "除非 x，才 y"
-      ],
-      "usedFor": [
-        "Indicating cause and effect"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMD0YY",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -15793,7 +15186,8 @@
       "id": "4-ASGN4S8O",
       "title": "Expressing if… then… with yaoshi",
       "structures": [
-        "要是 + Subj. ⋯⋯ ， 就 ⋯⋯"
+        "要是 + Subj. ⋯⋯ ， 就 ⋯⋯",
+        "要不是 ⋯⋯ ，⋯⋯"
       ],
       "usedFor": [
         "Indicating conditions",
@@ -15893,23 +15287,7 @@
           "chinese": "他要不听，我也没办法。",
           "pinyin": "tā yào bù tīng ，wǒ yě méi bànfǎ 。",
           "translation": "If he doesn't listen, I can't help it."
-        }
-      ],
-      "titleVi": "Diễn tả nếu…thì…với yaoshi"
-    },
-    {
-      "id": "4-ASGN4S8O",
-      "title": "Expressing if… then… with yaoshi",
-      "structures": [
-        "要不是 ⋯⋯ ，⋯⋯"
-      ],
-      "usedFor": [
-        "Indicating conditions",
-        "Indicating cause and effect",
-        "Expressing possibility"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGN4S8O",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -16084,7 +15462,9 @@
       "id": "4-ASG0NDS6",
       "title": "Expressing no matter with buguan",
       "structures": [
-        "不管 + Question Word ，(Subj. +) 都 ⋯⋯"
+        "不管 + Question Word ，(Subj. +) 都 ⋯⋯",
+        "不管 + 是 + Option A + 还是 + Option B ，Subj. + 都 ⋯⋯ :: / :: 不管 + Verb / Adj. + 不 + Verb / Adj. ，Subj. + 都 ⋯⋯",
+        "不管 + 多 + Adj., Subj. + 都 ⋯⋯"
       ],
       "usedFor": [
         "Indicating conditions",
@@ -16178,23 +15558,7 @@
           "chinese": "不管你是什么时候买的，我们都可以免费修。",
           "pinyin": "bùguǎn nǐ shì shíyāo shíhòu mǎi de ，wǒmen dū kěyǐ miǎnfèi xīu 。",
           "translation": "No matter when you bought it, we can repair it for free."
-        }
-      ],
-      "titleVi": "Diễn tả không có vấn đề gì với 不管"
-    },
-    {
-      "id": "4-ASG0NDS6",
-      "title": "Expressing no matter with buguan",
-      "structures": [
-        "不管 + 是 + Option A + 还是 + Option B ，Subj. + 都 ⋯⋯ :: / :: 不管 + Verb / Adj. + 不 + Verb / Adj. ，Subj. + 都 ⋯⋯"
-      ],
-      "usedFor": [
-        "Indicating conditions",
-        "Expressing attitude",
-        "Expressing determination"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0NDS6",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -16288,23 +15652,7 @@
           "chinese": "不管他们承认不承认，这都是事实。",
           "pinyin": "bùguǎn tāmen chéngrèn bù chéngrèn ，zhè dū shì shìshí 。",
           "translation": "Whether they admit it or not, this is a fact."
-        }
-      ],
-      "titleVi": "Diễn tả không có vấn đề gì với 不管"
-    },
-    {
-      "id": "4-ASG0NDS6",
-      "title": "Expressing no matter with buguan",
-      "structures": [
-        "不管 + 多 + Adj., Subj. + 都 ⋯⋯"
-      ],
-      "usedFor": [
-        "Indicating conditions",
-        "Expressing attitude",
-        "Expressing determination"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0NDS6",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -16487,7 +15835,9 @@
       "id": "4-ASGOWBSL",
       "title": "Expressing all with suoyou",
       "structures": [
-        "所有 (+ 的) + Noun"
+        "所有 (+ 的) + Noun",
+        "所有 (+ 的) + Noun + 都 + Predicate",
+        "不是 + 所有 (+ 的) + Noun + 都 + Predicate"
       ],
       "usedFor": [
         "Expressing quantity"
@@ -16559,21 +15909,7 @@
           "chinese": "我的孩子看过所有的迪斯尼动画片。",
           "pinyin": "wǒ de háizǐ kàn guò suǒyǒu de dísīní dònghuàpiàn 。",
           "translation": "My child has seen all Disney cartoons."
-        }
-      ],
-      "titleVi": "Thể hiện tất cả bằng 所有"
-    },
-    {
-      "id": "4-ASGOWBSL",
-      "title": "Expressing all with suoyou",
-      "structures": [
-        "所有 (+ 的) + Noun + 都 + Predicate"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGOWBSL",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -16639,21 +15975,7 @@
           "chinese": "我们公司所有人都参加了这个会议。",
           "pinyin": "wǒmen gōngsī suǒyǒu rén dū cānjiā le zhègè hùiyì 。",
           "translation": "Everyone in our company participated in this meeting."
-        }
-      ],
-      "titleVi": "Thể hiện tất cả bằng 所有"
-    },
-    {
-      "id": "4-ASGOWBSL",
-      "title": "Expressing all with suoyou",
-      "structures": [
-        "不是 + 所有 (+ 的) + Noun + 都 + Predicate"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGOWBSL",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -17153,7 +16475,8 @@
       "id": "4-ASGF273F",
       "title": "Advanced uses of lian",
       "structures": [
-        "连 + Verb + 都 + 不 / 没 + Verb (，就 ⋯⋯)"
+        "连 + Verb + 都 + 不 / 没 + Verb (，就 ⋯⋯)",
+        "连 + 一 + Measure Word (+ Noun) + 都 + 不 / 没 + Verb"
       ],
       "usedFor": [
         "Adding more explanation",
@@ -17237,22 +16560,7 @@
           "chinese": "你们连尝都没尝就说不好吃？",
           "pinyin": "nǐmen lián cháng dū méi cháng jìu shuō bù hǎochī ？",
           "translation": "You said it was not delicious even if you did n’t taste it?"
-        }
-      ],
-      "titleVi": "Sử dụng nâng cao của lian"
-    },
-    {
-      "id": "4-ASGF273F",
-      "title": "Advanced uses of lian",
-      "structures": [
-        "连 + 一 + Measure Word (+ Noun) + 都 + 不 / 没 + Verb"
-      ],
-      "usedFor": [
-        "Adding more explanation",
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGF273F",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -17427,7 +16735,8 @@
       "id": "4-ASGZRPCK",
       "title": "Expressing both… and… with ji...you",
       "structures": [
-        "既 + A + 又 + B"
+        "既 + A + 又 + B",
+        "既 + [Verb Phrase] ，也 + [Verb Phrase]"
       ],
       "usedFor": [
         "Describing things",
@@ -17483,22 +16792,7 @@
           "chinese": "这个产品的设计既时尚又人性化。",
           "pinyin": "zhègè chǎnpǐn de shèjì jì shíshàng yòu rénxìnghuà 。",
           "translation": "The design of this product is both stylish and user-friendly."
-        }
-      ],
-      "titleVi": "Diễn tả cả… và… với 几...又"
-    },
-    {
-      "id": "4-ASGZRPCK",
-      "title": "Expressing both… and… with ji...you",
-      "structures": [
-        "既 + [Verb Phrase] ，也 + [Verb Phrase]"
-      ],
-      "usedFor": [
-        "Describing things",
-        "Giving alternatives"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGZRPCK",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -17569,7 +16863,7 @@
           "translation": "Dad was angry with me, but he neither beat me nor scolded me."
         }
       ],
-      "titleVi": "Diễn tả cả… và… với 几...有"
+      "titleVi": "Diễn tả cả… và… với 几...又"
     },
     {
       "id": "4-ASGFBWZL",
@@ -17976,7 +17270,11 @@
       "id": "4-ASG13ALM",
       "title": "Expressing every with question words",
       "structures": [
-        "谁 + 都 + Predicate"
+        "谁 + 都 + Predicate",
+        "哪儿 / 哪里 (+ Verb) + 都 + Predicate",
+        "什么时候 (+ Verb) + 都 + Predicate",
+        "Verb + 多少 + 都 + Predicate",
+        "怎么 + Verb + 都 + Predicate"
       ],
       "usedFor": [
         "Expressing quantity"
@@ -18025,21 +17323,7 @@
           "chinese": "谁都不相信他说的话。",
           "pinyin": "shúi dū bù xiāngxìn tā shuō de huà 。",
           "translation": "No one believed what he said."
-        }
-      ],
-      "titleVi": "Diễn đạt mọi điều bằng từ để hỏi"
-    },
-    {
-      "id": "4-ASG13ALM",
-      "title": "Expressing every with question words",
-      "structures": [
-        "哪儿 / 哪里 (+ Verb) + 都 + Predicate"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG13ALM",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -18088,21 +17372,7 @@
           "chinese": "在哪里见面都行。",
           "pinyin": "zài nǎlǐ jiànmiàn dū xíng 。",
           "translation": "You can meet anywhere."
-        }
-      ],
-      "titleVi": "Diễn đạt mọi điều bằng từ để hỏi"
-    },
-    {
-      "id": "4-ASG13ALM",
-      "title": "Expressing every with question words",
-      "structures": [
-        "什么时候 (+ Verb) + 都 + Predicate"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG13ALM",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -18144,21 +17414,7 @@
           "chinese": "什么时候开始都不晚。",
           "pinyin": "shíyāo shíhòu kāishǐ dū bù wǎn 。",
           "translation": "It's never too late to start."
-        }
-      ],
-      "titleVi": "Diễn đạt mọi điều bằng từ để hỏi"
-    },
-    {
-      "id": "4-ASG13ALM",
-      "title": "Expressing every with question words",
-      "structures": [
-        "Verb + 多少 + 都 + Predicate"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG13ALM",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -18210,21 +17466,7 @@
           "chinese": "我跟他说多少遍都没有用。",
           "pinyin": "wǒ gēn tā shuō duōshǎo biàn dū méiyǒu yòng 。",
           "translation": "I told him that it was useless many times."
-        }
-      ],
-      "titleVi": "Diễn đạt mọi điều bằng từ để hỏi"
-    },
-    {
-      "id": "4-ASG13ALM",
-      "title": "Expressing every with question words",
-      "structures": [
-        "怎么 + Verb + 都 + Predicate"
-      ],
-      "usedFor": [
-        "Expressing quantity"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG13ALM",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -19279,7 +18521,8 @@
       "id": "4-ASGTFUD0",
       "title": "Events in quick succession with yi... jiu...",
       "structures": [
-        "一 + Event 1，就 + Event 2"
+        "一 + Event 1，就 + Event 2",
+        "一 + Reason，就 + Result"
       ],
       "usedFor": [
         "Indicating conditions",
@@ -19375,23 +18618,7 @@
           "chinese": "我一进门，小狗就跑了过来。",
           "pinyin": "wǒ yī jìnmén ，xiǎogǒu jìu pǎo le guòlái 。",
           "translation": "As soon as I entered, the puppy ran over."
-        }
-      ],
-      "titleVi": "Các sự kiện nối tiếp nhau nhanh chóng với 一... 就..."
-    },
-    {
-      "id": "4-ASGTFUD0",
-      "title": "Events in quick succession with yi... jiu...",
-      "structures": [
-        "一 + Reason，就 + Result"
-      ],
-      "usedFor": [
-        "Indicating conditions",
-        "Sequencing events in time",
-        "Indicating cause and effect"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGTFUD0",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -19809,7 +19036,11 @@
       "id": "4-ASG56QKW",
       "title": "Comparing benlai and yuanlai",
       "structures": [
-        "Subj. + 本来 + 就 + 很 / 不 + Adj. :: / :: Subj. + 本来 + 就 + 会 / 要 / 得 / 应该 + Verb"
+        "Subj. + 本来 + 就 + 很 / 不 + Adj. :: / :: Subj. + 本来 + 就 + 会 / 要 / 得 / 应该 + Verb",
+        "Subj. + 本来 + 是 +（不）要 / 会 / 应该 + Verb + 的，但是 / 可是⋯⋯",
+        "Subj. + 本来 + 就 ＋ ⋯⋯",
+        "原来 + 是 + [Fact / Truth / Reason / Purpose] :: / :: 怪不得 + [Observation / Situation]，原来 + 是（因为 / 为了 / 想⋯⋯）",
+        "原来的 + Noun"
       ],
       "usedFor": [
         "Explaining",
@@ -19889,22 +19120,7 @@
           "chinese": "美国人本来就会说流利的英文。",
           "pinyin": "měiguó rén běnláijìu hùi shuō líulì de yīngwén 。",
           "translation": "Americans are fluent in English."
-        }
-      ],
-      "titleVi": "So sánh 本来 và 原来"
-    },
-    {
-      "id": "4-ASG56QKW",
-      "title": "Comparing benlai and yuanlai",
-      "structures": [
-        "Subj. + 本来 + 是 +（不）要 / 会 / 应该 + Verb + 的，但是 / 可是⋯⋯"
-      ],
-      "usedFor": [
-        "Explaining",
-        "Justifying"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG56QKW",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -20015,22 +19231,7 @@
           "chinese": "我本来是要跟他结婚的，可是后来发现了我们真的不合适。",
           "pinyin": "wǒběnláishì yào gēn tā jiéhūn de，kěshì hòulái fāxiàn le wǒmen zhēnde bù héshì 。",
           "translation": "I was originally going to marry him, but later I found out that we were really inappropriate."
-        }
-      ],
-      "titleVi": "So sánh 本来 và 原来"
-    },
-    {
-      "id": "4-ASG56QKW",
-      "title": "Comparing benlai and yuanlai",
-      "structures": [
-        "Subj. + 本来 + 就 ＋ ⋯⋯"
-      ],
-      "usedFor": [
-        "Explaining",
-        "Justifying"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG56QKW",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -20119,22 +19320,7 @@
           "chinese": "他说话的方式本来就很容易让人不舒服，你别介意。",
           "pinyin": "tāshuōhuàdefāngshìběnláijìu hěn róngyì ràngrén bù shūfú，nǐ bié jièyì 。",
           "translation": "The way he speaks is easily uncomfortable, don't mind."
-        }
-      ],
-      "titleVi": "So sánh 本来 và 原来"
-    },
-    {
-      "id": "4-ASG56QKW",
-      "title": "Comparing benlai and yuanlai",
-      "structures": [
-        "原来 + 是 + [Fact / Truth / Reason / Purpose] :: / :: 怪不得 + [Observation / Situation]，原来 + 是（因为 / 为了 / 想⋯⋯）"
-      ],
-      "usedFor": [
-        "Explaining",
-        "Justifying"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG56QKW",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -20231,22 +19417,7 @@
           "chinese": "怪不得总是对他那么好，原来你一直都喜欢他.",
           "pinyin": "guàibùdé zǒngshì dùi tā nàyāo hǎo，yuánlái nǐ yīzhí dū xǐhuān tā.",
           "translation": "No wonder he is always so good to him, it turns out that you always like him."
-        }
-      ],
-      "titleVi": "So sánh 本来 và 原来"
-    },
-    {
-      "id": "4-ASG56QKW",
-      "title": "Comparing benlai and yuanlai",
-      "structures": [
-        "原来的 + Noun"
-      ],
-      "usedFor": [
-        "Explaining",
-        "Justifying"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG56QKW",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -20841,7 +20012,10 @@
       "id": "4-ASG59C66",
       "title": "Comparing li and cong",
       "structures": [
-        "从 + Time / Event + 开始 / 起"
+        "从 + Time / Event + 开始 / 起",
+        "从 + Place + 上 / 里",
+        "Place 1 + 离 + Place 2 + 远 / 近",
+        "Past Event 1 + 离 + Time + Duration :: / :: 离 + Future Event + 还有 + Duration"
       ],
       "usedFor": [
         "Describing places",
@@ -20919,24 +20093,7 @@
           "chinese": "从今以后，我不用再加班了。",
           "pinyin": "cóng jīn yǐhòu ，wǒ bùyòng zài jiābān le 。",
           "translation": "From now on, I don't have to work overtime anymore."
-        }
-      ],
-      "titleVi": "So sánh 里 và 从"
-    },
-    {
-      "id": "4-ASG59C66",
-      "title": "Comparing li and cong",
-      "structures": [
-        "从 + Place + 上 / 里"
-      ],
-      "usedFor": [
-        "Describing places",
-        "Expressing location",
-        "Expressing distance",
-        "Giving directions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG59C66",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -20992,24 +20149,7 @@
           "chinese": "从这件事可以看出你的工作态度。",
           "pinyin": "cóng zhè jiàn shì kěyǐ kànchū nǐ de gōngzuò tàidù 。",
           "translation": "From this matter you can see your work attitude."
-        }
-      ],
-      "titleVi": "So sánh 里 và 从"
-    },
-    {
-      "id": "4-ASG59C66",
-      "title": "Comparing li and cong",
-      "structures": [
-        "Place 1 + 离 + Place 2 + 远 / 近"
-      ],
-      "usedFor": [
-        "Describing places",
-        "Expressing location",
-        "Expressing distance",
-        "Giving directions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG59C66",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -21039,24 +20179,7 @@
           "chinese": "我家离公司很远。",
           "pinyin": "wǒ jiā lí gōngsī hěn yuǎn 。",
           "translation": "My home is far away from the company."
-        }
-      ],
-      "titleVi": "So sánh 里 và 从"
-    },
-    {
-      "id": "4-ASG59C66",
-      "title": "Comparing li and cong",
-      "structures": [
-        "Past Event 1 + 离 + Time + Duration :: / :: 离 + Future Event + 还有 + Duration"
-      ],
-      "usedFor": [
-        "Describing places",
-        "Expressing location",
-        "Expressing distance",
-        "Giving directions"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASG59C66",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -21130,7 +20253,10 @@
       "id": "4-ASGFNS53",
       "title": "Comparing fan'er and “xiangfan",
       "structures": [
-        "A，相反，B :: / :: A，反而 B"
+        "A，相反，B :: / :: A，反而 B",
+        "Situation，相反，The Opposite of the Situation :: / :: Expectation，反而 + The Opposite of Expectation",
+        "相反 + 的 + Noun",
+        "Subj. + 相反 :: / :: A 和 / 跟 B ＋ 是 ＋ 相反的"
       ],
       "usedFor": [
         "Expressing attitude"
@@ -21174,21 +20300,7 @@
           "chinese": "这样做不但帮不了他，反而会害了他。",
           "pinyin": "zhèyáng zuò bùdàn bāng bùle tā，fǎnér hùi hài le tā 。",
           "translation": "This will not only help him, but will harm him."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “xiangfan"
-    },
-    {
-      "id": "4-ASGFNS56",
-      "title": "Comparing fan'er and “xiangfan",
-      "structures": [
-        "Situation，相反，The Opposite of the Situation :: / :: Expectation，反而 + The Opposite of Expectation"
-      ],
-      "usedFor": [
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFNS56",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -21240,21 +20352,7 @@
           "chinese": "老板没有生气，相反，他还表扬了我。",
           "pinyin": "lǎobǎn méiyǒu shēngqì，xiāngfǎn，tā huán biǎoyáng le wǒ 。",
           "translation": "The boss was not angry. On the contrary, he praised me."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “xiangfan"
-    },
-    {
-      "id": "4-ASGFNS62",
-      "title": "Comparing fan'er and “xiangfan",
-      "structures": [
-        "相反 + 的 + Noun"
-      ],
-      "usedFor": [
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFNS62",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -21286,21 +20384,7 @@
           "chinese": "你应该朝相反的方向走。",
           "pinyin": "nǐ yìnggāi zhāo xiāngfǎnde fāngxiàng zǒu 。",
           "translation": "You should go in the opposite direction."
-        }
-      ],
-      "titleVi": "So sánh 反'er và “xiangfan"
-    },
-    {
-      "id": "4-ASGFNS66",
-      "title": "Comparing fan'er and “xiangfan",
-      "structures": [
-        "Subj. + 相反 :: / :: A 和 / 跟 B ＋ 是 ＋ 相反的"
-      ],
-      "usedFor": [
-        "Expressing attitude"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFNS66",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -21372,7 +20456,11 @@
       "id": "4-ASGDPS0J",
       "title": "Comparing kending queding and “yiding",
       "structures": [
-        "肯定 + Noun / Noun Phrase :: / :: Subj. + (敢)肯定 + Sentences"
+        "肯定 + Noun / Noun Phrase :: / :: Subj. + (敢)肯定 + Sentences",
+        "确定 + Phrase / Sentence",
+        "肯定 + （的 +） Noun",
+        "一定 + Adj. / Verb",
+        "肯定  /  确定 / 一定 + （的 +） Noun"
       ],
       "usedFor": [
         "Describing actions",
@@ -21434,24 +20522,7 @@
           "chinese": "我敢肯定这就是他的声音。",
           "pinyin": "wǒ gǎn kěndìng zhè jìu shì tā de shēngyīn 。",
           "translation": "I'm sure this is his voice."
-        }
-      ],
-      "titleVi": "So sánh kending queding và “yiding"
-    },
-    {
-      "id": "4-ASGDPS0J",
-      "title": "Comparing kending queding and “yiding",
-      "structures": [
-        "确定 + Phrase / Sentence"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Describing things",
-        "Expressing attitude",
-        "Expressing determination"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDPS0J",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -21540,24 +20611,7 @@
           "chinese": "老板肯定了最近我的努力工作。",
           "pinyin": "lǎobǎn kěndìng le zùijìn wǒ de nǔlì gōngzuò 。",
           "translation": "The boss affirmed my hard work recently."
-        }
-      ],
-      "titleVi": "So sánh kending queding và “yiding"
-    },
-    {
-      "id": "4-ASGDPS0J",
-      "title": "Comparing kending queding and “yiding",
-      "structures": [
-        "肯定 + （的 +） Noun"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Describing things",
-        "Expressing attitude",
-        "Expressing determination"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDPS0J",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [
@@ -21579,44 +20633,6 @@
           "pinyin": "tā kěndìng huán méi qǐchuáng，yīnwèi tā de shǒujī xiànzài huán méi kāi jī。",
           "translation": "He must haven't gotten up because his cell phone is not turned on now."
         },
-        {
-          "id": "ex-2",
-          "tokens": [
-            "他",
-            "肯定",
-            "还",
-            "没",
-            "起床，因为",
-            "他",
-            "的",
-            "手机",
-            "现在",
-            "还",
-            "没",
-            "开",
-            "机。"
-          ],
-          "chinese": "他肯定还没起床，因为他的手机现在还没开机。",
-          "pinyin": "tā kěndìng huán méi qǐchuáng，yīnwèi tā de shǒujī xiànzài huán méi kāi jī。",
-          "translation": "He must haven't gotten up because his cell phone is not turned on now."
-        }
-      ],
-      "titleVi": "So sánh kending queding và “yiding"
-    },
-    {
-      "id": "4-ASGDPS0J",
-      "title": "Comparing kending queding and “yiding",
-      "structures": [
-        "一定 + Adj. / Verb"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Describing things",
-        "Expressing attitude",
-        "Expressing determination"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDPS0J",
-      "examples": [
         {
           "id": "ex-1",
           "tokens": [
@@ -21656,24 +20672,7 @@
           "chinese": "你们一定要去听我的演唱会。",
           "pinyin": "nǐmen yīdìng yào qù tīng wǒ de yǎnchànghùi。",
           "translation": "You must go to my concert."
-        }
-      ],
-      "titleVi": "So sánh kending queding và “yiding"
-    },
-    {
-      "id": "4-ASGDPS0J",
-      "title": "Comparing kending queding and “yiding",
-      "structures": [
-        "肯定  /  确定 / 一定 + （的 +） Noun"
-      ],
-      "usedFor": [
-        "Describing actions",
-        "Describing things",
-        "Expressing attitude",
-        "Expressing determination"
-      ],
-      "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDPS0J",
-      "examples": [
+        },
         {
           "id": "ex-1",
           "tokens": [

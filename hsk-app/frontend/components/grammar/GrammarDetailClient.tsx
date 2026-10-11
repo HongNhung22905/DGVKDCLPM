@@ -57,6 +57,20 @@ function playTTS(text: string) {
   window.speechSynthesis.speak(utt);
 }
 
+function localizeStructure(text: string): string {
+  return text
+    .replace(/Subj\./g, "Chủ ngữ")
+    .replace(/Verb Phrase/g, "Cụm động từ")
+    .replace(/Noun Phrase/g, "Cụm danh từ")
+    .replace(/Verb/g, "Động từ")
+    .replace(/Obj\./g, "Tân ngữ")
+    .replace(/Adj\./g, "Tính từ")
+    .replace(/Adv\./g, "Trạng từ")
+    .replace(/Noun/g, "Danh từ")
+    .replace(/Time/g, "Thời gian")
+    .replace(/Place/g, "Địa điểm");
+}
+
 // ─── Root Component ───────────────────────────────────────────────────────────
 
 export default function GrammarDetailClient({
@@ -162,22 +176,10 @@ function StudyMode({ point, onContinue }: { point: GrammarPoint; onContinue: () 
           {point.structures.map((s, i) => (
             <div key={i} className="font-mono text-sm rounded-xl px-4 py-2.5"
               style={{ background: "rgba(124,58,237,0.08)", color: P.purple }}>
-              {s}
+              {localizeStructure(s)}
             </div>
           ))}
         </div>
-
-        {/* UsedFor tags */}
-        {point.usedFor.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mt-3">
-            {point.usedFor.map((u) => (
-              <span key={u} className="text-xs px-2.5 py-1 rounded-full"
-                style={{ backgroundColor: "#FEF9C3", color: P.muted }}>
-                {u}
-              </span>
-            ))}
-          </div>
-        )}
 
         {point.url && (
           <a href={point.url} target="_blank" rel="noopener noreferrer"
@@ -219,7 +221,6 @@ function ExampleCard({ ex }: { ex: GrammarExample }) {
           {showPinyin && (
             <p className="text-sm mt-1" style={{ color: P.purple }}>{ex.pinyin}</p>
           )}
-          <p className="text-sm mt-1.5" style={{ color: P.muted }}>{ex.translation}</p>
         </div>
         <button onClick={() => playTTS(ex.chinese)} className="flex-shrink-0 mt-1 transition-colors"
           style={{ color: P.faint }}
@@ -365,7 +366,6 @@ function FillMode({ point }: { point: GrammarPoint }) {
             return <span key={i}>{w} </span>;
           })}
         </p>
-        <p className="text-sm mt-2" style={{ color: P.muted }}>{q.example.translation}</p>
 
         {selected && (
           <div className="mt-3 rounded-xl px-3 py-2 text-sm flex items-center gap-2"
@@ -549,7 +549,6 @@ function SortMode({ point }: { point: GrammarPoint }) {
       {/* Instruction */}
       <div className="rounded-2xl border p-4" style={{ borderColor: P.border, backgroundColor: P.surface }}>
         <p className="text-xs mb-1" style={{ color: P.faint }}>Sắp xếp thành câu hoàn chỉnh:</p>
-        <p className="text-sm" style={{ color: P.muted }}>{q.example.translation}</p>
       </div>
 
       {/* Arranged zone */}
