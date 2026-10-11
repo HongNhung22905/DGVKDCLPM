@@ -85,7 +85,8 @@
           "pinyin": "zuótiān wǎnshàng qīdiǎn，wǒmen zài chīfàn 。",
           "translation": "At 7 o'clock last night, we were eating."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả hành động đang diễn ra với 在"
     },
     {
       "id": "1-ASG846EA",
@@ -164,7 +165,8 @@
           "pinyin": "nǐ gěi wǒ dǎ diànhuà deshíhòu，wǒ zhèngzài gēn péngyǒu dǎ yóuxì 。",
           "translation": "When you called me, I was playing games with my friends."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả hành động đang diễn ra với 在"
     },
     {
       "id": "1-ASGPNV3Q",
@@ -397,7 +399,8 @@
           "pinyin": "wǒ méi gōngzuò，wǒ lǎogōng yě méi gōngzuò 。",
           "translation": "I am not working, and my husband is not working."
         }
-      ]
+      ],
+      "titleVi": "Phủ định 有 bằng 没"
     },
     {
       "id": "1-ASGIPYFV",
@@ -496,7 +499,8 @@
           "pinyin": "wǒ méiyǒushíjiān 。",
           "translation": "I do not have time."
         }
-      ]
+      ],
+      "titleVi": "Phủ định chuẩn với 不"
     },
     {
       "id": "1-ASGIPYFV",
@@ -580,7 +584,8 @@
           "pinyin": "wǒ gēgē bù gāo，dànshì hěn shuài 。",
           "translation": "My brother is not tall, but very handsome."
         }
-      ]
+      ],
+      "titleVi": "Phủ định chuẩn với 不"
     },
     {
       "id": "1-ASG9YK09",
@@ -744,7 +749,8 @@
           "pinyin": "tā hé tā lǎogōng dū méiyǒu gōngzuò 。",
           "translation": "Neither she nor her husband has a job."
         }
-      ]
+      ],
+      "titleVi": "Tất cả trạng từ 都"
     },
     {
       "id": "1-ASGG25MD",
@@ -900,7 +906,8 @@
           "pinyin": "tā yě juédé zhè gè lǎoshī bù hǎo 。",
           "translation": "She also thinks this teacher is bad."
         }
-      ]
+      ],
+      "titleVi": "Trạng từ cũng 也"
     },
     {
       "id": "1-ASGG25MD",
@@ -1118,7 +1125,8 @@
           "pinyin": "nǐ shì měiguórén 。 wǒ yě shì 。",
           "translation": "are you American. me too."
         }
-      ]
+      ],
+      "titleVi": "Trạng từ cũng 也"
     },
     {
       "id": "1-ASG9LLJU",
@@ -1277,7 +1285,8 @@
           "pinyin": "nǐ zhīdào shànghǎi de fángzǐ duō gùi ma ？",
           "translation": "Do you know how expensive a house in Shanghai is?"
         }
-      ]
+      ],
+      "titleVi": "Hỏi về bằng cấp với 多"
     },
     {
       "id": "1-ASGUNMHU",
@@ -1365,7 +1374,8 @@
           "pinyin": "wǒ juédé tā bù tài cōngmíng 。",
           "translation": "I think he is not very smart."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả không hay lắm với 不 太"
     },
     {
       "id": "1-ASGUNMHU",
@@ -1453,7 +1463,8 @@
           "pinyin": "tā bù tài míngbái lǎobǎn de yìsī 。",
           "translation": "He didn't quite understand what the boss meant."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả không hay lắm với 不 太"
     },
     {
       "id": "1-ASGP0KFF",
@@ -1590,7 +1601,8 @@
           "pinyin": "jīntiān hé míngtiān dū kěyǐ ma ？",
           "translation": "Is it OK today and tomorrow?"
         }
-      ]
+      ],
+      "titleVi": "Thể hiện và với anh ấy"
     },
     {
       "id": "1-ASGRLQGY",
@@ -1763,7 +1775,8 @@
           "pinyin": "jiéhūn yǐhòu bàbà bù hējǐu le 。",
           "translation": "Dad stopped drinking after marriage."
         }
-      ]
+      ],
+      "titleVi": "Sau một thời gian cụ thể với 以后"
     },
     {
       "id": "1-ASGJ2OJC",
@@ -1935,7 +1948,8 @@
           "pinyin": "dāng zǒngtǒng yǐqián，Obama méiyǒu bái tóufā 。",
           "translation": "Before becoming president, Obama had no white hair."
         }
-      ]
+      ],
+      "titleVi": "Trước một thời điểm cụ thể với 以前"
     },
     {
       "id": "1-ASG5RWKO",
@@ -2104,7 +2118,8 @@
           "pinyin": "nǐ xiànzài néng lái wǒ bàngōngshì ma ？",
           "translation": "Can you come to my office now?"
         }
-      ]
+      ],
+      "titleVi": "Thời gian từ và trật tự từ"
     },
     {
       "id": "1-ASGQUKJF",
@@ -2201,7 +2216,8 @@
           "pinyin": "wǒ de háizǐ yī sùi 。",
           "translation": "My child is one year old."
         }
-      ]
+      ],
+      "titleVi": "Tuổi với 虽"
     },
     {
       "id": "1-ASGQUKJF",
@@ -2239,7 +2255,8 @@
           "pinyin": "wǒ érzǐ yī sùi bàn 。",
           "translation": "My son is one and a half years old."
         }
-      ]
+      ],
+      "titleVi": "Tuổi với 虽"
     },
     {
       "id": "1-ASGI0T9S",
@@ -2270,7 +2287,8 @@
           "pinyin": "shí gè nánrén， qī gè shǎ， bā gè huài 。",
           "translation": "Ten men, seven silly, and eight bad."
         }
-      ]
+      ],
+      "titleVi": "Đo từ ge"
     },
     {
       "id": "1-ASGI0T9S",
@@ -2353,7 +2371,8 @@
           "pinyin": "lǎoshī ， wǒ yǒu gè wèntí 。",
           "translation": "Teacher, I have a question."
         }
-      ]
+      ],
+      "titleVi": "Đo từ ge"
     },
     {
       "id": "1-ASGT3KF6",
@@ -2509,7 +2528,8 @@
           "pinyin": "1980 nián 9 yuè 4 hào wǒmen jiéhūn le 。",
           "translation": "We got married on September 4, 1980."
         }
-      ]
+      ],
+      "titleVi": "Cấu trúc ngày tháng"
     },
     {
       "id": "1-ASGDTO07",
@@ -2586,7 +2606,8 @@
           "pinyin": "bā diǎn líng wǔ fēn",
           "translation": "8.05"
         }
-      ]
+      ],
+      "titleVi": "Cấu trúc thời gian (nâng cao)"
     },
     {
       "id": "1-ASGDTO10",
@@ -2674,7 +2695,8 @@
           "pinyin": "lìu diǎn sān kè",
           "translation": "Six thirty"
         }
-      ]
+      ],
+      "titleVi": "Cấu trúc thời gian (nâng cao)"
     },
     {
       "id": "1-ASGDTO09",
@@ -2713,7 +2735,8 @@
           "pinyin": "shíèr diǎn chà sān fēn",
           "translation": "Three points from twelve"
         }
-      ]
+      ],
+      "titleVi": "Cấu trúc thời gian (nâng cao)"
     },
     {
       "id": "1-ASGN6BBU",
@@ -2753,7 +2776,8 @@
           "pinyin": "shí diǎn chà liǎng fēn",
           "translation": "Ten points to two points"
         }
-      ]
+      ],
+      "titleVi": "Cấu trúc thời gian (cơ bản)"
     },
     {
       "id": "1-ASGN6BBU",
@@ -2838,7 +2862,8 @@
           "pinyin": "xīngqīsān shàngwǔ jǐu diǎn",
           "translation": "Wednesday at 9 am"
         }
-      ]
+      ],
+      "titleVi": "Cấu trúc thời gian (cơ bản)"
     },
     {
       "id": "1-ASGN6BBU",
@@ -2887,7 +2912,8 @@
           "pinyin": "xīngqītiān shàngwǔ shí diǎn bàn",
           "translation": "Sunday at ten thirty"
         }
-      ]
+      ],
+      "titleVi": "Cấu trúc thời gian (cơ bản)"
     },
     {
       "id": "1-ASGCI0KG",
@@ -2926,7 +2952,8 @@
           "pinyin": "jīntiān xiàwǔ sì diǎn bàn",
           "translation": "This afternoon at 4:30"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự sở hữu gần gũi mà không có 的"
     },
     {
       "id": "1-ASGCI0KG",
@@ -3043,7 +3070,8 @@
           "pinyin": "tā érzǐ hěn yǒumíng 。",
           "translation": "His son is very famous."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự sở hữu gần gũi mà không có 的"
     },
     {
       "id": "1-ASGAGDCQ",
@@ -3088,7 +3116,8 @@
           "pinyin": "tā bàbà shì wǒmen gōngsī de lǎobǎn 。",
           "translation": "His father is the boss of our company."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự hoàn thành với 了"
     },
     {
       "id": "1-ASGAGDCQ",
@@ -3140,7 +3169,8 @@
           "pinyin": "wǒmen dū qù le 。",
           "translation": "We have all gone."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự hoàn thành với 了"
     },
     {
       "id": "1-ASGAGDCQ",
@@ -3184,7 +3214,8 @@
           "pinyin": "tā shànggè yuè qù le běijīng 。",
           "translation": "She went to Beijing last month."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự hoàn thành với 了"
     },
     {
       "id": "1-ASGAGDCQ",
@@ -3258,7 +3289,8 @@
           "pinyin": "wǒ hē le liǎng bēi kāfēi 。",
           "translation": "I drank two cups of coffee."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự hoàn thành với 了"
     },
     {
       "id": "1-ASGAGDCQ",
@@ -3303,7 +3335,8 @@
           "pinyin": "wǒ mǎi le sān běn shū 。",
           "translation": "I bought three books."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự hoàn thành với 了"
     },
     {
       "id": "1-ASGFR96B",
@@ -3331,7 +3364,8 @@
           "pinyin": "wǒ hē le liǎng bēi kāfēi 。",
           "translation": "I drank two cups of coffee."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả không còn nữa với 了"
     },
     {
       "id": "1-ASGFR96B",
@@ -3359,7 +3393,8 @@
           "pinyin": "wǒ hē le liǎng bēi kāfēi 。",
           "translation": "I drank two cups of coffee."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả không còn nữa với 了"
     },
     {
       "id": "1-ASGFR96B",
@@ -3415,7 +3450,8 @@
           "pinyin": "nǐmen bù néng dǎ le 。",
           "translation": "You can't fight anymore."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả không còn nữa với 了"
     },
     {
       "id": "1-ASGFR96B",
@@ -3466,7 +3502,8 @@
           "pinyin": "tā méiyǒu jiā le 。",
           "translation": "He has no home."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả không còn nữa với 了"
     },
     {
       "id": "1-ASGFR96B",
@@ -3510,7 +3547,8 @@
           "pinyin": "tā yǐjīng bù zài zhèér gōngzuò le 。",
           "translation": "He no longer works here."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả không còn nữa với 了"
     },
     {
       "id": "1-ASGE5Q4J",
@@ -3552,7 +3590,8 @@
           "pinyin": "wǒmen yǐjīng méiyǒu qián le 。",
           "translation": "We have no money."
         }
-      ]
+      ],
+      "titleVi": "Diễn đạt bây giờ với 了"
     },
     {
       "id": "1-ASGE5Q4J",
@@ -3600,7 +3639,8 @@
           "pinyin": "wǒ 20 sùi le ！",
           "translation": "I am 20 years old!"
         }
-      ]
+      ],
+      "titleVi": "Diễn đạt bây giờ với 了"
     },
     {
       "id": "1-ASGUHQD3",
@@ -3639,7 +3679,8 @@
           "pinyin": "kuài diǎnér ，kāihùi le ！",
           "translation": "Hurry up, it's time for a meeting!"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự sở hữu bằng 的"
     },
     {
       "id": "1-ASGUHQD5",
@@ -3729,7 +3770,8 @@
           "pinyin": "gōngsī de lǎobǎn",
           "translation": "The boss of the company"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự sở hữu bằng 的"
     },
     {
       "id": "1-ASGMJHZO",
@@ -3765,7 +3807,8 @@
           "pinyin": "lǎoshī de péngyǒu",
           "translation": "Teacher friend"
         }
-      ]
+      ],
+      "titleVi": "Câu hỏi với 呢"
     },
     {
       "id": "1-ASGMJHZO",
@@ -3796,7 +3839,8 @@
           "pinyin": "zhè gè hěn hǎo ， nà gè ní ？",
           "translation": "This is good, what about that?"
         }
-      ]
+      ],
+      "titleVi": "Câu hỏi với 呢"
     },
     {
       "id": "1-ASGMJHZO",
@@ -3883,7 +3927,8 @@
           "pinyin": "qián ní ？",
           "translation": "What about money?"
         }
-      ]
+      ],
+      "titleVi": "Câu hỏi với 呢"
     },
     {
       "id": "1-ASGDHC1H",
@@ -3921,7 +3966,8 @@
           "pinyin": "wǒ de shǒujī ní ？",
           "translation": "What about my cell phone?"
         }
-      ]
+      ],
+      "titleVi": "Làm dịu lời nói với 把"
     },
     {
       "id": "1-ASGDHC1H",
@@ -4045,7 +4091,8 @@
           "pinyin": "kuài diǎn ba ， yào chídào le 。",
           "translation": "Come on, be late."
         }
-      ]
+      ],
+      "titleVi": "Làm dịu lời nói với 吧"
     },
     {
       "id": "1-ASGMPZ6D",
@@ -4096,7 +4143,8 @@
           "pinyin": "nà gè dìfāng tài yuǎn le ba，wǒ bù xiǎng qù 。",
           "translation": "That place is too far away, I don't want to go."
         }
-      ]
+      ],
+      "titleVi": "Gợi ý với 吧"
     },
     {
       "id": "1-ASGMPZ6D",
@@ -4211,7 +4259,8 @@
           "pinyin": "xīuxī yīxià ba 。",
           "translation": "Take a break."
         }
-      ]
+      ],
+      "titleVi": "Gợi ý với 吧"
     },
     {
       "id": "1-ASGRBKSL",
@@ -4249,7 +4298,8 @@
           "pinyin": "lǎobǎn ，biànyí yīdiǎn ba 。",
           "translation": "Boss, cheaper."
         }
-      ]
+      ],
+      "titleVi": "Động từ chỉ hướng 来 và 去"
     },
     {
       "id": "1-ASGRBKSL",
@@ -4368,7 +4418,8 @@
           "pinyin": "zhōumò wǒ xǐhuān qù péngyǒu jiā 。",
           "translation": "I like to go to a friend's house on the weekend."
         }
-      ]
+      ],
+      "titleVi": "Động từ chỉ hướng 来 và 去"
     },
     {
       "id": "1-ASGLRWT8",
@@ -4415,7 +4466,8 @@
           "pinyin": "wǒ jīntiān bù shàngbān，nǐmen kěyǐ lái wǒ jiā chīfàn 。",
           "translation": "I don't go to work today, you can come to my house for dinner."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự tồn tại ở một nơi với 在"
     },
     {
       "id": "1-ASGLRWT8",
@@ -4532,7 +4584,8 @@
           "pinyin": "shúi zài lóushàng ？",
           "translation": "Who is upstairs?"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự tồn tại ở một nơi với 在"
     },
     {
       "id": "1-ASG04ZCI",
@@ -4575,7 +4628,8 @@
           "pinyin": "nǐmen míngtiān zài běijīng ma ？",
           "translation": "Are you in Beijing tomorrow?"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự tồn tại với 有"
     },
     {
       "id": "1-ASG04ZCI",
@@ -4707,7 +4761,8 @@
           "pinyin": "bēizǐ lǐ yǒu shǔi ma ？",
           "translation": "Is there water in the cup?"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự tồn tại với 有"
     },
     {
       "id": "1-ASGOOCVO",
@@ -4752,7 +4807,8 @@
           "pinyin": "xiànzài bàngōngshì lǐ yǒu rén ma ？",
           "translation": "Is anyone in the office now?"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự sở hữu với 有"
     },
     {
       "id": "1-ASGOOCVO",
@@ -4876,7 +4932,8 @@
           "pinyin": "nǐ de lǎoshī yǒu iPad ma ？",
           "translation": "Does your teacher have an iPad?"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả sự sở hữu với 有"
     },
     {
       "id": "1-ASG25C48",
@@ -4916,7 +4973,8 @@
           "pinyin": "jīntiān nǐ yǒu kè ma ？",
           "translation": "Do you have class today?"
         }
-      ]
+      ],
+      "titleVi": "Yêu cầu lịch sự với 请"
     },
     {
       "id": "1-ASG25C48",
@@ -4986,7 +5044,8 @@
           "pinyin": "qǐng bùyào chídào 。",
           "translation": "Please don't be late."
         }
-      ]
+      ],
+      "titleVi": "Yêu cầu lịch sự với 请"
     },
     {
       "id": "1-ASG25C48",
@@ -5069,7 +5128,8 @@
           "pinyin": "nǐ kě bù kěyǐ …… ？",
           "translation": "Can you……?"
         }
-      ]
+      ],
+      "titleVi": "Yêu cầu lịch sự với 请"
     },
     {
       "id": "1-ASGUGWVZ",
@@ -5107,7 +5167,8 @@
           "pinyin": "máfán nǐ ……",
           "translation": "Trouble you ..."
         }
-      ]
+      ],
+      "titleVi": "Sử dụng động từ jiao"
     },
     {
       "id": "1-ASGUGWVZ",
@@ -5239,7 +5300,8 @@
           "pinyin": "nǐ bàbà jiào shíyāo ？",
           "translation": "What is your father's name?"
         }
-      ]
+      ],
+      "titleVi": "Sử dụng động từ jiao"
     },
     {
       "id": "1-ASGFYNCL",
@@ -5279,7 +5341,8 @@
           "pinyin": "nǐ jiào shíyāo míngzì ？",
           "translation": "What's your name?"
         }
-      ]
+      ],
+      "titleVi": "Sử dụng động từ 去"
     },
     {
       "id": "1-ASGFYNCL",
@@ -5395,7 +5458,8 @@
           "pinyin": "nǐ qù wǒ jiā ma ？",
           "translation": "Are you going to my house?"
         }
-      ]
+      ],
+      "titleVi": "Sử dụng động từ 去"
     },
     {
       "id": "1-ASGFYNCL",
@@ -5422,7 +5486,8 @@
           "pinyin": "nǐ xiǎng qù lv̌xíng ma ？",
           "translation": "Do you want to travel?"
         }
-      ]
+      ],
+      "titleVi": "Sử dụng động từ 去"
     },
     {
       "id": "1-ASG9PQ40",
@@ -5463,7 +5528,8 @@
           "pinyin": "jǐu diǎn wǒmen qù mǎi 。",
           "translation": "We will buy it at nine."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả khả năng hoặc khả năng với neng"
     },
     {
       "id": "1-ASG9PQ40",
@@ -5682,7 +5748,8 @@
           "pinyin": "zhèlǐ bù néng yóuyǒng 。",
           "translation": "You cannot swim here."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả khả năng hoặc khả năng với neng"
     },
     {
       "id": "1-ASGRHM0E",
@@ -5727,7 +5794,8 @@
           "pinyin": "gōngzuò de shíhòu bù néng wán shǒujī 。",
           "translation": "Can't play mobile phone while working."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả một kỹ năng đã học được bằng 会"
     },
     {
       "id": "1-ASGRHM0E",
@@ -5872,7 +5940,8 @@
           "pinyin": "nǐ bùhùi kāichē ma ？",
           "translation": "Won't you drive"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả một kỹ năng đã học được bằng 会"
     },
     {
       "id": "1-ASGRHM0E",
@@ -5990,7 +6059,8 @@
           "pinyin": "nǐ bùhùi yóuyǒng ma ？",
           "translation": "Can't you swim"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả một kỹ năng đã học được bằng 会"
     },
     {
       "id": "1-ASGW9737",
@@ -6046,7 +6116,8 @@
           "pinyin": "wǒmen bù hùi gàosù nǐ 。",
           "translation": "We will not tell you."
         }
-      ]
+      ],
+      "titleVi": "Thể hiện ý chí bằng 会"
     },
     {
       "id": "1-ASGW9737",
@@ -6165,7 +6236,8 @@
           "pinyin": "xiàbān yǐhòu ， wǒ hùi gěi nǐ dǎ diànhuà 。",
           "translation": "After work, I will call you."
         }
-      ]
+      ],
+      "titleVi": "Thể hiện ý chí bằng 会"
     },
     {
       "id": "1-ASGT97VF",
@@ -6210,7 +6282,8 @@
           "pinyin": "jīnwǎn wǒ bù hùi zài wàimiàn chīfàn 。",
           "translation": "I will not eat out tonight."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả mong muốn với 向"
     },
     {
       "id": "1-ASGT97VF",
@@ -6293,7 +6366,8 @@
           "pinyin": "tā xiǎng mǎi yī gè dà fángzǐ 。",
           "translation": "He wants to buy a big house."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả mong muốn với 想"
     },
     {
       "id": "1-ASGT97VF",
@@ -6350,7 +6424,8 @@
           "pinyin": "wǒ bù xiǎng húijiā 。",
           "translation": "I do not want to go home."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả mong muốn với 想"
     },
     {
       "id": "1-ASGH2MNO",
@@ -6395,7 +6470,8 @@
           "pinyin": "tā bù xiǎng huā fùmǔ de qián 。",
           "translation": "He didn't want to spend his parents' money."
         }
-      ]
+      ],
+      "titleVi": "Cách làm điều gì đó với 怎么"
     },
     {
       "id": "1-ASGH2MNO",
@@ -6479,7 +6555,8 @@
           "pinyin": "wǒ bù zhīdào zěnyāo gēn nv̌háizǐ shuōhuà 。",
           "translation": "I don't know how to talk to girls."
         }
-      ]
+      ],
+      "titleVi": "Cách làm điều gì đó với 怎么"
     },
     {
       "id": "1-ASGH2MNO",
@@ -6528,7 +6605,8 @@
           "pinyin": "yǔfǎ zěnyāo xué ？",
           "translation": "How to learn grammar?"
         }
-      ]
+      ],
+      "titleVi": "Cách làm điều gì đó với 怎么"
     },
     {
       "id": "1-ASGX0Z0N",
@@ -6566,7 +6644,8 @@
           "pinyin": "Apple zěnyāo shuō ？",
           "translation": "What does Apple say?"
         }
-      ]
+      ],
+      "titleVi": "Chỉ vị trí bằng 在 trước động từ"
     },
     {
       "id": "1-ASGX0Z0N",
@@ -6702,7 +6781,8 @@
           "pinyin": "xiànzài wǒmen zài KTV chànggē 。",
           "translation": "Now we are singing on KTV."
         }
-      ]
+      ],
+      "titleVi": "Chỉ vị trí bằng 在 trước động từ"
     },
     {
       "id": "1-ASGAUCXK",
@@ -6747,7 +6827,8 @@
           "pinyin": "nǐ zài wàimiàn chī guò wǎnfàn le ma ？",
           "translation": "Have you eaten dinner outside?"
         }
-      ]
+      ],
+      "titleVi": "Phủ định hành động trong quá khứ với 没有"
     },
     {
       "id": "1-ASGAUCXK",
@@ -6880,7 +6961,8 @@
           "pinyin": "lǎoshī jīntiān méi shēngqì 。",
           "translation": "The teacher was not angry today."
         }
-      ]
+      ],
+      "titleVi": "Phủ định hành động trong quá khứ với 没有"
     },
     {
       "id": "1-ASGUN7RX",
@@ -6921,7 +7003,8 @@
           "pinyin": "wǒ méiyǒu zuò 。",
           "translation": "I didn't do it."
         }
-      ]
+      ],
+      "titleVi": "Nối danh từ với 是"
     },
     {
       "id": "1-ASGUN7RX",
@@ -7117,7 +7200,8 @@
           "pinyin": "nǐmen shì bù shì zhōng guó rén ？",
           "translation": "Are you Chinese?"
         }
-      ]
+      ],
+      "titleVi": "Nối danh từ với 是"
     },
     {
       "id": "1-ASG8HVFN",
@@ -7159,7 +7243,8 @@
           "pinyin": "nǐ yǒu liǎng gè háizǐ，shì ma ？",
           "translation": "You have two children, are you?"
         }
-      ]
+      ],
+      "titleVi": "Diễn đạt quá mức với 太"
     },
     {
       "id": "1-ASG8HVFN",
@@ -7280,7 +7365,8 @@
           "pinyin": "zhè gè nv̌hái tài piāoliàng le 。",
           "translation": "This girl is so beautiful."
         }
-      ]
+      ],
+      "titleVi": "Diễn đạt quá mức với 太"
     },
     {
       "id": "1-ASG17BLH",
@@ -7322,7 +7408,8 @@
           "pinyin": "nǐ de háizǐ tài cōngmíng le 。",
           "translation": "Your child is too smart."
         }
-      ]
+      ],
+      "titleVi": "Danh từ + câu tính từ đơn giản"
     },
     {
       "id": "1-ASG17BLH",
@@ -7468,7 +7555,8 @@
           "pinyin": "tā hé tā dìdì dū hěn shuài 。",
           "translation": "He and his brother are very handsome."
         }
-      ]
+      ],
+      "titleVi": "Danh từ + câu tính từ đơn giản"
     },
     {
       "id": "1-ASGWVZ0T",
@@ -7505,7 +7593,8 @@
           "pinyin": "tā fēicháng gāo 。",
           "translation": "He is very tall."
         }
-      ]
+      ],
+      "titleVi": "Diễn tả một số bằng 一些"
     },
     {
       "id": "1-ASGWVZ0T",
@@ -7641,7 +7730,8 @@
           "pinyin": "nǐ kěyǐ jiè wǒ yīxiē qián ma ？",
           "translation": "Can you lend me some money?"
         }
-      ]
+      ],
+      "titleVi": "Diễn tả một số bằng 一些"
     },
     {
       "id": "1-ASGL6JOE",
@@ -7692,7 +7782,8 @@
           "pinyin": "wǒ zài zhōngguó de shíhòu，qù guò yīxiē hěn piāoliàng de dìfāng 。",
           "translation": "When I was in China, I visited some beautiful places."
         }
-      ]
+      ],
+      "titleVi": "Đếm tiền"
     },
     {
       "id": "1-ASGL6JOE",
@@ -7771,7 +7862,8 @@
           "pinyin": "zhè jiàn yīfú duōshǎo qián ？",
           "translation": "how much is this shirt?"
         }
-      ]
+      ],
+      "titleVi": "Đếm tiền"
     },
     {
       "id": "1-ASGL6JOE",
@@ -7820,7 +7912,8 @@
           "pinyin": "shí kuài liǎng máo",
           "translation": "Ten pieces of two hairs"
         }
-      ]
+      ],
+      "titleVi": "Đếm tiền"
     },
     {
       "id": "1-ASGL9KQM",
@@ -7857,7 +7950,8 @@
           "pinyin": "wǔshí kuài wǔ máo",
           "translation": "Fifty dollars"
         }
-      ]
+      ],
+      "titleVi": "Đo lường từ trong câu hỏi số lượng"
     },
     {
       "id": "1-ASGL9KQM",
@@ -7946,7 +8040,8 @@
           "pinyin": "lǎobǎn měi tiān gōngzuò jī gè xiǎoshí ？",
           "translation": "How many hours does the boss work every day?"
         }
-      ]
+      ],
+      "titleVi": "Đo lường từ trong câu hỏi số lượng"
     },
     {
       "id": "1-ASGL9KQM",
@@ -8007,7 +8102,8 @@
           "pinyin": "nǐ dàxué de shíhòu kàn le duōshǎo běn shū ？",
           "translation": "How many books did you read when you were in college?"
         }
-      ]
+      ],
+      "titleVi": "Đo lường từ trong câu hỏi số lượng"
     },
     {
       "id": "1-ASGC701A",
@@ -8052,7 +8148,8 @@
           "pinyin": "shànghǎi yǒu duōshǎo gè wàiguó gōngsī ？",
           "translation": "How many foreign companies are there in Shanghai?"
         }
-      ]
+      ],
+      "titleVi": "Hỏi mọi chuyện thế nào với 怎么样"
     },
     {
       "id": "1-ASGC701A",
@@ -8153,7 +8250,8 @@
           "pinyin": "zhèlǐ de cài zěnyāoyáng ？",
           "translation": "How is the food here?"
         }
-      ]
+      ],
+      "titleVi": "Hỏi mọi chuyện thế nào với 怎么样"
     },
     {
       "id": "1-ASGC701A",
@@ -8180,7 +8278,8 @@
           "pinyin": "nǐ juédé shànghǎi zěnyāoyáng ？",
           "translation": "What do you think of Shanghai?"
         }
-      ]
+      ],
+      "titleVi": "Hỏi mọi chuyện thế nào với 怎么样"
     },
     {
       "id": "1-ASGJQPSC",
@@ -8220,7 +8319,8 @@
           "pinyin": "nǐ juédé zhōngwén zěnyāoyáng ？",
           "translation": "What do you think of Chinese?"
         }
-      ]
+      ],
+      "titleVi": "Vị trí của từ để hỏi"
     },
     {
       "id": "1-ASGJQPSC",
@@ -8287,7 +8387,8 @@
           "pinyin": "tā kāi shíyāo chē ？",
           "translation": "What car does he drive?"
         }
-      ]
+      ],
+      "titleVi": "Vị trí của từ để hỏi"
     },
     {
       "id": "1-ASGJQPSC",
@@ -8375,7 +8476,8 @@
           "pinyin": "nǐhǎo，nǐ yào qù nǎér ？",
           "translation": "Hello, where are you going?"
         }
-      ]
+      ],
+      "titleVi": "Vị trí của từ để hỏi"
     },
     {
       "id": "1-ASGJQPSC",
@@ -8513,7 +8615,8 @@
           "pinyin": "nǐ zhù zài nǎ gè qū ？",
           "translation": "Which district do you live in?"
         }
-      ]
+      ],
+      "titleVi": "Vị trí của từ để hỏi"
     },
     {
       "id": "1-ASGJQPSC",
@@ -8589,7 +8692,8 @@
           "pinyin": "nǐ bù xǐhuān shúi ？",
           "translation": "Who do you dislike?"
         }
-      ]
+      ],
+      "titleVi": "Vị trí của từ để hỏi"
     },
     {
       "id": "1-ASGJQPSC",
@@ -8994,7 +9098,8 @@
           "pinyin": "wǒ shàngwǎng mǎi piào 。",
           "translation": "I buy tickets online."
         }
-      ]
+      ],
+      "titleVi": "Vị trí của từ để hỏi"
     },
     {
       "id": "1-ASGJQPSC",
@@ -9077,7 +9182,8 @@
           "pinyin": "zhèxiē wàiguórén wèishíyāo bù xǐhuān zhōngguó ？",
           "translation": "Why don't these foreigners like China?"
         }
-      ]
+      ],
+      "titleVi": "Vị trí của từ để hỏi"
     },
     {
       "id": "1-ASGJQPSC",
@@ -9129,7 +9235,8 @@
           "pinyin": "nǐ zěnyāo qù běijīng ？",
           "translation": "How do you go to Beijing?"
         }
-      ]
+      ],
+      "titleVi": "Vị trí của từ để hỏi"
     },
     {
       "id": "1-ASGYKDNF",
@@ -9167,7 +9274,8 @@
           "pinyin": "nǐ zěnyāo mǎi piào ？",
           "translation": "How do you buy tickets?"
         }
-      ]
+      ],
+      "titleVi": "Câu hỏi với 了 吗"
     },
     {
       "id": "1-ASGYKDNF",
@@ -9238,7 +9346,8 @@
           "pinyin": "māmā ，nǐ zuótiān gěi wǒ dǎdiànhuà le ma ？",
           "translation": "Mom, did you call me yesterday?"
         }
-      ]
+      ],
+      "titleVi": "Câu hỏi với 了 吗"
     },
     {
       "id": "1-ASGYKDNF",
@@ -9295,7 +9404,8 @@
           "pinyin": "zuòyè nǐ xiě wán le ma ？",
           "translation": "Have you finished your homework?"
         }
-      ]
+      ],
+      "titleVi": "Câu hỏi với 了 吗"
     },
     {
       "id": "1-ASGQ2AZA",
@@ -9341,7 +9451,8 @@
           "pinyin": "wǒ de yóujiàn nǐ shōudào le ma ？",
           "translation": "Have you received my mail?"
         }
-      ]
+      ],
+      "titleVi": "Câu hỏi có-không với 吗"
     },
     {
       "id": "1-ASGQ2AZA",
@@ -9547,7 +9658,8 @@
           "pinyin": "nǐ míngtiān bù lái ma ？",
           "translation": "Won't you come tomorrow?"
         }
-      ]
+      ],
+      "titleVi": "Câu hỏi có-không với 吗"
     },
     {
       "id": "1-ASGE662E",
@@ -9588,7 +9700,8 @@
           "pinyin": "nǐ bù xǐhuān zhōngguócài ma ？",
           "translation": "Don't you like Chinese food?"
         }
-      ]
+      ],
+      "titleVi": "Cấu trúc 是... 的 để nhấn mạnh chi tiết"
     },
     {
       "id": "1-ASGE662E",
@@ -9925,7 +10038,8 @@
           "pinyin": "wǒmen shì yòng Skype kāi de hùi 。",
           "translation": "We used Skype for meetings."
         }
-      ]
+      ],
+      "titleVi": "Cấu trúc 是... 的 để nhấn mạnh chi tiết"
     },
     {
       "id": "1-ASGRJ1BI",
@@ -9974,7 +10088,8 @@
           "pinyin": "wǒmen píngshí shì yòng Skype kāi hùi de 。",
           "translation": "We usually use Skype for meetings."
         }
-      ]
+      ],
+      "titleVi": "So sánh 不 và 没"
     },
     {
       "id": "1-ASGRJ1BI",
@@ -10063,7 +10178,8 @@
           "pinyin": "nǐ nv̌péngyǒu bù gēn nǐ yīqǐ qù ma ？",
           "translation": "Isn't your girlfriend going with you?"
         }
-      ]
+      ],
+      "titleVi": "So sánh 不 và 没"
     },
     {
       "id": "1-ASGRJ1BI",
@@ -10147,7 +10263,8 @@
           "pinyin": "nǐ wǎnshàng bù xǐzǎo ma ？",
           "translation": "Don't you take a shower at night?"
         }
-      ]
+      ],
+      "titleVi": "So sánh 不 và 没"
     },
     {
       "id": "1-ASGRJ1BI",
@@ -10227,7 +10344,8 @@
           "pinyin": "wǒ juédé Starbucks de kāfēi bù hǎohē 。",
           "translation": "I think Starbucks coffee is not good."
         }
-      ]
+      ],
+      "titleVi": "So sánh 不 và 没"
     },
     {
       "id": "1-ASGRJ1BI",
@@ -10333,7 +10451,8 @@
           "pinyin": "nǐmen shì hǎo péngyǒu ，dùi bù dùi ？",
           "translation": "You are good friends, right?"
         }
-      ]
+      ],
+      "titleVi": "So sánh 不 và 没"
     },
     {
       "id": "1-ASGRJ1BI",
@@ -10376,7 +10495,8 @@
           "pinyin": "māmā méiyǒu zuò wǎnfàn 。",
           "translation": "Mom didn't make dinner."
         }
-      ]
+      ],
+      "titleVi": "So sánh 不 và 没"
     },
     {
       "id": "1-ASGRJ1BI",
@@ -10418,7 +10538,8 @@
           "pinyin": "wǒ zuótiān méi hējǐu 。",
           "translation": "I didn't drink alcohol yesterday."
         }
-      ]
+      ],
+      "titleVi": "So sánh 不 và 没"
     }
   ]
 }

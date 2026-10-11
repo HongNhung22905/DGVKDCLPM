@@ -20,6 +20,7 @@ export interface GrammarExample {
 export interface GrammarPoint {
   id: string;
   title: string;
+  titleVi?: string;
   structures: string[];
   usedFor: string[];
   url: string;

@@ -112,7 +112,7 @@ export default function GrammarDetailClient({
           </div>
 
           <h1 className="text-base font-bold leading-snug mb-3 pr-4" style={{ color: P.text }}>
-            {point.title}
+            {point.titleVi ?? point.title}
           </h1>
 
           {/* Tab bar */}

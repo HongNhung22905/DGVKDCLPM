@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props) {
   const levelNum = parseInt(level);
   const data = await fetchGrammarLevel(levelNum).catch(() => null);
   const point = data?.points.find((p) => p.id === pointId);
-  return { title: `${point?.title ?? "Ngữ pháp"} | HSK 3.0` };
+  return { title: `${point?.titleVi ?? point?.title ?? "Ngữ pháp"} | HSK 3.0` };
 }
 
 export default async function GrammarPointPage({ params, searchParams }: Props) {
