@@ -13,8 +13,8 @@
         "你 + 倒是 + Verb + 呀 / 啊"
       ],
       "usedFor": [
-        "Contrasting",
-        "Expressing attitude"
+        "Sự tương phản",
+        "Bày tỏ thái độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGXXP6M",
       "examples": [
@@ -31,7 +31,7 @@
           ],
           "chinese": "说得倒容易，那你来！",
           "pinyin": "shuō dé dǎo róngyì，nà nǐ lái ！",
-          "translation": "It's easy to say, then you come!"
+          "translation": "Nói thì dễ, vậy bạn làm thử xem!"
         },
         {
           "id": "ex-2",
@@ -51,7 +51,7 @@
           ],
           "chinese": "你想得倒美！不工作还想拿工资？",
           "pinyin": "nǐ xiǎng dé dǎo měi ！bù gōngzuò huán xiǎng ná gōngzī ？",
-          "translation": "You want to be beautiful! Want to get paid if you don't work?"
+          "translation": "Bạn mơ đẹp quá nhỉ! Không làm mà đòi có lương à?"
         },
         {
           "id": "ex-3",
@@ -67,7 +67,7 @@
           ],
           "chinese": "你想得倒简单！怎么可能？",
           "pinyin": "nǐ xiǎng dé dǎo jiǎndān ！zěnyāo kěnéng ？",
-          "translation": "What you think is simple! How can it be?"
+          "translation": "Bạn nghĩ mọi chuyện đơn giản quá! Làm sao có thể như vậy được?"
         },
         {
           "id": "ex-1",
@@ -84,7 +84,7 @@
           ],
           "chinese": "这个小女孩倒挺勇敢的。",
           "pinyin": "zhè gè xiǎo nv̌hái dǎo tǐng yǒnggǎn de 。",
-          "translation": "This little girl is quite brave."
+          "translation": "Cô bé này khá dũng cảm đấy."
         },
         {
           "id": "ex-2",
@@ -99,7 +99,7 @@
           ],
           "chinese": "你倒蛮会说话的。",
           "pinyin": "nǐ dǎo mán hùi shuōhuà de 。",
-          "translation": "You can talk."
+          "translation": "Bạn khéo ăn nói thật đấy."
         },
         {
           "id": "ex-3",
@@ -118,7 +118,7 @@
           ],
           "chinese": "你们都说这个菜太辣了，我倒不觉得。",
           "pinyin": "nǐmen dū shuō zhègè cài tàilàle ，wǒ dǎo bù juédé 。",
-          "translation": "You all say that this dish is too spicy, I don't think so."
+          "translation": "Mọi người đều nói món này quá cay, tôi thì không nghĩ vậy."
         },
         {
           "id": "ex-4",
@@ -142,7 +142,7 @@
           ],
           "chinese": "别人都说他跟她结婚是为了钱，我倒不这么看。",
           "pinyin": "biérén dū shuō tā gēn tā jiéhūn shì wèile qián ，wǒ dǎo bù zhèyāo kàn 。",
-          "translation": "Everyone said that he married her for money, but I don't think so."
+          "translation": "Ai cũng bảo anh ấy cưới cô ấy vì tiền, nhưng tôi không nghĩ vậy."
         },
         {
           "id": "ex-5",
@@ -165,7 +165,7 @@
           ],
           "chinese": "很多人认为钱是最重要的，我倒不这么想。",
           "pinyin": "hěn duō rén rènwèi qián shì zùi zhòngyào de ，wǒ dǎo bù zhèyāo xiǎng 。",
-          "translation": "Many people think that money is the most important thing, but I do n’t think so."
+          "translation": "Nhiều người cho rằng tiền là quan trọng nhất, nhưng tôi không nghĩ vậy."
         },
         {
           "id": "ex-1",
@@ -178,7 +178,7 @@
           ],
           "chinese": "你倒是说话呀！",
           "pinyin": "nǐ dǎoshì shuōhuà yā ！",
-          "translation": "You talk!"
+          "translation": "Bạn nói thử xem!"
         },
         {
           "id": "ex-2",
@@ -191,7 +191,7 @@
           ],
           "chinese": "你倒是说呀！",
           "pinyin": "nǐ dǎoshì shuō yā ！",
-          "translation": "You said it!"
+          "translation": "Bạn nói đúng rồi đấy!"
         },
         {
           "id": "ex-3",
@@ -204,7 +204,7 @@
           ],
           "chinese": "你倒是走啊！",
           "pinyin": "nǐ dǎoshì zǒu a ！",
-          "translation": "You are leaving!"
+          "translation": "Bạn đang rời đi đấy à!"
         },
         {
           "id": "ex-4",
@@ -217,7 +217,7 @@
           ],
           "chinese": "你们倒是签啊！",
           "pinyin": "nǐmen dǎoshì qiān a ！",
-          "translation": "You guys signed it!"
+          "translation": "Các bạn đã ký nó rồi đấy!"
         }
       ],
       "titleVi": "Cách dùng nâng cao của 倒"
@@ -230,8 +230,8 @@
         "Subj. + 很是 + 会 / 能 + Verb"
       ],
       "usedFor": [
-        "Expressing degree",
-        "Emphasizing"
+        "Biểu thị mức độ",
+        "Nhấn mạnh"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGA1B87",
       "examples": [
@@ -245,7 +245,7 @@
           ],
           "chinese": "这样做很是必要。",
           "pinyin": "zhèyángzuò hěnshì bìyào 。",
-          "translation": "This is necessary."
+          "translation": "Việc này là cần thiết."
         },
         {
           "id": "ex-2",
@@ -262,7 +262,7 @@
           ],
           "chinese": "你的工作表现让领导很是满意。",
           "pinyin": "nǐ de gōngzuò biǎoxiàn ràng lǐngdǎo hěnshì mǎnyì 。",
-          "translation": "Your performance is very satisfying to the leader."
+          "translation": "Sự thể hiện của bạn rất làm lãnh đạo hài lòng."
         },
         {
           "id": "ex-3",
@@ -277,7 +277,7 @@
           ],
           "chinese": "你穿西装看起来很是精神。",
           "pinyin": "nǐ chuān xīzhuāng kànqǐlái hěnshì jīngshén 。",
-          "translation": "You look very spirited in a suit."
+          "translation": "Bạn mặc vest trông rất có khí chất."
         },
         {
           "id": "ex-4",
@@ -294,7 +294,7 @@
           ],
           "chinese": "这件事让我很是不舒服。",
           "pinyin": "zhè jiàn shì ràng wǒ hěnshì bù shūfú 。",
-          "translation": "This thing makes me very uncomfortable."
+          "translation": "Chuyện này làm tôi rất khó chịu."
         },
         {
           "id": "ex-5",
@@ -311,7 +311,7 @@
           ],
           "chinese": "我老板很是喜欢你的设计风格。",
           "pinyin": "wǒ lǎobǎn hěnshì xǐhuān nǐ de shèjì fēnggé 。",
-          "translation": "My boss likes your design style very much."
+          "translation": "Sếp của tôi rất thích phong cách thiết kế của bạn."
         },
         {
           "id": "ex-6",
@@ -329,7 +329,7 @@
           ],
           "chinese": "他都退休了，还在创业，让人很是佩服。",
           "pinyin": "tā dū tùixīu le ，huánzài chuàngyè ，ràngrén hěnshì pèifú 。",
-          "translation": "He has retired and is still starting a business, which is admirable."
+          "translation": "Ông ấy đã nghỉ hưu mà vẫn khởi nghiệp, thật đáng ngưỡng mộ."
         },
         {
           "id": "ex-7",
@@ -348,7 +348,7 @@
           ],
           "chinese": "你们的表演太夸张了，让人很是受不了。",
           "pinyin": "nǐmen de biǎoyǎn tài kuāzhāng le ，ràng rén hěnshì shòubùle 。",
-          "translation": "Your performance is too exaggerated to make people unbearable."
+          "translation": "Sự thể hiện của bạn quá lố lăng khiến người ta không thể chịu nổi."
         },
         {
           "id": "ex-1",
@@ -366,7 +366,7 @@
           ],
           "chinese": "我爸爸当过大厨，他很是会吃。",
           "pinyin": "wǒ bàbà dāng guò dàchú ，tā hěnshì hùi chī 。",
-          "translation": "My dad used to be a chef, he is very good at eating."
+          "translation": "Bố tôi từng là đầu bếp, ông ấy rất sành ăn."
         },
         {
           "id": "ex-2",
@@ -383,7 +383,7 @@
           ],
           "chinese": "我妹妹虽然小，但很是会说话。",
           "pinyin": "wǒ mèimèi sūirán xiǎo ，dàn hěnshì hùi shuōhuà 。",
-          "translation": "Although my sister is small, she is very talkative."
+          "translation": "Mặc dù em gái tôi nhỏ người nhưng lại rất hoạt ngôn."
         },
         {
           "id": "ex-3",
@@ -397,7 +397,7 @@
           ],
           "chinese": "这个男人很是会骗女人。",
           "pinyin": "zhègè nánrén hěnshì hùi piànnv̌rén 。",
-          "translation": "This man can lie to women."
+          "translation": "Người đàn ông này có thể lừa dối phụ nữ."
         },
         {
           "id": "ex-4",
@@ -411,7 +411,7 @@
           ],
           "chinese": "大老板很是能喝。",
           "pinyin": "dà lǎobǎn hěnshì néng hē 。",
-          "translation": "The big boss is very drinkable."
+          "translation": "Đại ca rất tửu lượng cao."
         }
       ],
       "titleVi": "Nhấn mạnh với 很是"
@@ -423,7 +423,7 @@
         "足足 + Verb :: / :: Verb + 足足"
       ],
       "usedFor": [
-        "Emphasizing a number"
+        "Nhấn mạnh một con số"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJIFI9",
       "examples": [
@@ -439,7 +439,7 @@
           ],
           "chinese": "姚明身高足足有2.26米。",
           "pinyin": "yáomíng shēngāo zúzú yǒu 2.26mǐ 。",
-          "translation": "Yao Ming is 2.26 meters tall."
+          "translation": "Diêu Minh cao 2,26 mét."
         },
         {
           "id": "ex-2",
@@ -462,7 +462,7 @@
           ],
           "chinese": "昨天我的约会不太顺利，她让我等了足足两个小时。",
           "pinyin": "zuótiān wǒde yuēhùi bù tài shùnlì，tā ràng wǒ děng le zúzú liǎng gè xiǎoshí 。",
-          "translation": "Yesterday my appointment was not going well. She made me wait two full hours."
+          "translation": "Hôm qua cuộc hẹn của tôi không suôn sẻ lắm. Cô ấy bắt tôi đợi suốt hai tiếng đồng hồ."
         },
         {
           "id": "ex-3",
@@ -486,7 +486,7 @@
           ],
           "chinese": "怪不得他汉语说得那么好，他在中国住了足足十年的时间！",
           "pinyin": "guàibùdé tā hànyǔ shuō dé nàyāo hǎo，tā zài zhōngguó zhù le zúzú shí nián de shíjiān！",
-          "translation": "No wonder he speaks Chinese so well, he lived in China for a full ten years!"
+          "translation": "Hèn gì anh ấy nói tiếng Trung giỏi thế, anh ấy đã sống ở Trung Quốc trọn mười năm rồi!"
         }
       ],
       "titleVi": "Thể hiện đầy đủ với zuzu"
@@ -498,7 +498,7 @@
         "Subj. + 一再 + Verb"
       ],
       "usedFor": [
-        "Emphasizing"
+        "Nhấn mạnh"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG47D26",
       "examples": [
@@ -517,7 +517,7 @@
           ],
           "chinese": "我一再跟你说，出门在外要小心。",
           "pinyin": "wǒ yīzài gēn nǐ shuō ，chūménzàiwài yào xiǎoxīn 。",
-          "translation": "I have repeatedly told you to be careful when going out."
+          "translation": "Tôi đã nhắc đi nhắc lại với bạn là phải cẩn thận khi ra ngoài."
         },
         {
           "id": "ex-2",
@@ -531,7 +531,7 @@
           ],
           "chinese": "他总是犹犹豫豫，一再错失良机。",
           "pinyin": "tā zǒngshì yóuyóuyùyù ，yīzài cuòshīliángjī 。",
-          "translation": "He always hesitated and missed opportunities again and again."
+          "translation": "Anh ta cứ do dự mãi nên đã bỏ lỡ cơ hội hết lần này đến lần khác."
         },
         {
           "id": "ex-3",
@@ -542,7 +542,7 @@
           ],
           "chinese": "一再强调。",
           "pinyin": "yīzài qiángdiào 。",
-          "translation": "Repeatedly emphasized."
+          "translation": "Nhấn mạnh nhiều lần."
         },
         {
           "id": "ex-4",
@@ -553,7 +553,7 @@
           ],
           "chinese": "一再请求。",
           "pinyin": "yīzài qǐngqíu 。",
-          "translation": "Repeated requests."
+          "translation": "Yêu cầu nhiều lần."
         },
         {
           "id": "ex-5",
@@ -564,7 +564,7 @@
           ],
           "chinese": "一再狡辩。",
           "pinyin": "yīzài jiǎobiàn 。",
-          "translation": "Repeated sophistry."
+          "translation": "Ngụy biện nhiều lần."
         },
         {
           "id": "ex-6",
@@ -581,7 +581,7 @@
           ],
           "chinese": "他一再地解释自己不是故意的。",
           "pinyin": "tā yīzài dì jiěshì zìjǐ bùshì gùyì de 。",
-          "translation": "He repeatedly explained that he was not intentional."
+          "translation": "Anh ấy đã giải thích nhiều lần rằng mình không cố ý."
         },
         {
           "id": "ex-7",
@@ -595,7 +595,7 @@
           ],
           "chinese": "一再地嘱咐你，。",
           "pinyin": "yīzài dì zhǔfù nǐ ， 。",
-          "translation": "I repeatedly told you."
+          "translation": "Tôi đã nói với bạn nhiều lần rồi."
         },
         {
           "id": "ex-8",
@@ -606,7 +606,7 @@
           ],
           "chinese": "一再地提醒。",
           "pinyin": "yīzài dìtíxǐng 。",
-          "translation": "Remind repeatedly."
+          "translation": "Nhắc nhở nhiều lần."
         }
       ],
       "titleVi": "Thể hiện hết lần này đến lần khác với yizai"
@@ -618,8 +618,8 @@
         "Subject + 向来（都） + Verb/Verb Phrase"
       ],
       "usedFor": [
-        "Referring to the past",
-        "Expressing frequency"
+        "Đề cập đến quá khứ",
+        "Diễn tả tần suất"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDU0XL",
       "examples": [
@@ -641,7 +641,7 @@
           ],
           "chinese": "我父母向来不喜欢我跟你们一起出去玩儿。",
           "pinyin": "wǒ fùmǔ xiànglái bù xǐhuān wǒ gēn nǐmen yīqǐ chūqù wánér 。",
-          "translation": "My parents have never liked me hanging out with you."
+          "translation": "Bố mẹ tôi chưa bao giờ thích tôi đi chơi với bạn."
         },
         {
           "id": "ex-2",
@@ -661,7 +661,7 @@
           ],
           "chinese": "我向来努力，所以我每一次考试都得满分。",
           "pinyin": "wǒ xiànglái nǔlì，suǒyǐ wǒ měi yī cì kǎoshì dū dé mǎnfēn 。",
-          "translation": "I always work hard, so I get full marks for every exam."
+          "translation": "Tôi luôn chăm chỉ học tập, nên kỳ thi nào tôi cũng đạt điểm tối đa."
         },
         {
           "id": "ex-3",
@@ -684,7 +684,7 @@
           ],
           "chinese": "那个足球队员一向被称为“金脚”，因为他踢足球踢得非常好。",
           "pinyin": "nàgè zúqíu dùiyuán yīxiàng bèi chēngwèi “jīnjiǎo”，yīnwèi tā tī zúqíu tī dé fēicháng hǎo 。",
-          "translation": "The football player has always been called the golden foot because he played football very well."
+          "translation": "Cầu thủ bóng đá đó luôn được gọi là đôi chân vàng vì anh ấy đá bóng rất giỏi."
         }
       ],
       "titleVi": "Thể hiện luôn luôn trước đó với xianglai"
@@ -697,7 +697,7 @@
         "Clause 1 ，果然 ，Clause 2"
       ],
       "usedFor": [
-        "Expressing attitude"
+        "Bày tỏ thái độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGC11D0",
       "examples": [
@@ -715,7 +715,7 @@
           ],
           "chinese": "第一名果然是她！我就知道。",
           "pinyin": "dìyīmíng guǒrán shì tā ！wǒ jìu zhīdào 。",
-          "translation": "The first place is indeed her! I knew it."
+          "translation": "Quả nhiên người đứng nhất là cô ấy! Tôi biết ngay mà."
         },
         {
           "id": "ex-2",
@@ -731,7 +731,7 @@
           ],
           "chinese": "大厨做的菜果然不一样！好吃！",
           "pinyin": "dàchú zuò de cài guǒrán bùyīyáng ！hǎochī ！",
-          "translation": "The chef's dishes are different! good to eat!"
+          "translation": "Đầu bếp làm món ăn khác hẳn! Ăn rất ngon!"
         },
         {
           "id": "ex-3",
@@ -749,7 +749,7 @@
           ],
           "chinese": "你说得没错！他果然是个骗子！",
           "pinyin": "nǐ shuō dé méicuò ！tā guǒrán shì gè piànzǐ ！",
-          "translation": "You are right! He really is a liar!"
+          "translation": "Bạn nói đúng rồi! Anh ta quả thực là kẻ nói dối!"
         },
         {
           "id": "ex-4",
@@ -765,7 +765,7 @@
           ],
           "chinese": "这个止疼药果然有效，我的头疼好多了。",
           "pinyin": "zhègè zhǐténgyào guǒrán yǒuxiào ，wǒde tóuténg hǎoduōle 。",
-          "translation": "This painkiller really works, and my headache is much better."
+          "translation": "Thuốc giảm đau này thực sự có tác dụng, cơn đau đầu của tôi đã đỡ hơn nhiều rồi."
         },
         {
           "id": "ex-1",
@@ -786,7 +786,7 @@
           ],
           "chinese": "司机师傅说马上到，果然，两分钟以后车就来了。",
           "pinyin": "sījī shīfù shuō mǎshàng dào ，guǒrán ，liǎngfēnzhōng yǐhòu chē jìu lái le 。",
-          "translation": "The driver master said to be here soon, and sure enough, the car would come in two minutes."
+          "translation": "Bác tài xế bảo sắp đến nơi, quả nhiên hai phút sau xe đã tới."
         },
         {
           "id": "ex-2",
@@ -808,7 +808,7 @@
           ],
           "chinese": "他让我别担心，果然，他很快修好了我们的网络。",
           "pinyin": "tā ràng wǒ bié dànxīn ，guǒrán ，tā hěnkuài xīuhǎo le wǒmen de wǎngluò 。",
-          "translation": "He let me not worry, as expected, he quickly repaired our network."
+          "translation": "Anh ấy bảo tôi đừng lo lắng, quả nhiên anh ấy đã nhanh chóng sửa xong mạng cho chúng tôi."
         },
         {
           "id": "ex-3",
@@ -826,7 +826,7 @@
           ],
           "chinese": "天气预报说今早要下大雨，果然如此！",
           "pinyin": "tiānqì yùbào shuō jīnzǎo yào xià dàyǔ ，guǒrán rúcǐ ！",
-          "translation": "The weather forecast says it will rain heavily this morning, as it is!"
+          "translation": "Dự báo thời tiết nói sáng nay trời sẽ mưa to, quả nhiên là vậy!"
         },
         {
           "id": "ex-4",
@@ -840,7 +840,7 @@
           ],
           "chinese": "果然不出所料，内奸就是他！",
           "pinyin": "guǒrán bùchūsuǒliào ，nèijiān jìushì tā ！",
-          "translation": "As expected, the traitor was him!"
+          "translation": "Quả nhiên kẻ phản bội chính là hắn!"
         }
       ],
       "titleVi": "Thể hiện như mong đợi với guoran"
@@ -852,7 +852,7 @@
         "Subj. + 似乎 ⋯⋯"
       ],
       "usedFor": [
-        "Expressing attitude"
+        "Bày tỏ thái độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGB316B",
       "examples": [
@@ -868,7 +868,7 @@
           ],
           "chinese": "老板今天似乎不太高兴。",
           "pinyin": "lǎobǎn jīntiān sìhū bùtài gāoxīng 。",
-          "translation": "The boss seems not too happy today."
+          "translation": "Hôm nay sếp có vẻ không vui lắm."
         },
         {
           "id": "ex-2",
@@ -883,7 +883,7 @@
           ],
           "chinese": "你说得似乎很有道理。",
           "pinyin": "nǐ shuō dé sìhū hěn yǒudàolǐ 。",
-          "translation": "What you said makes sense."
+          "translation": "Những gì bạn nói đều có lý."
         },
         {
           "id": "ex-3",
@@ -901,7 +901,7 @@
           ],
           "chinese": "他似乎明白这句话的意思，却又说不清楚。",
           "pinyin": "tā sìhū míngbái zhèjùhuà de yìsī ，què yòu shuōbùqīngchǔ 。",
-          "translation": "He seemed to understand the meaning of this sentence, but he couldn't say it clearly."
+          "translation": "Anh ấy có vẻ hiểu ý nghĩa của câu này, nhưng lại không thể nói rõ ràng ra được."
         },
         {
           "id": "ex-4",
@@ -915,7 +915,7 @@
           ],
           "chinese": "她似乎隐瞒了什么。",
           "pinyin": "tā sìhū yǐnmán le shíyāo 。",
-          "translation": "She seems to be hiding something."
+          "translation": "Cô ấy có vẻ như đang che giấu điều gì đó."
         },
         {
           "id": "ex-5",
@@ -929,7 +929,7 @@
           ],
           "chinese": "似乎没有人关心那个小男孩。",
           "pinyin": "sìhū méiyǒurén guānxīn nàgè xiǎonánhái 。",
-          "translation": "No one seemed to care about the little boy."
+          "translation": "Dường như không ai quan tâm đến cậu bé đó cả."
         },
         {
           "id": "ex-6",
@@ -949,7 +949,7 @@
           ],
           "chinese": "她似乎才三十出头，但其实已经快五十了。",
           "pinyin": "tā sìhū cái sānshí chūtóu ，dàn qíshí yǐjīng kuài wǔshí le 。",
-          "translation": "She seems to be in her early thirties, but it is almost fifty."
+          "translation": "Cô ấy trông có vẻ mới ngoài ba mươi, nhưng thực ra đã gần năm mươi rồi."
         },
         {
           "id": "ex-7",
@@ -967,7 +967,7 @@
           ],
           "chinese": "我男朋友似乎冷冷的，其实他很热情。",
           "pinyin": "wǒ nánpéngyǒu sìhū lěnglěng de ，qíshí tā hěn rèqíng 。",
-          "translation": "My boyfriend seems cold, but he is actually very enthusiastic."
+          "translation": "Bạn trai tôi trông có vẻ lạnh lùng, nhưng thực ra anh ấy rất nhiệt tình."
         }
       ],
       "titleVi": "Thể hiện như thể với sihu"
@@ -999,7 +999,7 @@
           ],
           "chinese": "凡是用鸡蛋做的菜，他都不喜欢。",
           "pinyin": "fánshì yòng jīdàn zuò de cài ，tā dū bù xǐhuān 。",
-          "translation": "He doesn't like dishes made with eggs."
+          "translation": "Anh ấy không thích các món ăn làm từ trứng."
         },
         {
           "id": "ex-2",
@@ -1017,7 +1017,7 @@
           ],
           "chinese": "凡是不听话的孩子都没有糖吃。",
           "pinyin": "fánshì bù tīnghuà de háizǐ dū méiyǒu táng chī 。",
-          "translation": "No disobedient child eats sugar."
+          "translation": "Đứa trẻ nào không ngoan thì không được ăn kẹo."
         },
         {
           "id": "ex-3",
@@ -1031,7 +1031,7 @@
           ],
           "chinese": "凡是会员都有折扣。",
           "pinyin": "fánshì hùiyuán dū yǒu zhékòu 。",
-          "translation": "All members have discounts."
+          "translation": "Tất cả thành viên đều được giảm giá."
         },
         {
           "id": "ex-4",
@@ -1050,7 +1050,7 @@
           ],
           "chinese": "凡是美国公民就可以投票，这是真的吗？",
           "pinyin": "fánshì měiguó gōngmín jìu kěyǐ tóupiào ，zhè shì zhēnde ma ？",
-          "translation": "Is it true that any American citizen can vote?"
+          "translation": "Có phải bất kỳ công dân Mỹ nào cũng có quyền bỏ phiếu không?"
         },
         {
           "id": "ex-5",
@@ -1069,7 +1069,7 @@
           ],
           "chinese": "凡是提前三天报名的人就可以免费入场。",
           "pinyin": "fánshì tíqián sāntiān bàomíng de rén jìu kěyǐ miǎnfèi rùcháng 。",
-          "translation": "Those who sign up three days in advance can enter for free."
+          "translation": "Những ai đăng ký trước ba ngày đều được vào cửa miễn phí."
         },
         {
           "id": "ex-6",
@@ -1086,7 +1086,7 @@
           ],
           "chinese": "凡是没有体检的人一律不能献血。",
           "pinyin": "fánshì méiyǒu tǐjiǎn de rén yīlv̀ bùnéng xiànxiě 。",
-          "translation": "Anyone who does not have a medical examination cannot donate blood."
+          "translation": "Bất cứ ai không kiểm tra sức khỏe đều không được hiến máu."
         },
         {
           "id": "ex-7",
@@ -1106,7 +1106,7 @@
           ],
           "chinese": "凡是杀了人的人一律判死刑，这是真的吗？",
           "pinyin": "fánshì shā le rén de rén yīlv̀ pànsǐxíng ，zhèshì zhēnde ma ？",
-          "translation": "Is it true that everyone who kills is sentenced to death?"
+          "translation": "Có phải tất cả những kẻ giết người đều bị kết án tử hình không?"
         },
         {
           "id": "ex-1",
@@ -1122,7 +1122,7 @@
           ],
           "chinese": "凡是听说这件事的人无不惊讶。",
           "pinyin": "fánshì tīngshuō zhèjiànshì de rén wúbù liángyà 。",
-          "translation": "Everyone who heard about it was surprised."
+          "translation": "Tất cả những ai nghe tin này đều cảm thấy ngạc nhiên."
         },
         {
           "id": "ex-2",
@@ -1144,7 +1144,7 @@
           ],
           "chinese": "凡是看过他的表演的人无不赞叹他的演技。",
           "pinyin": "fánshì kàn guò tā de biǎoyǎn de rén wúbù zàntàn tā de yǎnjì 。",
-          "translation": "Anyone who has watched his performance praises his acting skills."
+          "translation": "Bất cứ ai đã xem màn trình diễn của anh ấy đều khen ngợi kỹ năng diễn xuất của anh ấy."
         },
         {
           "id": "ex-3",
@@ -1161,7 +1161,7 @@
           ],
           "chinese": "凡质量不合格的产品均须退回。",
           "pinyin": "fán zhíliàng bùhégé de chǎnpǐn jūn xū tùihúi 。",
-          "translation": "All unqualified products must be returned."
+          "translation": "Tất cả các sản phẩm không đạt tiêu chuẩn đều phải bị trả lại."
         },
         {
           "id": "ex-4",
@@ -1180,7 +1180,7 @@
           ],
           "chinese": "凡使用兴奋剂的运动员均会受到严重惩罚。",
           "pinyin": "fán shǐyòng xīngfènjì de yùndòngyuán jūn hùi shòudào yánzhòng chéngfá 。",
-          "translation": "Athletes who use stimulants will be severely punished."
+          "translation": "Các vận động viên sử dụng chất kích thích sẽ bị trừng phạt nghiêm khắc."
         }
       ],
       "titleVi": "Thể hiện miễn là với fanshi"
@@ -1192,7 +1192,7 @@
         "A, Subject + 偏偏 + B"
       ],
       "usedFor": [
-        "Contrasting"
+        "Sự tương phản"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFZOLQ",
       "examples": [
@@ -1215,7 +1215,7 @@
           ],
           "chinese": "经过大家的讨论，问题都解决了，偏偏他还要钻牛角尖。",
           "pinyin": "jīngguò dàjiā de tǎolùn，wèntí dū jiějué le，piānpiān tā huán yào zuàn níujiǎojiān 。",
-          "translation": "After everyone's discussion, the problem has been solved, but he still has to be horny."
+          "translation": "Sau khi mọi người thảo luận, vấn đề đã được giải quyết, nhưng anh ta vẫn cứ cố chấp."
         },
         {
           "id": "ex-2",
@@ -1231,7 +1231,7 @@
           ],
           "chinese": "不叫他去，他偏偏要去。",
           "pinyin": "bù jiào tā qù，tā piānpiān yào qù 。",
-          "translation": "Don't ask him to go, he just wants to go."
+          "translation": "Đừng bảo anh ấy đi, anh ấy chỉ muốn đi thôi."
         },
         {
           "id": "ex-3",
@@ -1251,7 +1251,7 @@
           ],
           "chinese": "大家都叫他离开了，偏偏他还赖着不走。",
           "pinyin": "dàjiā dū jiào tā líkāi le，piānpiān tā huán làizháo bù zǒu 。",
-          "translation": "Everyone told him to leave, but he still refused to leave."
+          "translation": "Mọi người đều bảo anh ấy rời đi, nhưng anh ấy vẫn nhất quyết không chịu đi."
         },
         {
           "id": "ex-4",
@@ -1269,7 +1269,7 @@
           ],
           "chinese": "星期天他来找我，偏偏我不在家。",
           "pinyin": "xīngqītiān tā lái zhǎo wǒ，piānpiān wǒ bù zài jiā 。",
-          "translation": "He came to me on Sunday, but I was not at home."
+          "translation": "Anh ấy đến tìm tôi vào Chủ nhật, nhưng tôi lại không có nhà."
         },
         {
           "id": "ex-5",
@@ -1290,7 +1290,7 @@
           ],
           "chinese": "好不容易找到了他，偏偏又碰上小李拉他去办事。",
           "pinyin": "hǎobù róngyì zhǎodào le tā，piānpiān yòu pèngshàng xiǎolǐ lā tā qù bànshì 。",
-          "translation": "Finally, he was found, but Xiaoli pulled him to work again."
+          "translation": "Cuối cùng thì anh ấy cũng được tìm thấy, nhưng Tiểu Lệ lại kéo anh ấy đi làm việc tiếp."
         },
         {
           "id": "ex-6",
@@ -1313,7 +1313,7 @@
           ],
           "chinese": "这个星期天本来约好和朋友去赏樱花，偏偏下大雨，就没去。",
           "pinyin": "zhègè xīngqītiān běnlái yuē hǎo hé péngyǒu qù shǎng yīnghuā，piānpiān xià dàyǔ，jìu méi qù 。",
-          "translation": "This Sunday I had an appointment with my friends to enjoy the cherry blossoms, but it rained heavily, so I didn't go."
+          "translation": "Chủ nhật này tôi đã hẹn bạn bè đi ngắm hoa anh đào, nhưng trời mưa to quá nên tôi không đi nữa."
         },
         {
           "id": "ex-7",
@@ -1335,7 +1335,7 @@
           ],
           "chinese": "学生们都在认真听老师讲课，偏偏他一个人在那里打游戏。",
           "pinyin": "xuéshēngmen dū zài rènzhēn tīng lǎoshī jiǎngkè，piānpiān tā yīgèrén zài nàlǐ dǎ yóuxì 。",
-          "translation": "The students are listening to the teacher carefully, but he is playing games there alone."
+          "translation": "Các học sinh đang chăm chú nghe giảng, còn cậu ta thì lại ngồi chơi game một mình ở đó."
         },
         {
           "id": "ex-8",
@@ -1352,7 +1352,7 @@
           ],
           "chinese": "别的人都早到了，偏偏他一个人迟到。",
           "pinyin": "biéderén dū zǎo dào le，piānpiān tā yīgèrén chídào 。",
-          "translation": "Everyone else arrived early, but he was late alone."
+          "translation": "Mọi người đều đến sớm, chỉ có mình cậu ta là đến muộn."
         },
         {
           "id": "ex-9",
@@ -1369,7 +1369,7 @@
           ],
           "chinese": "别的人都学会了，偏偏他不会。",
           "pinyin": "biéderén dū xué hùi le，piānpiān tā bù hùi 。",
-          "translation": "Everyone else has learned it, but he won't."
+          "translation": "Người khác đều đã học được rồi, chỉ có cậu ta là không học."
         }
       ],
       "titleVi": "Thể hiện sự trái ngược với mong đợi với đàn piano"
@@ -1381,9 +1381,9 @@
         "一律 (+ 都) + Verb / Adj."
       ],
       "usedFor": [
-        "Expressing attitude",
-        "Emphasizing",
-        "Expressing quantity"
+        "Bày tỏ thái độ",
+        "Nhấn mạnh",
+        "Biểu thị số lượng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGC8A38",
       "examples": [
@@ -1402,7 +1402,7 @@
           ],
           "chinese": "明天的部门会议一律都要参加。",
           "pinyin": "míngtiān de bùmén hùiyì yīlv̀ dū yào cānjiā 。",
-          "translation": "Tomorrow ’s department meetings will all be attended."
+          "translation": "Các cuộc họp của bộ phận vào ngày mai tất cả đều phải tham dự."
         },
         {
           "id": "ex-2",
@@ -1419,7 +1419,7 @@
           ],
           "chinese": "70岁以上的老人坐公交一律都免费。",
           "pinyin": "70sùi yǐshàng de lǎorén zuògōngjiāo yīlv̀ dū miǎnfèi 。",
-          "translation": "Old people over 70 years old are free of charge."
+          "translation": "Người già trên 70 tuổi đều được miễn phí."
         },
         {
           "id": "ex-3",
@@ -1437,7 +1437,7 @@
           ],
           "chinese": "不管是谁，一律都要通过六个月试用期。",
           "pinyin": "bùguǎn shì shúi ，yīlv̀ dū yào tōngguò lìugèyuè shìyòngqī 。",
-          "translation": "No matter who it is, all have to pass the six-month trial period."
+          "translation": "Bất kể là ai, tất cả đều phải trải qua thời gian thử việc 6 tháng."
         },
         {
           "id": "ex-4",
@@ -1451,7 +1451,7 @@
           ],
           "chinese": "不需要的东西一律捐掉。",
           "pinyin": "bùxūyào de dōngxī yīlv̀ juāndiào 。",
-          "translation": "Do n’t give away anything you do n’t need."
+          "translation": "Đừng cho đi bất cứ thứ gì mà bạn không cần đến."
         },
         {
           "id": "ex-5",
@@ -1466,7 +1466,7 @@
           ],
           "chinese": "政府命令重污染企业一律停业。",
           "pinyin": "zhèngfǔ mìnglìng zhòngwūrǎn qǐyè yīlv̀ tíngyè 。",
-          "translation": "The government ordered all heavily polluting enterprises to shut down."
+          "translation": "Chính phủ đã ra lệnh cho tất cả các doanh nghiệp gây ô nhiễm nặng phải đóng cửa."
         },
         {
           "id": "ex-6",
@@ -1482,7 +1482,7 @@
           ],
           "chinese": "从明年一月起酒后驾车一律重罚。",
           "pinyin": "cóng míngnián yīyuè qǐ jǐuhòujiàchē yīlv̀ zhòngfá 。",
-          "translation": "Drunk driving will be heavily fined from January next year."
+          "translation": "Từ tháng 1 năm sau, lái xe khi say rượu sẽ bị phạt rất nặng."
         },
         {
           "id": "ex-7",
@@ -1499,7 +1499,7 @@
           ],
           "chinese": "这些刚刚过期的食物一律都半价。",
           "pinyin": "zhèxiē gānggāng guòqī de shíwù yīlv̀ dū bànjià 。",
-          "translation": "All these foods that have just expired are half price."
+          "translation": "Tất cả những thực phẩm vừa hết hạn này đều được giảm giá một nửa."
         },
         {
           "id": "ex-8",
@@ -1513,7 +1513,7 @@
           ],
           "chinese": "这里的家具一律新的。",
           "pinyin": "zhèlǐ de jiājù yīlv̀ xīnde 。",
-          "translation": "The furniture here is all new."
+          "translation": "Đồ đạc ở đây đều là đồ mới."
         }
       ],
       "titleVi": "Thể hiện không có ngoại lệ với yilu"
@@ -1542,7 +1542,7 @@
           ],
           "chinese": "我空闲时间无非是游泳、看书而已。",
           "pinyin": "wǒ kōngxián shíjiān wúfēi shì yóuyǒng、kàn shū éryǐ 。",
-          "translation": "My free time is nothing more than swimming and reading."
+          "translation": "Thời gian rảnh của tôi chẳng qua cũng chỉ là bơi lội và đọc sách mà thôi."
         },
         {
           "id": "ex-2",
@@ -1558,7 +1558,7 @@
           ],
           "chinese": "我空闲时间无非游泳、看书而已。",
           "pinyin": "wǒ kōngxián shíjiān wúfēi yóuyǒng、kàn shū éryǐ 。",
-          "translation": "My free time is nothing more than swimming and reading."
+          "translation": "Thời gian rảnh của tôi chẳng qua cũng chỉ là bơi lội và đọc sách mà thôi."
         },
         {
           "id": "ex-3",
@@ -1578,7 +1578,7 @@
           ],
           "chinese": "我无非是批评了他几句，他怎么哭了？",
           "pinyin": "wǒ wúfēi shì pīpíng le tā jī jù，tā zěnyāo kū le ？",
-          "translation": "I just criticized him a few words, why did he cry?"
+          "translation": "Tôi chỉ phê bình cậu ấy vài câu, sao cậu ấy lại khóc?"
         },
         {
           "id": "ex-4",
@@ -1597,7 +1597,7 @@
           ],
           "chinese": "我无非批评了他几句，他怎么哭了？",
           "pinyin": "wǒ wúfēi pīpíng le tā jī jù，tā zěnyāo kū le ？",
-          "translation": "I just criticized him a few words, why did he cry?"
+          "translation": "Tôi chỉ phê bình cậu ấy vài câu, sao cậu ấy lại khóc?"
         },
         {
           "id": "ex-5",
@@ -1622,7 +1622,7 @@
           ],
           "chinese": "我们无非是谈了一下孩子的教育问题罢了，没谈什么特别的事情。",
           "pinyin": "wǒmen wúfēi shì tán le yīxià háizǐ de jiàoyù wèntí bàle，méi tán shíyāo tèbié de shìqíng 。",
-          "translation": "We just talked about the children's education, nothing special."
+          "translation": "Chúng tôi chỉ nói chuyện về việc giáo dục con cái, không có gì đặc biệt cả."
         },
         {
           "id": "ex-6",
@@ -1646,7 +1646,7 @@
           ],
           "chinese": "我们无非谈了一下孩子的教育问题罢了，没谈什么特别的事情。",
           "pinyin": "wǒmen wúfēi tán le yīxià háizǐ de jiàoyù wèntí bàle，méi tán shíyāo tèbié de shìqíng 。",
-          "translation": "We just talked about the children's education, nothing special."
+          "translation": "Chúng tôi chỉ nói chuyện về việc giáo dục con cái, không có gì đặc biệt cả."
         },
         {
           "id": "ex-7",
@@ -1665,7 +1665,7 @@
           ],
           "chinese": "他这样做，无非是为了争取更多的权利。",
           "pinyin": "tā zhèyáng zuò，wúfēi shì wèile zhēngqǔ gèng duō de quánlì 。",
-          "translation": "He did nothing more than fight for more rights."
+          "translation": "Cậu ta chẳng qua cũng chỉ là đấu tranh vì quyền lợi nhiều hơn mà thôi."
         },
         {
           "id": "ex-8",
@@ -1683,7 +1683,7 @@
           ],
           "chinese": "他这样做，无非为了争取更多的权利。",
           "pinyin": "tā zhèyáng zuò，wúfēi wèile zhēngqǔ gèng duō de quánlì 。",
-          "translation": "He did nothing more than fight for more rights."
+          "translation": "Cậu ta chẳng qua cũng chỉ là đấu tranh vì quyền lợi nhiều hơn mà thôi."
         },
         {
           "id": "ex-9",
@@ -1700,7 +1700,7 @@
           ],
           "chinese": "他无非是个经理，没什么了不起的。",
           "pinyin": "tā wúfēi shì gè jīnglǐ，méi shíyāo lebùqǐ de 。",
-          "translation": "He is nothing more than a manager, nothing extraordinary."
+          "translation": "Anh ta chẳng qua chỉ là một quản lý, không có gì phi thường cả."
         },
         {
           "id": "ex-10",
@@ -1723,7 +1723,7 @@
           ],
           "chinese": "招待中国客人最好的饮料无非是一杯热茶而已。",
           "pinyin": "zhāodài zhōngguó kèrén zùi hǎo de yǐnliào wúfēi shì yī bēi rè chá éryǐ 。",
-          "translation": "The best drink to entertain Chinese guests is nothing more than a cup of hot tea."
+          "translation": "Thức uống tốt nhất để tiếp đãi khách Trung Quốc chẳng qua cũng chỉ là một tách trà nóng."
         },
         {
           "id": "ex-11",
@@ -1755,7 +1755,7 @@
           ],
           "chinese": "城市里的人来到农村，他们最想感受的无非是新鲜的空气，漂亮的风景和悠闲的生活节奏。",
           "pinyin": "chéngshì lǐ de rén lái dào nóngcūn，tāmen zùi xiǎng gǎnshòu de wúfēi shì xīnxiān de kōngqì，piāoliàng de fēngjǐng hé yōuxián de shēnghuó jiézòu 。",
-          "translation": "When people in the city come to the countryside, they want nothing more than fresh air, beautiful scenery and a leisurely pace of life."
+          "translation": "Khi người thành phố về nông thôn, họ chẳng qua cũng chỉ muốn không khí trong lành, phong cảnh đẹp và nhịp sống thong thả."
         },
         {
           "id": "ex-12",
@@ -1774,7 +1774,7 @@
           ],
           "chinese": "孩子想得到的无非是你的关心罢了。",
           "pinyin": "háizǐ xiǎng dédào de wúfēi shì nǐ de guānxīn bàle 。",
-          "translation": "What your child wants is nothing more than your concern."
+          "translation": "Thứ mà con bạn muốn chẳng qua cũng chỉ là sự quan tâm của bạn mà thôi."
         }
       ],
       "titleVi": "Không thể hiện gì khác ngoài wufei"
@@ -1786,7 +1786,7 @@
         "……，到时候 + ……"
       ],
       "usedFor": [
-        "Expressing time and date"
+        "Biểu đạt thời gian và ngày tháng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMDJTD",
       "examples": [
@@ -1805,7 +1805,7 @@
           ],
           "chinese": "现在不好好准备考试，到时候肯定考不好。",
           "pinyin": "xiànzài bù hǎohǎo zhǔnbèi kǎoshì，dàoshíhòu kěndìng kǎo bùhǎo 。",
-          "translation": "It is not good to prepare for the exam now, and it will definitely be bad by the time."
+          "translation": "Bây giờ chuẩn bị cho kỳ thi không tốt, đến lúc đó chắc chắn sẽ tệ."
         },
         {
           "id": "ex-2",
@@ -1826,7 +1826,7 @@
           ],
           "chinese": "我要学唱中文的生日快乐歌，到时候唱给你们听。",
           "pinyin": "wǒ yào xué chàng zhōngwén de shēngrìkuàilè gē，dàoshíhòu chàng gěi nǐmen tīng 。",
-          "translation": "I ’m going to learn to sing Happy Birthday in Chinese and I ’ll sing it to you."
+          "translation": "Tôi sẽ học hát bài Chúc mừng sinh nhật bằng tiếng Trung rồi hát cho bạn nghe."
         },
         {
           "id": "ex-3",
@@ -1845,7 +1845,7 @@
           ],
           "chinese": "你先自己试一试，到时候我再教你。",
           "pinyin": "nǐ xiān zìjǐ shì yī shì，dàoshíhòu wǒ zài jiào nǐ 。",
-          "translation": "You try it yourself, and I will teach you later."
+          "translation": "Bạn cứ thử tự làm đi, lát nữa tôi sẽ dạy bạn."
         },
         {
           "id": "ex-4",
@@ -1856,7 +1856,7 @@
           ],
           "chinese": "到时候见。",
           "pinyin": "dàoshíhòu jiàn 。",
-          "translation": "see you then."
+          "translation": "Đến lúc đó gặp lại nhé."
         },
         {
           "id": "ex-5",
@@ -1868,7 +1868,7 @@
           ],
           "chinese": "到时候看吧。",
           "pinyin": "dàoshíhòu kàn ba 。",
-          "translation": "Let's watch it."
+          "translation": "Chúng ta xem thử đi."
         },
         {
           "id": "ex-6",
@@ -1881,7 +1881,7 @@
           ],
           "chinese": "到时候再说吧。",
           "pinyin": "dàoshíhòu zài shuō ba 。",
-          "translation": "I'll talk about it later."
+          "translation": "Để lát nữa tôi nói chuyện đó sau."
         }
       ],
       "titleVi": "Thể hiện khi thời gian đến với 到 shihou"
@@ -1894,8 +1894,8 @@
         "何必⋯⋯ 呢 ？⋯⋯"
       ],
       "usedFor": [
-        "Expressing attitude",
-        "Emphasizing"
+        "Bày tỏ thái độ",
+        "Nhấn mạnh"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG3AD49",
       "examples": [
@@ -1914,7 +1914,7 @@
           ],
           "chinese": "他已经道歉了，你何必还生气？",
           "pinyin": "tā yǐjīng dàoqiàn le ，nǐ hébì huán shēngqì ？",
-          "translation": "He has apologized, why are you still angry?"
+          "translation": "Cậu ấy đã xin lỗi rồi, sao bạn vẫn còn giận?"
         },
         {
           "id": "ex-2",
@@ -1929,7 +1929,7 @@
           ],
           "chinese": "都是一家人，你们何必这么客气？",
           "pinyin": "dūshì yījiārén ，nǐmen hébì zhèyāo kèqì ？",
-          "translation": "They are all a family, why are you so polite?"
+          "translation": "Đều là người một nhà cả, sao bạn lại khách sáo như vậy?"
         },
         {
           "id": "ex-3",
@@ -1950,7 +1950,7 @@
           ],
           "chinese": "上海的房子那么贵，你儿子何必要在那儿买房子？",
           "pinyin": "shànghǎi de fángzǐ nàyāo gùi ，nǐérzǐ hébì yào zài nàér mǎi fángzǐ ？",
-          "translation": "The house in Shanghai is so expensive, why should your son buy a house there?"
+          "translation": "Nhà ở Thượng Hải đắt đỏ như vậy, sao con trai bạn lại phải mua nhà ở đó?"
         },
         {
           "id": "ex-4",
@@ -1969,7 +1969,7 @@
           ],
           "chinese": "我只是不小心踩了你一下，你何必骂人？",
           "pinyin": "wǒ zhǐshì bùxiǎoxīn cǎi le nǐ yīxià ，nǐ hébì màrén ？",
-          "translation": "I just stepped on you accidentally, why do you curse?"
+          "translation": "Tôi chỉ vô tình giẫm phải bạn thôi, sao bạn lại chửi bới?"
         },
         {
           "id": "ex-5",
@@ -1980,7 +1980,7 @@
           ],
           "chinese": "何必下周？",
           "pinyin": "hébì xiàzhōu ？",
-          "translation": "Why next week?"
+          "translation": "Tại sao lại là tuần sau?"
         },
         {
           "id": "ex-6",
@@ -1991,7 +1991,7 @@
           ],
           "chinese": "何必总经理？",
           "pinyin": "hébì zǒngjīnglǐ ？",
-          "translation": "Why the general manager?"
+          "translation": "Tại sao lại là tổng giám đốc?"
         },
         {
           "id": "ex-1",
@@ -2009,7 +2009,7 @@
           ],
           "chinese": "何必大家都去呢？一个人去就行了。",
           "pinyin": "hébì dàjiā dū qù ní ？yīgèrén qù jìu xíngle 。",
-          "translation": "Why should everyone go? Just go alone."
+          "translation": "Tại sao mọi người đều phải đi? Cứ đi một mình là được rồi."
         },
         {
           "id": "ex-2",
@@ -2025,7 +2025,7 @@
           ],
           "chinese": "何必亲自过来呢？打个电话就行了。",
           "pinyin": "hébì qīnzì guòlái ní ？dǎgèdiànhuà jìu xíngle 。",
-          "translation": "Why come over in person? Just make a phone call."
+          "translation": "Tại sao phải đích thân đến? Chỉ cần gọi một cuộc điện thoại là được."
         },
         {
           "id": "ex-3",
@@ -2042,7 +2042,7 @@
           ],
           "chinese": "何必麻烦别人呢？我自己能行。",
           "pinyin": "hébì máfán biérén ní ？wǒ zìjǐ néng xíng 。",
-          "translation": "Why bother others? I can do it myself."
+          "translation": "Tại sao phải làm phiền người khác? Tôi tự làm được mà."
         },
         {
           "id": "ex-4",
@@ -2058,7 +2058,7 @@
           ],
           "chinese": "你又买了礼物？何必呢？",
           "pinyin": "nǐ yòu mǎi le lǐwù ？hébì ní ？",
-          "translation": "Did you buy a gift again? Why bother?"
+          "translation": "Bạn lại mua quà à? Phiền phức thế làm gì?"
         },
         {
           "id": "ex-5",
@@ -2079,7 +2079,7 @@
           ],
           "chinese": "为了买张电影票排那么长时间的队，何必呢？",
           "pinyin": "wèile mǎi zhāng diànyǐngpiào pái nàyāo cháng shíjiān de dùi ，hébì ní ？",
-          "translation": "Why wait so long to buy a movie ticket?"
+          "translation": "Tại sao phải đợi lâu như vậy mới mua vé xem phim?"
         },
         {
           "id": "ex-6",
@@ -2095,7 +2095,7 @@
           ],
           "chinese": "为这样的人伤心，何必呢？",
           "pinyin": "wèi zhèyáng de rén shāngxīn ，hébì ní ？",
-          "translation": "Why do you feel sad for such a person?"
+          "translation": "Tại sao bạn lại cảm thấy buồn vì một người như vậy?"
         },
         {
           "id": "ex-7",
@@ -2106,7 +2106,7 @@
           ],
           "chinese": "早知如此，何必当初？",
           "pinyin": "zǎozhīrúcǐ，hébì dāngchū ？",
-          "translation": "If I had known this, why did I have to?"
+          "translation": "Nếu biết trước như thế này, tại sao tôi phải làm vậy chứ?"
         }
       ],
       "titleVi": "Thể hiện lý do tại sao với hebi"
@@ -2118,7 +2118,7 @@
         "Sentence + 来着"
       ],
       "usedFor": [
-        "Sequencing events in time"
+        "Sắp xếp thứ tự các sự kiện theo thời gian"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGPV5Z2",
       "examples": [
@@ -2136,7 +2136,7 @@
           ],
           "chinese": "昨天有人来找你来着。",
           "pinyin": "zuótiān yǒu rén lái zhǎo nǐ láizháo 。",
-          "translation": "Someone came to see you yesterday."
+          "translation": "Hôm qua có người đến tìm bạn."
         },
         {
           "id": "ex-2",
@@ -2157,7 +2157,7 @@
           ],
           "chinese": "那本书昨天还在这儿来着，今天怎么找不到了？",
           "pinyin": "nà běn shū zuótiān huán zài zhèér láizháo，jīntiān zěnyāo zhǎo bùdào le ？",
-          "translation": "That book was here yesterday, why can't I find it today?"
+          "translation": "Hôm qua cuốn sách đó còn ở đây, tại sao hôm nay tôi lại không tìm thấy?"
         },
         {
           "id": "ex-3",
@@ -2170,7 +2170,7 @@
           ],
           "chinese": "他叫什么来着？",
           "pinyin": "tā jiào shíyāo láizháo ？",
-          "translation": "What's his name?"
+          "translation": "Anh ấy tên là gì?"
         },
         {
           "id": "ex-4",
@@ -2187,7 +2187,7 @@
           ],
           "chinese": "那首歌是谁唱的来着？",
           "pinyin": "nà shǒu gē shì shúi chàng de láizháo ？",
-          "translation": "Who sang that song?"
+          "translation": "Ai đã hát bài hát đó?"
         },
         {
           "id": "ex-5",
@@ -2205,7 +2205,7 @@
           ],
           "chinese": "我们上次说周末去哪儿玩来着？",
           "pinyin": "wǒmen shàng cì shuō zhōumò qù nǎér wán láizháo ？",
-          "translation": "We said last time where to play on the weekend?"
+          "translation": "Lần trước chúng ta nói cuối tuần đi chơi ở đâu nhỉ?"
         },
         {
           "id": "ex-6",
@@ -2223,7 +2223,7 @@
           ],
           "chinese": "我说什么来着！你一吃火锅就拉肚子！",
           "pinyin": "wǒ shuō shíyāo láizháo！nǐ yī chī huǒguō jìu lā dùzǐ！",
-          "translation": "What am I saying! Diarrhea as soon as you eat hot pot!"
+          "translation": "Tôi đã nói gì nào! Cứ ăn lẩu là bị tiêu chảy ngay!"
         },
         {
           "id": "ex-7",
@@ -2240,7 +2240,7 @@
           ],
           "chinese": "我说什么来着！这个东西肯定是假的！",
           "pinyin": "wǒ shuō shíyāo láizháo！zhè gè dōngxī kěndìng shì jiǎde！",
-          "translation": "What am I saying! This thing must be fake!"
+          "translation": "Tôi đã nói gì nào! Thứ này chắc chắn là hàng giả!"
         },
         {
           "id": "ex-8",
@@ -2257,7 +2257,7 @@
           ],
           "chinese": "我说什么来着！他不是真的喜欢你！",
           "pinyin": "wǒ shuō shíyāo láizháo！tā bù shì zhēnde xǐhuān nǐ！",
-          "translation": "What am I saying! He doesn't really like you!"
+          "translation": "Tôi đã nói gì nào! Anh ta không thực sự thích bạn đâu!"
         },
         {
           "id": "ex-9",
@@ -2273,7 +2273,7 @@
           ],
           "chinese": "我说什么来着！他们会回来的。",
           "pinyin": "wǒ shuō shíyāo láizháo！tāmen hùi húilái de 。",
-          "translation": "What am I saying! They will come back."
+          "translation": "Tôi đã nói gì nào! Họ sẽ quay lại thôi."
         }
       ],
       "titleVi": "Bày tỏ rằng đã có chuyện gì đó xảy ra với laizhe"
@@ -2285,7 +2285,7 @@
         "[Noun Phrase 1]，[Noun Phrase 2] + 以及 + [Noun Phrase 3]"
       ],
       "usedFor": [
-        "Listing"
+        "Liệt kê"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGCC713",
       "examples": [
@@ -2305,7 +2305,7 @@
           ],
           "chinese": "听觉、视觉、嗅觉、味觉以及触觉都属于感官。",
           "pinyin": "tīngjué 、shìjué 、xìujué 、wèijué yǐjí hóngjué dū shǔyú gǎnguān 。",
-          "translation": "Hearing, sight, smell, taste and touch all belong to the senses."
+          "translation": "Thính giác, thị giác, khứu giác, vị giác và xúc giác đều thuộc về các giác quan."
         },
         {
           "id": "ex-2",
@@ -2327,7 +2327,7 @@
           ],
           "chinese": "艺术有很多种类，绘画、舞蹈、电影以及文学等都是艺术。",
           "pinyin": "yìzhú yǒu hěnduō zhǒnglèi ，hùihuà 、wǔdǎo 、diànyǐng yǐjí wénxué děng dū shì yìzhú 。",
-          "translation": "There are many types of art, and painting, dance, film, and literature are all art."
+          "translation": "Nghệ thuật có rất nhiều loại, hội họa, múa, phim ảnh và văn học đều là nghệ thuật."
         },
         {
           "id": "ex-3",
@@ -2346,7 +2346,7 @@
           ],
           "chinese": "院子里种着玫瑰花、茉莉花、牡丹花以及其他一些花草。",
           "pinyin": "yuànzǐ lǐ zhǒngzháo méigūihuā 、mòlìhuā 、mǔdānhuā yǐjí qítā yīxiē huācǎo 。",
-          "translation": "The yard is planted with roses, jasmine, peony and other flowers."
+          "translation": "Trong sân trồng hoa hồng, hoa nhài, hoa mẫu đơn và các loại hoa khác."
         },
         {
           "id": "ex-4",
@@ -2365,7 +2365,7 @@
           ],
           "chinese": "我们的价值就是采访、分析以及组合投资管理人。",
           "pinyin": "wǒmen de jiàzhí jìushì cǎifǎng、fēnxī yǐjí zǔhé tóuzī guǎnlǐ rén 。",
-          "translation": "Our value is interviews, analysis and portfolio investment managers."
+          "translation": "Giá trị của chúng tôi là các cuộc phỏng vấn, phân tích và các nhà quản lý đầu tư danh mục."
         },
         {
           "id": "ex-5",
@@ -2384,7 +2384,7 @@
           ],
           "chinese": "习主席祝全国人民以及全体海外华人新年快乐。",
           "pinyin": "xí zhǔxí zhù quánguó rénmín yǐjí quántǐ hǎiwài huárén xīnniánkuàilè 。",
-          "translation": "President Xi wished the people throughout the country and all overseas Chinese a happy new year."
+          "translation": "Chủ tịch Tập đã chúc người dân cả nước và tất cả Hoa kiều ở nước ngoài một năm mới hạnh phúc."
         },
         {
           "id": "ex-6",
@@ -2405,7 +2405,7 @@
           ],
           "chinese": "这个项目的投资人以及相关负责人都是外国人。",
           "pinyin": "zhègè xiàngmù de tóuzīrén yǐjí xiāngguān fùzé rén dū shì wàiguó rén 。",
-          "translation": "The investors and relevant persons in charge of this project are foreigners."
+          "translation": "Các nhà đầu tư và những người có trách nhiệm liên quan đến dự án này đều là người nước ngoài."
         },
         {
           "id": "ex-7",
@@ -2426,7 +2426,7 @@
           ],
           "chinese": "每种语言都能表现一个民族的文化、价值观以及思维方式。",
           "pinyin": "měizhǒng yǔyán dū néng biǎoxiàn yīgè mínzú de wénhuà 、jiàzhíguān yǐjí sīwéifāngshì 。",
-          "translation": "Each language can express a nation's culture, values, and way of thinking."
+          "translation": "Mỗi ngôn ngữ đều có thể thể hiện văn hóa, giá trị và cách tư duy của một dân tộc."
         }
       ],
       "titleVi": "Thể hiện cũng như với yiji"
@@ -2439,7 +2439,7 @@
         "Clause 1，+ 而 Subject + 则 + Predicate"
       ],
       "usedFor": [
-        "Contrasting"
+        "Sự tương phản"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG3GX2H",
       "examples": [
@@ -2464,7 +2464,7 @@
           ],
           "chinese": "南方人喜欢吃甜的东西，北方人则喜欢吃咸的东西。",
           "pinyin": "nánfāng rén xǐhuān chī tián de dōngxī，běifāng rén zé xǐhuān chī xián de dōngxī 。",
-          "translation": "Southerners like to eat sweet things, while northerners like to eat salty things."
+          "translation": "Người miền Nam thích ăn đồ ngọt, trong khi người miền Bắc thích ăn đồ mặn."
         },
         {
           "id": "ex-2",
@@ -2493,7 +2493,7 @@
           ],
           "chinese": "美国人比较开放，他们喜欢认识新的朋友，中国人则比较害羞，他们更喜欢与亲密的朋友交往。",
           "pinyin": "měiguó rén bǐjiào kāifàng，tāmen xǐhuān rènshì xīn de péngyǒu，zhōngguó rén zé bǐjiào hàixīu，tāmen gèng xǐhuān yǔ qīnmì de péngyǒu jiāowǎng 。",
-          "translation": "Americans are more open-minded. They like to meet new friends, while Chinese people are more shy."
+          "translation": "Người Mỹ cởi mở hơn. Họ thích kết bạn mới, trong khi người Trung Quốc lại nhút nhát hơn."
         },
         {
           "id": "ex-3",
@@ -2517,7 +2517,7 @@
           ],
           "chinese": "我老婆习惯安静、自然的乡村生活，我则习惯喧闹繁忙的大城市生活。",
           "pinyin": "wǒ lǎopó xíguàn ānjìng、zìrán de xiāngcūn shēnghuó，wǒ zé xíguàn xuānnào fánmáng de dà chéngshì shēnghuó 。",
-          "translation": "My wife is used to quiet, natural country life, and I am used to the noisy and busy city life."
+          "translation": "Vợ tôi đã quen với cuộc sống thôn quê yên tĩnh, tự nhiên, còn tôi đã quen với cuộc sống thành thị ồn ào, bận rộn."
         },
         {
           "id": "ex-1",
@@ -2541,7 +2541,7 @@
           ],
           "chinese": "南方人喜欢吃甜的东西，而北方人则喜欢吃咸的东西。",
           "pinyin": "nánfāng rén xǐhuān chī tián de dōngxī，ér běifāng rén zé xǐhuān chī xián de dōngxī 。",
-          "translation": "Southerners like to eat sweet things, while northerners like to eat salty things."
+          "translation": "Người miền Nam thích ăn đồ ngọt, trong khi người miền Bắc thích ăn đồ mặn."
         },
         {
           "id": "ex-2",
@@ -2571,7 +2571,7 @@
           ],
           "chinese": "美国人比较开放，他们喜欢认识新的朋友，而中国人则比较害羞，他们更喜欢与内圈的朋友交往。",
           "pinyin": "měiguó rén bǐjiào kāifàng，tāmen xǐhuān rènshì xīn de péngyǒu，ér zhōngguó rén zé bǐjiào hàixīu，tāmen gèng xǐhuān yǔ nèiquān de péngyǒu jiāowǎng 。",
-          "translation": "Americans are more open, they like to meet new friends, while Chinese people are more shy, they prefer to socialize with friends in the inner circle."
+          "translation": "Người Mỹ cởi mở hơn, họ thích kết bạn mới, trong khi người Trung Quốc nhút nhát hơn, họ thích giao lưu với bạn bè trong vòng tròn thân thiết hơn."
         },
         {
           "id": "ex-3",
@@ -2597,7 +2597,7 @@
           ],
           "chinese": "我老婆习惯安静、大自然的乡村生活，而我则习惯喧闹繁忙的大城市生活。",
           "pinyin": "wǒ lǎopó xíguàn ānjìng、dà zìrán de xiāngcūn shēnghuó，ér wǒ zé xíguàn xuānnào fánmáng de dà chéngshì shēnghuó 。",
-          "translation": "My wife is used to quiet, natural country life, and I am used to the noisy and busy city life."
+          "translation": "Vợ tôi đã quen với cuộc sống thôn quê yên tĩnh, tự nhiên, còn tôi đã quen với cuộc sống thành thị ồn ào, bận rộn."
         }
       ],
       "titleVi": "Chỉ ra sự tương phản với ze"
@@ -2610,7 +2610,7 @@
         "以免 + Sentence"
       ],
       "usedFor": [
-        "Expressing a central concept"
+        "Thể hiện một khái niệm trung tâm"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0A67E",
       "examples": [
@@ -2628,7 +2628,7 @@
           ],
           "chinese": "这儿有高压电线，请不要靠近，以免发生危险。",
           "pinyin": "zhèér yǒu gāoyādiànxiàn，qǐng bùyào kàojìn，yǐmiǎn fāshēng wēixiǎn 。",
-          "translation": "There are high-voltage wires here, please do not come close to avoid danger."
+          "translation": "Ở đây có dây điện cao thế, vui lòng không đến gần để tránh nguy hiểm."
         },
         {
           "id": "ex-2",
@@ -2642,7 +2642,7 @@
           ],
           "chinese": "加强安全措施，以免发生工伤事故。",
           "pinyin": "jiāqiáng ānquán cuòshī，yǐmiǎn fāshēng gōngshāngshìgù 。",
-          "translation": "Strengthen safety measures to avoid accidents at work."
+          "translation": "Tăng cường các biện pháp an toàn để tránh tai nạn tại nơi làm việc."
         },
         {
           "id": "ex-3",
@@ -2659,7 +2659,7 @@
           ],
           "chinese": "行人和车辆必须严格遵守交通法规，以免发生交通事故。",
           "pinyin": "xíngrén hé chēliàng bìxū yángé zūnshǒu jiāotōngfǎgūi，yǐmiǎn fāshēngjiāotōngshìgù 。",
-          "translation": "Pedestrians and vehicles must strictly abide by traffic regulations to avoid traffic accidents."
+          "translation": "Người đi bộ và phương tiện giao thông phải tuân thủ nghiêm ngặt các quy định giao thông để tránh tai nạn giao thông."
         },
         {
           "id": "ex-4",
@@ -2673,7 +2673,7 @@
           ],
           "chinese": "你赶紧走，以免晚了。",
           "pinyin": "nǐ gǎnjǐn zǒu，yǐmiǎn wǎn le 。",
-          "translation": "You hurried away so as not to be late."
+          "translation": "Bạn vội vã rời đi để không bị muộn."
         },
         {
           "id": "ex-5",
@@ -2688,7 +2688,7 @@
           ],
           "chinese": "快抓住那个坏人，以免跑了。",
           "pinyin": "kuài zhuāzhù nàgè huàirén，yǐmiǎn pǎo le 。",
-          "translation": "Grab the bad guy quickly so as not to run away."
+          "translation": "Hãy nhanh chóng bắt lấy kẻ xấu để hắn không chạy thoát."
         },
         {
           "id": "ex-1",
@@ -2704,7 +2704,7 @@
           ],
           "chinese": "他们努力训练，以免在比赛中输了。",
           "pinyin": "tāmen nǔlì xùnliàn，yǐmiǎn zài bǐsàizhōng shū le 。",
-          "translation": "They worked hard to avoid losing in the game."
+          "translation": "Họ đã làm việc chăm chỉ để tránh bị thua trong trò chơi."
         },
         {
           "id": "ex-2",
@@ -2719,7 +2719,7 @@
           ],
           "chinese": "你赶紧解释一下，以免她伤心。",
           "pinyin": "nǐ gǎnjǐn jiěshì yīxià，yǐmiǎn tā shāngxīn 。",
-          "translation": "You quickly explain it to avoid her being sad."
+          "translation": "Bạn hãy nhanh chóng giải thích để cô ấy không bị buồn."
         },
         {
           "id": "ex-3",
@@ -2735,7 +2735,7 @@
           ],
           "chinese": "不要在河边玩耍，以免你掉到河里。",
           "pinyin": "bùyào zài hébiān wánshuǎ，yǐmiǎn nǐ diàodào hélǐ 。",
-          "translation": "Don't play by the river, lest you fall into the river."
+          "translation": "Đừng chơi đùa bên bờ sông, kẻo ngã xuống sông."
         }
       ],
       "titleVi": "Để tránh 一面"
@@ -2758,7 +2758,7 @@
           ],
           "chinese": "本人。",
           "pinyin": "běn rén 。",
-          "translation": "Me."
+          "translation": "Tôi."
         },
         {
           "id": "ex-2",
@@ -2774,7 +2774,7 @@
           ],
           "chinese": "顾客至上是本公司的经营理念。",
           "pinyin": "gùkèzhìshàng shì běn gōngsī de jīngyíng lǐniàn 。",
-          "translation": "Customer first is our business philosophy."
+          "translation": "Khách hàng là trên hết là triết lý kinh doanh của chúng tôi."
         },
         {
           "id": "ex-3",
@@ -2791,7 +2791,7 @@
           ],
           "chinese": "本校不允许外校学生随便进出。",
           "pinyin": "běn xiào bù yǔnxǔ wàixiào xuéshēng súibiàn jìnchū 。",
-          "translation": "The school does not allow foreign students to enter and leave at will."
+          "translation": "Nhà trường không cho phép học sinh nước ngoài tự ý ra vào."
         },
         {
           "id": "ex-4",
@@ -2802,7 +2802,7 @@
           ],
           "chinese": "本组织。",
           "pinyin": "běn zǔzhī 。",
-          "translation": "The organization."
+          "translation": "Tổ chức."
         }
       ],
       "titleVi": "Thể hiện quan điểm của bạn với 本"
@@ -2836,7 +2836,7 @@
           ],
           "chinese": "你知道管理的科学性和艺术性是指什么吗？",
           "pinyin": "nǐ zhīdào guǎnlǐ de kēxué xìng hé yìzhú xìng shì zhǐ shíyāo ma ？",
-          "translation": "Do you know what scientific and artistic management means?"
+          "translation": "Bạn có biết quản lý khoa học và nghệ thuật nghĩa là gì không?"
         },
         {
           "id": "ex-2",
@@ -2855,7 +2855,7 @@
           ],
           "chinese": "你交的这个产品宣传方案没有可行性。",
           "pinyin": "nǐ jiāo de zhè gè chǎnpǐn xuānchuán fāngàn méiyǒu kěxíngxìng 。",
-          "translation": "The product promotion plan you submitted is not feasible."
+          "translation": "Kế hoạch quảng bá sản phẩm mà bạn đã nộp không khả thi."
         },
         {
           "id": "ex-3",
@@ -2874,7 +2874,7 @@
           ],
           "chinese": "中国四川省的山区，发生地震的可能性较大。",
           "pinyin": "zhōngguó sìchuān shěng de shānqū，fāshēng dìzhèn de kěnéngxìng jiào dà 。",
-          "translation": "Mountainous areas in Sichuan Province, China, are more likely to have earthquakes."
+          "translation": "Các vùng núi ở tỉnh Tứ Xuyên, Trung Quốc, có khả năng xảy ra động đất cao hơn."
         },
         {
           "id": "ex-4",
@@ -2892,7 +2892,7 @@
           ],
           "chinese": "本公司对员工上班时间没有硬性规定。",
           "pinyin": "běn gōngsī dùi yuángōng shàngbān shíjiān méiyǒu yìngxìng gūidìng 。",
-          "translation": "The company has no hard-and-fast rules about employee working hours."
+          "translation": "Công ty không có quy định cứng nhắc về giờ làm việc của nhân viên."
         },
         {
           "id": "ex-5",
@@ -2910,7 +2910,7 @@
           ],
           "chinese": "你的作品越来越有创造性。",
           "pinyin": "nǐ de zuòpǐn yuè lái yuè yǒu chuàngzào xìng 。",
-          "translation": "Your work is becoming more and more creative."
+          "translation": "Công việc của bạn ngày càng trở nên sáng tạo hơn."
         }
       ],
       "titleVi": "Chỉ ra một đặc điểm với xing"
@@ -2939,7 +2939,7 @@
           ],
           "chinese": "他们是否考虑过在上海买房？",
           "pinyin": "tāmen shìfǒu kǎolv̀ guò zài shànghǎi mǎi fáng ？",
-          "translation": "Have they considered buying a house in Shanghai?"
+          "translation": "Họ đã cân nhắc việc mua nhà ở Thượng Hải chưa?"
         },
         {
           "id": "ex-2",
@@ -2956,7 +2956,7 @@
           ],
           "chinese": "你父母是否同意你们住在一起？",
           "pinyin": "nǐ fùmǔ shìfǒu tóngyì nǐmen zhù zài yīqǐ ？",
-          "translation": "Do your parents agree that you live together?"
+          "translation": "Cha mẹ bạn có đồng ý cho bạn sống chung không?"
         },
         {
           "id": "ex-3",
@@ -2972,7 +2972,7 @@
           ],
           "chinese": "你是否清楚这样做的后果？",
           "pinyin": "nǐ shìfǒu qīngchǔ zhèyáng zuò de hòuguǒ ？",
-          "translation": "Are you aware of the consequences of this?"
+          "translation": "Bạn có nhận thức được hậu quả của việc này không?"
         }
       ],
       "titleVi": "Thể hiện là hoặc không phải với shifou"
@@ -2984,7 +2984,7 @@
         "Noun + 之 + Noun"
       ],
       "usedFor": [
-        "Expressing possession"
+        "Biểu thị sự sở hữu"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGBAIMA",
       "examples": [
@@ -3008,7 +3008,7 @@
           ],
           "chinese": "害人之心不可有，防人之心不可无。",
           "pinyin": "hài rén zhī xīn bù kě yǒu，fáng rén zhī xīn bù kě wú 。",
-          "translation": "There must be no hurting heart, and no guarding heart."
+          "translation": "Không được có tâm hại người, nhưng không thể không có tâm phòng người."
         },
         {
           "id": "ex-2",
@@ -3027,7 +3027,7 @@
           ],
           "chinese": "这些解决问题的方式仍然有不足之处。",
           "pinyin": "zhèxiē jiějué wèntí de fāngshì réngrán yǒu bùzú zhī chù 。",
-          "translation": "These solutions to problems still have deficiencies."
+          "translation": "Những giải pháp cho các vấn đề này vẫn còn những thiếu sót."
         },
         {
           "id": "ex-3",
@@ -3041,7 +3041,7 @@
           ],
           "chinese": "粗心之害大于无知。",
           "pinyin": "cūxīn zhī hài dàyú wúzhī 。",
-          "translation": "Carelessness is greater than ignorance."
+          "translation": "Sự bất cẩn còn đáng sợ hơn cả sự thiếu hiểu biết."
         }
       ],
       "titleVi": "Thể hiện quyền sở hữu với 只"
@@ -3053,7 +3053,7 @@
         "Statement + 嘛"
       ],
       "usedFor": [
-        "Expressing attitude"
+        "Bày tỏ thái độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGVMC4B",
       "examples": [
@@ -3069,7 +3069,7 @@
           ],
           "chinese": "你妹妹很漂亮嘛。",
           "pinyin": "nǐ mèimèi hěn piāoliàng ma 。",
-          "translation": "Your sister is beautiful."
+          "translation": "Chị gái của bạn rất xinh đẹp."
         },
         {
           "id": "ex-2",
@@ -3083,7 +3083,7 @@
           ],
           "chinese": "他挺有钱的嘛。",
           "pinyin": "tā tǐng yǒuqián de ma 。",
-          "translation": "He is quite rich."
+          "translation": "Anh ấy khá giàu có."
         },
         {
           "id": "ex-3",
@@ -3099,7 +3099,7 @@
           ],
           "chinese": "不想去就不要去嘛。",
           "pinyin": "bù xiǎng qù jìu bùyào qù ma 。",
-          "translation": "Do n’t go if you do n’t want to."
+          "translation": "Nếu không muốn đi thì đừng đi."
         },
         {
           "id": "ex-4",
@@ -3113,7 +3113,7 @@
           ],
           "chinese": "你别太谦虚嘛。",
           "pinyin": "nǐ bié tài qiānxū ma 。",
-          "translation": "Don't be too humble."
+          "translation": "Đừng quá khiêm tốn."
         },
         {
           "id": "ex-5",
@@ -3128,7 +3128,7 @@
           ],
           "chinese": "大家有话就说嘛。",
           "pinyin": "dàjiā yǒu huà jìu shuō ma 。",
-          "translation": "Everyone has something to say."
+          "translation": "Ai cũng có điều muốn nói."
         },
         {
           "id": "ex-6",
@@ -3143,7 +3143,7 @@
           ],
           "chinese": "你跟他很熟嘛。",
           "pinyin": "nǐ gēn tā hěn shú ma 。",
-          "translation": "You know him well."
+          "translation": "Bạn hiểu rõ anh ấy mà."
         },
         {
           "id": "ex-7",
@@ -3158,7 +3158,7 @@
           ],
           "chinese": "开慢点，安全第一嘛。",
           "pinyin": "kāi màn diǎn ，ānquán dìyī ma 。",
-          "translation": "Drive slowly, safety first."
+          "translation": "Lái xe chậm thôi, an toàn là trên hết."
         },
         {
           "id": "ex-8",
@@ -3172,7 +3172,7 @@
           ],
           "chinese": "不用塑料袋更环保嘛。",
           "pinyin": "bùyòng sùliàodài gèng huánbǎo ma 。",
-          "translation": "It ’s more environmentally friendly without plastic bags."
+          "translation": "Không dùng túi ni lông sẽ thân thiện với môi trường hơn."
         },
         {
           "id": "ex-9",
@@ -3188,7 +3188,7 @@
           ],
           "chinese": "这个外国人很了解中国文化嘛。",
           "pinyin": "zhègè wàiguórén hěn lejiě zhōngguó wénhuà ma 。",
-          "translation": "This foreigner knows Chinese culture well."
+          "translation": "Người nước ngoài này hiểu rất rõ văn hóa Trung Quốc."
         },
         {
           "id": "ex-10",
@@ -3204,7 +3204,7 @@
           ],
           "chinese": "别担心，一边工作一边学嘛。",
           "pinyin": "bié dànxīn ，yībiān gōngzuò yībiān xué ma 。",
-          "translation": "Don't worry, learn while working."
+          "translation": "Đừng lo lắng, vừa làm vừa học thôi."
         }
       ],
       "titleVi": "Thể hiện sự hiển nhiên với 吗"
@@ -3229,7 +3229,7 @@
           ],
           "chinese": "成功与否，要靠自己。",
           "pinyin": "chénggōng yǔfǒu，yào kào zìjǐ 。",
-          "translation": "Success depends on yourself."
+          "translation": "Thành công phụ thuộc vào chính bạn."
         },
         {
           "id": "ex-2",
@@ -3250,7 +3250,7 @@
           ],
           "chinese": "国家发达与否，取决于它的人均国内生产总值有多高。",
           "pinyin": "guójiā fādá yǔfǒu，qǔjuéyú tā de rénjūn guónèi shēngchǎn zǒngzhí yǒu duō gāo 。",
-          "translation": "Whether a country is developed depends on how high its GDP per capita is."
+          "translation": "Một quốc gia có phát triển hay không phụ thuộc vào GDP bình quân đầu người cao đến mức nào."
         },
         {
           "id": "ex-3",
@@ -3268,7 +3268,7 @@
           ],
           "chinese": "头发、皮肤、眼睛等可以显示身体健康与否。",
           "pinyin": "tóufā、 pífū、 yǎnjīng děng kěyǐ xiǎnshì shēntǐ jiànkāng yǔfǒu 。",
-          "translation": "Hair, skin, eyes, etc. can show whether you are healthy or not."
+          "translation": "Tóc, da, mắt, v.v. có thể cho thấy bạn có khỏe mạnh hay không."
         }
       ],
       "titleVi": "Thể hiện có hay không với yufou"
@@ -3280,7 +3280,7 @@
         "Sentence + 呗"
       ],
       "usedFor": [
-        "Expressing the obvious"
+        "Diễn đạt những điều hiển nhiên"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGVBH2H",
       "examples": [
@@ -3299,7 +3299,7 @@
           ],
           "chinese": "别问我们为什么去KTV唱歌，热闹好玩儿呗！",
           "pinyin": "biéwèn wǒmen wèishíyāo qù KTV chànggē，rènào hǎo wánér bài！",
-          "translation": "Do n’t ask why we go to KTV to sing, it ’s hilarious and fun!"
+          "translation": "Đừng hỏi tại sao chúng tôi đi hát KTV, rất vui và hài hước!"
         },
         {
           "id": "ex-2",
@@ -3316,7 +3316,7 @@
           ],
           "chinese": "如果你不知道怎么说，就查词典呗！",
           "pinyin": "rúguǒ nǐ bù zhīdào zěnyāo shuō，jìu chá cídiǎn bài！",
-          "translation": "If you do n’t know what to say, just check the dictionary!"
+          "translation": "Nếu bạn không biết nói gì, cứ tra từ điển đi!"
         },
         {
           "id": "ex-3",
@@ -3330,7 +3330,7 @@
           ],
           "chinese": "要是不懂，就好好学呗。",
           "pinyin": "yàoshì bùdǒng，jìu hǎohǎo xué bài 。",
-          "translation": "If you do n’t understand, learn it."
+          "translation": "Nếu bạn không hiểu thì hãy học đi."
         },
         {
           "id": "ex-4",
@@ -3348,7 +3348,7 @@
           ],
           "chinese": "如果你不想去就不去呗。",
           "pinyin": "rúguǒ nǐ bù xiǎng qù jìu bù qù bài 。",
-          "translation": "If you do n’t want to go, do n’t go."
+          "translation": "Nếu bạn không muốn đi thì đừng đi."
         }
       ],
       "titleVi": "Sử dụng hạt 被"
@@ -3360,7 +3360,7 @@
         "鉴于 + observation, conclusion/suggestion"
       ],
       "usedFor": [
-        "Indicating cause and effect"
+        "Biểu thị nguyên nhân và kết quả"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGC1BI5",
       "examples": [
@@ -3379,7 +3379,7 @@
           ],
           "chinese": "鉴于是紧急情况，我们应该尽快做出决定。",
           "pinyin": "jiànyú shì jǐnjí qíngkuàng，wǒmen yìnggāi jǐnkuài zuòchū juédìng 。",
-          "translation": "In view of the emergency, we should make a decision as soon as possible."
+          "translation": "Xét thấy tình hình khẩn cấp, chúng ta nên đưa ra quyết định càng sớm càng tốt."
         },
         {
           "id": "ex-2",
@@ -3401,7 +3401,7 @@
           ],
           "chinese": "鉴于我儿子的成绩不太好，所以我让他去补习班。",
           "pinyin": "jiànyú wǒ érzǐ de chéngjī bù tài hǎo，suǒyǐ wǒ ràng tā qù bǔxíbān 。",
-          "translation": "In view of my son's poor grades, I asked him to go to cram school."
+          "translation": "Xét thấy điểm số của con trai tôi kém, tôi đã yêu cầu nó đi học thêm."
         },
         {
           "id": "ex-3",
@@ -3423,7 +3423,7 @@
           ],
           "chinese": "鉴于上周的恐怖袭击事件，当地政府采取了特殊的安保措施。",
           "pinyin": "jiànyú shàngzhōu de kǒngbù xíjí shìjiàn，dāngdì zhèngfǔ cǎiqǔ le tèshū de ānbǎo cuòshī 。",
-          "translation": "In view of the terrorist attacks last week, the local government took special security measures."
+          "translation": "Xét thấy các vụ tấn công khủng bố tuần trước, chính quyền địa phương đã thực hiện các biện pháp an ninh đặc biệt."
         }
       ],
       "titleVi": "Thể hiện dưới ánh sáng của với jianyu"
@@ -3437,9 +3437,9 @@
         "非(要) + Subj. + [Verb Phrase] + 不可"
       ],
       "usedFor": [
-        "Giving commands",
-        "Expressing obligations",
-        "Emphasizing"
+        "Đưa ra mệnh lệnh",
+        "Diễn đạt nghĩa vụ",
+        "Nhấn mạnh"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG50DR1",
       "examples": [
@@ -3460,7 +3460,7 @@
           ],
           "chinese": "气死我了，我非要打死你不可。",
           "pinyin": "qì sǐ wǒ le ，wǒ fēiyào dǎ sǐ nǐ bùkě 。",
-          "translation": "I'm so mad, I must kill you."
+          "translation": "Tôi tức giận quá, tôi phải giết anh."
         },
         {
           "id": "ex-2",
@@ -3474,7 +3474,7 @@
           ],
           "chinese": "我们非问清楚不可。",
           "pinyin": "wǒmen fēi wèn qīngchǔ bùkě 。",
-          "translation": "We must ask clearly."
+          "translation": "Chúng ta phải hỏi cho rõ ràng."
         },
         {
           "id": "ex-3",
@@ -3488,7 +3488,7 @@
           ],
           "chinese": "我非抓到他不可。",
           "pinyin": "wǒ fēi zhuādào tā bùkě 。",
-          "translation": "I must catch him."
+          "translation": "Tôi phải bắt được anh ta."
         },
         {
           "id": "ex-4",
@@ -3505,7 +3505,7 @@
           ],
           "chinese": "今天那么冷，可是我女儿非要穿裙子。",
           "pinyin": "jīntiān nàyāo lěng，kěshì wǒ nv̌ér fēiyào chuān qúnzǐ 。",
-          "translation": "Today is so cold, but my daughter must wear a skirt."
+          "translation": "Hôm nay trời lạnh thế mà con gái tôi cứ nhất quyết phải mặc váy."
         },
         {
           "id": "ex-5",
@@ -3525,7 +3525,7 @@
           ],
           "chinese": "我不让他喝那么多，可是他非要喝。",
           "pinyin": "wǒ bù ràng tā hē nàyāo duō ，kěshì tā fēiyào hē 。",
-          "translation": "I don't let him drink so much, but he has to drink."
+          "translation": "Tôi không cho anh ấy uống nhiều như vậy, nhưng anh ấy cứ nhất quyết phải uống."
         },
         {
           "id": "ex-6",
@@ -3544,7 +3544,7 @@
           ],
           "chinese": "我不想去，可是她非要让我去。",
           "pinyin": "wǒ bù xiǎng qù ，kěshì tā fēiyào ràng wǒ qù 。",
-          "translation": "I don't want to go, but she must let me go."
+          "translation": "Tôi không muốn đi, nhưng cô ấy cứ bắt tôi phải đi."
         },
         {
           "id": "ex-7",
@@ -3563,7 +3563,7 @@
           ],
           "chinese": "情人节那天，我女朋友非要让我送她玫瑰花。",
           "pinyin": "qíngrénjié nàtiān ，wǒ nv̌péngyǒu fēiyào ràng wǒ sòng tā méigūihuā 。",
-          "translation": "On Valentine's Day, my girlfriend wanted me to send her roses."
+          "translation": "Vào ngày lễ Tình nhân, bạn gái tôi muốn tôi tặng cô ấy hoa hồng."
         },
         {
           "id": "ex-1",
@@ -3580,7 +3580,7 @@
           ],
           "chinese": "这个项目非他来做不可。",
           "pinyin": "zhè gè xiàngmù fēi tā lái zuò bùkě 。",
-          "translation": "He must do this project."
+          "translation": "Anh ấy nhất định phải làm dự án này."
         },
         {
           "id": "ex-2",
@@ -3596,7 +3596,7 @@
           ],
           "chinese": "这个文件非大老板签字不可。",
           "pinyin": "zhè gè wénjiàn fēi dàlǎobǎn qiānzì bùkě 。",
-          "translation": "This document must be signed by the big boss."
+          "translation": "Tài liệu này bắt buộc phải có chữ ký của sếp lớn."
         },
         {
           "id": "ex-3",
@@ -3618,7 +3618,7 @@
           ],
           "chinese": "这张电影票明天就到期了，非今天去看不可。",
           "pinyin": "zhè zhāng diànyǐng piào míngtiān jìu dàoqī le ，fēi jīntiān qù kàn bùkě 。",
-          "translation": "This movie ticket will expire tomorrow, and it's okay to go today."
+          "translation": "Vé xem phim này ngày mai hết hạn, hôm nay đi xem là được rồi."
         },
         {
           "id": "ex-1",
@@ -3637,7 +3637,7 @@
           ],
           "chinese": "要是被老板发现了，非炒你鱿鱼不可。",
           "pinyin": "yàoshì bèi lǎobǎn fāxiàn le ，fēi chǎo nǐ yóuyú bùkě 。",
-          "translation": "If found by the boss, you must fire your squid."
+          "translation": "Nếu bị sếp phát hiện, cậu chắc chắn sẽ bị đuổi việc."
         },
         {
           "id": "ex-2",
@@ -3654,7 +3654,7 @@
           ],
           "chinese": "你再说下去，他非生气不可。",
           "pinyin": "nǐ zài shuō xiàqù ，tā fēi shēngqì bùkě 。",
-          "translation": "If you go on, he must be angry."
+          "translation": "Nếu cậu còn tiếp tục, anh ấy chắc chắn sẽ nổi giận."
         },
         {
           "id": "ex-3",
@@ -3670,7 +3670,7 @@
           ],
           "chinese": "我们再不出发，非迟到不可。",
           "pinyin": "wǒmen zài bù chūfā ，fēi chídào bùkě 。",
-          "translation": "We must not be late, we must be late."
+          "translation": "Chúng ta không được phép trễ, nhất định không được trễ."
         },
         {
           "id": "ex-4",
@@ -3689,7 +3689,7 @@
           ],
           "chinese": "天气这么冷，你穿这么少，非感冒不可。",
           "pinyin": "tiānqì zhèyāo lěng ，nǐ chuān zhèyāo shǎo ，fēi gǎnmào bùkě 。",
-          "translation": "The weather is so cold, you wear so little, you must have a cold."
+          "translation": "Thời tiết lạnh thế này mà cậu mặc ít như vậy, chắc chắn là bị cảm rồi."
         }
       ],
       "titleVi": "Thêm điểm nhấn với非....buke"
@@ -3701,7 +3701,7 @@
         "岂不是 + rhetorical question"
       ],
       "usedFor": [
-        "Expressing a rhetorical question"
+        "Diễn đạt câu hỏi tu từ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG5HZG6",
       "examples": [
@@ -3718,7 +3718,7 @@
           ],
           "chinese": "他们不来岂不是更好？",
           "pinyin": "tāmen bù lái qǐbùshì gèng hǎo ？",
-          "translation": "Would n’t it be better if they did n’t come?"
+          "translation": "Nếu họ không đến thì chẳng phải tốt hơn sao?"
         },
         {
           "id": "ex-2",
@@ -3735,7 +3735,7 @@
           ],
           "chinese": "你这样做岂不是给自己找麻烦？",
           "pinyin": "nǐ zhèyáng zuò qǐbùshì gěi zìjǐ zhǎo máfán ？",
-          "translation": "Would n’t you trouble yourself?"
+          "translation": "Chẳng phải bạn sẽ tự gây rắc rối cho mình sao?"
         },
         {
           "id": "ex-3",
@@ -3755,7 +3755,7 @@
           ],
           "chinese": "如果连你都不帮他，他岂不是死定了？",
           "pinyin": "rúguǒ lián nǐ dū bù bāng tā，tā qǐbùshì sǐ dìng le ？",
-          "translation": "If you do n’t even help him, is n’t he dead?"
+          "translation": "Nếu ngay cả bạn cũng không giúp anh ấy, chẳng phải anh ấy chết chắc rồi sao?"
         },
         {
           "id": "ex-4",
@@ -3772,7 +3772,7 @@
           ],
           "chinese": "你是警察，这样做岂不是知法犯法？",
           "pinyin": "nǐ shì jǐngchá，zhèyáng zuò qǐbùshì zhī fǎ fànfǎ ？",
-          "translation": "You are a policeman. Is n’t it a crime to know the law?"
+          "translation": "Bạn là cảnh sát. Biết luật mà phạm luật chẳng phải là tội sao?"
         },
         {
           "id": "ex-5",
@@ -3792,7 +3792,7 @@
           ],
           "chinese": "他不在的时候你去找他，岂不是浪费时间？",
           "pinyin": "tā bù zài deshíhòu nǐ qù zhǎo tā， qǐbùshì làngfèi shíjiān ？",
-          "translation": "Would n’t it be a waste of time to go to him when he was away?"
+          "translation": "Nếu anh ấy đi vắng mà mình lại tìm đến, chẳng phải là lãng phí thời gian sao?"
         }
       ],
       "titleVi": "Có thể là với qibushi"
@@ -3824,7 +3824,7 @@
           ],
           "chinese": "这首歌的主唱兼词作者就是他。",
           "pinyin": "zhè shǒu gē de zhǔchàng jiān cí zuòzhě jìu shì tā 。",
-          "translation": "He is the lead singer and author of this song."
+          "translation": "Anh ấy là ca sĩ chính và là tác giả của bài hát này."
         },
         {
           "id": "ex-2",
@@ -3843,7 +3843,7 @@
           ],
           "chinese": "在那部电影里，他兼做导演和男主角。",
           "pinyin": "zài nà bù diànyǐng lǐ，tā jiān zuò dǎoyǎn hé nánzhǔjiǎo 。",
-          "translation": "In that movie, he doubled as a director and actor."
+          "translation": "Trong bộ phim đó, anh ấy kiêm cả vai trò đạo diễn và diễn viên."
         },
         {
           "id": "ex-3",
@@ -3862,7 +3862,7 @@
           ],
           "chinese": "你的职责是日常行政工作兼人事招聘。",
           "pinyin": "nǐ de zhízé shì rìcháng xíngzhèng gōngzuò jiān rénshì zhāopìn 。",
-          "translation": "Your responsibilities are daily administrative work and personnel recruitment."
+          "translation": "Trách nhiệm của bạn là công việc hành chính hàng ngày và tuyển dụng nhân sự."
         }
       ],
       "titleVi": "Thể hiện cùng lúc với jian"
@@ -3892,7 +3892,7 @@
           ],
           "chinese": "眼前这个人，莫非就是大名鼎鼎的房地产大亨？",
           "pinyin": "yǎnqián zhègè rén，mòfēi jìushì dàmíngdǐngdǐng de fángdìchǎn dàhēng ？",
-          "translation": "Is this person in front of him a real estate tycoon?"
+          "translation": "Người đang đứng trước mặt anh ấy có phải là một ông trùm bất động sản không?"
         },
         {
           "id": "ex-2",
@@ -3913,7 +3913,7 @@
           ],
           "chinese": "这么晚了他还没有回来，莫非他出了什么事？",
           "pinyin": "zhèyāo wǎn le tā huán méiyǒu húilái，mòfēi tā chū le shíyāo shì ？",
-          "translation": "He hasn't come back at this late hour. What could have happened to him?"
+          "translation": "Đã muộn thế này rồi mà anh ấy vẫn chưa về. Có chuyện gì xảy ra với anh ấy vậy?"
         },
         {
           "id": "ex-3",
@@ -3936,7 +3936,7 @@
           ],
           "chinese": "桌子上那条鱼怎么不见了，莫非被猫偷吃了不成？",
           "pinyin": "zhuōzǐ shàng nà tiáo yú zěnyāo bù jiàn le，mòfēi bèi māo tōu chī lebùchéng ？",
-          "translation": "Why was the fish on the table gone, could it be stolen by the cat?"
+          "translation": "Tại sao con cá trên bàn lại biến mất, chẳng lẽ bị con mèo ăn trộm rồi sao?"
         },
         {
           "id": "ex-4",
@@ -3952,7 +3952,7 @@
           ],
           "chinese": "莫非他听到了我们的谈话？",
           "pinyin": "mòfēi tā tīngdào le wǒmen de tánhuà ？",
-          "translation": "Could it be that he heard our conversation?"
+          "translation": "Chẳng lẽ anh ấy đã nghe thấy cuộc trò chuyện của chúng ta?"
         },
         {
           "id": "ex-1",
@@ -3969,7 +3969,7 @@
           ],
           "chinese": "莫非她真的是你的亲生母亲？",
           "pinyin": "mòfēi tā zhēnde shì nǐ de qīnshēng mǔqīn ？",
-          "translation": "Could she really be your biological mother?"
+          "translation": "Liệu bà ấy có thực sự là mẹ ruột của bạn không?"
         },
         {
           "id": "ex-2",
@@ -3983,7 +3983,7 @@
           ],
           "chinese": "莫非你真的相信他？",
           "pinyin": "mòfēi nǐ zhēnde xiāngxìn tā ？",
-          "translation": "Could you really believe him?"
+          "translation": "Bạn thực sự có thể tin anh ta sao?"
         },
         {
           "id": "ex-3",
@@ -3999,7 +3999,7 @@
           ],
           "chinese": "莫非他真的要去丛林探险？",
           "pinyin": "mòfēi tā zhēnde yào qù cónglín tànxiǎn ？",
-          "translation": "Could it be that he is really going to jungle adventure?"
+          "translation": "Chẳng lẽ anh ấy thực sự định đi thám hiểm rừng rậm sao?"
         }
       ],
       "titleVi": "Thể hiện có thể là với mofei"
@@ -4036,7 +4036,7 @@
           ],
           "chinese": "人们滥用农药和其他化学原料，由此产生了一系列严重的食品安全问题。",
           "pinyin": "rénmen làn yòng nóngyào hé qítā huàxué yuánliào，yóucǐ chǎnshēng le yīxìliè yánzhòng de shípǐn ānquán wèntí 。",
-          "translation": "People abuse pesticides and other chemical raw materials, which has caused a series of serious food safety problems."
+          "translation": "Mọi người lạm dụng thuốc trừ sâu và các nguyên liệu hóa học khác, điều này đã gây ra một loạt các vấn đề nghiêm trọng về an toàn thực phẩm."
         },
         {
           "id": "ex-2",
@@ -4061,7 +4061,7 @@
           ],
           "chinese": "在案发现场我们发现了一些蚂蚁和蜂蜜，由此我们发现了罪犯的身份。",
           "pinyin": "zài ànfā xiàncháng wǒmen fāxiàn le yīxiē mǎyǐ hé fēngmì，yóucǐ wǒmen fāxiàn le zùifàn de shēnfèn 。",
-          "translation": "We found some ants and honey at the crime scene, from which we discovered the identity of the criminal."
+          "translation": "Chúng tôi tìm thấy một vài con kiến và mật ong tại hiện trường vụ án, từ đó chúng tôi đã phát hiện ra danh tính của tên tội phạm."
         },
         {
           "id": "ex-3",
@@ -4086,7 +4086,7 @@
           ],
           "chinese": "最近很多贪官因为情妇举报而落马，由此看来，情妇反腐也是一个好方法。",
           "pinyin": "zùijìn hěnduō tānguān yīnwèi qíngfù jǔbào ér luòmǎ，yóucǐ kànlái，qíngfù fǎnfǔ yě shì yī gè hǎo fāngfǎ 。",
-          "translation": "Recently, many corrupt officials have been dismissed because of mistress reports. From this point of view, mistresses are also a good way to fight corruption."
+          "translation": "Gần đây, nhiều quan chức tham nhũng đã bị cách chức vì bị nhân tình tố cáo. Từ góc độ này mà nói, nhân tình cũng là một cách hay để chống tham nhũng."
         },
         {
           "id": "ex-4",
@@ -4107,7 +4107,7 @@
           ],
           "chinese": "由此可见，政府进行彻底地政治和经济改革是多么必要。",
           "pinyin": "yóucǐ kějiàn，zhèngfǔ jìnxíng chèdǐ dì zhèngzhì hé jīngjì gǎigé shì duōyāo bìyào 。",
-          "translation": "This shows how necessary it is for the government to carry out thorough political and economic reforms."
+          "translation": "Điều này cho thấy chính phủ cần thiết phải thực hiện các cuộc cải cách chính trị và kinh tế triệt để đến mức nào."
         },
         {
           "id": "ex-5",
@@ -4116,7 +4116,7 @@
           ],
           "chinese": "由此可见",
           "pinyin": "yóucǐkějiàn",
-          "translation": "This shows"
+          "translation": "Điều này cho thấy"
         },
         {
           "id": "ex-6",
@@ -4125,7 +4125,7 @@
           ],
           "chinese": "由此看来",
           "pinyin": "yóucǐkànlái",
-          "translation": "From this"
+          "translation": "Từ đó"
         },
         {
           "id": "ex-7",
@@ -4134,7 +4134,7 @@
           ],
           "chinese": "由此说来",
           "pinyin": "yóucǐshuōlái",
-          "translation": "From this"
+          "translation": "Từ đó"
         }
       ],
       "titleVi": "Thể hiện từ điều này với youci"
@@ -4146,7 +4146,7 @@
         "Statement, 非 (得) + Action + 不可 / 不行"
       ],
       "usedFor": [
-        "Expressing a rhetorical question"
+        "Diễn đạt câu hỏi tu từ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGK0ZG7",
       "examples": [
@@ -4163,7 +4163,7 @@
           ],
           "chinese": "有话好好说，干嘛非得吵架？",
           "pinyin": "yǒu huà hǎohǎo shuō，gānma fēidé chǎojià ？",
-          "translation": "If you have something to say, why do you have to quarrel?"
+          "translation": "Nếu có chuyện gì muốn nói thì tại sao cứ phải cãi nhau?"
         },
         {
           "id": "ex-2",
@@ -4180,7 +4180,7 @@
           ],
           "chinese": "现在是紧急情况，非得马上动手术不可。",
           "pinyin": "xiànzài shì jǐnjí qíngkuàng，fēidé mǎshàng dòng shǒuzhú bùkě 。",
-          "translation": "It's an emergency now and you have to have an operation immediately."
+          "translation": "Bây giờ là trường hợp khẩn cấp, bạn phải phẫu thuật ngay lập tức."
         },
         {
           "id": "ex-3",
@@ -4196,7 +4196,7 @@
           ],
           "chinese": "我今天非骂他一顿不行！",
           "pinyin": "wǒ jīntiān fēi mà tā yī dùn bùxíng！",
-          "translation": "I must scold him for a meal today!"
+          "translation": "Hôm nay tôi nhất định phải mắng cho anh ta một trận!"
         },
         {
           "id": "ex-4",
@@ -4214,7 +4214,7 @@
           ],
           "chinese": "这件事你非得帮我查清楚不可！",
           "pinyin": "zhè jiàn shì nǐ fēidé bāng wǒ chá qīngchǔ bùkě！",
-          "translation": "You have to help me find out this matter!"
+          "translation": "Bạn phải giúp tôi làm rõ chuyện này!"
         },
         {
           "id": "ex-5",
@@ -4234,7 +4234,7 @@
           ],
           "chinese": "他这么做太过分了，我非得教训教训他不可！",
           "pinyin": "tā zhèyāo zuò tài guòfēn le， wǒ fēidé jiàoxùn jiàoxùn tā bùkě！",
-          "translation": "He did it too much, and I had to teach him a lesson!"
+          "translation": "Anh ta làm quá đáng lắm rồi, tôi phải dạy cho anh ta một bài học!"
         }
       ],
       "titleVi": "Bày tỏ “phải CÓ FEIDEI"
@@ -4262,7 +4262,7 @@
           ],
           "chinese": "美国最好的大学莫过于哈佛大学。",
           "pinyin": "měiguó zùi hǎo de dàxué mòguòyú hāfódàxué 。",
-          "translation": "The best university in the United States is Harvard."
+          "translation": "Trường đại học tốt nhất ở Hoa Kỳ là Harvard."
         },
         {
           "id": "ex-2",
@@ -4283,7 +4283,7 @@
           ],
           "chinese": "人生中最悲伤的事情莫过于失去你爱的人。",
           "pinyin": "rénshēng zhōng zùi bēishāng de shìqíng mòguòyú shīqù nǐ ài de rén 。",
-          "translation": "The saddest thing in life is to lose the one you love."
+          "translation": "Điều đau buồn nhất trên đời là mất đi người mình yêu thương."
         },
         {
           "id": "ex-3",
@@ -4303,7 +4303,7 @@
           ],
           "chinese": "让她最难过的莫过于你对她大喊大叫。",
           "pinyin": "ràng tā zùi nánguò de mòguòyú nǐ dùi tā dàhǎn dàjiào 。",
-          "translation": "The most sad thing for her is that you yell at her."
+          "translation": "Điều buồn nhất đối với cô ấy là bạn quát mắng cô ấy."
         },
         {
           "id": "ex-4",
@@ -4324,7 +4324,7 @@
           ],
           "chinese": "我能想到最浪漫的事莫过于跟你一起白头到老。",
           "pinyin": "wǒ néng xiǎngdào zùi làngmàn de shì mòguòyú gēn nǐ yīqǐ báitóudàolǎo 。",
-          "translation": "The most romantic thing I can think of is to grow old together with you."
+          "translation": "Điều lãng mạn nhất mà tôi có thể nghĩ đến là cùng bạn già đi."
         },
         {
           "id": "ex-5",
@@ -4347,7 +4347,7 @@
           ],
           "chinese": "对父母来说最大的安慰莫过于孩子能开始独立生活了。",
           "pinyin": "dùi fùmǔ láishuō zùi dà de ānwèi mòguòyú háizǐ néng kāishǐ dúlì shēnghuó le 。",
-          "translation": "The greatest comfort for parents is that the child can start an independent life."
+          "translation": "Sự an ủi lớn nhất đối với cha mẹ là con cái có thể bắt đầu một cuộc sống tự lập."
         }
       ],
       "titleVi": "Thể hiện không có gì hơn...so với moguoyu"
@@ -4361,10 +4361,10 @@
         "与其说 + A，不如说 + B"
       ],
       "usedFor": [
-        "Giving commands",
-        "Expressing obligations",
-        "Emphasizing",
-        "Expressing preference"
+        "Đưa ra mệnh lệnh",
+        "Diễn đạt nghĩa vụ",
+        "Nhấn mạnh",
+        "Thể hiện sự ưu tiên"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGWI5CV",
       "examples": [
@@ -4385,7 +4385,7 @@
           ],
           "chinese": "天气这么好，与其在家看电视，不如出去走走。",
           "pinyin": "tiānqì zhèyāo hǎo，yǔqí zài jiā kàn diànshì，bùrú chūqù zǒu zǒu 。",
-          "translation": "The weather is so good, it is better to go for a walk than to watch TV at home."
+          "translation": "Thời tiết đẹp thế này, thà đi dạo còn hơn là ở nhà xem TV."
         },
         {
           "id": "ex-2",
@@ -4403,7 +4403,7 @@
           ],
           "chinese": "与其干等，不如先去找点事做。",
           "pinyin": "yǔqí gānděng ，bùrú xiān qù zhǎo diǎn shì zuò 。",
-          "translation": "Instead of waiting, it's better to find something to do first."
+          "translation": "Thay vì chờ đợi, tốt hơn là nên tìm việc gì đó để làm trước."
         },
         {
           "id": "ex-3",
@@ -4419,7 +4419,7 @@
           ],
           "chinese": "与其自己乱想，不如当面问清楚。",
           "pinyin": "yǔqí zìjǐ luàn xiǎng，bùrú dāngmiàn wèn qīngchǔ 。",
-          "translation": "Rather than thinking about yourself, it is better to ask in person."
+          "translation": "Thay vì tự mình suy đoán, tốt hơn hết là nên hỏi trực tiếp."
         },
         {
           "id": "ex-4",
@@ -4436,7 +4436,7 @@
           ],
           "chinese": "与其帮别人打工，还不如自己当老板。",
           "pinyin": "yǔqí bāng biérén dǎgōng，huán bùrú zìjǐ dāng lǎobǎn 。",
-          "translation": "Rather than helping others work, you might as well be your own boss."
+          "translation": "Thay vì giúp người khác làm việc, chi bằng bạn hãy tự làm chủ cho chính mình."
         },
         {
           "id": "ex-5",
@@ -4452,7 +4452,7 @@
           ],
           "chinese": "与其麻烦别人，不如自己想办法。",
           "pinyin": "yǔqí máfán biérén ，bùrú zìjǐ xiǎng bànfǎ 。",
-          "translation": "Rather than trouble others, it is better to think for yourself."
+          "translation": "Thay vì làm phiền người khác, chi bằng hãy tự mình suy nghĩ."
         },
         {
           "id": "ex-1",
@@ -4470,7 +4470,7 @@
           ],
           "chinese": "与其随便找一个男朋友，我宁愿单身。",
           "pinyin": "yǔqí súibiàn zhǎo yī gè nánpéngyǒu ，wǒ níngyuàn dānshēn 。",
-          "translation": "Rather than just looking for a boyfriend, I would rather be single."
+          "translation": "Thay vì chỉ tìm kiếm bạn trai, tôi thà độc thân còn hơn."
         },
         {
           "id": "ex-2",
@@ -4490,7 +4490,7 @@
           ],
           "chinese": "与其去上一个三流的大学，我宁可先工作。",
           "pinyin": "yǔqí qù shàng yīgè sānlíu de dàxué ，wǒ níngkě xiān gōngzuò 。",
-          "translation": "Rather than going to a third-rate university, I would rather work first."
+          "translation": "Thay vì vào một trường đại học hạng ba, tôi thà đi làm trước còn hơn."
         },
         {
           "id": "ex-3",
@@ -4512,7 +4512,7 @@
           ],
           "chinese": "与其住在陌生的大城市，爷爷宁可住农村的老房子。",
           "pinyin": "yǔqí zhù zài mòshēng de dà chéngshì ，yéyé níngkě zhù nóngcūn de lǎofángzǐ 。",
-          "translation": "Instead of living in a strange big city, Grandpa would rather live in an old rural house."
+          "translation": "Thay vì sống ở một thành phố lớn xa lạ, ông nội thà sống trong một ngôi nhà nông thôn cũ kỹ."
         },
         {
           "id": "ex-4",
@@ -4529,7 +4529,7 @@
           ],
           "chinese": "与其一直互相伤害，我宁愿早点分手。",
           "pinyin": "yǔqí yīzhí hùxiāng shānghài ，wǒ níngyuàn zǎodiǎn fēnshǒu 。",
-          "translation": "Rather than hurting each other all the time, I would rather break up earlier."
+          "translation": "Thay vì cứ làm tổn thương nhau mãi, tôi thà chia tay sớm còn hơn."
         },
         {
           "id": "ex-5",
@@ -4557,7 +4557,7 @@
           ],
           "chinese": "一样多的钱，与其在市区买一个小房子，我们宁愿在郊区买大房子。",
           "pinyin": "yīyáng duō de qián ，yǔqí zài shìqū mǎi yī gè xiǎo fángzǐ ，wǒmen níngyuàn zài jiāoqū mǎi dà fángzǐ 。",
-          "translation": "For as much money, instead of buying a small house in the city, we would rather buy a big house in the suburbs."
+          "translation": "Với cùng một số tiền đó, thay vì mua một căn nhà nhỏ trong thành phố, chúng tôi thà mua một căn nhà lớn ở ngoại ô."
         },
         {
           "id": "ex-1",
@@ -4577,7 +4577,7 @@
           ],
           "chinese": "与其说他是我的老师，不如说他是我的朋友。",
           "pinyin": "yǔqíshuō tā shì wǒ de lǎoshī，bùrúshuō tā shì wǒ de péngyǒu 。",
-          "translation": "It is better to say that he is my friend than he is my teacher."
+          "translation": "Nói ông ấy là bạn tôi thì đúng hơn là nói ông ấy là thầy tôi."
         },
         {
           "id": "ex-2",
@@ -4598,7 +4598,7 @@
           ],
           "chinese": "与其说她是在帮你，不如说她是在帮她自己。",
           "pinyin": "yǔqíshuō tā shì zài bāng nǐ，bùrúshuō tā shì zài bāng tā zìjǐ 。",
-          "translation": "Rather than saying that she is helping you, it is better to say that she is helping herself."
+          "translation": "Thay vì nói cô ấy đang giúp bạn, chi bằng nói cô ấy đang tự giúp chính mình thì đúng hơn."
         },
         {
           "id": "ex-3",
@@ -4617,7 +4617,7 @@
           ],
           "chinese": "与其说他是在做饭，还不如说他是在玩。",
           "pinyin": "yǔqíshuō tā shì zài zuòfàn，huán bùrúshuō tā shì zài wán 。",
-          "translation": "It is better to say that he is playing than to cook."
+          "translation": "Nói cậu ta đang chơi thì đúng hơn là đang nấu ăn."
         },
         {
           "id": "ex-4",
@@ -4639,7 +4639,7 @@
           ],
           "chinese": "与其说它是一部爱情电影，不如说它是一部动作电影。",
           "pinyin": "yǔqíshuō tā shì yī bù àiqíng diànyǐng，bùrúshuō tā shì yī bù dòngzuò diànyǐng 。",
-          "translation": "It is not so much a love movie as it is an action movie."
+          "translation": "Nói đây là một bộ phim tình cảm thì không bằng nói đây là một bộ phim hành động."
         },
         {
           "id": "ex-5",
@@ -4658,7 +4658,7 @@
           ],
           "chinese": "与其说他是在鼓励我，不如说是在批评我。",
           "pinyin": "yǔqíshuō tā shì zài gǔlì wǒ，bùrúshuō shì zài pīpíng wǒ 。",
-          "translation": "Rather than saying that he was encouraging me, he was criticizing me."
+          "translation": "Thay vì nói anh ấy đang khuyến khích tôi, thì thực ra anh ấy đang chỉ trích tôi."
         }
       ],
       "titleVi": "Bày tỏ Thích...hơn là với与其...buru"
@@ -4670,7 +4670,7 @@
         "跟 + Noun/Pronoun/Adjective + 似的"
       ],
       "usedFor": [
-        "Expressing preference"
+        "Thể hiện sự ưu tiên"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGA77KW",
       "examples": [
@@ -4689,7 +4689,7 @@
           ],
           "chinese": "她们俩好得跟亲姐妹似的。",
           "pinyin": "tāmen liǎ hǎo dé gēn qīn jiěmèi sìde 。",
-          "translation": "They are as good as their sisters."
+          "translation": "Họ cũng giỏi như chị em của họ vậy."
         },
         {
           "id": "ex-2",
@@ -4707,7 +4707,7 @@
           ],
           "chinese": "最近天气热得跟在蒸笼里似的。",
           "pinyin": "zùijìn tiānqì rè dé gēn zài zhēnglóng lǐ sìde 。",
-          "translation": "The weather has been hot recently like in a steamer."
+          "translation": "Thời tiết dạo này nóng như cái lò hấp vậy."
         },
         {
           "id": "ex-3",
@@ -4723,7 +4723,7 @@
           ],
           "chinese": "别跟他似的一天到晚好吃懒做。",
           "pinyin": "bié gēn tā sìde yītiāndàowǎn hǎochī lǎnzuò 。",
-          "translation": "Don't be as lazy as he is all day long."
+          "translation": "Đừng có lười biếng suốt cả ngày như cậu ta nữa."
         },
         {
           "id": "ex-4",
@@ -4745,7 +4745,7 @@
           ],
           "chinese": "他做这个最拿手了，跟很轻松似的就做好了。",
           "pinyin": "tā zuò zhè gè zùi náshǒu le， gēn hěnqīngsōngsìde jìu zuò hǎo le 。",
-          "translation": "He is the best at this, just like it is easy to do."
+          "translation": "Anh ấy làm việc này giỏi nhất, cứ như thể làm việc đó dễ dàng lắm vậy."
         }
       ],
       "titleVi": "Biểu hiện tương tự như với跟... shide"
@@ -4757,7 +4757,7 @@
         "Subject + 不愧是（不愧为）+ reputation"
       ],
       "usedFor": [
-        "Expressing preference"
+        "Thể hiện sự ưu tiên"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMCX2H",
       "examples": [
@@ -4774,7 +4774,7 @@
           ],
           "chinese": "他不愧是一名光荣的人民教师。",
           "pinyin": "tā bùkùishì yīmíng guāngróngde rénmín jiàoshī 。",
-          "translation": "He deserves to be a glorious people's teacher."
+          "translation": "Anh ấy xứng đáng là một người giáo viên nhân dân vẻ vang."
         },
         {
           "id": "ex-2",
@@ -4789,7 +4789,7 @@
           ],
           "chinese": "危难关头，他挺身而出，不愧是一名优秀的人民解放军战士。",
           "pinyin": "wēinán guāntóu，tā tǐngshēnérchū，bùkùishìyīmíng yōuxìude rénmínjiěfàngjūn zhànshì 。",
-          "translation": "At the critical moment, he came forward and was worthy of being an outstanding PLA soldier."
+          "translation": "Vào thời khắc quan trọng, anh ấy đã đứng ra, xứng đáng là một người lính PLA xuất sắc."
         },
         {
           "id": "ex-3",
@@ -4816,7 +4816,7 @@
           ],
           "chinese": "她在这部电影里的表演真是太棒了，不愧是拿过奥斯卡金奖的。",
           "pinyin": "tā zài zhè bù diànyǐng lǐ de biǎoyǎn zhēn shì tài bàng le，bùkùishì ná guò àosīqiǎ jīnjiǎng de 。",
-          "translation": "Her performance in this movie is really awesome. She deservedly won the Oscar."
+          "translation": "Diễn xuất của cô ấy trong bộ phim này thực sự rất tuyệt vời. Cô ấy xứng đáng giành giải Oscar."
         },
         {
           "id": "ex-4",
@@ -4830,7 +4830,7 @@
           ],
           "chinese": "儿子，干得好！不愧是我们老王家的人！",
           "pinyin": "érzǐ，gāndéhǎo！bùkùishì wǒmen lǎowáng jiā de rén！",
-          "translation": "Good job, son! Worthy of being our old royal family!"
+          "translation": "Làm tốt lắm, con trai! Xứng danh là dòng dõi hoàng gia của chúng ta!"
         }
       ],
       "titleVi": "Thể hiện sự xứng đáng với bukuishi"
@@ -4842,7 +4842,7 @@
         "Area of responsibility + 由 + Person(s) + 做主"
       ],
       "usedFor": [
-        "Expressing similarity"
+        "Diễn đạt sự tương đồng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGU98B7",
       "examples": [
@@ -4867,7 +4867,7 @@
           ],
           "chinese": "我们家由我妈妈做主，她说什么我和爸爸就做什么。",
           "pinyin": "wǒmen jiā yóu wǒ māmā zuòzhǔ，tā shuō shíyāo wǒ hé bàbà jìu zuò shíyāo 。",
-          "translation": "Our family is dominated by my mother, and she and me will do what she says."
+          "translation": "Gia đình chúng tôi do mẹ tôi làm chủ, bà ấy nói gì thì tôi và mẹ đều sẽ làm theo."
         },
         {
           "id": "ex-2",
@@ -4891,7 +4891,7 @@
           ],
           "chinese": "作为商店经理，所有的事情都由你做主，出了事情也由你负责。",
           "pinyin": "zuòwèi shāngdiàn jīnglǐ，suǒyǒu de shìqíng dū yóu nǐ zuòzhǔ，chū le shìqíng yě yóu nǐ fùzé 。",
-          "translation": "As a store manager, you are in charge of everything, and you are also responsible for things that happen."
+          "translation": "Là một quản lý cửa hàng, bạn nắm quyền quyết định mọi việc, và bạn cũng phải chịu trách nhiệm cho những gì xảy ra."
         },
         {
           "id": "ex-3",
@@ -4919,7 +4919,7 @@
           ],
           "chinese": "极权主义政府通常是由一人或一党做主，而民主社会通常是由全民做主。",
           "pinyin": "jíquán zhǔyì zhèngfǔ tōngcháng shì yóu yī rén huò yī dǎng zuòzhǔ，ér mínzhǔ shèhùi tōngcháng shì yóu quánmín zuòzhǔ 。",
-          "translation": "The totalitarian government is usually dominated by one person or one party, while the democratic society is usually dominated by the whole people."
+          "translation": "Chính phủ độc tài thường do một người hoặc một đảng phái nắm quyền, trong khi xã hội dân chủ thường do toàn dân làm chủ."
         }
       ],
       "titleVi": "Thể hiện người phụ trách有... zuozhu"
@@ -4931,7 +4931,7 @@
         "一来 + Reason 1 ，二来 + Reason 2"
       ],
       "usedFor": [
-        "Expressing similarity"
+        "Diễn đạt sự tương đồng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGK4CGK",
       "examples": [
@@ -4960,7 +4960,7 @@
           ],
           "chinese": "你不要去那个地方旅游，一来是那边的宾馆很贵，二来也那边没有什么好看的风景。",
           "pinyin": "nǐ bù yào qù nàgè dìfāng lv̌yóu，yīlái shìnàbiān de bīnguǎn hěn gùi，èrlái yěnàbiān méiyǒu shíyāo hǎokàn de fēngjǐng 。",
-          "translation": "You don't want to travel to that place. First, the hotel there is expensive, and second, there is no beautiful scenery there."
+          "translation": "Bạn không muốn đi du lịch đến nơi đó đâu. Thứ nhất, khách sạn ở đó đắt đỏ, thứ hai, ở đó chẳng có phong cảnh gì đẹp cả."
         },
         {
           "id": "ex-2",
@@ -4984,7 +4984,7 @@
           ],
           "chinese": "这次来中国，一来是提高中文水平，二来是更深度的了解中国文化。",
           "pinyin": "zhè cì lái zhōngguó，yīlái shì tígāo zhōngwén shǔipíng，èrlái shì gèng shēndù de lejiě zhōngguó wénhuà 。",
-          "translation": "I came to China this time to improve the Chinese language level and secondly to gain a deeper understanding of Chinese culture."
+          "translation": "Tôi đến Trung Quốc lần này là để nâng cao trình độ tiếng Trung và thứ hai là để hiểu sâu sắc hơn về văn hóa Trung Quốc."
         },
         {
           "id": "ex-3",
@@ -5017,7 +5017,7 @@
           ],
           "chinese": "三十年前，邓小平之所以推动改革开放，一来是为了提高人民的生活水平，二来是为了让中国经济从计划经济转变到市场经济。",
           "pinyin": "sānshí nián qián，dèngxiǎo píngzhīsuǒyǐ tūidòng gǎigé kāifàng，yīlái shì wèile tígāo rénmín de shēnghuó shǔipíng，èrlái shì wèile ràng zhōngguó jīngjì cóng jìhuájīngjì zhuǎnbiàn dào shìchángjīngjì 。",
-          "translation": "Thirty years ago, the reason why Deng Xiaoping promoted reform and opening up was to improve people's living standards and to transform the Chinese economy from a planned economy to a market economy."
+          "translation": "Ba mươi năm trước, lý do Đặng Tiểu Bình thúc đẩy cải cách mở cửa là để cải thiện mức sống của người dân và chuyển đổi nền kinh tế Trung Quốc từ kinh tế kế hoạch sang kinh tế thị trường."
         }
       ],
       "titleVi": "Nêu từ hai lý do trở lên với 一来…二来"
@@ -5029,7 +5029,7 @@
         "谅 + Subject + verb phrase"
       ],
       "usedFor": [
-        "Emphasizing"
+        "Nhấn mạnh"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGOR3M4",
       "examples": [
@@ -5043,7 +5043,7 @@
           ],
           "chinese": "谅他也不敢！",
           "pinyin": "liàng tā yě bùgǎn！",
-          "translation": "Forgive him!"
+          "translation": "Hãy tha thứ cho anh ấy!"
         },
         {
           "id": "ex-2",
@@ -5061,7 +5061,7 @@
           ],
           "chinese": "我谅你也不敢跟那个女的讲话！",
           "pinyin": "wǒ liàng nǐ yě bù gǎn gēn nàgè nv̌de jiǎnghuà！",
-          "translation": "I forgive you for not talking to that woman!"
+          "translation": "Tôi tha thứ cho bạn vì đã không nói chuyện với người phụ nữ đó!"
         },
         {
           "id": "ex-3",
@@ -5082,7 +5082,7 @@
           ],
           "chinese": "我谅他也没胆量做出这样的事情来。",
           "pinyin": "wǒ liàng tā yě méi dǎnliàng zuò chū zhèyáng de shìqíng lái 。",
-          "translation": "I forgive him for not having the guts to do such a thing."
+          "translation": "Tôi tha thứ cho anh ta vì đã không có gan làm chuyện như vậy."
         },
         {
           "id": "ex-4",
@@ -5108,7 +5108,7 @@
           ],
           "chinese": "他是谅你不敢去投诉才这么说的，你可不能就这么算了！",
           "pinyin": "tā shì liàng nǐ bù gǎn qù tóusù cái zhèyāo shuō de，nǐ kě bù néng jìu zhèyāo suànle！",
-          "translation": "He said that he forgave you for daring to make a complaint, but you ca n’t just forget it!"
+          "translation": "Anh ấy nói rằng anh ấy tha thứ cho bạn vì đã dám khiếu nại, nhưng bạn không thể cứ thế mà quên đi được!"
         }
       ],
       "titleVi": "Thể hiện I bet bằng cách sử dụng liang"
@@ -5141,7 +5141,7 @@
           ],
           "chinese": "我的同事是一个很诚实的人，他不屑说谎。",
           "pinyin": "wǒ de tóngshì shì yīgè hěn chéngshí de rén ，tā bùxiè shuōhuǎng 。",
-          "translation": "My colleague is a very honest person, he disdains lying."
+          "translation": "Đồng nghiệp của tôi là một người rất trung thực, anh ấy khinh thường việc nói dối."
         },
         {
           "id": "ex-2",
@@ -5160,7 +5160,7 @@
           ],
           "chinese": "人家都不屑跟你说话，你就不要热脸贴在冷屁股上了。",
           "pinyin": "rénjiā dū bùxiè gēn nǐshuōhuà，nǐ jìu bù yào rèliǎntiēzàilěngpìgǔshàng le 。",
-          "translation": "People don't bother to talk to you, so you shouldn't stick your hot face on the cold ass."
+          "translation": "Người ta không buồn nói chuyện với bạn, nên bạn đừng có lấy mặt nóng dán vào mông lạnh."
         },
         {
           "id": "ex-3",
@@ -5183,7 +5183,7 @@
           ],
           "chinese": "要是你想要向雷锋同志学习，你应该不屑于说别人的坏话。",
           "pinyin": "yàoshì nǐ xiǎngyào xiàng léifēng tóngzhì xuéxí ，nǐ yìnggāi bùxièyú shuō biérén de huàihuà 。",
-          "translation": "If you want to learn from Comrade Lei Feng, you should not bother to say bad things about others."
+          "translation": "Nếu muốn học tập đồng chí Lôi Phong (雷锋), bạn không nên bận tâm nói xấu người khác."
         },
         {
           "id": "ex-4",
@@ -5206,7 +5206,7 @@
           ],
           "chinese": "有些官员表面上不屑于收受贿赂，其实暗地里他们比谁收的都多。",
           "pinyin": "yǒuxiē guānyuán biǎomiàn shàng bùxièyú shōushòu hùilù，qíshí àndìlǐ tāmen bǐ shúi shōu de dūduō 。",
-          "translation": "Some officials seem to disdain to accept bribes, but in fact they secretly receive more than anyone."
+          "translation": "Một số quan chức có vẻ khinh thường việc nhận hối lộ, nhưng thực tế họ lại lén lút nhận nhiều hơn bất cứ ai."
         }
       ],
       "titleVi": "Thể hiện điều gì đó không đáng để làm với buxie"
@@ -5218,7 +5218,7 @@
         "不得不 / 只好 + Verb"
       ],
       "usedFor": [
-        "Expressing certainty"
+        "Diễn đạt sự chắc chắn"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG73H8K",
       "examples": [
@@ -5236,7 +5236,7 @@
           ],
           "chinese": "出门没有带钱，不得不向朋友借。",
           "pinyin": "chūmén méiyǒu dài qián，bùdébù xiàng péngyǒu jiè 。",
-          "translation": "I didn't bring money to go out, so I had to borrow it from my friends."
+          "translation": "Tôi ra ngoài mà không mang theo tiền, nên đành phải mượn bạn bè."
         },
         {
           "id": "ex-2",
@@ -5256,7 +5256,7 @@
           ],
           "chinese": "很喜欢那件衣服，可是没带够钱，只好不买了。",
           "pinyin": "hěn xǐhuān nàjiàn yīfú，kěshì méi dài gòu qián，zhǐhǎo bù mǎi le 。",
-          "translation": "I like that dress very much, but I didn't bring enough money, so I had to buy it."
+          "translation": "Tôi rất thích chiếc váy đó, nhưng vì không mang đủ tiền nên đành phải mua nó."
         },
         {
           "id": "ex-3",
@@ -5276,7 +5276,7 @@
           ],
           "chinese": "刚下飞机，还没找到宾馆，行李不得不寄存在朋友那。",
           "pinyin": "gāng xià fēijī，huán méi zhǎodào bīnguǎn，xínglǐ bùdébù jìcún zài péngyǒu nà 。",
-          "translation": "Just after getting off the plane, I haven't found a hotel yet, so I have to store my luggage with my friend."
+          "translation": "Vừa xuống máy bay, tôi vẫn chưa tìm được khách sạn, nên đành phải gửi hành lý ở chỗ bạn."
         },
         {
           "id": "ex-4",
@@ -5296,7 +5296,7 @@
           ],
           "chinese": "刚下飞机，还没找到宾馆，行李只好寄存在朋友那。",
           "pinyin": "gāng xià fēijī，huán méi zhǎodào bīnguǎn，xínglǐ zhǐhǎo jìcún zài péngyǒu nà 。",
-          "translation": "I just got off the plane and I didn't find a hotel yet, so I had to leave my luggage with my friend."
+          "translation": "Tôi vừa xuống máy bay và vẫn chưa tìm được khách sạn, nên đành phải để lại hành lý ở chỗ bạn."
         },
         {
           "id": "ex-5",
@@ -5312,7 +5312,7 @@
           ],
           "chinese": "迫于生计，他不得不到大城市去打工。",
           "pinyin": "pòyú shēngjì，tā bùdébù dào dàchéngshì qù dǎgōng 。",
-          "translation": "Forced to make a living, he had to work in a big city."
+          "translation": "Vì mưu sinh, anh ấy đành phải làm việc ở một thành phố lớn."
         },
         {
           "id": "ex-6",
@@ -5328,7 +5328,7 @@
           ],
           "chinese": "没有他的帮忙，我只好靠自己了。",
           "pinyin": "méiyǒu tāde bāngmáng，wǒ zhǐhǎo kào zìjǐ le 。",
-          "translation": "Without his help, I had to rely on myself."
+          "translation": "Không có sự giúp đỡ của anh ấy, tôi đành phải tự dựa vào chính mình."
         },
         {
           "id": "ex-7",
@@ -5345,7 +5345,7 @@
           ],
           "chinese": "外面下大雨了，我只好不出去了。",
           "pinyin": "wàimiàn xià dàyǔ le，wǒ zhǐhǎo bù chūqù le 。",
-          "translation": "It was raining heavily outside, so I had to go out."
+          "translation": "Bên ngoài trời đang mưa to, nhưng tôi đành phải ra ngoài."
         },
         {
           "id": "ex-8",
@@ -5355,7 +5355,7 @@
           ],
           "chinese": "不得不承认",
           "pinyin": "bùdébù chéngrèn",
-          "translation": "Have to admit"
+          "translation": "Đành phải thừa nhận"
         },
         {
           "id": "ex-9",
@@ -5365,7 +5365,7 @@
           ],
           "chinese": "不得不放弃",
           "pinyin": "bùdébù fàngqì",
-          "translation": "Have to give up"
+          "translation": "Đành phải từ bỏ"
         },
         {
           "id": "ex-10",
@@ -5375,7 +5375,7 @@
           ],
           "chinese": "不得不离开",
           "pinyin": "bùdébù líkāi",
-          "translation": "Had to leave"
+          "translation": "Đành phải rời đi"
         },
         {
           "id": "ex-11",
@@ -5385,7 +5385,7 @@
           ],
           "chinese": "不得不接受",
           "pinyin": "bùdébù jiēshòu",
-          "translation": "Have to accept"
+          "translation": "Đành phải chấp nhận"
         },
         {
           "id": "ex-12",
@@ -5395,7 +5395,7 @@
           ],
           "chinese": "不得不忍受",
           "pinyin": "bùdébù rěnshòu",
-          "translation": "Have to endure"
+          "translation": "Đành phải chịu đựng"
         }
       ],
       "titleVi": "So sánh budebu và zhihao"
@@ -5417,8 +5417,8 @@
         "⋯⋯， 但（是）却⋯⋯"
       ],
       "usedFor": [
-        "Describing things",
-        "Expressing attitude"
+        "Miêu tả sự vật",
+        "Bày tỏ thái độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG0K25S",
       "examples": [
@@ -5435,7 +5435,7 @@
           ],
           "chinese": "你这么做，效果反而不好。",
           "pinyin": "nǐ zhèyāo zuò，xiàoguǒ fǎnér bù hǎo 。",
-          "translation": "If you do this, the effect is not good."
+          "translation": "Nếu bạn làm thế này, hiệu quả sẽ không tốt."
         },
         {
           "id": "ex-2",
@@ -5449,7 +5449,7 @@
           ],
           "chinese": "你这么做，反而效果不好。",
           "pinyin": "nǐ zhèyāo zuò，fǎnérxiàoguǒ bù hǎo 。",
-          "translation": "If you do this, it will not work well."
+          "translation": "Nếu bạn làm thế này, nó sẽ không mang lại kết quả tốt."
         },
         {
           "id": "ex-1",
@@ -5464,7 +5464,7 @@
           ],
           "chinese": "外面下雨，我却没带伞。",
           "pinyin": "wàimiàn xiàyǔ，wǒ què méi dài sǎn 。",
-          "translation": "It was raining outside, but I didn't bring an umbrella."
+          "translation": "Bên ngoài trời đang mưa, nhưng tôi lại không mang theo ô."
         },
         {
           "id": "ex-1",
@@ -5483,7 +5483,7 @@
           ],
           "chinese": "ChicagoBulls没赢最后一场比赛，反而是Knicks。",
           "pinyin": "Chicago Bulls méi yíng zùihòu yī cháng bǐsài，fǎnér shì Knicks 。",
-          "translation": "Chicago Bulls did not win the last game, but Knicks."
+          "translation": "Chicago Bulls không thắng trận đấu cuối cùng, mà là Knicks."
         },
         {
           "id": "ex-2",
@@ -5507,7 +5507,7 @@
           ],
           "chinese": "他们都觉得Knicks会输掉最后一场比赛，结果他们反而赢了。",
           "pinyin": "tāmen dū juédé Knicks hùi shū diào zùihòu yī cháng bǐsài，jiéguǒ tāmen fǎnér yíng le 。",
-          "translation": "They all felt that Knicks would lose the last game, but instead they won."
+          "translation": "Họ đều nghĩ rằng Knicks sẽ thua trận cuối, nhưng ngược lại họ đã thắng."
         },
         {
           "id": "ex-3",
@@ -5530,7 +5530,7 @@
           ],
           "chinese": "我以为Knicks会赢第一场比赛，结果反而是最后一场。",
           "pinyin": "wǒ yǐwèi Knicks hùi yíng dì yī cháng bǐsài，jiéguǒ fǎnér shì zùihòu yī cháng 。",
-          "translation": "I thought Knicks would win the first game, but the result was the last one."
+          "translation": "Tôi đã nghĩ Knicks sẽ thắng trận đầu tiên, nhưng kết quả lại là trận cuối."
         },
         {
           "id": "ex-1",
@@ -5550,7 +5550,7 @@
           ],
           "chinese": "ChicagoBulls没赢最后一场比赛，Knicks却赢了。",
           "pinyin": "Chicago Bulls méi yíng zùihòu yī cháng bǐsài，Knicks què yíng le 。",
-          "translation": "Chicago Bulls did not win the last game, but Knicks did."
+          "translation": "Chicago Bulls không thắng trận đấu cuối cùng, mà Knicks đã thắng."
         },
         {
           "id": "ex-2",
@@ -5573,7 +5573,7 @@
           ],
           "chinese": "他们都觉得Knicks会输掉最后一场比赛，他们却赢了。",
           "pinyin": "tāmen dū juédé Knicks hùi shū diào zùihòu yī cháng bǐsài，tāmen què yíng le 。",
-          "translation": "They all felt that Knicks would lose the last game, but they won."
+          "translation": "Họ đều nghĩ rằng Knicks sẽ thua trận cuối, nhưng họ đã thắng."
         },
         {
           "id": "ex-3",
@@ -5594,7 +5594,7 @@
           ],
           "chinese": "我以为Knicks会赢第一场比赛，他们却输了。",
           "pinyin": "wǒ yǐwèi Knicks hùi yíng dì yī cháng bǐsài，tāmen què shū le 。",
-          "translation": "I thought Knicks would win the first game, but they lost."
+          "translation": "Tôi đã nghĩ Knicks sẽ thắng trận đầu tiên, nhưng họ đã thua."
         },
         {
           "id": "ex-1",
@@ -5611,7 +5611,7 @@
           ],
           "chinese": "我帮了他，他却不高兴了。",
           "pinyin": "wǒ bāng le tā，tā què bù gāoxīng le 。",
-          "translation": "I helped him, but he was not happy."
+          "translation": "Tôi đã giúp anh ấy, nhưng anh ấy lại không vui."
         },
         {
           "id": "ex-2",
@@ -5628,7 +5628,7 @@
           ],
           "chinese": "我帮了他，他反而不高兴了。",
           "pinyin": "wǒ bāng le tā，tā fǎnér bù gāoxīng le 。",
-          "translation": "I helped him, but he was not happy."
+          "translation": "Tôi đã giúp anh ấy, nhưng anh ấy lại không vui."
         },
         {
           "id": "ex-1",
@@ -5651,7 +5651,7 @@
           ],
           "chinese": "我帮了他那么多，他不但没谢谢我，反而有点不高兴。",
           "pinyin": "wǒ bāng le tā nàyāo duō，tā bùdàn méi xièxiè wǒ，fǎnér yǒu diǎn bù gāoxīng 。",
-          "translation": "I helped him so much. Not only did he not thank me, but he was a little unhappy."
+          "translation": "Tôi đã giúp anh ấy rất nhiều. Anh ấy không những không cảm ơn tôi, mà còn hơi không vui."
         },
         {
           "id": "ex-1",
@@ -5669,7 +5669,7 @@
           ],
           "chinese": "他借钱不但不还，反而还不承认。",
           "pinyin": "tā jiè qián bùdàn bù huán，fǎnér huán bù chéngrèn 。",
-          "translation": "Not only did he not repay the loan, he did not admit it."
+          "translation": "Anh ta không những không trả nợ, mà còn không thừa nhận khoản vay đó."
         },
         {
           "id": "ex-1",
@@ -5688,7 +5688,7 @@
           ],
           "chinese": "他离这里最远，反而却第一个到。",
           "pinyin": "tā lí zhèlǐ zùi yuǎn，fǎnér què dì yī gè dào 。",
-          "translation": "He was farthest from here, but he came first."
+          "translation": "Anh ấy ở xa đây nhất, nhưng lại đến đầu tiên."
         },
         {
           "id": "ex-2",
@@ -5707,7 +5707,7 @@
           ],
           "chinese": "他离这里最远，却反而第一个到。",
           "pinyin": "tā lí zhèlǐ zùi yuǎn，què fǎnér dì yī gè dào 。",
-          "translation": "He was the farthest from here, but he came first."
+          "translation": "Anh ấy ở xa đây nhất, nhưng lại đến đầu tiên."
         },
         {
           "id": "ex-1",
@@ -5726,7 +5726,7 @@
           ],
           "chinese": "我告诉他要下雨，他却偏不带伞。",
           "pinyin": "wǒ gàosù tā yào xiàyǔ，tā què piān bù dài sǎn 。",
-          "translation": "I told him that it was going to rain, but he didn't carry an umbrella."
+          "translation": "Tôi đã bảo anh ấy là trời sắp mưa, nhưng anh ấy không mang theo ô."
         },
         {
           "id": "ex-2",
@@ -5746,7 +5746,7 @@
           ],
           "chinese": "我告诉他要下雨，他却偏偏不带伞。",
           "pinyin": "wǒ gàosù tā yào xiàyǔ，tā què piān piān bù dài sǎn 。",
-          "translation": "I told him that it was going to rain, but he didn't carry an umbrella."
+          "translation": "Tôi đã bảo anh ấy là trời sắp mưa, nhưng anh ấy không mang theo ô."
         },
         {
           "id": "ex-1",
@@ -5766,7 +5766,7 @@
           ],
           "chinese": "虽然我们不是朋友，我却不能不告诉你。",
           "pinyin": "sūirán wǒmen bù shì péngyǒu，wǒ què bù néng bù gàosù nǐ 。",
-          "translation": "Although we are not friends, I cannot help telling you."
+          "translation": "Mặc dù chúng ta không phải bạn bè, nhưng tôi không thể không nói với bạn."
         },
         {
           "id": "ex-1",
@@ -5784,7 +5784,7 @@
           ],
           "chinese": "她喜欢吃甜食，但是却从不吃巧克力。",
           "pinyin": "tā xǐhuān chī tiánshí，dànshì què cóng bù chī qiǎokèlì 。",
-          "translation": "She likes sweets, but she never eats chocolate."
+          "translation": "Cô ấy thích đồ ngọt, nhưng cô ấy không bao giờ ăn sô-cô-la."
         },
         {
           "id": "ex-2",
@@ -5802,7 +5802,7 @@
           ],
           "chinese": "她喜欢吃甜食，但却从不吃巧克力。",
           "pinyin": "tā xǐhuān chī tiánshí，dàn què cóng bù chī qiǎokèlì 。",
-          "translation": "She likes sweets, but she never eats chocolate."
+          "translation": "Cô ấy thích đồ ngọt, nhưng cô ấy không bao giờ ăn sô-cô-la."
         }
       ],
       "titleVi": "So sánh 反'er và “que"
@@ -5815,8 +5815,8 @@
         "Use of 到底"
       ],
       "usedFor": [
-        "Describing things",
-        "Expressing attitude"
+        "Miêu tả sự vật",
+        "Bày tỏ thái độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG9JK0B",
       "examples": [
@@ -5835,7 +5835,7 @@
           ],
           "chinese": "我根本不知道如何有效地管理。",
           "pinyin": "wǒ gēnběn bù zhīdào rúhé yǒuxiào dì guǎnlǐ 。",
-          "translation": "I simply don't know how to manage it effectively."
+          "translation": "Tôi thực sự không biết làm thế nào để quản lý nó một cách hiệu quả."
         },
         {
           "id": "ex-2",
@@ -5853,7 +5853,7 @@
           ],
           "chinese": "你为什么说昨天在街上看到我了？",
           "pinyin": "nǐ wèishíyāo shuō zuótiān zài jiēshàng kàndào wǒ le ？",
-          "translation": "Why did you say that you saw me on the street yesterday?"
+          "translation": "Tại sao bạn lại nói rằng bạn thấy tôi trên phố ngày hôm qua?"
         },
         {
           "id": "ex-3",
@@ -5876,7 +5876,7 @@
           ],
           "chinese": "他只是一个小孩子，根本没见过这么吓人的事情。",
           "pinyin": "tā zhǐ shì yī gè xiǎo háizǐ，gēnběn méi jiàn guò zhèyāo xiàrén de shìqíng 。",
-          "translation": "He was just a child, and he had never seen such a scary thing."
+          "translation": "Nó chỉ là một đứa trẻ, và nó chưa bao giờ thấy thứ gì đáng sợ như vậy."
         },
         {
           "id": "ex-4",
@@ -5893,7 +5893,7 @@
           ],
           "chinese": "我根本不知道为什么我女朋友很生气。",
           "pinyin": "wǒ gēnběn bùzhīdào wèishíyāo wǒ nv̌péngyǒu hěn shēngqì 。",
-          "translation": "I don't know why my girlfriend is angry."
+          "translation": "Tôi không biết tại sao bạn gái tôi lại giận."
         },
         {
           "id": "ex-5",
@@ -5909,7 +5909,7 @@
           ],
           "chinese": "他根本没有听我的话。",
           "pinyin": "tā gēnběn méiyǒu tīng wǒ de huà 。",
-          "translation": "He didn't listen to me at all."
+          "translation": "Anh ấy hoàn toàn không nghe tôi nói gì cả."
         },
         {
           "id": "ex-1",
@@ -5932,7 +5932,7 @@
           ],
           "chinese": "今天新同事又迟到了，他到底想不想在这里做了？",
           "pinyin": "jīntiān xīn tóngshì yòu chídào le，tā dàodǐ xiǎng bù xiǎng zài zhèlǐ zuò le ？",
-          "translation": "Today the new colleague is late again, does he want to do it here?"
+          "translation": "Hôm nay đồng nghiệp mới lại đến muộn, anh ta có muốn làm ở đây nữa không vậy?"
         },
         {
           "id": "ex-2",
@@ -5950,7 +5950,7 @@
           ],
           "chinese": "你的包这么重！你到底带了多少东西？",
           "pinyin": "nǐ de bāo zhèyāo zhòng！nǐ dàodǐ dàile duōshǎo dōngxī ？",
-          "translation": "Your bag is so heavy! How much did you bring?"
+          "translation": "Túi của bạn nặng quá! Bạn đã mang theo bao nhiêu thứ vậy?"
         },
         {
           "id": "ex-3",
@@ -5968,7 +5968,7 @@
           ],
           "chinese": "会议已经开了两个小时了，我们到底什么时候结束？",
           "pinyin": "hùiyì yǐjīng kāi le liǎnggèxiǎoshí le，wǒmen dàodǐ shíyāoshíhòu jiéshù ？",
-          "translation": "The meeting has been open for two hours. When exactly do we end?"
+          "translation": "Cuộc họp đã diễn ra được hai tiếng rồi. Rốt cuộc khi nào chúng ta mới kết thúc?"
         },
         {
           "id": "ex-4",
@@ -5986,7 +5986,7 @@
           ],
           "chinese": "老板还没有透露我们到底能发多少奖金.",
           "pinyin": "lǎobǎn huán méiyǒu tòulù wǒmen dàodǐ néng fā duōshǎo jiǎngjīn.",
-          "translation": "The boss has not revealed how much bonus we can pay."
+          "translation": "Sếp vẫn chưa tiết lộ chúng ta có thể được trả bao nhiêu tiền thưởng."
         },
         {
           "id": "ex-5",
@@ -6001,7 +6001,7 @@
           ],
           "chinese": "那么，你们到底为什么不喝酒呢？",
           "pinyin": "nàyāo，nǐmen dàodǐ wèishíyāo bù hējǐu ní ？",
-          "translation": "So why do n’t you drink?"
+          "translation": "Vậy tại sao bạn không uống?"
         }
       ],
       "titleVi": "So sánh genben và 到底"
@@ -6026,7 +6026,7 @@
           ],
           "chinese": "据实报道",
           "pinyin": "jù shí bàodào",
-          "translation": "According to actual reports"
+          "translation": "Theo các báo cáo thực tế"
         },
         {
           "id": "ex-2",
@@ -6037,7 +6037,7 @@
           ],
           "chinese": "根据事实报道",
           "pinyin": "gēnjù shìshí bàodào",
-          "translation": "According to fact reports"
+          "translation": "Theo các báo cáo sự thật"
         },
         {
           "id": "ex-1",
@@ -6051,7 +6051,7 @@
           ],
           "chinese": "据说他去上海了。",
           "pinyin": "jùshuō tā qù shànghǎi le 。",
-          "translation": "It is said that he went to Shanghai."
+          "translation": "Nghe nói anh ấy đã đi Thượng Hải."
         },
         {
           "id": "ex-2",
@@ -6064,7 +6064,7 @@
           ],
           "chinese": "据传首相将要辞职。",
           "pinyin": "jùchuán shǒuxiāng jiāngyào cízhí 。",
-          "translation": "The Prime Minister is rumored to be resigning."
+          "translation": "Có tin đồn rằng Thủ tướng sắp từ chức."
         },
         {
           "id": "ex-1",
@@ -6080,7 +6080,7 @@
           ],
           "chinese": "据他说，灾情并不是很严重。",
           "pinyin": "jù tā shuō，zāiqíng bìng bùshì hěn yánzhòng 。",
-          "translation": "According to him, the disaster was not very serious."
+          "translation": "Theo anh ấy, thảm họa không nghiêm trọng lắm."
         },
         {
           "id": "ex-2",
@@ -6096,7 +6096,7 @@
           ],
           "chinese": "根据他的说法，灾情并不是很严重。",
           "pinyin": "gēnjù tāde shuōfǎ，zāiqíng bìng bùshì hěn yánzhòng 。",
-          "translation": "According to him, the disaster was not very serious."
+          "translation": "Theo anh ấy, thảm họa không nghiêm trọng lắm."
         },
         {
           "id": "ex-3",
@@ -6115,7 +6115,7 @@
           ],
           "chinese": "据我看来，他是个很负责任的人。",
           "pinyin": "jù wǒ kànlái，tā shì gè hěn fù zérèn de rén 。",
-          "translation": "In my opinion, he is a very responsible person."
+          "translation": "Theo ý kiến của tôi, anh ấy là một người rất có trách nhiệm."
         },
         {
           "id": "ex-4",
@@ -6133,7 +6133,7 @@
           ],
           "chinese": "根据我的看法，他是个很负责任的人。",
           "pinyin": "gēnjùwǒde kànfǎ，tā shì gè hěn fù zérèn de rén 。",
-          "translation": "According to my opinion, he is a very responsible person."
+          "translation": "Theo quan điểm của tôi, anh ấy là một người rất có trách nhiệm."
         }
       ],
       "titleVi": "So sánh genju và 据"
@@ -6157,7 +6157,7 @@
           ],
           "chinese": "恢复体力。",
           "pinyin": "hūifù tǐlì 。",
-          "translation": "Physical recovery."
+          "translation": "Phục hồi thể chất."
         },
         {
           "id": "ex-2",
@@ -6171,7 +6171,7 @@
           ],
           "chinese": "中国1977年恢复了高考。",
           "pinyin": "zhōngguó 1977nián hūifù le gāokǎo 。",
-          "translation": "China resumed the college entrance examination in 1977."
+          "translation": "Trung Quốc đã khôi phục kỳ thi tuyển sinh đại học vào năm 1977."
         },
         {
           "id": "ex-3",
@@ -6185,7 +6185,7 @@
           ],
           "chinese": "地铁恢复了正常运行。",
           "pinyin": "dìtiě hūifù le zhèngcháng yùnxíng 。",
-          "translation": "The subway has resumed normal operation."
+          "translation": "Tàu điện ngầm đã hoạt động trở lại bình thường."
         },
         {
           "id": "ex-4",
@@ -6198,7 +6198,7 @@
           ],
           "chinese": "还原历史的真相。",
           "pinyin": "huányuán lìshǐ de zhēnxiāng 。",
-          "translation": "Restore the truth of history."
+          "translation": "Khôi phục sự thật của lịch sử."
         },
         {
           "id": "ex-5",
@@ -6215,7 +6215,7 @@
           ],
           "chinese": "他想把这个应用程序还原成代码。",
           "pinyin": "tā xiǎng bǎ zhègè yìngyòngchéngxù huányuán chéng dàimǎ 。",
-          "translation": "He wanted to restore this application to code."
+          "translation": "Anh ấy muốn khôi phục ứng dụng này về mã nguồn."
         },
         {
           "id": "ex-1",
@@ -6229,7 +6229,7 @@
           ],
           "chinese": "他的身体恢复了。",
           "pinyin": "tā de shēntǐ hūifù le 。",
-          "translation": "His body recovered."
+          "translation": "Cơ thể anh ấy đã hồi phục."
         },
         {
           "id": "ex-2",
@@ -6242,7 +6242,7 @@
           ],
           "chinese": "社会秩序恢复了。",
           "pinyin": "shèhùi zhìxù hūifù le 。",
-          "translation": "Social order has been restored."
+          "translation": "Trật tự xã hội đã được khôi phục."
         },
         {
           "id": "ex-3",
@@ -6256,7 +6256,7 @@
           ],
           "chinese": "他的职位恢复了。",
           "pinyin": "tā de zhíwèi hūifù le 。",
-          "translation": "His position was restored."
+          "translation": "Chức vụ của anh ấy đã được khôi phục."
         }
       ],
       "titleVi": "So sánh huifu và huanyuan"
@@ -6284,7 +6284,7 @@
           ],
           "chinese": "我打他，他居然没哭。",
           "pinyin": "wǒ dǎ tā，tā jūrán méi kū 。",
-          "translation": "I beat him, he didn't cry."
+          "translation": "Tôi đánh nó, nó không khóc."
         },
         {
           "id": "ex-2",
@@ -6299,7 +6299,7 @@
           ],
           "chinese": "我帮他，他反而生气了。",
           "pinyin": "wǒ bāng tā，tā fǎnér shēngqì le 。",
-          "translation": "I helped him, but he was angry."
+          "translation": "Tôi đã giúp anh ấy, nhưng anh ấy lại tức giận."
         },
         {
           "id": "ex-1",
@@ -6317,7 +6317,7 @@
           ],
           "chinese": "经过治疗，他的病情不仅没有好转，反而恶化了。",
           "pinyin": "jīngguò zhìliáo，tā de bìngqíng bùjǐn méiyǒu hǎozhuǎn，fǎnér èhuà le 。",
-          "translation": "After treatment, his condition not only did not improve, but worsened."
+          "translation": "Sau khi điều trị, tình trạng của anh ấy không những không cải thiện mà còn trở nên tồi tệ hơn."
         },
         {
           "id": "ex-2",
@@ -6334,7 +6334,7 @@
           ],
           "chinese": "吃了这些减肥药，不但没有瘦，反而更胖了。",
           "pinyin": "chīle zhèxiē jiǎnféiyào，bùdàn méiyǒu shòu，fǎnér gèng pàng le 。",
-          "translation": "After taking these diet pills, not only did they not lose weight, but they became fatter."
+          "translation": "Sau khi uống những loại thuốc giảm cân này, họ không những không giảm cân mà còn béo lên."
         },
         {
           "id": "ex-3",
@@ -6352,7 +6352,7 @@
           ],
           "chinese": "雨不仅没停，反而越下越大了。",
           "pinyin": "yǔ bùjǐn méi tíng，fǎnér yuè xià yuè dà le 。",
-          "translation": "Not only did the rain stop, but it was getting bigger and bigger."
+          "translation": "Mưa không những không tạnh mà còn ngày càng lớn hơn."
         }
       ],
       "titleVi": "So sánh giữa luật gia và 反'er"

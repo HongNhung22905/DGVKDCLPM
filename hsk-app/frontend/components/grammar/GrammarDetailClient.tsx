@@ -181,6 +181,8 @@ function StudyMode({ point, onContinue }: { point: GrammarPoint; onContinue: () 
           ))}
         </div>
 
+        {point.usedFor.length > 0 && <div className="flex flex-wrap gap-1.5 mt-3">{point.usedFor.map((item) => <span key={item} className="text-xs px-2.5 py-1 rounded-full" style={{ backgroundColor: "#FEF9C3", color: P.muted }}>{item}</span>)}</div>}
+
         {point.url && (
           <a href={point.url} target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-xs mt-3 transition-colors"
@@ -221,6 +223,7 @@ function ExampleCard({ ex }: { ex: GrammarExample }) {
           {showPinyin && (
             <p className="text-sm mt-1" style={{ color: P.purple }}>{ex.pinyin}</p>
           )}
+          <p className="text-sm mt-1.5" style={{ color: P.muted }}>{ex.translation}</p>
         </div>
         <button onClick={() => playTTS(ex.chinese)} className="flex-shrink-0 mt-1 transition-colors"
           style={{ color: P.faint }}
@@ -377,6 +380,7 @@ function FillMode({ point }: { point: GrammarPoint }) {
             {isCorrect ? "Chính xác!" : `Đáp án đúng: ${q.correctWord}`}
           </div>
         )}
+        {selected && <p className="text-sm mt-3" style={{ color: P.muted }}>{q.example.translation}</p>}
       </div>
 
       {/* Options */}
@@ -627,6 +631,7 @@ function SortMode({ point }: { point: GrammarPoint }) {
           )}
         </div>
       )}
+      {checked && <p className="text-sm" style={{ color: P.muted }}>{q.example.translation}</p>}
 
       {/* Buttons */}
       {!checked ? (

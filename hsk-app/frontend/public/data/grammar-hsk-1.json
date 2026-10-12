@@ -12,9 +12,9 @@
         "Subj. + 正在 + Verb + Obj."
       ],
       "usedFor": [
-        "Describing actions",
-        "Indicating conditions",
-        "Referring to the present"
+        "Miêu tả hành động",
+        "Biểu thị điều kiện",
+        "Đề cập đến hiện tại"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG846EA",
       "examples": [
@@ -29,7 +29,7 @@
           ],
           "chinese": "她在看书。",
           "pinyin": "tā zài kàn shū 。",
-          "translation": "She is reading."
+          "translation": "Cô ấy đang đọc sách."
         },
         {
           "id": "ex-2",
@@ -42,7 +42,7 @@
           ],
           "chinese": "妈妈在打电话。",
           "pinyin": "māmā zài dǎ diànhuà 。",
-          "translation": "Mom is calling."
+          "translation": "Mẹ đang gọi điện thoại."
         },
         {
           "id": "ex-3",
@@ -55,7 +55,7 @@
           ],
           "chinese": "谁在里面洗澡？",
           "pinyin": "shúi zài lǐmiàn xǐzǎo ？",
-          "translation": "Who is taking a bath inside?"
+          "translation": "Ai đang tắm ở bên trong thế?"
         },
         {
           "id": "ex-4",
@@ -70,7 +70,7 @@
           ],
           "chinese": "阿姨正在打扫我们的房间。",
           "pinyin": "āyí zhèngzài dǎsǎo wǒmen de fángjiān 。",
-          "translation": "The aunt is cleaning our room."
+          "translation": "Dì đang dọn dẹp phòng của chúng tôi."
         },
         {
           "id": "ex-5",
@@ -84,7 +84,7 @@
           ],
           "chinese": "昨天晚上七点，我们在吃饭。",
           "pinyin": "zuótiān wǎnshàng qīdiǎn，wǒmen zài chīfàn 。",
-          "translation": "At 7 o'clock last night, we were eating."
+          "translation": "Lúc 7 giờ tối qua, chúng tôi đang ăn cơm."
         },
         {
           "id": "ex-1",
@@ -98,7 +98,7 @@
           ],
           "chinese": "我现在在上班，不方便离开。",
           "pinyin": "wǒ xiànzài zài shàngbān，bùfāngbiàn líkāi 。",
-          "translation": "I'm at work now and it's inconvenient to leave."
+          "translation": "Bây giờ tôi đang làm việc, không tiện rời đi."
         },
         {
           "id": "ex-2",
@@ -113,7 +113,7 @@
           ],
           "chinese": "我们正在上课，请你等一会儿。",
           "pinyin": "wǒmen zhèngzài shàngkè，qǐng nǐ děng yīhùiér 。",
-          "translation": "We are in class, please wait for a while."
+          "translation": "Chúng tôi đang học bài, xin vui lòng đợi một lát."
         },
         {
           "id": "ex-3",
@@ -128,7 +128,7 @@
           ],
           "chinese": "你正在开车，不可以玩手机。",
           "pinyin": "nǐ zhèngzài kāichē，bù kěyǐ wán shǒujī 。",
-          "translation": "You are driving and cannot play with your mobile phone."
+          "translation": "Bạn đang lái xe, không được nghịch điện thoại."
         },
         {
           "id": "ex-4",
@@ -148,7 +148,7 @@
           ],
           "chinese": "你给我打电话的时候，我正在跟朋友打游戏。",
           "pinyin": "nǐ gěi wǒ dǎ diànhuà deshíhòu，wǒ zhèngzài gēn péngyǒu dǎ yóuxì 。",
-          "translation": "When you called me, I was playing games with my friends."
+          "translation": "Lúc bạn gọi điện cho tôi, tôi đang chơi game với bạn bè."
         }
       ],
       "titleVi": "Diễn tả hành động đang diễn ra với 在"
@@ -160,8 +160,8 @@
         "没 + 有 (+ Obj.)"
       ],
       "usedFor": [
-        "Negating",
-        "Denying and refusing"
+        "Phủ định",
+        "Phủ nhận và từ chối"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGPNV3Q",
       "examples": [
@@ -175,7 +175,7 @@
           ],
           "chinese": "我没有问题。",
           "pinyin": "wǒ méiyǒu wèntí 。",
-          "translation": "I have no problem."
+          "translation": "Tôi không có vấn đề gì."
         },
         {
           "id": "ex-2",
@@ -188,7 +188,7 @@
           ],
           "chinese": "我们现在没有钱。",
           "pinyin": "wǒmen xiànzài méiyǒu qián 。",
-          "translation": "We have no money now."
+          "translation": "Bây giờ chúng tôi không có tiền."
         },
         {
           "id": "ex-3",
@@ -201,7 +201,7 @@
           ],
           "chinese": "他没有工作吗？",
           "pinyin": "tā méiyǒu gōngzuò ma ？",
-          "translation": "Is he not working?"
+          "translation": "Anh ấy không làm việc à?"
         },
         {
           "id": "ex-4",
@@ -214,7 +214,7 @@
           ],
           "chinese": "他们没有爸爸妈妈。",
           "pinyin": "tāmen méiyǒu bàbà māmā 。",
-          "translation": "They don't have parents."
+          "translation": "Họ không có bố mẹ."
         },
         {
           "id": "ex-5",
@@ -228,7 +228,7 @@
           ],
           "chinese": "我们在北京没有房子。",
           "pinyin": "wǒmen zài běijīng méiyǒu fángzǐ 。",
-          "translation": "We don't have a house in Beijing."
+          "translation": "Chúng tôi không có nhà ở Beijing."
         },
         {
           "id": "ex-6",
@@ -242,7 +242,7 @@
           ],
           "chinese": "你爸爸没有手机吗？",
           "pinyin": "nǐ bàbà méiyǒu shǒujī ma ？",
-          "translation": "Does your dad have a cell phone?"
+          "translation": "Bố bạn có điện thoại di động không?"
         },
         {
           "id": "ex-7",
@@ -257,7 +257,7 @@
           ],
           "chinese": "你们在上海没有朋友吗？",
           "pinyin": "nǐmen zài shànghǎi méiyǒu péngyǒu ma ？",
-          "translation": "Do you have no friends in Shanghai?"
+          "translation": "Bạn không có bạn bè ở Shanghai à?"
         },
         {
           "id": "ex-8",
@@ -272,7 +272,7 @@
           ],
           "chinese": "我的老师现在没有男朋友。",
           "pinyin": "wǒ de lǎoshī xiànzài méiyǒu nánpéngyǒu 。",
-          "translation": "My teacher does not have a boyfriend now."
+          "translation": "Hiện tại giáo viên của tôi không có bạn trai."
         },
         {
           "id": "ex-9",
@@ -286,7 +286,7 @@
           ],
           "chinese": "他们都没有电脑吗？",
           "pinyin": "tāmen dū méiyǒu diànnǎo ma ？",
-          "translation": "Do they have no computers?"
+          "translation": "Họ không có máy tính à?"
         },
         {
           "id": "ex-10",
@@ -303,7 +303,7 @@
           ],
           "chinese": "这个周末你们都没有时间吗？",
           "pinyin": "zhè gè zhōumò nǐmen dū méiyǒu shíjiān ma ？",
-          "translation": "Do you have any time this weekend?"
+          "translation": "Cuối tuần này bạn có thời gian không?"
         },
         {
           "id": "ex-11",
@@ -315,7 +315,7 @@
           ],
           "chinese": "我没有车。",
           "pinyin": "wǒ méiyǒu chē 。",
-          "translation": "I do not have a car."
+          "translation": "Tôi không có xe ô tô."
         },
         {
           "id": "ex-12",
@@ -327,7 +327,7 @@
           ],
           "chinese": "我没钱。",
           "pinyin": "wǒ méi qián 。",
-          "translation": "I have no money."
+          "translation": "Tôi không có tiền."
         },
         {
           "id": "ex-13",
@@ -340,7 +340,7 @@
           ],
           "chinese": "你没男朋友吗？",
           "pinyin": "nǐ méi nánpéngyǒu ma ？",
-          "translation": "Don't you have a boyfriend?"
+          "translation": "Bạn không có bạn trai à?"
         },
         {
           "id": "ex-14",
@@ -353,7 +353,7 @@
           ],
           "chinese": "你们没车吗？",
           "pinyin": "nǐmen méi chē ma ？",
-          "translation": "Don't you have a car?"
+          "translation": "Bạn không có xe ô tô à?"
         },
         {
           "id": "ex-15",
@@ -366,7 +366,7 @@
           ],
           "chinese": "老板现在没时间。",
           "pinyin": "lǎobǎn xiànzài méi shíjiān 。",
-          "translation": "The boss has no time now."
+          "translation": "Bây giờ sếp không có thời gian."
         },
         {
           "id": "ex-16",
@@ -382,7 +382,7 @@
           ],
           "chinese": "我没工作，我老公也没工作。",
           "pinyin": "wǒ méi gōngzuò，wǒ lǎogōng yě méi gōngzuò 。",
-          "translation": "I am not working, and my husband is not working."
+          "translation": "Tôi không đi làm, và chồng tôi cũng không đi làm."
         }
       ],
       "titleVi": "Phủ định 有 bằng 没"
@@ -395,12 +395,12 @@
         "Subj. + 不 + Adj."
       ],
       "usedFor": [
-        "Negating",
-        "Describing actions",
-        "Denying and refusing",
-        "Referring to habitual actions",
-        "Referring to the present",
-        "Referring to the future"
+        "Phủ định",
+        "Miêu tả hành động",
+        "Phủ nhận và từ chối",
+        "Chỉ các hành động theo thói quen",
+        "Đề cập đến hiện tại",
+        "Chỉ tương lai"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGIPYFV",
       "examples": [
@@ -416,7 +416,7 @@
           ],
           "chinese": "他们不是坏孩子。",
           "pinyin": "tāmen bù shì huài háizǐ 。",
-          "translation": "They are not bad boys."
+          "translation": "Họ không phải là những chàng trai hư."
         },
         {
           "id": "ex-2",
@@ -429,7 +429,7 @@
           ],
           "chinese": "我们不喝酒。",
           "pinyin": "wǒmen bù hē jǐu 。",
-          "translation": "We don't drink."
+          "translation": "Chúng tôi không uống rượu."
         },
         {
           "id": "ex-3",
@@ -443,7 +443,7 @@
           ],
           "chinese": "我今天不想工作。",
           "pinyin": "wǒ jīntiān bù xiǎng gōngzuò 。",
-          "translation": "I don't want to work today."
+          "translation": "Hôm nay tôi không muốn làm việc."
         },
         {
           "id": "ex-4",
@@ -457,7 +457,7 @@
           ],
           "chinese": "你不喜欢我吗？",
           "pinyin": "nǐ bù xǐhuān wǒ ma ？",
-          "translation": "Don't you like me?"
+          "translation": "Bạn không thích tôi sao?"
         },
         {
           "id": "ex-5",
@@ -472,7 +472,7 @@
           ],
           "chinese": "为什么你不喜欢喝咖啡？",
           "pinyin": "wèishíyāo nǐ bù xǐhuān hē kāfēi ？",
-          "translation": "Why don't you like coffee?"
+          "translation": "Tại sao bạn không thích cà phê?"
         },
         {
           "id": "ex-6",
@@ -483,7 +483,7 @@
           ],
           "chinese": "我没有时间。",
           "pinyin": "wǒ méiyǒushíjiān 。",
-          "translation": "I do not have time."
+          "translation": "Tôi không có thời gian."
         },
         {
           "id": "ex-1",
@@ -495,7 +495,7 @@
           ],
           "chinese": "我不饿。",
           "pinyin": "wǒ bù è 。",
-          "translation": "I'm not hungry."
+          "translation": "Tôi không đói."
         },
         {
           "id": "ex-2",
@@ -508,7 +508,7 @@
           ],
           "chinese": "这个不贵。",
           "pinyin": "zhè gè bù gùi 。",
-          "translation": "This is not expensive."
+          "translation": "Cái này không đắt."
         },
         {
           "id": "ex-3",
@@ -520,7 +520,7 @@
           ],
           "chinese": "公司不大。",
           "pinyin": "gōngsī bù dà 。",
-          "translation": "The company is not big."
+          "translation": "Công ty không lớn."
         },
         {
           "id": "ex-4",
@@ -534,7 +534,7 @@
           ],
           "chinese": "老板今天很不高兴。",
           "pinyin": "lǎobǎn jīntiān hěn bù gāoxīng 。",
-          "translation": "The boss is very upset today."
+          "translation": "Hôm nay sếp rất bực bội."
         },
         {
           "id": "ex-5",
@@ -549,7 +549,7 @@
           ],
           "chinese": "我哥哥不高，但是很帅。",
           "pinyin": "wǒ gēgē bù gāo，dànshì hěn shuài 。",
-          "translation": "My brother is not tall, but very handsome."
+          "translation": "Anh trai tôi không cao, nhưng rất đẹp trai."
         }
       ],
       "titleVi": "Phủ định chuẩn với 不"
@@ -561,8 +561,8 @@
         "Subj. + 都 + [Verb Phrase]"
       ],
       "usedFor": [
-        "Emphasizing",
-        "Expressing quantity"
+        "Nhấn mạnh",
+        "Biểu thị số lượng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG9YK09",
       "examples": [
@@ -578,7 +578,7 @@
           ],
           "chinese": "你们都认识John吗？",
           "pinyin": "nǐmen dū rènshì John ma ？",
-          "translation": "Do you all know John?"
+          "translation": "Các bạn đều biết John à?"
         },
         {
           "id": "ex-2",
@@ -591,7 +591,7 @@
           ],
           "chinese": "他们都在上海。",
           "pinyin": "tāmen dū zài shànghǎi 。",
-          "translation": "They are all in Shanghai."
+          "translation": "Họ đều ở Shanghai."
         },
         {
           "id": "ex-3",
@@ -605,7 +605,7 @@
           ],
           "chinese": "明天我们都可以去。",
           "pinyin": "míngtiān wǒmen dū kěyǐ qù 。",
-          "translation": "We can all go tomorrow."
+          "translation": "Ngày mai tất cả chúng tôi đều có thể đi."
         },
         {
           "id": "ex-4",
@@ -619,7 +619,7 @@
           ],
           "chinese": "你们都用wiki吗？",
           "pinyin": "nǐmen dū yòng wiki ma ？",
-          "translation": "Do you all use wiki?"
+          "translation": "Các bạn đều dùng wiki à?"
         },
         {
           "id": "ex-5",
@@ -632,7 +632,7 @@
           ],
           "chinese": "我们都要冰水。",
           "pinyin": "wǒmen dū yào bīngshǔi 。",
-          "translation": "We all have ice water."
+          "translation": "Chúng tôi đều có nước đá."
         },
         {
           "id": "ex-6",
@@ -647,7 +647,7 @@
           ],
           "chinese": "我们两个都爱你。",
           "pinyin": "wǒmen liǎng gè dū ài nǐ 。",
-          "translation": "Both of us love you."
+          "translation": "Cả hai chúng tôi đều yêu bạn."
         },
         {
           "id": "ex-7",
@@ -665,7 +665,7 @@
           ],
           "chinese": "你爸爸和你妈妈都是美国人吗？",
           "pinyin": "nǐ bàbà hé nǐ māmā dū shì měiguórén ma ？",
-          "translation": "Are your father and mother both American?"
+          "translation": "Cả bố và mẹ bạn đều là người Mỹ à?"
         },
         {
           "id": "ex-8",
@@ -682,7 +682,7 @@
           ],
           "chinese": "我和我太太都不吃肉。",
           "pinyin": "wǒ hé wǒ tàitài dū bù chī ròu 。",
-          "translation": "Neither my wife nor I eat meat."
+          "translation": "Cả tôi và vợ đều không ăn thịt."
         },
         {
           "id": "ex-9",
@@ -698,7 +698,7 @@
           ],
           "chinese": "你们两个都喜欢中国菜吗？",
           "pinyin": "nǐmen liǎnggè dū xǐhuān zhōngguó cài ma ？",
-          "translation": "Do you both like Chinese food?"
+          "translation": "Cả hai bạn đều thích món ăn Trung Quốc à?"
         },
         {
           "id": "ex-10",
@@ -714,7 +714,7 @@
           ],
           "chinese": "她和她老公都没有工作。",
           "pinyin": "tā hé tā lǎogōng dū méiyǒu gōngzuò 。",
-          "translation": "Neither she nor her husband has a job."
+          "translation": "Cả cô ấy và chồng đều không có việc làm."
         }
       ],
       "titleVi": "Tất cả trạng từ 都"
@@ -727,7 +727,7 @@
         "Subj. + 也 (+ Adv.) + Adj."
       ],
       "usedFor": [
-        "Adding more explanation"
+        "Bổ sung thêm giải thích"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGG25MD",
       "examples": [
@@ -741,7 +741,7 @@
           ],
           "chinese": "我也喜欢。",
           "pinyin": "wǒ yě xǐhuān 。",
-          "translation": "I would also like."
+          "translation": "Tôi cũng muốn."
         },
         {
           "id": "ex-2",
@@ -754,7 +754,7 @@
           ],
           "chinese": "我也是学生。",
           "pinyin": "wǒ yě shì xuéshēng 。",
-          "translation": "I am a student too."
+          "translation": "Tôi cũng là học sinh."
         },
         {
           "id": "ex-3",
@@ -768,7 +768,7 @@
           ],
           "chinese": "她也有一个儿子。",
           "pinyin": "tā yě yǒu yīgè érzǐ 。",
-          "translation": "She also has a son."
+          "translation": "Cô ấy cũng có một người con trai."
         },
         {
           "id": "ex-4",
@@ -783,7 +783,7 @@
           ],
           "chinese": "他们也是法国人吗？",
           "pinyin": "tāmen yě shì fǎguó rén ma ？",
-          "translation": "Are they also French?"
+          "translation": "Họ cũng là người Pháp à?"
         },
         {
           "id": "ex-5",
@@ -797,7 +797,7 @@
           ],
           "chinese": "我也想学中文。",
           "pinyin": "wǒ yě xiǎng xué zhōngwén 。",
-          "translation": "I also want to learn Chinese."
+          "translation": "Tôi cũng muốn học tiếng Trung."
         },
         {
           "id": "ex-6",
@@ -810,7 +810,7 @@
           ],
           "chinese": "他们也会去吗？",
           "pinyin": "tāmen yě hùi qùma ？",
-          "translation": "Will they go too?"
+          "translation": "Họ cũng đi chứ?"
         },
         {
           "id": "ex-7",
@@ -825,7 +825,7 @@
           ],
           "chinese": "我妈妈也喜欢吃饺子。",
           "pinyin": "wǒ māmā yě xǐhuān chī jiǎozǐ 。",
-          "translation": "My mother also likes to eat dumplings."
+          "translation": "Mẹ tôi cũng thích ăn sủi cảo."
         },
         {
           "id": "ex-8",
@@ -839,7 +839,7 @@
           ],
           "chinese": "孩子也可以喝酒吗？",
           "pinyin": "háizǐ yě kěyǐ hējǐu ma ？",
-          "translation": "Can children drink alcohol too?"
+          "translation": "Trẻ con cũng uống được rượu sao?"
         },
         {
           "id": "ex-9",
@@ -855,7 +855,7 @@
           ],
           "chinese": "你也想来我家吗？",
           "pinyin": "nǐ yě xiǎng lái wǒ jiā ma ？",
-          "translation": "Do you want to come to my house too?"
+          "translation": "Bạn cũng muốn đến nhà tôi à?"
         },
         {
           "id": "ex-10",
@@ -872,7 +872,7 @@
           ],
           "chinese": "她也觉得这个老师不好。",
           "pinyin": "tā yě juédé zhè gè lǎoshī bù hǎo 。",
-          "translation": "She also thinks this teacher is bad."
+          "translation": "Cô ấy cũng thấy giáo viên này không tốt."
         },
         {
           "id": "ex-1",
@@ -885,7 +885,7 @@
           ],
           "chinese": "我也不喜欢。",
           "pinyin": "wǒ yě bù xǐhuān 。",
-          "translation": "I dont like it either."
+          "translation": "Tôi cũng không thích."
         },
         {
           "id": "ex-2",
@@ -898,7 +898,7 @@
           ],
           "chinese": "我也不知道。",
           "pinyin": "wǒ yě bù zhīdào 。",
-          "translation": "I do not know either."
+          "translation": "Tôi cũng không biết."
         },
         {
           "id": "ex-3",
@@ -911,7 +911,7 @@
           ],
           "chinese": "他也没有。",
           "pinyin": "tā yě méi yǒu 。",
-          "translation": "Neither did he."
+          "translation": "Anh ấy cũng không."
         },
         {
           "id": "ex-4",
@@ -928,7 +928,7 @@
           ],
           "chinese": "你也不想来我家吗？",
           "pinyin": "nǐ yě bù xiǎng lái wǒ jiā ma ？",
-          "translation": "Don't you want to come to my house?"
+          "translation": "Bạn không muốn đến nhà tôi à?"
         },
         {
           "id": "ex-5",
@@ -941,7 +941,7 @@
           ],
           "chinese": "你也很高。",
           "pinyin": "nǐ yě hěn gāo 。",
-          "translation": "You are also tall."
+          "translation": "Bạn cũng cao đấy."
         },
         {
           "id": "ex-6",
@@ -954,7 +954,7 @@
           ],
           "chinese": "他也很胖。",
           "pinyin": "tā yě hěn pàng 。",
-          "translation": "He is also very fat."
+          "translation": "Anh ấy cũng rất béo."
         },
         {
           "id": "ex-7",
@@ -968,7 +968,7 @@
           ],
           "chinese": "我爸爸也很帅。",
           "pinyin": "wǒ bàbà yě hěn shuài 。",
-          "translation": "My dad is also very handsome."
+          "translation": "Bố tôi cũng rất đẹp trai."
         },
         {
           "id": "ex-8",
@@ -982,7 +982,7 @@
           ],
           "chinese": "湖南菜也很辣。",
           "pinyin": "húnán cài yě hěn là 。",
-          "translation": "Hunan cuisine is also very spicy."
+          "translation": "Món ăn Hồ Nam cũng rất cay."
         },
         {
           "id": "ex-9",
@@ -997,7 +997,7 @@
           ],
           "chinese": "这种酒也很好喝。",
           "pinyin": "zhè zhǒng jǐu yě hěn hǎohē 。",
-          "translation": "This wine is also delicious."
+          "translation": "Rượu này cũng rất ngon."
         },
         {
           "id": "ex-10",
@@ -1012,7 +1012,7 @@
           ],
           "chinese": "这个地方也很漂亮。",
           "pinyin": "zhè gè dìfāng yě hěn piāoliàng 。",
-          "translation": "This place is also very beautiful."
+          "translation": "Nơi này cũng rất đẹp."
         },
         {
           "id": "ex-11",
@@ -1029,7 +1029,7 @@
           ],
           "chinese": "昨天很冷，今天也很冷。",
           "pinyin": "zuótiān hěn lěng ， jīntiān yě hěn lěng 。",
-          "translation": "It was cold yesterday and it is cold today."
+          "translation": "Hôm qua lạnh, hôm nay cũng lạnh."
         },
         {
           "id": "ex-12",
@@ -1044,7 +1044,7 @@
           ],
           "chinese": "这个问题也很麻烦。",
           "pinyin": "zhè gè wèntí yě hěn máfán 。",
-          "translation": "This problem is also very troublesome."
+          "translation": "Vấn đề này cũng rất rắc rối."
         },
         {
           "id": "ex-13",
@@ -1061,7 +1061,7 @@
           ],
           "chinese": "我觉得这个餐厅也很好。",
           "pinyin": "wǒ juédé zhè gè cāntīng yě hěn hǎo 。",
-          "translation": "I think this restaurant is also very good."
+          "translation": "Tôi thấy nhà hàng này cũng rất tốt."
         },
         {
           "id": "ex-14",
@@ -1077,7 +1077,7 @@
           ],
           "chinese": "你是美国人。我也是。",
           "pinyin": "nǐ shì měiguórén 。 wǒ yě shì 。",
-          "translation": "are you American. me too."
+          "translation": "Bạn là người Mỹ à? Tôi cũng vậy."
         }
       ],
       "titleVi": "Trạng từ cũng 也"
@@ -1089,9 +1089,9 @@
         "Subj. + 多 + Adj. ?"
       ],
       "usedFor": [
-        "Asking questions",
-        "Adding more explanation",
-        "Expressing quality"
+        "Đặt câu hỏi",
+        "Bổ sung thêm giải thích",
+        "Biểu thị mức độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG9LLJU",
       "examples": [
@@ -1105,7 +1105,7 @@
           ],
           "chinese": "她多高？",
           "pinyin": "tā duō gāo ？",
-          "translation": "How tall is she?"
+          "translation": "Cô ấy cao bao nhiêu?"
         },
         {
           "id": "ex-2",
@@ -1117,7 +1117,7 @@
           ],
           "chinese": "你家多大？",
           "pinyin": "nǐjiā duō dà ？",
-          "translation": "How big is your home?"
+          "translation": "Nhà bạn rộng bao nhiêu?"
         },
         {
           "id": "ex-3",
@@ -1131,7 +1131,7 @@
           ],
           "chinese": "你的孩子多大？",
           "pinyin": "nǐ de háizǐ duō dà ？",
-          "translation": "How old are you children?"
+          "translation": "Các con bạn bao nhiêu tuổi rồi?"
         },
         {
           "id": "ex-4",
@@ -1143,7 +1143,7 @@
           ],
           "chinese": "黄河多长？",
           "pinyin": "huánghé duō cháng ？",
-          "translation": "How long is the Yellow River?"
+          "translation": "Sông Hoàng Hà dài bao nhiêu?"
         },
         {
           "id": "ex-5",
@@ -1158,7 +1158,7 @@
           ],
           "chinese": "你家离这儿多远？",
           "pinyin": "nǐ jiā lí zhèér duō yuǎn ？",
-          "translation": "How far is your home from here?"
+          "translation": "Nhà bạn cách đây bao xa?"
         },
         {
           "id": "ex-6",
@@ -1174,7 +1174,7 @@
           ],
           "chinese": "你要在美国待多久？",
           "pinyin": "nǐ yào zài měiguó dài duō jǐu ？",
-          "translation": "How long will you stay in the United States?"
+          "translation": "Bạn sẽ ở lại Mỹ bao lâu?"
         },
         {
           "id": "ex-7",
@@ -1187,7 +1187,7 @@
           ],
           "chinese": "这些东西多重？",
           "pinyin": "zhèxiē dōngxī duō zhòng ？",
-          "translation": "How heavy are these things?"
+          "translation": "Những đồ này nặng bao nhiêu?"
         },
         {
           "id": "ex-8",
@@ -1203,7 +1203,7 @@
           ],
           "chinese": "你知道我们现在多胖吗？",
           "pinyin": "nǐ zhīdào wǒmen xiànzài duō pàng ma ？",
-          "translation": "Do you know how fat we are now?"
+          "translation": "Bạn có biết bây giờ chúng ta béo thế nào rồi không?"
         },
         {
           "id": "ex-9",
@@ -1220,7 +1220,7 @@
           ],
           "chinese": "你知道这里的冬天多冷吗？",
           "pinyin": "nǐ zhīdào zhèlǐ de dōngtiān duō lěng ma ？",
-          "translation": "Do you know how cold it is in winter?"
+          "translation": "Bạn có biết mùa đông lạnh như thế nào không?"
         },
         {
           "id": "ex-10",
@@ -1237,7 +1237,7 @@
           ],
           "chinese": "你知道上海的房子多贵吗？",
           "pinyin": "nǐ zhīdào shànghǎi de fángzǐ duō gùi ma ？",
-          "translation": "Do you know how expensive a house in Shanghai is?"
+          "translation": "Bạn có biết nhà ở Thượng Hải đắt như thế nào không?"
         }
       ],
       "titleVi": "Hỏi về bằng cấp với 多"
@@ -1250,7 +1250,7 @@
         "Subj. + 不太 + Verb"
       ],
       "usedFor": [
-        "Adding more explanation"
+        "Bổ sung thêm giải thích"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGUNMHU",
       "examples": [
@@ -1266,7 +1266,7 @@
           ],
           "chinese": "我家不太大。",
           "pinyin": "wǒ jiā bù tài dà 。",
-          "translation": "My home is not too big."
+          "translation": "Nhà tôi không lớn lắm."
         },
         {
           "id": "ex-2",
@@ -1281,7 +1281,7 @@
           ],
           "chinese": "那个地方不太远。",
           "pinyin": "nà gè dìfāng bù tài yuǎn 。",
-          "translation": "That place is not too far away."
+          "translation": "Nơi đó không xa lắm."
         },
         {
           "id": "ex-3",
@@ -1295,7 +1295,7 @@
           ],
           "chinese": "老板今天不太高兴。",
           "pinyin": "lǎobǎn jīntiān bù tài gāoxīng 。",
-          "translation": "The boss is not very happy today."
+          "translation": "Hôm nay sếp không vui lắm."
         },
         {
           "id": "ex-4",
@@ -1312,7 +1312,7 @@
           ],
           "chinese": "这个店的衣服不太贵。",
           "pinyin": "zhè gè diàn de yīfú bù tài gùi 。",
-          "translation": "The clothes in this shop are not too expensive."
+          "translation": "Quần áo ở cửa hàng này không đắt lắm."
         },
         {
           "id": "ex-5",
@@ -1327,7 +1327,7 @@
           ],
           "chinese": "我觉得他不太聪明。",
           "pinyin": "wǒ juédé tā bù tài cōngmíng 。",
-          "translation": "I think he is not very smart."
+          "translation": "Tôi nghĩ anh ấy không thông minh lắm."
         },
         {
           "id": "ex-1",
@@ -1340,7 +1340,7 @@
           ],
           "chinese": "我不太懂。",
           "pinyin": "wǒ bù tài dǒng 。",
-          "translation": "I do not understand."
+          "translation": "Tôi không hiểu lắm."
         },
         {
           "id": "ex-2",
@@ -1355,7 +1355,7 @@
           ],
           "chinese": "我不太会说英语。",
           "pinyin": "wǒ bù tài hùi shuō yīngyǔ 。",
-          "translation": "I do not speak English well."
+          "translation": "Tôi nói tiếng Anh không tốt lắm."
         },
         {
           "id": "ex-3",
@@ -1369,7 +1369,7 @@
           ],
           "chinese": "他们不太想去。",
           "pinyin": "tāmen bù tài xiǎng qù 。",
-          "translation": "They don't want to go very much."
+          "translation": "Họ không muốn đi lắm."
         },
         {
           "id": "ex-4",
@@ -1386,7 +1386,7 @@
           ],
           "chinese": "我哥哥不太喜欢他的工作。",
           "pinyin": "wǒ gēgē bù tài xǐhuān tā de gōngzuò 。",
-          "translation": "My brother doesn't like his work very much."
+          "translation": "Anh trai tôi không thích công việc của mình lắm."
         },
         {
           "id": "ex-5",
@@ -1402,7 +1402,7 @@
           ],
           "chinese": "他不太明白老板的意思。",
           "pinyin": "tā bù tài míngbái lǎobǎn de yìsī 。",
-          "translation": "He didn't quite understand what the boss meant."
+          "translation": "Anh ấy không hiểu rõ lắm ý của sếp."
         }
       ],
       "titleVi": "Diễn tả không hay lắm với 不 太"
@@ -1414,7 +1414,7 @@
         "Noun 1 + 和 + Noun 2"
       ],
       "usedFor": [
-        "Listing"
+        "Liệt kê"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGP0KFF",
       "examples": [
@@ -1427,7 +1427,7 @@
           ],
           "chinese": "你和我",
           "pinyin": "nǐ hé wǒ",
-          "translation": "you and me"
+          "translation": "bạn và tôi"
         },
         {
           "id": "ex-2",
@@ -1441,7 +1441,7 @@
           ],
           "chinese": "老板喜欢咖啡和茶。",
           "pinyin": "lǎobǎn xǐhuān kāfēi hé chá 。",
-          "translation": "The boss likes coffee and tea."
+          "translation": "Sếp thích cà phê và trà."
         },
         {
           "id": "ex-3",
@@ -1458,7 +1458,7 @@
           ],
           "chinese": "我的爷爷和奶奶都70岁。",
           "pinyin": "wǒ de yéyé hé nǎinǎi dū 70 sùi 。",
-          "translation": "My grandpa and grandma are both 70 years old."
+          "translation": "Ông bà tôi đều 70 tuổi."
         },
         {
           "id": "ex-4",
@@ -1475,7 +1475,7 @@
           ],
           "chinese": "他和他女朋友都喜欢中国菜。",
           "pinyin": "tā hé tā nv̌péngyǒu dū xǐhuān zhōngguó cài 。",
-          "translation": "He and his girlfriend love Chinese food."
+          "translation": "Anh ấy và bạn gái đều thích đồ ăn Trung Quốc."
         },
         {
           "id": "ex-5",
@@ -1494,7 +1494,7 @@
           ],
           "chinese": "你爸爸和你妈妈都是美国人吗？",
           "pinyin": "nǐ bàbà hé nǐ māmā dū shì měiguó rén ma ？",
-          "translation": "Are your father and mother both American?"
+          "translation": "Cả bố và mẹ bạn đều là người Mỹ à?"
         },
         {
           "id": "ex-6",
@@ -1509,7 +1509,7 @@
           ],
           "chinese": "手机和电脑都很贵。",
           "pinyin": "shǒujī hé diànnǎo dū hěn gùi 。",
-          "translation": "Mobile phones and computers are very expensive."
+          "translation": "Điện thoại di động và máy tính đều rất đắt."
         },
         {
           "id": "ex-7",
@@ -1525,7 +1525,7 @@
           ],
           "chinese": "德语和法语都很难吗？",
           "pinyin": "déyǔ hé fǎyǔ dū hěn nán ma ？",
-          "translation": "Are German and French difficult?"
+          "translation": "Tiếng Đức và tiếng Pháp có khó không?"
         },
         {
           "id": "ex-8",
@@ -1540,7 +1540,7 @@
           ],
           "chinese": "今天和明天都可以吗？",
           "pinyin": "jīntiān hé míngtiān dū kěyǐ ma ？",
-          "translation": "Is it OK today and tomorrow?"
+          "translation": "Hôm nay và ngày mai có được không?"
         }
       ],
       "titleVi": "Thể hiện và với anh ấy"
@@ -1552,8 +1552,8 @@
         "Time / Verb + 以后, ...."
       ],
       "usedFor": [
-        "Sequencing events in time",
-        "Expressing time and date"
+        "Sắp xếp thứ tự các sự kiện theo thời gian",
+        "Biểu đạt thời gian và ngày tháng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRLQGY",
       "examples": [
@@ -1571,7 +1571,7 @@
           ],
           "chinese": "下午三点以后，我不在家。",
           "pinyin": "xiàwǔ sāndiǎn yǐhòu， wǒ bù zài jiā 。",
-          "translation": "After three in the afternoon, I am not at home."
+          "translation": "Sau ba giờ chiều, tôi không có ở nhà."
         },
         {
           "id": "ex-2",
@@ -1589,7 +1589,7 @@
           ],
           "chinese": "来中国以后，她认识了她的老公。",
           "pinyin": "lái zhōngguó yǐhòu， tā rènshì le tā de lǎogōng 。",
-          "translation": "After coming to China, she met her husband."
+          "translation": "Sau khi đến Trung Quốc, cô ấy đã gặp chồng mình."
         },
         {
           "id": "ex-3",
@@ -1603,7 +1603,7 @@
           ],
           "chinese": "她一个月以后开始上班。",
           "pinyin": "tā yīgèyuè yǐhòu kāishǐ shàngbān 。",
-          "translation": "She started work one month later."
+          "translation": "Một tháng sau cô ấy bắt đầu đi làm."
         },
         {
           "id": "ex-4",
@@ -1620,7 +1620,7 @@
           ],
           "chinese": "吃完午饭以后，我们要开会。",
           "pinyin": "chī wán wǔfàn yǐhòu ， wǒmen yào kāihùi 。",
-          "translation": "After lunch, we have a meeting."
+          "translation": "Sau bữa trưa, chúng tôi có một cuộc họp."
         },
         {
           "id": "ex-5",
@@ -1636,7 +1636,7 @@
           ],
           "chinese": "几年以后，我们公司会更大。",
           "pinyin": "jīnián yǐhòu ，wǒmen gōngsī hùi gèng dà 。",
-          "translation": "In a few years, our company will be bigger."
+          "translation": "Vài năm nữa, công ty chúng tôi sẽ lớn mạnh hơn."
         },
         {
           "id": "ex-6",
@@ -1649,7 +1649,7 @@
           ],
           "chinese": "老板半个小时以后回来。",
           "pinyin": "lǎobǎn bàngèxiǎoshí yǐhòu húilái 。",
-          "translation": "The boss will be back in half an hour."
+          "translation": "Sếp sẽ quay lại sau nửa tiếng nữa."
         },
         {
           "id": "ex-7",
@@ -1666,7 +1666,7 @@
           ],
           "chinese": "下班以后你想跟我们一起去打球吗?",
           "pinyin": "xiàbān yǐhòunǐ xiǎng gēn wǒmen yīqǐ qù dǎqíu ma?",
-          "translation": "Do you want to play with us after work?"
+          "translation": "Tan làm bạn có muốn đi chơi với chúng tôi không?"
         },
         {
           "id": "ex-8",
@@ -1684,7 +1684,7 @@
           ],
           "chinese": "老板来了以后，大家都不说话了。",
           "pinyin": "lǎobǎn lái le yǐhòu ，dàjiā dū bù shuōhuà le 。",
-          "translation": "After the boss came, everyone stopped talking."
+          "translation": "Sau khi sếp đến, mọi người đều ngừng nói chuyện."
         },
         {
           "id": "ex-9",
@@ -1699,7 +1699,7 @@
           ],
           "chinese": "你到家以后给我打电话。",
           "pinyin": "nǐ dàojiā yǐhòu gěi wǒ dǎdiànhuà 。",
-          "translation": "Call me when you get home."
+          "translation": "Khi nào về đến nhà hãy gọi cho tôi."
         },
         {
           "id": "ex-10",
@@ -1714,7 +1714,7 @@
           ],
           "chinese": "结婚以后爸爸不喝酒了。",
           "pinyin": "jiéhūn yǐhòu bàbà bù hējǐu le 。",
-          "translation": "Dad stopped drinking after marriage."
+          "translation": "Sau khi kết hôn bố đã bỏ rượu."
         }
       ],
       "titleVi": "Sau một thời gian cụ thể với 以后"
@@ -1726,9 +1726,9 @@
         "Time / Verb + 以前 ，⋯⋯"
       ],
       "usedFor": [
-        "Referring to the past",
-        "Sequencing events in time",
-        "Expressing time and date"
+        "Đề cập đến quá khứ",
+        "Sắp xếp thứ tự các sự kiện theo thời gian",
+        "Biểu đạt thời gian và ngày tháng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJ2OJC",
       "examples": [
@@ -1746,7 +1746,7 @@
           ],
           "chinese": "吃饭以前，你洗手了吗？",
           "pinyin": "chīfàn yǐqián ，nǐ xǐ shǒu le ma ？",
-          "translation": "Did you wash your hands before eating?"
+          "translation": "Bạn đã rửa tay trước khi ăn chưa?"
         },
         {
           "id": "ex-2",
@@ -1760,7 +1760,7 @@
           ],
           "chinese": "睡觉以前，不要吃东西。",
           "pinyin": "shùijué yǐqián ，bùyào chī dōngxī 。",
-          "translation": "Don't eat anything before going to bed."
+          "translation": "Đừng ăn gì trước khi đi ngủ."
         },
         {
           "id": "ex-3",
@@ -1777,7 +1777,7 @@
           ],
           "chinese": "两年以前，你认识他吗？",
           "pinyin": "liǎng nián yǐqián ， nǐ rènshì tā ma ？",
-          "translation": "Did you know him two years ago?"
+          "translation": "Hai năm trước bạn đã quen biết anh ấy chưa?"
         },
         {
           "id": "ex-4",
@@ -1794,7 +1794,7 @@
           ],
           "chinese": "星期五以前，你要做完这些工作。",
           "pinyin": "xīngqīwǔ yǐqián ，nǐ yào zuò wán zhèxiē gōngzuò 。",
-          "translation": "Before Friday, you have to finish these tasks."
+          "translation": "Trước thứ Sáu, bạn phải hoàn thành những nhiệm vụ này."
         },
         {
           "id": "ex-5",
@@ -1810,7 +1810,7 @@
           ],
           "chinese": "上大学以前，你来过上海吗？",
           "pinyin": "shàng dàxué yǐqián，nǐ lái guò shànghǎi ma ？",
-          "translation": "Have you been to Shanghai before going to university?"
+          "translation": "Trước khi học đại học, bạn đã từng đến Thượng Hải chưa?"
         },
         {
           "id": "ex-6",
@@ -1826,7 +1826,7 @@
           ],
           "chinese": "结婚以前，你应该先买房子。",
           "pinyin": "jiéhūn yǐqián ，nǐ yìnggāi xiān mǎi fángzǐ 。",
-          "translation": "Before you get married, you should buy a house."
+          "translation": "Trước khi kết hôn, bạn nên mua một căn nhà."
         },
         {
           "id": "ex-7",
@@ -1842,7 +1842,7 @@
           ],
           "chinese": "二十年以前，这里是一个公园。",
           "pinyin": "èrshí nián yǐqián，zhèlǐ shì yī gè gōngyuán 。",
-          "translation": "Twenty years ago, this was a park."
+          "translation": "Hai mươi năm trước, nơi này là một công viên."
         },
         {
           "id": "ex-8",
@@ -1858,7 +1858,7 @@
           ],
           "chinese": "几个月以前，他们分手了。",
           "pinyin": "jī gè yuè yǐqián ，tāmen fēnshǒu le 。",
-          "translation": "A few months ago, they broke up."
+          "translation": "Vài tháng trước, họ đã chia tay."
         },
         {
           "id": "ex-9",
@@ -1872,7 +1872,7 @@
           ],
           "chinese": "毕业以前，我要找到工作。",
           "pinyin": "bìyè yǐqián，wǒ yào zhǎodào gōngzuò 。",
-          "translation": "Before graduation, I have to find a job."
+          "translation": "Trước khi tốt nghiệp, tôi phải tìm được một công việc."
         },
         {
           "id": "ex-10",
@@ -1887,7 +1887,7 @@
           ],
           "chinese": "当总统以前，Obama没有白头发。",
           "pinyin": "dāng zǒngtǒng yǐqián，Obama méiyǒu bái tóufā 。",
-          "translation": "Before becoming president, Obama had no white hair."
+          "translation": "Trước khi làm tổng thống, Obama không có sợi tóc bạc nào."
         }
       ],
       "titleVi": "Trước một thời điểm cụ thể với 以前"
@@ -1899,9 +1899,9 @@
         "Subj. + Time + Verb + Obj. / Time + Subj. + Verb + Obj."
       ],
       "usedFor": [
-        "Sentence Patterns",
-        "Sequencing events in time",
-        "Expressing time and date"
+        "Mẫu câu",
+        "Sắp xếp thứ tự các sự kiện theo thời gian",
+        "Biểu đạt thời gian và ngày tháng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG5RWKO",
       "examples": [
@@ -1917,7 +1917,7 @@
           ],
           "chinese": "昨天我去了酒吧。",
           "pinyin": "zuótiān wǒ qù le jǐuba 。",
-          "translation": "I went to the bar yesterday."
+          "translation": "Hôm qua tôi đã đến quán bar."
         },
         {
           "id": "ex-2",
@@ -1931,7 +1931,7 @@
           ],
           "chinese": "我昨天去了酒吧。",
           "pinyin": "wǒ zuótiān qù le jǐuba 。",
-          "translation": "I went to the bar yesterday."
+          "translation": "Hôm qua tôi đã đến quán bar."
         },
         {
           "id": "ex-3",
@@ -1947,7 +1947,7 @@
           ],
           "chinese": "下个星期他要回国。",
           "pinyin": "xià gè xīngqī tā yào húi guó 。",
-          "translation": "He will return to China next week."
+          "translation": "Tuần sau anh ấy sẽ về Trung Quốc."
         },
         {
           "id": "ex-4",
@@ -1963,7 +1963,7 @@
           ],
           "chinese": "他下个星期要回国。",
           "pinyin": "tā xià gè xīngqī yào húi guó 。",
-          "translation": "He will return home next week."
+          "translation": "Tuần sau anh ấy sẽ về nhà."
         },
         {
           "id": "ex-5",
@@ -1979,7 +1979,7 @@
           ],
           "chinese": "明年我要开一个公司。",
           "pinyin": "míngnián wǒ yào kāi yī gè gōngsī 。",
-          "translation": "I will start a company next year."
+          "translation": "Năm sau tôi sẽ mở công ty."
         },
         {
           "id": "ex-6",
@@ -1995,7 +1995,7 @@
           ],
           "chinese": "我明年要开一个公司。",
           "pinyin": "wǒ míngnián yào kāi yī gè gōngsī 。",
-          "translation": "I will start a company next year."
+          "translation": "Năm sau tôi sẽ mở công ty."
         },
         {
           "id": "ex-7",
@@ -2010,7 +2010,7 @@
           ],
           "chinese": "下个月我们结婚吧？",
           "pinyin": "xià gè yuè wǒmen jiéhūn ba ？",
-          "translation": "Shall we get married next month?"
+          "translation": "Tháng sau chúng mình kết hôn nhé?"
         },
         {
           "id": "ex-8",
@@ -2025,7 +2025,7 @@
           ],
           "chinese": "我们下个月结婚吧？",
           "pinyin": "wǒmen xià gè yuè jiéhūn ba ？",
-          "translation": "Shall we get married next month?"
+          "translation": "Tháng sau chúng mình kết hôn nhé?"
         },
         {
           "id": "ex-9",
@@ -2041,7 +2041,7 @@
           ],
           "chinese": "现在你能来我办公室吗？",
           "pinyin": "xiànzài nǐ néng lái wǒ bàngōngshì ma ？",
-          "translation": "Can you come to my office now?"
+          "translation": "Bây giờ bạn có thể đến văn phòng của tôi không?"
         },
         {
           "id": "ex-10",
@@ -2057,7 +2057,7 @@
           ],
           "chinese": "你现在能来我办公室吗？",
           "pinyin": "nǐ xiànzài néng lái wǒ bàngōngshì ma ？",
-          "translation": "Can you come to my office now?"
+          "translation": "Bây giờ bạn có thể đến văn phòng của tôi không?"
         }
       ],
       "titleVi": "Thời gian từ và trật tự từ"
@@ -2070,8 +2070,8 @@
         "Subj. + Number + 岁 + 半"
       ],
       "usedFor": [
-        "Introducing people",
-        "Describing people"
+        "Giới thiệu người khác",
+        "Miêu tả người"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGQUKJF",
       "examples": [
@@ -2085,7 +2085,7 @@
           ],
           "chinese": "我20岁。",
           "pinyin": "wǒ 20 sùi 。",
-          "translation": "I am 20 years old."
+          "translation": "Tôi 20 tuổi."
         },
         {
           "id": "ex-2",
@@ -2098,7 +2098,7 @@
           ],
           "chinese": "我儿子一岁。",
           "pinyin": "wǒ érzǐ yī sùi 。",
-          "translation": "My son is one year old."
+          "translation": "Con trai tôi một tuổi."
         },
         {
           "id": "ex-3",
@@ -2112,7 +2112,7 @@
           ],
           "chinese": "我妈妈今年45岁。",
           "pinyin": "wǒ māmā jīnnián 45 sùi 。",
-          "translation": "My mother is 45 years old this year."
+          "translation": "Năm nay mẹ tôi 45 tuổi."
         },
         {
           "id": "ex-4",
@@ -2127,7 +2127,7 @@
           ],
           "chinese": "你爷爷今年80岁吗？",
           "pinyin": "nǐ yéyé jīnnián 80 sùi ma ？",
-          "translation": "Is your grandpa 80 years old this year?"
+          "translation": "Năm nay ông bạn 80 tuổi phải không?"
         },
         {
           "id": "ex-5",
@@ -2142,7 +2142,7 @@
           ],
           "chinese": "他女朋友也20岁吗？",
           "pinyin": "tā nv̌péngyǒu yě 20 sùi ma ？",
-          "translation": "Is his girlfriend 20 years old?"
+          "translation": "Bạn gái của anh ấy 20 tuổi à?"
         },
         {
           "id": "ex-6",
@@ -2156,7 +2156,7 @@
           ],
           "chinese": "我的孩子一岁。",
           "pinyin": "wǒ de háizǐ yī sùi 。",
-          "translation": "My child is one year old."
+          "translation": "Con tôi một tuổi."
         },
         {
           "id": "ex-1",
@@ -2166,7 +2166,7 @@
           ],
           "chinese": "她两岁半。",
           "pinyin": "tāliǎngsùibàn 。",
-          "translation": "She is two and a half years old."
+          "translation": "Bé được hai tuổi rưỡi."
         },
         {
           "id": "ex-2",
@@ -2180,7 +2180,7 @@
           ],
           "chinese": "我儿子一岁半。",
           "pinyin": "wǒ érzǐ yī sùi bàn 。",
-          "translation": "My son is one and a half years old."
+          "translation": "Con trai tôi một tuổi rưỡi."
         }
       ],
       "titleVi": "Tuổi với 虽"
@@ -2193,7 +2193,7 @@
         "Verb + 个 + Noun"
       ],
       "usedFor": [
-        "Expressing quantity"
+        "Biểu thị số lượng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGI0T9S",
       "examples": [
@@ -2213,7 +2213,7 @@
           ],
           "chinese": "十个男人，七个傻，八个坏。",
           "pinyin": "shí gè nánrén， qī gè shǎ， bā gè huài 。",
-          "translation": "Ten men, seven silly, and eight bad."
+          "translation": "Mười người đàn ông thì bảy người ngốc, tám người xấu."
         },
         {
           "id": "ex-1",
@@ -2226,7 +2226,7 @@
           ],
           "chinese": "他是个老外。",
           "pinyin": "tā shì gè lǎowài 。",
-          "translation": "He is a foreigner."
+          "translation": "Anh ấy là người nước ngoài."
         },
         {
           "id": "ex-2",
@@ -2239,7 +2239,7 @@
           ],
           "chinese": "我有个儿子。",
           "pinyin": "wǒ yǒu gè érzǐ 。",
-          "translation": "I have a son."
+          "translation": "Tôi có một người con trai."
         },
         {
           "id": "ex-3",
@@ -2253,7 +2253,7 @@
           ],
           "chinese": "她是个好老师。",
           "pinyin": "tā shì gè hǎo lǎoshī 。",
-          "translation": "She is a good teacher."
+          "translation": "Cô ấy là một giáo viên giỏi."
         },
         {
           "id": "ex-4",
@@ -2268,7 +2268,7 @@
           ],
           "chinese": "你想吃个包子吗？",
           "pinyin": "nǐ xiǎng chī gè bāozǐ ma ？",
-          "translation": "Do you want to eat a bun?"
+          "translation": "Bạn có muốn ăn một chiếc bánh bao không?"
         },
         {
           "id": "ex-5",
@@ -2283,7 +2283,7 @@
           ],
           "chinese": "老师，我有个问题。",
           "pinyin": "lǎoshī ， wǒ yǒu gè wèntí 。",
-          "translation": "Teacher, I have a question."
+          "translation": "Thầy ơi, em có một câu hỏi."
         }
       ],
       "titleVi": "Đo từ ge"
@@ -2295,7 +2295,7 @@
         "x 年 + y 月 + z （日 /  号）"
       ],
       "usedFor": [
-        "Expressing time and date"
+        "Biểu đạt thời gian và ngày tháng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGT3KF6",
       "examples": [
@@ -2311,7 +2311,7 @@
           ],
           "chinese": "1910年8月9号",
           "pinyin": "1910 nián 8 yuè 9 hào",
-          "translation": "9-Aug-10"
+          "translation": "Ngày 9 tháng 8 năm 2010"
         },
         {
           "id": "ex-2",
@@ -2325,7 +2325,7 @@
           ],
           "chinese": "2001年7月20日",
           "pinyin": "2001 nián 7 yuè 20 rì",
-          "translation": "20-Jul-01"
+          "translation": "Ngày 20 tháng 7 năm 2001"
         },
         {
           "id": "ex-3",
@@ -2340,7 +2340,7 @@
           ],
           "chinese": "1月1日是新年。",
           "pinyin": "1 yuè 1 rì shì xīnnián 。",
-          "translation": "January 1st is the new year."
+          "translation": "Ngày 1 tháng 1 là năm mới."
         },
         {
           "id": "ex-4",
@@ -2355,7 +2355,7 @@
           ],
           "chinese": "12月24日是平安夜。",
           "pinyin": "12 yuè 24 rì shì píngānyè 。",
-          "translation": "December 24 is Christmas Eve."
+          "translation": "Ngày 24 tháng 12 là đêm Giáng sinh."
         },
         {
           "id": "ex-5",
@@ -2371,7 +2371,7 @@
           ],
           "chinese": "10月1号我们去上海。",
           "pinyin": "10 yuè 1 hào wǒmen qù shànghǎi 。",
-          "translation": "We will go to Shanghai on October 1."
+          "translation": "Chúng tôi sẽ đi Thượng Hải vào ngày 1 tháng 10."
         },
         {
           "id": "ex-6",
@@ -2386,7 +2386,7 @@
           ],
           "chinese": "我1990年7月出生。",
           "pinyin": "wǒ 1990 nián 7 yuè chūshēng 。",
-          "translation": "I was born in July 1990."
+          "translation": "Tôi sinh vào tháng 7 năm 1990."
         },
         {
           "id": "ex-7",
@@ -2403,7 +2403,7 @@
           ],
           "chinese": "你的生日是11月11号吗？",
           "pinyin": "nǐ de shēngrì shì 11 yuè 11 hàoma ？",
-          "translation": "Is your birthday November 11th?"
+          "translation": "Sinh nhật của bạn là ngày 11 tháng 11 phải không?"
         },
         {
           "id": "ex-8",
@@ -2422,7 +2422,7 @@
           ],
           "chinese": "我2006年4月17号认识了他。",
           "pinyin": "wǒ 2006 nián 4 yuè 17 hào rènshì le tā 。",
-          "translation": "I met him on April 17, 2006."
+          "translation": "Tôi đã gặp anh ấy vào ngày 17 tháng 4 năm 2006."
         },
         {
           "id": "ex-9",
@@ -2440,7 +2440,7 @@
           ],
           "chinese": "1980年9月4号我们结婚了。",
           "pinyin": "1980 nián 9 yuè 4 hào wǒmen jiéhūn le 。",
-          "translation": "We got married on September 4, 1980."
+          "translation": "Chúng tôi kết hôn vào ngày 4 tháng 9 năm 1980."
         }
       ],
       "titleVi": "Cấu trúc ngày tháng"
@@ -2454,7 +2454,7 @@
         "Hour + 点 + 差 + Minutes + 分"
       ],
       "usedFor": [
-        "Expressing time and date"
+        "Biểu đạt thời gian và ngày tháng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDTO07",
       "examples": [
@@ -2481,7 +2481,7 @@
           ],
           "chinese": "三点零八分",
           "pinyin": "sān diǎn líng bā fēn",
-          "translation": "3.08"
+          "translation": "3:08"
         },
         {
           "id": "ex-3",
@@ -2494,7 +2494,7 @@
           ],
           "chinese": "五点零三分",
           "pinyin": "wǔ diǎn líng sān fēn",
-          "translation": "5.03"
+          "translation": "5:03"
         },
         {
           "id": "ex-4",
@@ -2520,7 +2520,7 @@
           ],
           "chinese": "八点零五分",
           "pinyin": "bā diǎn líng wǔ fēn",
-          "translation": "8.05"
+          "translation": "8:05"
         },
         {
           "id": "ex-1",
@@ -2532,7 +2532,7 @@
           ],
           "chinese": "两点十分",
           "pinyin": "liǎng diǎn shí fēn",
-          "translation": "Ten o'clock"
+          "translation": "Mười giờ"
         },
         {
           "id": "ex-2",
@@ -2583,7 +2583,7 @@
           ],
           "chinese": "十二点一刻",
           "pinyin": "shí èr diǎn yī kè",
-          "translation": "Quarter past twelve"
+          "translation": "Mười hai giờ mười lăm phút"
         },
         {
           "id": "ex-6",
@@ -2595,7 +2595,7 @@
           ],
           "chinese": "六点三刻",
           "pinyin": "lìu diǎn sān kè",
-          "translation": "Six thirty"
+          "translation": "Sáu giờ rưỡi"
         },
         {
           "id": "ex-1",
@@ -2608,7 +2608,7 @@
           ],
           "chinese": "差五分三点",
           "pinyin": "chà wǔ fēn sān diǎn",
-          "translation": "Five points to three points"
+          "translation": "Ba giờ kém năm phút"
         },
         {
           "id": "ex-2",
@@ -2621,7 +2621,7 @@
           ],
           "chinese": "十二点差三分",
           "pinyin": "shíèr diǎn chà sān fēn",
-          "translation": "Three points from twelve"
+          "translation": "Mười hai giờ kém ba phút"
         }
       ],
       "titleVi": "Cấu trúc thời gian (nâng cao)"
@@ -2635,7 +2635,7 @@
         "x 点 + 半"
       ],
       "usedFor": [
-        "Expressing time and date"
+        "Biểu đạt thời gian và ngày tháng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGN6BBU",
       "examples": [
@@ -2664,7 +2664,7 @@
           ],
           "chinese": "十点差两分",
           "pinyin": "shí diǎn chà liǎng fēn",
-          "translation": "Ten points to two points"
+          "translation": "Hai giờ kém mười phút"
         },
         {
           "id": "ex-1",
@@ -2675,7 +2675,7 @@
           ],
           "chinese": "上午七点",
           "pinyin": "shàngwǔ qī diǎn",
-          "translation": "Seven o'clock in the morning"
+          "translation": "Bảy giờ sáng"
         },
         {
           "id": "ex-2",
@@ -2686,7 +2686,7 @@
           ],
           "chinese": "下午四点",
           "pinyin": "xiàwǔ sì diǎn",
-          "translation": "Four p.m"
+          "translation": "Bốn giờ chiều"
         },
         {
           "id": "ex-3",
@@ -2697,7 +2697,7 @@
           ],
           "chinese": "中午十二点",
           "pinyin": "zhōngwǔ shíèr diǎn",
-          "translation": "at noon"
+          "translation": "Vào buổi trưa"
         },
         {
           "id": "ex-4",
@@ -2709,7 +2709,7 @@
           ],
           "chinese": "明天晚上七点",
           "pinyin": "míngtiān wǎnshàng qī diǎn",
-          "translation": "Tomorrow at seven o'clock"
+          "translation": "Bảy giờ ngày mai"
         },
         {
           "id": "ex-5",
@@ -2724,7 +2724,7 @@
           ],
           "chinese": "9月9号早上六点",
           "pinyin": "9 yuè 9 hào zǎoshàng lìu diǎn",
-          "translation": "6am on September 9th"
+          "translation": "6 giờ sáng ngày 9 tháng 9"
         },
         {
           "id": "ex-6",
@@ -2736,7 +2736,7 @@
           ],
           "chinese": "星期三上午九点",
           "pinyin": "xīngqīsān shàngwǔ jǐu diǎn",
-          "translation": "Wednesday at 9 am"
+          "translation": "9 giờ sáng thứ Tư"
         },
         {
           "id": "ex-1",
@@ -2747,7 +2747,7 @@
           ],
           "chinese": "五点半",
           "pinyin": "wǔ diǎn bàn",
-          "translation": "Half past five"
+          "translation": "Năm giờ rưỡi"
         },
         {
           "id": "ex-2",
@@ -2759,7 +2759,7 @@
           ],
           "chinese": "下午两点半",
           "pinyin": "xiàwǔ liǎng diǎn bàn",
-          "translation": "Half past two"
+          "translation": "Hai giờ rưỡi"
         },
         {
           "id": "ex-3",
@@ -2772,7 +2772,7 @@
           ],
           "chinese": "星期天上午十点半",
           "pinyin": "xīngqītiān shàngwǔ shí diǎn bàn",
-          "translation": "Sunday at ten thirty"
+          "translation": "Mười giờ ba mươi Chủ nhật"
         }
       ],
       "titleVi": "Cấu trúc thời gian (cơ bản)"
@@ -2785,7 +2785,7 @@
         "Pronoun + Noun"
       ],
       "usedFor": [
-        "Expressing possession"
+        "Biểu thị sự sở hữu"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGCI0KG",
       "examples": [
@@ -2800,7 +2800,7 @@
           ],
           "chinese": "昨天晚上七点半",
           "pinyin": "zuótiān wǎnshàng qī diǎn bàn",
-          "translation": "Last night at 7:30"
+          "translation": "7 giờ 30 tối qua"
         },
         {
           "id": "ex-2",
@@ -2813,7 +2813,7 @@
           ],
           "chinese": "今天下午四点半",
           "pinyin": "jīntiān xiàwǔ sì diǎn bàn",
-          "translation": "This afternoon at 4:30"
+          "translation": "4 giờ 30 chiều nay"
         },
         {
           "id": "ex-1",
@@ -2826,7 +2826,7 @@
           ],
           "chinese": "我家很大。",
           "pinyin": "wǒ jiā hěn dà 。",
-          "translation": "My family is very big."
+          "translation": "Gia đình tôi rất lớn."
         },
         {
           "id": "ex-2",
@@ -2839,7 +2839,7 @@
           ],
           "chinese": "你哥哥很高。",
           "pinyin": "nǐ gēgē hěn gāo 。",
-          "translation": "Your brother is tall."
+          "translation": "Anh trai của bạn rất cao."
         },
         {
           "id": "ex-3",
@@ -2852,7 +2852,7 @@
           ],
           "chinese": "这是我女朋友。",
           "pinyin": "zhè shì wǒ nv̌péngyǒu 。",
-          "translation": "This is my girlfriend."
+          "translation": "Đây là bạn gái của tôi."
         },
         {
           "id": "ex-4",
@@ -2865,7 +2865,7 @@
           ],
           "chinese": "她妈妈很漂亮。",
           "pinyin": "tā māmā hěn piāoliàng 。",
-          "translation": "Her mother is very beautiful."
+          "translation": "Mẹ của cô ấy rất đẹp."
         },
         {
           "id": "ex-5",
@@ -2878,7 +2878,7 @@
           ],
           "chinese": "我们学校很大。",
           "pinyin": "wǒmen xuéxiào hěn dà 。",
-          "translation": "Our school is very big."
+          "translation": "Trường học của chúng tôi rất lớn."
         },
         {
           "id": "ex-6",
@@ -2891,7 +2891,7 @@
           ],
           "chinese": "他们公司在北京。",
           "pinyin": "tāmen gōngsī zài běijīng 。",
-          "translation": "Their company is in Beijing."
+          "translation": "Công ty của họ ở Bắc Kinh."
         },
         {
           "id": "ex-7",
@@ -2904,7 +2904,7 @@
           ],
           "chinese": "你男朋友很帅。",
           "pinyin": "nǐ nánpéngyǒu hěn shuài 。",
-          "translation": "Your boyfriend is very handsome."
+          "translation": "Bạn trai của bạn rất đẹp trai."
         },
         {
           "id": "ex-8",
@@ -2917,7 +2917,7 @@
           ],
           "chinese": "他儿子很有名。",
           "pinyin": "tā érzǐ hěn yǒumíng 。",
-          "translation": "His son is very famous."
+          "translation": "Con trai của anh ấy rất nổi tiếng."
         }
       ],
       "titleVi": "Diễn tả sự sở hữu gần gũi mà không có 的"
@@ -2933,9 +2933,9 @@
         "Subj. + Verb + 了 + [Number + Measure Word] + Obj."
       ],
       "usedFor": [
-        "Describing actions",
-        "Referring to the past",
-        "Expressing completion"
+        "Miêu tả hành động",
+        "Đề cập đến quá khứ",
+        "Biểu thị sự hoàn thành"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGAGDCQ",
       "examples": [
@@ -2951,7 +2951,7 @@
           ],
           "chinese": "我女儿会说英语。",
           "pinyin": "wǒ nv̌ér hùi shuō yīngyǔ 。",
-          "translation": "My daughter speaks English."
+          "translation": "Con gái tôi nói tiếng Anh."
         },
         {
           "id": "ex-2",
@@ -2967,7 +2967,7 @@
           ],
           "chinese": "他爸爸是我们公司的老板。",
           "pinyin": "tā bàbà shì wǒmen gōngsī de lǎobǎn 。",
-          "translation": "His father is the boss of our company."
+          "translation": "Bố của anh ấy là sếp của công ty chúng tôi."
         },
         {
           "id": "ex-1",
@@ -2979,7 +2979,7 @@
           ],
           "chinese": "他们到了。",
           "pinyin": "tāmen dào le 。",
-          "translation": "They arrived."
+          "translation": "Họ đã đến rồi."
         },
         {
           "id": "ex-2",
@@ -2991,7 +2991,7 @@
           ],
           "chinese": "我买了。",
           "pinyin": "wǒ mǎi le 。",
-          "translation": "I bought it."
+          "translation": "Tôi đã mua rồi."
         },
         {
           "id": "ex-3",
@@ -3004,7 +3004,7 @@
           ],
           "chinese": "我们都去了。",
           "pinyin": "wǒmen dū qù le 。",
-          "translation": "We have all gone."
+          "translation": "Tất cả chúng tôi đều đã đi rồi."
         },
         {
           "id": "ex-1",
@@ -3018,7 +3018,7 @@
           ],
           "chinese": "我今天吃了早饭。",
           "pinyin": "wǒ jīntiān chī le zǎofàn 。",
-          "translation": "I had breakfast today."
+          "translation": "Hôm nay tôi đã ăn bữa sáng."
         },
         {
           "id": "ex-2",
@@ -3033,7 +3033,7 @@
           ],
           "chinese": "她上个月去了北京。",
           "pinyin": "tā shànggè yuè qù le běijīng 。",
-          "translation": "She went to Beijing last month."
+          "translation": "Cô ấy đã đi Bắc Kinh vào tháng trước."
         },
         {
           "id": "ex-1",
@@ -3047,7 +3047,7 @@
           ],
           "chinese": "中午我见了朋友。",
           "pinyin": "zhōngwǔ wǒ jiàn le péngyǒu 。",
-          "translation": "At noon I met a friend."
+          "translation": "Buổi trưa tôi đã gặp một người bạn."
         },
         {
           "id": "ex-2",
@@ -3062,7 +3062,7 @@
           ],
           "chinese": "老师问了五个问题。",
           "pinyin": "lǎoshī wèn le wǔ gè wèntí 。",
-          "translation": "The teacher asked five questions."
+          "translation": "Thầy giáo đã hỏi năm câu hỏi."
         },
         {
           "id": "ex-3",
@@ -3077,7 +3077,7 @@
           ],
           "chinese": "我买了三本书。",
           "pinyin": "wǒ mǎi le sān běn shū 。",
-          "translation": "I bought three books."
+          "translation": "Tôi đã mua ba cuốn sách."
         },
         {
           "id": "ex-4",
@@ -3092,7 +3092,7 @@
           ],
           "chinese": "我喝了两杯咖啡。",
           "pinyin": "wǒ hē le liǎng bēi kāfēi 。",
-          "translation": "I drank two cups of coffee."
+          "translation": "Tôi đã uống hai tách cà phê."
         }
       ],
       "titleVi": "Diễn tả sự hoàn thành với 了"
@@ -3108,7 +3108,7 @@
         "已经 + 不 + [Verb Phrase] + 了"
       ],
       "usedFor": [
-        "Referring to changes of situation"
+        "Biểu thị sự thay đổi tình huống"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFR96B",
       "examples": [
@@ -3125,7 +3125,7 @@
           ],
           "chinese": "我喝了两杯咖啡。",
           "pinyin": "wǒ hē le liǎng bēi kāfēi 。",
-          "translation": "I drank two cups of coffee."
+          "translation": "Tôi đã uống hai tách cà phê."
         },
         {
           "id": "ex-1",
@@ -3139,7 +3139,7 @@
           ],
           "chinese": "我不想吃了。",
           "pinyin": "wǒ bù xiǎng chī le 。",
-          "translation": "I don't want to eat anymore."
+          "translation": "Tôi không muốn ăn nữa."
         },
         {
           "id": "ex-2",
@@ -3154,7 +3154,7 @@
           ],
           "chinese": "你不喜欢我了吗？",
           "pinyin": "nǐ bù xǐhuān wǒ le ma ？",
-          "translation": "Don't you like me?"
+          "translation": "Bạn không thích tôi sao?"
         },
         {
           "id": "ex-3",
@@ -3168,7 +3168,7 @@
           ],
           "chinese": "你们不能打了。",
           "pinyin": "nǐmen bù néng dǎ le 。",
-          "translation": "You can't fight anymore."
+          "translation": "Bạn không thể đánh nhau nữa."
         },
         {
           "id": "ex-1",
@@ -3180,7 +3180,7 @@
           ],
           "chinese": "没有纸了。",
           "pinyin": "méiyǒu zhǐ le 。",
-          "translation": "There is no more paper."
+          "translation": "Hết giấy rồi."
         },
         {
           "id": "ex-2",
@@ -3193,7 +3193,7 @@
           ],
           "chinese": "手机没电了。",
           "pinyin": "shǒujī méi diàn le 。",
-          "translation": "The phone is dead."
+          "translation": "Điện thoại hết pin rồi."
         },
         {
           "id": "ex-3",
@@ -3206,7 +3206,7 @@
           ],
           "chinese": "他没有家了。",
           "pinyin": "tā méiyǒu jiā le 。",
-          "translation": "He has no home."
+          "translation": "Anh ấy không còn nhà nữa."
         },
         {
           "id": "ex-1",
@@ -3221,7 +3221,7 @@
           ],
           "chinese": "我已经不住这里了。",
           "pinyin": "wǒ yǐjīng bù zhù zhèlǐ le 。",
-          "translation": "I can't live here anymore."
+          "translation": "Tôi không thể sống ở đây nữa."
         },
         {
           "id": "ex-2",
@@ -3237,7 +3237,7 @@
           ],
           "chinese": "他已经不在这儿工作了。",
           "pinyin": "tā yǐjīng bù zài zhèér gōngzuò le 。",
-          "translation": "He no longer works here."
+          "translation": "Anh ấy không còn làm việc ở đây nữa."
         }
       ],
       "titleVi": "Diễn tả không còn nữa với 了"
@@ -3250,7 +3250,7 @@
         "[New Situation] + 了"
       ],
       "usedFor": [
-        "Referring to changes of situation"
+        "Biểu thị sự thay đổi tình huống"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGE5Q4J",
       "examples": [
@@ -3267,7 +3267,7 @@
           ],
           "chinese": "他们已经不在一起了。",
           "pinyin": "tāmen yǐjīng bù zài yīqǐ le 。",
-          "translation": "They are no longer together."
+          "translation": "Họ không còn ở bên nhau nữa."
         },
         {
           "id": "ex-2",
@@ -3281,7 +3281,7 @@
           ],
           "chinese": "我们已经没有钱了。",
           "pinyin": "wǒmen yǐjīng méiyǒu qián le 。",
-          "translation": "We have no money."
+          "translation": "Chúng tôi không còn tiền."
         },
         {
           "id": "ex-1",
@@ -3292,7 +3292,7 @@
           ],
           "chinese": "知道了。",
           "pinyin": "zhīdào le 。",
-          "translation": "Got it."
+          "translation": "Biết rồi / Rõ rồi."
         },
         {
           "id": "ex-2",
@@ -3303,7 +3303,7 @@
           ],
           "chinese": "懂了。",
           "pinyin": "dǒng le 。",
-          "translation": "understood."
+          "translation": "Hiểu rồi."
         },
         {
           "id": "ex-3",
@@ -3316,7 +3316,7 @@
           ],
           "chinese": "我20岁了！",
           "pinyin": "wǒ 20 sùi le ！",
-          "translation": "I am 20 years old!"
+          "translation": "Tôi 20 tuổi rồi!"
         }
       ],
       "titleVi": "Diễn đạt bây giờ với 了"
@@ -3329,7 +3329,7 @@
         "Noun 1 + 的 + Noun 2"
       ],
       "usedFor": [
-        "Expressing possession"
+        "Biểu thị sự sở hữu"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGUHQD3",
       "examples": [
@@ -3344,7 +3344,7 @@
           ],
           "chinese": "我去睡觉了。",
           "pinyin": "wǒ qù shùijué le 。",
-          "translation": "I'm going to bed."
+          "translation": "Tôi đi ngủ đây."
         },
         {
           "id": "ex-2",
@@ -3357,7 +3357,7 @@
           ],
           "chinese": "快点儿，开会了！",
           "pinyin": "kuài diǎnér ，kāihùi le ！",
-          "translation": "Hurry up, it's time for a meeting!"
+          "translation": "Nhanh lên, đến giờ họp rồi!"
         },
         {
           "id": "ex-1",
@@ -3368,7 +3368,7 @@
           ],
           "chinese": "你的手机",
           "pinyin": "nǐ de shǒujī",
-          "translation": "your phone"
+          "translation": "Điện thoại của bạn"
         },
         {
           "id": "ex-2",
@@ -3379,7 +3379,7 @@
           ],
           "chinese": "我们的钱",
           "pinyin": "wǒmen de qián",
-          "translation": "Our money"
+          "translation": "Tiền của chúng tôi"
         },
         {
           "id": "ex-3",
@@ -3390,7 +3390,7 @@
           ],
           "chinese": "他们的东西",
           "pinyin": "tāmen de dōngxī",
-          "translation": "Their stuff"
+          "translation": "Đồ đạc của họ"
         },
         {
           "id": "ex-4",
@@ -3401,7 +3401,7 @@
           ],
           "chinese": "爸爸的车",
           "pinyin": "bàbà de chē",
-          "translation": "Father's car"
+          "translation": "Xe của bố"
         },
         {
           "id": "ex-5",
@@ -3412,7 +3412,7 @@
           ],
           "chinese": "你们的菜",
           "pinyin": "nǐmen de cài",
-          "translation": "Your dishes"
+          "translation": "Món ăn của bạn"
         },
         {
           "id": "ex-6",
@@ -3423,7 +3423,7 @@
           ],
           "chinese": "北京的空气",
           "pinyin": "běijīng de kōngqì",
-          "translation": "Beijing air"
+          "translation": "Không khí ở Bắc Kinh"
         },
         {
           "id": "ex-7",
@@ -3434,7 +3434,7 @@
           ],
           "chinese": "公司的老板",
           "pinyin": "gōngsī de lǎobǎn",
-          "translation": "The boss of the company"
+          "translation": "Sếp của công ty"
         }
       ],
       "titleVi": "Diễn tả sự sở hữu bằng 的"
@@ -3448,8 +3448,8 @@
         "[Missing Person / Thing] + 呢 ？"
       ],
       "usedFor": [
-        "Asking questions",
-        "Expressing attitude"
+        "Đặt câu hỏi",
+        "Bày tỏ thái độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMJHZO",
       "examples": [
@@ -3462,7 +3462,7 @@
           ],
           "chinese": "上海的天气",
           "pinyin": "shànghǎi de tiānqì",
-          "translation": "Weather in Shanghai"
+          "translation": "Thời tiết ở Thượng Hải"
         },
         {
           "id": "ex-2",
@@ -3473,7 +3473,7 @@
           ],
           "chinese": "老师的朋友",
           "pinyin": "lǎoshī de péngyǒu",
-          "translation": "Teacher friend"
+          "translation": "Bạn của giáo viên"
         },
         {
           "id": "ex-1",
@@ -3490,7 +3490,7 @@
           ],
           "chinese": "这个很好，那个呢？",
           "pinyin": "zhè gè hěn hǎo ， nà gè ní ？",
-          "translation": "This is good, what about that?"
+          "translation": "Cái này ngon đấy, còn cái kia thì sao?"
         },
         {
           "id": "ex-2",
@@ -3505,7 +3505,7 @@
           ],
           "chinese": "这个用中文怎么说？",
           "pinyin": "zhè gè yòng zhōngwén zěnyāo shuō ？",
-          "translation": "How do you say this in Chinese?"
+          "translation": "Cái này nói bằng tiếng Trung như thế nào?"
         },
         {
           "id": "ex-3",
@@ -3518,7 +3518,7 @@
           ],
           "chinese": "我在家，你呢？",
           "pinyin": "wǒ zài jiā，nǐ ní ？",
-          "translation": "I'm at home, how about you?"
+          "translation": "Tôi đang ở nhà, còn bạn thì sao?"
         },
         {
           "id": "ex-4",
@@ -3535,7 +3535,7 @@
           ],
           "chinese": "你爸爸是上海人，你妈妈呢？",
           "pinyin": "nǐ bàbà shì shànghǎi rén ，nǐ māmā ní ？",
-          "translation": "Your father is from Shanghai, what about your mother?"
+          "translation": "Bố bạn là người Thượng Hải, còn mẹ bạn thì sao?"
         },
         {
           "id": "ex-5",
@@ -3546,7 +3546,7 @@
           ],
           "chinese": "钱呢？",
           "pinyin": "qián ní ？",
-          "translation": "What about money?"
+          "translation": "Còn tiền thì sao?"
         }
       ],
       "titleVi": "Câu hỏi với 呢"
@@ -3559,7 +3559,7 @@
         "Statement + 吧"
       ],
       "usedFor": [
-        "Expressing attitude"
+        "Bày tỏ thái độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGDHC1H",
       "examples": [
@@ -3573,7 +3573,7 @@
           ],
           "chinese": "你妈妈呢？",
           "pinyin": "nǐ māmā ní ？",
-          "translation": "where is your mom?"
+          "translation": "Mẹ bạn đâu rồi?"
         },
         {
           "id": "ex-2",
@@ -3586,7 +3586,7 @@
           ],
           "chinese": "我的手机呢？",
           "pinyin": "wǒ de shǒujī ní ？",
-          "translation": "What about my cell phone?"
+          "translation": "Điện thoại của tôi đâu rồi?"
         },
         {
           "id": "ex-1",
@@ -3600,7 +3600,7 @@
           ],
           "chinese": "这不太好吧。",
           "pinyin": "zhè bù tài hǎo ba 。",
-          "translation": "This is not so good."
+          "translation": "Cái này không tốt lắm."
         },
         {
           "id": "ex-2",
@@ -3611,7 +3611,7 @@
           ],
           "chinese": "算了吧。",
           "pinyin": "suànle ba 。",
-          "translation": "forget it."
+          "translation": "Thôi bỏ đi."
         },
         {
           "id": "ex-3",
@@ -3623,7 +3623,7 @@
           ],
           "chinese": "应该是吧。",
           "pinyin": "yìnggāi shì ba 。",
-          "translation": "probably."
+          "translation": "Có lẽ vậy."
         },
         {
           "id": "ex-4",
@@ -3637,7 +3637,7 @@
           ],
           "chinese": "钱太少了吧。",
           "pinyin": "qián tài shǎo le ba 。",
-          "translation": "There is too little money."
+          "translation": "Ít tiền quá."
         },
         {
           "id": "ex-5",
@@ -3651,7 +3651,7 @@
           ],
           "chinese": "再等一等吧。",
           "pinyin": "zài děng yī děng ba 。",
-          "translation": "Wait a second."
+          "translation": "Đợi một chút."
         },
         {
           "id": "ex-6",
@@ -3667,7 +3667,7 @@
           ],
           "chinese": "太晚了，不要走了吧。",
           "pinyin": "tài wǎn le ，bùyào zǒu le ba 。",
-          "translation": "It's too late, don't leave."
+          "translation": "Muộn quá rồi, đừng đi nữa."
         },
         {
           "id": "ex-7",
@@ -3681,7 +3681,7 @@
           ],
           "chinese": "你们早点来吧。",
           "pinyin": "nǐmen zǎo diǎn lái ba 。",
-          "translation": "Come on early."
+          "translation": "Đến sớm một chút nhé."
         },
         {
           "id": "ex-8",
@@ -3697,7 +3697,7 @@
           ],
           "chinese": "快点吧，要迟到了。",
           "pinyin": "kuài diǎn ba ， yào chídào le 。",
-          "translation": "Come on, be late."
+          "translation": "Nhanh lên, muộn mất."
         }
       ],
       "titleVi": "Làm dịu lời nói với 把"
@@ -3710,8 +3710,8 @@
         "Command + 吧"
       ],
       "usedFor": [
-        "Requesting",
-        "Expressing attitude"
+        "Đưa ra yêu cầu",
+        "Bày tỏ thái độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGMPZ6D",
       "examples": [
@@ -3731,7 +3731,7 @@
           ],
           "chinese": "太贵了吧，我不买了。",
           "pinyin": "tài gùi le ba ， wǒ bù mǎi le 。",
-          "translation": "It's too expensive, I won't buy it."
+          "translation": "Đắt quá, tôi không mua đâu."
         },
         {
           "id": "ex-2",
@@ -3750,7 +3750,7 @@
           ],
           "chinese": "那个地方太远了吧，我不想去。",
           "pinyin": "nà gè dìfāng tài yuǎn le ba，wǒ bù xiǎng qù 。",
-          "translation": "That place is too far away, I don't want to go."
+          "translation": "Nơi đó xa quá, tôi không muốn đi."
         },
         {
           "id": "ex-1",
@@ -3762,7 +3762,7 @@
           ],
           "chinese": "我们走吧。",
           "pinyin": "wǒmen zǒu ba 。",
-          "translation": "Let's go."
+          "translation": "Chúng ta đi thôi."
         },
         {
           "id": "ex-2",
@@ -3774,7 +3774,7 @@
           ],
           "chinese": "你说吧。",
           "pinyin": "nǐ shuō ba 。",
-          "translation": "You say it."
+          "translation": "Bạn nói đi."
         },
         {
           "id": "ex-3",
@@ -3787,7 +3787,7 @@
           ],
           "chinese": "快点吃吧。",
           "pinyin": "kuài diǎn chī ba 。",
-          "translation": "Eat quickly."
+          "translation": "Ăn nhanh lên."
         },
         {
           "id": "ex-4",
@@ -3801,7 +3801,7 @@
           ],
           "chinese": "给我两个吧。",
           "pinyin": "gěi wǒ liǎng gè ba 。",
-          "translation": "Give me two."
+          "translation": "Cho tôi hai cái."
         },
         {
           "id": "ex-5",
@@ -3813,7 +3813,7 @@
           ],
           "chinese": "喝水吧。",
           "pinyin": "hē shǔi ba 。",
-          "translation": "Drink water."
+          "translation": "Uống nước đi."
         },
         {
           "id": "ex-6",
@@ -3826,7 +3826,7 @@
           ],
           "chinese": "我们去香港吧。",
           "pinyin": "wǒmen qù xiānggǎng ba 。",
-          "translation": "Let's go to Hong Kong."
+          "translation": "Chúng ta đi Hong Kong nhé."
         },
         {
           "id": "ex-7",
@@ -3839,7 +3839,7 @@
           ],
           "chinese": "我们六点去吧？",
           "pinyin": "wǒmen lìu diǎn qùba ？",
-          "translation": "Shall we go at six?"
+          "translation": "Sáu giờ chúng ta đi nhé?"
         },
         {
           "id": "ex-8",
@@ -3851,7 +3851,7 @@
           ],
           "chinese": "休息一下吧。",
           "pinyin": "xīuxī yīxià ba 。",
-          "translation": "Take a break."
+          "translation": "Nghỉ ngơi một lát đi."
         }
       ],
       "titleVi": "Gợi ý với 吧"
@@ -3864,7 +3864,7 @@
         "来 / 去 + Place"
       ],
       "usedFor": [
-        "Expressing movement"
+        "Biểu thị sự di chuyển"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRBKSL",
       "examples": [
@@ -3878,7 +3878,7 @@
           ],
           "chinese": "我们结婚吧。",
           "pinyin": "wǒmen jiéhūn ba 。",
-          "translation": "Let's get married."
+          "translation": "Chúng mình kết hôn đi."
         },
         {
           "id": "ex-2",
@@ -3891,7 +3891,7 @@
           ],
           "chinese": "老板，便宜一点吧。",
           "pinyin": "lǎobǎn ，biànyí yīdiǎn ba 。",
-          "translation": "Boss, cheaper."
+          "translation": "Ông chủ ơi, bớt một chút đi."
         },
         {
           "id": "ex-1",
@@ -3904,7 +3904,7 @@
           ],
           "chinese": "妈妈要去超市。",
           "pinyin": "māmā yào qù chāoshì 。",
-          "translation": "Mom is going to the supermarket."
+          "translation": "Mẹ đi siêu thị."
         },
         {
           "id": "ex-2",
@@ -3918,7 +3918,7 @@
           ],
           "chinese": "老板今天来公司吗？",
           "pinyin": "lǎobǎn jīntiān lái gōngsī ma ？",
-          "translation": "Does the boss come to the company today?"
+          "translation": "Hôm nay sếp có đến công ty không?"
         },
         {
           "id": "ex-3",
@@ -3932,7 +3932,7 @@
           ],
           "chinese": "你现在来南京路吧。",
           "pinyin": "nǐ xiànzài láinánjīng lù ba 。",
-          "translation": "Come to Nanjing Road now."
+          "translation": "Đến đường Nanjing ngay đi."
         },
         {
           "id": "ex-4",
@@ -3949,7 +3949,7 @@
           ],
           "chinese": "你不想来我们公司工作吗？",
           "pinyin": "nǐ bù xiǎng lái wǒmen gōngsī gōngzuò ma ？",
-          "translation": "Don't you want to work in our company?"
+          "translation": "Bạn không muốn làm việc ở công ty chúng tôi sao?"
         },
         {
           "id": "ex-5",
@@ -3967,7 +3967,7 @@
           ],
           "chinese": "去年她去美国工作了几个月。",
           "pinyin": "qùnián tā qù měiguó gōngzuò le jī gè yuè 。",
-          "translation": "Last year she went to the United States to work for several months."
+          "translation": "Năm ngoái cô ấy đã sang Mỹ làm việc vài tháng."
         },
         {
           "id": "ex-6",
@@ -3982,7 +3982,7 @@
           ],
           "chinese": "你们想去Starbucks还是Costa？",
           "pinyin": "nǐmen xiǎng qù Starbucks huánshì Costa ？",
-          "translation": "Do you want to go to Starbucks or Costa?"
+          "translation": "Bạn muốn đi Starbucks hay Costa?"
         },
         {
           "id": "ex-7",
@@ -3997,7 +3997,7 @@
           ],
           "chinese": "周末我喜欢去朋友家。",
           "pinyin": "zhōumò wǒ xǐhuān qù péngyǒu jiā 。",
-          "translation": "I like to go to a friend's house on the weekend."
+          "translation": "Cuối tuần tôi thích đến nhà bạn chơi."
         }
       ],
       "titleVi": "Động từ chỉ hướng 来 và 去"
@@ -4010,9 +4010,9 @@
         "Subj. + 在 + Place"
       ],
       "usedFor": [
-        "Indicating conditions",
-        "Expressing existence",
-        "Expressing location"
+        "Biểu thị điều kiện",
+        "Diễn đạt sự tồn tại",
+        "Diễn đạt vị trí"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGLRWT8",
       "examples": [
@@ -4028,7 +4028,7 @@
           ],
           "chinese": "爸爸明天去北京出差。",
           "pinyin": "bàbà míngtiān qù běijīng chūchà 。",
-          "translation": "Dad will go on a business trip to Beijing tomorrow."
+          "translation": "Ngày mai bố sẽ đi công tác Bắc Kinh."
         },
         {
           "id": "ex-2",
@@ -4046,7 +4046,7 @@
           ],
           "chinese": "我今天不上班，你们可以来我家吃饭。",
           "pinyin": "wǒ jīntiān bù shàngbān，nǐmen kěyǐ lái wǒ jiā chīfàn 。",
-          "translation": "I don't go to work today, you can come to my house for dinner."
+          "translation": "Hôm nay tôi không đi làm, bạn có thể đến nhà tôi ăn cơm."
         },
         {
           "id": "ex-1",
@@ -4058,7 +4058,7 @@
           ],
           "chinese": "我在上海。",
           "pinyin": "wǒ zài shànghǎi 。",
-          "translation": "I am in Shanghai."
+          "translation": "Tôi đang ở Thượng Hải."
         },
         {
           "id": "ex-2",
@@ -4070,7 +4070,7 @@
           ],
           "chinese": "他们在英国。",
           "pinyin": "tāmen zài yīngguó 。",
-          "translation": "They are in the UK."
+          "translation": "Họ đang ở Anh."
         },
         {
           "id": "ex-3",
@@ -4082,7 +4082,7 @@
           ],
           "chinese": "老板在外面。",
           "pinyin": "lǎobǎn zài wàimiàn 。",
-          "translation": "The boss is outside."
+          "translation": "Sếp đang ở bên ngoài."
         },
         {
           "id": "ex-4",
@@ -4095,7 +4095,7 @@
           ],
           "chinese": "他不在学校。",
           "pinyin": "tā bù zài xuéxiào 。",
-          "translation": "He is not in school."
+          "translation": "Anh ấy không có ở trường."
         },
         {
           "id": "ex-5",
@@ -4109,7 +4109,7 @@
           ],
           "chinese": "她现在在家吗？",
           "pinyin": "tā xiànzài zài jiā ma ？",
-          "translation": "Is she at home now?"
+          "translation": "Bây giờ cô ấy có ở nhà không?"
         },
         {
           "id": "ex-6",
@@ -4122,7 +4122,7 @@
           ],
           "chinese": "你在公司吗？",
           "pinyin": "nǐ zài gōngsī ma ？",
-          "translation": "are you in the company?"
+          "translation": "Bạn có đang ở công ty không?"
         },
         {
           "id": "ex-7",
@@ -4136,7 +4136,7 @@
           ],
           "chinese": "老师不在办公室吗？",
           "pinyin": "lǎoshī bù zài bàngōngshì ma ？",
-          "translation": "Is the teacher out of the office?"
+          "translation": "Thầy giáo không có ở văn phòng à?"
         },
         {
           "id": "ex-8",
@@ -4148,7 +4148,7 @@
           ],
           "chinese": "谁在楼上？",
           "pinyin": "shúi zài lóushàng ？",
-          "translation": "Who is upstairs?"
+          "translation": "Ai đang ở trên lầu vậy?"
         }
       ],
       "titleVi": "Diễn tả sự tồn tại ở một nơi với 在"
@@ -4161,9 +4161,9 @@
         "Place + 有 + Obj."
       ],
       "usedFor": [
-        "Indicating conditions",
-        "Describing places",
-        "Expressing existence"
+        "Biểu thị điều kiện",
+        "Miêu tả địa điểm",
+        "Diễn đạt sự tồn tại"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG04ZCI",
       "examples": [
@@ -4179,7 +4179,7 @@
           ],
           "chinese": "我和朋友在酒吧。",
           "pinyin": "wǒ hé péngyǒu zài jǐuba 。",
-          "translation": "My friend and I are at the bar."
+          "translation": "Tôi và bạn tôi đang ở quán bar."
         },
         {
           "id": "ex-2",
@@ -4193,7 +4193,7 @@
           ],
           "chinese": "你们明天在北京吗？",
           "pinyin": "nǐmen míngtiān zài běijīng ma ？",
-          "translation": "Are you in Beijing tomorrow?"
+          "translation": "Ngày mai bạn có ở Bắc Kinh không?"
         },
         {
           "id": "ex-1",
@@ -4209,7 +4209,7 @@
           ],
           "chinese": "我家有很多小狗。",
           "pinyin": "wǒ jiā yǒu hěn duō xiǎo gǒu 。",
-          "translation": "There are many puppies in my family."
+          "translation": "Nhà tôi có rất nhiều cún con."
         },
         {
           "id": "ex-2",
@@ -4224,7 +4224,7 @@
           ],
           "chinese": "我们学校有很多帅哥。",
           "pinyin": "wǒmen xuéxiào yǒu hěn duō shuàigē 。",
-          "translation": "There are many handsome guys in our school."
+          "translation": "Trường chúng tôi có rất nhiều trai đẹp."
         },
         {
           "id": "ex-3",
@@ -4238,7 +4238,7 @@
           ],
           "chinese": "日本有很多中国人。",
           "pinyin": "rìběn yǒu hěn duō zhōngguórén 。",
-          "translation": "There are many Chinese in Japan."
+          "translation": "Có rất nhiều người Trung Quốc ở Nhật Bản."
         },
         {
           "id": "ex-4",
@@ -4254,7 +4254,7 @@
           ],
           "chinese": "这个酒吧有很多美女。",
           "pinyin": "zhè gè jǐuba yǒu hěn duō měinv̌ 。",
-          "translation": "There are many beauties in this bar."
+          "translation": "Trong quán bar này có rất nhiều người đẹp."
         },
         {
           "id": "ex-5",
@@ -4268,7 +4268,7 @@
           ],
           "chinese": "你家有牛奶吗？",
           "pinyin": "nǐ jiā yǒu níunǎi ma ？",
-          "translation": "Does your family have milk?"
+          "translation": "Nhà bạn có sữa không?"
         },
         {
           "id": "ex-6",
@@ -4282,7 +4282,7 @@
           ],
           "chinese": "这里有一个问题。",
           "pinyin": "zhèlǐ yǒu yī gè wèntí 。",
-          "translation": "There is a problem here."
+          "translation": "Ở đây có một vấn đề."
         },
         {
           "id": "ex-7",
@@ -4296,7 +4296,7 @@
           ],
           "chinese": "房间里有人吗？",
           "pinyin": "fángjiān lǐ yǒu rén ma ？",
-          "translation": "Is there anyone in the room?"
+          "translation": "Trong phòng có ai không?"
         },
         {
           "id": "ex-8",
@@ -4310,7 +4310,7 @@
           ],
           "chinese": "杯子里有水吗？",
           "pinyin": "bēizǐ lǐ yǒu shǔi ma ？",
-          "translation": "Is there water in the cup?"
+          "translation": "Trong cốc có nước không?"
         }
       ],
       "titleVi": "Diễn tả sự tồn tại với 有"
@@ -4323,7 +4323,7 @@
         "Subj. + 有 + Obj."
       ],
       "usedFor": [
-        "Expressing possession"
+        "Biểu thị sự sở hữu"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGOOCVO",
       "examples": [
@@ -4342,7 +4342,7 @@
           ],
           "chinese": "我的手机里有你的号码。",
           "pinyin": "wǒ de shǒujī lǐ yǒu nǐ de hàomǎ 。",
-          "translation": "I have your number in my mobile phone."
+          "translation": "Trong điện thoại tôi có số của bạn."
         },
         {
           "id": "ex-2",
@@ -4357,7 +4357,7 @@
           ],
           "chinese": "现在办公室里有人吗？",
           "pinyin": "xiànzài bàngōngshì lǐ yǒu rén ma ？",
-          "translation": "Is anyone in the office now?"
+          "translation": "Bây giờ trong văn phòng có ai không?"
         },
         {
           "id": "ex-1",
@@ -4369,7 +4369,7 @@
           ],
           "chinese": "我有钱。",
           "pinyin": "wǒ yǒu qián 。",
-          "translation": "I have money."
+          "translation": "Tôi có tiền."
         },
         {
           "id": "ex-2",
@@ -4382,7 +4382,7 @@
           ],
           "chinese": "你有房子吗？",
           "pinyin": "nǐ yǒu fángzǐ ma ？",
-          "translation": "Do you have a house"
+          "translation": "Bạn có nhà không?"
         },
         {
           "id": "ex-3",
@@ -4395,7 +4395,7 @@
           ],
           "chinese": "她没有车。",
           "pinyin": "tā méi yǒu chē 。",
-          "translation": "She has no car."
+          "translation": "Cô ấy không có xe hơi."
         },
         {
           "id": "ex-4",
@@ -4409,7 +4409,7 @@
           ],
           "chinese": "他有女朋友吗？",
           "pinyin": "tā yǒu nv̌ péngyǒu ma ？",
-          "translation": "Does he have a girlfriend?"
+          "translation": "Anh ấy có bạn gái không?"
         },
         {
           "id": "ex-5",
@@ -4423,7 +4423,7 @@
           ],
           "chinese": "我们有三个女儿。",
           "pinyin": "wǒmen yǒu sān gè nv̌ér 。",
-          "translation": "We have three daughters."
+          "translation": "Chúng tôi có ba cô con gái."
         },
         {
           "id": "ex-6",
@@ -4438,7 +4438,7 @@
           ],
           "chinese": "我们家有两个公司。",
           "pinyin": "wǒmen jiā yǒu liǎng gè gōngsī 。",
-          "translation": "There are two companies in our family."
+          "translation": "Gia đình chúng tôi có hai công ty."
         },
         {
           "id": "ex-7",
@@ -4453,7 +4453,7 @@
           ],
           "chinese": "你有一百块钱吗？",
           "pinyin": "nǐ yǒu yībǎi kuài qián ma ？",
-          "translation": "Do you have one hundred dollars?"
+          "translation": "Bạn có một trăm đô la không?"
         },
         {
           "id": "ex-8",
@@ -4468,7 +4468,7 @@
           ],
           "chinese": "你的老师有iPad吗？",
           "pinyin": "nǐ de lǎoshī yǒu iPad ma ？",
-          "translation": "Does your teacher have an iPad?"
+          "translation": "Thầy cô của bạn có iPad không?"
         }
       ],
       "titleVi": "Diễn tả sự sở hữu với 有"
@@ -4482,7 +4482,7 @@
         "请 (+ 你) + Verb Phrase"
       ],
       "usedFor": [
-        "Requesting"
+        "Đưa ra yêu cầu"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG25C48",
       "examples": [
@@ -4497,7 +4497,7 @@
           ],
           "chinese": "我爸爸没有工作。",
           "pinyin": "wǒbàbà méi yǒu gōngzuò 。",
-          "translation": "My dad has no job."
+          "translation": "Bố tôi không có việc làm."
         },
         {
           "id": "ex-2",
@@ -4511,7 +4511,7 @@
           ],
           "chinese": "今天你有课吗？",
           "pinyin": "jīntiān nǐ yǒu kè ma ？",
-          "translation": "Do you have class today?"
+          "translation": "Hôm nay bạn có tiết học không?"
         },
         {
           "id": "ex-1",
@@ -4522,7 +4522,7 @@
           ],
           "chinese": "请进。",
           "pinyin": "qǐng jìn 。",
-          "translation": "Please come in."
+          "translation": "Xin mời vào."
         },
         {
           "id": "ex-2",
@@ -4533,7 +4533,7 @@
           ],
           "chinese": "请坐。",
           "pinyin": "qǐng zuò 。",
-          "translation": "Please sit down."
+          "translation": "Xin mời ngồi."
         },
         {
           "id": "ex-3",
@@ -4544,7 +4544,7 @@
           ],
           "chinese": "请说。",
           "pinyin": "qǐng shuō 。",
-          "translation": "Please speak."
+          "translation": "Xin mời nói."
         },
         {
           "id": "ex-4",
@@ -4556,7 +4556,7 @@
           ],
           "chinese": "请喝茶。",
           "pinyin": "qǐng hē chá 。",
-          "translation": "Please drink tea."
+          "translation": "Xin mời uống trà."
         },
         {
           "id": "ex-5",
@@ -4568,7 +4568,7 @@
           ],
           "chinese": "请不要迟到。",
           "pinyin": "qǐng bùyào chídào 。",
-          "translation": "Please don't be late."
+          "translation": "Xin vui lòng đừng đến muộn."
         },
         {
           "id": "ex-1",
@@ -4583,7 +4583,7 @@
           ],
           "chinese": "请你说得慢一点。",
           "pinyin": "qǐng nǐ shuō dé màn yīdiǎn 。",
-          "translation": "Please speak more slowly."
+          "translation": "Xin vui lòng nói chậm hơn một chút."
         },
         {
           "id": "ex-2",
@@ -4598,7 +4598,7 @@
           ],
           "chinese": "请你听老师的话。",
           "pinyin": "qǐng nǐ tīng lǎoshī de huà 。",
-          "translation": "Please listen to the teacher."
+          "translation": "Xin hãy lắng nghe giáo viên."
         },
         {
           "id": "ex-3",
@@ -4610,7 +4610,7 @@
           ],
           "chinese": "请你离开。",
           "pinyin": "qǐng nǐ líkāi 。",
-          "translation": "Please leave."
+          "translation": "Xin vui lòng rời đi."
         },
         {
           "id": "ex-4",
@@ -4624,7 +4624,7 @@
           ],
           "chinese": "请问，洗手间在哪里。",
           "pinyin": "qǐngwèn ， xǐshǒujiān zài nǎlǐ 。",
-          "translation": "Excuse me, where is the bathroom?"
+          "translation": "Xin hỏi, nhà vệ sinh ở đâu?"
         },
         {
           "id": "ex-5",
@@ -4638,7 +4638,7 @@
           ],
           "chinese": "你可不可以……？",
           "pinyin": "nǐ kě bù kěyǐ …… ？",
-          "translation": "Can you……?"
+          "translation": "Bạn có thể…… không?"
         }
       ],
       "titleVi": "Yêu cầu lịch sự với 请"
@@ -4651,7 +4651,7 @@
         "Subj. + 叫 + [Name]"
       ],
       "usedFor": [
-        "Introducing people"
+        "Giới thiệu người khác"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGUGWVZ",
       "examples": [
@@ -4667,7 +4667,7 @@
           ],
           "chinese": "你能不能……？",
           "pinyin": "nǐ néng bù néng …… ？",
-          "translation": "Can you……?"
+          "translation": "Bạn có thể…… không?"
         },
         {
           "id": "ex-2",
@@ -4678,7 +4678,7 @@
           ],
           "chinese": "麻烦你……",
           "pinyin": "máfán nǐ ……",
-          "translation": "Trouble you ..."
+          "translation": "Làm phiền bạn..."
         },
         {
           "id": "ex-1",
@@ -4690,7 +4690,7 @@
           ],
           "chinese": "我叫Tom。",
           "pinyin": "wǒ jiào Tom 。",
-          "translation": "My name is Tom."
+          "translation": "Tôi tên là Tom."
         },
         {
           "id": "ex-2",
@@ -4702,7 +4702,7 @@
           ],
           "chinese": "他叫李小龙。",
           "pinyin": "tā jiào lǐxiǎolóng 。",
-          "translation": "His name is Bruce Lee."
+          "translation": "Anh ấy tên là Bruce Lee."
         },
         {
           "id": "ex-3",
@@ -4715,7 +4715,7 @@
           ],
           "chinese": "我哥哥叫老马。",
           "pinyin": "wǒ gēgē jiào lǎomǎ 。",
-          "translation": "My brother is called Lao Ma."
+          "translation": "Anh trai tôi tên là Lao Ma."
         },
         {
           "id": "ex-4",
@@ -4728,7 +4728,7 @@
           ],
           "chinese": "那个叫什么？",
           "pinyin": "nà gè jiào shíyāo ？",
-          "translation": "What is that called?"
+          "translation": "Cái kia gọi là gì?"
         },
         {
           "id": "ex-5",
@@ -4742,7 +4742,7 @@
           ],
           "chinese": "这个美女叫Alana。",
           "pinyin": "zhè gè měinv̌ jiào Alana 。",
-          "translation": "This beauty is called Alana."
+          "translation": "Người đẹp này tên là Alana."
         },
         {
           "id": "ex-6",
@@ -4756,7 +4756,7 @@
           ],
           "chinese": "我们的老板叫John。",
           "pinyin": "wǒmen de lǎobǎn jiào John 。",
-          "translation": "Our boss is called John."
+          "translation": "Sếp của chúng tôi tên là John."
         },
         {
           "id": "ex-7",
@@ -4770,7 +4770,7 @@
           ],
           "chinese": "我的狗叫Max。",
           "pinyin": "wǒ de gǒu jiào Max 。",
-          "translation": "My dog ​​is called Max."
+          "translation": "Chú chó của tôi tên là Max."
         },
         {
           "id": "ex-8",
@@ -4784,7 +4784,7 @@
           ],
           "chinese": "这种手机叫iPhone。",
           "pinyin": "zhè zhǒng shǒujī jiào iPhone 。",
-          "translation": "This phone is called iPhone."
+          "translation": "Điện thoại này gọi là iPhone."
         },
         {
           "id": "ex-9",
@@ -4797,7 +4797,7 @@
           ],
           "chinese": "你爸爸叫什么？",
           "pinyin": "nǐ bàbà jiào shíyāo ？",
-          "translation": "What is your father's name?"
+          "translation": "Bố của bạn tên là gì?"
         }
       ],
       "titleVi": "Sử dụng động từ jiao"
@@ -4811,7 +4811,7 @@
         "Subj. + 去 + Verb"
       ],
       "usedFor": [
-        "Expressing movement"
+        "Biểu thị sự di chuyển"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGFYNCL",
       "examples": [
@@ -4827,7 +4827,7 @@
           ],
           "chinese": "这个地方叫外滩。",
           "pinyin": "zhè gè dìfāng jiào wàitān 。",
-          "translation": "This place is called the Bund."
+          "translation": "Nơi này được gọi là the Bund."
         },
         {
           "id": "ex-2",
@@ -4840,7 +4840,7 @@
           ],
           "chinese": "你叫什么名字？",
           "pinyin": "nǐ jiào shíyāo míngzì ？",
-          "translation": "What's your name?"
+          "translation": "Bạn tên là gì?"
         },
         {
           "id": "ex-1",
@@ -4852,7 +4852,7 @@
           ],
           "chinese": "我去公司。",
           "pinyin": "wǒ qù gōngsī 。",
-          "translation": "I go to the company."
+          "translation": "Tôi đi đến công ty."
         },
         {
           "id": "ex-2",
@@ -4865,7 +4865,7 @@
           ],
           "chinese": "你去洗手间吗？",
           "pinyin": "nǐ qù xǐshǒujiān ma ？",
-          "translation": "Are you going to the bathroom?"
+          "translation": "Bạn có đang đi đến nhà vệ sinh không?"
         },
         {
           "id": "ex-3",
@@ -4879,7 +4879,7 @@
           ],
           "chinese": "下午我会去超市。",
           "pinyin": "xiàwǔ wǒ hùi qù chāoshì 。",
-          "translation": "In the afternoon I will go to the supermarket."
+          "translation": "Chiều nay tôi sẽ đi siêu thị."
         },
         {
           "id": "ex-4",
@@ -4892,7 +4892,7 @@
           ],
           "chinese": "我们现在去公园。",
           "pinyin": "wǒmen xiànzài qù gōngyuán 。",
-          "translation": "Let's go to the park now."
+          "translation": "Bây giờ chúng ta cùng đi công viên nhé."
         },
         {
           "id": "ex-5",
@@ -4905,7 +4905,7 @@
           ],
           "chinese": "晚上我们去酒吧。",
           "pinyin": "wǎnshàng wǒmen qù jǐuba 。",
-          "translation": "In the evening we go to the bar."
+          "translation": "Buổi tối chúng tôi đi đến quán bar."
         },
         {
           "id": "ex-6",
@@ -4917,7 +4917,7 @@
           ],
           "chinese": "你去哪儿？",
           "pinyin": "nǐ qù nǎér ？",
-          "translation": "where are you going?"
+          "translation": "Bạn đang đi đâu vậy?"
         },
         {
           "id": "ex-7",
@@ -4929,7 +4929,7 @@
           ],
           "chinese": "我去学校。",
           "pinyin": "wǒ qù xuéxiào 。",
-          "translation": "I go to school."
+          "translation": "Tôi đi đến trường."
         },
         {
           "id": "ex-8",
@@ -4943,7 +4943,7 @@
           ],
           "chinese": "你去我家吗？",
           "pinyin": "nǐ qù wǒ jiā ma ？",
-          "translation": "Are you going to my house?"
+          "translation": "Bạn có đang đi đến nhà tôi không?"
         },
         {
           "id": "ex-1",
@@ -4957,7 +4957,7 @@
           ],
           "chinese": "你想去旅行吗？",
           "pinyin": "nǐ xiǎng qù lv̌xíng ma ？",
-          "translation": "Do you want to travel?"
+          "translation": "Bạn có muốn đi du lịch không?"
         }
       ],
       "titleVi": "Sử dụng động từ 去"
@@ -4970,8 +4970,8 @@
         "Subj. + 能 + Verb + Obj."
       ],
       "usedFor": [
-        "Expressing possibility",
-        "Expressing ability"
+        "Diễn tả khả năng xảy ra",
+        "Diễn tả năng lực"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG9PQ40",
       "examples": [
@@ -4986,7 +4986,7 @@
           ],
           "chinese": "我们去吃饭吧。",
           "pinyin": "wǒmen qù chīfàn ba 。",
-          "translation": "Let's go and eat."
+          "translation": "Chúng ta đi ăn thôi."
         },
         {
           "id": "ex-2",
@@ -5000,7 +5000,7 @@
           ],
           "chinese": "九点我们去买。",
           "pinyin": "jǐu diǎn wǒmen qù mǎi 。",
-          "translation": "We will buy it at nine."
+          "translation": "Chúng tôi sẽ mua nó vào lúc chín giờ."
         },
         {
           "id": "ex-1",
@@ -5016,7 +5016,7 @@
           ],
           "chinese": "我能吃四十个饺子。",
           "pinyin": "wǒ néng chī sì shí gè jiǎozǐ 。",
-          "translation": "I can eat forty dumplings."
+          "translation": "Tôi có thể ăn bốn mươi cái sủi cảo."
         },
         {
           "id": "ex-2",
@@ -5031,7 +5031,7 @@
           ],
           "chinese": "他能工作24个小时。",
           "pinyin": "tā néng gōngzuò 24 gè xiǎoshí 。",
-          "translation": "He can work 24 hours."
+          "translation": "Anh ấy có thể làm việc 24 giờ."
         },
         {
           "id": "ex-3",
@@ -5047,7 +5047,7 @@
           ],
           "chinese": "你能帮我找到他吗？",
           "pinyin": "nǐ néng bāng wǒ zhǎodào tā ma ？",
-          "translation": "Can you help me find him?"
+          "translation": "Bạn có thể giúp tôi tìm anh ấy không?"
         },
         {
           "id": "ex-4",
@@ -5062,7 +5062,7 @@
           ],
           "chinese": "你的手机能上网吗？",
           "pinyin": "nǐ de shǒujī néng shàngwǎng ma ？",
-          "translation": "Can your phone go online?"
+          "translation": "Điện thoại của bạn có thể lên mạng được không?"
         },
         {
           "id": "ex-5",
@@ -5078,7 +5078,7 @@
           ],
           "chinese": "一岁的宝宝能说话吗？",
           "pinyin": "yī sùi de bǎobǎo néng shuōhuà ma ？",
-          "translation": "Can one year old baby talk?"
+          "translation": "Em bé một tuổi có thể nói chuyện không?"
         },
         {
           "id": "ex-6",
@@ -5095,7 +5095,7 @@
           ],
           "chinese": "开车一个小时能到家吗？",
           "pinyin": "kāichē yī gè xiǎoshí néng dào jiā ma ？",
-          "translation": "Can I get home in an hour?"
+          "translation": "Tôi có thể về nhà trong vòng một giờ không?"
         },
         {
           "id": "ex-7",
@@ -5111,7 +5111,7 @@
           ],
           "chinese": "他们明天能早点来吗？",
           "pinyin": "tāmen míngtiān néng zǎo diǎn lái ma ？",
-          "translation": "Can they come early tomorrow?"
+          "translation": "Ngày mai họ có thể đến sớm không?"
         },
         {
           "id": "ex-8",
@@ -5125,7 +5125,7 @@
           ],
           "chinese": "你们能小声一点吗？",
           "pinyin": "nǐmen néng xiǎoshēng yīdiǎn ma ？",
-          "translation": "Can you whisper?"
+          "translation": "Bạn có thể nói thì thầm không?"
         },
         {
           "id": "ex-9",
@@ -5142,7 +5142,7 @@
           ],
           "chinese": "你能告诉我她的手机号码吗？",
           "pinyin": "nǐ néng gàosù wǒ tāde shǒujī hàomǎ ma ？",
-          "translation": "Can you tell me her mobile number?"
+          "translation": "Bạn có thể cho tôi biết số điện thoại di động của cô ấy không?"
         },
         {
           "id": "ex-10",
@@ -5160,7 +5160,7 @@
           ],
           "chinese": "一千块能买一个手机吗？",
           "pinyin": "yī qiān kuài néng mǎi yī gè shǒujī ma ？",
-          "translation": "Can I buy a mobile phone for a thousand dollars"
+          "translation": "Tôi có thể mua một chiếc điện thoại di động với giá một nghìn đô la không?"
         },
         {
           "id": "ex-11",
@@ -5177,7 +5177,7 @@
           ],
           "chinese": "我能问你一个问题吗？",
           "pinyin": "wǒ néng wèn nǐ yī gè wèntí ma ？",
-          "translation": "Can I ask you a question?"
+          "translation": "Tôi có thể hỏi bạn một câu được không?"
         },
         {
           "id": "ex-12",
@@ -5192,7 +5192,7 @@
           ],
           "chinese": "我能坐在这里吗？",
           "pinyin": "wǒ néng zuò zài zhèlǐ ma ？",
-          "translation": "Can I sit here?"
+          "translation": "Tôi có thể ngồi đây không?"
         },
         {
           "id": "ex-13",
@@ -5205,7 +5205,7 @@
           ],
           "chinese": "这里不能游泳。",
           "pinyin": "zhèlǐ bù néng yóuyǒng 。",
-          "translation": "You cannot swim here."
+          "translation": "Bạn không được bơi ở đây."
         }
       ],
       "titleVi": "Diễn tả khả năng hoặc khả năng với neng"
@@ -5219,7 +5219,7 @@
         "Subj. + 不 + 会 + Verb + Obj."
       ],
       "usedFor": [
-        "Expressing ability"
+        "Diễn tả năng lực"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRHM0E",
       "examples": [
@@ -5237,7 +5237,7 @@
           ],
           "chinese": "上课的时候不能说英文。",
           "pinyin": "shàngkè de shíhòu bù néng shuō yīngwén 。",
-          "translation": "English cannot be spoken during class."
+          "translation": "Không được nói tiếng Anh trong giờ học."
         },
         {
           "id": "ex-2",
@@ -5253,7 +5253,7 @@
           ],
           "chinese": "工作的时候不能玩手机。",
           "pinyin": "gōngzuò de shíhòu bù néng wán shǒujī 。",
-          "translation": "Can't play mobile phone while working."
+          "translation": "Không được chơi điện thoại di động khi đang làm việc."
         },
         {
           "id": "ex-1",
@@ -5266,7 +5266,7 @@
           ],
           "chinese": "他会说中文。",
           "pinyin": "tā hùi shuō zhōngwén 。",
-          "translation": "He can speak Chinese."
+          "translation": "Anh ấy có thể nói tiếng Trung."
         },
         {
           "id": "ex-2",
@@ -5279,7 +5279,7 @@
           ],
           "chinese": "我会写汉字。",
           "pinyin": "wǒ hùi xiě hànzì 。",
-          "translation": "I can write Chinese characters."
+          "translation": "Tôi có thể viết chữ Hán."
         },
         {
           "id": "ex-3",
@@ -5292,7 +5292,7 @@
           ],
           "chinese": "你会做饭吗？",
           "pinyin": "nǐ hùi zuòfàn ma ？",
-          "translation": "Can you cook?"
+          "translation": "Bạn có biết nấu ăn không?"
         },
         {
           "id": "ex-4",
@@ -5306,7 +5306,7 @@
           ],
           "chinese": "狗会唱歌吗？",
           "pinyin": "gǒu hùi chàng gē ma ？",
-          "translation": "Can dogs sing?"
+          "translation": "Chó có biết hát không?"
         },
         {
           "id": "ex-5",
@@ -5318,7 +5318,7 @@
           ],
           "chinese": "爸爸会开车。",
           "pinyin": "bàbà hùi kāichē 。",
-          "translation": "Dad can drive."
+          "translation": "Bố có thể lái xe."
         },
         {
           "id": "ex-6",
@@ -5331,7 +5331,7 @@
           ],
           "chinese": "我不会说英文。",
           "pinyin": "wǒ bùhùi shuō yīngwén 。",
-          "translation": "I can not speak English."
+          "translation": "Tôi không biết nói tiếng Anh."
         },
         {
           "id": "ex-7",
@@ -5345,7 +5345,7 @@
           ],
           "chinese": "妈妈不会做中国菜。",
           "pinyin": "māmā bùhùi zuò zhōngguó cài 。",
-          "translation": "Mom doesn't know how to cook Chinese food."
+          "translation": "Mẹ không biết nấu món Trung Quốc."
         },
         {
           "id": "ex-8",
@@ -5358,7 +5358,7 @@
           ],
           "chinese": "你不会游泳吗？",
           "pinyin": "nǐ bùhùi yóuyǒng ma ？",
-          "translation": "Can't you swim"
+          "translation": "Bạn không biết bơi à?"
         },
         {
           "id": "ex-9",
@@ -5372,7 +5372,7 @@
           ],
           "chinese": "我奶奶不会用电脑。",
           "pinyin": "wǒ nǎinǎi bùhùi yòng diànnǎo 。",
-          "translation": "My grandma can't use a computer."
+          "translation": "Bà tôi không biết sử dụng máy tính."
         },
         {
           "id": "ex-10",
@@ -5385,7 +5385,7 @@
           ],
           "chinese": "你不会开车吗？",
           "pinyin": "nǐ bùhùi kāichē ma ？",
-          "translation": "Won't you drive"
+          "translation": "Bạn sẽ không lái xe à?"
         }
       ],
       "titleVi": "Diễn tả một kỹ năng đã học được bằng 会"
@@ -5398,9 +5398,9 @@
         "Subj. + 会 + Verb + Obj."
       ],
       "usedFor": [
-        "Referring to the future",
-        "Sequencing events in time",
-        "Expressing ability"
+        "Chỉ tương lai",
+        "Sắp xếp thứ tự các sự kiện theo thời gian",
+        "Diễn tả năng lực"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGW9737",
       "examples": [
@@ -5416,7 +5416,7 @@
           ],
           "chinese": "我奶奶不会用电脑。",
           "pinyin": "wǒ nǎinǎi bùhùi yòng diànnǎo 。",
-          "translation": "My grandma can't use a computer."
+          "translation": "Bà tôi không biết sử dụng máy tính."
         },
         {
           "id": "ex-2",
@@ -5429,7 +5429,7 @@
           ],
           "chinese": "你不会开车吗？",
           "pinyin": "nǐ bùhùi kāichē ma ？",
-          "translation": "Won't you drive"
+          "translation": "Bạn sẽ không lái xe à?"
         },
         {
           "id": "ex-3",
@@ -5443,7 +5443,7 @@
           ],
           "chinese": "我们不会告诉你。",
           "pinyin": "wǒmen bù hùi gàosù nǐ 。",
-          "translation": "We will not tell you."
+          "translation": "Chúng tôi sẽ không nói cho bạn biết."
         },
         {
           "id": "ex-1",
@@ -5457,7 +5457,7 @@
           ],
           "chinese": "明天你会来吗？",
           "pinyin": "míngtiān nǐ hùi lái ma ？",
-          "translation": "Will you come tomorrow?"
+          "translation": "Ngày mai bạn sẽ đến chứ?"
         },
         {
           "id": "ex-2",
@@ -5472,7 +5472,7 @@
           ],
           "chinese": "他会来看你吗？",
           "pinyin": "tā hùi lái kàn nǐ ma ？",
-          "translation": "Will he come to see you?"
+          "translation": "Anh ấy sẽ đến thăm bạn chứ?"
         },
         {
           "id": "ex-3",
@@ -5485,7 +5485,7 @@
           ],
           "chinese": "明天会下雨吗？",
           "pinyin": "míngtiān hùi xiàyǔ ma ？",
-          "translation": "is it going to rain tomorrow?"
+          "translation": "Ngày mai trời sẽ mưa phải không?"
         },
         {
           "id": "ex-4",
@@ -5500,7 +5500,7 @@
           ],
           "chinese": "我出去一下，很快会回来。",
           "pinyin": "wǒ chūqù yīxià，hěn kuài hùi húilái 。",
-          "translation": "I'll go out and come back soon."
+          "translation": "Tôi sẽ ra ngoài và quay lại sớm."
         },
         {
           "id": "ex-5",
@@ -5513,7 +5513,7 @@
           ],
           "chinese": "老板会同意吗？",
           "pinyin": "lǎobǎn hùi tóngyì ma ？",
-          "translation": "Will the boss agree?"
+          "translation": "Sếp sẽ đồng ý chứ?"
         },
         {
           "id": "ex-6",
@@ -5529,7 +5529,7 @@
           ],
           "chinese": "你女儿会听你的话。",
           "pinyin": "nǐ nv̌ér hùi tīng nǐ de huà 。",
-          "translation": "Your daughter will listen to you."
+          "translation": "Con gái bạn sẽ nghe lời bạn thôi."
         },
         {
           "id": "ex-7",
@@ -5547,7 +5547,7 @@
           ],
           "chinese": "下班以后，我会给你打电话。",
           "pinyin": "xiàbān yǐhòu ， wǒ hùi gěi nǐ dǎ diànhuà 。",
-          "translation": "After work, I will call you."
+          "translation": "Sau khi tan làm, tôi sẽ gọi cho bạn."
         }
       ],
       "titleVi": "Thể hiện ý chí bằng 会"
@@ -5561,8 +5561,8 @@
         "Subj. + 不 + 想 + Verb + Obj."
       ],
       "usedFor": [
-        "Expressing desires",
-        "Expressing purpose"
+        "Diễn đạt mong muốn",
+        "Diễn đạt mục đích"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGT97VF",
       "examples": [
@@ -5579,7 +5579,7 @@
           ],
           "chinese": "他不会跟你结婚。",
           "pinyin": "tā bù hùi gēn nǐ jiéhūn 。",
-          "translation": "He will not marry you."
+          "translation": "Anh ấy sẽ không cưới bạn đâu."
         },
         {
           "id": "ex-2",
@@ -5595,7 +5595,7 @@
           ],
           "chinese": "今晚我不会在外面吃饭。",
           "pinyin": "jīnwǎn wǒ bù hùi zài wàimiàn chīfàn 。",
-          "translation": "I will not eat out tonight."
+          "translation": "Tối nay tôi sẽ không đi ăn ngoài."
         },
         {
           "id": "ex-1",
@@ -5608,7 +5608,7 @@
           ],
           "chinese": "你想去吗？",
           "pinyin": "nǐ xiǎng qù ma ？",
-          "translation": "do you want to go?"
+          "translation": "Bạn có muốn đi không?"
         },
         {
           "id": "ex-2",
@@ -5621,7 +5621,7 @@
           ],
           "chinese": "我想吃面。",
           "pinyin": "wǒ xiǎng chī miàn 。",
-          "translation": "I want to eat noodles."
+          "translation": "Tôi muốn ăn mì."
         },
         {
           "id": "ex-3",
@@ -5635,7 +5635,7 @@
           ],
           "chinese": "你想喝水吗？",
           "pinyin": "nǐ xiǎng hē shǔi ma ？",
-          "translation": "Do you want to drink water?"
+          "translation": "Bạn có muốn uống nước không?"
         },
         {
           "id": "ex-4",
@@ -5648,7 +5648,7 @@
           ],
           "chinese": "我们想看电视。",
           "pinyin": "wǒmen xiǎng kàn diànshì 。",
-          "translation": "We want to watch TV."
+          "translation": "Chúng tôi muốn xem TV."
         },
         {
           "id": "ex-5",
@@ -5664,7 +5664,7 @@
           ],
           "chinese": "他想买一个大房子。",
           "pinyin": "tā xiǎng mǎi yī gè dà fángzǐ 。",
-          "translation": "He wants to buy a big house."
+          "translation": "Anh ấy muốn mua một ngôi nhà lớn."
         },
         {
           "id": "ex-1",
@@ -5678,7 +5678,7 @@
           ],
           "chinese": "他们不想去酒吧。",
           "pinyin": "tāmen bù xiǎng qù jǐuba 。",
-          "translation": "They don't want to go to the bar."
+          "translation": "Họ không muốn đến quán bar."
         },
         {
           "id": "ex-2",
@@ -5694,7 +5694,7 @@
           ],
           "chinese": "你不想认识这个美女吗？",
           "pinyin": "nǐ bù xiǎng rènshì zhègè měinv̌ ma ？",
-          "translation": "Don't you want to know this beauty?"
+          "translation": "Bạn không muốn biết người đẹp này sao?"
         },
         {
           "id": "ex-3",
@@ -5707,7 +5707,7 @@
           ],
           "chinese": "我不想回家。",
           "pinyin": "wǒ bù xiǎng húijiā 。",
-          "translation": "I do not want to go home."
+          "translation": "Tôi không muốn về nhà."
         }
       ],
       "titleVi": "Diễn tả mong muốn với 向"
@@ -5721,7 +5721,7 @@
         "Topic + 怎么 + Verb"
       ],
       "usedFor": [
-        "Asking questions"
+        "Đặt câu hỏi"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGH2MNO",
       "examples": [
@@ -5739,7 +5739,7 @@
           ],
           "chinese": "那个地方很近，我不想开车。",
           "pinyin": "nàgè dìfāng hěn jìn，wǒ bù xiǎng kāichē 。",
-          "translation": "That place is close, I don't want to drive."
+          "translation": "Chỗ đó gần, tôi không muốn lái xe."
         },
         {
           "id": "ex-2",
@@ -5755,7 +5755,7 @@
           ],
           "chinese": "他不想花父母的钱。",
           "pinyin": "tā bù xiǎng huā fùmǔ de qián 。",
-          "translation": "He didn't want to spend his parents' money."
+          "translation": "Anh ấy không muốn tiêu tiền của bố mẹ mình."
         },
         {
           "id": "ex-1",
@@ -5768,7 +5768,7 @@
           ],
           "chinese": "你们怎么学中文？",
           "pinyin": "nǐmen zěnyāo xué zhōngwén ？",
-          "translation": "How do you learn Chinese?"
+          "translation": "Bạn học tiếng Trung như thế nào?"
         },
         {
           "id": "ex-2",
@@ -5780,7 +5780,7 @@
           ],
           "chinese": "你怎么上班？",
           "pinyin": "nǐ zěnyāo shàngbān ？",
-          "translation": "How do you go to work?"
+          "translation": "Bạn đi làm bằng cách nào?"
         },
         {
           "id": "ex-3",
@@ -5795,7 +5795,7 @@
           ],
           "chinese": "你知道怎么去外滩吗？",
           "pinyin": "nǐ zhīdào zěnyāo qù wàitān ma ？",
-          "translation": "Do you know how to get to the Bund?"
+          "translation": "Bạn có biết cách đi đến Bến Thượng Hải (the Bund) không?"
         },
         {
           "id": "ex-4",
@@ -5810,7 +5810,7 @@
           ],
           "chinese": "你怎么知道我喜欢旅行？",
           "pinyin": "nǐ zěnyāo zhīdào wǒ xǐhuān lv̌xíng ？",
-          "translation": "How do you know that I like traveling?"
+          "translation": "Làm sao bạn biết tôi thích đi du lịch?"
         },
         {
           "id": "ex-5",
@@ -5826,7 +5826,7 @@
           ],
           "chinese": "我不知道怎么跟女孩子说话。",
           "pinyin": "wǒ bù zhīdào zěnyāo gēn nv̌háizǐ shuōhuà 。",
-          "translation": "I don't know how to talk to girls."
+          "translation": "Tôi không biết cách nói chuyện với con gái."
         },
         {
           "id": "ex-1",
@@ -5838,7 +5838,7 @@
           ],
           "chinese": "芒果怎么吃？",
           "pinyin": "mángguǒ zěnyāo chī ？",
-          "translation": "How to eat mango?"
+          "translation": "Làm thế nào để ăn xoài?"
         },
         {
           "id": "ex-2",
@@ -5850,7 +5850,7 @@
           ],
           "chinese": "iPad怎么用？",
           "pinyin": "iPad zěnyāo yòng ？",
-          "translation": "How to use iPad?"
+          "translation": "Làm thế nào để sử dụng iPad?"
         },
         {
           "id": "ex-3",
@@ -5862,7 +5862,7 @@
           ],
           "chinese": "语法怎么学？",
           "pinyin": "yǔfǎ zěnyāo xué ？",
-          "translation": "How to learn grammar?"
+          "translation": "Làm thế nào để học ngữ pháp?"
         }
       ],
       "titleVi": "Cách làm điều gì đó với 怎么"
@@ -5875,7 +5875,7 @@
         "Subj. + 在 + Place + Verb + Obj."
       ],
       "usedFor": [
-        "Expressing location"
+        "Diễn đạt vị trí"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGX0Z0N",
       "examples": [
@@ -5890,7 +5890,7 @@
           ],
           "chinese": "中国菜怎么做？",
           "pinyin": "zhōngguó cài zěnyāo zuò ？",
-          "translation": "How to make Chinese food?"
+          "translation": "Làm thế nào để nấu món ăn Trung Quốc?"
         },
         {
           "id": "ex-2",
@@ -5902,7 +5902,7 @@
           ],
           "chinese": "Apple怎么说？",
           "pinyin": "Apple zěnyāo shuō ？",
-          "translation": "What does Apple say?"
+          "translation": "Apple nói gì?"
         },
         {
           "id": "ex-1",
@@ -5915,7 +5915,7 @@
           ],
           "chinese": "我在上海上大学。",
           "pinyin": "wǒ zài shànghǎi shàngdàxué 。",
-          "translation": "I go to university in Shanghai."
+          "translation": "Tôi học đại học ở Thượng Hải."
         },
         {
           "id": "ex-2",
@@ -5932,7 +5932,7 @@
           ],
           "chinese": "你一直在这家公司工作吗？",
           "pinyin": "nǐ yīzhí zài zhè jiā gōngsī gōngzuò ma ？",
-          "translation": "Have you always worked in this company?"
+          "translation": "Bạn đã luôn làm việc ở công ty này phải không?"
         },
         {
           "id": "ex-3",
@@ -5947,7 +5947,7 @@
           ],
           "chinese": "我周末想在家睡觉。",
           "pinyin": "wǒ zhōumò xiǎng zài jiā shùijué 。",
-          "translation": "I want to sleep at home on the weekend."
+          "translation": "Tôi muốn ngủ ở nhà vào cuối tuần."
         },
         {
           "id": "ex-4",
@@ -5963,7 +5963,7 @@
           ],
           "chinese": "不要在床上吃东西。",
           "pinyin": "bù yào zài chuáng shàng chī dōngxī 。",
-          "translation": "Don't eat in bed."
+          "translation": "Đừng ăn trên giường."
         },
         {
           "id": "ex-5",
@@ -5979,7 +5979,7 @@
           ],
           "chinese": "你想在哪儿开生日派对？",
           "pinyin": "nǐ xiǎng zài nǎér kāi shēngrì pàidùi ？",
-          "translation": "Where do you want to have a birthday party?"
+          "translation": "Bạn muốn tổ chức tiệc sinh nhật ở đâu?"
         },
         {
           "id": "ex-6",
@@ -5994,7 +5994,7 @@
           ],
           "chinese": "他喜欢在厕所里抽烟。",
           "pinyin": "tā xǐhuān zài cèsuǒ lǐ chōuyān 。",
-          "translation": "He likes to smoke in the toilet."
+          "translation": "Anh ấy thích hút thuốc trong nhà vệ sinh."
         },
         {
           "id": "ex-7",
@@ -6011,7 +6011,7 @@
           ],
           "chinese": "很多人在地铁上吃早饭。",
           "pinyin": "hěn duō rén zài dìtiě shàng chī zǎofàn 。",
-          "translation": "Many people have breakfast on the subway."
+          "translation": "Nhiều người ăn sáng trên tàu điện ngầm."
         },
         {
           "id": "ex-8",
@@ -6025,7 +6025,7 @@
           ],
           "chinese": "现在我们在KTV唱歌。",
           "pinyin": "xiànzài wǒmen zài KTV chànggē 。",
-          "translation": "Now we are singing on KTV."
+          "translation": "Bây giờ chúng tôi đang hát ở KTV."
         }
       ],
       "titleVi": "Chỉ vị trí bằng 在 trước động từ"
@@ -6038,8 +6038,8 @@
         "Subj. + 没有 / 没 + Verb"
       ],
       "usedFor": [
-        "Denying and refusing",
-        "Referring to the past"
+        "Phủ nhận và từ chối",
+        "Đề cập đến quá khứ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGAUCXK",
       "examples": [
@@ -6055,7 +6055,7 @@
           ],
           "chinese": "老板在会议室见客户。",
           "pinyin": "lǎobǎn zài hùiyìshì jiàn kèhù 。",
-          "translation": "The boss meets the customer in the meeting room."
+          "translation": "Sếp gặp khách hàng trong phòng họp."
         },
         {
           "id": "ex-2",
@@ -6072,7 +6072,7 @@
           ],
           "chinese": "你在外面吃过晚饭了吗？",
           "pinyin": "nǐ zài wàimiàn chī guò wǎnfàn le ma ？",
-          "translation": "Have you eaten dinner outside?"
+          "translation": "Bạn đã ăn tối ở ngoài chưa?"
         },
         {
           "id": "ex-1",
@@ -6085,7 +6085,7 @@
           ],
           "chinese": "我没有去上班。",
           "pinyin": "wǒ méiyǒu qù shàngbān 。",
-          "translation": "I didn't go to work."
+          "translation": "Tôi đã không đi làm."
         },
         {
           "id": "ex-2",
@@ -6097,7 +6097,7 @@
           ],
           "chinese": "他们没有说话。",
           "pinyin": "tāmen méiyǒu shuōhuà 。",
-          "translation": "They did not speak."
+          "translation": "Họ đã không nói gì cả."
         },
         {
           "id": "ex-3",
@@ -6112,7 +6112,7 @@
           ],
           "chinese": "我没有喝你的啤酒。",
           "pinyin": "wǒ méiyǒu hē nǐ de píjǐu 。",
-          "translation": "I didn't drink your beer."
+          "translation": "Tôi đã không uống bia của bạn."
         },
         {
           "id": "ex-4",
@@ -6125,7 +6125,7 @@
           ],
           "chinese": "她没有看到你。",
           "pinyin": "tā méiyǒu kàndào nǐ 。",
-          "translation": "She didn't see you."
+          "translation": "Cô ấy đã không nhìn thấy bạn."
         },
         {
           "id": "ex-5",
@@ -6138,7 +6138,7 @@
           ],
           "chinese": "我没有吃早饭。",
           "pinyin": "wǒ méiyǒu chī zǎofàn 。",
-          "translation": "I didn't have breakfast."
+          "translation": "Tôi đã không ăn sáng."
         },
         {
           "id": "ex-6",
@@ -6150,7 +6150,7 @@
           ],
           "chinese": "宝宝没哭。",
           "pinyin": "bǎobǎo méi kū 。",
-          "translation": "The baby didn't cry."
+          "translation": "Em bé đã không khóc."
         },
         {
           "id": "ex-7",
@@ -6164,7 +6164,7 @@
           ],
           "chinese": "你昨天没回家吗？",
           "pinyin": "nǐ zuótiān méi húijiā ma ？",
-          "translation": "Didn't you go home yesterday?"
+          "translation": "Hôm qua bạn đã không về nhà sao?"
         },
         {
           "id": "ex-8",
@@ -6178,7 +6178,7 @@
           ],
           "chinese": "老板今天没来吗？",
           "pinyin": "lǎobǎn jīntiān méi lái ma ？",
-          "translation": "Didn't the boss come today?"
+          "translation": "Hôm nay sếp không đến sao?"
         },
         {
           "id": "ex-9",
@@ -6191,7 +6191,7 @@
           ],
           "chinese": "老师今天没生气。",
           "pinyin": "lǎoshī jīntiān méi shēngqì 。",
-          "translation": "The teacher was not angry today."
+          "translation": "Giáo viên hôm nay không tức giận."
         }
       ],
       "titleVi": "Phủ định hành động trong quá khứ với 没有"
@@ -6204,10 +6204,10 @@
         "Noun 1 + 是 + Noun 2"
       ],
       "usedFor": [
-        "Introducing people",
-        "Describing people",
-        "Expressing existence",
-        "Referring to the present"
+        "Giới thiệu người khác",
+        "Miêu tả người",
+        "Diễn đạt sự tồn tại",
+        "Đề cập đến hiện tại"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGUN7RX",
       "examples": [
@@ -6222,7 +6222,7 @@
           ],
           "chinese": "妈妈晚上没做饭。",
           "pinyin": "māmā wǎnshàng méi zuòfàn 。",
-          "translation": "Mom didn't cook at night."
+          "translation": "Mẹ đã không nấu ăn vào buổi tối."
         },
         {
           "id": "ex-2",
@@ -6234,7 +6234,7 @@
           ],
           "chinese": "我没有做。",
           "pinyin": "wǒ méiyǒu zuò 。",
-          "translation": "I didn't do it."
+          "translation": "Tôi không làm việc đó."
         },
         {
           "id": "ex-1",
@@ -6246,7 +6246,7 @@
           ],
           "chinese": "我是学生。",
           "pinyin": "wǒ shì xuéshēng 。",
-          "translation": "I am a student."
+          "translation": "Tôi là học sinh."
         },
         {
           "id": "ex-2",
@@ -6259,7 +6259,7 @@
           ],
           "chinese": "你是John吗？",
           "pinyin": "nǐ shì John ma ？",
-          "translation": "Are you John?"
+          "translation": "Bạn có phải là John không?"
         },
         {
           "id": "ex-3",
@@ -6272,7 +6272,7 @@
           ],
           "chinese": "他们是有钱人。",
           "pinyin": "tāmen shì yǒuqián rén 。",
-          "translation": "They are rich."
+          "translation": "Họ rất giàu."
         },
         {
           "id": "ex-4",
@@ -6284,7 +6284,7 @@
           ],
           "chinese": "你是老板吗？",
           "pinyin": "nǐshì lǎobǎn ma ？",
-          "translation": "Are you the boss?"
+          "translation": "Bạn có phải là sếp không?"
         },
         {
           "id": "ex-5",
@@ -6297,7 +6297,7 @@
           ],
           "chinese": "这是我男朋友。",
           "pinyin": "zhè shì wǒ nánpéngyǒu 。",
-          "translation": "This is my boyfriend."
+          "translation": "Đây là bạn trai của tôi."
         },
         {
           "id": "ex-6",
@@ -6311,7 +6311,7 @@
           ],
           "chinese": "那是你们公司吗？",
           "pinyin": "nà shì nǐmen gōngsī ma ？",
-          "translation": "Is that your company?"
+          "translation": "Đó có phải là công ty của bạn không?"
         },
         {
           "id": "ex-7",
@@ -6325,7 +6325,7 @@
           ],
           "chinese": "你妈妈是老师吗？",
           "pinyin": "nǐ māmā shì lǎoshī ma ？",
-          "translation": "Is your mother a teacher?"
+          "translation": "Mẹ bạn có phải là giáo viên không?"
         },
         {
           "id": "ex-8",
@@ -6340,7 +6340,7 @@
           ],
           "chinese": "这都是你的钱。",
           "pinyin": "zhè dū shì nǐ de qián 。",
-          "translation": "This is your money."
+          "translation": "Đây là tiền của bạn."
         },
         {
           "id": "ex-9",
@@ -6353,7 +6353,7 @@
           ],
           "chinese": "那是什么菜？",
           "pinyin": "nà shì shíyāo cài ？",
-          "translation": "What kind of food is that?"
+          "translation": "Đó là loại thức ăn gì vậy?"
         },
         {
           "id": "ex-10",
@@ -6368,7 +6368,7 @@
           ],
           "chinese": "我也是他的朋友。",
           "pinyin": "wǒ yě shì tā de péngyǒu 。",
-          "translation": "I am also his friend."
+          "translation": "Tôi cũng là bạn của anh ấy."
         },
         {
           "id": "ex-11",
@@ -6382,7 +6382,7 @@
           ],
           "chinese": "他没听到，是不是？",
           "pinyin": "tā méi tīngdào，shì bù shì ？",
-          "translation": "He did n’t hear it, did he?"
+          "translation": "Anh ấy không nghe thấy, phải không?"
         },
         {
           "id": "ex-12",
@@ -6398,7 +6398,7 @@
           ],
           "chinese": "你是不是还没吃饭？",
           "pinyin": "nǐ shì bù shì huán méi chīfàn ？",
-          "translation": "Have you not eaten yet?"
+          "translation": "Bạn vẫn chưa ăn sao?"
         },
         {
           "id": "ex-13",
@@ -6414,7 +6414,7 @@
           ],
           "chinese": "你们是不是中国人？",
           "pinyin": "nǐmen shì bù shì zhōng guó rén ？",
-          "translation": "Are you Chinese?"
+          "translation": "Bạn có phải là người Trung Quốc không?"
         }
       ],
       "titleVi": "Nối danh từ với 是"
@@ -6427,8 +6427,8 @@
         "太 + Adj. + 了"
       ],
       "usedFor": [
-        "Emphasizing",
-        "Expressing quality"
+        "Nhấn mạnh",
+        "Biểu thị mức độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG8HVFN",
       "examples": [
@@ -6443,7 +6443,7 @@
           ],
           "chinese": "你到了，是吗？",
           "pinyin": "nǐ dào le，shì ma ？",
-          "translation": "Are you here, are you?"
+          "translation": "Bạn ở đây, phải không?"
         },
         {
           "id": "ex-2",
@@ -6458,7 +6458,7 @@
           ],
           "chinese": "你有两个孩子，是吗？",
           "pinyin": "nǐ yǒu liǎng gè háizǐ，shì ma ？",
-          "translation": "You have two children, are you?"
+          "translation": "Bạn có hai đứa con, đúng không?"
         },
         {
           "id": "ex-1",
@@ -6471,7 +6471,7 @@
           ],
           "chinese": "米饭太多了。",
           "pinyin": "mǐfàn tài duō le 。",
-          "translation": "There is too much rice."
+          "translation": "Có quá nhiều cơm."
         },
         {
           "id": "ex-2",
@@ -6484,7 +6484,7 @@
           ],
           "chinese": "现在太晚了。",
           "pinyin": "xiànzài tài wǎn le 。",
-          "translation": "it is too late now."
+          "translation": "Bây giờ đã quá muộn rồi."
         },
         {
           "id": "ex-3",
@@ -6497,7 +6497,7 @@
           ],
           "chinese": "老板太忙了。",
           "pinyin": "lǎobǎn tài máng le 。",
-          "translation": "The boss is too busy."
+          "translation": "Sếp quá bận rộn."
         },
         {
           "id": "ex-4",
@@ -6510,7 +6510,7 @@
           ],
           "chinese": "老师太累了。",
           "pinyin": "lǎoshī tài lèi le 。",
-          "translation": "The teacher is too tired."
+          "translation": "Giáo viên quá mệt mỏi."
         },
         {
           "id": "ex-5",
@@ -6524,7 +6524,7 @@
           ],
           "chinese": "这个厕所太脏了。",
           "pinyin": "zhègè cèsuǒ tài zāng le 。",
-          "translation": "This toilet is too dirty."
+          "translation": "Nhà vệ sinh này quá bẩn."
         },
         {
           "id": "ex-6",
@@ -6537,7 +6537,7 @@
           ],
           "chinese": "你太好了。",
           "pinyin": "nǐ tài hǎo le 。",
-          "translation": "You are very nice."
+          "translation": "Bạn rất tốt."
         },
         {
           "id": "ex-7",
@@ -6550,7 +6550,7 @@
           ],
           "chinese": "他太帅了。",
           "pinyin": "tā tài shuài le 。",
-          "translation": "He is so handsome."
+          "translation": "Anh ấy rất đẹp trai."
         },
         {
           "id": "ex-8",
@@ -6565,7 +6565,7 @@
           ],
           "chinese": "这个女孩太漂亮了。",
           "pinyin": "zhè gè nv̌hái tài piāoliàng le 。",
-          "translation": "This girl is so beautiful."
+          "translation": "Cô gái này rất xinh đẹp."
         }
       ],
       "titleVi": "Diễn đạt quá mức với 太"
@@ -6578,8 +6578,8 @@
         "Noun + 很 + Adj."
       ],
       "usedFor": [
-        "Describing things",
-        "Expressing quality"
+        "Miêu tả sự vật",
+        "Biểu thị mức độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASG17BLH",
       "examples": [
@@ -6594,7 +6594,7 @@
           ],
           "chinese": "小猫太可爱了！",
           "pinyin": "xiǎomāo tài kěài le ！",
-          "translation": "The kitten is so cute!"
+          "translation": "Chú mèo con thật dễ thương!"
         },
         {
           "id": "ex-2",
@@ -6609,7 +6609,7 @@
           ],
           "chinese": "你的孩子太聪明了。",
           "pinyin": "nǐ de háizǐ tài cōngmíng le 。",
-          "translation": "Your child is too smart."
+          "translation": "Con của bạn quá thông minh."
         },
         {
           "id": "ex-1",
@@ -6621,7 +6621,7 @@
           ],
           "chinese": "我很好。",
           "pinyin": "wǒ hěn hǎo 。",
-          "translation": "I'm very good."
+          "translation": "Tôi rất khỏe."
         },
         {
           "id": "ex-2",
@@ -6633,7 +6633,7 @@
           ],
           "chinese": "你很漂亮。",
           "pinyin": "nǐ hěn piāoliàng 。",
-          "translation": "you are very beautiful."
+          "translation": "Bạn rất xinh đẹp."
         },
         {
           "id": "ex-3",
@@ -6645,7 +6645,7 @@
           ],
           "chinese": "他很高兴。",
           "pinyin": "tā hěn gāoxīng 。",
-          "translation": "He is very happy."
+          "translation": "Anh ấy rất vui vẻ."
         },
         {
           "id": "ex-4",
@@ -6657,7 +6657,7 @@
           ],
           "chinese": "中文很难。",
           "pinyin": "zhōngwén hěn nán 。",
-          "translation": "Chinese is difficult."
+          "translation": "Tiếng Trung rất khó."
         },
         {
           "id": "ex-5",
@@ -6669,7 +6669,7 @@
           ],
           "chinese": "老板很生气。",
           "pinyin": "lǎobǎn hěn shēngqì 。",
-          "translation": "The boss is very angry."
+          "translation": "Ông chủ rất tức giận."
         },
         {
           "id": "ex-6",
@@ -6681,7 +6681,7 @@
           ],
           "chinese": "我们很累。",
           "pinyin": "wǒmen hěn lèi 。",
-          "translation": "We are tired."
+          "translation": "Chúng tôi rất mệt."
         },
         {
           "id": "ex-7",
@@ -6695,7 +6695,7 @@
           ],
           "chinese": "我哥哥也很高。",
           "pinyin": "wǒ gēgē yě hěn gāo 。",
-          "translation": "My brother is also very tall."
+          "translation": "Anh trai tôi cũng rất cao."
         },
         {
           "id": "ex-8",
@@ -6710,7 +6710,7 @@
           ],
           "chinese": "你家也很远吗？",
           "pinyin": "nǐ jiā yě hěn yuǎn ma ？",
-          "translation": "Is your home far away?"
+          "translation": "Nhà bạn có xa không?"
         },
         {
           "id": "ex-9",
@@ -6725,7 +6725,7 @@
           ],
           "chinese": "爸爸很忙，妈妈也很忙。",
           "pinyin": "bàbà hěn máng，māmā yě hěn máng 。",
-          "translation": "Dad is very busy and Mom is very busy."
+          "translation": "Bố rất bận và mẹ cũng rất bận."
         },
         {
           "id": "ex-10",
@@ -6741,7 +6741,7 @@
           ],
           "chinese": "他和他弟弟都很帅。",
           "pinyin": "tā hé tā dìdì dū hěn shuài 。",
-          "translation": "He and his brother are very handsome."
+          "translation": "Anh ấy và em trai anh ấy đều rất đẹp trai."
         }
       ],
       "titleVi": "Danh từ + câu tính từ đơn giản"
@@ -6754,7 +6754,7 @@
         "一些 + Noun"
       ],
       "usedFor": [
-        "Expressing quantity"
+        "Biểu thị số lượng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGWVZ0T",
       "examples": [
@@ -6768,7 +6768,7 @@
           ],
           "chinese": "他很高。",
           "pinyin": "tā hěn gāo 。",
-          "translation": "He is tall."
+          "translation": "Anh ấy cao."
         },
         {
           "id": "ex-2",
@@ -6780,7 +6780,7 @@
           ],
           "chinese": "他非常高。",
           "pinyin": "tā fēicháng gāo 。",
-          "translation": "He is very tall."
+          "translation": "Anh ấy rất cao."
         },
         {
           "id": "ex-1",
@@ -6796,7 +6796,7 @@
           ],
           "chinese": "妈妈去超市买了一些水果。",
           "pinyin": "māmā qù chāoshì mǎi le yīxiē shǔiguǒ 。",
-          "translation": "Mother went to the supermarket and bought some fruits."
+          "translation": "Mẹ đã đi siêu thị và mua một ít trái cây."
         },
         {
           "id": "ex-2",
@@ -6812,7 +6812,7 @@
           ],
           "chinese": "上个周末他买了一些衣服。",
           "pinyin": "shàng gè zhōumò tā mǎile yīxiē yīfú 。",
-          "translation": "He bought some clothes last weekend."
+          "translation": "Cuối tuần trước anh ấy đã mua một vài bộ quần áo."
         },
         {
           "id": "ex-3",
@@ -6829,7 +6829,7 @@
           ],
           "chinese": "我们很快会见到一些新同事。",
           "pinyin": "wǒmen hěn kuài hùi jiàndào yīxiē xīn tóngshì 。",
-          "translation": "We will soon meet some new colleagues."
+          "translation": "Chúng ta sẽ sớm gặp một vài đồng nghiệp mới."
         },
         {
           "id": "ex-4",
@@ -6842,7 +6842,7 @@
           ],
           "chinese": "你饿不饿？",
           "pinyin": "nǐ è bù è ？",
-          "translation": "Are you hungry?"
+          "translation": "Bạn có đói không?"
         },
         {
           "id": "ex-5",
@@ -6858,7 +6858,7 @@
           ],
           "chinese": "下课以后，学生们问了一些问题。",
           "pinyin": "xiàkè yǐhòu， xuéshēngmen wèn le yīxiē wèntí 。",
-          "translation": "After class, the students asked some questions."
+          "translation": "Sau giờ học, các học sinh đã đặt một vài câu hỏi."
         },
         {
           "id": "ex-6",
@@ -6871,7 +6871,7 @@
           ],
           "chinese": "给我一些时间，好吗？",
           "pinyin": "gěi wǒ yīxiē shíjiān，hǎoma ？",
-          "translation": "Give me some time, will you?"
+          "translation": "Cho tôi một chút thời gian được không?"
         },
         {
           "id": "ex-7",
@@ -6887,7 +6887,7 @@
           ],
           "chinese": "他给我带了一些书。",
           "pinyin": "tā gěi wǒ dài le yīxiē shū 。",
-          "translation": "He brought me some books."
+          "translation": "Anh ấy đã mang cho tôi một vài cuốn sách."
         },
         {
           "id": "ex-8",
@@ -6903,7 +6903,7 @@
           ],
           "chinese": "你可以借我一些钱吗？",
           "pinyin": "nǐ kěyǐ jiè wǒ yīxiē qián ma ？",
-          "translation": "Can you lend me some money?"
+          "translation": "Bạn có thể cho tôi vay một ít tiền không?"
         }
       ],
       "titleVi": "Diễn tả một số bằng 一些"
@@ -6917,7 +6917,7 @@
         "Number + 块 + Number + 毛"
       ],
       "usedFor": [
-        "Expressing quantity"
+        "Biểu thị số lượng"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGL6JOE",
       "examples": [
@@ -6937,7 +6937,7 @@
           ],
           "chinese": "你想在咖啡里放一些糖吗？",
           "pinyin": "nǐ xiǎng zài kāfēi lǐ fàng yīxiē táng ma ？",
-          "translation": "Do you want to put some sugar in the coffee?"
+          "translation": "Bạn có muốn cho thêm chút đường vào cà phê không?"
         },
         {
           "id": "ex-2",
@@ -6957,7 +6957,7 @@
           ],
           "chinese": "我在中国的时候，去过一些很漂亮的地方。",
           "pinyin": "wǒ zài zhōngguó de shíhòu，qù guò yīxiē hěn piāoliàng de dìfāng 。",
-          "translation": "When I was in China, I visited some beautiful places."
+          "translation": "Khi tôi ở Trung Quốc, tôi đã đi thăm một vài nơi rất đẹp."
         },
         {
           "id": "ex-1",
@@ -6968,7 +6968,7 @@
           ],
           "chinese": "多少钱？",
           "pinyin": "duōshǎo qián ？",
-          "translation": "how much is it?"
+          "translation": "Cái này giá bao nhiêu?"
         },
         {
           "id": "ex-2",
@@ -6982,7 +6982,7 @@
           ],
           "chinese": "你的手机多少钱？",
           "pinyin": "nǐ de shǒujī duōshǎo qián ？",
-          "translation": "How much is your mobile phone?"
+          "translation": "Điện thoại di động của bạn giá bao nhiêu?"
         },
         {
           "id": "ex-3",
@@ -6996,7 +6996,7 @@
           ],
           "chinese": "我们的午饭多少钱？",
           "pinyin": "wǒmen de wǔfàn duōshǎo qián ？",
-          "translation": "How much is our lunch?"
+          "translation": "Bữa trưa của chúng ta hết bao nhiêu tiền?"
         },
         {
           "id": "ex-4",
@@ -7009,7 +7009,7 @@
           ],
           "chinese": "这杯咖啡多少钱？",
           "pinyin": "zhè bēi kāfēiduōshǎo qián ？",
-          "translation": "How much is this cup of coffee?"
+          "translation": "Cốc cà phê này giá bao nhiêu?"
         },
         {
           "id": "ex-5",
@@ -7023,7 +7023,7 @@
           ],
           "chinese": "这件衣服多少钱？",
           "pinyin": "zhè jiàn yīfú duōshǎo qián ？",
-          "translation": "how much is this shirt?"
+          "translation": "Chiếc áo sơ mi này giá bao nhiêu?"
         },
         {
           "id": "ex-1",
@@ -7035,7 +7035,7 @@
           ],
           "chinese": "两块五毛",
           "pinyin": "liǎng kuài wǔ máo",
-          "translation": "Two pieces"
+          "translation": "Hai tệ"
         },
         {
           "id": "ex-2",
@@ -7047,7 +7047,7 @@
           ],
           "chinese": "三块八毛",
           "pinyin": "sān kuài bā máo",
-          "translation": "Three pieces and eight cents"
+          "translation": "Ba tệ tám hào"
         },
         {
           "id": "ex-3",
@@ -7059,7 +7059,7 @@
           ],
           "chinese": "十块两毛",
           "pinyin": "shí kuài liǎng máo",
-          "translation": "Ten pieces of two hairs"
+          "translation": "Mười tệ hai hào"
         }
       ],
       "titleVi": "Đếm tiền"
@@ -7073,7 +7073,7 @@
         "Subj. + Verb + 多少 + Measure Word + Noun ？"
       ],
       "usedFor": [
-        "Asking questions"
+        "Đặt câu hỏi"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGL9KQM",
       "examples": [
@@ -7087,7 +7087,7 @@
           ],
           "chinese": "二十三块八毛",
           "pinyin": "èrshí sān kuài bāmáo",
-          "translation": "Twenty-three pieces"
+          "translation": "Hai mươi ba tệ"
         },
         {
           "id": "ex-2",
@@ -7099,7 +7099,7 @@
           ],
           "chinese": "五十块五毛",
           "pinyin": "wǔshí kuài wǔ máo",
-          "translation": "Fifty dollars"
+          "translation": "Năm mươi tệ"
         },
         {
           "id": "ex-1",
@@ -7113,7 +7113,7 @@
           ],
           "chinese": "他有几个孩子？",
           "pinyin": "tā yǒu jī gè háizǐ ？",
-          "translation": "How many children does he have?"
+          "translation": "Anh ấy có bao nhiêu người con?"
         },
         {
           "id": "ex-2",
@@ -7128,7 +7128,7 @@
           ],
           "chinese": "你家有几个房间？",
           "pinyin": "nǐ jiā yǒu jī gè fángjiān ？",
-          "translation": "How many rooms does your family have?"
+          "translation": "Gia đình bạn có bao nhiêu phòng?"
         },
         {
           "id": "ex-3",
@@ -7144,7 +7144,7 @@
           ],
           "chinese": "他们在这里住几个星期？",
           "pinyin": "tāmen zài zhèlǐ zhù jī gè xīngqī ？",
-          "translation": "How many weeks do they live here?"
+          "translation": "Họ sống ở đây bao nhiêu tuần?"
         },
         {
           "id": "ex-4",
@@ -7159,7 +7159,7 @@
           ],
           "chinese": "你带了几件衣服？",
           "pinyin": "nǐ dài le jī jiàn yīfú ？",
-          "translation": "How many clothes did you bring?"
+          "translation": "Bạn đã mang theo bao nhiêu quần áo?"
         },
         {
           "id": "ex-5",
@@ -7175,7 +7175,7 @@
           ],
           "chinese": "老板每天工作几个小时？",
           "pinyin": "lǎobǎn měi tiān gōngzuò jī gè xiǎoshí ？",
-          "translation": "How many hours does the boss work every day?"
+          "translation": "Ông chủ làm việc bao nhiêu tiếng mỗi ngày?"
         },
         {
           "id": "ex-1",
@@ -7190,7 +7190,7 @@
           ],
           "chinese": "你去过多少个国家？",
           "pinyin": "nǐ qù guò duōshǎo gè guójiā ？",
-          "translation": "How many countries have you been to?"
+          "translation": "Bạn đã từng đi bao nhiêu quốc gia rồi?"
         },
         {
           "id": "ex-2",
@@ -7205,7 +7205,7 @@
           ],
           "chinese": "你们班有多少个学生？",
           "pinyin": "nǐmen bān yǒu duōshǎo gè xuéshēng ？",
-          "translation": "How many students are there in your class?"
+          "translation": "Lớp của bạn có bao nhiêu học sinh?"
         },
         {
           "id": "ex-3",
@@ -7223,7 +7223,7 @@
           ],
           "chinese": "你大学的时候看了多少本书？",
           "pinyin": "nǐ dàxué de shíhòu kàn le duōshǎo běn shū ？",
-          "translation": "How many books did you read when you were in college?"
+          "translation": "Khi còn học đại học, bạn đã đọc bao nhiêu cuốn sách?"
         }
       ],
       "titleVi": "Đo lường từ trong câu hỏi số lượng"
@@ -7237,8 +7237,8 @@
         "你 觉得 + Topic + 怎么样 ?"
       ],
       "usedFor": [
-        "Asking questions",
-        "Expressing attitude"
+        "Đặt câu hỏi",
+        "Bày tỏ thái độ"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGC701A",
       "examples": [
@@ -7256,7 +7256,7 @@
           ],
           "chinese": "他们昨天请了多少个朋友？",
           "pinyin": "tāmen zuótiān qǐng le duōshǎo gè péngyǒu ？",
-          "translation": "How many friends did they invite yesterday?"
+          "translation": "Hôm qua họ đã mời bao nhiêu người bạn?"
         },
         {
           "id": "ex-2",
@@ -7271,7 +7271,7 @@
           ],
           "chinese": "上海有多少个外国公司？",
           "pinyin": "shànghǎi yǒu duōshǎo gè wàiguó gōngsī ？",
-          "translation": "How many foreign companies are there in Shanghai?"
+          "translation": "Ở Thượng Hải có bao nhiêu công ty nước ngoài?"
         },
         {
           "id": "ex-1",
@@ -7283,7 +7283,7 @@
           ],
           "chinese": "你最近怎么样？",
           "pinyin": "nǐ zùijìn zěnyāoyáng ？",
-          "translation": "how have you been?"
+          "translation": "Dạo này bạn thế nào?"
         },
         {
           "id": "ex-2",
@@ -7294,7 +7294,7 @@
           ],
           "chinese": "中国怎么样？",
           "pinyin": "zhōngguó zěnyāoyáng ？",
-          "translation": "How is china?"
+          "translation": "Trung Quốc thế nào?"
         },
         {
           "id": "ex-3",
@@ -7306,7 +7306,7 @@
           ],
           "chinese": "北京冬天怎么样？",
           "pinyin": "běijīng dōngtiān zěnyāoyáng ？",
-          "translation": "How is Beijing winter?"
+          "translation": "Mùa đông ở Bắc Kinh thế nào?"
         },
         {
           "id": "ex-4",
@@ -7318,7 +7318,7 @@
           ],
           "chinese": "今天天气怎么样？",
           "pinyin": "jīntiān tiānqì zěnyāoyáng ？",
-          "translation": "How's the weather today?"
+          "translation": "Thời tiết hôm nay thế nào?"
         },
         {
           "id": "ex-5",
@@ -7332,7 +7332,7 @@
           ],
           "chinese": "你妹妹的工作怎么样？",
           "pinyin": "nǐ mèimèi de gōngzuò zěnyāoyáng ？",
-          "translation": "How is your sister's job?"
+          "translation": "Công việc của chị gái bạn thế nào?"
         },
         {
           "id": "ex-6",
@@ -7345,7 +7345,7 @@
           ],
           "chinese": "你的新手机怎么样？",
           "pinyin": "nǐde xīn shǒujī zěnyāoyáng ？",
-          "translation": "How is your new phone?"
+          "translation": "Điện thoại mới của bạn thế nào?"
         },
         {
           "id": "ex-7",
@@ -7358,7 +7358,7 @@
           ],
           "chinese": "这里的菜怎么样？",
           "pinyin": "zhèlǐ de cài zěnyāoyáng ？",
-          "translation": "How is the food here?"
+          "translation": "Đồ ăn ở đây thế nào?"
         },
         {
           "id": "ex-1",
@@ -7371,7 +7371,7 @@
           ],
           "chinese": "你觉得上海怎么样？",
           "pinyin": "nǐ juédé shànghǎi zěnyāoyáng ？",
-          "translation": "What do you think of Shanghai?"
+          "translation": "Bạn nghĩ sao về Thượng Hải?"
         }
       ],
       "titleVi": "Hỏi mọi chuyện thế nào với 怎么样"
@@ -7390,8 +7390,8 @@
         "Subj. + 怎么 + Verb (+ Obj.) ?"
       ],
       "usedFor": [
-        "Sentence Patterns",
-        "Asking questions"
+        "Mẫu câu",
+        "Đặt câu hỏi"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGJQPSC",
       "examples": [
@@ -7406,7 +7406,7 @@
           ],
           "chinese": "你觉得我怎么样？",
           "pinyin": "nǐ juédé wǒ zěnyāoyáng ？",
-          "translation": "What do you think about me?"
+          "translation": "Bạn nghĩ sao về tôi?"
         },
         {
           "id": "ex-2",
@@ -7419,7 +7419,7 @@
           ],
           "chinese": "你觉得中文怎么样？",
           "pinyin": "nǐ juédé zhōngwén zěnyāoyáng ？",
-          "translation": "What do you think of Chinese?"
+          "translation": "Bạn nghĩ sao về tiếng Trung?"
         },
         {
           "id": "ex-1",
@@ -7431,7 +7431,7 @@
           ],
           "chinese": "这是什么？",
           "pinyin": "zhè shì shíyāo ？",
-          "translation": "what is this?"
+          "translation": "Đây là cái gì?"
         },
         {
           "id": "ex-2",
@@ -7445,7 +7445,7 @@
           ],
           "chinese": "你喜欢吃什么菜？",
           "pinyin": "nǐ xǐhuān chī shíyāo cài ？",
-          "translation": "what dishes do you like to eat?"
+          "translation": "Bạn thích ăn những món gì?"
         },
         {
           "id": "ex-3",
@@ -7459,7 +7459,7 @@
           ],
           "chinese": "你在看什么书？",
           "pinyin": "nǐ zài kàn shíyāo shū ？",
-          "translation": "What book are you reading?"
+          "translation": "Bạn đang đọc cuốn sách gì vậy?"
         },
         {
           "id": "ex-4",
@@ -7472,7 +7472,7 @@
           ],
           "chinese": "他开什么车？",
           "pinyin": "tā kāi shíyāo chē ？",
-          "translation": "What car does he drive?"
+          "translation": "Anh ấy lái xe gì?"
         },
         {
           "id": "ex-1",
@@ -7483,7 +7483,7 @@
           ],
           "chinese": "哪里、哪儿",
           "pinyin": "nǎlǐ 、 nǎér",
-          "translation": "Where, where"
+          "translation": "Đâu có, đâu có (khiêm tốn)"
         },
         {
           "id": "ex-2",
@@ -7492,7 +7492,7 @@
           ],
           "chinese": "哪个",
           "pinyin": "nǎgè",
-          "translation": "Which"
+          "translation": "Cái nào"
         },
         {
           "id": "ex-3",
@@ -7505,7 +7505,7 @@
           ],
           "chinese": "你要去哪儿？",
           "pinyin": "nǐ yào qù nǎér ？",
-          "translation": "Where are you going?"
+          "translation": "Bạn đang đi đâu đấy?"
         },
         {
           "id": "ex-4",
@@ -7517,7 +7517,7 @@
           ],
           "chinese": "我们在哪儿？",
           "pinyin": "wǒmen zài nǎér ？",
-          "translation": "Where are we?"
+          "translation": "Chúng ta đang ở đâu?"
         },
         {
           "id": "ex-5",
@@ -7533,7 +7533,7 @@
           ],
           "chinese": "这个周末你想去哪儿？",
           "pinyin": "zhè gè zhōumò nǐ xiǎng qù nǎér ？",
-          "translation": "Where do you want to go this weekend?"
+          "translation": "Cuối tuần này bạn muốn đi đâu?"
         },
         {
           "id": "ex-6",
@@ -7546,7 +7546,7 @@
           ],
           "chinese": "你好，你要去哪儿？",
           "pinyin": "nǐhǎo，nǐ yào qù nǎér ？",
-          "translation": "Hello, where are you going?"
+          "translation": "Chào bạn, bạn đi đâu đấy?"
         },
         {
           "id": "ex-1",
@@ -7558,7 +7558,7 @@
           ],
           "chinese": "你要哪个？",
           "pinyin": "nǐ yào nǎgè ？",
-          "translation": "which one you want?"
+          "translation": "Bạn muốn cái nào?"
         },
         {
           "id": "ex-2",
@@ -7570,7 +7570,7 @@
           ],
           "chinese": "我要这个。",
           "pinyin": "wǒ yào zhègè 。",
-          "translation": "I want this."
+          "translation": "Tôi muốn cái này."
         },
         {
           "id": "ex-3",
@@ -7584,7 +7584,7 @@
           ],
           "chinese": "你喜欢哪个菜？",
           "pinyin": "nǐ xǐhuān nǎ gè cài ？",
-          "translation": "Which dish do you like?"
+          "translation": "Bạn thích món nào?"
         },
         {
           "id": "ex-4",
@@ -7598,7 +7598,7 @@
           ],
           "chinese": "我喜欢这个菜。",
           "pinyin": "wǒ xǐhuān zhè gè cài 。",
-          "translation": "I like this dish."
+          "translation": "Tôi thích món này."
         },
         {
           "id": "ex-5",
@@ -7612,7 +7612,7 @@
           ],
           "chinese": "我们去哪个饭店？",
           "pinyin": "wǒmen qù nǎ gè fàndiàn ？",
-          "translation": "Which restaurant shall we go to?"
+          "translation": "Chúng ta nên đi nhà hàng nào?"
         },
         {
           "id": "ex-6",
@@ -7627,7 +7627,7 @@
           ],
           "chinese": "我们去你妈妈的饭店。",
           "pinyin": "wǒmen qù nǐ māmā de fàndiàn 。",
-          "translation": "Let's go to your mother's restaurant."
+          "translation": "Chúng ta hãy đến nhà hàng của mẹ bạn đi."
         },
         {
           "id": "ex-7",
@@ -7641,7 +7641,7 @@
           ],
           "chinese": "你在哪个房间？",
           "pinyin": "nǐ zài nǎ gè fángjiān ？",
-          "translation": "Which room are you in?"
+          "translation": "Bạn đang ở phòng nào?"
         },
         {
           "id": "ex-8",
@@ -7655,7 +7655,7 @@
           ],
           "chinese": "我在你的房间。",
           "pinyin": "wǒ zài nǐ de fángjiān 。",
-          "translation": "I'm in your room."
+          "translation": "Tôi đang ở trong phòng của bạn."
         },
         {
           "id": "ex-9",
@@ -7670,7 +7670,7 @@
           ],
           "chinese": "你住在哪个区？",
           "pinyin": "nǐ zhù zài nǎ gè qū ？",
-          "translation": "Which district do you live in?"
+          "translation": "Bạn sống ở quận nào?"
         },
         {
           "id": "ex-1",
@@ -7682,7 +7682,7 @@
           ],
           "chinese": "你是谁？",
           "pinyin": "nǐ shì shúi ？",
-          "translation": "who are you?"
+          "translation": "Bạn là ai?"
         },
         {
           "id": "ex-2",
@@ -7695,7 +7695,7 @@
           ],
           "chinese": "我是他女朋友。",
           "pinyin": "wǒ shì tā nv̌péngyǒu 。",
-          "translation": "I am his girlfriend."
+          "translation": "Tôi là bạn gái của anh ấy."
         },
         {
           "id": "ex-3",
@@ -7707,7 +7707,7 @@
           ],
           "chinese": "她是谁？",
           "pinyin": "tā shì shúi ？",
-          "translation": "Who is she?"
+          "translation": "Cô ấy là ai?"
         },
         {
           "id": "ex-4",
@@ -7719,7 +7719,7 @@
           ],
           "chinese": "她是我的老师。",
           "pinyin": "tā shì wǒdelǎoshī 。",
-          "translation": "She is my teacher."
+          "translation": "Cô ấy là giáo viên của tôi."
         },
         {
           "id": "ex-5",
@@ -7732,7 +7732,7 @@
           ],
           "chinese": "你不喜欢谁？",
           "pinyin": "nǐ bù xǐhuān shúi ？",
-          "translation": "Who do you dislike?"
+          "translation": "Bạn không thích ai?"
         },
         {
           "id": "ex-1",
@@ -7744,7 +7744,7 @@
           ],
           "chinese": "你什么时候来？",
           "pinyin": "nǐ shíyāoshíhòu lái ？",
-          "translation": "When are you coming?"
+          "translation": "Khi nào bạn đến?"
         },
         {
           "id": "ex-2",
@@ -7756,7 +7756,7 @@
           ],
           "chinese": "我明天来。",
           "pinyin": "wǒ míngtiān lái 。",
-          "translation": "I will come tomorrow."
+          "translation": "Tôi sẽ đến vào ngày mai."
         },
         {
           "id": "ex-3",
@@ -7768,7 +7768,7 @@
           ],
           "chinese": "你们什么时候走？",
           "pinyin": "nǐmen shíyāoshíhòu zǒu ？",
-          "translation": "When are you going?"
+          "translation": "Khi nào bạn đi?"
         },
         {
           "id": "ex-4",
@@ -7782,7 +7782,7 @@
           ],
           "chinese": "我们下个月走。",
           "pinyin": "wǒmen xià gè yuè zǒu 。",
-          "translation": "We are leaving next month."
+          "translation": "Chúng tôi sẽ đi vào tháng sau."
         },
         {
           "id": "ex-5",
@@ -7794,7 +7794,7 @@
           ],
           "chinese": "我们什么时候吃饭？",
           "pinyin": "wǒmen shíyāoshíhòu chīfàn ？",
-          "translation": "When shall we eat?"
+          "translation": "Khi nào chúng ta ăn?"
         },
         {
           "id": "ex-6",
@@ -7807,7 +7807,7 @@
           ],
           "chinese": "我们6点吃饭。",
           "pinyin": "wǒmen 6 diǎn chīfàn 。",
-          "translation": "We have dinner at 6 o'clock."
+          "translation": "Chúng ta ăn tối lúc 6 giờ."
         },
         {
           "id": "ex-7",
@@ -7819,7 +7819,7 @@
           ],
           "chinese": "爸爸什么时候回来？",
           "pinyin": "bàbà shíyāoshíhòu húilái ？",
-          "translation": "When will dad come back?"
+          "translation": "Khi nào bố sẽ quay lại?"
         },
         {
           "id": "ex-8",
@@ -7831,7 +7831,7 @@
           ],
           "chinese": "爸爸周末回来。",
           "pinyin": "bàbà zhōumò húilái 。",
-          "translation": "Dad is back on the weekend."
+          "translation": "Bố sẽ về vào cuối tuần."
         },
         {
           "id": "ex-9",
@@ -7846,7 +7846,7 @@
           ],
           "chinese": "你的飞机什么时候到上海？",
           "pinyin": "nǐ de fēijī shíyāoshíhòu dào shànghǎi ？",
-          "translation": "When will your plane arrive in Shanghai?"
+          "translation": "Khi nào máy bay của bạn đến Thượng Hải?"
         },
         {
           "id": "ex-10",
@@ -7857,7 +7857,7 @@
           ],
           "chinese": "晚上八点。",
           "pinyin": "wǎnshàng bādiǎn 。",
-          "translation": "eight pm."
+          "translation": "8 giờ tối."
         },
         {
           "id": "ex-11",
@@ -7870,7 +7870,7 @@
           ],
           "chinese": "你为什么学中文？",
           "pinyin": "nǐ wèishíyāo xué zhōngwén ？",
-          "translation": "Why do you learn Chinese?"
+          "translation": "Tại sao bạn học tiếng Trung?"
         },
         {
           "id": "ex-12",
@@ -7884,7 +7884,7 @@
           ],
           "chinese": "因为我在中国工作。",
           "pinyin": "yīnwèi wǒ zài zhōngguó gōngzuò 。",
-          "translation": "Because I work in China."
+          "translation": "Bởi vì tôi làm việc ở Trung Quốc."
         },
         {
           "id": "ex-13",
@@ -7898,7 +7898,7 @@
           ],
           "chinese": "他们为什么不喝咖啡？",
           "pinyin": "tāmen wèishíyāo bù hē kāfēi ？",
-          "translation": "Why don't they drink coffee?"
+          "translation": "Tại sao họ không uống cà phê?"
         },
         {
           "id": "ex-14",
@@ -7911,7 +7911,7 @@
           ],
           "chinese": "因为咖啡很苦。",
           "pinyin": "yīnwèi kāfēi hěn kǔ 。",
-          "translation": "Because coffee is bitter."
+          "translation": "Bởi vì cà phê đắng."
         },
         {
           "id": "ex-15",
@@ -7924,7 +7924,7 @@
           ],
           "chinese": "他为什么不来？",
           "pinyin": "tā wèishíyāo bù lái ？",
-          "translation": "Why didn't he come?"
+          "translation": "Tại sao anh ấy không đến?"
         },
         {
           "id": "ex-16",
@@ -7937,7 +7937,7 @@
           ],
           "chinese": "因为他很忙。",
           "pinyin": "yīnwèi tā hěn máng 。",
-          "translation": "Because he is busy."
+          "translation": "Bởi vì anh ấy bận."
         },
         {
           "id": "ex-17",
@@ -7951,7 +7951,7 @@
           ],
           "chinese": "你早上为什么不在？",
           "pinyin": "nǐ zǎoshàng wèishíyāo bù zài ？",
-          "translation": "Why are you not here this morning?"
+          "translation": "Tại sao sáng nay bạn không có ở đây?"
         },
         {
           "id": "ex-18",
@@ -7966,7 +7966,7 @@
           ],
           "chinese": "因为我出去见朋友了。",
           "pinyin": "yīnwèi wǒ chūqù jiàn péngyǒu le 。",
-          "translation": "Because I went out to meet friends."
+          "translation": "Bởi vì tôi đã ra ngoài gặp bạn bè."
         },
         {
           "id": "ex-19",
@@ -7981,7 +7981,7 @@
           ],
           "chinese": "这些外国人为什么不喜欢中国？",
           "pinyin": "zhèxiē wàiguórén wèishíyāo bù xǐhuān zhōngguó ？",
-          "translation": "Why don't these foreigners like China?"
+          "translation": "Tại sao những người nước ngoài này không thích Trung Quốc?"
         },
         {
           "id": "ex-20",
@@ -7994,7 +7994,7 @@
           ],
           "chinese": "因为中国人太多。",
           "pinyin": "yīnwèi zhōngguó rén tàiduō 。",
-          "translation": "Because there are too many Chinese."
+          "translation": "Bởi vì có quá nhiều người Trung Quốc."
         },
         {
           "id": "ex-21",
@@ -8007,7 +8007,7 @@
           ],
           "chinese": "你怎么学习中文？",
           "pinyin": "nǐ zěnyāo xuéxí zhōngwén ？",
-          "translation": "How do you learn Chinese?"
+          "translation": "Bạn học tiếng Trung như thế nào?"
         },
         {
           "id": "ex-22",
@@ -8022,7 +8022,7 @@
           ],
           "chinese": "我用GrammarWiki学习中文。",
           "pinyin": "wǒ yòng Grammar Wiki xuéxí zhōngwén 。",
-          "translation": "I use GrammarWiki to learn Chinese."
+          "translation": "Tôi sử dụng GrammarWiki để học tiếng Trung."
         },
         {
           "id": "ex-23",
@@ -8034,7 +8034,7 @@
           ],
           "chinese": "你怎么上网？",
           "pinyin": "nǐ zěnyāo shàngwǎng ？",
-          "translation": "How do you go online?"
+          "translation": "Bạn lên mạng bằng cách nào?"
         },
         {
           "id": "ex-24",
@@ -8047,7 +8047,7 @@
           ],
           "chinese": "我用手机上网。",
           "pinyin": "wǒ yòng shǒujī shàngwǎng 。",
-          "translation": "I use my mobile phone to go online."
+          "translation": "Tôi dùng điện thoại di động để lên mạng."
         },
         {
           "id": "ex-25",
@@ -8060,7 +8060,7 @@
           ],
           "chinese": "你怎么去北京？",
           "pinyin": "nǐ zěnyāo qù běijīng ？",
-          "translation": "How do you go to Beijing?"
+          "translation": "Bạn đi Bắc Kinh bằng cách nào?"
         },
         {
           "id": "ex-26",
@@ -8073,7 +8073,7 @@
           ],
           "chinese": "我坐火车去。",
           "pinyin": "wǒ zuò huǒchē qù 。",
-          "translation": "I go by train."
+          "translation": "Tôi đi bằng tàu hỏa."
         },
         {
           "id": "ex-27",
@@ -8085,7 +8085,7 @@
           ],
           "chinese": "你们怎么回家？",
           "pinyin": "nǐmen zěnyāo húijiā ？",
-          "translation": "How do you go home?"
+          "translation": "Bạn về nhà bằng cách nào?"
         },
         {
           "id": "ex-28",
@@ -8097,7 +8097,7 @@
           ],
           "chinese": "我开车回家。",
           "pinyin": "wǒ kāichē húijiā 。",
-          "translation": "I drive home."
+          "translation": "Tôi lái xe về nhà."
         },
         {
           "id": "ex-29",
@@ -8110,7 +8110,7 @@
           ],
           "chinese": "你怎么买票？",
           "pinyin": "nǐ zěnyāo mǎi piào ？",
-          "translation": "How do you buy tickets?"
+          "translation": "Bạn mua vé bằng cách nào?"
         },
         {
           "id": "ex-30",
@@ -8123,7 +8123,7 @@
           ],
           "chinese": "我上网买票。",
           "pinyin": "wǒ shàngwǎng mǎi piào 。",
-          "translation": "I buy tickets online."
+          "translation": "Tôi mua vé trực tuyến."
         }
       ],
       "titleVi": "Vị trí của từ để hỏi"
@@ -8137,7 +8137,7 @@
         "Topic (+ Subj.) + Verb + 了吗?"
       ],
       "usedFor": [
-        "Asking questions"
+        "Đặt câu hỏi"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGYKDNF",
       "examples": [
@@ -8151,7 +8151,7 @@
           ],
           "chinese": "你们怎么回家？",
           "pinyin": "nǐmen zěnyāo húijiā ？",
-          "translation": "How do you go home?"
+          "translation": "Bạn về nhà bằng cách nào?"
         },
         {
           "id": "ex-2",
@@ -8164,7 +8164,7 @@
           ],
           "chinese": "你怎么买票？",
           "pinyin": "nǐ zěnyāo mǎi piào ？",
-          "translation": "How do you buy tickets?"
+          "translation": "Bạn mua vé bằng cách nào?"
         },
         {
           "id": "ex-1",
@@ -8177,7 +8177,7 @@
           ],
           "chinese": "你吃饭了吗？",
           "pinyin": "nǐ chīfàn le ma ？",
-          "translation": "have you eaten?"
+          "translation": "Bạn đã ăn chưa?"
         },
         {
           "id": "ex-2",
@@ -8190,7 +8190,7 @@
           ],
           "chinese": "老板走了吗？",
           "pinyin": "lǎobǎn zǒu le ma ？",
-          "translation": "Is the boss gone?"
+          "translation": "Ông chủ đi rồi à?"
         },
         {
           "id": "ex-3",
@@ -8205,7 +8205,7 @@
           ],
           "chinese": "你男朋友找到新工作了吗？",
           "pinyin": "nǐnánpéngyǒu zhǎodào xīn gōngzuò le ma ？",
-          "translation": "Has your boyfriend found a new job?"
+          "translation": "Bạn trai của bạn đã tìm được công việc mới chưa?"
         },
         {
           "id": "ex-4",
@@ -8222,7 +8222,7 @@
           ],
           "chinese": "妈妈，你昨天给我打电话了吗？",
           "pinyin": "māmā ，nǐ zuótiān gěi wǒ dǎdiànhuà le ma ？",
-          "translation": "Mom, did you call me yesterday?"
+          "translation": "Mẹ ơi, hôm qua mẹ có gọi cho con không?"
         },
         {
           "id": "ex-1",
@@ -8236,7 +8236,7 @@
           ],
           "chinese": "晚饭你吃了吗？",
           "pinyin": "wǎnfàn nǐ chī le ma ？",
-          "translation": "Have you eaten dinner?"
+          "translation": "Bạn đã ăn tối chưa?"
         },
         {
           "id": "ex-2",
@@ -8251,7 +8251,7 @@
           ],
           "chinese": "衣服你洗好了吗？",
           "pinyin": "yīfú nǐ xǐ hǎo le ma ？",
-          "translation": "Have you washed your clothes?"
+          "translation": "Bạn đã giặt quần áo chưa?"
         },
         {
           "id": "ex-3",
@@ -8266,7 +8266,7 @@
           ],
           "chinese": "作业你写完了吗？",
           "pinyin": "zuòyè nǐ xiě wán le ma ？",
-          "translation": "Have you finished your homework?"
+          "translation": "Bạn đã làm xong bài tập về nhà chưa?"
         }
       ],
       "titleVi": "Câu hỏi với 了 吗"
@@ -8279,8 +8279,8 @@
         "[Statement] + 吗 ？"
       ],
       "usedFor": [
-        "Asking questions",
-        "Requesting"
+        "Đặt câu hỏi",
+        "Đưa ra yêu cầu"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGQ2AZA",
       "examples": [
@@ -8298,7 +8298,7 @@
           ],
           "chinese": "这个电影你看了吗？",
           "pinyin": "zhè gè diànyǐng nǐ kàn le ma ？",
-          "translation": "Did you watch this movie?"
+          "translation": "Bạn đã xem bộ phim này chưa?"
         },
         {
           "id": "ex-2",
@@ -8314,7 +8314,7 @@
           ],
           "chinese": "我的邮件你收到了吗？",
           "pinyin": "wǒ de yóujiàn nǐ shōudào le ma ？",
-          "translation": "Have you received my mail?"
+          "translation": "Bạn đã nhận được thư của tôi chưa?"
         },
         {
           "id": "ex-1",
@@ -8327,7 +8327,7 @@
           ],
           "chinese": "你喜欢咖啡吗？",
           "pinyin": "nǐ xǐhuān kāfēi ma ？",
-          "translation": "Do you like coffee?"
+          "translation": "Bạn có thích cà phê không?"
         },
         {
           "id": "ex-2",
@@ -8341,7 +8341,7 @@
           ],
           "chinese": "你是大学生吗？",
           "pinyin": "nǐ shì dà xuéshēng ma ？",
-          "translation": "Are you a University student?"
+          "translation": "Bạn có phải là sinh viên đại học không?"
         },
         {
           "id": "ex-3",
@@ -8354,7 +8354,7 @@
           ],
           "chinese": "他是老板吗？",
           "pinyin": "tā shì lǎobǎn ma ？",
-          "translation": "Is he the boss?"
+          "translation": "Anh ấy có phải là ông chủ không?"
         },
         {
           "id": "ex-4",
@@ -8367,7 +8367,7 @@
           ],
           "chinese": "你喜欢她吗？",
           "pinyin": "nǐ xǐhuān tā ma ？",
-          "translation": "do you like her?"
+          "translation": "Bạn có thích cô ấy không?"
         },
         {
           "id": "ex-5",
@@ -8380,7 +8380,7 @@
           ],
           "chinese": "你想家吗？",
           "pinyin": "nǐ xiǎng jiā ma ？",
-          "translation": "do you miss home?"
+          "translation": "Bạn có nhớ nhà không?"
         },
         {
           "id": "ex-6",
@@ -8393,7 +8393,7 @@
           ],
           "chinese": "你们明天见面吗？",
           "pinyin": "nǐmen míngtiān jiànmiàn ma ？",
-          "translation": "Will you meet tomorrow?"
+          "translation": "Ngày mai bạn sẽ gặp nhau chứ?"
         },
         {
           "id": "ex-7",
@@ -8406,7 +8406,7 @@
           ],
           "chinese": "你们也去吗？",
           "pinyin": "nǐmen yě qù ma ？",
-          "translation": "Are you going too?"
+          "translation": "Bạn cũng đi à?"
         },
         {
           "id": "ex-8",
@@ -8422,7 +8422,7 @@
           ],
           "chinese": "他在你们学校学中文吗？",
           "pinyin": "tā zài nǐmen xuéxiào xué zhōngwén ma ？",
-          "translation": "Does he learn Chinese in your school?"
+          "translation": "Anh ấy có học tiếng Trung ở trường của bạn không?"
         },
         {
           "id": "ex-9",
@@ -8435,7 +8435,7 @@
           ],
           "chinese": "妈妈会做饭吗？",
           "pinyin": "māmā hùi zuòfàn ma ？",
-          "translation": "Can mom cook?"
+          "translation": "Mẹ có biết nấu ăn không?"
         },
         {
           "id": "ex-10",
@@ -8450,7 +8450,7 @@
           ],
           "chinese": "这是不是书吗？",
           "pinyin": "zhè shì bù shì shū ma ？",
-          "translation": "Is this a book?"
+          "translation": "Đây có phải là một cuốn sách không?"
         },
         {
           "id": "ex-12",
@@ -8464,7 +8464,7 @@
           ],
           "chinese": "你没有工作吗？",
           "pinyin": "nǐ méi yǒu gōngzuò ma ？",
-          "translation": "Do not you have a job?"
+          "translation": "Bạn không có việc làm à?"
         },
         {
           "id": "ex-13",
@@ -8478,7 +8478,7 @@
           ],
           "chinese": "你明天不来吗？",
           "pinyin": "nǐ míngtiān bù lái ma ？",
-          "translation": "Won't you come tomorrow?"
+          "translation": "Ngày mai bạn không đến sao?"
         }
       ],
       "titleVi": "Câu hỏi có-không với 吗"
@@ -8491,8 +8491,8 @@
         "Subj. + 是 + [Information to be Emphasized] + Verb + 的"
       ],
       "usedFor": [
-        "Referring to the past",
-        "Emphasizing"
+        "Đề cập đến quá khứ",
+        "Nhấn mạnh"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGE662E",
       "examples": [
@@ -8507,7 +8507,7 @@
           ],
           "chinese": "你喜欢中国菜吗？",
           "pinyin": "nǐ xǐhuān zhōngguócài ma ？",
-          "translation": "Do you like Chinese food?"
+          "translation": "Bạn có thích đồ ăn Trung Quốc không?"
         },
         {
           "id": "ex-2",
@@ -8521,7 +8521,7 @@
           ],
           "chinese": "你不喜欢中国菜吗？",
           "pinyin": "nǐ bù xǐhuān zhōngguócài ma ？",
-          "translation": "Don't you like Chinese food?"
+          "translation": "Bạn không thích đồ ăn Trung Quốc à?"
         },
         {
           "id": "ex-1",
@@ -8535,7 +8535,7 @@
           ],
           "chinese": "昨天我去杭州了。",
           "pinyin": "zuótiān wǒ qù hángzhōu le 。",
-          "translation": "I went to Hangzhou yesterday."
+          "translation": "Hôm qua tôi đã đi Hàng Châu."
         },
         {
           "id": "ex-2",
@@ -8549,7 +8549,7 @@
           ],
           "chinese": "你是怎么去的？",
           "pinyin": "nǐ shì zěnyāo qù de ？",
-          "translation": "How did you get there"
+          "translation": "Bạn đã đến đó bằng cách nào?"
         },
         {
           "id": "ex-3",
@@ -8564,7 +8564,7 @@
           ],
           "chinese": "我是坐火车去的。",
           "pinyin": "wǒ shì zuò huǒchē qù de 。",
-          "translation": "I went by train."
+          "translation": "Tôi đi bằng tàu hỏa."
         },
         {
           "id": "ex-4",
@@ -8579,7 +8579,7 @@
           ],
           "chinese": "你昨天是几点到的？",
           "pinyin": "nǐ zuótiān shì jīdiǎn dào de ？",
-          "translation": "What time did you arrive yesterday?"
+          "translation": "Hôm qua bạn đến lúc mấy giờ?"
         },
         {
           "id": "ex-5",
@@ -8594,7 +8594,7 @@
           ],
           "chinese": "你是跟谁去的？",
           "pinyin": "nǐ shì gēn shúi qù de ？",
-          "translation": "Who are you with?"
+          "translation": "Bạn đang ở cùng với ai?"
         },
         {
           "id": "ex-6",
@@ -8610,7 +8610,7 @@
           ],
           "chinese": "他是用什么打你的？",
           "pinyin": "tā shì yòng shíyāo dǎ nǐ de ？",
-          "translation": "What did he hit you with?"
+          "translation": "Anh ta đã dùng cái gì để đánh bạn?"
         },
         {
           "id": "ex-7",
@@ -8625,7 +8625,7 @@
           ],
           "chinese": "你们是什么时候到的？",
           "pinyin": "nǐmen shì shíyāo shíhòu dào de ？",
-          "translation": "When did you arrive?"
+          "translation": "Bạn đã đến khi nào?"
         },
         {
           "id": "ex-8",
@@ -8639,7 +8639,7 @@
           ],
           "chinese": "我们是昨天到的。",
           "pinyin": "wǒmen shì zuótiān dào de 。",
-          "translation": "We arrived yesterday."
+          "translation": "Chúng tôi đã đến vào ngày hôm qua."
         },
         {
           "id": "ex-9",
@@ -8654,7 +8654,7 @@
           ],
           "chinese": "你是在哪儿出生的？",
           "pinyin": "nǐ shì zài nǎér chūshēng de ？",
-          "translation": "Where were you born?"
+          "translation": "Bạn sinh ra ở đâu?"
         },
         {
           "id": "ex-10",
@@ -8669,7 +8669,7 @@
           ],
           "chinese": "我是在香港出生的。",
           "pinyin": "wǒ shì zài xiānggǎng chūshēng de 。",
-          "translation": "I was born in Hong Kong."
+          "translation": "Tôi sinh ra ở Hồng Kông."
         },
         {
           "id": "ex-11",
@@ -8684,7 +8684,7 @@
           ],
           "chinese": "你骑自行车来的吗？",
           "pinyin": "nǐ qí zìxíngchē lái de ma ？",
-          "translation": "Did you come by bicycle?"
+          "translation": "Bạn đã đến bằng xe đạp à?"
         },
         {
           "id": "ex-12",
@@ -8699,7 +8699,7 @@
           ],
           "chinese": "他们不是在网上认识的。",
           "pinyin": "tāmen bùshì zài wǎngshàng rènshì de 。",
-          "translation": "They didn't know them online."
+          "translation": "Họ không quen biết nhau qua mạng."
         },
         {
           "id": "ex-13",
@@ -8715,7 +8715,7 @@
           ],
           "chinese": "他不是跟我们一起去的。",
           "pinyin": "tā bùshì gēn wǒmen yīqǐ qù de 。",
-          "translation": "He did not go with us."
+          "translation": "Anh ấy đã không đi cùng chúng tôi."
         },
         {
           "id": "ex-14",
@@ -8730,7 +8730,7 @@
           ],
           "chinese": "她用邮件回复的吗？",
           "pinyin": "tā yòng yóujiàn húifù de ma ？",
-          "translation": "Did she reply by email?"
+          "translation": "Cô ấy đã trả lời bằng email phải không?"
         },
         {
           "id": "ex-15",
@@ -8746,7 +8746,7 @@
           ],
           "chinese": "你们是不是去年认识的？",
           "pinyin": "nǐmen shì bù shì qùnián rènshì de ？",
-          "translation": "Did you meet last year?"
+          "translation": "Các bạn đã gặp nhau vào năm ngoái à?"
         },
         {
           "id": "ex-16",
@@ -8760,7 +8760,7 @@
           ],
           "chinese": "这个东西多少钱买的？",
           "pinyin": "zhègè dōngxī duōshǎoqián mǎi de ？",
-          "translation": "How much does it cost to buy this thing?"
+          "translation": "Mua thứ này tốn bao nhiêu tiền?"
         },
         {
           "id": "ex-17",
@@ -8777,7 +8777,7 @@
           ],
           "chinese": "你上周和他去北京的吗？",
           "pinyin": "nǐ shàngzhōu hé tā qù běijīng de ma ？",
-          "translation": "Did you go to Beijing with him last week?"
+          "translation": "Tuần trước bạn đã đi Bắc Kinh cùng anh ấy phải không?"
         },
         {
           "id": "ex-18",
@@ -8795,7 +8795,7 @@
           ],
           "chinese": "你是上周和他去北京的吗？",
           "pinyin": "nǐ shì shàngzhōu hé tā qù běijīng de ma ？",
-          "translation": "Did you go to Beijing with him last week?"
+          "translation": "Tuần trước bạn đã đi Bắc Kinh cùng anh ấy phải không?"
         },
         {
           "id": "ex-19",
@@ -8812,7 +8812,7 @@
           ],
           "chinese": "你上周是和他去北京的吗？",
           "pinyin": "nǐ shàngzhōu shì hétā qù běijīng de ma ？",
-          "translation": "Did you go to Beijing with him last week?"
+          "translation": "Tuần trước bạn đã đi Bắc Kinh cùng anh ấy phải không?"
         },
         {
           "id": "ex-20",
@@ -8828,7 +8828,7 @@
           ],
           "chinese": "我们是用Skype开会的。",
           "pinyin": "wǒmen shì yòng Skype kāi hùi de 。",
-          "translation": "We used Skype for meetings."
+          "translation": "Chúng tôi đã sử dụng Skype cho các cuộc họp."
         },
         {
           "id": "ex-21",
@@ -8844,7 +8844,7 @@
           ],
           "chinese": "我们是用Skype开的会。",
           "pinyin": "wǒmen shì yòng Skype kāi de hùi 。",
-          "translation": "We used Skype for meetings."
+          "translation": "Chúng tôi đã sử dụng Skype cho các cuộc họp."
         }
       ],
       "titleVi": "Cấu trúc 是... 的 để nhấn mạnh chi tiết"
@@ -8862,9 +8862,9 @@
         "Subj. + 没有 + Obj."
       ],
       "usedFor": [
-        "Negating",
-        "Describing actions",
-        "Denying and refusing"
+        "Phủ định",
+        "Miêu tả hành động",
+        "Phủ nhận và từ chối"
       ],
       "url": "https://resources.allsetlearning.com/chinese/grammar/ASGRJ1BI",
       "examples": [
@@ -8883,7 +8883,7 @@
           ],
           "chinese": "那次我们是用Skype开会的。",
           "pinyin": "nàcì wǒmen shì yòng Skype kāi hùi de 。",
-          "translation": "We used Skype for the meeting."
+          "translation": "Chúng tôi đã sử dụng Skype cho cuộc họp đó."
         },
         {
           "id": "ex-2",
@@ -8900,7 +8900,7 @@
           ],
           "chinese": "我们平时是用Skype开会的。",
           "pinyin": "wǒmen píngshí shì yòng Skype kāi hùi de 。",
-          "translation": "We usually use Skype for meetings."
+          "translation": "Chúng tôi thường sử dụng Skype cho các cuộc họp."
         },
         {
           "id": "ex-1",
@@ -8914,7 +8914,7 @@
           ],
           "chinese": "我今天晚上不喝酒。",
           "pinyin": "wǒ jīntiān wǎnshàng bù hējǐu 。",
-          "translation": "I don't drink alcohol tonight."
+          "translation": "Tối nay tôi không uống rượu."
         },
         {
           "id": "ex-2",
@@ -8928,7 +8928,7 @@
           ],
           "chinese": "爸爸不回来吃晚饭。",
           "pinyin": "bàbà bù húilái chī wǎnfàn 。",
-          "translation": "Dad doesn't come back for dinner."
+          "translation": "Bố không về ăn tối."
         },
         {
           "id": "ex-3",
@@ -8941,7 +8941,7 @@
           ],
           "chinese": "老板明天不来。",
           "pinyin": "lǎobǎn míngtiān bù lái 。",
-          "translation": "The boss will not come tomorrow."
+          "translation": "Ngày mai sếp sẽ không đến."
         },
         {
           "id": "ex-4",
@@ -8957,7 +8957,7 @@
           ],
           "chinese": "我知道这个周末不下雨。",
           "pinyin": "wǒ zhīdào zhè gè zhōumò bù xiàyǔ 。",
-          "translation": "I know it will not rain this weekend."
+          "translation": "Tôi biết cuối tuần này trời sẽ không mưa."
         },
         {
           "id": "ex-5",
@@ -8974,7 +8974,7 @@
           ],
           "chinese": "你女朋友不跟你一起去吗？",
           "pinyin": "nǐ nv̌péngyǒu bù gēn nǐ yīqǐ qù ma ？",
-          "translation": "Isn't your girlfriend going with you?"
+          "translation": "Bạn gái của bạn không đi cùng bạn à?"
         },
         {
           "id": "ex-1",
@@ -8987,7 +8987,7 @@
           ],
           "chinese": "我不吃肉。",
           "pinyin": "wǒ bù chī ròu 。",
-          "translation": "I don't eat meat."
+          "translation": "Tôi không ăn thịt."
         },
         {
           "id": "ex-2",
@@ -9001,7 +9001,7 @@
           ],
           "chinese": "你们都不喝酒吗？",
           "pinyin": "nǐmen dū bù hējǐu ma ？",
-          "translation": "Don't you drink?"
+          "translation": "Bạn không uống rượu à?"
         },
         {
           "id": "ex-3",
@@ -9014,7 +9014,7 @@
           ],
           "chinese": "他不喜欢说话。",
           "pinyin": "tā bù xǐhuān shuōhuà 。",
-          "translation": "He doesn't like talking."
+          "translation": "Anh ấy không thích nói chuyện."
         },
         {
           "id": "ex-4",
@@ -9029,7 +9029,7 @@
           ],
           "chinese": "你不用手机看书吗？",
           "pinyin": "nǐ bù yòng shǒujī kànshū ma ？",
-          "translation": "Do n’t you use your phone to read?"
+          "translation": "Bạn không dùng điện thoại để đọc sách à?"
         },
         {
           "id": "ex-5",
@@ -9043,7 +9043,7 @@
           ],
           "chinese": "你晚上不洗澡吗？",
           "pinyin": "nǐ wǎnshàng bù xǐzǎo ma ？",
-          "translation": "Don't you take a shower at night?"
+          "translation": "Bạn không tắm vào buổi tối à?"
         },
         {
           "id": "ex-1",
@@ -9055,7 +9055,7 @@
           ],
           "chinese": "我们不饿。",
           "pinyin": "wǒmen bù è 。",
-          "translation": "We are not hungry."
+          "translation": "Chúng tôi không đói."
         },
         {
           "id": "ex-2",
@@ -9067,7 +9067,7 @@
           ],
           "chinese": "你不胖。",
           "pinyin": "nǐ bù pàng 。",
-          "translation": "you are not fat."
+          "translation": "Bạn không béo."
         },
         {
           "id": "ex-3",
@@ -9080,7 +9080,7 @@
           ],
           "chinese": "我家不远。",
           "pinyin": "wǒ jiā bù yuǎn 。",
-          "translation": "My house is not far away."
+          "translation": "Nhà tôi không xa."
         },
         {
           "id": "ex-4",
@@ -9092,7 +9092,7 @@
           ],
           "chinese": "今天不冷。",
           "pinyin": "jīntiān bù lěng 。",
-          "translation": "It's not cold today."
+          "translation": "Hôm nay trời không lạnh."
         },
         {
           "id": "ex-5",
@@ -9108,7 +9108,7 @@
           ],
           "chinese": "我觉得Starbucks的咖啡不好喝。",
           "pinyin": "wǒ juédé Starbucks de kāfēi bù hǎohē 。",
-          "translation": "I think Starbucks coffee is not good."
+          "translation": "Tôi nghĩ cà phê Starbucks không ngon."
         },
         {
           "id": "ex-1",
@@ -9123,7 +9123,7 @@
           ],
           "chinese": "你是不是我的老师？",
           "pinyin": "nǐ shì bùshì wǒ de lǎoshī ？",
-          "translation": "Are you my teacher?"
+          "translation": "Bạn có phải là giáo viên của tôi không?"
         },
         {
           "id": "ex-2",
@@ -9137,7 +9137,7 @@
           ],
           "chinese": "她想不想来？",
           "pinyin": "tā xiǎng bù xiǎng lái ？",
-          "translation": "Does she want to come?"
+          "translation": "Cô ấy có muốn đến không?"
         },
         {
           "id": "ex-3",
@@ -9151,7 +9151,7 @@
           ],
           "chinese": "你爱不爱我？",
           "pinyin": "nǐ ài bù ài wǒ ？",
-          "translation": "do you love me?"
+          "translation": "Bạn có yêu tôi không?"
         },
         {
           "id": "ex-4",
@@ -9165,7 +9165,7 @@
           ],
           "chinese": "你们周末上不上班？",
           "pinyin": "nǐmen zhōumò shàng bù shàngbān ？",
-          "translation": "Do you not go to work on weekends?"
+          "translation": "Cuối tuần bạn không đi làm à?"
         },
         {
           "id": "ex-5",
@@ -9183,7 +9183,7 @@
           ],
           "chinese": "你的外国朋友们喜不喜欢吃中国菜？",
           "pinyin": "nǐ de wàiguó péngyǒumen xǐ bù xǐhuān chī zhōngguócài ？",
-          "translation": "Do your foreign friends like Chinese food?"
+          "translation": "Bạn bè nước ngoài của bạn có thích đồ ăn Trung Quốc không?"
         },
         {
           "id": "ex-6",
@@ -9199,7 +9199,7 @@
           ],
           "chinese": "你们是好朋友，对不对？",
           "pinyin": "nǐmen shì hǎo péngyǒu ，dùi bù dùi ？",
-          "translation": "You are good friends, right?"
+          "translation": "Các bạn là bạn tốt, đúng không?"
         },
         {
           "id": "ex-1",
@@ -9214,7 +9214,7 @@
           ],
           "chinese": "他没有打电话给我。",
           "pinyin": "tā méiyǒu dǎ diànhuà gěi wǒ 。",
-          "translation": "He didn't call me."
+          "translation": "Anh ấy đã không gọi cho tôi."
         },
         {
           "id": "ex-2",
@@ -9227,7 +9227,7 @@
           ],
           "chinese": "妈妈没有做晚饭。",
           "pinyin": "māmā méiyǒu zuò wǎnfàn 。",
-          "translation": "Mom didn't make dinner."
+          "translation": "Mẹ đã không nấu bữa tối."
         },
         {
           "id": "ex-1",
@@ -9241,7 +9241,7 @@
           ],
           "chinese": "你没去上班吗？",
           "pinyin": "nǐ méi qù shàngbān ma ？",
-          "translation": "Did you go to work?"
+          "translation": "Bạn đã đi làm chưa?"
         },
         {
           "id": "ex-2",
@@ -9254,7 +9254,7 @@
           ],
           "chinese": "我昨天没喝酒。",
           "pinyin": "wǒ zuótiān méi hējǐu 。",
-          "translation": "I didn't drink alcohol yesterday."
+          "translation": "Hôm qua tôi đã không uống rượu."
         }
       ],
       "titleVi": "So sánh 不 và 没"
