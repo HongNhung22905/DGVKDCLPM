@@ -17,6 +17,14 @@ interface ModuleCard {
 
 const MODULES: ModuleCard[] = [
   {
+    icon: <Volume2 size={22} className="text-white" />,
+    iconBg: "#0891B2",
+    title: "Luyện phát âm Pinyin",
+    desc: "Nghe âm chuẩn theo bốn thanh điệu, ghi âm và tự so sánh cách phát âm",
+    count: "407 âm tiết",
+    href: "/pronunciation",
+  },
+  {
     icon: <GraduationCap size={22} className="text-white" />,
     iconBg: "#7C3AED",
     title: "Giáo trình HSK",

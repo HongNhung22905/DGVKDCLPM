@@ -1,8 +1,5 @@
 ﻿/** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: { ignoreBuildErrors: true },
-  eslint:     { ignoreDuringBuilds: true },
-
   // ── Performance ──────────────────────────────────────────────────────────
   compress: true,          // gzip responses
   poweredByHeader: false,  // bỏ header X-Powered-By

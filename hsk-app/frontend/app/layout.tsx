@@ -59,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {[
                   ["/vocabulary", "Từ vựng"],
                   ["/writing",    "Luyện viết"],
+                  ["/pronunciation", "Phát âm"],
                   ["/grammar",    "Ngữ pháp"],
                   ["/review",     "Ôn tập"],
                   ["/search",     "Tra từ"],
