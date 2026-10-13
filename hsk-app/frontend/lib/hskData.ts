@@ -3,6 +3,8 @@
  * Server-side data fetching → import from "@/lib/hskDataServer"
  */
 import type { Word } from "@/types/hsk";
+import { localDateKey, addDateKeyDays } from "./dateKey";
+export { localDateKey } from "./dateKey";
 
 // ─── SM-2 Algorithm ──────────────────────────────────────────────────────────
 
@@ -16,19 +18,6 @@ export interface SM2Card {
 }
 
 export type SM2Quality = 0 | 1 | 2 | 3 | 4 | 5;
-
-/** Date key theo múi giờ của người học, tránh lệch ngày do toISOString() dùng UTC. */
-export function localDateKey(date = new Date()): string {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-  return `${year}-${month}-${day}`;
-}
-
-function addDays(dateKey: string, days: number): string {
-  const [year, month, day] = dateKey.split("-").map(Number);
-  return localDateKey(new Date(year, month - 1, day + days, 12));
-}
 
 export function sm2Update(card: SM2Card, quality: SM2Quality): SM2Card {
   const today = localDateKey();
@@ -54,7 +43,7 @@ export function sm2Update(card: SM2Card, quality: SM2Quality): SM2Card {
     easeFactor: Math.round(easeFactor * 100) / 100,
     interval,
     repetitions,
-    nextReview: addDays(today, interval),
+    nextReview: addDateKeyDays(today, interval),
     lastReview: today,
   };
 }
@@ -214,18 +203,16 @@ export function getSetForLesson(lessonNum: number): number {
  * Bài học thuộc set nào → set đó có được mở khóa không?
  * Set 1 của mỗi level luôn mở. Set N mở khi set N-1 đã passed.
  */
-export function isLessonUnlocked(level: number, lessonNum: number): boolean {
+export function isLessonUnlocked(level: number, lessonNum: number, store = loadGateStore()): boolean {
   const setNum = getSetForLesson(lessonNum);
   if (setNum === 1) return true; // set đầu luôn mở
-  const store = loadGateStore();
   const prevSetId = getSetId(level, setNum - 1);
   return store[prevSetId]?.passed === true;
 }
 
 /** Kiểm tra một set có được mở không (dùng để hiển thị nút kiểm tra) */
-export function isSetUnlocked(level: number, setNum: number): boolean {
+export function isSetUnlocked(level: number, setNum: number, store = loadGateStore()): boolean {
   if (setNum === 1) return true;
-  const store = loadGateStore();
   const prevSetId = getSetId(level, setNum - 1);
   return store[prevSetId]?.passed === true;
 }
@@ -251,8 +238,7 @@ export function recordTestResult(
 }
 
 /** Lấy entry của một set */
-export function getGateEntry(level: number, setNum: number): GateEntry | null {
-  const store = loadGateStore();
+export function getGateEntry(level: number, setNum: number, store = loadGateStore()): GateEntry | null {
   return store[getSetId(level, setNum)] ?? null;
 }
 

@@ -1,7 +1,7 @@
 /**
  * POST /api/progress/flashcard/bulk
  * body: { cards: SM2Card[] }
- * → upsert nhiều cards 1 lúc (dùng sau session flashcard)
+ * → nhập các thẻ chưa có; giữ lịch ôn trên DB khi đồng bộ cache cũ
  */
 import { NextRequest, NextResponse } from "next/server";
 import { getUserIdFromRequest } from "@/lib/auth";
@@ -29,18 +29,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Không có cards." }, { status: 400 });
     }
 
-    // Prisma không có upsertMany, dùng transaction
-    // Destructure bỏ userId ra khỏi c để tránh body ghi đè userId từ token
-    const ops = body.cards.map(({ wordId, easeFactor, interval, repetitions, nextReview, lastReview }) =>
-      prisma.flashcardCard.upsert({
-        where: { userId_wordId: { userId, wordId } },
-        create: { userId, wordId, easeFactor, interval, repetitions, nextReview, lastReview },
-        update: { easeFactor, interval, repetitions, nextReview, lastReview },
-      })
-    );
-
-    await prisma.$transaction(ops);
-    return NextResponse.json({ ok: true, saved: body.cards.length });
+    // Import/init must never reset an existing schedule, even if another device
+    // creates the card between our GET and POST. Reviews use the single-card API.
+    const result = await prisma.flashcardCard.createMany({
+      data: body.cards.map(({ wordId, easeFactor, interval, repetitions, nextReview, lastReview }) =>
+        ({ userId, wordId, easeFactor, interval, repetitions, nextReview, lastReview })),
+      skipDuplicates: true,
+    });
+    return NextResponse.json({ ok: true, saved: result.count });
   } catch (err) {
     console.error("[flashcard/bulk]", err);
     return NextResponse.json({ error: "Lỗi server." }, { status: 500 });

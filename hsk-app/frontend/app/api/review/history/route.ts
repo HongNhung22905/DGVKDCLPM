@@ -6,6 +6,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getUserIdFromRequest } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { addDateKeyDays, isDateKey, localDateKey } from "@/lib/dateKey";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -15,13 +16,14 @@ export async function GET(req: NextRequest) {
   const userId = getUserIdFromRequest(req);
   if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
 
-  const days  = Math.min(365, parseInt(req.nextUrl.searchParams.get("days") ?? "90"));
-  const since = new Date();
-  since.setDate(since.getDate() - days);
-  const sinceDate = since.toISOString().split("T")[0];
+  const requestedDays = Number(req.nextUrl.searchParams.get("days") ?? "90");
+  const days = Number.isInteger(requestedDays) && requestedDays > 0 ? Math.min(365, requestedDays) : 90;
+  const requestedDate = req.nextUrl.searchParams.get("date");
+  const today = isDateKey(requestedDate) ? requestedDate : localDateKey();
+  const sinceDate = addDateKeyDays(today, -days);
 
   const sessions = await prisma.reviewSession.findMany({
-    where: { userId, date: { gte: sinceDate } },
+    where: { userId, date: { gte: sinceDate, lte: today } },
     orderBy: { date: "asc" },
     select: { date: true, totalCards: true, correctCards: true, score: true, durationSec: true, createdAt: true },
   });
@@ -48,15 +50,12 @@ export async function GET(req: NextRequest) {
   }));
 
   // Tính streak liên tiếp
-  const today    = new Date().toISOString().split("T")[0];
   const dateSet  = new Set(daily.map(d => d.date));
   let streak = 0;
-  const cur = new Date();
-  while (true) {
-    const d = cur.toISOString().split("T")[0];
-    if (!dateSet.has(d)) break;
+  let currentDate = today;
+  while (dateSet.has(currentDate)) {
     streak++;
-    cur.setDate(cur.getDate() - 1);
+    currentDate = addDateKeyDays(currentDate, -1);
   }
 
   // Tổng thống kê

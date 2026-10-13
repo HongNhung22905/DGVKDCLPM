@@ -6,7 +6,7 @@ import type { LevelMeta } from "@/types/hsk";
 import {
   loadLessonProgress, type LessonProgressEntry,
   loadGateStore, type GateStore,
-  isLessonUnlocked, isSetUnlocked, getGateEntry, getSetForLesson,
+  isSetUnlocked, getGateEntry,
   PASS_THRESHOLD,
 } from "@/lib/hskData";
 import { useAuth } from "@/components/auth/AuthProvider";
@@ -461,8 +461,8 @@ function LessonGrid({
           const setNum  = gi + 1;
           const start   = gi * 3 + 1;
           const end     = Math.min(start + 2, totalLessons);
-          const unlocked = isSetUnlocked(level, setNum);
-          const gate     = getGateEntry(level, setNum);
+          const unlocked = isSetUnlocked(level, setNum, gateStore);
+          const gate     = getGateEntry(level, setNum, gateStore);
 
           return (
             <SetGroup

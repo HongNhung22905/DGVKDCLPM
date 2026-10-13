@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { loadLessonProgress, loadProgress, loadGateStore } from "@/lib/hskData";
+import { loadLessonProgress, loadProgress, loadGateStore, localDateKey } from "@/lib/hskData";
 import { useAuth } from "@/components/auth/AuthProvider";
 import ProtectedRoute from "@/components/auth/ProtectedRoute";
 import { BarChart2, BookOpen, Zap, Trophy, Home } from "lucide-react";
@@ -42,9 +42,8 @@ export default function ProgressPage() {
       Promise.all([
         fetch("/api/progress/lesson", { credentials: "include" }).then(r => r.ok ? r.json() : null),
         fetch("/api/progress/gate",   { credentials: "include" }).then(r => r.ok ? r.json() : null),
-        fetch("/api/review",          { credentials: "include" }).then(r => r.ok ? r.json() : null),
+        fetch(`/api/review?date=${localDateKey()}`, { credentials: "include" }).then(r => r.ok ? r.json() : null),
       ]).then(([lessonRes, gateRes, reviewRes]) => {
-        const today = new Date().toISOString().split("T")[0];
         const byLevel: Record<string, { completed: number; total: number }> = {};
 
         for (const lvl of LEVELS) {
@@ -83,7 +82,7 @@ export default function ProgressPage() {
       const lp   = loadLessonProgress();
       const sm2  = loadProgress();
       const gate = loadGateStore();
-      const today = new Date().toISOString().split("T")[0];
+      const today = localDateKey();
 
       const byLevel: Record<string, { completed: number; total: number }> = {};
       for (const lvl of LEVELS) {

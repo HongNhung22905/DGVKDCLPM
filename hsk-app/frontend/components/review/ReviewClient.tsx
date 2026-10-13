@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import type { Word } from "@/types/hsk";
 import type { SM2Card, SM2Quality } from "@/lib/hskData";
 import { sm2Update, loadProgress, saveProgress, localDateKey } from "@/lib/hskData";
@@ -45,7 +45,7 @@ function getToneStyle(pinyin: string): string {
 }
 
 // ─── Main Component ───────────────────────────────────────────────────────────
-export default function ReviewClient({ today: _today }: { today: string }) {
+export default function ReviewClient() {
   const { user } = useAuth();
   const [effectiveToday] = useState(() => localDateKey());
 
@@ -61,10 +61,14 @@ export default function ReviewClient({ today: _today }: { today: string }) {
   // Track từng từ: đúng/sai
   const [results, setResults] = useState<Map<string, "correct" | "wrong">>(new Map());
   const [loaded, setLoaded] = useState(false);
-  const [startTime] = useState(() => Date.now());
+  const [startTime, setStartTime] = useState(() => Date.now());
+  const latestCards = useRef<Record<string, SM2Card>>({});
+  const sessionSaved = useRef(false);
 
   // ─── Load cards ────────────────────────────────────────────────────────────
   useEffect(() => {
+    let cancelled = false;
+    setLoaded(false);
     async function load() {
       let due: SM2Card[] = [];
       let learned: SM2Card[] = [];
@@ -88,11 +92,9 @@ export default function ReviewClient({ today: _today }: { today: string }) {
         due = learned.filter(c => c.nextReview <= effectiveToday);
       }
 
-      if (learned.length === 0) { setLoaded(true); return; }
-
       // Resolve words từ JSON
       const levelSet = new Set<number>();
-      for (const c of learned) {
+      for (const c of [...learned, ...due]) {
         const m = c.wordId.match(/^new-(\d+)-/);
         if (m) levelSet.add(parseInt(m[1]));
       }
@@ -115,12 +117,21 @@ export default function ReviewClient({ today: _today }: { today: string }) {
       const cards = toReviewCards(due).slice(0, 50);
       const availableGameCards = toReviewCards(learned).slice(0, 100);
 
+      if (cancelled) return;
+      latestCards.current = Object.fromEntries([...learned, ...due].map(card => [card.wordId, card]));
+      sessionSaved.current = false;
       setOriginalCards(cards);
       setQueue(cards);
       setGameCards(availableGameCards);
+      setIndex(0);
+      setResults(new Map());
+      setFlipped(false);
+      setPhase("studying");
+      setStartTime(Date.now());
       setLoaded(true);
     }
     void load();
+    return () => { cancelled = true; };
   }, [effectiveToday, user]);
 
   const playAudio = useCallback((word: Word) => {
@@ -153,7 +164,8 @@ export default function ReviewClient({ today: _today }: { today: string }) {
     const current = queue[index];
     if (!current) return;
 
-    const updated = sm2Update(current, quality);
+    const updated = sm2Update(latestCards.current[current.wordId] ?? current, quality);
+    latestCards.current[current.wordId] = updated;
 
     // Lưu localStorage + sync DB
     const store = loadProgress();
@@ -179,33 +191,17 @@ export default function ReviewClient({ today: _today }: { today: string }) {
 
     setFlipped(false);
 
-    if (!isCorrect) {
-      // Thêm lại cuối queue (chỉ 1 lần mỗi từ)
-      setQueue(prev => {
-        const remaining = prev.slice(index + 1);
-        const alreadyQueued = remaining.some(c => c.wordId === current.wordId);
-        if (alreadyQueued) return prev;
-        return [...prev, { ...updated, word: current.word }];
-      });
+    const alreadyQueued = queue.slice(index + 1).some(card => card.wordId === current.wordId);
+    if (!isCorrect && !alreadyQueued) {
+      setQueue([...queue, { ...updated, word: current.word }]);
     }
-
-    const nextIndex = index + 1;
-    // Tính lại queue.length sau setState là async → dùng closure
-    setQueue(prev => {
-      const newLength = isCorrect ? prev.length : prev.some((c, i) => i > index && c.wordId === current.wordId) ? prev.length : prev.length + 1;
-      if (nextIndex >= newLength) {
-        // Sẽ done sau khi setIndex
-        setTimeout(() => setPhase("summary"), 50);
-      }
-      return prev;
-    });
-
-    setIndex(nextIndex);
+    setIndex(index + 1);
   }, [queue, index, user]);
 
   // Fallback: nếu index vượt queue → done
   useEffect(() => {
-    if (loaded && queue.length > 0 && index >= queue.length) {
+    if (loaded && queue.length > 0 && index >= queue.length && !sessionSaved.current) {
+      sessionSaved.current = true;
       setPhase("summary");
       // Lưu phiên ôn tập lên DB
       if (user) {
@@ -226,7 +222,19 @@ export default function ReviewClient({ today: _today }: { today: string }) {
         }).catch(() => {});
       }
     }
-  }, [index, queue.length, loaded]);
+  }, [index, queue.length, loaded, effectiveToday, originalCards.length, results, startTime, user]);
+
+  const restart = (source: ReviewCard[]) => {
+    const cards = source.map(card => ({ ...card, ...(latestCards.current[card.wordId] ?? {}) }));
+    sessionSaved.current = false;
+    setOriginalCards(cards);
+    setQueue(cards);
+    setIndex(0);
+    setFlipped(false);
+    setResults(new Map());
+    setStartTime(Date.now());
+    setPhase("studying");
+  };
 
   // ─── Render ─────────────────────────────────────────────────────────────────
 
@@ -256,20 +264,10 @@ export default function ReviewClient({ today: _today }: { today: string }) {
         correctCount={correctCount}
         wrongCards={wrongCards}
         today={effectiveToday}
-        onRestart={() => {
-          setQueue([...originalCards]);
-          setIndex(0);
-          setFlipped(false);
-          setResults(new Map());
-          setPhase("studying");
-        }}
+        onRestart={() => restart(originalCards)}
         onRestartWrong={() => {
           if (wrongCards.length === 0) return;
-          setQueue([...wrongCards]);
-          setIndex(0);
-          setFlipped(false);
-          setResults(new Map());
-          setPhase("studying");
+          restart(wrongCards);
         }}
         onPlayAudio={playAudio}
         onPlayGame={() => openGame(wrongCards)}

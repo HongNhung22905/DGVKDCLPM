@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useAuth } from "@/components/auth/AuthProvider";
-import { loadProgress, loadLessonProgress } from "@/lib/hskData";
+import { loadProgress } from "@/lib/hskData";
+import { localDateKey } from "@/lib/dateKey";
 import {
   Home, Brain, Flame, Calendar, BarChart2,
   CheckCircle, Target, Clock, BookOpen, ChevronRight,
@@ -85,7 +86,7 @@ function buildCalendarGrid(daily: DailyRecord[], weeks = 17): {
     for (let d = 0; d < 7; d++) {
       const cur = new Date(start);
       cur.setDate(start.getDate() + w * 7 + d);
-      const dateStr = cur.toISOString().split("T")[0];
+      const dateStr = localDateKey(cur);
       const rec = map.get(dateStr);
       week.push({
         date:        dateStr,
@@ -114,7 +115,7 @@ export default function StatsClient() {
 
     if (user) {
       // Dùng DB
-      fetch(`/api/review/history?days=${range * 7}`, { credentials: "include" })
+      fetch(`/api/review/history?days=${range * 7}&date=${localDateKey()}`, { credentials: "include" })
         .then(r => r.ok ? r.json() : null)
         .then((data: { daily: DailyRecord[]; stats: Stats } | null) => {
           if (data) {
@@ -126,14 +127,12 @@ export default function StatsClient() {
     } else {
       // Fallback localStorage
       const sm2    = loadProgress();
-      const lp     = loadLessonProgress();
-      const today  = new Date().toISOString().split("T")[0];
+      const today  = localDateKey();
 
       // Fake stats từ localStorage (không có lịch sử theo ngày)
       const cards       = Object.values(sm2);
       const dueToday    = cards.filter(c => c.nextReview <= today).length;
       const allCards    = cards.length;
-      const lessons     = Object.values(lp).filter(l => l.completed).length;
 
       setStats({
         streak: 0, totalSessions: 0, totalCards: 0,
@@ -167,7 +166,7 @@ export default function StatsClient() {
       let streak = 0;
       const dateSet = new Set(fakeDaily.map(d => d.date));
       const cur = new Date();
-      while (dateSet.has(cur.toISOString().split("T")[0])) {
+      while (dateSet.has(localDateKey(cur))) {
         streak++;
         cur.setDate(cur.getDate() - 1);
       }
@@ -190,7 +189,7 @@ export default function StatsClient() {
   const last30 = Array.from({ length: 30 }, (_, i) => {
     const d = new Date(today);
     d.setDate(d.getDate() - (29 - i));
-    const dateStr = d.toISOString().split("T")[0];
+    const dateStr = localDateKey(d);
     const rec = daily.find(x => x.date === dateStr);
     return { date: dateStr, label: `${d.getDate()}/${d.getMonth() + 1}`, cards: rec?.totalCards ?? 0, score: rec?.score ?? 0 };
   });
@@ -375,7 +374,7 @@ export default function StatsClient() {
                 {grid.map((week, wi) => (
                   <div key={wi} className="flex flex-col gap-0.5">
                     {week.map((day, di) => {
-                      const isFuture = day.date > new Date().toISOString().split("T")[0];
+                      const isFuture = day.date > localDateKey();
                       const color = isFuture ? "transparent"
                         : day.cards === 0 ? P.borderLight
                         : getHeatIntensity(day.cards, maxCards);
@@ -441,7 +440,7 @@ export default function StatsClient() {
           <div className="flex items-end gap-1 h-32">
             {last30.map((d, i) => {
               const h = maxBarCards > 0 ? Math.round((d.cards / maxBarCards) * 100) : 0;
-              const isToday = d.date === new Date().toISOString().split("T")[0];
+              const isToday = d.date === localDateKey();
               const color = d.cards === 0 ? P.borderLight
                 : d.score >= 80 ? "#059669"
                 : d.score >= 60 ? "#B45309"

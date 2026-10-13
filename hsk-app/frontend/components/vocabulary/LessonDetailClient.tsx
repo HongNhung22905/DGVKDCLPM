@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { Lesson, Word } from "@/types/hsk";
 import BackButton from "@/components/ui/BackButton";
 import Badge from "@/components/ui/Badge";
-import { isLessonUnlocked, getSetForLesson, PASS_THRESHOLD } from "@/lib/hskData";
+import { isLessonUnlocked, getSetForLesson, PASS_THRESHOLD, loadGateStore, type GateEntry } from "@/lib/hskData";
 import { saveWord, removeWord, isWordSaved } from "@/lib/notebookData";
 import { useAuth } from "@/components/auth/AuthProvider";
 import {
@@ -40,6 +40,7 @@ function getToneStyle(pinyin: string): string {
 }
 
 export default function LessonDetailClient({ lesson }: Props) {
+  const { user, loading: authLoading } = useAuth();
   const [activeWord, setActiveWord] = useState<Word | null>(null);
   const [viewMode, setViewMode] = useState<"grid" | "study">("grid");
   const [studyIndex, setStudyIndex] = useState(0);
@@ -53,8 +54,24 @@ export default function LessonDetailClient({ lesson }: Props) {
   const setNum    = getSetForLesson(lessonNum);
 
   useEffect(() => {
-    setLocked(!isLessonUnlocked(levelNum, lessonNum));
-  }, [levelNum, lessonNum]);
+    if (authLoading) return;
+    let cancelled = false;
+    setLocked(null);
+    async function loadAccess() {
+      let store = loadGateStore();
+      if (user) {
+        try {
+          const response = await fetch("/api/progress/gate", { credentials: "include" });
+          if (!response.ok) throw new Error("Cannot load gate progress");
+          const data = await response.json() as { gates: Array<GateEntry & { setId: string }> };
+          store = Object.fromEntries(data.gates.map(({ setId, ...entry }) => [setId, entry]));
+        } catch { /* use the cached gates while offline */ }
+      }
+      if (!cancelled) setLocked(!isLessonUnlocked(levelNum, lessonNum, store));
+    }
+    void loadAccess();
+    return () => { cancelled = true; };
+  }, [levelNum, lessonNum, user, authLoading]);
 
   // ── Hooks phải khai báo TRƯỚC mọi conditional return ─────────────────────
   const handleStudyNext = useCallback(() => {

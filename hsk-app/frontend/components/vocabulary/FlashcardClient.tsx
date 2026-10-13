@@ -10,6 +10,7 @@ import {
 import ProgressBar from "@/components/ui/ProgressBar";
 import { Volume2, RotateCcw, CheckCircle, Home } from "lucide-react";
 import Link from "next/link";
+import { useAuth } from "@/components/auth/AuthProvider";
 
 // ─── Palette ─────────────────────────────────────────────────────────────────
 const P = {
@@ -46,6 +47,7 @@ async function syncCardToDB(card: SM2Card) {
 }
 
 export default function FlashcardClient({ lesson }: Props) {
+  const { user, loading: authLoading } = useAuth();
   const [cards, setCards]           = useState<Record<string, SM2Card>>({});
   const [queue, setQueue]           = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,43 +55,55 @@ export default function FlashcardClient({ lesson }: Props) {
   const [sessionState, setSessionState] = useState<SessionState>("studying");
   const [sessionStats, setSessionStats] = useState({ reviewed: 0, correct: 0 });
   const [loaded, setLoaded]             = useState(false);
+  const [loadError, setLoadError] = useState(false);
+  const [retry, setRetry] = useState(0);
 
   useEffect(() => {
-    const saved = loadProgress();
-    setCards(saved);
-    const today = localDateKey();
-    const toReview = lesson.words.filter(w => {
-      const c = saved[w.id];
-      return !c || c.nextReview <= today;
-    });
-    setQueue(toReview);
+    if (authLoading) return;
+    let cancelled = false;
+    setLoaded(false);
+    setLoadError(false);
+    async function load() {
+      try {
+        let saved = loadProgress();
+        const loadCloud = async () => {
+          const response = await fetch("/api/progress/flashcard", { credentials: "include" });
+          if (!response.ok) throw new Error("Cannot load flashcard progress");
+          const data = await response.json() as { cards: SM2Card[] };
+          return Object.fromEntries(data.cards.map(card => [card.wordId, card]));
+        };
+        if (user) saved = await loadCloud();
+        if (cancelled) return;
 
-    // Tạo sẵn card mới (nextReview = today) cho tất cả từ chưa có card
-    // → đảm bảo trang /review nhận ra bài này sau khi học xong hôm nay
-    const newCards: Record<string, SM2Card> = { ...saved };
-    let hasNew = false;
-    for (const w of toReview) {
-      if (!newCards[w.id]) {
-        newCards[w.id] = createNewCard(w.id);
-        hasNew = true;
+        const newOnly = lesson.words.filter(word => !saved[word.id]).map(word => createNewCard(word.id));
+        if (user && newOnly.length > 0) {
+          const response = await fetch("/api/progress/flashcard/bulk", {
+            method: "POST", headers: { "Content-Type": "application/json" }, credentials: "include",
+            body: JSON.stringify({ cards: newOnly }),
+          });
+          if (!response.ok) throw new Error("Cannot initialize flashcards");
+          // Read back the winning DB state if another device initialized a card.
+          saved = await loadCloud();
+        } else {
+          for (const card of newOnly) saved[card.wordId] = card;
+        }
+        if (cancelled) return;
+        saveProgress(saved);
+        setCards(saved);
+        const today = localDateKey();
+        setQueue(lesson.words.filter(word => saved[word.id]?.nextReview <= today));
+        setCurrentIndex(0);
+        setFlipped(false);
+        setSessionState("studying");
+        setSessionStats({ reviewed: 0, correct: 0 });
+        setLoaded(true);
+      } catch {
+        if (!cancelled) setLoadError(true);
       }
     }
-    if (hasNew) {
-      saveProgress(newCards);
-      setCards(newCards);
-      // Sync các card mới lên DB (bulk)
-      const newOnly = Object.values(newCards).filter(c => !saved[c.wordId]);
-      if (newOnly.length > 0) {
-        fetch("/api/progress/flashcard/bulk", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          credentials: "include",
-          body: JSON.stringify({ cards: newOnly }),
-        }).catch(() => {});
-      }
-    }
-    setLoaded(true);
-  }, [lesson.words]);
+    void load();
+    return () => { cancelled = true; };
+  }, [lesson.words, user, authLoading, retry]);
 
   const currentWord = queue[currentIndex];
 
@@ -109,7 +123,7 @@ export default function FlashcardClient({ lesson }: Props) {
       window.clearTimeout(timer);
       window.speechSynthesis?.cancel();
     };
-  }, [currentWord?.id, sessionState]);
+  }, [currentWord, sessionState]);
 
   const handleRate = useCallback((quality: SM2Quality) => {
     if (!currentWord) return;
@@ -118,7 +132,7 @@ export default function FlashcardClient({ lesson }: Props) {
     const newCards = { ...cards, [currentWord.id]: updated };
     setCards(newCards);
     saveProgress(newCards);
-    void syncCardToDB(updated);
+    if (user) void syncCardToDB(updated);
 
     const isCorrect = quality >= 3;
     setSessionStats(s => ({ reviewed: s.reviewed + 1, correct: s.correct + (isCorrect ? 1 : 0) }));
@@ -137,7 +151,7 @@ export default function FlashcardClient({ lesson }: Props) {
     } else {
       setCurrentIndex(i => i + 1);
     }
-  }, [currentWord, cards, currentIndex, queue.length, sessionStats, lesson.id]);
+  }, [currentWord, cards, currentIndex, queue, sessionStats, lesson.id, user]);
 
   const handleRestart = () => {
     setQueue([...lesson.words]);
@@ -148,6 +162,15 @@ export default function FlashcardClient({ lesson }: Props) {
   };
 
   const progress = queue.length > 0 ? (currentIndex / queue.length) * 100 : 0;
+
+  if (loadError) {
+    return <div className="min-h-screen flex flex-col items-center justify-center gap-4" style={{ background: P.bg }}>
+      <p>Không thể tải tiến độ ôn tập. Vui lòng kiểm tra kết nối và thử lại.</p>
+      <button onClick={() => setRetry(value => value + 1)} className="rounded-xl px-4 py-2 text-white" style={{ background: "#7C3AED" }}>Thử lại</button>
+    </div>;
+  }
+
+  if (!loaded) return <div className="min-h-screen flex items-center justify-center" style={{ background: P.bg }}>Đang tải...</div>;
 
   if (sessionState === "done") {
     const score = Math.round((sessionStats.correct / queue.length) * 100);

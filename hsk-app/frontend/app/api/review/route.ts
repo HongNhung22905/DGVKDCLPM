@@ -9,6 +9,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getUserIdFromRequest } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { isDateKey, localDateKey } from "@/lib/dateKey";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -17,13 +18,14 @@ export async function GET(req: NextRequest) {
   const userId = getUserIdFromRequest(req);
   if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
 
-  const limit = parseInt(req.nextUrl.searchParams.get("limit") ?? "50");
+  const requestedLimit = Number(req.nextUrl.searchParams.get("limit") ?? "50");
+  const limit = Number.isInteger(requestedLimit) && requestedLimit > 0 ? Math.min(200, requestedLimit) : 50;
   const requestedDate = req.nextUrl.searchParams.get("date");
-  const today = requestedDate && /^\d{4}-\d{2}-\d{2}$/.test(requestedDate)
+  const today = isDateKey(requestedDate)
     ? requestedDate
-    : new Date().toISOString().split("T")[0];
+    : localDateKey();
 
-  const [dueCards, allCards] = await prisma.$transaction([
+  const [dueCards, allCards, dueCount, totalCards] = await prisma.$transaction([
     prisma.flashcardCard.findMany({
       where: { userId, nextReview: { lte: today } },
       orderBy: { nextReview: "asc" },
@@ -42,12 +44,14 @@ export async function GET(req: NextRequest) {
         repetitions: true, nextReview: true, lastReview: true,
       },
     }),
+    prisma.flashcardCard.count({ where: { userId, nextReview: { lte: today } } }),
+    prisma.flashcardCard.count({ where: { userId } }),
   ]);
 
   return NextResponse.json({
     today,
-    dueCount: dueCards.length,
-    totalCards: allCards.length,
+    dueCount,
+    totalCards,
     cards: dueCards,
     allCards,
   });

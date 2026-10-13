@@ -33,7 +33,7 @@ interface AuthContextValue {
 
 /**
  * Khi user đăng nhập lần đầu, đẩy toàn bộ dữ liệu còn trong localStorage
- * (SM-2 cards, lesson progress, notebook) lên DB. Fire-and-forget.
+ * (SM-2 cards, lesson progress, notebook) lên DB trước khi tải trang học.
  */
 async function syncLocalStorageToDB(): Promise<void> {
   if (typeof window === "undefined") return;
@@ -59,16 +59,14 @@ async function syncLocalStorageToDB(): Promise<void> {
     const raw = localStorage.getItem("hsk_lesson_progress");
     if (raw) {
       const lp = JSON.parse(raw) as Record<string, { completed: boolean; score?: number }>;
-      for (const [lessonId, entry] of Object.entries(lp)) {
-        if (entry.completed) {
+      await Promise.all(Object.entries(lp).filter(([, entry]) => entry.completed).map(([lessonId, entry]) =>
           fetch("/api/progress/lesson", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
             body: JSON.stringify({ lessonId, completed: true, score: entry.score ?? 0 }),
-          }).catch(() => {});
-        }
-      }
+          }).catch(() => {})
+      ));
     }
   } catch { /* ignore */ }
 
@@ -77,14 +75,14 @@ async function syncLocalStorageToDB(): Promise<void> {
     const raw = localStorage.getItem("hsk_gate_v1");
     if (raw) {
       const gates = JSON.parse(raw) as Record<string, { passed: boolean; score: number }>;
-      for (const [setId, entry] of Object.entries(gates)) {
+      await Promise.all(Object.entries(gates).map(([setId, entry]) =>
         fetch("/api/progress/gate", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           credentials: "include",
           body: JSON.stringify({ setId, passed: entry.passed, score: entry.score }),
-        }).catch(() => {});
-      }
+        }).catch(() => {})
+      ));
     }
   } catch { /* ignore */ }
 
@@ -96,14 +94,14 @@ async function syncLocalStorageToDB(): Promise<void> {
         wordId: string; level: string; simplified: string;
         pinyin: string; meaning: string; note: string;
       }>;
-      for (const entry of Object.values(notebook)) {
+      await Promise.all(Object.values(notebook).map(entry =>
         fetch("/api/user/notebook", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           credentials: "include",
           body: JSON.stringify(entry),
-        }).catch(() => {});
-      }
+        }).catch(() => {})
+      ));
     }
   } catch { /* ignore */ }
 
@@ -189,9 +187,8 @@ export function AuthProvider({
       }
       if (data.user) {
         console.log("[AuthProvider] setting user", data.user);
+        await syncLocalStorageToDB();
         setUser(data.user);
-        // Sync localStorage → DB sau 1s (tránh conflict với navigation)
-        setTimeout(() => { syncLocalStorageToDB().catch(() => {}); }, 1000);
       }
       console.log("[AuthProvider] login success, returning empty error");
       return {};
@@ -219,9 +216,8 @@ export function AuthProvider({
       }
       if (data.user) {
         console.log("[AuthProvider] setting user", data.user);
+        await syncLocalStorageToDB();
         setUser(data.user);
-        // Sync localStorage → DB sau 1s
-        setTimeout(() => { syncLocalStorageToDB().catch(() => {}); }, 1000);
       }
       console.log("[AuthProvider] register success, returning empty error");
       return {};
