@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="4" time="34.506" timestamp="2026-10-14T15:55:50.747799+07:00" hostname="LAPTOP-KTRJ8AE0"><testcase classname="test_vocabulary" name="test_select_level_and_return[HSK-1]" time="16.385"><failure message="selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception&#10;Stacktrace:&#10;Symbols not available. Dumping unresolved backtrace:&#10;&#09;(No symbol) [0x7ff7f9075805]&#10;&#09;(No symbol) [0x7ff7f8f97d50]&#10;&#09;(No symbol) [0x7ff7f8db44d6]&#10;&#09;(No symbol) [0x7ff7f8e00e53]&#10;&#09;(No symbol) [0x7ff7f8e392e2]&#10;&#09;(No symbol) [0x7ff7f8e330a2]&#10;&#09;(No symbol) [0x7ff7f8e32823]&#10;&#09;(No symbol) [0x7ff7f8d7c8eb]&#10;&#09;(No symbol) [0x7ff7f8d7cf52]&#10;&#09;(No symbol) [0x7ff7f8d7d585]&#10;&#09;(No symbol) [0x7ff7f9498531]&#10;&#09;(No symbol) [0x7ff7f94c430b]&#10;&#09;(No symbol) [0x7ff7f94b823e]&#10;&#09;(No symbol) [0x7ff7f917523e]&#10;&#09;(No symbol) [0x7ff7f8fa57a5]&#10;&#09;(No symbol) [0x7ff7f8d7bd1a]&#10;&#09;(No symbol) [0x7ff7f951e53f]&#10;&#09;(No symbol) [0x7ffa8c66dda7]&#10;&#09;(No symbol) [0x7ffa8d8bee4c]">level = 1
+
+    @pytest.mark.parametrize("level", range(1, 8), ids=[
+        "HSK-1", "HSK-2", "HSK-3", "HSK-4",
+        "HSK-5", "HSK-6", "HSK-7"
+    ])
+    def test_select_level_and_return(level):
+        driver = webdriver.Chrome()
+        driver.set_window_size(1366, 900)
+        wait = WebDriverWait(driver, 30)
+        case_id = f"VOC-01-HSK-{level}"
+    
+        try:
+            driver.get("http://localhost:3000/vocabulary")
+    
+            # Chọn đúng thẻ cấp độ, không nhầm nút bắt đầu HSK 1.
+&gt;           level_button = wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    f'//button[.//p[normalize-space(.)="HSK {level}"]]'
+                ))
+            )
+
+test_vocabulary.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv\Lib\site-packages\selenium\webdriver\support\wait.py:112: in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py:518: in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:914: in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002D845E02270&gt;
+response = {'status': 404, 'value': '{"value":{"error":"invalid session id","message":"invalid session id: session deleted as the...f8fa0974]\\n\\t(No symbol) [0x7ff7f8f8b5fc]\\n\\t(No symbol) [0x7ffa8c66dda7]\\n\\t(No symbol) [0x7ffa8d8bee4c]\\n"}}'}
+
+    def check_response(self, response: dict[str, Any]) -&gt; None:
+        """Check that a JSON response from the WebDriver does not have an error.
+    
+        Args:
+            response: The JSON response from the WebDriver server as a dictionary
+                object.
+    
+        Raises:
+            WebDriverException: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                try:
+                    value = json.loads(value_json)
+                    if isinstance(value, dict):
+                        if len(value) == 1:
+                            value = value["value"]
+                        status = value.get("error", None)
+                        if not status:
+                            status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                            message = value.get("value") or value.get("message")
+                            if not isinstance(message, str):
+                                value = message
+                                message = message.get("message") if isinstance(message, dict) else None
+                        else:
+                            message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+E       from disconnected: not connected to DevTools
+E         (Session info: chrome=155.0.8059.79); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+E       Stacktrace:
+E       Symbols not available. Dumping unresolved backtrace:
+E       	(No symbol) [0x7ff7f9075805]
+E       	(No symbol) [0x7ff7f8f97d50]
+E       	(No symbol) [0x7ff7f8db46dd]
+E       	(No symbol) [0x7ff7f8da0072]
+E       	(No symbol) [0x7ff7f8dc5dc6]
+E       	(No symbol) [0x7ff7f8e40d10]
+E       	(No symbol) [0x7ff7f8e64dad]
+E       	(No symbol) [0x7ff7f8e01d52]
+E       	(No symbol) [0x7ff7f8e02b63]
+E       	(No symbol) [0x7ff7f9498531]
+E       	(No symbol) [0x7ff7f94c430b]
+E       	(No symbol) [0x7ff7f94b823e]
+E       	(No symbol) [0x7ff7f917523e]
+E       	(No symbol) [0x7ff7f8fa57a5]
+E       	(No symbol) [0x7ff7f8fa07e4]
+E       	(No symbol) [0x7ff7f8fa0974]
+E       	(No symbol) [0x7ff7f8f8b5fc]
+E       	(No symbol) [0x7ffa8c66dda7]
+E       	(No symbol) [0x7ffa8d8bee4c]
+
+.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: InvalidSessionIdException
+
+During handling of the above exception, another exception occurred:
+
+level = 1
+
+    @pytest.mark.parametrize("level", range(1, 8), ids=[
+        "HSK-1", "HSK-2", "HSK-3", "HSK-4",
+        "HSK-5", "HSK-6", "HSK-7"
+    ])
+    def test_select_level_and_return(level):
+        driver = webdriver.Chrome()
+        driver.set_window_size(1366, 900)
+        wait = WebDriverWait(driver, 30)
+        case_id = f"VOC-01-HSK-{level}"
+    
+        try:
+            driver.get("http://localhost:3000/vocabulary")
+    
+            # Chọn đúng thẻ cấp độ, không nhầm nút bắt đầu HSK 1.
+            level_button = wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    f'//button[.//p[normalize-space(.)="HSK {level}"]]'
+                ))
+            )
+            level_button.click()
+    
+            # Tiêu đề cấp độ phải hiển thị đúng.
+            wait.until(
+                EC.visibility_of_element_located((
+                    By.XPATH,
+                    f'//h2[normalize-space(.)="HSK {level}"]'
+                ))
+            )
+    
+            # Bài đầu và các hành động học phải truy cập được.
+            lesson_id = f"new-{level}-lesson-1"
+            for mode in ["lesson", "flashcard", "writing", "game"]:
+                link = wait.until(
+                    EC.presence_of_element_located((
+                        By.CSS_SELECTOR,
+                        f'a[href="/vocabulary/{mode}/{lesson_id}"]'
+                    ))
+                )
+                assert link.is_displayed(), (
+                    f"Không hiển thị hành động {mode} của {lesson_id}"
+                )
+    
+            # Quay về màn hình chọn cấp độ.
+            wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    '//button[normalize-space(.)="Chọn cấp độ"]'
+                ))
+            ).click()
+    
+            wait.until(
+                EC.visibility_of_element_located((
+                    By.XPATH,
+                    '//h2[normalize-space(.)="Chọn cấp độ"]'
+                ))
+            )
+    
+            level_cards = driver.find_elements(
+                By.XPATH,
+                '//button[.//p[starts-with(normalize-space(.), "HSK ")]]'
+            )
+            assert len(level_cards) == 7, (
+                f"Mong đợi 7 thẻ cấp độ, thực tế {len(level_cards)}"
+            )
+    
+            driver.save_screenshot(f"{case_id}-pass.png")
+            print(f"\n{case_id}: chọn cấp và quay lại thành công")
+    
+        except Exception:
+&gt;           driver.save_screenshot(f"{case_id}-fail.png")
+
+test_vocabulary.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:994: in save_screenshot
+    return self.get_screenshot_as_file(filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:971: in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:1002: in get_screenshot_as_png
+    return b64decode(self.get_screenshot_as_base64().encode("ascii"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:1012: in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002D845E02270&gt;
+response = {'status': 404, 'value': '{"value":{"error":"invalid session id","message":"invalid session id","stacktrace":"Symbols ...f8d7bd1a]\\n\\t(No symbol) [0x7ff7f951e53f]\\n\\t(No symbol) [0x7ffa8c66dda7]\\n\\t(No symbol) [0x7ffa8d8bee4c]\\n"}}'}
+
+    def check_response(self, response: dict[str, Any]) -&gt; None:
+        """Check that a JSON response from the WebDriver does not have an error.
+    
+        Args:
+            response: The JSON response from the WebDriver server as a dictionary
+                object.
+    
+        Raises:
+            WebDriverException: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                try:
+                    value = json.loads(value_json)
+                    if isinstance(value, dict):
+                        if len(value) == 1:
+                            value = value["value"]
+                        status = value.get("error", None)
+                        if not status:
+                            status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                            message = value.get("value") or value.get("message")
+                            if not isinstance(message, str):
+                                value = message
+                                message = message.get("message") if isinstance(message, dict) else None
+                        else:
+                            message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+E       Stacktrace:
+E       Symbols not available. Dumping unresolved backtrace:
+E       	(No symbol) [0x7ff7f9075805]
+E       	(No symbol) [0x7ff7f8f97d50]
+E       	(No symbol) [0x7ff7f8db44d6]
+E       	(No symbol) [0x7ff7f8e00e53]
+E       	(No symbol) [0x7ff7f8e392e2]
+E       	(No symbol) [0x7ff7f8e330a2]
+E       	(No symbol) [0x7ff7f8e32823]
+E       	(No symbol) [0x7ff7f8d7c8eb]
+E       	(No symbol) [0x7ff7f8d7cf52]
+E       	(No symbol) [0x7ff7f8d7d585]
+E       	(No symbol) [0x7ff7f9498531]
+E       	(No symbol) [0x7ff7f94c430b]
+E       	(No symbol) [0x7ff7f94b823e]
+E       	(No symbol) [0x7ff7f917523e]
+E       	(No symbol) [0x7ff7f8fa57a5]
+E       	(No symbol) [0x7ff7f8d7bd1a]
+E       	(No symbol) [0x7ff7f951e53f]
+E       	(No symbol) [0x7ffa8c66dda7]
+E       	(No symbol) [0x7ffa8d8bee4c]
+
+.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: InvalidSessionIdException</failure></testcase><testcase classname="test_vocabulary" name="test_select_level_and_return[HSK-2]" time="4.369"><failure message="selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception&#10;Stacktrace:&#10;Symbols not available. Dumping unresolved backtrace:&#10;&#09;(No symbol) [0x7ff7f9075805]&#10;&#09;(No symbol) [0x7ff7f8f97d50]&#10;&#09;(No symbol) [0x7ff7f8db44d6]&#10;&#09;(No symbol) [0x7ff7f8e00e53]&#10;&#09;(No symbol) [0x7ff7f8e392e2]&#10;&#09;(No symbol) [0x7ff7f8e330a2]&#10;&#09;(No symbol) [0x7ff7f8e32823]&#10;&#09;(No symbol) [0x7ff7f8d7c8eb]&#10;&#09;(No symbol) [0x7ff7f8d7cf52]&#10;&#09;(No symbol) [0x7ff7f8d7d585]&#10;&#09;(No symbol) [0x7ff7f9498531]&#10;&#09;(No symbol) [0x7ff7f94c430b]&#10;&#09;(No symbol) [0x7ff7f94b823e]&#10;&#09;(No symbol) [0x7ff7f917523e]&#10;&#09;(No symbol) [0x7ff7f8fa57a5]&#10;&#09;(No symbol) [0x7ff7f8d7bd1a]&#10;&#09;(No symbol) [0x7ff7f951e53f]&#10;&#09;(No symbol) [0x7ffa8c66dda7]&#10;&#09;(No symbol) [0x7ffa8d8bee4c]">level = 2
+
+    @pytest.mark.parametrize("level", range(1, 8), ids=[
+        "HSK-1", "HSK-2", "HSK-3", "HSK-4",
+        "HSK-5", "HSK-6", "HSK-7"
+    ])
+    def test_select_level_and_return(level):
+        driver = webdriver.Chrome()
+        driver.set_window_size(1366, 900)
+        wait = WebDriverWait(driver, 30)
+        case_id = f"VOC-01-HSK-{level}"
+    
+        try:
+            driver.get("http://localhost:3000/vocabulary")
+    
+            # Chọn đúng thẻ cấp độ, không nhầm nút bắt đầu HSK 1.
+&gt;           level_button = wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    f'//button[.//p[normalize-space(.)="HSK {level}"]]'
+                ))
+            )
+
+test_vocabulary.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv\Lib\site-packages\selenium\webdriver\support\wait.py:112: in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py:518: in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:914: in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002D8474B02D0&gt;
+response = {'status': 404, 'value': '{"value":{"error":"invalid session id","message":"invalid session id: session deleted as the...f8fa0974]\\n\\t(No symbol) [0x7ff7f8f8b5fc]\\n\\t(No symbol) [0x7ffa8c66dda7]\\n\\t(No symbol) [0x7ffa8d8bee4c]\\n"}}'}
+
+    def check_response(self, response: dict[str, Any]) -&gt; None:
+        """Check that a JSON response from the WebDriver does not have an error.
+    
+        Args:
+            response: The JSON response from the WebDriver server as a dictionary
+                object.
+    
+        Raises:
+            WebDriverException: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                try:
+                    value = json.loads(value_json)
+                    if isinstance(value, dict):
+                        if len(value) == 1:
+                            value = value["value"]
+                        status = value.get("error", None)
+                        if not status:
+                            status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                            message = value.get("value") or value.get("message")
+                            if not isinstance(message, str):
+                                value = message
+                                message = message.get("message") if isinstance(message, dict) else None
+                        else:
+                            message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+E       from disconnected: not connected to DevTools
+E         (Session info: chrome=155.0.8059.79); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+E       Stacktrace:
+E       Symbols not available. Dumping unresolved backtrace:
+E       	(No symbol) [0x7ff7f9075805]
+E       	(No symbol) [0x7ff7f8f97d50]
+E       	(No symbol) [0x7ff7f8db46dd]
+E       	(No symbol) [0x7ff7f8da0072]
+E       	(No symbol) [0x7ff7f8dc5dc6]
+E       	(No symbol) [0x7ff7f8e40d10]
+E       	(No symbol) [0x7ff7f8e64dad]
+E       	(No symbol) [0x7ff7f8e01d52]
+E       	(No symbol) [0x7ff7f8e02b63]
+E       	(No symbol) [0x7ff7f9498531]
+E       	(No symbol) [0x7ff7f94c430b]
+E       	(No symbol) [0x7ff7f94b823e]
+E       	(No symbol) [0x7ff7f917523e]
+E       	(No symbol) [0x7ff7f8fa57a5]
+E       	(No symbol) [0x7ff7f8fa07e4]
+E       	(No symbol) [0x7ff7f8fa0974]
+E       	(No symbol) [0x7ff7f8f8b5fc]
+E       	(No symbol) [0x7ffa8c66dda7]
+E       	(No symbol) [0x7ffa8d8bee4c]
+
+.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: InvalidSessionIdException
+
+During handling of the above exception, another exception occurred:
+
+level = 2
+
+    @pytest.mark.parametrize("level", range(1, 8), ids=[
+        "HSK-1", "HSK-2", "HSK-3", "HSK-4",
+        "HSK-5", "HSK-6", "HSK-7"
+    ])
+    def test_select_level_and_return(level):
+        driver = webdriver.Chrome()
+        driver.set_window_size(1366, 900)
+        wait = WebDriverWait(driver, 30)
+        case_id = f"VOC-01-HSK-{level}"
+    
+        try:
+            driver.get("http://localhost:3000/vocabulary")
+    
+            # Chọn đúng thẻ cấp độ, không nhầm nút bắt đầu HSK 1.
+            level_button = wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    f'//button[.//p[normalize-space(.)="HSK {level}"]]'
+                ))
+            )
+            level_button.click()
+    
+            # Tiêu đề cấp độ phải hiển thị đúng.
+            wait.until(
+                EC.visibility_of_element_located((
+                    By.XPATH,
+                    f'//h2[normalize-space(.)="HSK {level}"]'
+                ))
+            )
+    
+            # Bài đầu và các hành động học phải truy cập được.
+            lesson_id = f"new-{level}-lesson-1"
+            for mode in ["lesson", "flashcard", "writing", "game"]:
+                link = wait.until(
+                    EC.presence_of_element_located((
+                        By.CSS_SELECTOR,
+                        f'a[href="/vocabulary/{mode}/{lesson_id}"]'
+                    ))
+                )
+                assert link.is_displayed(), (
+                    f"Không hiển thị hành động {mode} của {lesson_id}"
+                )
+    
+            # Quay về màn hình chọn cấp độ.
+            wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    '//button[normalize-space(.)="Chọn cấp độ"]'
+                ))
+            ).click()
+    
+            wait.until(
+                EC.visibility_of_element_located((
+                    By.XPATH,
+                    '//h2[normalize-space(.)="Chọn cấp độ"]'
+                ))
+            )
+    
+            level_cards = driver.find_elements(
+                By.XPATH,
+                '//button[.//p[starts-with(normalize-space(.), "HSK ")]]'
+            )
+            assert len(level_cards) == 7, (
+                f"Mong đợi 7 thẻ cấp độ, thực tế {len(level_cards)}"
+            )
+    
+            driver.save_screenshot(f"{case_id}-pass.png")
+            print(f"\n{case_id}: chọn cấp và quay lại thành công")
+    
+        except Exception:
+&gt;           driver.save_screenshot(f"{case_id}-fail.png")
+
+test_vocabulary.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:994: in save_screenshot
+    return self.get_screenshot_as_file(filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:971: in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:1002: in get_screenshot_as_png
+    return b64decode(self.get_screenshot_as_base64().encode("ascii"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:1012: in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002D8474B02D0&gt;
+response = {'status': 404, 'value': '{"value":{"error":"invalid session id","message":"invalid session id","stacktrace":"Symbols ...f8d7bd1a]\\n\\t(No symbol) [0x7ff7f951e53f]\\n\\t(No symbol) [0x7ffa8c66dda7]\\n\\t(No symbol) [0x7ffa8d8bee4c]\\n"}}'}
+
+    def check_response(self, response: dict[str, Any]) -&gt; None:
+        """Check that a JSON response from the WebDriver does not have an error.
+    
+        Args:
+            response: The JSON response from the WebDriver server as a dictionary
+                object.
+    
+        Raises:
+            WebDriverException: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                try:
+                    value = json.loads(value_json)
+                    if isinstance(value, dict):
+                        if len(value) == 1:
+                            value = value["value"]
+                        status = value.get("error", None)
+                        if not status:
+                            status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                            message = value.get("value") or value.get("message")
+                            if not isinstance(message, str):
+                                value = message
+                                message = message.get("message") if isinstance(message, dict) else None
+                        else:
+                            message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+E       Stacktrace:
+E       Symbols not available. Dumping unresolved backtrace:
+E       	(No symbol) [0x7ff7f9075805]
+E       	(No symbol) [0x7ff7f8f97d50]
+E       	(No symbol) [0x7ff7f8db44d6]
+E       	(No symbol) [0x7ff7f8e00e53]
+E       	(No symbol) [0x7ff7f8e392e2]
+E       	(No symbol) [0x7ff7f8e330a2]
+E       	(No symbol) [0x7ff7f8e32823]
+E       	(No symbol) [0x7ff7f8d7c8eb]
+E       	(No symbol) [0x7ff7f8d7cf52]
+E       	(No symbol) [0x7ff7f8d7d585]
+E       	(No symbol) [0x7ff7f9498531]
+E       	(No symbol) [0x7ff7f94c430b]
+E       	(No symbol) [0x7ff7f94b823e]
+E       	(No symbol) [0x7ff7f917523e]
+E       	(No symbol) [0x7ff7f8fa57a5]
+E       	(No symbol) [0x7ff7f8d7bd1a]
+E       	(No symbol) [0x7ff7f951e53f]
+E       	(No symbol) [0x7ffa8c66dda7]
+E       	(No symbol) [0x7ffa8d8bee4c]
+
+.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: InvalidSessionIdException</failure></testcase><testcase classname="test_vocabulary" name="test_select_level_and_return[HSK-3]" time="7.966"><failure message="selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception&#10;Stacktrace:&#10;Symbols not available. Dumping unresolved backtrace:&#10;&#09;(No symbol) [0x7ff7f9075805]&#10;&#09;(No symbol) [0x7ff7f8f97d50]&#10;&#09;(No symbol) [0x7ff7f8db44d6]&#10;&#09;(No symbol) [0x7ff7f8e00e53]&#10;&#09;(No symbol) [0x7ff7f8e392e2]&#10;&#09;(No symbol) [0x7ff7f8e330a2]&#10;&#09;(No symbol) [0x7ff7f8e32823]&#10;&#09;(No symbol) [0x7ff7f8d7c8eb]&#10;&#09;(No symbol) [0x7ff7f8d7cf52]&#10;&#09;(No symbol) [0x7ff7f8d7d585]&#10;&#09;(No symbol) [0x7ff7f9498531]&#10;&#09;(No symbol) [0x7ff7f94c430b]&#10;&#09;(No symbol) [0x7ff7f94b823e]&#10;&#09;(No symbol) [0x7ff7f917523e]&#10;&#09;(No symbol) [0x7ff7f8fa57a5]&#10;&#09;(No symbol) [0x7ff7f8d7bd1a]&#10;&#09;(No symbol) [0x7ff7f951e53f]&#10;&#09;(No symbol) [0x7ffa8c66dda7]&#10;&#09;(No symbol) [0x7ffa8d8bee4c]">level = 3
+
+    @pytest.mark.parametrize("level", range(1, 8), ids=[
+        "HSK-1", "HSK-2", "HSK-3", "HSK-4",
+        "HSK-5", "HSK-6", "HSK-7"
+    ])
+    def test_select_level_and_return(level):
+        driver = webdriver.Chrome()
+        driver.set_window_size(1366, 900)
+        wait = WebDriverWait(driver, 30)
+        case_id = f"VOC-01-HSK-{level}"
+    
+        try:
+            driver.get("http://localhost:3000/vocabulary")
+    
+            # Chọn đúng thẻ cấp độ, không nhầm nút bắt đầu HSK 1.
+&gt;           level_button = wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    f'//button[.//p[normalize-space(.)="HSK {level}"]]'
+                ))
+            )
+
+test_vocabulary.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv\Lib\site-packages\selenium\webdriver\support\wait.py:112: in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py:518: in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:914: in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002D8474B1A90&gt;
+response = {'status': 404, 'value': '{"value":{"error":"invalid session id","message":"invalid session id: session deleted as the...f8fa0974]\\n\\t(No symbol) [0x7ff7f8f8b5fc]\\n\\t(No symbol) [0x7ffa8c66dda7]\\n\\t(No symbol) [0x7ffa8d8bee4c]\\n"}}'}
+
+    def check_response(self, response: dict[str, Any]) -&gt; None:
+        """Check that a JSON response from the WebDriver does not have an error.
+    
+        Args:
+            response: The JSON response from the WebDriver server as a dictionary
+                object.
+    
+        Raises:
+            WebDriverException: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                try:
+                    value = json.loads(value_json)
+                    if isinstance(value, dict):
+                        if len(value) == 1:
+                            value = value["value"]
+                        status = value.get("error", None)
+                        if not status:
+                            status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                            message = value.get("value") or value.get("message")
+                            if not isinstance(message, str):
+                                value = message
+                                message = message.get("message") if isinstance(message, dict) else None
+                        else:
+                            message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+E       from disconnected: not connected to DevTools
+E         (Session info: chrome=155.0.8059.79); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+E       Stacktrace:
+E       Symbols not available. Dumping unresolved backtrace:
+E       	(No symbol) [0x7ff7f9075805]
+E       	(No symbol) [0x7ff7f8f97d50]
+E       	(No symbol) [0x7ff7f8db46dd]
+E       	(No symbol) [0x7ff7f8da0072]
+E       	(No symbol) [0x7ff7f8dc5dc6]
+E       	(No symbol) [0x7ff7f8e40d10]
+E       	(No symbol) [0x7ff7f8e64dad]
+E       	(No symbol) [0x7ff7f8e01d52]
+E       	(No symbol) [0x7ff7f8e02b63]
+E       	(No symbol) [0x7ff7f9498531]
+E       	(No symbol) [0x7ff7f94c430b]
+E       	(No symbol) [0x7ff7f94b823e]
+E       	(No symbol) [0x7ff7f917523e]
+E       	(No symbol) [0x7ff7f8fa57a5]
+E       	(No symbol) [0x7ff7f8fa07e4]
+E       	(No symbol) [0x7ff7f8fa0974]
+E       	(No symbol) [0x7ff7f8f8b5fc]
+E       	(No symbol) [0x7ffa8c66dda7]
+E       	(No symbol) [0x7ffa8d8bee4c]
+
+.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: InvalidSessionIdException
+
+During handling of the above exception, another exception occurred:
+
+level = 3
+
+    @pytest.mark.parametrize("level", range(1, 8), ids=[
+        "HSK-1", "HSK-2", "HSK-3", "HSK-4",
+        "HSK-5", "HSK-6", "HSK-7"
+    ])
+    def test_select_level_and_return(level):
+        driver = webdriver.Chrome()
+        driver.set_window_size(1366, 900)
+        wait = WebDriverWait(driver, 30)
+        case_id = f"VOC-01-HSK-{level}"
+    
+        try:
+            driver.get("http://localhost:3000/vocabulary")
+    
+            # Chọn đúng thẻ cấp độ, không nhầm nút bắt đầu HSK 1.
+            level_button = wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    f'//button[.//p[normalize-space(.)="HSK {level}"]]'
+                ))
+            )
+            level_button.click()
+    
+            # Tiêu đề cấp độ phải hiển thị đúng.
+            wait.until(
+                EC.visibility_of_element_located((
+                    By.XPATH,
+                    f'//h2[normalize-space(.)="HSK {level}"]'
+                ))
+            )
+    
+            # Bài đầu và các hành động học phải truy cập được.
+            lesson_id = f"new-{level}-lesson-1"
+            for mode in ["lesson", "flashcard", "writing", "game"]:
+                link = wait.until(
+                    EC.presence_of_element_located((
+                        By.CSS_SELECTOR,
+                        f'a[href="/vocabulary/{mode}/{lesson_id}"]'
+                    ))
+                )
+                assert link.is_displayed(), (
+                    f"Không hiển thị hành động {mode} của {lesson_id}"
+                )
+    
+            # Quay về màn hình chọn cấp độ.
+            wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    '//button[normalize-space(.)="Chọn cấp độ"]'
+                ))
+            ).click()
+    
+            wait.until(
+                EC.visibility_of_element_located((
+                    By.XPATH,
+                    '//h2[normalize-space(.)="Chọn cấp độ"]'
+                ))
+            )
+    
+            level_cards = driver.find_elements(
+                By.XPATH,
+                '//button[.//p[starts-with(normalize-space(.), "HSK ")]]'
+            )
+            assert len(level_cards) == 7, (
+                f"Mong đợi 7 thẻ cấp độ, thực tế {len(level_cards)}"
+            )
+    
+            driver.save_screenshot(f"{case_id}-pass.png")
+            print(f"\n{case_id}: chọn cấp và quay lại thành công")
+    
+        except Exception:
+&gt;           driver.save_screenshot(f"{case_id}-fail.png")
+
+test_vocabulary.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:994: in save_screenshot
+    return self.get_screenshot_as_file(filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:971: in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:1002: in get_screenshot_as_png
+    return b64decode(self.get_screenshot_as_base64().encode("ascii"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:1012: in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002D8474B1A90&gt;
+response = {'status': 404, 'value': '{"value":{"error":"invalid session id","message":"invalid session id","stacktrace":"Symbols ...f8d7bd1a]\\n\\t(No symbol) [0x7ff7f951e53f]\\n\\t(No symbol) [0x7ffa8c66dda7]\\n\\t(No symbol) [0x7ffa8d8bee4c]\\n"}}'}
+
+    def check_response(self, response: dict[str, Any]) -&gt; None:
+        """Check that a JSON response from the WebDriver does not have an error.
+    
+        Args:
+            response: The JSON response from the WebDriver server as a dictionary
+                object.
+    
+        Raises:
+            WebDriverException: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                try:
+                    value = json.loads(value_json)
+                    if isinstance(value, dict):
+                        if len(value) == 1:
+                            value = value["value"]
+                        status = value.get("error", None)
+                        if not status:
+                            status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                            message = value.get("value") or value.get("message")
+                            if not isinstance(message, str):
+                                value = message
+                                message = message.get("message") if isinstance(message, dict) else None
+                        else:
+                            message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+E       Stacktrace:
+E       Symbols not available. Dumping unresolved backtrace:
+E       	(No symbol) [0x7ff7f9075805]
+E       	(No symbol) [0x7ff7f8f97d50]
+E       	(No symbol) [0x7ff7f8db44d6]
+E       	(No symbol) [0x7ff7f8e00e53]
+E       	(No symbol) [0x7ff7f8e392e2]
+E       	(No symbol) [0x7ff7f8e330a2]
+E       	(No symbol) [0x7ff7f8e32823]
+E       	(No symbol) [0x7ff7f8d7c8eb]
+E       	(No symbol) [0x7ff7f8d7cf52]
+E       	(No symbol) [0x7ff7f8d7d585]
+E       	(No symbol) [0x7ff7f9498531]
+E       	(No symbol) [0x7ff7f94c430b]
+E       	(No symbol) [0x7ff7f94b823e]
+E       	(No symbol) [0x7ff7f917523e]
+E       	(No symbol) [0x7ff7f8fa57a5]
+E       	(No symbol) [0x7ff7f8d7bd1a]
+E       	(No symbol) [0x7ff7f951e53f]
+E       	(No symbol) [0x7ffa8c66dda7]
+E       	(No symbol) [0x7ffa8d8bee4c]
+
+.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: InvalidSessionIdException</failure></testcase><testcase classname="test_vocabulary" name="test_select_level_and_return[HSK-4]" time="4.417"><failure message="selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception&#10;Stacktrace:&#10;Symbols not available. Dumping unresolved backtrace:&#10;&#09;(No symbol) [0x7ff7f9075805]&#10;&#09;(No symbol) [0x7ff7f8f97d50]&#10;&#09;(No symbol) [0x7ff7f8db44d6]&#10;&#09;(No symbol) [0x7ff7f8e00e53]&#10;&#09;(No symbol) [0x7ff7f8e392e2]&#10;&#09;(No symbol) [0x7ff7f8e330a2]&#10;&#09;(No symbol) [0x7ff7f8e32823]&#10;&#09;(No symbol) [0x7ff7f8d7c8eb]&#10;&#09;(No symbol) [0x7ff7f8d7cf52]&#10;&#09;(No symbol) [0x7ff7f8d7d585]&#10;&#09;(No symbol) [0x7ff7f9498531]&#10;&#09;(No symbol) [0x7ff7f94c430b]&#10;&#09;(No symbol) [0x7ff7f94b823e]&#10;&#09;(No symbol) [0x7ff7f917523e]&#10;&#09;(No symbol) [0x7ff7f8fa57a5]&#10;&#09;(No symbol) [0x7ff7f8d7bd1a]&#10;&#09;(No symbol) [0x7ff7f951e53f]&#10;&#09;(No symbol) [0x7ffa8c66dda7]&#10;&#09;(No symbol) [0x7ffa8d8bee4c]">level = 4
+
+    @pytest.mark.parametrize("level", range(1, 8), ids=[
+        "HSK-1", "HSK-2", "HSK-3", "HSK-4",
+        "HSK-5", "HSK-6", "HSK-7"
+    ])
+    def test_select_level_and_return(level):
+        driver = webdriver.Chrome()
+        driver.set_window_size(1366, 900)
+        wait = WebDriverWait(driver, 30)
+        case_id = f"VOC-01-HSK-{level}"
+    
+        try:
+            driver.get("http://localhost:3000/vocabulary")
+    
+            # Chọn đúng thẻ cấp độ, không nhầm nút bắt đầu HSK 1.
+&gt;           level_button = wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    f'//button[.//p[normalize-space(.)="HSK {level}"]]'
+                ))
+            )
+
+test_vocabulary.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv\Lib\site-packages\selenium\webdriver\support\wait.py:112: in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py:518: in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:914: in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002D845E26780&gt;
+response = {'status': 404, 'value': '{"value":{"error":"invalid session id","message":"invalid session id: session deleted as the...f8fa0974]\\n\\t(No symbol) [0x7ff7f8f8b5fc]\\n\\t(No symbol) [0x7ffa8c66dda7]\\n\\t(No symbol) [0x7ffa8d8bee4c]\\n"}}'}
+
+    def check_response(self, response: dict[str, Any]) -&gt; None:
+        """Check that a JSON response from the WebDriver does not have an error.
+    
+        Args:
+            response: The JSON response from the WebDriver server as a dictionary
+                object.
+    
+        Raises:
+            WebDriverException: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                try:
+                    value = json.loads(value_json)
+                    if isinstance(value, dict):
+                        if len(value) == 1:
+                            value = value["value"]
+                        status = value.get("error", None)
+                        if not status:
+                            status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                            message = value.get("value") or value.get("message")
+                            if not isinstance(message, str):
+                                value = message
+                                message = message.get("message") if isinstance(message, dict) else None
+                        else:
+                            message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+E       from disconnected: not connected to DevTools
+E         (Session info: chrome=155.0.8059.79); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+E       Stacktrace:
+E       Symbols not available. Dumping unresolved backtrace:
+E       	(No symbol) [0x7ff7f9075805]
+E       	(No symbol) [0x7ff7f8f97d50]
+E       	(No symbol) [0x7ff7f8db46dd]
+E       	(No symbol) [0x7ff7f8da0072]
+E       	(No symbol) [0x7ff7f8dc5dc6]
+E       	(No symbol) [0x7ff7f8e40d10]
+E       	(No symbol) [0x7ff7f8e64dad]
+E       	(No symbol) [0x7ff7f8e01d52]
+E       	(No symbol) [0x7ff7f8e02b63]
+E       	(No symbol) [0x7ff7f9498531]
+E       	(No symbol) [0x7ff7f94c430b]
+E       	(No symbol) [0x7ff7f94b823e]
+E       	(No symbol) [0x7ff7f917523e]
+E       	(No symbol) [0x7ff7f8fa57a5]
+E       	(No symbol) [0x7ff7f8fa07e4]
+E       	(No symbol) [0x7ff7f8fa0974]
+E       	(No symbol) [0x7ff7f8f8b5fc]
+E       	(No symbol) [0x7ffa8c66dda7]
+E       	(No symbol) [0x7ffa8d8bee4c]
+
+.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: InvalidSessionIdException
+
+During handling of the above exception, another exception occurred:
+
+level = 4
+
+    @pytest.mark.parametrize("level", range(1, 8), ids=[
+        "HSK-1", "HSK-2", "HSK-3", "HSK-4",
+        "HSK-5", "HSK-6", "HSK-7"
+    ])
+    def test_select_level_and_return(level):
+        driver = webdriver.Chrome()
+        driver.set_window_size(1366, 900)
+        wait = WebDriverWait(driver, 30)
+        case_id = f"VOC-01-HSK-{level}"
+    
+        try:
+            driver.get("http://localhost:3000/vocabulary")
+    
+            # Chọn đúng thẻ cấp độ, không nhầm nút bắt đầu HSK 1.
+            level_button = wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    f'//button[.//p[normalize-space(.)="HSK {level}"]]'
+                ))
+            )
+            level_button.click()
+    
+            # Tiêu đề cấp độ phải hiển thị đúng.
+            wait.until(
+                EC.visibility_of_element_located((
+                    By.XPATH,
+                    f'//h2[normalize-space(.)="HSK {level}"]'
+                ))
+            )
+    
+            # Bài đầu và các hành động học phải truy cập được.
+            lesson_id = f"new-{level}-lesson-1"
+            for mode in ["lesson", "flashcard", "writing", "game"]:
+                link = wait.until(
+                    EC.presence_of_element_located((
+                        By.CSS_SELECTOR,
+                        f'a[href="/vocabulary/{mode}/{lesson_id}"]'
+                    ))
+                )
+                assert link.is_displayed(), (
+                    f"Không hiển thị hành động {mode} của {lesson_id}"
+                )
+    
+            # Quay về màn hình chọn cấp độ.
+            wait.until(
+                EC.element_to_be_clickable((
+                    By.XPATH,
+                    '//button[normalize-space(.)="Chọn cấp độ"]'
+                ))
+            ).click()
+    
+            wait.until(
+                EC.visibility_of_element_located((
+                    By.XPATH,
+                    '//h2[normalize-space(.)="Chọn cấp độ"]'
+                ))
+            )
+    
+            level_cards = driver.find_elements(
+                By.XPATH,
+                '//button[.//p[starts-with(normalize-space(.), "HSK ")]]'
+            )
+            assert len(level_cards) == 7, (
+                f"Mong đợi 7 thẻ cấp độ, thực tế {len(level_cards)}"
+            )
+    
+            driver.save_screenshot(f"{case_id}-pass.png")
+            print(f"\n{case_id}: chọn cấp và quay lại thành công")
+    
+        except Exception:
+&gt;           driver.save_screenshot(f"{case_id}-fail.png")
+
+test_vocabulary.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:994: in save_screenshot
+    return self.get_screenshot_as_file(filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:971: in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:1002: in get_screenshot_as_png
+    return b64decode(self.get_screenshot_as_base64().encode("ascii"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:1012: in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002D845E26780&gt;
+response = {'status': 404, 'value': '{"value":{"error":"invalid session id","message":"invalid session id","stacktrace":"Symbols ...f8d7bd1a]\\n\\t(No symbol) [0x7ff7f951e53f]\\n\\t(No symbol) [0x7ffa8c66dda7]\\n\\t(No symbol) [0x7ffa8d8bee4c]\\n"}}'}
+
+    def check_response(self, response: dict[str, Any]) -&gt; None:
+        """Check that a JSON response from the WebDriver does not have an error.
+    
+        Args:
+            response: The JSON response from the WebDriver server as a dictionary
+                object.
+    
+        Raises:
+            WebDriverException: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                try:
+                    value = json.loads(value_json)
+                    if isinstance(value, dict):
+                        if len(value) == 1:
+                            value = value["value"]
+                        status = value.get("error", None)
+                        if not status:
+                            status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                            message = value.get("value") or value.get("message")
+                            if not isinstance(message, str):
+                                value = message
+                                message = message.get("message") if isinstance(message, dict) else None
+                        else:
+                            message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+E       Stacktrace:
+E       Symbols not available. Dumping unresolved backtrace:
+E       	(No symbol) [0x7ff7f9075805]
+E       	(No symbol) [0x7ff7f8f97d50]
+E       	(No symbol) [0x7ff7f8db44d6]
+E       	(No symbol) [0x7ff7f8e00e53]
+E       	(No symbol) [0x7ff7f8e392e2]
+E       	(No symbol) [0x7ff7f8e330a2]
+E       	(No symbol) [0x7ff7f8e32823]
+E       	(No symbol) [0x7ff7f8d7c8eb]
+E       	(No symbol) [0x7ff7f8d7cf52]
+E       	(No symbol) [0x7ff7f8d7d585]
+E       	(No symbol) [0x7ff7f9498531]
+E       	(No symbol) [0x7ff7f94c430b]
+E       	(No symbol) [0x7ff7f94b823e]
+E       	(No symbol) [0x7ff7f917523e]
+E       	(No symbol) [0x7ff7f8fa57a5]
+E       	(No symbol) [0x7ff7f8d7bd1a]
+E       	(No symbol) [0x7ff7f951e53f]
+E       	(No symbol) [0x7ffa8c66dda7]
+E       	(No symbol) [0x7ffa8d8bee4c]
+
+.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: InvalidSessionIdException</failure></testcase><testcase time="0.000" /></testsuite></testsuites>

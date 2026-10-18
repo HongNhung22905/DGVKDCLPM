@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="36.853" timestamp="2026-10-14T18:22:25.436431+07:00" hostname="LAPTOP-KTRJ8AE0"><testcase classname="test_unlock_session" name="test_unlock_restored_in_new_browser" time="36.692" /></testsuite></testsuites>

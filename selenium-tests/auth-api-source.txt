@@ -1,0 +1,144 @@
+﻿FILE: D:\DGKDCLPM_HSK_APP\hsk-app\frontend\app\api\auth\login\route.ts
+import { NextRequest, NextResponse } from "next/server";
+import bcrypt from "bcryptjs";
+import { prisma } from "@/lib/prisma";
+import { signToken, makeSetCookieHeader } from "@/lib/auth";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json().catch(() => null) as { email?: string; password?: string } | null;
+    if (!body) {
+      return NextResponse.json({ error: "Dá»¯ liá»‡u Ä‘Äƒng nháº­p khÃ´ng há»£p lá»‡." }, { status: 400 });
+    }
+    const { email, password } = body;
+
+    if (!email || !password) {
+      return NextResponse.json({ error: "Vui lÃ²ng nháº­p email vÃ  máº­t kháº©u." }, { status: 400 });
+    }
+
+    // LuÃ´n so sÃ¡nh lowercase â€” tÃ¬m case-insensitive qua Prisma
+    const normalizedEmail = email.toLowerCase().trim();
+
+    const user = await prisma.user.findFirst({
+      where: { email: { equals: normalizedEmail, mode: "insensitive" } },
+      select: { id: true, name: true, email: true, passwordHash: true },
+    });
+
+    if (!user) {
+      return NextResponse.json({ error: "Email hoáº·c máº­t kháº©u khÃ´ng Ä‘Ãºng." }, { status: 401 });
+    }
+
+    const valid = await bcrypt.compare(password, user.passwordHash);
+    if (!valid) {
+      return NextResponse.json({ error: "Email hoáº·c máº­t kháº©u khÃ´ng Ä‘Ãºng." }, { status: 401 });
+    }
+
+    const token = signToken({ sub: user.id, name: user.name, email: user.email });
+
+    return NextResponse.json(
+      { user: { id: user.id, name: user.name, email: user.email } },
+      { headers: { "Set-Cookie": makeSetCookieHeader(token) } }
+    );
+  } catch (err) {
+    console.error("[login]", err);
+    if (err instanceof Error && err.message === "AUTH_SECRET_MISSING") {
+      return NextResponse.json({ error: "MÃ¡y chá»§ chÆ°a cáº¥u hÃ¬nh NEXTAUTH_SECRET." }, { status: 503 });
+    }
+    if (err instanceof Error && /Can't reach database server|connection|P1001/i.test(err.message)) {
+      return NextResponse.json({ error: "KhÃ´ng thá»ƒ káº¿t ná»‘i cÆ¡ sá»Ÿ dá»¯ liá»‡u. Vui lÃ²ng thá»­ láº¡i sau." }, { status: 503 });
+    }
+    return NextResponse.json({ error: "Lá»—i server, thá»­ láº¡i sau." }, { status: 500 });
+  }
+}
+
+
+FILE: D:\DGKDCLPM_HSK_APP\hsk-app\frontend\app\api\auth\logout\route.ts
+import { NextResponse } from "next/server";
+import { makeClearCookieHeader } from "@/lib/auth";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+export async function POST() {
+  return NextResponse.json(
+    { ok: true },
+    { headers: { "Set-Cookie": makeClearCookieHeader() } }
+  );
+}
+
+
+FILE: D:\DGKDCLPM_HSK_APP\hsk-app\frontend\app\api\auth\me\route.ts
+import { NextRequest, NextResponse } from "next/server";
+import { getPayloadFromRequest } from "@/lib/auth";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+export async function GET(req: NextRequest) {
+  const payload = getPayloadFromRequest(req);
+  if (!payload) {
+    return NextResponse.json({ error: "ChÆ°a Ä‘Äƒng nháº­p." }, { status: 401 });
+  }
+  return NextResponse.json({
+    user: { id: payload.sub, name: payload.name, email: payload.email },
+  });
+}
+
+
+FILE: D:\DGKDCLPM_HSK_APP\hsk-app\frontend\app\api\auth\register\route.ts
+import { NextRequest, NextResponse } from "next/server";
+import bcrypt from "bcryptjs";
+import { prisma } from "@/lib/prisma";
+import { signToken, makeSetCookieHeader } from "@/lib/auth";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json() as { name?: string; email?: string; password?: string };
+    const { name, email, password } = body;
+
+    if (!name || !email || !password) {
+      return NextResponse.json({ error: "Vui lÃ²ng Ä‘iá»n Ä‘áº§y Ä‘á»§ thÃ´ng tin." }, { status: 400 });
+    }
+    if (password.length < 6) {
+      return NextResponse.json({ error: "Máº­t kháº©u pháº£i cÃ³ Ã­t nháº¥t 6 kÃ½ tá»±." }, { status: 400 });
+    }
+
+    // Normalize email vá» lowercase khi Ä‘Äƒng kÃ½
+    const normalizedEmail = email.toLowerCase().trim();
+    const normalizedName  = name.trim();
+
+    const existing = await prisma.user.findFirst({
+      where: { email: normalizedEmail },
+    });
+    if (existing) {
+      return NextResponse.json({ error: "Email nÃ y Ä‘Ã£ Ä‘Æ°á»£c Ä‘Äƒng kÃ½." }, { status: 409 });
+    }
+
+    const passwordHash = await bcrypt.hash(password, 10);
+    const user = await prisma.user.create({
+      data: { name: normalizedName, email: normalizedEmail, passwordHash },
+      select: { id: true, name: true, email: true },
+    });
+
+    const token = signToken({ sub: user.id, name: user.name, email: user.email });
+
+    return NextResponse.json(
+      { user },
+      {
+        status: 201,
+        headers: { "Set-Cookie": makeSetCookieHeader(token) },
+      }
+    );
+  } catch (err) {
+    console.error("[register]", err);
+    return NextResponse.json({ error: "Lá»—i server, thá»­ láº¡i sau." }, { status: 500 });
+  }
+}
+
+

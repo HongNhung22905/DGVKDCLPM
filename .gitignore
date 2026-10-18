@@ -6,3 +6,6 @@ node_modules/
 !.env.example
 !.env.local.example
 *.tsbuildinfo
+__pycache__/
+*.py[cod]
+.pytest_cache/

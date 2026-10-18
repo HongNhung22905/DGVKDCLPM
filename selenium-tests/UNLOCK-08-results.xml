@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="12.224" timestamp="2026-10-14T18:20:58.973611+07:00" hostname="LAPTOP-KTRJ8AE0"><testcase classname="test_unlock_pinyin" name="test_pinyin_validation[UNLOCK-08]" time="12.066" /></testsuite></testsuites>

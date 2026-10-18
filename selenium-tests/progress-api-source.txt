@@ -1,0 +1,396 @@
+﻿FILE: D:\DGKDCLPM_HSK_APP\hsk-app\frontend\app\api\progress\flashcard\route.ts
+/**
+ * GET  /api/progress/flashcard?lessonId=new-1-lesson-1
+ *      → trả về SM-2 cards của lesson này từ DB
+ *
+ * POST /api/progress/flashcard
+ *      body: { wordId, easeFactor, interval, repetitions, nextReview, lastReview }
+ *      → upsert 1 card
+ */
+import { NextRequest, NextResponse } from "next/server";
+import { getUserIdFromRequest } from "@/lib/auth";
+import { prisma } from "@/lib/prisma";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+// ── GET ───────────────────────────────────────────────────────────────────────
+
+export async function GET(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+
+  const lessonId = req.nextUrl.searchParams.get("lessonId");
+  // lessonId format: "new-1-lesson-3"
+  // wordId format:   "new-1-0", "new-1-1", ...  (level prefix + index)
+  // Khi filter theo lesson, lấy tất cả cards của user rồi filter phía client,
+  // hoặc lấy tất cả (API đơn giản hơn, client tự filter theo lesson nếu cần).
+  // Ở đây: nếu có lessonId → trả tất cả cards của level tương ứng (startsWith "new-X-")
+  // vì 1 lesson không có prefix riêng trong wordId.
+  let levelPrefix: string | undefined;
+  if (lessonId) {
+    // "new-1-lesson-3" → prefix "new-1-"
+    const m = lessonId.match(/^(new-\d+)-lesson-\d+$/);
+    levelPrefix = m ? m[1] + "-" : undefined;
+  }
+
+  const cards = await prisma.flashcardCard.findMany({
+    where: levelPrefix
+      ? { userId, wordId: { startsWith: levelPrefix } }
+      : { userId },
+    select: {
+      wordId: true, easeFactor: true, interval: true,
+      repetitions: true, nextReview: true, lastReview: true,
+    },
+  });
+
+  return NextResponse.json({ cards });
+}
+
+// ── POST ──────────────────────────────────────────────────────────────────────
+
+export async function POST(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+
+  try {
+    const body = await req.json() as {
+      wordId: string;
+      easeFactor: number;
+      interval: number;
+      repetitions: number;
+      nextReview: string;
+      lastReview: string;
+    };
+
+    const { wordId, easeFactor, interval, repetitions, nextReview, lastReview } = body;
+    if (!wordId) return NextResponse.json({ error: "Thiếu wordId." }, { status: 400 });
+
+    const card = await prisma.flashcardCard.upsert({
+      where: { userId_wordId: { userId, wordId } },
+      create: { userId, wordId, easeFactor, interval, repetitions, nextReview, lastReview },
+      update: { easeFactor, interval, repetitions, nextReview, lastReview },
+      select: { wordId: true, easeFactor: true, interval: true, repetitions: true, nextReview: true, lastReview: true },
+    });
+
+    return NextResponse.json({ card });
+  } catch (err) {
+    console.error("[flashcard POST]", err);
+    return NextResponse.json({ error: "Lỗi server." }, { status: 500 });
+  }
+}
+
+
+FILE: D:\DGKDCLPM_HSK_APP\hsk-app\frontend\app\api\progress\flashcard\bulk\route.ts
+/**
+ * POST /api/progress/flashcard/bulk
+ * body: { cards: SM2Card[] }
+ * → nhập các thẻ chưa có; giữ lịch ôn trên DB khi đồng bộ cache cũ
+ */
+import { NextRequest, NextResponse } from "next/server";
+import { getUserIdFromRequest } from "@/lib/auth";
+import { prisma } from "@/lib/prisma";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+interface SM2CardBody {
+  wordId: string;
+  easeFactor: number;
+  interval: number;
+  repetitions: number;
+  nextReview: string;
+  lastReview: string;
+}
+
+export async function POST(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+
+  try {
+    const body = await req.json() as { cards: SM2CardBody[] };
+    if (!Array.isArray(body.cards) || body.cards.length === 0) {
+      return NextResponse.json({ error: "Không có cards." }, { status: 400 });
+    }
+
+    // Import/init must never reset an existing schedule, even if another device
+    // creates the card between our GET and POST. Reviews use the single-card API.
+    const result = await prisma.flashcardCard.createMany({
+      data: body.cards.map(({ wordId, easeFactor, interval, repetitions, nextReview, lastReview }) =>
+        ({ userId, wordId, easeFactor, interval, repetitions, nextReview, lastReview })),
+      skipDuplicates: true,
+    });
+    return NextResponse.json({ ok: true, saved: result.count });
+  } catch (err) {
+    console.error("[flashcard/bulk]", err);
+    return NextResponse.json({ error: "Lỗi server." }, { status: 500 });
+  }
+}
+
+
+FILE: D:\DGKDCLPM_HSK_APP\hsk-app\frontend\app\api\progress\gate\route.ts
+/**
+ * GET  /api/progress/gate          → tất cả gate results của user
+ * POST /api/progress/gate
+ *      body: { setId, passed, score }
+ *      → upsert, không rút lại "passed" nếu đã đạt
+ */
+import { NextRequest, NextResponse } from "next/server";
+import { getUserIdFromRequest } from "@/lib/auth";
+import { prisma } from "@/lib/prisma";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+export async function GET(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+
+  const rows = await prisma.gateResult.findMany({
+    where: { userId },
+    select: { setId: true, passed: true, score: true, attempts: true, lastAttemptAt: true },
+  });
+
+  return NextResponse.json({ gates: rows });
+}
+
+export async function POST(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+
+  try {
+    const body = await req.json() as { setId: string; passed: boolean; score: number };
+    if (!body.setId) return NextResponse.json({ error: "Thiếu setId." }, { status: 400 });
+
+    const existing = await prisma.gateResult.findUnique({
+      where: { userId_setId: { userId, setId: body.setId } },
+    });
+
+    const row = await prisma.gateResult.upsert({
+      where: { userId_setId: { userId, setId: body.setId } },
+      create: { userId, setId: body.setId, passed: body.passed, score: body.score, attempts: 1 },
+      update: {
+        passed: body.passed || (existing?.passed ?? false), // không rút lại
+        score: Math.max(body.score, existing?.score ?? 0),
+        attempts: { increment: 1 },
+        lastAttemptAt: new Date(),
+      },
+      select: { setId: true, passed: true, score: true, attempts: true },
+    });
+
+    return NextResponse.json({ gate: row });
+  } catch (err) {
+    console.error("[gate POST]", err);
+    return NextResponse.json({ error: "Lỗi server." }, { status: 500 });
+  }
+}
+
+
+FILE: D:\DGKDCLPM_HSK_APP\hsk-app\frontend\app\api\progress\grammar\route.ts
+/**
+ * GET  /api/progress/grammar              → lấy grammar progress của user
+ * POST /api/progress/grammar
+ *      body: { pointId, mode, score, total }
+ *      → upsert, giữ bestScore cao nhất
+ */
+import { NextRequest, NextResponse } from "next/server";
+import { getUserIdFromRequest } from "@/lib/auth";
+import { prisma } from "@/lib/prisma";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+// ── GET ───────────────────────────────────────────────────────────────────────
+
+export async function GET(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+
+  const rows = await prisma.grammarProgress.findMany({
+    where: { userId },
+    select: { pointId: true, mode: true, bestScore: true, attempts: true, lastAttemptAt: true },
+    orderBy: { lastAttemptAt: "desc" },
+  });
+
+  return NextResponse.json({ progress: rows });
+}
+
+// ── POST ──────────────────────────────────────────────────────────────────────
+
+export async function POST(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+
+  try {
+    const body = await req.json() as {
+      pointId: string;
+      mode: "fill" | "sort";
+      score: number;   // 0–100
+      total: number;
+    };
+
+    if (!body.pointId || !body.mode) {
+      return NextResponse.json({ error: "Thiếu pointId hoặc mode." }, { status: 400 });
+    }
+
+    const clampedScore = Math.min(100, Math.max(0, Math.round(body.score)));
+
+    const existing = await prisma.grammarProgress.findUnique({
+      where: { userId_pointId_mode: { userId, pointId: body.pointId, mode: body.mode } },
+    });
+
+    const row = await prisma.grammarProgress.upsert({
+      where: { userId_pointId_mode: { userId, pointId: body.pointId, mode: body.mode } },
+      create: {
+        userId,
+        pointId:   body.pointId,
+        mode:      body.mode,
+        bestScore: clampedScore,
+        attempts:  1,
+      },
+      update: {
+        bestScore:     Math.max(clampedScore, existing?.bestScore ?? 0),
+        attempts:      { increment: 1 },
+        lastAttemptAt: new Date(),
+      },
+      select: { pointId: true, mode: true, bestScore: true, attempts: true },
+    });
+
+    return NextResponse.json({ progress: row });
+  } catch (err) {
+    console.error("[grammar progress POST]", err);
+    return NextResponse.json({ error: "Lỗi server." }, { status: 500 });
+  }
+}
+
+
+FILE: D:\DGKDCLPM_HSK_APP\hsk-app\frontend\app\api\progress\lesson\route.ts
+/**
+ * GET  /api/progress/lesson          → tất cả lesson progress của user
+ * POST /api/progress/lesson          → upsert 1 lesson progress
+ *      body: { lessonId, completed, score }
+ */
+import { NextRequest, NextResponse } from "next/server";
+import { getUserIdFromRequest } from "@/lib/auth";
+import { prisma } from "@/lib/prisma";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+// ── GET ───────────────────────────────────────────────────────────────────────
+
+export async function GET(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+
+  const rows = await prisma.lessonProgress.findMany({
+    where: { userId },
+    select: { lessonId: true, completed: true, score: true, completedAt: true },
+    orderBy: { updatedAt: "desc" },
+  });
+
+  return NextResponse.json({ lessons: rows });
+}
+
+// ── POST ──────────────────────────────────────────────────────────────────────
+
+export async function POST(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+
+  try {
+    const body = await req.json() as {
+      lessonId: string;
+      completed: boolean;
+      score?: number;
+    };
+
+    if (!body.lessonId) return NextResponse.json({ error: "Thiếu lessonId." }, { status: 400 });
+
+    // Lấy record hiện tại để giữ score tốt hơn và không rút lại completed
+    const existing = await prisma.lessonProgress.findUnique({
+      where: { userId_lessonId: { userId, lessonId: body.lessonId } },
+    });
+
+    const row = await prisma.lessonProgress.upsert({
+      where: { userId_lessonId: { userId, lessonId: body.lessonId } },
+      create: {
+        userId,
+        lessonId: body.lessonId,
+        completed: body.completed,
+        score: body.score,
+        completedAt: body.completed ? new Date() : null,
+      },
+      update: {
+        // Không rút lại "completed" nếu đã hoàn thành trước đó
+        completed: body.completed || (existing?.completed ?? false),
+        // Chỉ cập nhật score nếu tốt hơn điểm cũ
+        ...(body.score !== undefined && {
+          score: Math.max(body.score, existing?.score ?? 0),
+        }),
+        // Chỉ set completedAt lần đầu hoàn thành
+        ...(body.completed && !existing?.completed && { completedAt: new Date() }),
+      },
+      select: { lessonId: true, completed: true, score: true, completedAt: true },
+    });
+
+    return NextResponse.json({ lesson: row });
+  } catch (err) {
+    console.error("[lesson progress POST]", err);
+    return NextResponse.json({ error: "Lỗi server." }, { status: 500 });
+  }
+}
+
+
+FILE: D:\DGKDCLPM_HSK_APP\hsk-app\frontend\app\api\progress\modules\route.ts
+import { NextRequest, NextResponse } from "next/server";
+import { getUserIdFromRequest } from "@/lib/auth";
+import { prisma } from "@/lib/prisma";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+const MODULES = new Set(["topic", "reading", "dialogue", "exam"]);
+
+export async function GET(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+  const progress = await prisma.moduleProgress.findMany({
+    where: { userId },
+    select: { module: true, itemId: true, completed: true, bestScore: true, attempts: true, updatedAt: true },
+    orderBy: { updatedAt: "desc" },
+  });
+  return NextResponse.json({ progress });
+}
+
+export async function POST(req: NextRequest) {
+  const userId = getUserIdFromRequest(req);
+  if (!userId) return NextResponse.json({ error: "Chưa đăng nhập." }, { status: 401 });
+  try {
+    const body = await req.json() as { module?: string; itemId?: string; completed?: boolean; score?: number; countAttempt?: boolean };
+    if (!body.module || !MODULES.has(body.module) || !body.itemId || body.itemId.length > 160) {
+      return NextResponse.json({ error: "Dữ liệu tiến độ không hợp lệ." }, { status: 400 });
+    }
+    const score = body.score === undefined ? undefined : Math.max(0, Math.min(100, Math.round(body.score)));
+    const key = { userId_module_itemId: { userId, module: body.module, itemId: body.itemId } };
+    const existing = await prisma.moduleProgress.findUnique({ where: key });
+    const completed = Boolean(body.completed) || Boolean(existing?.completed);
+    const row = await prisma.moduleProgress.upsert({
+      where: key,
+      create: { userId, module: body.module, itemId: body.itemId, completed: Boolean(body.completed), bestScore: score, attempts: body.countAttempt ? 1 : 0, completedAt: body.completed ? new Date() : null },
+      update: {
+        completed,
+        ...(score !== undefined && { bestScore: Math.max(score, existing?.bestScore ?? 0) }),
+        ...(body.countAttempt && { attempts: { increment: 1 } }),
+        ...(body.completed && !existing?.completed && { completedAt: new Date() }),
+      },
+      select: { module: true, itemId: true, completed: true, bestScore: true, attempts: true },
+    });
+    return NextResponse.json({ progress: row });
+  } catch (error) {
+    console.error("[module progress POST]", error);
+    return NextResponse.json({ error: "Lỗi server." }, { status: 500 });
+  }
+}
+
+

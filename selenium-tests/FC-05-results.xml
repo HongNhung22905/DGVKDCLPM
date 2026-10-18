@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="8.111" timestamp="2026-10-14T16:36:56.013682+07:00" hostname="LAPTOP-KTRJ8AE0"><testcase classname="test_flashcard" name="test_open_flashcard[FC-05]" time="7.918"><failure message="AssertionError: assert '100%' == '100'&#10;  &#10;  #x1B[0m#x1B[91m- 100#x1B[39;49;00m#x1B[90m#x1B[39;49;00m&#10;  #x1B[92m+ 100%#x1B[39;49;00m#x1B[90m#x1B[39;49;00m&#10;  ?    +#x1B[90m#x1B[39;49;00m">test_flashcard.py:283: in test_open_flashcard
+    assert get_stat("Điểm") == "100"
+E   AssertionError: assert '100%' == '100'
+E     
+E     #x1B[0m#x1B[91m- 100#x1B[39;49;00m#x1B[90m#x1B[39;49;00m
+E     #x1B[92m+ 100%#x1B[39;49;00m#x1B[90m#x1B[39;49;00m
+E     ?    +#x1B[90m#x1B[39;49;00m</failure></testcase></testsuite></testsuites>
