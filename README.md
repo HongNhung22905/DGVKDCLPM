@@ -1,8 +1,133 @@
-# HSK 3.0 — Nền tảng học tiếng Trung
+# DGKDCLPM — Đánh giá và kiểm định chất lượng phần mềm
+
+Đối tượng đánh giá: **HSK 3.0 — Nền tảng học tiếng Trung**. Repository tập hợp ứng dụng và các bằng chứng kiểm thử phục vụ đánh giá chất lượng phần mềm.
 
 Ứng dụng web học tiếng Trung dành cho người Việt, xây dựng theo định hướng HSK 3.0. Hệ thống kết hợp học từ vựng, luyện viết chữ Hán, ngữ pháp, ôn tập ngắt quãng, đọc hiểu, hội thoại, luyện thi và gia sư AI trong một sản phẩm duy nhất.
 
 Ứng dụng: [hsk-app-sage.vercel.app](https://hsk-app-sage.vercel.app/)
+
+## Đánh giá và kiểm định chất lượng phần mềm
+
+### Mục tiêu và phạm vi
+
+Repository phục vụ đánh giá chất lượng ứng dụng HSK 3.0 thông qua rà soát mã nguồn, kiểm thử tự động và đối chiếu kết quả với hành vi mong đợi. Phạm vi hiện có tập trung vào xác thực, học từ vựng, flashcard, ôn tập SM-2, tiến độ, thống kê, sổ tay và tính nhất quán của dữ liệu.
+
+Thông tin dưới đây được rà soát trên nhánh `main`, tại commit `87aeadbbee552b65503b537fd2c05bfac6714cba`. Lần cập nhật tài liệu này **chưa chạy lại các bộ test**, nên chưa kết luận phiên bản hiện tại đạt các tiêu chí chất lượng.
+
+### Các loại kiểm thử hiện có
+
+| Nhóm kiểm thử | Công cụ và phạm vi thực tế | Mã nguồn / quy mô |
+| --- | --- | --- |
+| Chức năng giao diện và luồng đầu cuối (E2E) | Python, pytest, Selenium WebDriver và Chrome; thao tác qua trình duyệt, một số ca đối chiếu thêm API và trạng thái lưu trữ | [selenium-tests/](selenium-tests/): 33 file Python, 42 hàm `test_*`; nhiều hàm được tham số hóa thành nhiều ca chạy |
+| Hồi quy với I/O giả lập | Node.js test runner, TypeScript; thực thi mã route/component với database, auth và React hooks được giả lập | [learning-progress-regression.test.ts](hsk-app/tests/learning-progress-regression.test.ts): 6 test |
+| Kiểm tra schema và cấu hình build | Đọc schema, kiểm tra model/field, tham chiếu schema trong build và gọi `prisma generate` | [bug-condition-exploration.test.ts](hsk-app/tests/bug-condition-exploration.test.ts): 6 test |
+| Tích hợp database và kiểm thử dựa trên thuộc tính (property-based) | Node.js test runner, Prisma, bcryptjs và fast-check; tạo, đọc, cập nhật, xóa dữ liệu trên PostgreSQL thật | [preservation-properties.test.ts](hsk-app/tests/preservation-properties.test.ts): 6 thuộc tính, cấu hình 10 lượt sinh đầu vào cho mỗi thuộc tính |
+| Kiểm tra dữ liệu học tập | Kiểm tra số lượng, ID trùng, trường bắt buộc, phạm vi từ vựng, cấu trúc câu hỏi, chỉ số đáp án và phân bố đáp án HSK 1–2 | [validateLearningData.mjs](hsk-app/frontend/scripts/validateLearningData.mjs), [validateHsk2Data.mjs](hsk-app/frontend/scripts/validateHsk2Data.mjs) |
+| Phân tích tĩnh và xác minh build | ESLint, TypeScript và production build để phát hiện lỗi mã nguồn, kiểu dữ liệu và đóng gói | [frontend/package.json](hsk-app/frontend/package.json): `npm run lint`, `npx tsc --noEmit`, `npm run build` |
+
+Các nhóm trên có thể giao nhau: một ca Selenium vừa kiểm tra chức năng, vừa kiểm tra hồi quy hoặc giá trị biên. Số file, số hàm, số thuộc tính và số lượt sinh dữ liệu không đồng nghĩa với tổng số ca chạy hoặc tỷ lệ bao phủ mã nguồn.
+
+### Ma trận chức năng và bằng chứng kiểm thử
+
+| Chức năng / rủi ro | Hành vi được kiểm tra | Bằng chứng |
+| --- | --- | --- |
+| Đăng ký, đăng nhập, đăng xuất | Thông tin hợp lệ/sai, email trùng, trường không hợp lệ, cookie HttpOnly và trạng thái đăng xuất | [test_register.py](selenium-tests/test_register.py), [test_login.py](selenium-tests/test_login.py), [test_logout.py](selenium-tests/test_logout.py) |
+| Từ vựng và flashcard | Chọn cấp HSK, khóa bài ban đầu, điều hướng từ, thao tác học flashcard | [test_vocabulary.py](selenium-tests/test_vocabulary.py), [test_flashcard.py](selenium-tests/test_flashcard.py) |
+| Game và mở khóa nhóm bài | Trả lời đúng/sai, điểm số, chế độ chữ Hán/pinyin, thử lại và khôi phục mở khóa trong trình duyệt mới | [test_game.py](selenium-tests/test_game.py), [test_unlock_score.py](selenium-tests/test_unlock_score.py), [test_unlock_retry.py](selenium-tests/test_unlock_retry.py), [test_unlock_session.py](selenium-tests/test_unlock_session.py) |
+| Ôn tập và lịch sử | Thẻ đến hạn/chưa đến hạn, đánh giá thẻ, ôn lặp lại và lưu lịch sử phiên một lần | [test_review_due.py](selenium-tests/test_review_due.py), [test_review_future.py](selenium-tests/test_review_future.py), [test_review_history.py](selenium-tests/test_review_history.py) |
+| Luyện viết | Chế độ luyện viết, nét sai không được tính hoàn thành và hoàn thành một chữ | [test_writing.py](selenium-tests/test_writing.py), [test_writing_quiz.py](selenium-tests/test_writing_quiz.py), [test_writing_complete.py](selenium-tests/test_writing_complete.py) |
+| Tiến độ, thống kê và cách ly tài khoản | Tài khoản mới, tiến độ sau học, lịch thống kê, lưu qua tải lại/đăng nhập và dữ liệu không lẫn giữa tài khoản | [test_progress_completed.py](selenium-tests/test_progress_completed.py), [test_stats_calendar.py](selenium-tests/test_stats_calendar.py), [test_stats_persistence.py](selenium-tests/test_stats_persistence.py), [test_data_isolation.py](selenium-tests/test_data_isolation.py) |
+| Tra từ và sổ tay | Luồng tìm kiếm và thao tác sổ tay | [test_search.py](selenium-tests/test_search.py), [test_notebook.py](selenium-tests/test_notebook.py) |
+| Lưu trữ và đồng bộ | CRUD các model, giữ lịch flashcard khi import, khôi phục tiến độ và xử lý ngày học | [preservation-properties.test.ts](hsk-app/tests/preservation-properties.test.ts), [learning-progress-regression.test.ts](hsk-app/tests/learning-progress-regression.test.ts) |
+
+Ví dụ kỹ thuật thiết kế ca kiểm thử đang có:
+
+- **Phân vùng tương đương:** đăng nhập đúng/sai thông tin; email đã đăng ký/chưa đăng ký; tài khoản mới/đã có dữ liệu.
+- **Giá trị biên:** mật khẩu 5, 6 và 7 ký tự; điểm mở khóa 15, 16 và 17 câu đúng trên tổng 20 câu.
+- **Chuyển trạng thái:** đăng nhập → đăng xuất; học → ôn tập → lưu lịch sử; chưa mở khóa → mở khóa → thử lại → khôi phục phiên.
+- **Kiểm tra bảo vệ dữ liệu ở phạm vi hiện có:** cookie HttpOnly và cách ly dữ liệu tài khoản. Các ca này chưa đủ để kết luận an toàn bảo mật toàn hệ thống.
+
+### Môi trường và cách chạy
+
+Cài các dependency Node.js theo phần cài đặt bên dưới. Các test tích hợp cần `DATABASE_URL` trỏ tới **database kiểm thử riêng**, schema đã được khởi tạo và Prisma Client đã được sinh. Cấu hình biến môi trường cho tiến trình chạy test; không mặc định rằng Node.js test runner sẽ tự đọc `frontend/.env.local`. Test tích hợp tạo/xóa bản ghi và test schema có gọi `prisma generate`.
+
+Chạy từ thư mục gốc repository:
+
+```bash
+# Các bộ TypeScript trong hsk-app/tests
+npm --prefix hsk-app test
+
+# Chạy riêng từng bộ
+npm --prefix hsk-app run test:bug-condition
+npm --prefix hsk-app run test:preservation
+
+# Hồi quy với mock, không cần kết nối database thật
+cd hsk-app
+node --import tsx --test tests/learning-progress-regression.test.ts
+```
+
+`npm test` trong `hsk-app` chỉ chạy các file TypeScript của thư mục `tests`; Selenium và kiểm tra dữ liệu cần chạy riêng.
+
+Để chạy Selenium, cài Python, Chrome, pytest và selenium. Repository hiện chưa có file dependency Python khóa phiên bản. Khởi động ứng dụng trong một terminal riêng:
+
+```bash
+# Từ gốc repository
+npm --prefix hsk-app/frontend run dev
+```
+
+Sau khi ứng dụng sẵn sàng tại `http://localhost:3000`, mở terminal khác tại gốc repository:
+
+```bash
+python -m pip install pytest selenium
+
+# Xem các ca sẽ được thu thập, chưa thực thi test
+python -m pytest selenium-tests --collect-only -q
+
+# Chạy các ca E2E và xuất báo cáo JUnit XML
+python -m pytest selenium-tests --junitxml=selenium-results.xml
+```
+
+Các test hiện dùng `webdriver.Chrome()` với cửa sổ trình duyệt và URL localhost trong mã nguồn. Luồng đăng ký, học và ôn tập có thể tạo dữ liệu kiểm thử; cần chạy ứng dụng với database kiểm thử.
+
+Kiểm tra dữ liệu và mã nguồn trong `hsk-app/frontend`:
+
+```bash
+npm run data:validate
+npm run lint
+npx tsc --noEmit
+npm run build
+```
+
+### Ghi nhận kết quả và tiêu chí đánh giá
+
+Mỗi lần kiểm định cần lưu commit được kiểm tra, thời điểm chạy, môi trường, phiên bản công cụ, lệnh chạy, số ca pass/fail/skip và minh chứng lỗi. Ca không chạy được do môi trường phải được ghi rõ; không tính là ca đã đạt.
+
+| Tiêu chí đề xuất cho một đợt kiểm định | Bằng chứng cần thu thập |
+| --- | --- |
+| Các luồng chức năng trong phạm vi đáp ứng kết quả mong đợi | Báo cáo E2E, assertion và ảnh chụp khi lỗi |
+| Thay đổi không làm hỏng hành vi đã được kiểm thử | Kết quả bộ hồi quy và preservation trên cùng commit |
+| Schema và dữ liệu kiểm thử hợp lệ | Kết quả bộ schema, `data:validate` và test tích hợp |
+| Mã nguồn vượt qua kiểm tra tĩnh và build | Log ESLint, TypeScript và production build |
+| Các ca bảo vệ dữ liệu hiện có đạt | Kết quả kiểm tra cookie và cách ly tài khoản; ghi rõ giới hạn phạm vi |
+
+Đây là tiêu chí đề xuất cho dự án, chưa phải kết quả nghiệm thu hoặc chứng nhận chất lượng.
+
+Các báo cáo đã lưu trong repository:
+
+- [BUG-CONDITION-RESULTS.md](hsk-app/tests/BUG-CONDITION-RESULTS.md): ghi nhận 5 test fail và 1 test pass trên mã trước khi sửa lỗi schema; tài liệu mô tả đây là lỗi kỳ vọng để xác nhận bug.
+- [PRESERVATION-TEST-RESULTS.md](hsk-app/tests/PRESERVATION-TEST-RESULTS.md): ghi nhận 6 thuộc tính pass ở thời điểm thiết lập baseline trước khi sửa.
+- [selenium-tests/](selenium-tests/): chứa báo cáo XML và ảnh chụp của các lần chạy trước, bao gồm cả lần chạy lại. Cần đối chiếu từng lần chạy với commit/môi trường; không cộng tất cả báo cáo thành một kết quả chung.
+
+Những minh chứng lịch sử này **không xác nhận trạng thái pass/fail của phiên bản hiện tại**. Lần cập nhật README này chỉ rà soát và mô tả bộ kiểm thử.
+
+### Giới hạn hiện tại và hướng bổ sung
+
+- Chưa thấy cấu hình CI tự động chạy test trong `.github/workflows` hoặc cấu hình đo code coverage; chưa có tỷ lệ bao phủ được xác nhận.
+- Chưa thấy bộ kiểm thử riêng cho hiệu năng/tải, accessibility hoặc chạy trên nhiều trình duyệt; bộ Selenium hiện dùng Chrome.
+- Chưa thấy bộ kiểm thử bảo mật chuyên biệt. Kiểm tra cookie và cách ly tài khoản chỉ phản ánh một phần yêu cầu bảo vệ dữ liệu.
+- Test preservation về AI kiểm tra lưu trữ `AiSession`; chưa kiểm tra chất lượng câu trả lời hoặc luồng Gemini thực tế.
+- Kiểm tra dữ liệu HSK 1–2 không thay thế kiểm thử giao diện/đầu cuối cho chủ đề, đọc hiểu, hội thoại, phát âm và luyện thi.
+- Nên bổ sung cấu hình môi trường test có thể tái lập, dependency Python khóa phiên bản, báo cáo gắn với commit, CI và phép đo coverage trước khi công bố mức chất lượng tổng thể.
 
 ## Tính năng chính
 
@@ -111,8 +236,8 @@ hsk-app/
 Yêu cầu Node.js 18 trở lên, npm và một PostgreSQL database.
 
 ```bash
-git clone https://github.com/HongNhung22905/hsk_app.git
-cd hsk_app/hsk-app
+git clone https://github.com/buiquanghuy2005/DGKDCLPM.git
+cd DGKDCLPM/hsk-app
 npm install
 cd frontend && npm install
 cd ../backend && npm install
@@ -162,7 +287,7 @@ npm run prisma:generate # Sinh và đồng bộ Prisma Client
 npx tsc --noEmit        # Kiểm tra TypeScript
 ```
 
-Chạy kiểm thử toàn repository trong `hsk-app`:
+Chạy các bộ kiểm thử TypeScript trong `hsk-app` (Selenium và kiểm tra dữ liệu chạy riêng theo hướng dẫn ở trên):
 
 ```bash
 npm test
@@ -199,7 +324,7 @@ Các endpoint dữ liệu cá nhân yêu cầu JWT hợp lệ trong cookie HttpO
 
 ## Triển khai Vercel
 
-1. Import repository `HongNhung22905/hsk_app`.
+1. Import repository `buiquanghuy2005/DGKDCLPM`.
 2. Đặt **Root Directory** là `hsk-app/frontend`.
 3. Framework Preset chọn **Next.js**.
 4. Build Command giữ mặc định `npm run build`.
