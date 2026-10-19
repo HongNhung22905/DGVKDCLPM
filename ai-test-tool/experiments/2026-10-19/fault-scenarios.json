@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-19T12:00:07.668Z",
+  "results": [
+    {
+      "id": "FAULT-XML",
+      "expected": "Từ chối XML hỏng",
+      "actual": "XML không hợp lệ: Expected closing tag 'testcase' (opened in line 1, col 12) instead of closing tag 'testsuite'.",
+      "passed": true,
+      "type": "input-validation"
+    },
+    {
+      "id": "FAULT-CANCEL",
+      "expected": "cancelled",
+      "actual": "cancelled",
+      "passed": true,
+      "duration": 0.276,
+      "artifactDirectory": "fault-artifacts/cancelled/bb9f9fd7-d222-4495-b6ed-79637a9ff9d6",
+      "type": "controlled-node-process",
+      "notWebsiteTest": true
+    },
+    {
+      "id": "FAULT-TIMEOUT",
+      "expected": "timeout",
+      "actual": "timeout",
+      "passed": true,
+      "duration": 10.588,
+      "artifactDirectory": "fault-artifacts/timeout/c5a92c40-d52d-4d97-9a4c-8527c2319e8a",
+      "type": "controlled-node-process",
+      "notWebsiteTest": true
+    },
+    {
+      "id": "FAULT-GEMINI-CONNECTION",
+      "expected": "Lỗi kết nối được trả về, trạng thái test không đổi",
+      "actual": "fetch failed",
+      "actualCause": "ECONNREFUSED",
+      "retainedRunStatus": "error",
+      "passed": true,
+      "type": "controlled-local-connection-refusal",
+      "realGeminiRequest": false
+    }
+  ]
+}

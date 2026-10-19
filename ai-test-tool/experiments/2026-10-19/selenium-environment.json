@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-19T12:33:03.744Z",
+  "branchLabel": "hsk-test-2026-10-19",
+  "environmentId": "8efc0cdc-94b5-48e4-8d1e-66299d747a06",
+  "endpointSha256": "b99bfe80e0ba679547d4eaae4c3d7305ef804ff91a9d25c208e928eddb249f06",
+  "currentWebsiteEndpointDifferent": true,
+  "credentialsIncluded": false,
+  "originalEnvSha256": "3a13f491099d82ed0da3cae2af5a51af823f30b487600a1f4d8fcc6f35cd0e03",
+  "testSnapshot": "D:\\Downloads\\DGVKDCLPM\\ai-test-tool\\data\\hsk-test-app\\8efc0cdc-94b5-48e4-8d1e-66299d747a06",
+  "launcherFix": "Snapshot process cwd set to snapshot before preparing Next; HSK reads public/data and Tailwind relative to cwd.",
+  "authFixtureFile": "auth-fixture.json",
+  "sourceSha256": {
+    "ai-test-tool/src/hsk-test-server.ts": "867a4e5196b5229531eee2d03c8a0c30b179c6f2ae8ce74a0afa0cd4cbacd82e",
+    "ai-test-tool/src/hsk-test-environment.ts": "4daf8d7179e6c380c0cb18ca83dc8074cc0b5d3d6b8cfe2de0819dd3c092676d",
+    "ai-test-tool/src/runner.ts": "4bd1b2a308e47a0853e9fa3928fc1d5031191764a8184f66447b3414ab8bf068"
+  },
+  "note": "Branch label comes from user test configuration; no Neon management API used. Database checked read-only before tests, 12 public tables and 0 User rows at that time. Subsequent tests create synthetic accounts only on test endpoint."
+}

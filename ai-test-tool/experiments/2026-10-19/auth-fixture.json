@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-19T12:30:43.627Z",
+  "branch": "hsk-test-2026-10-19",
+  "environmentId": "8efc0cdc-94b5-48e4-8d1e-66299d747a06",
+  "sourceFiles": [
+    "selenium-tests/test_register.py",
+    "selenium-tests/test_login.py",
+    "selenium-tests/test_logout.py"
+  ],
+  "purpose": "Các test có sẵn cần một tài khoản cố định. Tạo dữ liệu tiền điều kiện qua API trên branch kiểm thử, không sửa test/assertion.",
+  "registrationStatus": 201,
+  "outcome": "fixture-created",
+  "websiteDatabaseAccessed": false
+}

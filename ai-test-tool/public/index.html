@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f36">
+  <title>HSK Test Lab — Công cụ hỗ trợ kiểm thử</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-lab" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4 19a1 1 0 0 0 1 2h14a1 1 0 0 0 1-2L14 9V3M8 13h8M9 17h.01M14 18h.01"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5c-4-3-9-1-9-1v15s5-2 9 1c4-3 9-1 9-1V4s-5-2-9 1v15"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v6h16v-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 3 6 6 3-6 3-3 6-3-6-6-3 6-3Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M8 21h8m-4-5v5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+  </svg>
+  <aside class="sidebar">
+    <a href="/" class="brand"><span class="brand-icon"><svg><use href="#i-lab"/></svg></span><span>HSK <strong>Test Lab</strong><small>KHÔNG GIAN KIỂM THỬ</small></span></a>
+    <div class="sidebar-label">DỰ ÁN CỦA BẠN</div>
+    <div class="project"><span class="project-mark">汉</span><span>Website học tiếng Trung<small>HSK · Selenium & Vitest</small></span></div>
+    <nav aria-label="Điều hướng chính">
+      <button class="nav-item active" data-view="workspace"><svg><use href="#i-grid"/></svg>Không gian kiểm thử</button>
+      <button class="nav-item" data-view="history"><svg><use href="#i-clock"/></svg>Lịch sử chạy<span id="history-count" class="nav-count">0</span></button>
+      <button class="nav-item" data-view="guide"><svg><use href="#i-book"/></svg>Hướng dẫn sử dụng</button>
+    </nav>
+    <div class="sidebar-note"><svg><use href="#i-spark"/></svg><strong>Hiểu lỗi cùng Gemini</strong><p>Giải thích kết quả và gợi ý bước kiểm tra tiếp theo.</p><span id="sidebar-ai">Đang kiểm tra cấu hình…</span></div>
+    <div class="sidebar-footer"><span class="dot"></span>Chạy local trên máy của bạn<small>HSK Test Lab / v1.0</small></div>
+  </aside>
+  <div class="main-shell">
+    <header class="topbar"><span>Dự án HSK <span class="slash">/</span> <strong id="breadcrumb">Không gian kiểm thử</strong></span><span class="local-pill"><span class="dot"></span>Local workspace</span></header>
+    <main>
+      <section id="view-workspace" class="view">
+        <div class="page-heading"><div><div class="eyebrow">KIỂM THỬ TỰ ĐỘNG</div><h1>Mỗi kết quả, một góc nhìn rõ hơn.</h1><p>Chạy bộ test có sẵn, theo dõi kết quả và tìm hiểu nguyên nhân lỗi.</p></div><button class="button secondary import-button"><svg><use href="#i-upload"/></svg>Nhập XML</button></div>
+        <div class="workspace-grid">
+          <section class="panel setup-panel" aria-labelledby="setup-title">
+            <div class="panel-heading"><span class="step-number">01</span><div><h2 id="setup-title">Thiết lập lần chạy</h2><p>Chọn bộ kiểm thử có sẵn</p></div></div>
+            <div class="engine-tabs" aria-label="Loại kiểm thử"><button data-engine="vitest" class="active">Vitest<span>Unit test</span></button><button data-engine="selenium">Selenium<span>Trình duyệt</span></button></div>
+            <label class="field-label" for="group">Nhóm kiểm thử</label><select id="group"><option>Đang tải…</option></select>
+            <p id="group-description" class="field-help"></p>
+            <div class="source-files"><span>TỆP KIỂM THỬ</span><div id="group-files"></div></div>
+            <label class="field-label" for="timeout">Giới hạn thời gian <span>(giây)</span></label><input id="timeout" type="number" min="10" max="7200" step="1" value="120">
+            <div id="engine-note" class="engine-note"></div>
+            <button id="run-button" class="button primary full"><svg><use href="#i-play"/></svg>Chạy kiểm thử</button>
+            <p class="setup-footnote">Kết quả được lấy trực tiếp từ trình chạy test.</p>
+          </section>
+          <section class="results-area" aria-label="Kết quả kiểm thử">
+            <div id="run-header" class="run-header"></div>
+            <div id="metrics" class="metrics"></div>
+            <section class="panel result-panel"><div class="result-tabs" role="tablist" aria-label="Chi tiết lần chạy"><button id="tab-results" role="tab" aria-selected="true" data-tab="results" class="active">Kết quả kiểm thử</button><button id="tab-log" role="tab" aria-selected="false" data-tab="log">Nhật ký</button><button id="tab-ai" role="tab" aria-selected="false" data-tab="ai"><svg><use href="#i-spark"/></svg>Phân tích AI</button></div><div id="result-content" role="tabpanel" aria-labelledby="tab-results"></div></section>
+          </section>
+        </div>
+        <section class="recent-section"><div class="section-heading"><div><h2>Những lần chạy gần đây</h2><p>Mỗi lần chạy được lưu riêng để dễ tra cứu.</p></div><button class="text-button" data-view="history">Xem tất cả <svg><use href="#i-arrow"/></svg></button></div><div id="recent-runs" class="panel table-panel"></div></section>
+      </section>
+      <section id="view-history" class="view" hidden><div class="page-heading"><div><div class="eyebrow">NHẬT KÝ DỰ ÁN</div><h1>Lịch sử kiểm thử</h1><p>Xem lại kết quả chạy và các báo cáo XML đã nhập.</p></div><button class="button secondary import-button"><svg><use href="#i-upload"/></svg>Nhập XML</button></div><div class="history-tools"><input id="history-search" type="search" placeholder="Tìm theo tên nhóm hoặc tệp XML…" aria-label="Tìm trong lịch sử"><select id="history-status" aria-label="Lọc trạng thái lịch sử"><option value="all">Tất cả trạng thái</option><option value="passed">PASS</option><option value="failed">FAIL</option><option value="error">Lỗi thực thi / XML</option><option value="running">Đang chạy</option><option value="skipped">Bỏ qua</option><option value="cancelled">Đã dừng</option><option value="timeout">Hết thời gian</option><option value="interrupted">Gián đoạn</option></select></div><div id="history-runs" class="panel table-panel"></div></section>
+      <section id="view-guide" class="view" hidden><div class="page-heading"><div><div class="eyebrow">BẮT ĐẦU TẠI ĐÂY</div><h1>Từ chạy test đến hiểu kết quả.</h1><p>Công cụ hoạt động độc lập với website HSK.</p></div></div><div class="guide-grid"><article class="panel guide-card"><span class="step-number">01</span><h2>Chọn và chạy test</h2><p>Vitest sử dụng bộ hộp trắng có sẵn trong HSK. Selenium sử dụng các tệp pytest hiện có và mở Chrome trên máy.</p><p>Trước khi chạy Selenium, khởi động HSK tại <code>http://localhost:3000</code> với database kiểm thử. Các test có thể tạo tài khoản và dữ liệu học tập.</p><pre>npm --prefix ai-test-tool run hsk:test</pre></article><article class="panel guide-card"><span class="step-number">02</span><h2>Đọc đúng kết quả</h2><p><strong>PASS / FAIL</strong> lấy từ JUnit XML. Lỗi khởi động, lỗi thu thập test và XML thiếu được hiển thị riêng. Ca bỏ qua không được tính là đạt.</p><p>Giới hạn thời gian dừng cả cây tiến trình test. Kết quả dừng giữa chừng có thể chưa đầy đủ. Nhật ký giữ tối đa phần cuối 1 MB.</p></article><article class="panel guide-card"><span class="step-number">03</span><h2>Phân tích lỗi bằng Gemini</h2><p>Thêm biến môi trường bên dưới vào <code>ai-test-tool/.env</code> rồi khởi động lại công cụ. Không có key vẫn chạy test và đọc XML bình thường.</p><pre>GEMINI_API_KEY=key_của_bạn
+GEMINI_MODEL=gemini-flash-latest</pre><p>Khi bấm phân tích, phần lỗi và nhật ký đã rút gọn được gửi tới Gemini. AI chỉ đưa ra giải thích và giả thuyết, không thay đổi kết quả kiểm thử.</p></article><article class="panel guide-card"><span class="step-number">04</span><h2>Lưu và xem lại</h2><p>Nhập tệp JUnit XML từ Vitest hoặc pytest bằng nút Nhập XML. Báo cáo nhập được đánh dấu rõ và không thể hiện một lần chạy mới.</p><p>Lịch sử, XML, nhật ký và phân tích được lưu trong <code>ai-test-tool/data/runs/</code>. Ảnh do Selenium tạo cũng được lưu theo từng lần chạy. Dữ liệu được giữ sau khi khởi động lại.</p></article></div></section>
+      <footer class="page-footer"><span>HSK TEST LAB</span><span>Quan sát kết quả. Hiểu nguyên nhân. Kiểm tra có cơ sở.</span></footer>
+    </main>
+  </div>
+  <input type="file" id="xml-file" accept=".xml,application/xml,text/xml" hidden>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

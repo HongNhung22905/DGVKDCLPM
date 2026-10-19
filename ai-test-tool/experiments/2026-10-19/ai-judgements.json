@@ -1,0 +1,27 @@
+{
+  "reviewer": "Codex — nhận xét sơ bộ của trợ lý, chưa được người đánh giá độc lập xác nhận",
+  "rubric": {
+    "causeScore": "0: trái bằng chứng; 1: nhận diện nhóm lỗi nhưng thiếu nguyên nhân chính; 2: nêu đúng nguyên nhân trực tiếp đã biết",
+    "actionScore": "0: bước xử lý sai hoặc làm mất mục tiêu kiểm thử; 1: có bước hữu ích nhưng còn suy đoán/bước không có căn cứ; 2: các bước kiểm tra trực tiếp phù hợp và không tự đổi expected để PASS",
+    "classification": "Đúng: 2+2; đúng một phần: tổng >=2 nhưng chưa đạt 2+2; sai: tổng <2. Lỗi dịch vụ không được chấm là câu trả lời sai."
+  },
+  "results": [
+    { "id": "AI-01", "causeScore": 2, "actionScore": 2, "classification": "đúng", "reason": "Nêu đúng khác biệt 100%/100, đề nghị đối chiếu đặc tả/DOM trước khi sửa và không quyết định assertion đúng sai." },
+    { "id": "AI-02", "causeScore": 2, "actionScore": 2, "classification": "đúng", "reason": "Nhận diện ModuleNotFoundError, kiểm tra dependency/PYTHONPATH và khả năng đây là import cố ý gây lỗi." },
+    { "id": "AI-03", "causeScore": 2, "actionScore": 2, "classification": "đúng", "reason": "Nhận diện executable không tồn tại/ENOENT và hướng dẫn kiểm tra đường dẫn cấu hình trước khi chạy lại." },
+    { "id": "AI-04", "causeScore": 2, "actionScore": 1, "classification": "đúng một phần", "reason": "Nhận diện đúng actual 79 khác expected 80; các gợi ý DB, phân trang và tính điểm HSK chưa có căn cứ từ fixture Node đơn giản." },
+    { "id": "AI-05", "causeScore": 2, "actionScore": 2, "classification": "đúng", "reason": "Nêu setInterval giữ event loop, runner dừng sau 10 giây, đề xuất kiểm tra cleanup/clearInterval trước khi cân nhắc timeout." },
+    { "id": "AI-06", "causeScore": 2, "actionScore": 2, "classification": "đúng", "reason": "Nêu deadline HTTP 30 ms, đề nghị kiểm tra mục tiêu timeout, đo latency và xem log server thay vì kết luận lỗi nghiệp vụ." },
+    { "id": "AI-07", "causeScore": 2, "actionScore": 1, "classification": "đúng một phần", "reason": "Nhận diện HTTP 401 thiếu thông tin xác thực và kiểm tra header; giả thuyết engine import tự xử lý HTTP 4xx không có bằng chứng, vì import chỉ là nguồn báo cáo." },
+    { "id": "AI-08", "causeScore": 2, "actionScore": 1, "classification": "đúng một phần", "reason": "Phân biệt đúng 403 thiếu quyền admin của role learner; vẫn gợi ý cấu hình engine import thực thi HTTP. Lần đầu HTTP 503 được lưu riêng; tên ca ở lần retry bị mất dấu do đường truyền script PowerShell, ảnh hưởng chất lượng trình bày." },
+    { "id": "AI-09", "causeScore": 2, "actionScore": 2, "classification": "đúng", "reason": "Nhận diện ECONNREFUSED ở host/port, kiểm tra dịch vụ lắng nghe/readiness và không kết luận lỗi mật khẩu PostgreSQL." },
+    { "id": "AI-10", "causeScore": 2, "actionScore": 2, "classification": "đúng", "reason": "Nhận diện DATABASE_URL test còn thiếu, chỉ đúng file .env.hsk-test và bước kiểm tra cấu hình branch riêng." }
+  ],
+  "summary": { "total": 10, "correct": 7, "partlyCorrect": 3, "incorrect": 0, "initialServiceErrors": 1 },
+  "limitations": [
+    "Chỉ một mẫu là lỗi website HSK lịch sử; chín mẫu có kiểm soát không đại diện đầy đủ cho lỗi website thực tế.",
+    "Chưa có người chấm độc lập hoặc lặp nhiều lần để đo độ ổn định.",
+    "Alias model có thể thay đổi; modelVersion chỉ được ghi ở lần retry AI-08.",
+    "Phán loại trên là nhận xét sơ bộ của trợ lý, không phải tỷ lệ chính xác tổng quát hoặc kết quả nghiệm thu."
+  ]
+}

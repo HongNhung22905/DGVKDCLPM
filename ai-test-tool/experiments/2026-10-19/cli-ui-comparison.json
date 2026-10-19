@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-19T12:04:17Z",
+  "group": "vitest-all",
+  "databaseRequired": false,
+  "cli": {
+    "exitCode": 0,
+    "processWallSeconds": 3.94160120000015,
+    "reportedTestSeconds": 0.582,
+    "total": 22,
+    "passed": 22
+  },
+  "ui": {
+    "runId": "2d86db62-08ff-4356-bce3-cd18baca4d48",
+    "runnerWallSeconds": 2.181,
+    "reportedTestSeconds": 0.653,
+    "automatedSelectAndClickSeconds": 0.19376260000035472,
+    "automatedUntilDisplayedSeconds": 6.8552363000003425,
+    "automatedCollectDomSeconds": 0.7434911999998803,
+    "summary": {
+      "total": 22,
+      "passed": 22,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0
+    }
+  },
+  "perCaseResultsIdentical": true,
+  "independentXmlParser": "Python ElementTree",
+  "uiMatchesOriginalXml": true,
+  "websiteEnvUnchanged": true,
+  "timingLimit": "Một lần mỗi cách, không đo thời gian thao tác của người dùng. Khác biệt có thể do cache, khởi động và chu kỳ polling; không kết luận giao diện làm test nhanh hơn."
+}

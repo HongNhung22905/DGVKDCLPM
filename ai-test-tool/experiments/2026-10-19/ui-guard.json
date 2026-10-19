@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-19T12:06:18Z",
+  "selenium": {
+    "runId": "e2a66d38-586a-406b-a96b-959a4dd83ebb",
+    "group": "selenium-notebook",
+    "actualStatus": "error",
+    "expected": "Từ chối trước khi tạo tiến trình pytest khi chưa có HSK kiểm thử",
+    "passed": true,
+    "pytestStarted": false,
+    "websiteDatabaseTouched": false,
+    "xmlCreated": false,
+    "error": "Chưa có môi trường HSK kiểm thử được cách ly. Cấu hình .env.hsk-test với Neon branch riêng rồi chạy npm --prefix ai-test-tool run hsk:test. Không chạy Selenium trên database website hiện tại.",
+    "reasonForNotRunning85": "Chưa có URL Neon branch kiểm thử; không được phép dùng database website hiện tại."
+  },
+  "invalidXml": {
+    "expected": "Hiển thị lỗi, không thêm lịch sử giả",
+    "actual": "XML không hợp lệ; số lần chạy giữ nguyên",
+    "passed": true
+  }
+}

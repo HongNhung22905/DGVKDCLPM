@@ -1,0 +1,126 @@
+{
+  "createdAt": "2026-10-19T12:04:53.250Z",
+  "note": "1 lỗi HSK lịch sử và 9 lỗi có kiểm soát của môi trường/fixture; không gọi đây là 10 lỗi thực tế của website. Known cause được lưu trước khi gọi AI và không được gửi cho model.",
+  "fixtures": [
+    {
+      "id": "AI-01",
+      "category": "assertion",
+      "knownCause": "Chuỗi nhận được là 100%, chuỗi mong đợi là 100; khác ký tự %. Chưa có đặc tả để quyết định sửa sản phẩm hay assertion.",
+      "expectedChecks": [
+        "Đối chiếu yêu cầu định dạng điểm và giá trị DOM",
+        "Xác minh dữ liệu/kỳ vọng trước khi sửa"
+      ],
+      "log": "AssertionError: assert '100%' == '100'&#10;  &#10;  #x1B[0m#x1B[91m- 100#x1B[39;49;00m#x1B[90m#x1B[39;49;00m&#10;  #x1B[92m+ 100%#x1B[39;49;00m#x1B[90m#x1B[39;49;00m&#10;  ?    +#x1B[90m#x1B[39;49;00m\ntest_flashcard.py:283: in test_open_flashcard\n    assert get_stat(\"Điểm\") == \"100\"\nE   AssertionError: assert '100%' == '100'\nE     \nE     #x1B[0m#x1B[91m- 100#x1B[39;49;00m#x1B[90m#x1B[39;49;00m\nE     #x1B[92m+ 100%#x1B[39;49;00m#x1B[90m#x1B[39;49;00m\nE     ?    +#x1B[90m#x1B[39;49;00m",
+      "source": "historical-hsk-xml",
+      "status": "failed"
+    },
+    {
+      "id": "AI-02",
+      "category": "environment",
+      "knownCause": "Thiếu module hsk_missing_test_dependency_20261019 trong Python đang dùng; tên module được cố ý tạo để gây lỗi.",
+      "expectedChecks": [
+        "Kiểm tra interpreter và môi trường dependency",
+        "Không thay assertion để xử lý lỗi import"
+      ],
+      "log": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n    import hsk_missing_test_dependency_20261019\r\nModuleNotFoundError: No module named 'hsk_missing_test_dependency_20261019'\r\n",
+      "source": "controlled-python-import",
+      "status": "error"
+    },
+    {
+      "id": "AI-03",
+      "category": "environment",
+      "knownCause": "Đường dẫn executable Python không tồn tại; hệ điều hành trả ENOENT trước khi chạy test.",
+      "expectedChecks": [
+        "Kiểm tra PYTHON_EXECUTABLE hoặc PATH",
+        "Xác nhận file thực thi tồn tại"
+      ],
+      "log": "ENOENT: spawn D:\\Downloads\\DGVKDCLPM\\ai-test-tool\\experiments\\2026-10-19\\nonexistent-python.exe ENOENT",
+      "source": "controlled-missing-executable",
+      "status": "error"
+    },
+    {
+      "id": "AI-04",
+      "category": "assertion",
+      "knownCause": "Tiến trình Node so sánh actual=79 với expected=80 nên assertion thất bại. Không có nghiệp vụ để suy ra giá trị nào đúng.",
+      "expectedChecks": [
+        "Kiểm tra input/fixture và phép tính tạo giá trị",
+        "Đối chiếu đặc tả trước khi thay expected"
+      ],
+      "log": "node:assert:152\r\n  throw new AssertionError(obj);\r\n  ^\r\n\r\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\r\n\r\n79 !== 80\r\n\r\n    at [eval]:1:31\r\n    at runScriptInThisContext (node:internal/vm:219:10)\r\n    at node:internal/process/execution:451:12\r\n    at [eval]-wrapper:6:24\r\n    at runScriptInContext (node:internal/process/execution:449:60)\r\n    at evalFunction (node:internal/process/execution:283:30)\r\n    at evalTypeScript (node:internal/process/execution:295:3)\r\n    at node:internal/main/eval_string:71:3 {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: 79,\r\n  expected: 80,\r\n  operator: 'strictEqual',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.19.0\r\n",
+      "source": "controlled-node-assertion",
+      "status": "failed"
+    },
+    {
+      "id": "AI-05",
+      "category": "timeout",
+      "knownCause": "Tiến trình Node cố ý chạy vô hạn; runner dừng sau giới hạn 10 giây, không có XML hoàn chỉnh.",
+      "expectedChecks": [
+        "Xem nhật ký và tiến trình bị treo",
+        "Không tự tăng timeout để coi là đạt"
+      ],
+      "log": "Run status: timeout. Time limit: 10 seconds. Elapsed: 10.588. Controlled Node process log: setInterval keeps running, runner terminated process tree, no complete JUnit XML.",
+      "source": "controlled-runner-timeout",
+      "status": "timeout"
+    },
+    {
+      "id": "AI-06",
+      "category": "timeout",
+      "knownCause": "HTTP fixture chờ 500 ms, client chỉ đợi 30 ms nên AbortSignal phát TimeoutError.",
+      "expectedChecks": [
+        "Đối chiếu deadline client với latency server",
+        "Kiểm tra dịch vụ chậm và request thực tế"
+      ],
+      "log": "GET /slow. Client timeout=30ms. TimeoutError: The operation was aborted due to timeout",
+      "source": "controlled-http-timeout",
+      "status": "timeout"
+    },
+    {
+      "id": "AI-07",
+      "category": "authentication",
+      "knownCause": "HTTP fixture trả 401 vì request không có Bearer [ĐÃ ẨN]",
+      "expectedChecks": [
+        "Kiểm tra token/cookie được gửi trong request",
+        "Thực hiện hoặc kiểm tra luồng đăng nhập"
+      ],
+      "log": "GET /unauthorized -> HTTP 401\n{\"error\":\"Missing Bearer [ĐÃ ẨN]\"}",
+      "source": "controlled-http-auth",
+      "status": "error"
+    },
+    {
+      "id": "AI-08",
+      "category": "authentication",
+      "knownCause": "HTTP fixture trả 403 vì role learner thiếu quyền admin, dù đã xác thực.",
+      "expectedChecks": [
+        "Kiểm tra role/quyền của tài khoản",
+        "Không coi đăng nhập lại là đủ để có quyền admin"
+      ],
+      "log": "GET /forbidden -> HTTP 403\n{\"error\":\"Authenticated role learner does not have admin permission\"}",
+      "source": "controlled-http-auth",
+      "status": "error"
+    },
+    {
+      "id": "AI-09",
+      "category": "database",
+      "knownCause": "Cổng TCP được đóng trước khi client kết nối: ECONNREFUSED. Chưa đến bước xác thực PostgreSQL.",
+      "expectedChecks": [
+        "Kiểm tra host/port và PostgreSQL có lắng nghe",
+        "Không kết luận sai mật khẩu từ ECONNREFUSED"
+      ],
+      "log": "PostgreSQL connection attempt to isolated local test endpoint. ECONNREFUSED: connect ECONNREFUSED 127.0.0.1:62341",
+      "source": "controlled-local-db-port",
+      "status": "error"
+    },
+    {
+      "id": "AI-10",
+      "category": "database",
+      "knownCause": "DATABASE_URL của môi trường kiểm thử chưa được cấu hình nên launcher từ chối trước khi mở kết nối DB.",
+      "expectedChecks": [
+        "Điền URL của branch kiểm thử trong .env.hsk-test",
+        "Không dùng database hiện tại để thay thế"
+      ],
+      "log": "Chưa điền DATABASE_URL của Neon branch kiểm thử vào ai-test-tool/.env.hsk-test.",
+      "source": "controlled-test-db-config",
+      "status": "error"
+    }
+  ]
+}

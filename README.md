@@ -6,6 +6,14 @@
 
 Ứng dụng: [hsk-app-sage.vercel.app](https://hsk-app-sage.vercel.app/)
 
+## Công cụ AI hỗ trợ kiểm thử — cập nhật 19/10/2026
+
+Đã phát triển [HSK Test Lab](ai-test-tool/README.md): giao diện local chọn/chạy các test Vitest và Selenium có sẵn, nhập/đọc JUnit XML, hiển thị kết quả, lưu lịch sử và dùng Gemini giải thích lỗi. Phạm vi hiện tại không gồm AI sinh test hoặc đánh giá assertion.
+
+Xem [báo cáo yêu cầu, thiết kế và thực nghiệm](ai-test-tool/docs/EXPERIMENT-REPORT.md) và [bộ minh chứng](ai-test-tool/experiments/README.md). Key Gemini mới đã gọi thành công; công cụ hiện có 21/21 test đạt. Cặp lượt Vitest bằng lệnh/UI đều 22/22 PASS, đối chiếu từng ca với XML gốc thống nhất. 70 XML là báo cáo lịch sử được kiểm tra khả năng nhập, không phải 70 lần chạy mới.
+
+Đã chạy đủ **85 ca Selenium trên endpoint Neon kiểm thử riêng: 75 PASS, 10 FAIL**, không có ERROR/SKIP; runner khoảng 28 phút 48 giây. Nhóm tra từ/sổ tay chạy riêng bằng UI và CLI đều 10/10 PASS; NOTE-04 thất bại trong lượt đầy đủ nên chưa ổn định. [Báo cáo Selenium và minh chứng](ai-test-tool/docs/SELENIUM-RESULTS.md) phân biệt lỗi chức năng với lỗi tương tác tự động hóa; 85/85 ca hiển thị trong lịch sử khớp XML gốc. Kết nối database website hiện tại được giữ nguyên. Các phần kiểm định HSK bên dưới là tài liệu baseline trước đợt thực nghiệm mới; dùng báo cáo liên kết trên để xem trạng thái mới nhất.
+
 ## Đánh giá và kiểm định chất lượng phần mềm
 
 ### Mục tiêu và phạm vi

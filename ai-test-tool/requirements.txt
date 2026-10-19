@@ -1,0 +1,3 @@
+# Cài vào môi trường Python riêng của công cụ; không thay đổi mã Selenium hiện có.
+pytest>=8,<10
+selenium>=4,<5

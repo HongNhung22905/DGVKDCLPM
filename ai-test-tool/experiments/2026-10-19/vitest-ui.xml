@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="22" failures="0" errors="0" time="0.653">
+    <testsuite name="tests/whitebox/core.test.ts" timestamp="2026-10-19T12:04:10.029Z" hostname="ngonhung" tests="17" failures="0" errors="0" skipped="0" time="0.0213736">
+        <testcase classname="tests/whitebox/core.test.ts" name="SM-2 &gt; WB-SM2-01: tao the moi" time="0.0076018">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="SM-2 &gt; WB-SM2-02: quality 2 dat lai chuoi nho" time="0.0010731">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="SM-2 &gt; WB-SM2-03: quality 3 vao nhanh nho" time="0.0006194">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="SM-2 &gt; WB-SM2-04: lan nho thu hai" time="0.0005404">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="SM-2 &gt; WB-SM2-05: lan ba nhan he so cu" time="0.0005016">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="SM-2 &gt; WB-SM2-06: he so toi thieu" time="0.0006845">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="SM-2 &gt; WB-SM2-07: lam tron khoang on" time="0.0005328">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="SM-2 &gt; WB-SM2-08: chuyen nam" time="0.0004908">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="SM-2 &gt; WB-SM2-09: nam nhuan" time="0.0006232">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="SM-2 &gt; WB-SM2-10: giu nguyen dau vao" time="0.0012728">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="Mo khoa &gt; WB-UNLOCK-01: bien bai 3 va 4" time="0.0008395">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="Mo khoa &gt; WB-UNLOCK-02: nhom dau luon mo" time="0.0006773">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="Mo khoa &gt; WB-UNLOCK-03: thieu ket qua thi khoa" time="0.0005066">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="Mo khoa &gt; WB-UNLOCK-04: chua dat thi khoa" time="0.001091">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="Mo khoa &gt; WB-UNLOCK-05: dat thi mo" time="0.0008416">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="Mo khoa &gt; WB-UNLOCK-06: khong lan cap HSK" time="0.0004137">
+        </testcase>
+        <testcase classname="tests/whitebox/core.test.ts" name="Mo khoa &gt; WB-UNLOCK-07: khong mo vuot nhom" time="0.0004554">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/whitebox/gate.test.ts" timestamp="2026-10-19T12:04:10.038Z" hostname="ngonhung" tests="5" failures="0" errors="0" skipped="0" time="0.0132524">
+        <testcase classname="tests/whitebox/gate.test.ts" name="Ngưỡng và bảo toàn kết quả kiểm tra &gt; WB-GATE-01: điểm 79, passed=false" time="0.0084267">
+        </testcase>
+        <testcase classname="tests/whitebox/gate.test.ts" name="Ngưỡng và bảo toàn kết quả kiểm tra &gt; WB-GATE-02: điểm 80, passed=true" time="0.0008447">
+        </testcase>
+        <testcase classname="tests/whitebox/gate.test.ts" name="Ngưỡng và bảo toàn kết quả kiểm tra &gt; WB-GATE-03: điểm 81, passed=true" time="0.000675">
+        </testcase>
+        <testcase classname="tests/whitebox/gate.test.ts" name="Ngưỡng và bảo toàn kết quả kiểm tra &gt; WB-GATE-04: đạt 80 rồi làm lại 60 vẫn giữ quyền và điểm" time="0.0006817">
+        </testcase>
+        <testcase classname="tests/whitebox/gate.test.ts" name="Ngưỡng và bảo toàn kết quả kiểm tra &gt; WB-GATE-05: từ chưa đạt lên đạt cập nhật điểm và số lần" time="0.0006348">
+        </testcase>
+    </testsuite>
+</testsuites>

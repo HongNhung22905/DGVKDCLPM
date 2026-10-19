@@ -1,0 +1,16 @@
+{
+  "id": "19e9e179-29de-494e-8580-e9c4591beffc",
+  "groupId": "selenium-notebook",
+  "name": "Tra từ và sổ tay",
+  "engine": "selenium",
+  "source": "execution",
+  "status": "cancelled",
+  "startedAt": "2026-10-19T12:24:37.961Z",
+  "duration": 56.076,
+  "timeoutSeconds": 1800,
+  "command": "D:\\Downloads\\DGVKDCLPM\\ai-test-tool\\.venv\\Scripts\\python.exe -m pytest D:\\Downloads\\DGVKDCLPM\\selenium-tests\\test_search.py D:\\Downloads\\DGVKDCLPM\\selenium-tests\\test_notebook.py -q -ra --junitxml=D:\\Downloads\\DGVKDCLPM\\ai-test-tool\\data\\runs\\19e9e179-29de-494e-8580-e9c4591beffc\\report.xml -o junit_family=xunit2 -o cache_dir=D:\\Downloads\\DGVKDCLPM\\ai-test-tool\\data\\runs\\19e9e179-29de-494e-8580-e9c4591beffc\\.pytest_cache",
+  "exitCode": 1,
+  "error": "Người dùng đã dừng lần chạy; kết quả có thể chưa đầy đủ.",
+  "finishedAt": "2026-10-19T12:25:34.037Z",
+  "analyzing": false
+}

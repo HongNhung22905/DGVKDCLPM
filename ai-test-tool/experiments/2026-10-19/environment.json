@@ -1,0 +1,18 @@
+{
+  "recordedAt": "2026-10-19T12:11:59.385Z",
+  "node": "v24.19.0",
+  "platform": "win32",
+  "gitHead": "197b22007f208b3fc9fd77ebfca3d22aecd18f0c",
+  "note": "ai-test-tool v? c?p nh?t b?o c?o ?ang ? working tree, ch?a commit; SHA256 d??i ??y nh?n di?n c?c t?p ?? ki?m tra.",
+  "sourceSha256": {
+    "ai-test-tool/src/runner.ts": "4bd1b2a308e47a0853e9fa3928fc1d5031191764a8184f66447b3414ab8bf068",
+    "ai-test-tool/src/junit.ts": "85c5161a7c3bf52faaf4918ac8dbf1f79d882116dca11ff92f1eb9ce9e5796ff",
+    "ai-test-tool/src/gemini.ts": "919792244c95b2ee38b87b7f940660948b5d13c01dfa1863f3a24e9877c2d80d",
+    "ai-test-tool/src/hsk-test-environment.ts": "4daf8d7179e6c380c0cb18ca83dc8074cc0b5d3d6b8cfe2de0819dd3c092676d",
+    "ai-test-tool/src/hsk-test-server.ts": "b6c47be2c5a7dc0573ff28d919a3441bb8e22860d20fc9b012a0f34a39ce77c1",
+    "hsk-app/frontend/tests/whitebox/core.test.ts": "fdfc28ef9f7a6e583c603cee5de1d7e550845d128054e46ae89c28337910fd62",
+    "hsk-app/frontend/tests/whitebox/gate.test.ts": "41c3acb97eceb8db45455c2ea7e4c792e1dfdfa2581c2854790a5914c0b1a802"
+  },
+  "databaseWritesAuthorized": false,
+  "seleniumCasesExecutedOnWebsite": 0
+}

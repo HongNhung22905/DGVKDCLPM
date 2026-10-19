@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-19T12:25:36Z",
+  "group": "selenium-notebook",
+  "runId": "19e9e179-29de-494e-8580-e9c4591beffc",
+  "expectedCollectedCases": 10,
+  "runStatus": "cancelled",
+  "summary": null,
+  "runnerWallSeconds": 56.076,
+  "reportedTestSeconds": null,
+  "automatedSelectClickSeconds": 0.18848509999952512,
+  "automatedOverallSeconds": 61.47156519999953,
+  "referenceParser": "Python ElementTree",
+  "apiMatchesOriginalXml": false,
+  "caseCountMatchesExpected": false,
+  "websiteEnvUnchanged": true,
+  "error": "Người dùng đã dừng lần chạy; kết quả có thể chưa đầy đủ.",
+  "artifactDirectory": "ai-test-tool/experiments/2026-10-19/selenium-notebook-122432"
+}

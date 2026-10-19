@@ -1,0 +1,17 @@
+{
+  "name": "hsk-ai-test-tool",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Công cụ local chạy Selenium/Vitest, đọc JUnit XML và giải thích lỗi với Gemini.",
+  "engines": { "node": ">=22.18.0" },
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env src/server.ts",
+    "start": "node --env-file-if-exists=.env src/server.ts",
+    "hsk:test": "node src/hsk-test-server.ts",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/*.test.ts"
+  },
+  "dependencies": { "fast-xml-parser": "^5.0.0" },
+  "devDependencies": { "@types/node": "^24.0.0", "typescript": "^5.9.0" }
+}

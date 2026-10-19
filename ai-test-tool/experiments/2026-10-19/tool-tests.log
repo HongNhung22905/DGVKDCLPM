@@ -1,0 +1,33 @@
+﻿
+> hsk-ai-test-tool@1.0.0 test
+> node --test tests/*.test.ts
+
+✔ thiếu key trả hướng dẫn và không gọi mạng (1.9295ms)
+✔ chỉ gửi ngữ cảnh lỗi và lưu phản hồi phân tích, không sửa trạng thái (53.4381ms)
+✔ lỗi hạn mức được giải thích mà không trả nội dung API có thể chứa key (5.254ms)
+✔ ẩn bí mật thông dụng và giới hạn phần cuối nhật ký gửi tới Gemini (2.1953ms)
+✔ môi trường HSK kiểm thử cần đủ cấu hình, không tự dùng database hiện tại (2.7048ms)
+✔ từ chối cùng endpoint hiện tại dù khác role, database, hoặc dùng pooler (0.5151ms)
+✔ chấp nhận endpoint Neon khác, kiểm tra host và SSL, không sửa môi trường tiến trình (1.2346ms)
+✔ đọc JUnit của Vitest: tên, thời gian và ký tự XML (10.4401ms)
+✔ đọc pytest: failure, error thu thập, skipped và CDATA (3.3463ms)
+✔ hỗ trợ root testsuite và suite lồng nhau, không đếm trùng (0.9863ms)
+✔ không báo PASS khi thiếu testcase, XML rỗng test, hoặc exit code khác 0 (1.2428ms)
+✔ không làm mất trạng thái FAIL khi có test thất bại (0.6221ms)
+✔ không bỏ qua lỗi tổng hợp của suite con trong pytest XML (0.8774ms)
+✔ từ chối XML hỏng, báo cáo sai định dạng và khai báo entity (1.1505ms)
+✔ chạy tiến trình thật, đọc XML và giữ lịch sử sau khi mở store mới (138.1536ms)
+✔ thoát 0 nhưng không có XML vẫn là lỗi thực thi (114.7026ms)
+✔ giới hạn một lần chạy và dừng được tiến trình đang chạy (255.5999ms)
+✔ hết thời gian dừng tiến trình và không ghi PASS (10290.77ms)
+✔ khôi phục lần chạy bị gián đoạn khi khởi động lại (7.5024ms)
+✔ không thực thi nhóm tùy ý hoặc thời gian không hợp lệ (1.3878ms)
+✔ API local: nhập XML, xem chi tiết, tải lại XML, lịch sử và lỗi đầu vào (172.674ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11161.8928

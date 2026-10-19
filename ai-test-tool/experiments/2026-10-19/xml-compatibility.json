@@ -1,0 +1,920 @@
+{
+  "files": 70,
+  "totalTestcaseRecords": 115,
+  "allMatch": true,
+  "referenceParser": "Python ElementTree",
+  "namePresentationMapping": "XML không có thuộc tính name được hiển thị bằng nhãn Không có tên; không thêm testcase.",
+  "results": [
+    {
+      "file": "selenium-tests/DATA-UI-01-results.xml",
+      "sha256": "27ed49a1e7afa1b31a6af28ec496203a0ca9ad75bf058f0d159fb4a55d61d065",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/FC-01-results.xml",
+      "sha256": "37acd25d5bfe264f9d3fc45644ca10ecfa15b0edb502083b16671b54a3d0543f",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/FC-02-results.xml",
+      "sha256": "ae0310a6b9537474af3e22de9cfac60ce69bd3d12f234614f1e38a51b1c9e7f3",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/FC-03-results.xml",
+      "sha256": "0690198ca6e404f4e94f5715f1a20d9141f86328f4c4bb8d35d7e0ada02b5b78",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/FC-04-results.xml",
+      "sha256": "44afc62b45adb72b128f83866cff7fb3895caac95b2f0b98f16de4dd9700d865",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/FC-05-results.xml",
+      "sha256": "77e1bd51c8b9ba3d70a655e98fe0e4f60201b1a0d15115d8151e8a48afb1a2a1",
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/FC-05-retry-results.xml",
+      "sha256": "5eba1660d4f772d0a76f2ac1d3b3a1ad32d8da52a6b534901ba868a9b68b79a4",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/FC-06-results.xml",
+      "sha256": "5524cecb212b5d5531b515f481d1f4d3ad7102bff0727f258fa3b9e466dd79d8",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/FC-07-results.xml",
+      "sha256": "28dde4370e90aa93a2752ae3565b431fe9b9ec9390659ae19530cc90b2a458eb",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/GAME-01-results.xml",
+      "sha256": "6fbfd1a24ec44345070b917c26700efef5ee3181ed6e4c910acb31232920d7a2",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/GAME-02-results.xml",
+      "sha256": "3cecb2127d1b769bd3ae0daa243ca0f4f04b18a3ea923ecf58dce7c742817282",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/GAME-03-results.xml",
+      "sha256": "ccb4dec693f4b7d0582adf04e8c5399df2eb1aec5d401299f9e554900a29e482",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/GAME-04-results.xml",
+      "sha256": "ded1f1e7d919ccea910f666c47501aec6a830ee89daaaec7b61006ed04498c35",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/GAME-05-results.xml",
+      "sha256": "06174a3f974da512d26b678a2c7013557bec4d02793dd104852f535935eccc58",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/GAME-06-results.xml",
+      "sha256": "93ac652951ceda26900378ec559bccc20c8597d398104bd9cd1d54958c43bd70",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/GAME-07-results.xml",
+      "sha256": "a35b4ed977df1802150ec594f5776424f95093ea3e4ff4191445f5dc8ab30d45",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/GAME-08-results.xml",
+      "sha256": "bfdbbc20f66f2c95d8a5db2e439e8333ff5fbc5d9dbb2e96310bc7c9cccfe07c",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/LOGIN-01-results.xml",
+      "sha256": "f1b6fb6eeee1448158e4d8975e0229be3f922c2a5fcf89956f964e51d11a30ea",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/LOGIN-invalid-results.xml",
+      "sha256": "1462080a886269abbedb8e4e9a87a9328a45924398e521398892e86aee0e8d68",
+      "summary": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/LOGIN-session-results.xml",
+      "sha256": "dfe1b76bb333158afcb8a55486644a864b73d3fce6edc2a9374e3d5f20d2c60b",
+      "summary": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/LOGIN-validation-results.xml",
+      "sha256": "97b905ccb79553d3c327b55b8d8378540a3e378229b31ed48b3d2db702ae056b",
+      "summary": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/LOGOUT-01-results.xml",
+      "sha256": "2521a73a29c7e543860120af4e71a5cfc625b5d4c0f51a46bb7a8c48abac184d",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/NOTE-results.xml",
+      "sha256": "e37ff96116d61843716a9f67ad277c37daa0e9d7654c1e0843e7116ea2448567",
+      "summary": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/PROGRESS-01-results.xml",
+      "sha256": "dcbc1c51b0a15545198f74e6a4e0aaf83c519ba2379b3e3896d2e3e88ba0b9ca",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/PROGRESS-02-results.xml",
+      "sha256": "c4e59db4eb5deb747bb06a75a8a817c77feaefcaafef62ca3ede37518234e09c",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/PROGRESS-03-results.xml",
+      "sha256": "0564a1e586753cf62601f8837bbff543eba19da697034c3a4e7ca508e1f052ea",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REG-05-results.xml",
+      "sha256": "4f1e4fc13a5a9a048ded24e51c5dc64f4626de8688753f0124675d1624104da5",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REG-06-results.xml",
+      "sha256": "f7e12563889655d0a626decfcced0471fe8f55727f22f994a69124616c532db9",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REG-07-results.xml",
+      "sha256": "73c844517d3ed827cd9752391f4e77ca40978b72244e80cd053400a9cb53543e",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REG-09-results.xml",
+      "sha256": "98acb859af1ea50d68c6b71f505e2e95b6ad5de1ed5bd5fd4272f66c98736ed5",
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REG-validation-results.xml",
+      "sha256": "595623523f2c8fd1654159f1c49655d03b49aa84155927c1dfab278f75cef5b2",
+      "summary": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/register-results.xml",
+      "sha256": "26b6c0e0720872d2afb1b6742a3c4b51e6fe31abb66a8dc4030f48800f02d863",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REVIEW-01-results.xml",
+      "sha256": "69e2afcef24154f8f093ec7c9c783943857c5c7c5444c06a7aa5272f00fcae66",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REVIEW-02-results.xml",
+      "sha256": "6ed5254af43cae40b1272f5c76877f9e81863607346ae9db0d4a6e88fdc52bac",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REVIEW-03-results.xml",
+      "sha256": "969ea734488114da7b9076faeed2d89487569577196bababa4046a4c1004089a",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REVIEW-04-results.xml",
+      "sha256": "80509ceac05837a9aa50f0df2665f39ccd1d87ac9db81195d1f06de049254f63",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REVIEW-05-results.xml",
+      "sha256": "e00b077f5d479999ccbba626780558ef2a090617e5313c02dc629f4ade534d75",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REVIEW-06-results.xml",
+      "sha256": "2e5c1c34a3c483c0bb41820ea222635d9ea12a08544a1576feff82c9cc4732e8",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REVIEW-07-results.xml",
+      "sha256": "3b3702ad3314386607f765d6bc33dd4c8dcadc55f45aa1ec22d899e76f87e53d",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/REVIEW-08-results.xml",
+      "sha256": "ec6c2733a0595fb2fde24e8c3e642e9307522c4d26ee351c23c0d9b87ac7b059",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/SEARCH-results.xml",
+      "sha256": "239be9faeb214e9b9517482a3f9c00245a5ea34d10fa3fe20e7aea6ffbfdc001",
+      "summary": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/STATS-01-results.xml",
+      "sha256": "40a4cd59738a4e1c131efdf866bb1636cdc96384cb83701262befe9c0d8985cc",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/STATS-02-results.xml",
+      "sha256": "dc114601a81ec949c38b973313b7ded75de7d711cec2e11888cda347eab30413",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/STATS-03-results.xml",
+      "sha256": "2c6d37396ea30c98f387dbc1f1a70ffa8e3631af31db6f24fe336daf22a2e93e",
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/STATS-04-results.xml",
+      "sha256": "6ead49b52e1b4dd9f7b52f11985f5925f173133047742295006e5fdf821d3bd2",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/UNLOCK-01-results.xml",
+      "sha256": "ca9a927ef190f8a69b8a15a0b22d6344d4daaa17607d906aadd3804be05208b8",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/UNLOCK-02-results.xml",
+      "sha256": "3e028a5f70c56da72c7250c76510a18f031f1aa60b55ae184bed68f07e8591d9",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/UNLOCK-03-results.xml",
+      "sha256": "c173a95c3d9c70cdf12acfa5c5799d7e5532b1c1e998be1141a4c9243d1d8250",
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/UNLOCK-03-retry-results.xml",
+      "sha256": "c4cb064938a006d40c4a243cd01441027c882c3800ca80058338dab311aeb3fd",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/UNLOCK-04-results.xml",
+      "sha256": "eb22f5f82c0633f2bc46052fb76519ed4197a760e55ab90efe496dab72b34977",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/UNLOCK-05-results.xml",
+      "sha256": "35133b14cbbc634a58886881143da1b886e70ee44c11b06808195b30b7045f3f",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/UNLOCK-06-results.xml",
+      "sha256": "3b34fb9cda68061d9c4432ada070f23e63070bf79a1ddba4281841bbfed87753",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/UNLOCK-07-results.xml",
+      "sha256": "8b709112a48cb650a6de03216fe6407366b32f79aed15abe67e5dbe717256f52",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/UNLOCK-08-results.xml",
+      "sha256": "1e5d9459f23fee8dd89e73e636cdc7db1c87c643cd7299965a84318fffb1ccd2",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/UNLOCK-09-results.xml",
+      "sha256": "35a75bb23eaf9f3179dd4f73b0f848935bc30ffcb553d916ddc21c7db4d73928",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/VOC-02-results.xml",
+      "sha256": "7ceab3dac00b8daa268c8a40dfa03fbf833766fb0f870dd750ee3428bb98ae50",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/VOC-03-results.xml",
+      "sha256": "5428cc1de10be620967518fc3924bdd8b99244853515de3b913f1bbc2db653e9",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/VOC-04-results.xml",
+      "sha256": "5d250ce760488a7ca95d1fa6b449e20b1fdd17e674ab80d24ab039f91d32ae11",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/VOC-HSK1-retry.xml",
+      "sha256": "46f1f40db2b3cffe757c1aab73e0c25548804d8fa6763fbde9fad0109cb87804",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/VOC-level-results.xml",
+      "sha256": "5698b6ef253a6d62f4523ed16cc3688d41c98d31dae6248fd7e484321671c75f",
+      "summary": {
+        "total": 5,
+        "passed": 1,
+        "failed": 4,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 1,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/VOC-remaining-results.xml",
+      "sha256": "700d19611b20faa8f0209ae6ea34c34912e96c954bbc7a1e884bf5d539e30b25",
+      "summary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/WRITE-01-results.xml",
+      "sha256": "314f75c0b119e7fa65472b560d3ad4a7c3f8570770ee8b2c84a48e806cfea195",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/WRITE-02-results.xml",
+      "sha256": "17323f1cce2b3b7cbf004aaf0eb6243fd286ea6f93432e5a4829a4d6bd84c3d3",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/WRITE-03-results.xml",
+      "sha256": "97202503b3aba2f7531e13e162af79e5c54368270783bc81a5ed12f3e480db16",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/WRITE-04-results.xml",
+      "sha256": "f1016392986dcac640950b791bc0773b809f44c9ff783e6b52e6e3571508e793",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/WRITE-05-results.xml",
+      "sha256": "e8dbc217e5ddf92829f49369dca1a374873dfaf657e64f89b34dddac81be735a",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/WRITE-06-results.xml",
+      "sha256": "670c47175f5fa592652459b2c942b430d435b545209c84bb5cb06d0a01efda1a",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/WRITE-07-results.xml",
+      "sha256": "e0077421ce57f864515353b2248ecdc55c27753e0728e1882ce5b425d9784e03",
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "selenium-tests/WRITE-07-retry-results.xml",
+      "sha256": "63ae56b4c0d0dac0d4c369fd94945b268e5cfb8da92a4d272ab23ad703dc13a3",
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    },
+    {
+      "file": "hsk-app/frontend/whitebox-results.xml",
+      "sha256": "f4517bd757dbc0fe4ad90242e19b89b950fecd40154d259c9399b2d46818cd93",
+      "summary": {
+        "total": 22,
+        "passed": 22,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "missingNameCases": 0,
+      "allCasesAndCountsMatch": true
+    }
+  ],
+  "interpretation": "Đây là báo cáo lịch sử có thể trùng ca giữa các lần chạy, không phải 70 lần chạy mới hoặc 115 test độc lập."
+}

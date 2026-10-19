@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-19T12:50:53.714Z",
+  "source": "hsk-app/frontend/components/stats/StatsClient.tsx",
+  "function": "buildCalendarGrid",
+  "method": "Extract actual function with TypeScript AST, transpile and run in VM without changing source; provide one record for today.",
+  "today": "2026-10-19",
+  "results": [
+    {
+      "weeks": 17,
+      "totalCells": 119,
+      "firstDate": "2026-06-21",
+      "lastDate": "2026-10-17",
+      "containsToday": false,
+      "activeCells": 0
+    },
+    {
+      "weeks": 26,
+      "totalCells": 182,
+      "firstDate": "2026-04-19",
+      "lastDate": "2026-10-17",
+      "containsToday": false,
+      "activeCells": 0
+    },
+    {
+      "weeks": 52,
+      "totalCells": 364,
+      "firstDate": "2025-10-19",
+      "lastDate": "2026-10-17",
+      "containsToday": false,
+      "activeCells": 0
+    }
+  ]
+}

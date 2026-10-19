@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-19T12:00:40.070Z",
+  "model": "gemini-flash-latest",
+  "source": "selenium-tests/FC-05-results.xml",
+  "sourceSha256": "77e1bd51c8b9ba3d70a655e98fe0e4f60201b1a0d15115d8151e8a48afb1a2a1",
+  "runId": "33c87c5e-2069-4884-bf37-d79fe5b853b9",
+  "knownObservation": "Giá trị hiển thị 100% khác chuỗi kỳ vọng 100. Đây là nguyên nhân trực tiếp của assertion; chưa kết luận lỗi nghiệp vụ.",
+  "sourceIsHistorical": true,
+  "contextSent": {
+    "name": "Thực nghiệm Gemini — FC-05 (báo cáo lịch sử)",
+    "engine": "import",
+    "source": "import",
+    "status": "failed",
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "error": 0,
+      "skipped": 0
+    },
+    "warnings": [],
+    "failures": [
+      {
+        "name": "test_open_flashcard[FC-05]",
+        "suite": "pytest tests / pytest",
+        "status": "failed",
+        "message": "AssertionError: assert '100%' == '100'&#10;  &#10;  #x1B[0m#x1B[91m- 100#x1B[39;49;00m#x1B[90m#x1B[39;49;00m&#10;  #x1B[92m+ 100%#x1B[39;49;00m#x1B[90m#x1B[39;49;00m&#10;  ?    +#x1B[90m#x1B[39;49;00m",
+        "details": "test_flashcard.py:283: in test_open_flashcard\n    assert get_stat(\"Điểm\") == \"100\"\nE   AssertionError: assert '100%' == '100'\nE     \nE     #x1B[0m#x1B[91m- 100#x1B[39;49;00m#x1B[90m#x1B[39;49;00m\nE     #x1B[92m+ 100%#x1B[39;49;00m#x1B[90m#x1B[39;49;00m\nE     ?    +#x1B[90m#x1B[39;49;00m",
+        "output": ""
+      }
+    ],
+    "omittedFailures": 0,
+    "logTail": ""
+  },
+  "status": "success",
+  "analysis": {
+    "model": "gemini-flash-latest",
+    "createdAt": "2026-10-19T12:00:40.065Z",
+    "explanation": "**Tóm tắt**\nMột ca kiểm thử liên quan đến kiểm tra thông tin flashcard (mã FC-05) bị thất bại do không khớp giá trị chuỗi tại câu lệnh kiểm tra (assertion).\n\n**Bằng chứng**\n- Vị trí phát sinh lỗi: Tệp test_flashcard.py, dòng 283 trong hàm test_open_flashcard.\n- Loại lỗi: AssertionError.\n- Câu lệnh thực thi: assert get_stat(\"Điểm\") == \"100\".\n- Giá trị thực tế nhận được: chuỗi '100%'.\n- Giá trị kỳ vọng trong câu lệnh: chuỗi '100'.\n- Điểm khác biệt quan sát được: Chuỗi thực tế có thêm ký tự phần trăm ('%').\n\n**Nguyên nhân có thể (ghi rõ giả thuyết)**\n- Giả thuyết 1: Giao diện hoặc hệ thống hiển thị điểm số flashcard dưới dạng tỷ lệ phần trăm (100%), trong khi câu lệnh kiểm tra đang so sánh với chuỗi số nguyên thuần túy ('100').\n- Giả thuyết 2: Hàm hỗ trợ get_stat đọc trực tiếp toàn bộ văn bản hiển thị kèm ký hiệu đơn vị mà không qua bước chuẩn hóa hoặc tách lọc ký tự phần trăm trước khi trả về.\n- Giả thuyết 3: Đã có sự thay đổi trong đặc tả hiển thị của trường \"Điểm\" nhưng kịch bản kiểm thử chưa đồng bộ, hoặc ngược lại phía phát triển tính năng áp dụng sai định dạng hiển thị so với đặc tả ban đầu.\n\n**Các bước kiểm tra theo thứ tự**\n1. Kiểm tra tài liệu đặc tả yêu cầu hoặc thiết kế giao diện của mục flashcard (liên quan đến trường \"Điểm\" trong kịch bản FC-05) để xác nhận quy định về định dạng hiển thị chuẩn (dạng số hay dạng kèm ký hiệu phần trăm).\n2. Kiểm tra mã nguồn hàm get_stat để hiểu cách thức hàm này trích xuất dữ liệu từ giao diện hoặc phản hồi hệ thống.\n3. Kiểm tra lịch sử thay đổi mã nguồn gần đây của cả phía ứng dụng và tệp test_flashcard.py để xem có sự cập nhật nào liên quan đến định dạng điểm số hay không.\n4. Tái hiện lại ca kiểm thử FC-05 trên môi trường kiểm thử và quan sát trực tiếp giá trị hiển thị trên màn hình.\n\n**Thông tin còn thiếu**\n- Tài liệu đặc tả yêu cầu nghiệp vụ về định dạng và đơn vị đo của trường \"Điểm\".\n- Mã nguồn cài đặt của hàm get_stat.\n- Ảnh chụp màn hình hoặc cấu trúc HTML/DOM tại thời điểm kiểm thử được thực thi."
+  },
+  "service": {
+    "httpStatus": 200,
+    "status": "OK",
+    "message": "",
+    "finishReason": "STOP"
+  },
+  "elapsedSeconds": 43.4050733
+}

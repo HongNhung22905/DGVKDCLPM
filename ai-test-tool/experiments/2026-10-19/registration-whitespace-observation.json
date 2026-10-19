@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-10-19T12:42:43.161Z",
+  "branch": "hsk-test-2026-10-19",
+  "readOnly": true,
+  "websiteDatabaseAccessed": false,
+  "emptyNameCount": 1,
+  "sourceObservation": "Registration checks truthiness of name before trim, then persists normalizedName; no empty-string check after trim.",
+  "businessExpectationSource": "Existing test_register_whitespace_name expects rejection."
+}

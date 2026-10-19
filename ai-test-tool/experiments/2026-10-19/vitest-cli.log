@@ -1,0 +1,12 @@
+
+ RUN  v2.1.9 D:/Downloads/DGVKDCLPM/hsk-app/frontend
+
+ ✓ tests/whitebox/gate.test.ts (5 tests) 11ms
+ ✓ tests/whitebox/core.test.ts (17 tests) 15ms
+
+ Test Files  2 passed (2)
+      Tests  22 passed (22)
+   Start at  19:03:57
+   Duration  580ms (transform 102ms, setup 0ms, collect 142ms, tests 26ms, environment 0ms, prepare 271ms)
+
+JUNIT report written to D:/Downloads/DGVKDCLPM/ai-test-tool/experiments/2026-10-19/vitest-cli.xml

@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-10-19T12:07:25.346Z",
+  "model": "gemini-flash-latest",
+  "results": [
+    {
+      "id": "AI-01",
+      "status": "answered",
+      "analysis": {
+        "model": "gemini-flash-latest",
+        "createdAt": "2026-10-19T12:05:09.983Z",
+        "explanation": "Tóm tắt\nKiểm thử test_open_flashcard tại tệp test_flashcard.py (dòng 283) bị dừng lại do lỗi AssertionError. Quá trình so sánh thất bại vì giá trị thực tế nhận được là '100%', trong khi giá trị được đối chiếu trong câu lệnh là '100'.\n\nBằng chứng\n- Tệp thực thi và dòng mã lỗi: test_flashcard.py, dòng 283, hàm test_open_flashcard.\n- Câu lệnh kiểm tra: assert get_stat(\"Điểm\") == \"100\"\n- Giá trị thực tế nhận về từ hàm get_stat(\"Điểm\"): chuỗi '100%'\n- Giá trị so sánh trong mã kiểm thử: chuỗi '100'\n- Sai khác quan sát được: Chuỗi thực tế có thêm ký tự phần trăm (%) ở cuối so với chuỗi so sánh.\n\nNguyên nhân có thể (ghi rõ giả thuyết)\n- Giả thuyết 1: Thành phần hiển thị trên giao diện flashcard HSK hoặc kết quả của hàm get_stat(\"Điểm\") được định dạng kèm theo ký hiệu phần trăm (100%), trong khi kịch bản kiểm thử giả định kết quả trả về là chuỗi số thuần túy (100).\n- Giả thuyết 2: Đặc tả nghiệp vụ của tính năng flashcard quy định hiển thị điểm số kèm đơn vị phần trăm, nhưng câu lệnh kiểm thử chưa được đồng bộ theo đặc tả này.\n- Giả thuyết 3: Đặc tả nghiệp vụ yêu cầu hiển thị điểm số là số nguyên không kèm ký hiệu %, nhưng hệ thống hiển thị flashcard đang xử lý sai định dạng dữ liệu đầu ra.\n\nCác bước kiểm tra theo thứ tự\n1. Tra cứu tài liệu đặc tả nghiệp vụ hoặc tài liệu thiết kế giao diện (UI) của mục Flashcard HSK để xác định quy cách hiển thị chuẩn của chỉ số \"Điểm\" (là dạng số điểm tuyệt đối '100' hay tỷ lệ phần trăm '100%').\n2. Kiểm tra phần triển khai logic của hàm get_stat(\"Điểm\") để hiểu rõ cách thức hàm này trích xuất văn bản từ giao diện hoặc mô hình dữ liệu.\n3. Kiểm tra mã nguồn hiển thị của trang web tại màn hình flashcard tương ứng để xem giá trị được render ra DOM có bao gồm ký tự '%' hay không.\n4. Xem xét lại kịch bản kiểm thử tại test_flashcard.py để đối chiếu mục đích kiểm tra với tài liệu yêu cầu.\n\nThông tin còn thiếu\n- Đặc tả yêu cầu phần mềm về định dạng hiển thị của trường \"Điểm\" trong bài học flashcard HSK.\n- Mã nguồn chi tiết của hàm trợ năng get_stat.\n- Trạng thái hoặc dữ liệu đầu vào của bài học flashcard cụ thể được chạy trước khi bước kiểm tra này diễn ra."
+      },
+      "elapsedSeconds": 16.730140300000002
+    },
+    {
+      "id": "AI-02",
+      "status": "answered",
+      "analysis": {
+        "model": "gemini-flash-latest",
+        "createdAt": "2026-10-19T12:05:08.707Z",
+        "explanation": "**Tóm tắt**\nQuá trình chạy kiểm thử ghi nhận trạng thái lỗi (\"status\": \"error\") do phát sinh ngoại lệ ModuleNotFoundError ngay khi bắt đầu thực thi lệnh nạp thư viện/mô-đun trong môi trường Python.\n\n**Bằng chứng**\n- Trạng thái phiên chạy được ghi nhận là \"error\".\n- Dữ liệu lỗi thực thi (executionError) và phần đuôi nhật ký (logTail) đều chứa cùng một thông báo: \"ModuleNotFoundError: No module named 'hsk_missing_test_dependency_20261019'\".\n- Ngoại lệ xảy ra tại tệp \"<string>\", dòng 1 khi thực hiện lệnh: import hsk_missing_test_dependency_20261019.\n- Trường \"failures\" rỗng (không ghi nhận lỗi kiểm tra/assertion).\n\n**Nguyên nhân có thể (ghi rõ giả thuyết)**\n- Giả thuyết 1: Môi trường thực thi kiểm thử chưa được cài đặt gói hoặc mô-đun phụ thuộc có tên 'hsk_missing_test_dependency_20261019'.\n- Giả thuyết 2: Đường dẫn tìm kiếm thư viện của Python (PYTHONPATH) chưa được cấu hình chính xác để trỏ tới thư mục chứa mô-đun nói trên.\n- Giả thuyết 3: Tên mô-đun trong câu lệnh import bị sai chính tả hoặc đây là một ca kiểm thử được thiết lập nhằm mục đích cố tình tạo lỗi nạp thư viện.\n\n**Các bước kiểm tra theo thứ tự**\n1. Kiểm tra danh sách các gói đã cài đặt trong môi trường thực thi kiểm thử (ví dụ môi trường ảo hoặc container) để xem mô-đun 'hsk_missing_test_dependency_20261019' có tồn tại hay không.\n2. Kiểm tra các tệp cấu hình phụ thuộc của dự án (như requirements.txt, pyproject.toml, Pipfile) để xác nhận mô-đun này có được khai báo chính thức hay không.\n3. Kiểm tra biến môi trường PYTHONPATH và đường dẫn thư mục làm việc hiện tại của tiến trình chạy test.\n4. Rà soát mã nguồn hoặc kịch bản chạy test tương ứng với mục \"AI-02: kiểm thử lỗi\" để xác định mục đích thực tế của lệnh import này.\n\n**Thông tin còn thiếu**\n- Đặc tả và mục đích của ca kiểm thử \"AI-02: kiểm thử lỗi\".\n- Tệp định nghĩa các gói phụ thuộc của dự án.\n- Cấu hình chi tiết của môi trường thực thi (phiên bản Python, danh sách thư viện đã cài đặt, các biến môi trường liên quan)."
+      },
+      "elapsedSeconds": 15.4508491
+    },
+    {
+      "id": "AI-03",
+      "status": "answered",
+      "analysis": {
+        "model": "gemini-flash-latest",
+        "createdAt": "2026-10-19T12:05:23.049Z",
+        "explanation": "**Tóm tắt**\nLần chạy kiểm thử gặp lỗi hệ thống (trạng thái \"error\") do không tìm thấy tệp thực thi để khởi chạy tiến trình, dẫn đến việc kiểm thử không thể diễn ra bình thường.\n\n**Bằng chứng**\n- Trạng thái kiểm thử được ghi nhận là \"error\".\n- Danh sách lỗi kiểm thử nghiệp vụ (failures) rỗng và omittedFailures bằng 0.\n- Lỗi thực thi (executionError) và phần cuối nhật ký (logTail) hiển thị thông báo lỗi hệ thống: ENOENT: spawn D:\\Downloads\\DGVKDCLPM\\ai-test-tool\\experiments\\2026-10-19\\nonexistent-python.exe ENOENT.\n\n**Nguyên nhân có thể (ghi rõ giả thuyết)**\n- Giả thuyết 1: Cấu hình đường dẫn tệp thực thi bị sai lệch, trỏ vào một tệp không tồn tại trên hệ thống (nonexistent-python.exe).\n- Giả thuyết 2: Môi trường chạy kiểm thử thiếu tệp thực thi hoặc tệp đã bị xóa, di chuyển sang thư mục khác trước khi quá trình spawn được thực hiện.\n- Giả thuyết 3: Tên ca kiểm thử là \"AI-03: kiểm thử lỗi\" và tên tệp là \"nonexistent-python.exe\", có thể đây là kịch bản giả lập cố tình đưa vào một đường dẫn không hợp lệ để kiểm tra phản ứng của hệ thống chạy test.\n\n**Các bước kiểm tra theo thứ tự**\n1. Kiểm tra sự tồn tại của tệp và thư mục tại đường dẫn D:\\Downloads\\DGVKDCLPM\\ai-test-tool\\experiments\\2026-10-19\\nonexistent-python.exe trên môi trường thực thi.\n2. Kiểm tra lại tệp cấu hình của công cụ chạy kiểm thử (engine: import) để xác định nơi thiết lập đường dẫn thực thi của Python.\n3. Đối chiếu đặc tả kịch bản để xác nhận xem kiểm thử này nhằm mục đích chạy kiểm thử website HSK thông thường hay để kiểm tra hành vi lỗi của hệ thống khi sai môi trường.\n4. Điều chỉnh đường dẫn cấu hình trỏ đúng về tệp thực thi Python hợp lệ trên máy (nếu mục tiêu là chạy kiểm thử nghiệp vụ).\n\n**Thông tin còn thiếu**\n- Đặc tả và mục tiêu thiết kế của ca kiểm thử \"AI-03: kiểm thử lỗi\".\n- Tệp cấu hình hoặc lệnh khởi chạy công cụ kiểm thử.\n- Vị trí thực tế của môi trường Python hợp lệ trên hệ thống thực thi."
+      },
+      "elapsedSeconds": 14.335434000000001
+    },
+    {
+      "id": "AI-04",
+      "status": "answered",
+      "analysis": {
+        "model": "gemini-flash-latest",
+        "createdAt": "2026-10-19T12:05:34.147Z",
+        "explanation": "Tóm tắt\nLần chạy kiểm thử mang tên \"AI-04: kiểm thử lỗi\" thất bại do phát sinh một ngoại lệ AssertionError trong môi trường Node.js. Phép so sánh nghiêm ngặt (strictEqual) không thỏa mãn khi giá trị thực tế nhận được là 79, trong khi giá trị mong đợi là 80.\n\nBằng chứng\n- Trạng thái lần chạy: failed.\n- Loại lỗi: AssertionError [ERR_ASSERTION].\n- Toán tử so sánh: strictEqual (phép so sánh nghiêm ngặt 79 !== 80).\n- Giá trị thực tế (actual): 79.\n- Giá trị kỳ vọng (expected): 80.\n- Nguồn phát sinh: Lệnh được thực thi qua cơ chế eval của Node.js (tại dòng [eval]:1:31, môi trường Node.js v24.19.0).\n\nNguyên nhân có thể (ghi rõ giả thuyết)\n- Giả thuyết 1: Có thể có sự chênh lệch một đơn vị (off-by-one) trong logic tính toán, đếm câu hỏi, tính điểm đề thi HSK hoặc xử lý danh sách từ vựng.\n- Giả thuyết 2: Bộ dữ liệu kiểm thử (test data/fixtures) trong cơ sở dữ liệu có thể bị thiếu 1 bản ghi so với điều kiện ban đầu của bài kiểm thử.\n- Giả thuyết 3: Điều kiện lọc hoặc logic phân trang trong truy vấn dữ liệu học tập HSK có thể đã bỏ sót 1 phần tử.\n(Lưu ý: Do chưa có tài liệu đặc tả chi tiết, đây chỉ là các giả thuyết suy đoán từ sự chênh lệch giá trị và không kết luận lỗi nghiệp vụ cụ thể nào).\n\nCác bước kiểm tra theo thứ tự\n1. Xác định nội dung đoạn mã thực tế được thực thi trong ngữ cảnh eval để làm rõ giá trị 79 và 80 đại diện cho đối tượng nghiệp vụ nào (ví dụ: số câu hỏi, tổng điểm hay số lượng từ vựng HSK).\n2. Kiểm tra bộ dữ liệu đầu vào hoặc trạng thái cơ sở dữ liệu trước khi kiểm thử chạy để xem có đủ số lượng bản ghi kỳ vọng hay không.\n3. Rà soát logic mã nguồn tại nơi tính toán hoặc truy vấn giá trị đầu ra (kiểm tra các toán tử so sánh, điều kiện biên của vòng lặp hoặc điều kiện gom nhóm/lọc).\n4. Đối chiếu quy trình thực hiện với tài liệu đặc tả nghiệp vụ của chức năng để xác định quy tắc tính toán chuẩn.\n\nThông tin còn thiếu\n- Đoạn mã nguồn hoặc câu lệnh cụ thể được truyền vào để chạy tại [eval]:1:31.\n- Ý nghĩa nghiệp vụ của số 79 và 80 trong hệ thống học tiếng Trung HSK.\n- Tài liệu đặc tả yêu cầu nghiệp vụ tương ứng với kịch bản kiểm thử \"AI-04: kiểm thử lỗi\".\n- Trạng thái dữ liệu thử nghiệm ban đầu (setup/seed data) của hệ thống trước khi chạy kiểm thử."
+      },
+      "elapsedSeconds": 24.1288701
+    },
+    {
+      "id": "AI-05",
+      "status": "answered",
+      "analysis": {
+        "model": "gemini-flash-latest",
+        "createdAt": "2026-10-19T12:05:42.775Z",
+        "explanation": "**Tóm tắt**\nPhiên chạy kiểm thử có tên \"AI-05: kiểm thử lỗi\" đã bị hệ thống giám sát hủy bỏ do vượt quá thời gian thực thi tối đa (timeout). Bộ thực thi ghi nhận tiến trình kiểm thử Node.js vẫn tiếp tục hoạt động vì một tác vụ định thời lặp lại chưa được kết thúc, dẫn đến việc không có báo cáo JUnit XML hoàn chỉnh.\n\n**Bằng chứng**\n- Trạng thái chạy kiểm thử: \"timeout\".\n- Giới hạn thời gian quy định: 10 giây; thời gian thực tế đã trôi qua trước khi bị chấm dứt: 10.588 giây.\n- Danh sách lỗi kiểm thử thông thường (failures) rỗng và omittedFailures bằng 0.\n- Nhật ký thực thi ghi nhận thông báo: tiến trình Node bị kiểm soát giữ setInterval tiếp tục chạy, bộ chạy (runner) đã buộc dừng toàn bộ cây tiến trình, không có tệp kết quả JUnit XML hoàn chỉnh.\n\n**Nguyên nhân có thể (ghi rõ giả thuyết)**\n- Giả thuyết 1: Mã nguồn kiểm thử hoặc mã nguồn của website/chức năng được gọi trong ca kiểm thử này có khởi tạo hàm định thời lặp lại (setInterval) nhưng thiếu lệnh hủy bỏ (clearInterval) tương ứng sau khi tác vụ hoàn thành, khiến event loop của Node.js không thể thoát tự nhiên.\n- Giả thuyết 2: Tiến trình đang thực hiện kiểm thử một tác vụ ngầm (như đếm giờ làm bài thi HSK, polling trạng thái tiến độ học tập, hoặc tải trước câu hỏi) kéo dài hơn 10 giây hoặc bị kẹt trong vòng lặp vô hạn trước khi kịp tạo báo cáo.\n- Giả thuyết 3: Giới hạn thời gian tối đa (10 giây) quá ngắn so với một kịch bản kiểm thử tích hợp hoàn chỉnh hoặc môi trường kiểm thử bị suy giảm hiệu năng vào thời điểm chạy.\n\n**Các bước kiểm tra theo thứ tự**\n1. Kiểm tra mã nguồn của kịch bản kiểm thử \"AI-05: kiểm thử lỗi\" để xác định vị trí gọi setInterval hoặc các cơ chế định thời tương tự.\n2. Kiểm tra xem các hàm dọn dẹp tài nguyên (teardown/cleanup) hoặc hủy định thời (clearInterval) đã được gọi sau khi hoàn thành kiểm thử hoặc khi có ngoại lệ xảy ra hay chưa.\n3. Rà soát các tiến trình bất đồng bộ hoặc kết nối mạng/API liên quan đến tính năng HSK đang được kiểm thử để đảm bảo các tiến trình này có điểm dừng rõ ràng.\n4. Chạy riêng kịch bản kiểm thử này trong môi trường phát triển cục bộ và quan sát vòng đời tiến trình Node.js xem có dừng bình thường sau khi kịch bản chạy xong hay không.\n5. Xem xét lại cấu hình thời gian chạy tối đa (timeout limit) của bộ thực thi nếu kịch bản này theo thiết kế cần thời gian hoàn tất lâu hơn 10 giây.\n\n**Thông tin còn thiếu**\n- Nội dung mã nguồn chi tiết của ca kiểm thử và các thành phần phụ thuộc được gọi.\n- Mục tiêu và đặc tả nghiệp vụ của ca kiểm thử \"AI-05: kiểm thử lỗi\" (tính năng HSK nào đang được thử nghiệm).\n- Thông tin cấu hình môi trường chạy kiểm thử, bao gồm phiên bản Node.js và khung kiểm thử (test framework) đang sử dụng.\n- Toàn bộ luồng xuất chuẩn (stdout/stderr) của tiến trình Node trước thời điểm bị bộ chạy cưỡng chế đóng."
+      },
+      "elapsedSeconds": 19.7243473
+    },
+    {
+      "id": "AI-06",
+      "status": "answered",
+      "analysis": {
+        "model": "gemini-flash-latest",
+        "createdAt": "2026-10-19T12:05:52.129Z",
+        "explanation": "**Tóm tắt**\nLần chạy kiểm thử có tên \"AI-06: kiểm thử lỗi\" không hoàn thành và bị đánh dấu trạng thái \"timeout\". Quá trình thực thi bị hủy do yêu cầu HTTP GET gửi tới đường dẫn /slow vượt quá giới hạn thời gian chờ của client được thiết lập là 30 mili-giây (30ms).\n\n**Bằng chứng**\n- Trạng thái thực thi: timeout.\n- Thông báo lỗi thực thi (executionError): GET /slow. Client timeout=30ms. TimeoutError: The operation was aborted due to timeout.\n- Nhật ký ghi nhận (logTail): Thao tác bị hủy bỏ do hết thời gian chờ với thiết lập Client timeout=30ms khi gọi GET /slow.\n- Danh sách lỗi kiểm tra (failures): Rỗng ([]), cho thấy lỗi xảy ra ở mức thực thi hệ thống/kết nối mạng trước khi có xác nhận (assertion) nào thất bại.\n\n**Nguyên nhân có thể (ghi rõ giả thuyết)**\n- Giả thuyết 1: Cấu hình thời gian chờ (client timeout) ở mức 30ms là quá ngắn, không đủ cho một chu kỳ yêu cầu - phản hồi mạng thông thường, dẫn đến lỗi timeout ngay cả khi máy chủ hoạt động bình thường.\n- Giả thuyết 2: Endpoint /slow được thiết kế có độ trễ lớn (có thể để mô phỏng tải hoặc xử lý nặng) và mất nhiều hơn 30ms để phản hồi.\n- Giả thuyết 3: Tắc nghẽn mạng cục bộ hoặc máy chủ bị chậm tạm thời tại thời điểm thực hiện yêu cầu kiểm thử.\n\n**Các bước kiểm tra theo thứ tự**\n1. Kiểm tra kịch bản kiểm thử để xác định mức thời gian chờ 30ms là chủ đích thiết lập để kiểm tra hành vi quá hạn (timeout handling) hay là cấu hình chưa hợp lý.\n2. Kiểm tra log của máy chủ tại thời điểm xảy ra sự kiện để xác định máy chủ có nhận được yêu cầu GET /slow hay không và thời gian xử lý nội bộ của endpoint này là bao lâu.\n3. Đo đạc thời gian phản hồi thực tế của endpoint /slow bằng các công cụ kiểm tra độc lập (như curl hoặc Postman) trong cùng môi trường mạng để biết độ trễ trung bình.\n4. Đối chiếu lại tài liệu yêu cầu hoặc đặc tả kỹ thuật của hệ thống để biết tiêu chuẩn thời gian phản hồi kỳ vọng của dịch vụ.\n\n**Thông tin còn thiếu**\n- Đặc tả yêu cầu của ca kiểm thử: Không rõ ca kiểm thử này kỳ vọng yêu cầu phải phản hồi trong 30ms hay đang cố tình kiểm thử việc bắt lỗi TimeoutError.\n- Thông tin về môi trường chạy kiểm thử và địa chỉ máy chủ mục tiêu (môi trường local, staging hay production).\n- Nhật ký chi tiết từ phía máy chủ tiếp nhận yêu cầu /slow."
+      },
+      "elapsedSeconds": 17.974238900000003
+    },
+    {
+      "id": "AI-07",
+      "status": "answered",
+      "analysis": {
+        "model": "gemini-flash-latest",
+        "createdAt": "2026-10-19T12:06:00.983Z",
+        "explanation": "Tóm tắt\nLần chạy kiểm thử kết thúc với trạng thái lỗi thực thi (status: error) khi gửi yêu cầu GET tới đường dẫn /unauthorized. Hệ thống nhận lại phản hồi mã HTTP 401 kèm thông báo thiếu mã xác thực Bearer [ĐÃ ẨN]\n\nBằng chứng\n- Trạng thái kiểm thử được ghi nhận: error.\n- Trường executionError và logTail ghi nhận cùng nội dung: yêu cầu GET /unauthorized nhận mã phản hồi HTTP 401.\n- Dữ liệu phản hồi dạng JSON chứa thông báo: {\"error\":\"Missing Bearer [ĐÃ ẨN]\"}.\n- Danh sách failures rỗng (failures: []) và omittedFailures bằng 0, cho thấy kiểm thử bị dừng bởi lỗi thực thi thay vì một khẳng định (assertion) bị đánh trượt.\n\nNguyên nhân có thể (ghi rõ giả thuyết)\n- Giả thuyết 1: Kịch bản kiểm thử cố tình gửi yêu cầu không có quyền xác thực để kiểm tra phản hồi lỗi 401, nhưng công cụ kiểm thử (engine: import) mặc định coi mã phản hồi HTTP 4xx là ngoại lệ/lỗi thực thi thay vì cho phép kiểm tra khẳng định.\n- Giả thuyết 2: Yêu cầu này cần thông tin xác thực (Bearer [ĐÃ ẨN]) hợp lệ để thực thi nhưng cấu hình kiểm thử hoặc môi trường chưa cung cấp token.\n- Giả thuyết 3: Đường dẫn hoặc kịch bản kiểm thử bị cấu hình sai điểm cuối (endpoint), dẫn đến việc gửi nhầm yêu cầu vào khu vực yêu cầu quyền hạn.\n\nCác bước kiểm tra theo thứ tự\n1. Kiểm tra tài liệu đặc tả của ca kiểm thử \"AI-07: kiểm thử lỗi\" để xác định mục đích kiểm thử là kiểm tra phản hồi lỗi bảo mật (kịch bản âm tính) hay kiểm tra một nghiệp vụ cần đăng nhập.\n2. Kiểm tra cấu hình của công cụ chạy kiểm thử (engine import) để xem có thiết lập tự động ném lỗi khi gặp mã HTTP 401 hay không, và kịch bản có được thiết lập để tiếp nhận các mã phản hồi 4xx hay không.\n3. Kiểm tra cấu hình gửi yêu cầu trong kịch bản: xác nhận xem tiêu đề xác thực (Authorization header / Bearer [ĐÃ ẨN]) có được yêu cầu truyền vào trong lần chạy này hay không.\n4. Đối chiếu với đặc tả API của hệ thống để xác nhận xem endpoint /unauthorized có đúng chuẩn thiết kế và yêu cầu định dạng xác thực ra sao.\n\nThông tin còn thiếu\n- Đặc tả yêu cầu và kết quả kỳ vọng của ca kiểm thử \"AI-07: kiểm thử lỗi\".\n- Toàn bộ nội dung kịch bản kiểm thử và cách thức công cụ xử lý mã phản hồi HTTP.\n- Đặc tả kỹ thuật về phân quyền và xác thực của API /unauthorized trên hệ thống."
+      },
+      "elapsedSeconds": 18.203126200000007
+    },
+    {
+      "id": "AI-08",
+      "status": "answered",
+      "analysis": {
+        "model": "gemini-flash-latest",
+        "createdAt": "2026-10-19T12:07:25.345Z",
+        "explanation": "Tóm tắt:\nLần chạy kiểm thử mang tên \"AI-08: ki?m th? l?i\" kết thúc với trạng thái lỗi thực thi (status: \"error\"). Nguyên nhân phát sinh trong quá trình gửi yêu cầu HTTP GET đến đường dẫn /forbidden, nhận lại phản hồi HTTP 403 kèm thông báo vai trò người học (learner) không có quyền quản trị viên (admin).\n\nBằng chứng:\n- Trạng thái ca kiểm thử: error.\n- Dữ liệu lỗi thực thi (executionError) và nhật ký (logTail) ghi nhận cùng nội dung:\n  Yêu cầu: GET /forbidden\n  Phản hồi: HTTP 403\n  Nội dung JSON trả về: {\"error\":\"Authenticated role learner does not have admin permission\"}\n- Danh sách lỗi kiểm tra (failures): rỗng.\n\nNguyên nhân có thể (ghi rõ giả thuyết):\n- Giả thuyết 1: Kịch bản kiểm thử nhằm mục đích kiểm tra chức năng dành riêng cho quản trị viên, nhưng dữ liệu kiểm thử lại sử dụng thông tin đăng nhập/token của tài khoản học viên (learner).\n- Giả thuyết 2: Kịch bản kiểm thử cố tình kiểm tra hành vi chặn quyền của tài khoản learner (kỳ vọng nhận mã 403), tuy nhiên bộ công cụ chạy kiểm thử hoặc thư viện HTTP đã coi mã phản hồi 403 là một ngoại lệ/lỗi chưa được xử lý, dẫn đến trạng thái \"error\".\n- Giả thuyết 3: Endpoint kiểm tra hoặc cấu hình môi trường phân quyền (role-based access control) đang gán nhầm vai trò mặc định cho phiên làm việc hiện tại.\n\nCác bước kiểm tra theo thứ tự:\n1. Xem lại kịch bản và mục tiêu thiết kế của bài kiểm thử AI-08 để xác định kết quả kỳ vọng là thành công (2xx) hay bị từ chối truy cập (403).\n2. Kiểm tra thông tin xác thực (token, cookie hoặc header) được gửi kèm trong yêu cầu GET /forbidden để xác định tài khoản đang được gán quyền learner hay admin.\n3. Kiểm tra cách công cụ kiểm thử (engine: import) xử lý các mã phản hồi HTTP 4xx, xem liệu mã 403 có đang kích hoạt ngoại lệ làm dừng kiểm thử hay không.\n4. Đối chiếu với tài liệu đặc tả phân quyền của hệ thống HSK để làm rõ quyền hạn truy cập của vai trò learner đối với endpoint này.\n\nThông tin còn thiếu:\n- Mục tiêu và logic chi tiết của ca kiểm thử AI-08.\n- Tài liệu đặc tả yêu cầu nghiệp vụ và ma trận phân quyền (RBAC) của hệ thống.\n- Cấu hình bắt ngoại lệ HTTP của engine thực thi kiểm thử.\n- Tên gốc đầy đủ của ca kiểm thử (dữ liệu hiện tại đang bị lỗi ký tự: \"ki?m th? l?i\")."
+      },
+      "service": {
+        "httpStatus": 200,
+        "modelVersion": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 280,
+          "candidatesTokenCount": 629,
+          "totalTokenCount": 2238,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 280
+            }
+          ],
+          "thoughtsTokenCount": 1329,
+          "serviceTier": "standard"
+        }
+      },
+      "elapsedSeconds": 17.258660799999998,
+      "previousAttempts": [
+        {
+          "status": "unavailable",
+          "error": "Gemini HTTP 503. Dịch vụ Gemini chưa phản hồi thành công. Thử lại sau.",
+          "elapsedSeconds": 6.104360500000002
+        }
+      ]
+    },
+    {
+      "id": "AI-09",
+      "status": "answered",
+      "analysis": {
+        "model": "gemini-flash-latest",
+        "createdAt": "2026-10-19T12:06:16.628Z",
+        "explanation": "Tóm tắt\nLần chạy kiểm thử gặp lỗi hệ thống (status: error) do không thể thiết lập kết nối tới cơ sở dữ liệu PostgreSQL cục bộ tại địa chỉ 127.0.0.1 qua cổng 62341 (mã lỗi ECONNREFUSED). Lỗi này xảy ra ở cấp độ thực thi môi trường, không phải lỗi so sánh kết quả kiểm thử (assertion).\n\nBằng chứng\n- Trạng thái kiểm thử được ghi nhận là: status = error.\n- Danh sách lỗi kiểm thử nghiệp vụ (failures) là mảng rỗng ([]), omittedFailures bằng 0.\n- Thông tin lỗi thực thi (executionError) và nhật ký kết thúc (logTail) đều chứa nội dung: PostgreSQL connection attempt to isolated local test endpoint. ECONNREFUSED: connect ECONNREFUSED 127.0.0.1:62341.\n- Tên bài kiểm thử được ghi là: AI-09: kiểm thử lỗi, thuộc engine/source: import.\n\nNguyên nhân có thể (ghi rõ giả thuyết)\n- Giả thuyết 1: Phiên bản cơ sở dữ liệu PostgreSQL cục bộ (hoặc container cơ sở dữ liệu tạm thời phục vụ kiểm thử) chưa được khởi động hoặc đã dừng trước khi quá trình kiểm thử kết nối tới.\n- Giả thuyết 2: Tiến trình PostgreSQL đang chạy nhưng lắng nghe trên một cổng khác, hoặc cơ chế gán cổng động (dynamic port allocation) cấp phát cổng 62341 nhưng tiến trình kiểm thử nhận sai cấu hình cổng.\n- Giả thuyết 3: Dịch vụ cơ sở dữ liệu khởi động quá chậm dẫn đến việc kiểm thử thực hiện kết nối trước khi cổng 62341 sẵn sàng tiếp nhận yêu cầu.\n- Giả thuyết 4: Có xung đột mạng cục bộ, chính sách bảo mật nội bộ hoặc tiến trình khác can thiệp khiến kết nối tới địa chỉ loopback 127.0.0.1 trên cổng 62341 bị từ chối.\n\nCác bước kiểm tra theo thứ tự\n1. Kiểm tra trạng thái hoạt động của dịch vụ PostgreSQL hoặc container cơ sở dữ liệu dành riêng cho kiểm thử xem có đang chạy tại thời điểm thực thi hay không.\n2. Kiểm tra nhật ký khởi tạo môi trường (bước setup/pre-test) để xác định xem cơ sở dữ liệu kiểm thử có được kích hoạt thành công và lắng nghe đúng cổng 62341 hay không.\n3. Xác minh cấu hình chuỗi kết nối và các biến môi trường cung cấp cho bài kiểm tra import để đảm bảo địa chỉ máy chủ và cổng kết nối được truyền chính xác.\n4. Kiểm tra thời gian chờ (timeout) hoặc cơ chế chờ sẵn sàng (health check / wait-for-service) của cơ sở dữ liệu trước khi bài kiểm thử AI-09 bắt đầu chạy.\n5. Kiểm tra quyền truy cập mạng cục bộ và cấu hình tường lửa trên máy chủ chạy kiểm thử đối với địa chỉ 127.0.0.1.\n\nThông tin còn thiếu\n- Toàn bộ nhật ký (full logs) của quá trình khởi động môi trường và thiết lập hạ tầng trước khi chạy test.\n- Cách thức triển khai cơ sở dữ liệu kiểm thử (dùng Docker container, dịch vụ cài trực tiếp trên máy, hay mock server).\n- Cấu hình quản lý cổng kết nối (cổng 62341 là cổng cố định hay được sinh ngẫu nhiên theo phiên kiểm thử).\n- Đặc tả yêu cầu của ca kiểm thử AI-09 để biết bài test này thực sự cần thao tác với cơ sở dữ liệu nào của hệ thống học HSK."
+      },
+      "elapsedSeconds": 18.380046199999995
+    },
+    {
+      "id": "AI-10",
+      "status": "answered",
+      "analysis": {
+        "model": "gemini-flash-latest",
+        "createdAt": "2026-10-19T12:06:19.578Z",
+        "explanation": "Tóm tắt:\nLần chạy có tên \"AI-10: kiểm thử lỗi\" gặp lỗi thực thi hệ thống (status: \"error\") ở tiến trình import, xuất phát từ việc thiếu thông tin cấu hình biến môi trường kết nối cơ sở dữ liệu kiểm thử.\n\nBằng chứng:\n- Trạng thái thực thi ghi nhận là \"error\" từ công cụ/nguồn \"import\".\n- Trường `executionError` và `logTail` đều xuất hiện thông báo: \"Chưa điền DATABASE_URL của Neon branch kiểm thử vào ai-test-tool/.env.hsk-test.\"\n- Danh sách `failures` để trống (mảng rỗng), cho thấy quá trình bị dừng do lỗi thiết lập môi trường thực thi chứ không phải do sai lệch kết quả kiểm thử nghiệp vụ (assertion failure).\n\nNguyên nhân có thể (ghi rõ giả thuyết):\n- Giả thuyết 1: Tệp cấu hình `ai-test-tool/.env.hsk-test` chưa được tạo hoặc chưa được gán giá trị cho biến `DATABASE_URL`.\n- Giả thuyết 2: Biến `DATABASE_URL` đã có trong tệp cấu hình nhưng giá trị đang bị để trống, chứa chuỗi giữ chỗ mặc định, hoặc sai định dạng khiến hệ thống kiểm tra trước khi chạy báo lỗi.\n- Giả thuyết 3: Nếu chạy trên quy trình tự động (CI/CD), bước tạo nhánh Neon (Neon branch) và đồng bộ biến môi trường vào tệp `.env.hsk-test` đã bị bỏ qua hoặc thực hiện không thành công trước khi lệnh import chạy.\n\nCác bước kiểm tra theo thứ tự:\n1. Kiểm tra sự tồn tại của tệp `ai-test-tool/.env.hsk-test` tại thư mục làm việc của dự án.\n2. Mở tệp cấu hình và đối chiếu xem biến `DATABASE_URL` đã được khai báo hay chưa, đồng thời đảm bảo giá trị chuỗi kết nối không bị để trống (không chia sẻ công khai giá trị chuỗi này để tránh lộ thông tin bảo mật).\n3. Kiểm tra trạng thái hoạt động của nhánh cơ sở dữ liệu Neon tương ứng để đảm bảo chuỗi kết nối còn hiệu lực.\n4. Chạy lại tiến trình import sau khi đã điền đầy đủ cấu hình để kiểm tra xem lỗi thực thi có biến mất hay không.\n\nThông tin còn thiếu:\n- Môi trường chạy thực tế (chạy trên máy cá nhân cục bộ hay chạy trên hệ thống CI/CD tự động).\n- Quy trình chuẩn của dự án về việc cấp phát và thiết lập nhánh cơ sở dữ liệu Neon cho môi trường kiểm thử website HSK."
+      },
+      "elapsedSeconds": 18.58716040000001
+    }
+  ]
+}

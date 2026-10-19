@@ -1,0 +1,15 @@
+{
+  "id": "c5a92c40-d52d-4d97-9a4c-8527c2319e8a",
+  "groupId": "vitest-core",
+  "name": "SM-2 và mở khóa bài",
+  "engine": "vitest",
+  "source": "execution",
+  "status": "timeout",
+  "startedAt": "2026-10-19T11:59:56.932Z",
+  "duration": 10.588,
+  "timeoutSeconds": 10,
+  "command": "\"C:\\\\Program Files\\\\nodejs\\\\node.exe\" -e \"console.log(\\\"Controlled Node process: test tool cancellation/timeout; not an HSK test\\\"); setInterval(()=>{},1000)\"",
+  "exitCode": 1,
+  "error": "Đã dừng toàn bộ tiến trình test sau 10 giây.",
+  "finishedAt": "2026-10-19T12:00:07.520Z"
+}
