@@ -1,0 +1,4 @@
+{"total": {"lines":{"total":207,"covered":110,"skipped":0,"pct":53.14},"statements":{"total":207,"covered":110,"skipped":0,"pct":53.14},"functions":{"total":23,"covered":12,"skipped":0,"pct":52.17},"branches":{"total":36,"covered":32,"skipped":0,"pct":88.88},"branchesTrue":{"total":0,"covered":0,"skipped":0,"pct":"Unknown"}}
+,"D:\\Downloads\\DGVKDCLPM\\hsk-app\\frontend\\lib\\dateKey.ts": {"lines":{"total":16,"covered":12,"skipped":0,"pct":75},"functions":{"total":3,"covered":2,"skipped":0,"pct":66.66},"statements":{"total":16,"covered":12,"skipped":0,"pct":75},"branches":{"total":2,"covered":2,"skipped":0,"pct":100}}
+,"D:\\Downloads\\DGVKDCLPM\\hsk-app\\frontend\\lib\\hskData.ts": {"lines":{"total":191,"covered":98,"skipped":0,"pct":51.3},"functions":{"total":20,"covered":10,"skipped":0,"pct":50},"statements":{"total":191,"covered":98,"skipped":0,"pct":51.3},"branches":{"total":34,"covered":30,"skipped":0,"pct":88.23}}
+}
