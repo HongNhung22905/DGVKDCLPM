@@ -130,6 +130,8 @@ Kịch bản kiểm tra chọn nhóm, chạy 5 test Vitest thật, xem nhật k�
 
 Phạm vi hiện tại không gồm đánh giá assertion, sinh test bằng AI hoặc JMeter runner. Đã có [báo cáo thực nghiệm](docs/EXPERIMENT-REPORT.md) và [kết quả đầy đủ 85 ca Selenium](docs/SELENIUM-RESULTS.md), phân biệt kết quả công cụ, test website và báo cáo lịch sử. Các lượt Selenium dùng endpoint Neon kiểm thử riêng.
 
+Cập nhật tài liệu 20/10/2026: [bảng chốt minh chứng và phiên bản](docs/EVIDENCE-BASELINE.md), [truy vết yêu cầu → tiêu chí → từng ca → kết quả](docs/TEST-TRACEABILITY.md), [bảng lỗi và trạng thái](docs/DEFECT-REGISTER.md), [phiếu chấm AI độc lập chưa thực hiện](docs/AI-INDEPENDENT-REVIEW.md). Đề tài đã chốt đặt đánh giá HSK làm trọng tâm, công cụ là sản phẩm hỗ trợ; [bố cục sáu chương](docs/REPORT-OUTLINE.md). Kết luận theo tiêu chí ở mục 8 báo cáo thực nghiệm; giữ nguyên số liệu ngày 19/10/2026. AI vẫn là đánh giá sơ bộ, chưa có độ chính xác tổng quát được xác nhận.
+
 ### Kết quả kiểm tra công cụ ngày 19/10/2026
 
 - TypeScript và kiểm tra cú pháp JavaScript đạt.

@@ -1,5 +1,7 @@
 # DGKDCLPM — Đánh giá và kiểm định chất lượng phần mềm
 
+**Đề tài:** “Kiểm thử tự động website hỗ trợ học tiếng Trung và xây dựng công cụ tích hợp AI hỗ trợ phân tích kết quả.” Đánh giá website HSK là trọng tâm; HSK Test Lab là sản phẩm hỗ trợ. Hồ sơ viết báo cáo: [bảng chốt minh chứng/phiên bản](ai-test-tool/docs/EVIDENCE-BASELINE.md), [ma trận yêu cầu–tiêu chí–test–kết quả](ai-test-tool/docs/TEST-TRACEABILITY.md), [bố cục sáu chương](ai-test-tool/docs/REPORT-OUTLINE.md).
+
 Đối tượng đánh giá: **HSK 3.0 — Nền tảng học tiếng Trung**. Repository tập hợp ứng dụng và các bằng chứng kiểm thử phục vụ đánh giá chất lượng phần mềm.
 
 Ứng dụng web học tiếng Trung dành cho người Việt, xây dựng theo định hướng HSK 3.0. Hệ thống kết hợp học từ vựng, luyện viết chữ Hán, ngữ pháp, ôn tập ngắt quãng, đọc hiểu, hội thoại, luyện thi và gia sư AI trong một sản phẩm duy nhất.
@@ -13,6 +15,8 @@
 Xem [báo cáo yêu cầu, thiết kế và thực nghiệm](ai-test-tool/docs/EXPERIMENT-REPORT.md) và [bộ minh chứng](ai-test-tool/experiments/README.md). Key Gemini mới đã gọi thành công; công cụ hiện có 21/21 test đạt. Cặp lượt Vitest bằng lệnh/UI đều 22/22 PASS, đối chiếu từng ca với XML gốc thống nhất. 70 XML là báo cáo lịch sử được kiểm tra khả năng nhập, không phải 70 lần chạy mới.
 
 Đã chạy đủ **85 ca Selenium trên endpoint Neon kiểm thử riêng: 75 PASS, 10 FAIL**, không có ERROR/SKIP; runner khoảng 28 phút 48 giây. Nhóm tra từ/sổ tay chạy riêng bằng UI và CLI đều 10/10 PASS; NOTE-04 thất bại trong lượt đầy đủ nên chưa ổn định. [Báo cáo Selenium và minh chứng](ai-test-tool/docs/SELENIUM-RESULTS.md) phân biệt lỗi chức năng với lỗi tương tác tự động hóa; 85/85 ca hiển thị trong lịch sử khớp XML gốc. Kết nối database website hiện tại được giữ nguyên. Các phần kiểm định HSK bên dưới là tài liệu baseline trước đợt thực nghiệm mới; dùng báo cáo liên kết trên để xem trạng thái mới nhất.
+
+Cập nhật tài liệu **20/10/2026**, không chạy test mới: [ma trận truy vết](ai-test-tool/docs/TEST-TRACEABILITY.md), [bảng 4 nhóm lỗi HSK đang mở và lỗi launcher đã sửa](ai-test-tool/docs/DEFECT-REGISTER.md), [kết luận theo tiêu chí và phạm vi chưa kiểm thử](ai-test-tool/docs/EXPERIMENT-REPORT.md#8-kết-luận-chất-lượng-theo-tiêu-chí-và-phạm-vi-chưa-kiểm-thử). Đánh giá AI trên 10 mẫu vẫn là **sơ bộ: 7 đúng, 3 đúng một phần**, chưa có người chấm độc lập và không phải độ chính xác chung 70%; [phiếu độc lập](ai-test-tool/docs/AI-INDEPENDENT-REVIEW.md) chưa có điểm.
 
 ## Đánh giá và kiểm định chất lượng phần mềm
 

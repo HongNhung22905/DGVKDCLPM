@@ -1,0 +1,678 @@
+{
+  "topic": "Kiểm thử tự động website hỗ trợ học tiếng Trung và xây dựng công cụ tích hợp AI hỗ trợ phân tích kết quả.",
+  "documentationDate": "2026-10-20",
+  "experimentDate": "2026-10-19",
+  "displayTimezone": "UTC+7",
+  "recordedGitHeadAtEnvironmentCapture": "197b22007f208b3fc9fd77ebfca3d22aecd18f0c",
+  "testedCleanCommit": null,
+  "archiveCommitAfterExperiments": "ce3290af09456590f2b98a9dcfcb51a7320f25b6",
+  "versionLimit": "Working tree was uncommitted; launcher changed between stages. Recorded source hashes identify selected files, not a complete deployed website snapshot.",
+  "sourceComparisons": [
+    {
+      "metadata": "environment.json",
+      "files": {
+        "ai-test-tool/src/runner.ts": {
+          "recordedSha256": "4bd1b2a308e47a0853e9fa3928fc1d5031191764a8184f66447b3414ab8bf068",
+          "currentSha256": "4bd1b2a308e47a0853e9fa3928fc1d5031191764a8184f66447b3414ab8bf068",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "ai-test-tool/src/junit.ts": {
+          "recordedSha256": "85c5161a7c3bf52faaf4918ac8dbf1f79d882116dca11ff92f1eb9ce9e5796ff",
+          "currentSha256": "85c5161a7c3bf52faaf4918ac8dbf1f79d882116dca11ff92f1eb9ce9e5796ff",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "ai-test-tool/src/gemini.ts": {
+          "recordedSha256": "919792244c95b2ee38b87b7f940660948b5d13c01dfa1863f3a24e9877c2d80d",
+          "currentSha256": "919792244c95b2ee38b87b7f940660948b5d13c01dfa1863f3a24e9877c2d80d",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "ai-test-tool/src/hsk-test-environment.ts": {
+          "recordedSha256": "4daf8d7179e6c380c0cb18ca83dc8074cc0b5d3d6b8cfe2de0819dd3c092676d",
+          "currentSha256": "4daf8d7179e6c380c0cb18ca83dc8074cc0b5d3d6b8cfe2de0819dd3c092676d",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "ai-test-tool/src/hsk-test-server.ts": {
+          "recordedSha256": "b6c47be2c5a7dc0573ff28d919a3441bb8e22860d20fc9b012a0f34a39ce77c1",
+          "currentSha256": "867a4e5196b5229531eee2d03c8a0c30b179c6f2ae8ce74a0afa0cd4cbacd82e",
+          "currentMatchesRecorded": false,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "hsk-app/frontend/tests/whitebox/core.test.ts": {
+          "recordedSha256": "fdfc28ef9f7a6e583c603cee5de1d7e550845d128054e46ae89c28337910fd62",
+          "currentSha256": "fdfc28ef9f7a6e583c603cee5de1d7e550845d128054e46ae89c28337910fd62",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "hsk-app/frontend/tests/whitebox/gate.test.ts": {
+          "recordedSha256": "41c3acb97eceb8db45455c2ea7e4c792e1dfdfa2581c2854790a5914c0b1a802",
+          "currentSha256": "41c3acb97eceb8db45455c2ea7e4c792e1dfdfa2581c2854790a5914c0b1a802",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        }
+      }
+    },
+    {
+      "metadata": "selenium-environment.json",
+      "files": {
+        "ai-test-tool/src/hsk-test-server.ts": {
+          "recordedSha256": "867a4e5196b5229531eee2d03c8a0c30b179c6f2ae8ce74a0afa0cd4cbacd82e",
+          "currentSha256": "867a4e5196b5229531eee2d03c8a0c30b179c6f2ae8ce74a0afa0cd4cbacd82e",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "ai-test-tool/src/hsk-test-environment.ts": {
+          "recordedSha256": "4daf8d7179e6c380c0cb18ca83dc8074cc0b5d3d6b8cfe2de0819dd3c092676d",
+          "currentSha256": "4daf8d7179e6c380c0cb18ca83dc8074cc0b5d3d6b8cfe2de0819dd3c092676d",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "ai-test-tool/src/runner.ts": {
+          "recordedSha256": "4bd1b2a308e47a0853e9fa3928fc1d5031191764a8184f66447b3414ab8bf068",
+          "currentSha256": "4bd1b2a308e47a0853e9fa3928fc1d5031191764a8184f66447b3414ab8bf068",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        }
+      }
+    },
+    {
+      "metadata": "selenium-full-results.json",
+      "files": {
+        "selenium-tests/test_data_isolation.py": {
+          "recordedSha256": "cc008c0b9a3f1fa028e9a00892a3465cc18bcb681fb6104f7dfd54d915452e66",
+          "currentSha256": "cc008c0b9a3f1fa028e9a00892a3465cc18bcb681fb6104f7dfd54d915452e66",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_flashcard.py": {
+          "recordedSha256": "bcd473890e011f86c679424e1691e3c67b9feeeaa3b1107ad3fc7287babe9ad0",
+          "currentSha256": "bcd473890e011f86c679424e1691e3c67b9feeeaa3b1107ad3fc7287babe9ad0",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_game.py": {
+          "recordedSha256": "c883ab436b8fb1db7fc1861f19631143d9d89e3d464fca9c7f979a39569fa31c",
+          "currentSha256": "c883ab436b8fb1db7fc1861f19631143d9d89e3d464fca9c7f979a39569fa31c",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_game_complete.py": {
+          "recordedSha256": "84d15d57f0db96edfbdc8006e324befcbaf1499c9fb0423aa75e1f3d73cb7f49",
+          "currentSha256": "84d15d57f0db96edfbdc8006e324befcbaf1499c9fb0423aa75e1f3d73cb7f49",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_game_hanzi.py": {
+          "recordedSha256": "d49fcb0adfb8739d17ccbc68300c92f6d1ac845e423e86309cf566bd97f5f979",
+          "currentSha256": "d49fcb0adfb8739d17ccbc68300c92f6d1ac845e423e86309cf566bd97f5f979",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_game_mixed.py": {
+          "recordedSha256": "c841348e7123fa7589fe53d7b830720a432ffd5c18689ddc980f319838f550e9",
+          "currentSha256": "c841348e7123fa7589fe53d7b830720a432ffd5c18689ddc980f319838f550e9",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_login.py": {
+          "recordedSha256": "f2cfc3cf4f6b27c8dbe7e1bb651f113b80d231b10c27f975ebfb0322bffbdcda",
+          "currentSha256": "f2cfc3cf4f6b27c8dbe7e1bb651f113b80d231b10c27f975ebfb0322bffbdcda",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_logout.py": {
+          "recordedSha256": "3375a4957f06c6ba35fd28b8e3ccd3c23ca6e4d7ab6f01201d84f43ece6a0270",
+          "currentSha256": "3375a4957f06c6ba35fd28b8e3ccd3c23ca6e4d7ab6f01201d84f43ece6a0270",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_notebook.py": {
+          "recordedSha256": "1403a107e73702a2a35ef4c32665b9118dac6f5176d81f4966eab21be2d49798",
+          "currentSha256": "1403a107e73702a2a35ef4c32665b9118dac6f5176d81f4966eab21be2d49798",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_progress.py": {
+          "recordedSha256": "f5b8daebb4fd21045dc4f507a5eaa074deb4cea19eb2289eb3bc34196e74d2f5",
+          "currentSha256": "f5b8daebb4fd21045dc4f507a5eaa074deb4cea19eb2289eb3bc34196e74d2f5",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_progress_cards.py": {
+          "recordedSha256": "3f976487359a715d28f364edbca7291a963099e59850cb864ab0f2f06ab3e12b",
+          "currentSha256": "3f976487359a715d28f364edbca7291a963099e59850cb864ab0f2f06ab3e12b",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_progress_completed.py": {
+          "recordedSha256": "86d96797ffd9df43792cc0e577e84e8499655a60ba67796d0eaa0665ad349438",
+          "currentSha256": "86d96797ffd9df43792cc0e577e84e8499655a60ba67796d0eaa0665ad349438",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_register.py": {
+          "recordedSha256": "92a7664ab28fed5a5b4ec63dde812757f324f91ad0fe8fe4926ec6280c7d5547",
+          "currentSha256": "92a7664ab28fed5a5b4ec63dde812757f324f91ad0fe8fe4926ec6280c7d5547",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_review.py": {
+          "recordedSha256": "5ddfd141e0f93d7896b8cf822902129a0922f2aa1f86314eeede558e15acb4ee",
+          "currentSha256": "5ddfd141e0f93d7896b8cf822902129a0922f2aa1f86314eeede558e15acb4ee",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_review_due.py": {
+          "recordedSha256": "df0cfef1f4864d02159ba20b428e315ca3378245e41d96c80adb92c9bab31a03",
+          "currentSha256": "df0cfef1f4864d02159ba20b428e315ca3378245e41d96c80adb92c9bab31a03",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_review_future.py": {
+          "recordedSha256": "0809e6940f86ec11b67d7e5e06e34e0f3e9a750d81c6d8e07ad245d8011c7b73",
+          "currentSha256": "0809e6940f86ec11b67d7e5e06e34e0f3e9a750d81c6d8e07ad245d8011c7b73",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_review_history.py": {
+          "recordedSha256": "414ce4a9fd97a7682559cea1fd2680529dd480db09dc5650d740067959869d21",
+          "currentSha256": "414ce4a9fd97a7682559cea1fd2680529dd480db09dc5650d740067959869d21",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_review_rate.py": {
+          "recordedSha256": "5d8ec2887a5a8df18654230a49dfbbb0cfd4572e68db8f617c583da968b1d49c",
+          "currentSha256": "5d8ec2887a5a8df18654230a49dfbbb0cfd4572e68db8f617c583da968b1d49c",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_review_repeat.py": {
+          "recordedSha256": "37d30f9a8bf1106199b19fc91437e7686d2f24a1f4093d079406a3a360a914bb",
+          "currentSha256": "37d30f9a8bf1106199b19fc91437e7686d2f24a1f4093d079406a3a360a914bb",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_search.py": {
+          "recordedSha256": "90a4b9f30b8d5d6b2f75753e39a0f3db3f0370cd182f8f992aef7196a2816ca2",
+          "currentSha256": "90a4b9f30b8d5d6b2f75753e39a0f3db3f0370cd182f8f992aef7196a2816ca2",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_stats.py": {
+          "recordedSha256": "b132845b25fc97afd2e92a13c963c6089c3847a7dfee9a0dc3dfb8ac9b7f05a8",
+          "currentSha256": "b132845b25fc97afd2e92a13c963c6089c3847a7dfee9a0dc3dfb8ac9b7f05a8",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_stats_calendar.py": {
+          "recordedSha256": "6290648dee26d313825da82453b259c657a97d1d0df8803bbbcf1adda093251b",
+          "currentSha256": "6290648dee26d313825da82453b259c657a97d1d0df8803bbbcf1adda093251b",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_stats_persistence.py": {
+          "recordedSha256": "3b2c69640fbb70181ebccbd0643a8c4294faf3eec8612e39290c7fdff0c403cf",
+          "currentSha256": "3b2c69640fbb70181ebccbd0643a8c4294faf3eec8612e39290c7fdff0c403cf",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_stats_session.py": {
+          "recordedSha256": "c6eb63e81b82636d5d616e77bf3129e86e35f575d9c02e26eac43a1a09c789c1",
+          "currentSha256": "c6eb63e81b82636d5d616e77bf3129e86e35f575d9c02e26eac43a1a09c789c1",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_unlock.py": {
+          "recordedSha256": "ed92573d2450236f696ac00aa3fdb21f897db3ba3e2e5911e43f834a420a50ce",
+          "currentSha256": "ed92573d2450236f696ac00aa3fdb21f897db3ba3e2e5911e43f834a420a50ce",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_unlock_pinyin.py": {
+          "recordedSha256": "ba39d4ca598a2137bfb67aec1822aed49342e5ed710f18003cc6a15d381c6593",
+          "currentSha256": "ba39d4ca598a2137bfb67aec1822aed49342e5ed710f18003cc6a15d381c6593",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_unlock_retry.py": {
+          "recordedSha256": "3b7c36c42fcaf36a4cb09b1f755752378801a2e2438bebaf02a2994308f2c9db",
+          "currentSha256": "3b7c36c42fcaf36a4cb09b1f755752378801a2e2438bebaf02a2994308f2c9db",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_unlock_score.py": {
+          "recordedSha256": "1ddd5a68731740c3b4122fdf1f75cf13de5282f36f6260bec32456e22c7a3dee",
+          "currentSha256": "1ddd5a68731740c3b4122fdf1f75cf13de5282f36f6260bec32456e22c7a3dee",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_unlock_session.py": {
+          "recordedSha256": "dfd968d6e988430d9fee03adb4b02755aa051d78fa5b6e7cc0d16398f68f9c56",
+          "currentSha256": "dfd968d6e988430d9fee03adb4b02755aa051d78fa5b6e7cc0d16398f68f9c56",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_vocabulary.py": {
+          "recordedSha256": "0c0269c47b74fc850183da1eec34a09f45ce1d040ae2b0faa07dd59d1c49824d",
+          "currentSha256": "0c0269c47b74fc850183da1eec34a09f45ce1d040ae2b0faa07dd59d1c49824d",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_writing.py": {
+          "recordedSha256": "ea457a9293b769dda80cbbf622bb897376b24d5fe67fd2e220da5ce4bf702b93",
+          "currentSha256": "ea457a9293b769dda80cbbf622bb897376b24d5fe67fd2e220da5ce4bf702b93",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_writing_complete.py": {
+          "recordedSha256": "6fb9027108ceca9bf8a8f327a8a4bdf05533d6dfc745dd8dc44bb585a7a54834",
+          "currentSha256": "6fb9027108ceca9bf8a8f327a8a4bdf05533d6dfc745dd8dc44bb585a7a54834",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        },
+        "selenium-tests/test_writing_quiz.py": {
+          "recordedSha256": "312e4901d8974ee6cb5379ca0d3051fda058c731ba5dcf8040a41502c6efa2bf",
+          "currentSha256": "312e4901d8974ee6cb5379ca0d3051fda058c731ba5dcf8040a41502c6efa2bf",
+          "currentMatchesRecorded": true,
+          "archiveContentMatchesCurrentIgnoringCrLf": true
+        }
+      }
+    }
+  ],
+  "evidenceRows": [
+    {
+      "id": "E-S02",
+      "role": "Kết quả chính — Selenium toàn bộ",
+      "time": "19/10/2026 19:29:55 UTC+7 (bắt đầu)",
+      "environment": "HSK snapshot local; Chrome 154; endpoint Neon kiểm thử riêng",
+      "result": "85: 75 PASS / 10 FAIL / 0 ERROR / 0 SKIP; runner 1727,746 s",
+      "evidence": "selenium-all-122951/report.xml",
+      "runId": "04d381c9-e06b-453e-9601-2a698141b34a"
+    },
+    {
+      "id": "E-V01",
+      "role": "Kết quả chính — logic HSK (Vitest)",
+      "time": "19/10/2026 19:04:17 UTC+7 (đối chiếu)",
+      "environment": "Windows, Node 24.19.0, Vitest 2.1.9; không cần DB",
+      "result": "22/22 PASS mỗi cách; không cộng CLI và UI thành 44 ca",
+      "evidence": "cli-ui-comparison.json",
+      "runId": "2d86db62-08ff-4356-bce3-cd18baca4d48"
+    },
+    {
+      "id": "E-S01",
+      "role": "Đối chiếu luồng — Selenium nhóm nhỏ UI",
+      "time": "19/10/2026 19:26:26 UTC+7 (bắt đầu)",
+      "environment": "Cùng môi trường snapshot/endpoint kiểm thử của E-S02",
+      "result": "10/10 PASS, runner 180,279 s; không thay kết quả E-S02",
+      "evidence": "selenium-notebook-122623/report.xml",
+      "runId": "f0662ff9-e0fa-4896-8ecd-71e492a1b081"
+    },
+    {
+      "id": "E-S03",
+      "role": "Đối chiếu — Selenium nhóm nhỏ CLI",
+      "time": "19/10/2026 20:01:19 UTC+7 (đối chiếu)",
+      "environment": "Cùng snapshot/endpoint; CLI chạy sau E-S02; không reset DB",
+      "result": "10/10 PASS; tiến trình 155,019 s; tên/trạng thái khớp E-S01",
+      "evidence": "selenium-cli-ui-comparison.json",
+      "runId": null
+    },
+    {
+      "id": "E-T01",
+      "role": "Sản phẩm hỗ trợ — test HSK Test Lab",
+      "time": "19/10/2026 (thư mục đợt; log không ghi giờ)",
+      "environment": "Node test runner; fixture/mock và tiến trình Node; không phải E2E HSK",
+      "result": "21/21 test công cụ đạt; không cộng vào 22 Vitest hoặc 85 Selenium",
+      "evidence": "tool-tests-after-selenium.log",
+      "runId": null
+    },
+    {
+      "id": "E-X01",
+      "role": "Khả năng nhập — XML lịch sử",
+      "time": "19/10/2026 (thư mục đợt; JSON không ghi giờ)",
+      "environment": "Parser công cụ đối chiếu Python ElementTree trên cùng tệp",
+      "result": "70/70 XML khớp, 115 bản ghi có trùng; không phải 70 lượt chạy mới",
+      "evidence": "xml-compatibility.json",
+      "runId": null
+    },
+    {
+      "id": "E-F01",
+      "role": "Tình huống lỗi công cụ",
+      "time": "19/10/2026 19:00:07 UTC+7 (ghi nhận)",
+      "environment": "XML và tiến trình/HTTP fixture local có kiểm soát",
+      "result": "Hủy/timeout/XML sai/kết nối bị từ chối; không phải lỗi website mới",
+      "evidence": "fault-scenarios.json",
+      "runId": null
+    },
+    {
+      "id": "E-A01",
+      "role": "Tích hợp — Gemini với lỗi HSK lịch sử",
+      "time": "19/10/2026 19:00:40 UTC+7 (ghi nhận)",
+      "environment": "Gemini API thật; alias gemini-flash-latest",
+      "result": "HTTP 200; FC-05 lịch sử; không phải ca Selenium mới",
+      "evidence": "gemini-connection.json",
+      "runId": "33c87c5e-2069-4884-bf37-d79fe5b853b9"
+    },
+    {
+      "id": "E-A02",
+      "role": "AI — bộ 10 mẫu, đánh giá sơ bộ",
+      "time": "19/10/2026 19:07:25 UTC+7 (metadata; retry có timestamp riêng)",
+      "environment": "1 lỗi HSK lịch sử + 9 lỗi kiểm soát; nguyên nhân lưu trước lời gọi",
+      "result": "7 đúng / 3 đúng một phần / 0 sai; chưa chấm độc lập; 503 lưu riêng",
+      "evidence": "ai-judgements.json",
+      "runId": null
+    },
+    {
+      "id": "E-A03",
+      "role": "Tích hợp — Gemini với lỗi lượt đầy đủ",
+      "time": "19/10/2026 20:00:08 UTC+7 (ghi nhận)",
+      "environment": "Gemini nhận XML/log rút gọn của E-S02",
+      "result": "HTTP 200; không phải phần chấm 10 mẫu E-A02",
+      "evidence": "selenium-gemini-analysis.json",
+      "runId": "04d381c9-e06b-453e-9601-2a698141b34a"
+    },
+    {
+      "id": "E-S00",
+      "role": "Loại khỏi kết quả chính — lượt bị dừng trước sửa launcher",
+      "time": "19/10/2026 19:24:37 UTC+7 (bắt đầu)",
+      "environment": "Snapshot trước sửa cwd; không đồng nhất phiên bản launcher E-S02",
+      "result": "cancelled; 56,076 s; chưa có XML đầy đủ; không cộng ca",
+      "evidence": "selenium-notebook-122432/summary.json",
+      "runId": "19e9e179-29de-494e-8580-e9c4591beffc"
+    }
+  ],
+  "historicalJmeter": [
+    {
+      "id": "H-J01",
+      "jtl": "PERF-01.jtl",
+      "sampleRecords": 756,
+      "firstSampleUtc": "2026-10-19T05:29:26.649000+00:00",
+      "lastSampleUtc": "2026-10-19T05:31:26.490000+00:00",
+      "reportIndex": "PERF-01-report/index.html",
+      "testedCommit": null,
+      "includedInCurrentPassFail": false
+    },
+    {
+      "id": "H-J02",
+      "jtl": "PERF-PROD-05-R1.jtl",
+      "sampleRecords": 819,
+      "firstSampleUtc": "2026-10-19T05:48:50.050000+00:00",
+      "lastSampleUtc": "2026-10-19T05:50:49.925000+00:00",
+      "reportIndex": "PERF-PROD-05-R1-report/index.html",
+      "testedCommit": null,
+      "includedInCurrentPassFail": false
+    },
+    {
+      "id": "H-J03",
+      "jtl": "PERF-PROD-10-R1.jtl",
+      "sampleRecords": 1434,
+      "firstSampleUtc": "2026-10-19T05:53:45.416000+00:00",
+      "lastSampleUtc": "2026-10-19T05:55:45.069000+00:00",
+      "reportIndex": "PERF-PROD-10-R1-report/index.html",
+      "testedCommit": null,
+      "includedInCurrentPassFail": false
+    },
+    {
+      "id": "H-J04",
+      "jtl": "PERF-PROD-20-R2.jtl",
+      "sampleRecords": 2105,
+      "firstSampleUtc": "2026-10-19T06:00:24.382000+00:00",
+      "lastSampleUtc": "2026-10-19T06:02:23.677000+00:00",
+      "reportIndex": "PERF-PROD-20-R2-report/index.html",
+      "testedCommit": null,
+      "includedInCurrentPassFail": false
+    },
+    {
+      "id": "H-J05",
+      "jtl": "PERF-PROD-20-R3.jtl",
+      "sampleRecords": 2110,
+      "firstSampleUtc": "2026-10-19T06:04:29.764000+00:00",
+      "lastSampleUtc": "2026-10-19T06:06:29.372000+00:00",
+      "reportIndex": "PERF-PROD-20-R3-report/index.html",
+      "testedCommit": null,
+      "includedInCurrentPassFail": false
+    },
+    {
+      "id": "H-J06",
+      "jtl": "PERF-PROGRESS-05-R1.jtl",
+      "sampleRecords": 2819,
+      "firstSampleUtc": "2026-10-19T06:31:35.731000+00:00",
+      "lastSampleUtc": "2026-10-19T06:56:54.273000+00:00",
+      "reportIndex": null,
+      "testedCommit": null,
+      "includedInCurrentPassFail": false
+    },
+    {
+      "id": "H-J07",
+      "jtl": "PERF-PROGRESS-05-R2.jtl",
+      "sampleRecords": 996,
+      "firstSampleUtc": "2026-10-19T07:02:43.869000+00:00",
+      "lastSampleUtc": "2026-10-19T07:04:43.650000+00:00",
+      "reportIndex": "PERF-PROGRESS-05-R2-report/index.html",
+      "testedCommit": null,
+      "includedInCurrentPassFail": false
+    },
+    {
+      "id": "H-J08",
+      "jtl": "PERF-PROGRESS-05-R3.jtl",
+      "sampleRecords": 1030,
+      "firstSampleUtc": "2026-10-19T07:10:24.654000+00:00",
+      "lastSampleUtc": "2026-10-19T07:12:24.535000+00:00",
+      "reportIndex": "PERF-PROGRESS-05-R3-report/index.html",
+      "testedCommit": null,
+      "includedInCurrentPassFail": false
+    },
+    {
+      "id": "H-J09",
+      "jtl": "PERF-PROGRESS-10-R1.jtl",
+      "sampleRecords": 1563,
+      "firstSampleUtc": "2026-10-19T07:15:23.479000+00:00",
+      "lastSampleUtc": "2026-10-19T07:17:23.374000+00:00",
+      "reportIndex": "PERF-PROGRESS-10-R1-report/index.html",
+      "testedCommit": null,
+      "includedInCurrentPassFail": false
+    },
+    {
+      "id": "H-J10",
+      "jtl": "PERF-PROGRESS-20-R1.jtl",
+      "sampleRecords": 2447,
+      "firstSampleUtc": "2026-10-19T07:18:43.274000+00:00",
+      "lastSampleUtc": "2026-10-19T07:20:43.105000+00:00",
+      "reportIndex": "PERF-PROGRESS-20-R1-report/index.html",
+      "testedCommit": null,
+      "includedInCurrentPassFail": false
+    }
+  ],
+  "artifactSha256": {
+    "ai-test-tool/experiments/2026-10-19/ai-dataset.json": "9f7222ab1ee147689f24e4e5d32822546c16a228b2bed565365c7b3920b574f1",
+    "ai-test-tool/experiments/2026-10-19/ai-judgements.json": "be8153087fe78eece3499d72417317eaaf05767444c135fed64182cb8911850f",
+    "ai-test-tool/experiments/2026-10-19/ai-responses.json": "d97f831d3851d8561881fb8abbcdfe7342c15182d899cf78cff7e70ce496f3f1",
+    "ai-test-tool/experiments/2026-10-19/auth-fixture.json": "09c46ba94190fb929755634b4ae728f7a5c51e15ec551d60992ceefc6decd1a3",
+    "ai-test-tool/experiments/2026-10-19/calendar-function-observation.json": "e4dc54cf7ea9128a50b43c51529447c2f22fd11a42a812072b1504faab335cae",
+    "ai-test-tool/experiments/2026-10-19/cli-ui-comparison.json": "049bc48183ff16dcacc0051f0c775b389087e40aff2782bfc447f5485c146657",
+    "ai-test-tool/experiments/2026-10-19/environment.json": "2b71edb82bdc24cbd702dccb9fbe9925d8cbe397a726c2534f1362cba14b8d2c",
+    "ai-test-tool/experiments/2026-10-19/fault-artifacts/cancelled/bb9f9fd7-d222-4495-b6ed-79637a9ff9d6/output.log": "92616594f33675d82bfdb22a3e64beae42aae23b3a1015bfbd91b28a198bba6d",
+    "ai-test-tool/experiments/2026-10-19/fault-artifacts/cancelled/bb9f9fd7-d222-4495-b6ed-79637a9ff9d6/run.json": "794a21997c1c90132d93867edfc28c1d46ee63463285b57a670e50e994c6c1e8",
+    "ai-test-tool/experiments/2026-10-19/fault-artifacts/timeout/c5a92c40-d52d-4d97-9a4c-8527c2319e8a/output.log": "92616594f33675d82bfdb22a3e64beae42aae23b3a1015bfbd91b28a198bba6d",
+    "ai-test-tool/experiments/2026-10-19/fault-artifacts/timeout/c5a92c40-d52d-4d97-9a4c-8527c2319e8a/run.json": "f499b0f3fcb48a206eb4b472fd44f00a581f03bc49220b5de67cafa62c5c32cd",
+    "ai-test-tool/experiments/2026-10-19/fault-scenarios.json": "b691c37b20c01a5e7710e792d7c37e25eb4d1c9e44614bed62e460a4630a6c56",
+    "ai-test-tool/experiments/2026-10-19/gemini-connection.json": "69fcc822c47c892459d15f0d29da1d48240f9914566b2818b1f7e5b43b0f899b",
+    "ai-test-tool/experiments/2026-10-19/invalid-junit.xml": "663be99205914e366a491dc5f4689f88361de2abc7db6de2dcb826b9a50b1d8a",
+    "ai-test-tool/experiments/2026-10-19/registration-whitespace-observation.json": "a92f61217006cc5f2dea349a5531919f13b7c28d5d8c897f427af8799a76038e",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/NOTE-04-fail.png": "b1d282462aafb7fb16861813c22ab28d8d995e7588b779248e76bc43ef48f917",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/output.log": "b7f81b907e11b48e4517e1f3edbd713bfe6ec4f3eab6b4884ee778cb7ce7a176",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/REG-09-fail.png": "486aee7c8c0fc26a497759a9a42f4d36b9e63e0346777d15a0562b503e023f66",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/report.xml": "8b0d8f69f082cd1e90ce7440b821f9165d0f3df3838d53671ad6750da4386623",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/RESULTS.md": "9781d3ce7109d9b8a5472c76226694701aab9b938b7b3ff92b9abb26d26f9196",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/run.json": "c115ff6253c1d0ecfa891db056a5b531db515e326959b7be01412ff885e5b19b",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/STATS-03-1-year-fail.png": "47415e12399af1d091840d01252d83ec33f7109183df5593f6120a5ecad404bb",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/STATS-03-4-months-fail.png": "c06ce7412cb46c731709a3cfe339ccf0d5306608565db920f09d77d70065d91f",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/STATS-03-6-months-fail.png": "2f6f36f4c58b1613ca4bc113091941b348ea0db08bdc3a76cebb0723e00bf372",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/STATS-03-fail.png": "c06ce7412cb46c731709a3cfe339ccf0d5306608565db920f09d77d70065d91f",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/summary.json": "0d22ee19e010fecbceaeca5502b0d6e47189b94177649d947f7464898f347093",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/ui-log.png": "51015241cd2db0218860dd2f9ef919c303986840d2eac2b3a57ddcdd3bef16d6",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/ui-result.png": "c276e31e777902e581601d11e7013c353222f6aa15d4c7f6397083f9fc40e2aa",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/VOC-01-HSK-1-fail.png": "c7aa77f25746daacb58a35e9b90253ccb6ccd4d7f363d12af847c053130f7b3f",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/VOC-01-HSK-2-fail.png": "0aab043dd2f94c898dabbd4de4b9024380e0c8c0d8d0e93829fa72cfa4db9aec",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/VOC-01-HSK-3-fail.png": "984102f759022ecf828c940f296d8360a641f99e2c2f00241feca7567d7f9c40",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/VOC-01-HSK-4-fail.png": "c9a00864bb1bc72d203c0686fe42382d8f308817d8bf55a9d431da15de7b9939",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/VOC-01-HSK-5-fail.png": "cf7379ced598907dccab1b2ac7c0db2085177512bc7ca52cb8f4106bc122d7a4",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/VOC-01-HSK-6-fail.png": "3019ce0631361293807a6049f1996e577a6c9209be6ca8586f707fe6720ef272",
+    "ai-test-tool/experiments/2026-10-19/selenium-all-122951/VOC-01-HSK-7-fail.png": "df9ed10a97349c56d24d1894d739bbdd43cb0f401e6e134b804a275ee9481dd7",
+    "ai-test-tool/experiments/2026-10-19/selenium-cli-ui-comparison.json": "e413832f99477d041a268e68ab32961a230d61aab377480cc119a9e17ef27b72",
+    "ai-test-tool/experiments/2026-10-19/selenium-collection.log": "e2055cb43b1fbc4629f41dc0fc3658ab1bb0134b63c623398b62b2bdfd2f3f9d",
+    "ai-test-tool/experiments/2026-10-19/selenium-dom-verification.json": "e6c3df5f31240d444305d52bf0f1d38e8f8ba7d9a76e349e2a851d7b0d4a218a",
+    "ai-test-tool/experiments/2026-10-19/selenium-environment.json": "aafb7ab1eb322fa871f57712220c4a3dad5f9c0631c50a5177a18d72d2a9d91c",
+    "ai-test-tool/experiments/2026-10-19/selenium-full-results.json": "8132e747b7525add5bc31b5437c0b220809dcd35b52b9c439a2364adc776272e",
+    "ai-test-tool/experiments/2026-10-19/selenium-gemini-analysis.json": "9b8f41653996627f141d792a18f2a99b7041d1f87287e177257a81d04b2196e7",
+    "ai-test-tool/experiments/2026-10-19/selenium-history-result.png": "c7f50cd4a6031ce8446c8113f067233cfda6d57fadec92d4e677367554221f6c",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122432/output.log": "20e75777b0e2162dae0cbf93a1bcd48f21da7cc344978bd9f4c5895adbfc6bc5",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122432/run.json": "00bec7d56edfd7ebdbc0cb5beb0206a0238075ba496f105b2095fdce30f56668",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122432/summary.json": "e0c848406b58091cc4666c20bf8f587fed55bebc77292831a05325c6cb195cca",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122432/ui-log.png": "c8398e0fc1541188d042d414eee4ba0499cc9d4e4f4275ddd357cec2d4d7e3ed",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122432/ui-result.png": "05594bd5f1f1a4c824e5f0929161ffa2955bb32cf48e5e0b70d139abfed6f71e",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122623/output.log": "b3b40917451ec1cbd60e579fdab8dfacbadd826a00a0e8ca6ba4fc57814ac235",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122623/report.xml": "21a95548cf1d0ae407a3502f700c265ece9a7639d4ab5dfa77e279e9558b44e2",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122623/run.json": "b3250c76466aefa4c1d722164c6ef118e6f7b97f9a687a458f7e98d1725cfc34",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122623/summary.json": "2135d6ecd7e3a95bf09e20410adb8b16f9991a836e987e69b53cf775d09aedae",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122623/ui-log.png": "a7eefaf5f16940eb3b280d9cccdadf73bf8e2dd5b947807b0d9c9f97cb604531",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-122623/ui-result.png": "59188e0cd2ee17ab960977b71549e72ebaf31a8999bec5a9d5b35ee1b015b41c",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/NOTE-01-pass.png": "b1d282462aafb7fb16861813c22ab28d8d995e7588b779248e76bc43ef48f917",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/NOTE-02-pass.png": "b1d282462aafb7fb16861813c22ab28d8d995e7588b779248e76bc43ef48f917",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/NOTE-03-pass.png": "1179c4d78a737b1d9ffdf47fa28acbc36aa90a3f06189bc8be306307b64b9cee",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/NOTE-04-pass.png": "83db69833c349dad36db64963ba35bc4c388cd2ba3eaf44798e3033439a52aa5",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/NOTE-05-pass.png": "f45e75f82df2d73f78668a123fe27a9c94ff931b9ff0001c6d2a0f09417e75c6",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/output.log": "c8bec0ebabb30b511e40e0fc7947583abf814f8f6e2b0f95878f04d503e8dc63",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/report.xml": "939a6e83ffc9fac5e12f477249ebc4c7db1c1a01c69de0461f228a54a5f66501",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/SEARCH-01-pass.png": "50ca6223d9687ac9b32570d713141b5ed20e0d236659aced01cbbacea4594e71",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/SEARCH-02-pass.png": "4ab8276a6d5bb3a96e9b9375cc0b40fe385794088aac122994be5d113f03c54d",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/SEARCH-03-pass.png": "06aa54fc3ddc0099090a474cd01a73f55bf791c91fae23d19f50c6fba8f2202a",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/SEARCH-04-filtered.png": "3cdf508adc142863f1d5feb3e4a05a5c06bb7b94c32a560b17e7cb9ac82765b7",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/SEARCH-04-pass.png": "0e860e22ccb659c91120118dd2f75fd11dee0ae1b80426eaf6ec90c334b7ee68",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/SEARCH-05-empty.png": "6311c968af88e8ed3f66594fab9b6b518c31acf91f7340dd5f51e13b046de7f8",
+    "ai-test-tool/experiments/2026-10-19/selenium-notebook-cli-2026-10-19T12-58-44-003Z/SEARCH-05-pass.png": "7ecd75819a3ff7f49fce371ef1f16e07e1e8dfc4a5138f1d7780b5ac2e4b4cbc",
+    "ai-test-tool/experiments/2026-10-19/selenium-test-environment-required.png": "9309c319f19b3f8036e52b05f3c6ff5155f6cd5399820594542283124039e8c1",
+    "ai-test-tool/experiments/2026-10-19/tool-tests-after-selenium.log": "311d7e66a6ae1745c05e3e7cce8da15dd16a21f5f82823a5d15f00b371b31ad2",
+    "ai-test-tool/experiments/2026-10-19/tool-tests.log": "878fad194c3839f496229d43bc9b7508e21cd39780f95c7dbe6c65cada12a61c",
+    "ai-test-tool/experiments/2026-10-19/ui-guard.json": "cd876e75fb4337e79cdbd2e51e47b91b8fcd6be29bdfb82cc02e49bfc3ffefa1",
+    "ai-test-tool/experiments/2026-10-19/verification-final.json": "15d82ed2e7f1138313097a78448284c1d4c91f3290a976d7f7effaf3bd4b9e9f",
+    "ai-test-tool/experiments/2026-10-19/vitest-cli.log": "f63ac98f8aa4c200da563ff589e4a0101c889c8129aef0f125912edcce9dcbb2",
+    "ai-test-tool/experiments/2026-10-19/vitest-cli.xml": "876d6f3b2ee91658b9e221faeeecda5ca75f5afecd108a9e44c3d431886a92c1",
+    "ai-test-tool/experiments/2026-10-19/vitest-ui.log": "c5467a9e84df01a4905d66d6ff43e64730766e51135eada6fbbb0b924bfa1cdf",
+    "ai-test-tool/experiments/2026-10-19/vitest-ui.png": "490a0748444fe6498aba19b5d11fe09a3102481e9109cea608d0623add9db06a",
+    "ai-test-tool/experiments/2026-10-19/vitest-ui.xml": "1b45c8e21fde97fcbfd686b6370317c0d99eebb0d8db8b3196ceb3b27ddc3dba",
+    "ai-test-tool/experiments/2026-10-19/xml-compatibility.json": "730e9385ae759ba8513696701eb11065ea8d140e176b94bfa32d3666fc96a2c9",
+    "hsk-app/frontend/whitebox-results.xml": "f4517bd757dbc0fe4ad90242e19b89b950fecd40154d259c9399b2d46818cd93",
+    "HSK-performance.jmx": "675ac30a1eb46242f946759a8405531e61ed970378c4e370f644f1ed6ec7ed2e",
+    "HSK-progress-performance.jmx": "638fcb6a37bb364afc7139f00036e3cd35a6f345e0b79792c93e73ea121e39e7",
+    "PERF-01-report/index.html": "20af2e8cba37a796faca05e4dfb8df0ca663f3574b68036c4d82b5e2f8e7b1e1",
+    "PERF-01-report/statistics.json": "72123ca77d5b6037dfb52d61d32ecea5bf2a80408d2266746a04bbdda2308b90",
+    "PERF-01.jtl": "43c1e18032a50ef10e9ef695f2506d5d6c46829c54ed522fab93b09b61373d24",
+    "PERF-01.log": "3038429622a7b0aa807118ddfd7af9f3e984a07a2a491d8ddea80bc0eef28f0d",
+    "PERF-PROD-05-R1-report/index.html": "e4dca4f50b22a58e794f9403d3efe48132d2f4ab306dd5f533b7a53997dd1c9b",
+    "PERF-PROD-05-R1-report/statistics.json": "d081c22b2983170a02ad157b484273181f55e39ae3ed9185c26d7fc3457d6bca",
+    "PERF-PROD-05-R1.jtl": "944982b7566ab37bc6901f7d4073ec548498e583892c547a1f85d47a7fff355f",
+    "PERF-PROD-05-R1.log": "ba3b1d5d8a73ccd8371f9a5c0491e88f2c1a827a5b4d1579f39793feb5b12784",
+    "PERF-PROD-10-R1-report/index.html": "ca89cf3b904c63a11b022dc9ade6ae468553be62f89c8a547f23285405139304",
+    "PERF-PROD-10-R1-report/statistics.json": "8160723b6744cdbb1089e24935564ab12f544681845a9b51814bd466c0dd8f7c",
+    "PERF-PROD-10-R1.jtl": "d0e7807695cc761cca38d639dc811682d438f3eb16b110c7ee3ba1a0f022dcc8",
+    "PERF-PROD-10-R1.log": "97dfe1d82ff083e779c9ca071529026e018700793ae374a9f10886de121fcd88",
+    "PERF-PROD-20-R2-report/index.html": "96e9a24fb238e893ada4056f2210e73ca86705bdd2ca7bcaf3dda29f2b150e31",
+    "PERF-PROD-20-R2-report/statistics.json": "126dc3654630ac5f37c918aeb6e33f593d7f3fa5d0818c21fbbad3d1e999219d",
+    "PERF-PROD-20-R2.jtl": "e3e987da2b7a67e53f9f6b79c7fd59356a1145e2b3547226853994928339da2f",
+    "PERF-PROD-20-R2.log": "a3f11cc1f8829efb253af44b36b81e67f5a76082bfce1bc4da55bfa22777ff6b",
+    "PERF-PROD-20-R3-report/index.html": "72e2ee749a10b3e510abe8ec60039c101bf8e631fd83a03a73d9af5bb5d0c42b",
+    "PERF-PROD-20-R3-report/statistics.json": "b8800699182dd69c8c0c80e092f8568e611c709546ea12191116babc2bf7ec22",
+    "PERF-PROD-20-R3.jtl": "d34330c9d57d834ff86923032e3d2d73768d593118d5c7ec4527922d216d99b1",
+    "PERF-PROD-20-R3.log": "4d7180c3f1aa6468c960f45e4e325a2ea1c78073e52f2088f7fdda6f8a05695a",
+    "PERF-PROGRESS-05-R1.jtl": "0217c19d5266453639e3d710361b2ce484625268e6380e9d4a0fbed362929140",
+    "PERF-PROGRESS-05-R1.log": "d8da72b515a46324c673a6da4625ae53e9a8ce11f84a9908cd8ad269f4c240e5",
+    "PERF-PROGRESS-05-R2-report/index.html": "0524cdfe94d26d66aa9a87c2ed5dcdb036dfd4bac5ee4831fd927a6fb7181234",
+    "PERF-PROGRESS-05-R2-report/statistics.json": "b89336fb063da8213660a4ebf73244211045eefbb70c749e879d60ffbf51124d",
+    "PERF-PROGRESS-05-R2.jtl": "9c2f2316218907c37b1b679de95aab02ba473afad21b97ae3a9e8941bcf9baac",
+    "PERF-PROGRESS-05-R2.log": "b4198ed559ecfb0c4b9db1fb0986fcd065348f1642641095d9da40066bf8d532",
+    "PERF-PROGRESS-05-R3-report/index.html": "ede452b6225df3993bfde326af69a5b5fac7cda95b86df1b9479252e5bc23f12",
+    "PERF-PROGRESS-05-R3-report/statistics.json": "d80392529b329909bbd6aa4fa741a4c7ce48a11cc8da592d4ff0a1d355a85d6a",
+    "PERF-PROGRESS-05-R3.jtl": "0aab58ea4439612a067452355390d863011f734b23ce5209830fcd3081d51be5",
+    "PERF-PROGRESS-05-R3.log": "8e9f1d6ae67165ac255a2ed3f3ef393ac44e9a261c83c2252758e584d86cd74f",
+    "PERF-PROGRESS-10-R1-report/index.html": "fa055c5db6a881744f5717c1dbcc1aa94f7bf38802d5c6213d71cc0b1ff74932",
+    "PERF-PROGRESS-10-R1-report/statistics.json": "ec49aa62016e99588da92d215ce37fd3602d6ab19f827cd3d8f6a62bf931de07",
+    "PERF-PROGRESS-10-R1.jtl": "f2a7a19e8f50c7092c8c3a8fe372b4b70a1c4efd3e0abbf44b00009d7613454d",
+    "PERF-PROGRESS-10-R1.log": "4683fe49e3388b09a36ee77d29dda8cdea41def430e10d4e64762990c68d71e3",
+    "PERF-PROGRESS-20-R1-report/index.html": "16f1cf4da7f7ea2bb27175c848c80e84e4e7c5fa89b1f1107a4a9dc932da1b2c",
+    "PERF-PROGRESS-20-R1-report/statistics.json": "a1953c505ff7c62984032e26e1e927291952e98938ed3359c71c7e48678f78e0",
+    "PERF-PROGRESS-20-R1.jtl": "24014e33ac8afeaa1524cf870d3717cd2c71596157b0fd1f3e3264c7746d0b48",
+    "PERF-PROGRESS-20-R1.log": "2470803e4cee91ecc34e4b8a06522646669d847db113e68e27da66468ace4d4e",
+    "selenium-tests/DATA-UI-01-results.xml": "27ed49a1e7afa1b31a6af28ec496203a0ca9ad75bf058f0d159fb4a55d61d065",
+    "selenium-tests/FC-01-results.xml": "37acd25d5bfe264f9d3fc45644ca10ecfa15b0edb502083b16671b54a3d0543f",
+    "selenium-tests/FC-02-results.xml": "ae0310a6b9537474af3e22de9cfac60ce69bd3d12f234614f1e38a51b1c9e7f3",
+    "selenium-tests/FC-03-results.xml": "0690198ca6e404f4e94f5715f1a20d9141f86328f4c4bb8d35d7e0ada02b5b78",
+    "selenium-tests/FC-04-results.xml": "44afc62b45adb72b128f83866cff7fb3895caac95b2f0b98f16de4dd9700d865",
+    "selenium-tests/FC-05-results.xml": "77e1bd51c8b9ba3d70a655e98fe0e4f60201b1a0d15115d8151e8a48afb1a2a1",
+    "selenium-tests/FC-05-retry-results.xml": "5eba1660d4f772d0a76f2ac1d3b3a1ad32d8da52a6b534901ba868a9b68b79a4",
+    "selenium-tests/FC-06-results.xml": "5524cecb212b5d5531b515f481d1f4d3ad7102bff0727f258fa3b9e466dd79d8",
+    "selenium-tests/FC-07-results.xml": "28dde4370e90aa93a2752ae3565b431fe9b9ec9390659ae19530cc90b2a458eb",
+    "selenium-tests/GAME-01-results.xml": "6fbfd1a24ec44345070b917c26700efef5ee3181ed6e4c910acb31232920d7a2",
+    "selenium-tests/GAME-02-results.xml": "3cecb2127d1b769bd3ae0daa243ca0f4f04b18a3ea923ecf58dce7c742817282",
+    "selenium-tests/GAME-03-results.xml": "ccb4dec693f4b7d0582adf04e8c5399df2eb1aec5d401299f9e554900a29e482",
+    "selenium-tests/GAME-04-results.xml": "ded1f1e7d919ccea910f666c47501aec6a830ee89daaaec7b61006ed04498c35",
+    "selenium-tests/GAME-05-results.xml": "06174a3f974da512d26b678a2c7013557bec4d02793dd104852f535935eccc58",
+    "selenium-tests/GAME-06-results.xml": "93ac652951ceda26900378ec559bccc20c8597d398104bd9cd1d54958c43bd70",
+    "selenium-tests/GAME-07-results.xml": "a35b4ed977df1802150ec594f5776424f95093ea3e4ff4191445f5dc8ab30d45",
+    "selenium-tests/GAME-08-results.xml": "bfdbbc20f66f2c95d8a5db2e439e8333ff5fbc5d9dbb2e96310bc7c9cccfe07c",
+    "selenium-tests/LOGIN-01-results.xml": "f1b6fb6eeee1448158e4d8975e0229be3f922c2a5fcf89956f964e51d11a30ea",
+    "selenium-tests/LOGIN-invalid-results.xml": "1462080a886269abbedb8e4e9a87a9328a45924398e521398892e86aee0e8d68",
+    "selenium-tests/LOGIN-session-results.xml": "dfe1b76bb333158afcb8a55486644a864b73d3fce6edc2a9374e3d5f20d2c60b",
+    "selenium-tests/LOGIN-validation-results.xml": "97b905ccb79553d3c327b55b8d8378540a3e378229b31ed48b3d2db702ae056b",
+    "selenium-tests/LOGOUT-01-results.xml": "2521a73a29c7e543860120af4e71a5cfc625b5d4c0f51a46bb7a8c48abac184d",
+    "selenium-tests/NOTE-results.xml": "e37ff96116d61843716a9f67ad277c37daa0e9d7654c1e0843e7116ea2448567",
+    "selenium-tests/PROGRESS-01-results.xml": "dcbc1c51b0a15545198f74e6a4e0aaf83c519ba2379b3e3896d2e3e88ba0b9ca",
+    "selenium-tests/PROGRESS-02-results.xml": "c4e59db4eb5deb747bb06a75a8a817c77feaefcaafef62ca3ede37518234e09c",
+    "selenium-tests/PROGRESS-03-results.xml": "0564a1e586753cf62601f8837bbff543eba19da697034c3a4e7ca508e1f052ea",
+    "selenium-tests/REG-05-results.xml": "4f1e4fc13a5a9a048ded24e51c5dc64f4626de8688753f0124675d1624104da5",
+    "selenium-tests/REG-06-results.xml": "f7e12563889655d0a626decfcced0471fe8f55727f22f994a69124616c532db9",
+    "selenium-tests/REG-07-results.xml": "73c844517d3ed827cd9752391f4e77ca40978b72244e80cd053400a9cb53543e",
+    "selenium-tests/REG-09-results.xml": "98acb859af1ea50d68c6b71f505e2e95b6ad5de1ed5bd5fd4272f66c98736ed5",
+    "selenium-tests/REG-validation-results.xml": "595623523f2c8fd1654159f1c49655d03b49aa84155927c1dfab278f75cef5b2",
+    "selenium-tests/register-results.xml": "26b6c0e0720872d2afb1b6742a3c4b51e6fe31abb66a8dc4030f48800f02d863",
+    "selenium-tests/REVIEW-01-results.xml": "69e2afcef24154f8f093ec7c9c783943857c5c7c5444c06a7aa5272f00fcae66",
+    "selenium-tests/REVIEW-02-results.xml": "6ed5254af43cae40b1272f5c76877f9e81863607346ae9db0d4a6e88fdc52bac",
+    "selenium-tests/REVIEW-03-results.xml": "969ea734488114da7b9076faeed2d89487569577196bababa4046a4c1004089a",
+    "selenium-tests/REVIEW-04-results.xml": "80509ceac05837a9aa50f0df2665f39ccd1d87ac9db81195d1f06de049254f63",
+    "selenium-tests/REVIEW-05-results.xml": "e00b077f5d479999ccbba626780558ef2a090617e5313c02dc629f4ade534d75",
+    "selenium-tests/REVIEW-06-results.xml": "2e5c1c34a3c483c0bb41820ea222635d9ea12a08544a1576feff82c9cc4732e8",
+    "selenium-tests/REVIEW-07-results.xml": "3b3702ad3314386607f765d6bc33dd4c8dcadc55f45aa1ec22d899e76f87e53d",
+    "selenium-tests/REVIEW-08-results.xml": "ec6c2733a0595fb2fde24e8c3e642e9307522c4d26ee351c23c0d9b87ac7b059",
+    "selenium-tests/SEARCH-results.xml": "239be9faeb214e9b9517482a3f9c00245a5ea34d10fa3fe20e7aea6ffbfdc001",
+    "selenium-tests/STATS-01-results.xml": "40a4cd59738a4e1c131efdf866bb1636cdc96384cb83701262befe9c0d8985cc",
+    "selenium-tests/STATS-02-results.xml": "dc114601a81ec949c38b973313b7ded75de7d711cec2e11888cda347eab30413",
+    "selenium-tests/STATS-03-results.xml": "2c6d37396ea30c98f387dbc1f1a70ffa8e3631af31db6f24fe336daf22a2e93e",
+    "selenium-tests/STATS-04-results.xml": "6ead49b52e1b4dd9f7b52f11985f5925f173133047742295006e5fdf821d3bd2",
+    "selenium-tests/UNLOCK-01-results.xml": "ca9a927ef190f8a69b8a15a0b22d6344d4daaa17607d906aadd3804be05208b8",
+    "selenium-tests/UNLOCK-02-results.xml": "3e028a5f70c56da72c7250c76510a18f031f1aa60b55ae184bed68f07e8591d9",
+    "selenium-tests/UNLOCK-03-results.xml": "c173a95c3d9c70cdf12acfa5c5799d7e5532b1c1e998be1141a4c9243d1d8250",
+    "selenium-tests/UNLOCK-03-retry-results.xml": "c4cb064938a006d40c4a243cd01441027c882c3800ca80058338dab311aeb3fd",
+    "selenium-tests/UNLOCK-04-results.xml": "eb22f5f82c0633f2bc46052fb76519ed4197a760e55ab90efe496dab72b34977",
+    "selenium-tests/UNLOCK-05-results.xml": "35133b14cbbc634a58886881143da1b886e70ee44c11b06808195b30b7045f3f",
+    "selenium-tests/UNLOCK-06-results.xml": "3b34fb9cda68061d9c4432ada070f23e63070bf79a1ddba4281841bbfed87753",
+    "selenium-tests/UNLOCK-07-results.xml": "8b709112a48cb650a6de03216fe6407366b32f79aed15abe67e5dbe717256f52",
+    "selenium-tests/UNLOCK-08-results.xml": "1e5d9459f23fee8dd89e73e636cdc7db1c87c643cd7299965a84318fffb1ccd2",
+    "selenium-tests/UNLOCK-09-results.xml": "35a75bb23eaf9f3179dd4f73b0f848935bc30ffcb553d916ddc21c7db4d73928",
+    "selenium-tests/VOC-02-results.xml": "7ceab3dac00b8daa268c8a40dfa03fbf833766fb0f870dd750ee3428bb98ae50",
+    "selenium-tests/VOC-03-results.xml": "5428cc1de10be620967518fc3924bdd8b99244853515de3b913f1bbc2db653e9",
+    "selenium-tests/VOC-04-results.xml": "5d250ce760488a7ca95d1fa6b449e20b1fdd17e674ab80d24ab039f91d32ae11",
+    "selenium-tests/VOC-HSK1-retry.xml": "46f1f40db2b3cffe757c1aab73e0c25548804d8fa6763fbde9fad0109cb87804",
+    "selenium-tests/VOC-level-results.xml": "5698b6ef253a6d62f4523ed16cc3688d41c98d31dae6248fd7e484321671c75f",
+    "selenium-tests/VOC-remaining-results.xml": "700d19611b20faa8f0209ae6ea34c34912e96c954bbc7a1e884bf5d539e30b25",
+    "selenium-tests/WRITE-01-results.xml": "314f75c0b119e7fa65472b560d3ad4a7c3f8570770ee8b2c84a48e806cfea195",
+    "selenium-tests/WRITE-02-results.xml": "17323f1cce2b3b7cbf004aaf0eb6243fd286ea6f93432e5a4829a4d6bd84c3d3",
+    "selenium-tests/WRITE-03-results.xml": "97202503b3aba2f7531e13e162af79e5c54368270783bc81a5ed12f3e480db16",
+    "selenium-tests/WRITE-04-results.xml": "f1016392986dcac640950b791bc0773b809f44c9ff783e6b52e6e3571508e793",
+    "selenium-tests/WRITE-05-results.xml": "e8dbc217e5ddf92829f49369dca1a374873dfaf657e64f89b34dddac81be735a",
+    "selenium-tests/WRITE-06-results.xml": "670c47175f5fa592652459b2c942b430d435b545209c84bb5cb06d0a01efda1a",
+    "selenium-tests/WRITE-07-results.xml": "e0077421ce57f864515353b2248ecdc55c27753e0728e1882ce5b425d9784e03",
+    "selenium-tests/WRITE-07-retry-results.xml": "63ae56b4c0d0dac0d4c369fd94945b268e5cfb8da92a4d272ab23ad703dc13a3"
+  }
+}

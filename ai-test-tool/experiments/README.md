@@ -6,6 +6,8 @@ Các script chạy từ thư mục gốc repository, giữ nguyên `.env.local` 
 
 | Script | Mục đích | Lệnh |
 | --- | --- | --- |
+| `freeze-evidence.py` | Chốt/đối chiếu danh mục, hash minh chứng và kiểm kê JMeter lịch sử, không chạy test hay gọi DB/API | `python ai-test-tool/experiments/freeze-evidence.py --check` (bỏ `--check` để chốt lại) |
+| `build-traceability.py` | Đối chiếu/sinh ma trận từ XML, test và log đã lưu; không chạy website hoặc gọi API/DB | `python ai-test-tool/experiments/build-traceability.py --check` (bỏ `--check` để sinh lại) |
 | `check-gemini.ts` | Phân tích lỗi FC-05 lịch sử bằng key hiện tại | `node --env-file=ai-test-tool/.env ai-test-tool/experiments/check-gemini.ts` |
 | `check-faults.ts` | XML hỏng, hủy, timeout và kết nối bị từ chối | `node ai-test-tool/experiments/check-faults.ts` |
 | `compare-cli-ui.py` | Cùng bộ Vitest, chạy lệnh rồi chạy UI, đối chiếu XML bằng parser độc lập | `ai-test-tool/.venv/Scripts/python.exe ai-test-tool/experiments/compare-cli-ui.py` |
@@ -22,5 +24,7 @@ Các script chạy từ thư mục gốc repository, giữ nguyên `.env.local` 
 Các script UI yêu cầu công cụ đã mở ở cổng 4317. Chúng dùng Chrome headless, không tự mở HSK và không gọi database website hiện tại. `check-ui-guard.py` chỉ được dùng khi chưa mở HSK kiểm thử; không dùng làm script chạy Selenium thật.
 
 Kết quả chấm AI là nhận xét sơ bộ của trợ lý Codex, không phải đánh giá độc lập bởi người dùng hoặc hội đồng. Ground truth lưu trước lời gọi AI, không được đưa vào prompt. Một mẫu dùng báo cáo HSK lịch sử; chín mẫu là lỗi có kiểm soát. Mỗi lỗi được gọi một lượt; riêng AI-08 có lưu lần HTTP 503 và lần thử lại. Không suy luận độ ổn định hoặc tỷ lệ chính xác chung của Gemini từ tập nhỏ này.
+
+Bổ sung tài liệu ngày 20/10/2026: [truy vết từng ca](../docs/TEST-TRACEABILITY.md), [bảng lỗi](../docs/DEFECT-REGISTER.md), [phiếu độc lập chưa có điểm](../docs/AI-INDEPENDENT-REVIEW.md). Không sửa XML, câu trả lời AI hoặc điểm sơ bộ để khớp kết luận; số liệu thực nghiệm giữ mốc 19/10/2026.
 
 Đã cấu hình HSK snapshot dùng endpoint Neon kiểm thử riêng theo [NEON-TEST-SETUP.md](../docs/NEON-TEST-SETUP.md). Nhóm nhỏ UI: [10/10 PASS](2026-10-19/selenium-notebook-122623/summary.json). Lượt đầy đủ: [75 PASS/10 FAIL trên 85 ca](2026-10-19/selenium-all-122951/summary.json). [Đối chiếu nhóm nhỏ CLI/UI](2026-10-19/selenium-cli-ui-comparison.json) cùng 10/10 PASS; NOTE-04 thất bại trong lượt đầy đủ vẫn được giữ nguyên. [85/85 ca DOM khớp XML](2026-10-19/selenium-dom-verification.json). Lượt bị dừng do launcher tìm sai thư mục dữ liệu được giữ ở `selenium-notebook-122432`, không cộng vào mẫu số 85. Xem [báo cáo Selenium](../docs/SELENIUM-RESULTS.md) để biết phân loại lỗi và giới hạn.

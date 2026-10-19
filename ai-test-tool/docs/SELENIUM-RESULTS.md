@@ -1,5 +1,7 @@
 # Kết quả kiểm thử Selenium — 19/10/2026
 
+Ngày cập nhật tài liệu **20/10/2026**; giữ nguyên số liệu thực thi **19/10/2026**, không có lượt chạy mới trong lần biên tập này. [Ma trận truy vết từng ca](TEST-TRACEABILITY.md), [bảng lỗi, mức nghiêm trọng, cách tái hiện và trạng thái](DEFECT-REGISTER.md), [kết luận theo tiêu chí và phạm vi chưa kiểm thử](EXPERIMENT-REPORT.md#8-kết-luận-chất-lượng-theo-tiêu-chí-và-phạm-vi-chưa-kiểm-thử).
+
 **Lượt đầy đủ: 85 ca, 75 PASS, 10 FAIL, 0 ERROR, 0 SKIP.** Tỷ lệ đạt 75/85 ≈ 88,24%; chưa kết luận website đạt toàn bộ phạm vi kiểm thử. Các lượt kiểm thử dùng endpoint Neon riêng, không ghi/xóa database website hiện tại.
 
 ## Môi trường và các lượt chạy
@@ -42,6 +44,8 @@ Python ElementTree đối chiếu từng tên/classname/trạng thái với API:
 
 ## Các ca thất bại và mức kết luận
 
+Mã lỗi thống nhất giữa các tài liệu: **HSK-001 = REG-09 (1 ca), HSK-002 = VOC-01-HSK-1…7 (7 ca), HSK-003 = STATS-03 (1 ca), HSK-004 = NOTE-04 (1 ca)**. Cả bốn đang mở, chưa có bản sửa và lượt kiểm tra lại sau sửa. Lỗi launcher TOOL-001 đã sửa thuộc lượt bị dừng riêng, không cộng vào 10 FAIL này. Mức nghiêm trọng đề xuất xem bảng lỗi; việc nhóm nhỏ chạy lại PASS không tự đóng HSK-004.
+
 ### REG-09: tên chỉ có khoảng trắng vẫn được chấp nhận
 
 `test_register_whitespace_name` kỳ vọng từ chối, thực tế nhận trạng thái accepted. [Ảnh](../experiments/2026-10-19/selenium-all-122951/REG-09-fail.png) hiển thị “Tạo tài khoản thành công”. [Truy vấn chỉ đọc](../experiments/2026-10-19/registration-whitespace-observation.json) trên branch kiểm thử xác nhận có 1 bản ghi tên rỗng.
@@ -72,7 +76,7 @@ Lượt nhóm nhỏ UI trước đó đạt ca này. Đây là dấu hiệu hàn
 
 Đã gọi chức năng phân tích của công cụ với lỗi của lượt 85 ca: **HTTP 200**, phản hồi được lưu cùng lịch sử. [Toàn bộ phản hồi](../experiments/2026-10-19/selenium-gemini-analysis.json). Gemini nhóm được 10 lỗi thành bốn nhóm trên và gợi ý kiểm tra.
 
-Phản hồi chỉ dựa trên XML/nhật ký rút gọn, không nhận ảnh hoặc mã nguồn đầy đủ. Nguyên nhân root cause của REG-09 và STATS-03 ở báo cáo này dựa trên kiểm tra độc lập của trợ lý; không mặc nhiên coi các giả thuyết của Gemini là sự thật. Một số đường dẫn API hoặc giả thuyết trong lời AI cần đối chiếu lại source. Phần này tách khỏi tập chấm AI 10 mẫu có kiểm soát trước đó.
+Phản hồi chỉ dựa trên XML/nhật ký rút gọn, không nhận ảnh hoặc mã nguồn đầy đủ. Nguyên nhân của REG-09 và STATS-03 ở báo cáo này dựa trên việc trợ lý kiểm tra source, dữ liệu kiểm thử và chạy hàm đối chiếu; đây không phải chấm AI độc lập bởi người đánh giá khác. Không mặc nhiên coi các giả thuyết của Gemini là sự thật. Một số đường dẫn API hoặc giả thuyết trong lời AI cần đối chiếu lại source. Phần này tách khỏi tập chấm AI 10 mẫu có kiểm soát trước đó.
 
 ## Thời gian và khả năng tái lập
 
