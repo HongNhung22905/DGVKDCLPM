@@ -18,7 +18,6 @@ beforeEach(() => {
   vi.useFakeTimers();
   vi.setSystemTime(new Date(2026, 9, 18, 12));
 
-  // Giả lập bộ nhớ trình duyệt riêng cho từng test.
   const memory = new Map<string, string>();
 
   vi.stubGlobal("window", {});
@@ -50,16 +49,14 @@ describe("Ngưỡng và bảo toàn kết quả kiểm tra", () => {
     expect(result).toEqual({ passed, score });
 
     const store = loadGateStore();
-    const entry = getGateEntry(1, 1, store);
 
-    expect(entry).toEqual({
+    expect(getGateEntry(1, 1, store)).toEqual({
       passed,
       score,
       attempts: 1,
       lastAttemptAt: new Date().toISOString(),
     });
 
-    // Nhóm 2 bắt đầu từ bài 4.
     expect(isLessonUnlocked(1, 4, store)).toBe(passed);
   });
 
@@ -70,13 +67,13 @@ describe("Ngưỡng và bảo toàn kết quả kiểm tra", () => {
 
     const latestResult = recordTestResult(1, 1, 60);
 
-    // Giá trị trả về mô tả lần làm hiện tại.
+    // Kết quả lần làm hiện tại.
     expect(latestResult).toEqual({
       passed: false,
       score: 60,
     });
 
-    // Dữ liệu lưu giữ thành tích tốt nhất.
+    // Thành tích đã lưu không bị giảm.
     const store = loadGateStore();
 
     expect(getGateEntry(1, 1, store)).toEqual({
